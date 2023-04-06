@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "shared"
+		},
+		{
+			"path": "memoria"
+		},
+		{
+			"path": "kernel"
+		},
+		{
+			"path": "filesystem"
+		},
+		{
+			"path": "cpu"
+		},
+		{
+			"path": "consola"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"memoria.h": "c",
+			"tests.h": "c"
+		}
+	}
+}
