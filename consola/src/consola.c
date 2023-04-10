@@ -4,8 +4,8 @@ int main(int argc, char ** argv){
     if(argc > 1 && strcmp(argv[1],"-test")==0)
         run_tests();
     else{  
-        t_log* logger = log_create("./cfg/consola.log", "CONSOLA", true, LOG_LEVEL_INFO);
-        log_info(logger, "Soy el proceso de la Consola!");
-        log_destroy(logger);
-    } 
+        t_config* config_consola = config_create("./cfg/consola.config");
+        char* ip_kernel = config_get_string_value(config_consola, "IP_KERNEL");
+        char* puerto_kernel = config_get_string_value(config_consola, "PUERTO_KERNEL");
+    }
 }
