@@ -12,7 +12,8 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-typedef enum {
+typedef enum
+{
 	HANDSHAKE_CONSOLA,
 	HANDSHAKE_KERNEL,
 	HANDSHAKE_CPU,
@@ -20,19 +21,19 @@ typedef enum {
 	HANDSHAKE_MEMORIA
 } cod_op;
 
-typedef struct {
-    t_log* log;
-    int socket;
+typedef struct
+{
+	t_log *log;
+	int socket;
 } t_conexion;
 
-
-int iniciar_servidor(t_log* logger, char* puerto);
-int esperar_cliente(t_log* logger,int socket_servidor);
-int crear_conexion(t_log* logger, char *ip, char* puerto);
-void terminar_programa(t_log* logger, int conexion, t_config* config);
-int enviar_handshake(t_log* logger, int socket_cliente, cod_op handshake);
-void aceptar_handshake(t_log* logger, int socket_cliente, cod_op cop);
-void rechazar_handshake(t_log* logger, int socket_cliente);
-
+int iniciar_servidor(t_log *logger, char *puerto);
+int esperar_cliente(t_log *logger, int socket_servidor);
+int crear_conexion(t_log *logger, char *ip, char *puerto);
+void terminar_programa(t_log *logger, int conexion, t_config *config);
+int enviar_handshake(t_log *logger, int socket_cliente, cod_op handshake);
+void aceptar_handshake(t_log *logger, int socket_cliente, cod_op cop);
+void rechazar_handshake(t_log *logger, int socket_cliente);
+int conectar_servidor(t_log *logger, char *ip, char *puerto, char *tipo_servidor, cod_op tipo_handshake, t_config *config);
 
 #endif

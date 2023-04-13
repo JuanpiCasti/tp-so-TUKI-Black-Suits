@@ -1,8 +1,8 @@
 #include "shared_utils.h"
 
-char* cod_op_desc[] = {"HANDSHAKE_CONSOLA", "HANDSHAKE_KERNEL", "HANDSHAKE_CPU" , "HANDSHAKE_FILESYSTEM", "HANDSHAKE_MEMORIA"};
+char *cod_op_desc[] = {"HANDSHAKE_CONSOLA", "HANDSHAKE_KERNEL", "HANDSHAKE_CPU", "HANDSHAKE_FILESYSTEM", "HANDSHAKE_MEMORIA"};
 
-int iniciar_servidor(t_log* logger, char* puerto)
+int iniciar_servidor(t_log *logger, char *puerto)
 {
 	int socket_servidor;
 
@@ -21,7 +21,6 @@ int iniciar_servidor(t_log* logger, char* puerto)
 
 	bind(socket_servidor, servinfo->ai_addr, servinfo->ai_addrlen);
 
-
 	listen(socket_servidor, SOMAXCONN);
 
 	freeaddrinfo(servinfo);
@@ -30,15 +29,16 @@ int iniciar_servidor(t_log* logger, char* puerto)
 	return socket_servidor;
 }
 
-int esperar_cliente(t_log* logger,int socket_servidor) {
-    int socket_cliente;
+int esperar_cliente(t_log *logger, int socket_servidor)
+{
+	int socket_cliente;
 	socket_cliente = accept(socket_servidor, NULL, NULL);
 	log_info(logger, "Se conecto un cliente!");
 
 	return socket_cliente;
 }
 
-int crear_conexion(t_log* logger, char *ip, char* puerto)
+int crear_conexion(t_log *logger, char *ip, char *puerto)
 {
 	struct addrinfo hints;
 	struct addrinfo *server_info;
@@ -55,16 +55,18 @@ int crear_conexion(t_log* logger, char *ip, char* puerto)
 							server_info->ai_socktype,
 							server_info->ai_protocol);
 
-    if (socket_cliente == -1){
-        log_error(logger, "Error creando el socket para %s:%s", ip, puerto);
-        return 0;
-    }
-	
+	if (socket_cliente == -1)
+	{
+		log_error(logger, "Error creando el socket para %s:%s", ip, puerto);
+		return 0;
+	}
+
 	int connection_status = connect(socket_cliente, server_info->ai_addr, server_info->ai_addrlen);
 
-	if (connection_status == -1) {
-        log_error(logger, "Error creando la conexion para %s:%s", ip, puerto);
-        freeaddrinfo(server_info);
+	if (connection_status == -1)
+	{
+		log_error(logger, "Error creando la conexion para %s:%s", ip, puerto);
+		freeaddrinfo(server_info);
 		return -1;
 	}
 
@@ -73,36 +75,61 @@ int crear_conexion(t_log* logger, char *ip, char* puerto)
 	return socket_cliente;
 }
 
-void terminar_programa(t_log* logger, int conexion, t_config* config) {
+void terminar_programa(t_log *logger, int conexion, t_config *config)
+{
 	log_destroy(logger);
 	close(conexion);
 	config_destroy(config);
 }
 
-void aceptar_handshake(t_log* logger, int socket_cliente, cod_op cop) {
-    int result_ok = 0;
-    log_info(logger, "Recibido handshake %s.", cod_op_desc[cop]);
-    send(socket_cliente, &result_ok, sizeof(int), 0);
+int enviar_handshake(t_log *logger, int socket_cliente, cod_op handshake)
+{
+
+	int resultado;
+	send(socket_cliente, &handshake, sizeof(int), 0);
+	recv(socket_cliente, &resultado, sizeof(int), MSG_WAITALL);
+	if (resultado != -1)
+	{
+		log_info(logger, "Handshake OK");
+	}
+	else
+	{
+		log_error(logger, "Handshake rechazado");
+	}
+
+	return resultado;
 }
 
-void rechazar_handshake(t_log* logger, int socket_cliente) {
-    int result_error = -1;
-    log_error(logger, "Recibido handshake de un modulo no autorizado, rechazando...");
-    send(socket_cliente, &result_error, sizeof(int), 0);
+void aceptar_handshake(t_log *logger, int socket_cliente, cod_op cop)
+{
+	int result_ok = 0;
+	log_info(logger, "Recibido handshake %s.", cod_op_desc[cop]);
+	send(socket_cliente, &result_ok, sizeof(int), 0);
 }
 
-int enviar_handshake(t_log* logger, int socket_cliente, cod_op handshake) {
+void rechazar_handshake(t_log *logger, int socket_cliente)
+{
+	int result_error = -1;
+	log_error(logger, "Recibido handshake de un modulo no autorizado, rechazando...");
+	send(socket_cliente, &result_error, sizeof(int), 0);
+}
 
-    int resultado;
-    send(socket_cliente, &handshake, sizeof(int), 0);
-    recv(socket_cliente, &resultado, sizeof(int), MSG_WAITALL);
-    if (resultado != -1)
-    {
-        log_info(logger, "Handshake OK");
-    } else {
-        log_error(logger, "Handshake rechazado");
-    }
+int conectar_servidor(t_log *logger, char *ip, char *puerto, char *tipo_servidor, cod_op tipo_handshake, t_config *config)
+{
+	int socket_servidor = crear_conexion(logger, ip, puerto);
+	if (socket_servidor == -1)
+	{
+		log_error(logger, "No se pudo conectar al servidor %s", tipo_servidor);
+		terminar_programa(logger, socket_servidor, config);
+		return -1;
+	}
+	log_info(logger, "Conexión establecida con %s", tipo_servidor);
 
-    return resultado;
-} 
+	if (enviar_handshake(logger, socket_servidor, tipo_handshake) == -1)
+	{
+		terminar_programa(logger, socket_servidor, config);
+		return -1;
+	}
 
+	return socket_servidor;
+}
