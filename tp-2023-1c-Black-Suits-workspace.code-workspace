@@ -28,7 +28,9 @@
 			"log.h": "c",
 			"shared_utils.h": "c",
 			"consola.h": "c",
-			"filesystem.h": "c"
+			"filesystem.h": "c",
+			"pthread.h": "c",
+			"comunicacion.h": "c"
 		}
 	}
 }

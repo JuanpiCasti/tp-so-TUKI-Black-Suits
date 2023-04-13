@@ -1,0 +1,119 @@
+[INFO] 15:12:02:496 KERNEL/(50360:50360): Kernel escuchando conexiones...
+[INFO] 15:24:30:061 KERNEL/(51797:51797): Kernel escuchando conexiones...
+[INFO] 15:24:34:347 KERNEL/(51797:51797): Se conecto un cliente!
+[INFO] 15:24:34:347 KERNEL/(51797:51826): Recibido handshake de la consola.
+[WARNING] 15:24:49:169 KERNEL/(51797:51826): Cliente desconectado!
+[WARNING] 15:24:49:169 KERNEL/(51797:51826): El cliente se desconecto del server
+[INFO] 15:26:08:649 KERNEL/(51797:51797): Se conecto un cliente!
+[INFO] 15:26:08:649 KERNEL/(51797:51980): Recibido handshake de la consola.
+[WARNING] 15:26:11:738 KERNEL/(51797:51980): Cliente desconectado!
+[WARNING] 15:26:11:738 KERNEL/(51797:51980): El cliente se desconecto del server
+[INFO] 15:29:35:064 KERNEL/(52434:52434): Kernel escuchando conexiones...
+[INFO] 15:29:37:858 KERNEL/(52434:52434): Se conecto un cliente!
+[INFO] 15:29:37:858 KERNEL/(52434:52458): Recibido handshake de la consola.
+[INFO] 15:29:41:349 KERNEL/(52434:52434): Se conecto un cliente!
+[INFO] 15:29:41:350 KERNEL/(52434:52489): Recibido handshake de la consola.
+[WARNING] 15:29:46:640 KERNEL/(52434:52458): Cliente desconectado!
+[WARNING] 15:29:46:640 KERNEL/(52434:52458): El cliente se desconecto del server
+[WARNING] 15:29:48:319 KERNEL/(52434:52489): Cliente desconectado!
+[WARNING] 15:29:48:320 KERNEL/(52434:52489): El cliente se desconecto del server
+[INFO] 15:31:40:326 KERNEL/(52434:52434): Se conecto un cliente!
+[WARNING] 15:31:40:326 KERNEL/(52434:52825): Recibido handshake de un modulo no autorizado, rechazando...
+[INFO] 15:32:18:261 KERNEL/(52937:52937): Kernel escuchando conexiones...
+[INFO] 15:32:58:379 KERNEL/(53076:53076): Kernel escuchando conexiones...
+[INFO] 15:33:45:182 KERNEL/(53293:53293): Kernel escuchando conexiones...
+[INFO] 15:33:49:487 KERNEL/(53293:53293): Se conecto un cliente!
+[INFO] 15:33:49:487 KERNEL/(53293:53325): Recibido handshake de la consola.
+[INFO] 15:35:36:424 KERNEL/(53588:53588): Kernel escuchando conexiones...
+[INFO] 15:37:00:043 KERNEL/(53875:53875): Kernel escuchando conexiones...
+[INFO] 15:37:10:592 KERNEL/(53875:53875): Se conecto un cliente!
+[ERROR] 15:37:10:592 KERNEL/(53875:53981): Recibido handshake de un modulo no autorizado, rechazando...
+[WARNING] 15:37:31:867 KERNEL/(53875:53981): Cliente desconectado!
+[WARNING] 15:37:31:867 KERNEL/(53875:53981): El cliente se desconecto del server
+[INFO] 15:37:33:768 KERNEL/(53875:53875): Se conecto un cliente!
+[ERROR] 15:37:33:768 KERNEL/(53875:54084): Recibido handshake de un modulo no autorizado, rechazando...
+[WARNING] 15:37:36:946 KERNEL/(53875:54084): Cliente desconectado!
+[WARNING] 15:37:36:946 KERNEL/(53875:54084): El cliente se desconecto del server
+[INFO] 15:37:39:052 KERNEL/(53875:53875): Se conecto un cliente!
+[INFO] 15:37:39:052 KERNEL/(53875:54138): Recibido handshake de la consola.
+[WARNING] 15:41:14:799 KERNEL/(53875:54138): Cliente desconectado!
+[WARNING] 15:41:14:799 KERNEL/(53875:54138): El cliente se desconecto del server
+[INFO] 15:41:17:924 KERNEL/(53875:53875): Se conecto un cliente!
+[WARNING] 15:41:17:924 KERNEL/(53875:54378): Cliente desconectado!
+[WARNING] 15:41:17:924 KERNEL/(53875:54378): El cliente se desconecto del server
+[INFO] 15:41:24:374 KERNEL/(53875:53875): Se conecto un cliente!
+[WARNING] 15:41:24:374 KERNEL/(53875:54440): Cliente desconectado!
+[WARNING] 15:41:24:374 KERNEL/(53875:54440): El cliente se desconecto del server
+[INFO] 15:41:34:378 KERNEL/(53875:53875): Se conecto un cliente!
+[WARNING] 15:41:34:378 KERNEL/(53875:54485): Cliente desconectado!
+[WARNING] 15:41:34:378 KERNEL/(53875:54485): El cliente se desconecto del server
+[INFO] 15:41:37:702 KERNEL/(53875:53875): Se conecto un cliente!
+[ERROR] 15:41:37:702 KERNEL/(53875:54526): Recibido handshake de un modulo no autorizado, rechazando...
+[WARNING] 15:41:37:703 KERNEL/(53875:54526): Cliente desconectado!
+[WARNING] 15:41:37:703 KERNEL/(53875:54526): El cliente se desconecto del server
+[INFO] 16:05:10:787 KERNEL/(58682:58682): Kernel escuchando conexiones...
+[INFO] 16:05:19:062 KERNEL/(58682:58682): Se conecto un cliente!
+[ERROR] 16:05:19:062 KERNEL/(58682:58727): Recibido handshake de un modulo no autorizado, rechazando...
+[WARNING] 16:05:19:062 KERNEL/(58682:58727): Cliente desconectado!
+[WARNING] 16:05:19:062 KERNEL/(58682:58727): El cliente se desconecto del server
+[INFO] 16:05:54:414 KERNEL/(58682:58682): Se conecto un cliente!
+[INFO] 16:05:54:414 KERNEL/(58682:58904): Recibido handshake de la consola.
+[WARNING] 16:08:50:851 KERNEL/(58682:58904): Cliente desconectado!
+[WARNING] 16:08:50:851 KERNEL/(58682:58904): El cliente se desconecto del server
+[ERROR] 16:42:48:909 KERNEL/(65213:65213): Error creando la conexion para 127.0.0.1:35604
+[INFO] 16:42:48:910 KERNEL/(65213:65213): Kernel escuchando conexiones...
+[ERROR] 16:42:55:233 KERNEL/(65280:65280): Error creando la conexion para 127.0.0.1:35604
+[INFO] 16:42:55:233 KERNEL/(65280:65280): Kernel escuchando conexiones...
+[ERROR] 16:44:58:215 KERNEL/(65496:65496): Error creando la conexion para 127.0.0.1:35604
+[INFO] 16:44:58:215 KERNEL/(65496:65496): Kernel escuchando conexiones...
+[INFO] 16:45:07:186 KERNEL/(65496:65496): Se conecto un cliente!
+[INFO] 16:45:07:186 KERNEL/(65496:65562): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:45:09:538 KERNEL/(65496:65562): Cliente desconectado!
+[WARNING] 16:45:09:538 KERNEL/(65496:65562): El cliente se desconecto del server
+[INFO] 16:51:56:143 KERNEL/(66923:66923): Kernel escuchando conexiones...
+[INFO] 16:57:24:048 KERNEL/(68130:68130): Primera conexion a kernel
+[INFO] 16:57:57:726 KERNEL/(68242:68242): Primera conexion a kernel
+[INFO] 16:57:57:726 KERNEL/(68242:68242): Handshake OK
+[INFO] 16:57:57:726 KERNEL/(68242:68242): Kernel escuchando conexiones...
+[INFO] 17:03:37:347 KERNEL/(68957:68957): Primera conexion a kernel
+[ERROR] 17:03:37:347 KERNEL/(68957:68957): Handshake rechazado
+[INFO] 17:03:49:350 KERNEL/(69025:69025): Primera conexion a kernel
+[INFO] 17:03:49:350 KERNEL/(69025:69025): Handshake OK
+[INFO] 17:03:49:350 KERNEL/(69025:69025): Kernel escuchando conexiones...
+[INFO] 17:09:02:478 KERNEL/(69658:69658): Primera conexion a kernel
+[INFO] 17:10:23:070 KERNEL/(70125:70125): Primera conexion a kernel
+[INFO] 17:10:31:287 KERNEL/(70168:70168): Primera conexion a Filesystem
+[INFO] 17:11:02:487 KERNEL/(70254:70254): Primera conexion a Filesystem
+[INFO] 17:11:44:988 KERNEL/(70369:70369): Primera conexion a Filesystem
+[INFO] 17:12:15:216 KERNEL/(70411:70411): Primera conexion a Filesystem
+[INFO] 17:14:33:352 KERNEL/(70619:70619): Creada conexion a Filesystem
+[INFO] 17:14:45:819 KERNEL/(70664:70664): Creada conexion a Filesystem
+[INFO] 17:15:52:349 KERNEL/(70664:70664): Handshake OK
+[INFO] 17:15:52:350 KERNEL/(70664:70664): Kernel escuchando conexiones...
+[INFO] 17:18:39:313 KERNEL/(72067:72067): Creada conexion a Filesystem
+[INFO] 17:18:39:313 KERNEL/(72067:72067): Handshake OK
+[INFO] 17:18:39:313 KERNEL/(72067:72067): Kernel escuchando conexiones...
+[ERROR] 17:20:05:984 KERNEL/(72310:72310): Error creando la conexion para 127.0.0.1:35604
+[ERROR] 17:20:05:984 KERNEL/(72310:72310): No se pudo conectar al Filesystem
+[INFO] 17:20:21:979 KERNEL/(72315:72315): Creada conexion a Filesystem
+[INFO] 17:20:21:980 KERNEL/(72315:72315): Handshake OK
+[INFO] 17:20:21:980 KERNEL/(72315:72315): Primera conexion a CPU
+[INFO] 17:20:21:980 KERNEL/(72315:72315): Handshake OK
+[INFO] 17:20:21:980 KERNEL/(72315:72315): Primera conexion a Memoria
+[INFO] 17:20:21:980 KERNEL/(72315:72315): Handshake OK
+[INFO] 17:20:21:980 KERNEL/(72315:72315): Kernel escuchando conexiones...
+[INFO] 17:20:32:244 KERNEL/(72315:72315): Se conecto un cliente!
+[INFO] 17:20:32:245 KERNEL/(72315:72318): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:20:36:199 KERNEL/(72315:72318): Cliente desconectado!
+[WARNING] 17:20:36:199 KERNEL/(72315:72318): El cliente se desconecto del server
+[INFO] 17:27:54:262 KERNEL/(73523:73523): Creada conexion a Filesystem
+[INFO] 17:27:54:263 KERNEL/(73523:73523): Handshake OK
+[INFO] 17:27:54:263 KERNEL/(73523:73523): Primera conexion a CPU
+[INFO] 17:27:54:263 KERNEL/(73523:73523): Handshake OK
+[INFO] 17:27:54:263 KERNEL/(73523:73523): Primera conexion a Memoria
+[INFO] 17:27:54:263 KERNEL/(73523:73523): Handshake OK
+[INFO] 17:27:54:263 KERNEL/(73523:73523): Kernel escuchando conexiones...
+[INFO] 17:27:59:722 KERNEL/(73523:73523): Se conecto un cliente!
+[INFO] 17:27:59:722 KERNEL/(73523:73526): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:28:02:034 KERNEL/(73523:73526): Cliente desconectado!
+[WARNING] 17:28:02:034 KERNEL/(73523:73526): El cliente se desconecto del server

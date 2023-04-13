@@ -1,0 +1,41 @@
+[INFO] 16:33:56:483 MEMORIA/(63642:63642): Kernel escuchando conexiones...
+[INFO] 16:34:31:991 MEMORIA/(63773:63773): Memoria escuchando conexiones...
+[INFO] 16:35:49:699 MEMORIA/(64163:64163): Memoria escuchando conexiones...
+[INFO] 16:35:51:761 MEMORIA/(64163:64163): Se conecto un cliente!
+[INFO] 16:35:51:762 MEMORIA/(64163:64184): Recibido handshake HANDSHAKE_CPU.
+[INFO] 17:08:14:525 MEMORIA/(69552:69552): Memoria escuchando conexiones...
+[INFO] 17:08:29:629 MEMORIA/(69552:69552): Se conecto un cliente!
+[INFO] 17:08:29:629 MEMORIA/(69552:69634): Recibido handshake HANDSHAKE_CPU.
+[WARNING] 17:15:01:561 MEMORIA/(69552:69634): Cliente desconectado!
+[WARNING] 17:15:01:561 MEMORIA/(69552:69634): El cliente se desconecto del server
+[INFO] 17:15:07:996 MEMORIA/(69552:69552): Se conecto un cliente!
+[INFO] 17:15:07:996 MEMORIA/(69552:70722): Recibido handshake HANDSHAKE_CPU.
+[WARNING] 17:15:13:997 MEMORIA/(69552:70722): Cliente desconectado!
+[WARNING] 17:15:13:997 MEMORIA/(69552:70722): El cliente se desconecto del server
+[INFO] 17:17:59:784 MEMORIA/(71974:71974): Memoria escuchando conexiones...
+[INFO] 17:18:06:740 MEMORIA/(71974:71974): Se conecto un cliente!
+[INFO] 17:18:06:740 MEMORIA/(71974:71978): Recibido handshake HANDSHAKE_CPU.
+[WARNING] 17:19:17:307 MEMORIA/(71974:71978): Cliente desconectado!
+[WARNING] 17:19:17:307 MEMORIA/(71974:71978): El cliente se desconecto del server
+[INFO] 17:19:53:968 MEMORIA/(72292:72292): Memoria escuchando conexiones...
+[INFO] 17:19:57:724 MEMORIA/(72292:72292): Se conecto un cliente!
+[INFO] 17:19:57:724 MEMORIA/(72292:72308): Recibido handshake HANDSHAKE_CPU.
+[INFO] 17:20:21:980 MEMORIA/(72292:72292): Se conecto un cliente!
+[INFO] 17:20:21:980 MEMORIA/(72292:72316): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 17:24:50:972 MEMORIA/(72292:72316): Cliente desconectado!
+[WARNING] 17:24:50:972 MEMORIA/(72292:72316): El cliente se desconecto del server
+[WARNING] 17:24:51:340 MEMORIA/(72292:72308): Cliente desconectado!
+[WARNING] 17:24:51:341 MEMORIA/(72292:72308): El cliente se desconecto del server
+[INFO] 17:27:22:624 MEMORIA/(73479:73479): Memoria escuchando conexiones...
+[INFO] 17:27:25:515 MEMORIA/(73479:73479): Se conecto un cliente!
+[INFO] 17:27:25:515 MEMORIA/(73479:73481): Recibido handshake HANDSHAKE_CPU.
+[INFO] 17:27:40:177 MEMORIA/(73479:73479): Se conecto un cliente!
+[INFO] 17:27:40:177 MEMORIA/(73479:73486): Recibido handshake HANDSHAKE_FILESYSTEM.
+[INFO] 17:27:54:263 MEMORIA/(73479:73479): Se conecto un cliente!
+[INFO] 17:27:54:263 MEMORIA/(73479:73524): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 17:28:05:495 MEMORIA/(73479:73524): Cliente desconectado!
+[WARNING] 17:28:05:495 MEMORIA/(73479:73524): El cliente se desconecto del server
+[WARNING] 17:28:08:179 MEMORIA/(73479:73481): Cliente desconectado!
+[WARNING] 17:28:08:179 MEMORIA/(73479:73481): El cliente se desconecto del server
+[WARNING] 17:28:08:886 MEMORIA/(73479:73486): Cliente desconectado!
+[WARNING] 17:28:08:886 MEMORIA/(73479:73486): El cliente se desconecto del server

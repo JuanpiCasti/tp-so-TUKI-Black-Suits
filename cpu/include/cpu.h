@@ -6,4 +6,5 @@
 #include <stdbool.h>
 #include "shared_utils.h"
 #include "tests.h"
+#include "comunicacion.h"
 #endif
