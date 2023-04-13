@@ -24,3 +24,18 @@
 [INFO] 17:27:54:263 CPU/(73480:73480): Recibido handshake HANDSHAKE_KERNEL.
 [WARNING] 17:28:05:495 CPU/(73480:73480): Cliente desconectado!
 [WARNING] 17:28:05:495 CPU/(73480:73480): El cliente se desconecto del server
+[INFO] 22:01:01:994 CPU/(7112:7112): Conexión establecida con Kernel
+[INFO] 22:01:01:997 CPU/(7112:7112): Handshake OK
+[INFO] 22:01:01:998 CPU/(7112:7112): CPU escuchando conexiones...
+[INFO] 22:03:19:725 CPU/(7553:7553): Conexión establecida con Memoria
+[INFO] 22:03:19:728 CPU/(7553:7553): Handshake OK
+[INFO] 22:03:19:729 CPU/(7553:7553): CPU escuchando conexiones...
+[INFO] 22:04:34:236 CPU/(7553:7553): Se conecto un cliente!
+[INFO] 22:04:34:237 CPU/(7553:7553): Recibido handshake HANDSHAKE_KERNEL.
+[INFO] 22:09:51:599 CPU/(8587:8587): Conexión establecida con Memoria
+[INFO] 22:09:51:602 CPU/(8587:8587): Handshake OK
+[INFO] 22:09:51:603 CPU/(8587:8587): CPU escuchando conexiones...
+[INFO] 22:10:22:715 CPU/(8587:8587): Se conecto un cliente!
+[INFO] 22:10:22:716 CPU/(8587:8587): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:12:09:030 CPU/(8587:8587): Cliente desconectado!
+[WARNING] 22:12:09:030 CPU/(8587:8587): El cliente se desconecto del server

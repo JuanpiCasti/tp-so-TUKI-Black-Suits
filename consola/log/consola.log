@@ -1,57 +1,6 @@
-[ERROR] 15:24:13:192 CONSOLA/(51774:51774): Error creando la conexion para 127.0.0.1:35601
-[ERROR] 15:24:13:193 CONSOLA/(51774:51774): No se pudo conectar al kernel
-[INFO] 15:24:34:347 CONSOLA/(51825:51825): Primera conexion a kernel
-[INFO] 15:24:34:347 CONSOLA/(51825:51825): Handshake OK
-[INFO] 15:26:08:648 CONSOLA/(51979:51979): Primera conexion a kernel
-[INFO] 15:26:08:649 CONSOLA/(51979:51979): Handshake OK
-[ERROR] 15:29:22:104 CONSOLA/(52402:52402): Error creando la conexion para 127.0.0.1:35601
-[ERROR] 15:29:22:104 CONSOLA/(52402:52402): No se pudo conectar al kernel
-[INFO] 15:29:37:858 CONSOLA/(52457:52457): Primera conexion a kernel
-[INFO] 15:29:37:858 CONSOLA/(52457:52457): Handshake OK
-[INFO] 15:29:41:349 CONSOLA/(52488:52488): Primera conexion a kernel
-[INFO] 15:29:41:350 CONSOLA/(52488:52488): Handshake OK
-[INFO] 15:31:40:326 CONSOLA/(52824:52824): Primera conexion a kernel
-[ERROR] 15:31:40:326 CONSOLA/(52824:52824): Handshake rechazado
-[ERROR] 15:32:26:812 CONSOLA/(52998:52998): Error creando la conexion para 127.0.0.1:35601
-[ERROR] 15:32:26:812 CONSOLA/(52998:52998): No se pudo conectar al kernel
-[ERROR] 15:32:36:685 CONSOLA/(53028:53028): Error creando la conexion para 127.0.0.1:35601
-[ERROR] 15:32:36:685 CONSOLA/(53028:53028): No se pudo conectar al kernel
-[ERROR] 15:33:03:467 CONSOLA/(53097:53097): Error creando la conexion para 127.0.0.1:35601
-[ERROR] 15:33:03:467 CONSOLA/(53097:53097): No se pudo conectar al kernel
-[ERROR] 15:33:05:540 CONSOLA/(53129:53129): Error creando la conexion para 127.0.0.1:35601
-[ERROR] 15:33:05:540 CONSOLA/(53129:53129): No se pudo conectar al kernel
-[INFO] 15:33:49:487 CONSOLA/(53324:53324): Primera conexion a kernel
-[INFO] 15:33:49:487 CONSOLA/(53324:53324): Handshake OK
-[ERROR] 15:35:38:543 CONSOLA/(53609:53609): Error creando la conexion para 127.0.0.1:35601
-[ERROR] 15:35:38:543 CONSOLA/(53609:53609): No se pudo conectar al kernel
-[ERROR] 15:36:10:054 CONSOLA/(53662:53662): Error creando la conexion para 127.0.0.1:35601
-[ERROR] 15:36:10:054 CONSOLA/(53662:53662): No se pudo conectar al kernel
-[ERROR] 15:36:14:763 CONSOLA/(53669:53669): Error creando la conexion para 127.0.0.1:35601
-[ERROR] 15:36:14:763 CONSOLA/(53669:53669): No se pudo conectar al kernel
-[ERROR] 15:36:30:009 CONSOLA/(53715:53715): Error creando la conexion para 127.0.0.1:35601
-[ERROR] 15:36:30:009 CONSOLA/(53715:53715): No se pudo conectar al kernel
-[ERROR] 15:36:35:506 CONSOLA/(53739:53739): Error creando la conexion para 127.0.0.1:35601
-[ERROR] 15:36:35:507 CONSOLA/(53739:53739): No se pudo conectar al kernel
-[ERROR] 15:36:40:176 CONSOLA/(53767:53767): Error creando la conexion para 127.0.0.1:35601
-[ERROR] 15:36:40:176 CONSOLA/(53767:53767): No se pudo conectar al kernel
-[INFO] 15:37:10:592 CONSOLA/(53980:53980): Primera conexion a kernel
-[ERROR] 15:37:10:592 CONSOLA/(53980:53980): Handshake rechazado
-[INFO] 15:37:33:768 CONSOLA/(54083:54083): Primera conexion a kernel
-[ERROR] 15:37:33:768 CONSOLA/(54083:54083): Handshake rechazado
-[INFO] 15:37:39:052 CONSOLA/(54137:54137): Primera conexion a kernel
-[INFO] 15:37:39:052 CONSOLA/(54137:54137): Handshake OK
-[ERROR] 15:41:17:924 CONSOLA/(54377:54377): No se pudo conectar al kernel
-[ERROR] 15:41:24:374 CONSOLA/(54439:54439): No se pudo conectar al kernel
-[ERROR] 15:41:34:378 CONSOLA/(54484:54484): No se pudo conectar al kernel
-[INFO] 15:41:37:702 CONSOLA/(54525:54525): Primera conexion a kernel
-[ERROR] 15:41:37:702 CONSOLA/(54525:54525): Handshake rechazado
-[INFO] 16:05:19:062 CONSOLA/(58726:58726): Primera conexion a kernel
-[ERROR] 16:05:19:062 CONSOLA/(58726:58726): Handshake rechazado
-[INFO] 16:05:54:414 CONSOLA/(58903:58903): Primera conexion a kernel
-[INFO] 16:05:54:415 CONSOLA/(58903:58903): Handshake OK
-[INFO] 16:45:07:186 CONSOLA/(65561:65561): Primera conexion a kernel
-[INFO] 16:45:07:186 CONSOLA/(65561:65561): Handshake OK
-[INFO] 17:20:32:244 CONSOLA/(72317:72317): Primera conexion a kernel
-[INFO] 17:20:32:245 CONSOLA/(72317:72317): Handshake OK
-[INFO] 17:27:59:722 CONSOLA/(73525:73525): Primera conexion a kernel
-[INFO] 17:27:59:722 CONSOLA/(73525:73525): Handshake OK
+[INFO] 22:04:49:042 CONSOLA/(7856:7856): Conexión establecida con Kernel
+[ERROR] 22:04:49:045 CONSOLA/(7856:7856): Handshake rechazado
+[INFO] 22:05:31:379 CONSOLA/(7918:7918): Conexión establecida con Kernel
+[ERROR] 22:05:31:384 CONSOLA/(7918:7918): Handshake rechazado
+[INFO] 22:11:00:048 CONSOLA/(8872:8872): Conexión establecida con Kernel
+[INFO] 22:11:00:052 CONSOLA/(8872:8872): Handshake OK

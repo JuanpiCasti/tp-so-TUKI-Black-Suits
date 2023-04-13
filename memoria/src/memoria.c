@@ -1,6 +1,6 @@
 #include "memoria.h"
 
-t_log* logger_memoria;
+t_log *logger_memoria;
 int socket_servidor_memoria;
 
 int main(int argc, char **argv)
@@ -10,7 +10,7 @@ int main(int argc, char **argv)
 		run_tests();
 	}
 	else
-	{	
+	{
 		logger_memoria = log_create("./log/memoria.log", "MEMORIA", true, LOG_LEVEL_INFO);
 
 		t_config *config_memoria = config_create("./cfg/memoria.config");
@@ -22,20 +22,17 @@ int main(int argc, char **argv)
 		// char *retardo_compactacion = config_get_string_value(config_memoria, "RETARDO_COMPACTACION");
 		// char *algoritmo_asignacion = config_get_string_value(config_memoria, "ALGORITMO_ASIGNACION");
 
-		
-	
+
+		//*********************
+		//SERVIDOR
 		socket_servidor_memoria = iniciar_servidor(logger_memoria, puerto_escucha_memoria);
-		
-		if (socket_servidor_memoria == -1) {
-			log_error(logger_memoria, "No se pudo iniciar el servidor en la memoria...");
+		if (socket_servidor_memoria == -1)
+		{
+			log_error(logger_memoria, "No se pudo iniciar el servidor en Memoria...");
 			return EXIT_FAILURE;
 		}
-
 		log_info(logger_memoria, "Memoria escuchando conexiones...");
-		while(server_escuchar(logger_memoria, socket_servidor_memoria));
-
-
+		while (server_escuchar(logger_memoria, socket_servidor_memoria));
 		return EXIT_SUCCESS;
 	}
 }
-

@@ -1,5 +1,6 @@
 #ifndef KERNEL_H
 #define KERNEL_H
+
 #include <stdio.h>
 #include <commons/log.h>
 #include <commons/config.h>
@@ -7,4 +8,5 @@
 #include "shared_utils.h"
 #include "tests.h"
 #include "comunicacion.h"
+
 #endif

@@ -39,3 +39,30 @@
 [WARNING] 17:28:08:179 MEMORIA/(73479:73481): El cliente se desconecto del server
 [WARNING] 17:28:08:886 MEMORIA/(73479:73486): Cliente desconectado!
 [WARNING] 17:28:08:886 MEMORIA/(73479:73486): El cliente se desconecto del server
+[INFO] 22:00:47:534 MEMORIA/(7090:7090): Memoria escuchando conexiones...
+[INFO] 22:01:01:994 MEMORIA/(7090:7090): Se conecto un cliente!
+[INFO] 22:01:01:997 MEMORIA/(7090:7113): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:01:23:978 MEMORIA/(7090:7113): Cliente desconectado!
+[WARNING] 22:01:23:978 MEMORIA/(7090:7113): El cliente se desconecto del server
+[INFO] 22:03:10:089 MEMORIA/(7504:7504): Memoria escuchando conexiones...
+[INFO] 22:03:19:720 MEMORIA/(7504:7504): Se conecto un cliente!
+[INFO] 22:03:19:727 MEMORIA/(7504:7554): Recibido handshake HANDSHAKE_KERNEL.
+[INFO] 22:03:45:442 MEMORIA/(7504:7504): Se conecto un cliente!
+[INFO] 22:03:45:444 MEMORIA/(7504:7647): Recibido handshake HANDSHAKE_KERNEL.
+[INFO] 22:04:34:238 MEMORIA/(7504:7504): Se conecto un cliente!
+[INFO] 22:04:34:249 MEMORIA/(7504:7729): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:07:43:168 MEMORIA/(7504:7554): Cliente desconectado!
+[WARNING] 22:07:43:168 MEMORIA/(7504:7554): El cliente se desconecto del server
+[WARNING] 22:07:50:155 MEMORIA/(7504:7647): Cliente desconectado!
+[WARNING] 22:07:50:155 MEMORIA/(7504:7647): El cliente se desconecto del server
+[WARNING] 22:07:54:400 MEMORIA/(7504:7729): Cliente desconectado!
+[WARNING] 22:07:54:400 MEMORIA/(7504:7729): El cliente se desconecto del server
+[INFO] 22:09:46:485 MEMORIA/(8565:8565): Memoria escuchando conexiones...
+[INFO] 22:09:51:594 MEMORIA/(8565:8565): Se conecto un cliente!
+[INFO] 22:09:51:601 MEMORIA/(8565:8588): Recibido handshake HANDSHAKE_CPU.
+[INFO] 22:10:01:145 MEMORIA/(8565:8565): Se conecto un cliente!
+[INFO] 22:10:01:153 MEMORIA/(8565:8665): Recibido handshake HANDSHAKE_FILESYSTEM.
+[INFO] 22:10:22:717 MEMORIA/(8565:8565): Se conecto un cliente!
+[INFO] 22:10:22:721 MEMORIA/(8565:8736): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:12:09:030 MEMORIA/(8565:8736): Cliente desconectado!
+[WARNING] 22:12:09:030 MEMORIA/(8565:8736): El cliente se desconecto del server

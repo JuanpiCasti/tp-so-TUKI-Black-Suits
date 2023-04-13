@@ -117,3 +117,29 @@
 [INFO] 17:27:59:722 KERNEL/(73523:73526): Recibido handshake HANDSHAKE_CONSOLA.
 [WARNING] 17:28:02:034 KERNEL/(73523:73526): Cliente desconectado!
 [WARNING] 17:28:02:034 KERNEL/(73523:73526): El cliente se desconecto del server
+[INFO] 22:04:34:234 KERNEL/(7728:7728): Conexión establecida con Filesystem
+[INFO] 22:04:34:235 KERNEL/(7728:7728): Handshake OK
+[INFO] 22:04:34:236 KERNEL/(7728:7728): Conexión establecida con CPU
+[INFO] 22:04:34:237 KERNEL/(7728:7728): Handshake OK
+[INFO] 22:04:34:238 KERNEL/(7728:7728): Conexión establecida con Memoria
+[INFO] 22:04:34:250 KERNEL/(7728:7728): Handshake OK
+[INFO] 22:04:34:251 KERNEL/(7728:7728): Kernel escuchando conexiones...
+[INFO] 22:04:49:038 KERNEL/(7728:7728): Se conecto un cliente!
+[ERROR] 22:04:49:044 KERNEL/(7728:7857): Recibido handshake de un modulo no autorizado, rechazando...
+[WARNING] 22:04:49:047 KERNEL/(7728:7857): Cliente desconectado!
+[WARNING] 22:04:49:048 KERNEL/(7728:7857): El cliente se desconecto del server
+[INFO] 22:05:31:376 KERNEL/(7728:7728): Se conecto un cliente!
+[ERROR] 22:05:31:382 KERNEL/(7728:7919): Recibido handshake de un modulo no autorizado, rechazando...
+[WARNING] 22:05:31:388 KERNEL/(7728:7919): Cliente desconectado!
+[WARNING] 22:05:31:389 KERNEL/(7728:7919): El cliente se desconecto del server
+[INFO] 22:10:22:710 KERNEL/(8735:8735): Conexión establecida con Filesystem
+[INFO] 22:10:22:713 KERNEL/(8735:8735): Handshake OK
+[INFO] 22:10:22:715 KERNEL/(8735:8735): Conexión establecida con CPU
+[INFO] 22:10:22:716 KERNEL/(8735:8735): Handshake OK
+[INFO] 22:10:22:717 KERNEL/(8735:8735): Conexión establecida con Memoria
+[INFO] 22:10:22:722 KERNEL/(8735:8735): Handshake OK
+[INFO] 22:10:22:723 KERNEL/(8735:8735): Kernel escuchando conexiones...
+[INFO] 22:11:00:043 KERNEL/(8735:8735): Se conecto un cliente!
+[INFO] 22:11:00:051 KERNEL/(8735:8873): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 22:11:57:672 KERNEL/(8735:8873): Cliente desconectado!
+[WARNING] 22:11:57:673 KERNEL/(8735:8873): El cliente se desconecto del server
