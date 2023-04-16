@@ -40,7 +40,7 @@ void procesar_conexion(void *void_args)
     return;
 }
 
-int server_escuchar(t_log *logger, int server_socket)
+int server_escuchar(t_log *logger, t_config* config, int server_socket)
 {
     int cliente_socket = esperar_cliente(logger, server_socket);
 
@@ -49,6 +49,7 @@ int server_escuchar(t_log *logger, int server_socket)
         pthread_t hilo;
         t_conexion *args = malloc(sizeof(t_conexion));
         args->log = logger;
+        args->config = config;
         args->socket = cliente_socket;
         pthread_create(&hilo, NULL, (void *)procesar_conexion, (void *)args);
         pthread_detach(hilo);

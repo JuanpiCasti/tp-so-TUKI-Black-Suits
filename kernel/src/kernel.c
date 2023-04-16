@@ -1,6 +1,7 @@
 #include "kernel.h"
 
 t_log *logger_kernel;
+t_config *config_kernel;
 int socket_servidor_kernel;
 int socket_filesystem;
 int socket_cpu;
@@ -17,12 +18,6 @@ int main(int argc, char **argv)
 		logger_kernel = log_create("./log/kernel.log", "KERNEL", true, LOG_LEVEL_INFO);
 
 		t_config *config_kernel = config_create("./cfg/kernel.config");
-		char *ip_memoria = config_get_string_value(config_kernel, "IP_MEMORIA");
-		char *puerto_memoria = config_get_string_value(config_kernel, "PUERTO_MEMORIA");
-		char *ip_filesystem = config_get_string_value(config_kernel, "IP_FILESYSTEM");
-		char *puerto_filesystem = config_get_string_value(config_kernel, "PUERTO_FILESYSTEM");
-		char *ip_cpu = config_get_string_value(config_kernel, "IP_CPU");
-		char *puerto_cpu = config_get_string_value(config_kernel, "PUERTO_CPU");
 		char *puerto_escucha_kernel = config_get_string_value(config_kernel, "PUERTO_ESCUCHA");
 		// char* algoritmo_planificacion = config_get_string_value(config_kernel, "ALGORITMO_PLANIFICACION");
 		// char* estimacion_inicial = config_get_string_value(config_kernel, "ESTIMACION_INICIAL");
@@ -31,26 +26,30 @@ int main(int argc, char **argv)
 		// char* recursos = config_get_string_value(config_kernel, "RECURSOS");
 		// char* instancias_recursos = config_get_string_value(config_kernel, "INSTANCIAS_RECURSOS");
 
+
+		char *ip_memoria = config_get_string_value(config_kernel, "IP_MEMORIA");
+		char *puerto_memoria = config_get_string_value(config_kernel, "PUERTO_MEMORIA");
+		char *ip_filesystem = config_get_string_value(config_kernel, "IP_FILESYSTEM");
+		char *puerto_filesystem = config_get_string_value(config_kernel, "PUERTO_FILESYSTEM");
+		char *ip_cpu = config_get_string_value(config_kernel, "IP_CPU");
+		char *puerto_cpu = config_get_string_value(config_kernel, "PUERTO_CPU");
+
 		//*********************
-		// CLIENTE - FILESYSTEM
-		socket_filesystem = conectar_servidor(logger_kernel, ip_filesystem, puerto_filesystem, "Filesystem", HANDSHAKE_KERNEL, config_kernel);
-		if (socket_filesystem == -1)
+		// HANDSHAKE - FILESYSTEM
+		if (realizar_handshake(logger_kernel, ip_filesystem, puerto_filesystem, HANDSHAKE_KERNEL, "Filesystem") == -1)
 		{
 			return EXIT_FAILURE;
 		}
 
 		//*********************
-		// CLIENTE - CPU
-		socket_cpu = conectar_servidor(logger_kernel, ip_cpu, puerto_cpu, "CPU", HANDSHAKE_KERNEL, config_kernel);
-		if (socket_cpu == -1)
+		// HANDSHAKE - CPU
+		if (realizar_handshake(logger_kernel, ip_cpu, puerto_cpu, HANDSHAKE_KERNEL, "CPU") == -1)
 		{
 			return EXIT_FAILURE;
 		}
-
 		//*********************
-		// CLIENTE - MEMORIA
-		socket_memoria = conectar_servidor(logger_kernel, ip_memoria, puerto_memoria, "Memoria", HANDSHAKE_KERNEL, config_kernel);
-		if (socket_memoria == -1)
+		// HANDSHAKE - MEMORIA
+		if (realizar_handshake(logger_kernel, ip_memoria, puerto_memoria, HANDSHAKE_KERNEL, "Memoria") == -1)
 		{
 			return EXIT_FAILURE;
 		}
@@ -64,7 +63,9 @@ int main(int argc, char **argv)
 			return EXIT_FAILURE;
 		}
 		log_info(logger_kernel, "Kernel escuchando conexiones...");
-		while (server_escuchar(logger_kernel, socket_servidor_kernel));
+
+		while (server_escuchar(logger_kernel, config_kernel, socket_servidor_kernel));
+
 		return EXIT_SUCCESS;
 	}
 }

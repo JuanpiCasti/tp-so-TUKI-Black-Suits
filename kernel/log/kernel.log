@@ -143,3 +143,102 @@
 [INFO] 22:11:00:051 KERNEL/(8735:8873): Recibido handshake HANDSHAKE_CONSOLA.
 [WARNING] 22:11:57:672 KERNEL/(8735:8873): Cliente desconectado!
 [WARNING] 22:11:57:673 KERNEL/(8735:8873): El cliente se desconecto del server
+[INFO] 21:13:37:428 KERNEL/(8028:8028): Kernel escuchando conexiones...
+[INFO] 21:13:39:980 KERNEL/(8028:8028): Se conecto un cliente!
+[INFO] 21:13:39:980 KERNEL/(8028:8030): Recibido handshake HANDSHAKE_CONSOLA.
+[INFO] 21:13:39:980 KERNEL/(8028:8030): Conexión establecida con Filesystem
+[INFO] 21:13:39:980 KERNEL/(8028:8030): Handshake OK
+[INFO] 21:13:39:980 KERNEL/(8028:8030): Conexión establecida con CPU
+[INFO] 21:13:39:980 KERNEL/(8028:8030): Handshake OK
+[INFO] 21:13:39:980 KERNEL/(8028:8030): Conexión establecida con Memoria
+[INFO] 21:13:39:980 KERNEL/(8028:8030): Handshake OK
+[WARNING] 21:13:39:980 KERNEL/(8028:8030): Cliente desconectado!
+[WARNING] 21:13:39:981 KERNEL/(8028:8030): El cliente se desconecto del server
+[INFO] 21:22:41:911 KERNEL/(8028:8028): Se conecto un cliente!
+[INFO] 21:22:41:911 KERNEL/(8028:8762): Recibido handshake HANDSHAKE_CONSOLA.
+[INFO] 21:22:41:911 KERNEL/(8028:8762): Conexión establecida con Filesystem
+[INFO] 21:27:51:195 KERNEL/(8028:8028): Se conecto un cliente!
+[INFO] 21:27:51:195 KERNEL/(8028:9024): Recibido handshake HANDSHAKE_CONSOLA.
+[INFO] 21:27:51:195 KERNEL/(8028:9024): Conexión establecida con Filesystem
+[INFO] 21:27:58:125 KERNEL/(8028:8028): Se conecto un cliente!
+[INFO] 21:27:58:125 KERNEL/(8028:9026): Recibido handshake HANDSHAKE_CONSOLA.
+[INFO] 21:27:58:125 KERNEL/(8028:9026): Conexión establecida con Filesystem
+[INFO] 21:28:00:338 KERNEL/(8028:8028): Se conecto un cliente!
+[INFO] 21:28:00:338 KERNEL/(8028:9028): Recibido handshake HANDSHAKE_CONSOLA.
+[INFO] 21:28:00:338 KERNEL/(8028:9028): Conexión establecida con Filesystem
+[INFO] 21:28:01:432 KERNEL/(8028:8028): Se conecto un cliente!
+[INFO] 21:28:01:432 KERNEL/(8028:9030): Recibido handshake HANDSHAKE_CONSOLA.
+[INFO] 21:28:01:432 KERNEL/(8028:9030): Conexión establecida con Filesystem
+[INFO] 21:50:56:226 KERNEL/(11436:11436): Kernel escuchando conexiones...
+[INFO] 21:51:02:110 KERNEL/(11436:11436): Se conecto un cliente!
+[INFO] 21:51:02:110 KERNEL/(11436:11439): Recibido handshake HANDSHAKE_CONSOLA.
+[INFO] 21:52:10:881 KERNEL/(11484:11484): Kernel escuchando conexiones...
+[INFO] 21:52:13:309 KERNEL/(11484:11484): Se conecto un cliente!
+[INFO] 21:52:13:309 KERNEL/(11484:11486): Recibido handshake HANDSHAKE_CONSOLA.
+[INFO] 21:52:13:310 KERNEL/(11484:11486): Conexión establecida con Filesystem
+[INFO] 21:52:13:310 KERNEL/(11484:11486): Handshake OK
+[INFO] 21:52:13:310 KERNEL/(11484:11486): Conexión establecida con CPU
+[INFO] 21:52:13:310 KERNEL/(11484:11486): Handshake OK
+[INFO] 21:52:13:310 KERNEL/(11484:11486): Conexión establecida con Memoria
+[INFO] 21:52:13:310 KERNEL/(11484:11486): Handshake OK
+[WARNING] 21:52:13:310 KERNEL/(11484:11486): Cliente desconectado!
+[WARNING] 21:52:13:310 KERNEL/(11484:11486): El cliente se desconecto del server
+[INFO] 21:52:32:215 KERNEL/(11484:11484): Se conecto un cliente!
+[INFO] 21:52:32:215 KERNEL/(11484:11496): Recibido handshake HANDSHAKE_CONSOLA.
+[INFO] 21:52:32:216 KERNEL/(11484:11496): Conexión establecida con Filesystem
+[INFO] 21:52:32:216 KERNEL/(11484:11496): Handshake OK
+[INFO] 21:52:32:216 KERNEL/(11484:11496): Conexión establecida con CPU
+[INFO] 21:52:32:216 KERNEL/(11484:11496): Handshake OK
+[INFO] 21:52:32:216 KERNEL/(11484:11496): Conexión establecida con Memoria
+[INFO] 21:52:32:216 KERNEL/(11484:11496): Handshake OK
+[WARNING] 21:52:32:216 KERNEL/(11484:11496): Cliente desconectado!
+[WARNING] 21:52:32:216 KERNEL/(11484:11496): El cliente se desconecto del server
+[INFO] 21:52:34:225 KERNEL/(11484:11484): Se conecto un cliente!
+[INFO] 21:52:34:225 KERNEL/(11484:11499): Recibido handshake HANDSHAKE_CONSOLA.
+[INFO] 21:52:34:225 KERNEL/(11484:11499): Conexión establecida con Filesystem
+[INFO] 21:52:34:225 KERNEL/(11484:11499): Handshake OK
+[INFO] 21:52:34:225 KERNEL/(11484:11499): Conexión establecida con CPU
+[INFO] 21:52:34:226 KERNEL/(11484:11499): Handshake OK
+[INFO] 21:52:34:226 KERNEL/(11484:11499): Conexión establecida con Memoria
+[INFO] 21:52:34:226 KERNEL/(11484:11499): Handshake OK
+[WARNING] 21:52:34:226 KERNEL/(11484:11499): Cliente desconectado!
+[WARNING] 21:52:34:226 KERNEL/(11484:11499): El cliente se desconecto del server
+[ERROR] 21:58:03:937 KERNEL/(11845:11845): Error creando la conexion para 127.0.0.1:35604
+[ERROR] 21:58:03:938 KERNEL/(11845:11845): No se pudo conectar al servidor Filesystem
+[ERROR] 21:58:03:938 KERNEL/(11845:11845): No se pudo conectar al servidor del Filesystem
+[ERROR] 21:58:03:938 KERNEL/(11845:11845): Error creando la conexion para 127.0.0.1:35602
+[ERROR] 21:58:03:938 KERNEL/(11845:11845): No se pudo conectar al servidor CPU
+[ERROR] 21:58:03:938 KERNEL/(11845:11845): No se pudo conectar al servidor del CPU
+[ERROR] 21:58:03:938 KERNEL/(11845:11845): Error creando la conexion para 127.0.0.1:35603
+[ERROR] 21:58:03:938 KERNEL/(11845:11845): No se pudo conectar al servidor Memoria
+[ERROR] 21:58:03:938 KERNEL/(11845:11845): No se pudo conectar al servidor del Memoria
+[INFO] 21:58:03:938 KERNEL/(11845:11845): Kernel escuchando conexiones...
+[INFO] 21:58:23:350 KERNEL/(11862:11862): Conexión establecida con Filesystem
+[INFO] 21:58:23:351 KERNEL/(11862:11862): Handshake OK
+[INFO] 21:58:23:351 KERNEL/(11862:11862): Conexión establecida con CPU
+[INFO] 21:58:23:351 KERNEL/(11862:11862): Handshake OK
+[INFO] 21:58:23:351 KERNEL/(11862:11862): Conexión establecida con Memoria
+[INFO] 21:58:23:351 KERNEL/(11862:11862): Handshake OK
+[INFO] 21:58:23:351 KERNEL/(11862:11862): Kernel escuchando conexiones...
+[INFO] 22:11:30:575 KERNEL/(13879:13879): Conexión establecida con Filesystem
+[INFO] 22:12:34:179 KERNEL/(13995:13995): Conexión establecida con Filesystem
+[INFO] 22:12:37:961 KERNEL/(13998:13998): Conexión establecida con Filesystem
+[INFO] 22:12:59:123 KERNEL/(14035:14035): Conexión establecida con CPU
+[INFO] 22:13:54:858 KERNEL/(14101:14101): Conexión establecida con CPU
+[INFO] 22:14:14:516 KERNEL/(14155:14155): Conexión establecida con Filesystem
+[INFO] 22:14:33:806 KERNEL/(14206:14206): Conexión establecida con Filesystem
+[INFO] 22:14:51:033 KERNEL/(14227:14227): Conexión establecida con Filesystem
+[INFO] 22:15:04:819 KERNEL/(14242:14242): Conexión establecida con Filesystem
+[INFO] 22:17:36:631 KERNEL/(14546:14546): Conexión establecida con Filesystem
+[INFO] 22:17:49:706 KERNEL/(14560:14560): Conexión establecida con Filesystem
+[INFO] 22:20:42:633 KERNEL/(14829:14829): Conexión establecida con Filesystem
+[INFO] 22:20:42:634 KERNEL/(14829:14829): Handshake OK
+[INFO] 22:20:42:634 KERNEL/(14829:14829): Conexión establecida con CPU
+[INFO] 22:20:42:634 KERNEL/(14829:14829): Handshake OK
+[INFO] 22:20:42:634 KERNEL/(14829:14829): Conexión establecida con Memoria
+[INFO] 22:20:42:634 KERNEL/(14829:14829): Handshake OK
+[INFO] 22:20:42:634 KERNEL/(14829:14829): Kernel escuchando conexiones...
+[INFO] 22:20:56:458 KERNEL/(14829:14829): Se conecto un cliente!
+[INFO] 22:20:56:458 KERNEL/(14829:14834): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 22:20:56:458 KERNEL/(14829:14834): Cliente desconectado!
+[WARNING] 22:20:56:458 KERNEL/(14829:14834): El cliente se desconecto del server

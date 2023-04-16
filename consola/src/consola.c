@@ -23,6 +23,15 @@ int main(int argc, char **argv)
             return EXIT_FAILURE;
         }
 
+        if (enviar_handshake(logger_consola, socket_kernel,HANDSHAKE_CONSOLA) == -1) {
+            terminar_programa(logger_consola, config_consola);
+            close(socket_kernel);
+            return EXIT_FAILURE;
+        }
+
+        terminar_programa(logger_consola, config_consola);
+        close(socket_kernel);
+        
         return EXIT_SUCCESS;
     }
 }

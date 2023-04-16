@@ -24,16 +24,18 @@ typedef enum
 typedef struct
 {
 	t_log *log;
+	t_config *config;
 	int socket;
 } t_conexion;
 
 int iniciar_servidor(t_log *logger, char *puerto);
 int esperar_cliente(t_log *logger, int socket_servidor);
 int crear_conexion(t_log *logger, char *ip, char *puerto);
-void terminar_programa(t_log *logger, int conexion, t_config *config);
+void terminar_programa(t_log *logger, t_config *config);
 int enviar_handshake(t_log *logger, int socket_cliente, cod_op handshake);
+int realizar_handshake(t_log *logger, char* ip_servidor, char* puerto_servidor, cod_op handshake, char* tipo_servidor);
 void aceptar_handshake(t_log *logger, int socket_cliente, cod_op cop);
 void rechazar_handshake(t_log *logger, int socket_cliente);
-int conectar_servidor(t_log *logger, char *ip, char *puerto, char *tipo_servidor, cod_op tipo_handshake, t_config *config);
+int conectar_servidor(t_log *logger, char *ip, char *puerto, char *tipo_servidor);
 
 #endif

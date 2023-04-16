@@ -75,10 +75,9 @@ int crear_conexion(t_log *logger, char *ip, char *puerto)
 	return socket_cliente;
 }
 
-void terminar_programa(t_log *logger, int conexion, t_config *config)
+void terminar_programa(t_log *logger, t_config *config)
 {
 	log_destroy(logger);
-	close(conexion);
 	config_destroy(config);
 }
 
@@ -100,6 +99,24 @@ int enviar_handshake(t_log *logger, int socket_cliente, cod_op handshake)
 	return resultado;
 }
 
+int realizar_handshake(t_log *logger, char * ip_servidor, char* puerto_servidor, cod_op handshake, char* tipo_servidor) {
+	int socket_servidor = conectar_servidor(logger, ip_servidor, puerto_servidor, tipo_servidor);
+	if (socket_servidor == -1)
+	{	
+		log_error(logger, "No se pudo conectar al servidor del %s", tipo_servidor);
+		return 0;
+	}
+
+	if (enviar_handshake(logger, socket_servidor,handshake) == -1) {
+		close(socket_servidor);
+		return -1;
+	}
+	printf("Hola papu\n");
+
+	close(socket_servidor);
+	return 0;
+}
+
 void aceptar_handshake(t_log *logger, int socket_cliente, cod_op cop)
 {
 	int result_ok = 0;
@@ -114,22 +131,14 @@ void rechazar_handshake(t_log *logger, int socket_cliente)
 	send(socket_cliente, &result_error, sizeof(int), 0);
 }
 
-int conectar_servidor(t_log *logger, char *ip, char *puerto, char *tipo_servidor, cod_op tipo_handshake, t_config *config)
+int conectar_servidor(t_log *logger, char *ip, char *puerto, char *tipo_servidor)
 {
 	int socket_servidor = crear_conexion(logger, ip, puerto);
 	if (socket_servidor == -1)
 	{
 		log_error(logger, "No se pudo conectar al servidor %s", tipo_servidor);
-		terminar_programa(logger, socket_servidor, config);
 		return -1;
 	}
 	log_info(logger, "Conexión establecida con %s", tipo_servidor);
-
-	if (enviar_handshake(logger, socket_servidor, tipo_handshake) == -1)
-	{
-		terminar_programa(logger, socket_servidor, config);
-		return -1;
-	}
-
 	return socket_servidor;
 }

@@ -23,8 +23,8 @@ int main(int argc, char **argv)
 
 		//*********************
 		// CLIENTE - MEMORIA
-		socket_memoria = conectar_servidor(logger_cpu, ip_memoria, puerto_memoria, "Memoria", HANDSHAKE_CPU, config_cpu);
-		if (socket_memoria == -1)
+		// HANDSHAKE - MEMORIA
+		if (realizar_handshake(logger_cpu, ip_memoria, puerto_memoria, HANDSHAKE_CPU, "Memoria") == -1)
 		{
 			return EXIT_FAILURE;
 		}
@@ -38,7 +38,7 @@ int main(int argc, char **argv)
 			return EXIT_FAILURE;
 		}
 		log_info(logger_cpu, "CPU escuchando conexiones...");
-		while (server_escuchar(logger_cpu, socket_servidor_cpu));
+		while (server_escuchar(logger_cpu, config_cpu, socket_servidor_cpu));
 		return EXIT_SUCCESS;
 	}
 }

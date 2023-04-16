@@ -25,13 +25,11 @@ int main(int argc, char **argv)
 		// char *retardo_acceso_bloque = config_get_string_value(config_filesystem, "RETARDO_ACCESO_BLOQUE");
 
 		//*********************
-		// CLIENTE - MEMORIA
-		socket_memoria = conectar_servidor(logger_filesystem, ip_memoria, puerto_memoria, "Memoria", HANDSHAKE_FILESYSTEM, config_filesystem);
-		if (socket_memoria == -1)
+		// HANDSHAKE - MEMORIA
+		if (realizar_handshake(logger_filesystem, ip_memoria, puerto_memoria, HANDSHAKE_FILESYSTEM, "Memoria") == -1)
 		{
 			return EXIT_FAILURE;
 		}
-
 		//*********************
 		// SERVIDOR
 		socket_servidor_filesystem = iniciar_servidor(logger_filesystem, puerto_escucha_filesystem);
@@ -41,7 +39,7 @@ int main(int argc, char **argv)
 			return EXIT_FAILURE;
 		}
 		log_info(logger_filesystem, "Filesystem escuchando conexiones...");
-		while (server_escuchar(logger_filesystem, socket_servidor_filesystem));
+		while (server_escuchar(logger_filesystem, config_filesystem, socket_servidor_filesystem));
 		return EXIT_SUCCESS;
 	}
 }
