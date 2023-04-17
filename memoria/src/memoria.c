@@ -1,6 +1,7 @@
 #include "memoria.h"
 
 t_log *logger_memoria;
+t_config *config_memoria;
 int socket_servidor_memoria;
 
 int main(int argc, char **argv)
@@ -13,7 +14,7 @@ int main(int argc, char **argv)
 	{
 		logger_memoria = log_create("./log/memoria.log", "MEMORIA", true, LOG_LEVEL_INFO);
 
-		t_config *config_memoria = config_create("./cfg/memoria.config");
+		config_memoria = config_create("./cfg/memoria.config");
 		char *puerto_escucha_memoria = config_get_string_value(config_memoria, "PUERTO_ESCUCHA");
 		// char *tam_memoria = config_get_string_value(config_memoria, "TAM_MEMORIA");
 		// char *tam_segmento = config_get_string_value(config_memoria, "TAM_SEGMENTO_0");
@@ -22,9 +23,8 @@ int main(int argc, char **argv)
 		// char *retardo_compactacion = config_get_string_value(config_memoria, "RETARDO_COMPACTACION");
 		// char *algoritmo_asignacion = config_get_string_value(config_memoria, "ALGORITMO_ASIGNACION");
 
-
 		//*********************
-		//SERVIDOR
+		// SERVIDOR
 		socket_servidor_memoria = iniciar_servidor(logger_memoria, puerto_escucha_memoria);
 		if (socket_servidor_memoria == -1)
 		{
@@ -32,7 +32,7 @@ int main(int argc, char **argv)
 			return EXIT_FAILURE;
 		}
 		log_info(logger_memoria, "Memoria escuchando conexiones...");
-		while (server_escuchar(logger_memoria, config_memoria, socket_servidor_memoria));
+		while (server_escuchar(logger_memoria, config_memoria, socket_servidor_memoria, (void *)procesar_conexion));
 		return EXIT_SUCCESS;
 	}
 }

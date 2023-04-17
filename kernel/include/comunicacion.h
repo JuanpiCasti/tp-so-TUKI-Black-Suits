@@ -3,6 +3,6 @@
 
 #include "shared_utils.h"
 
-int server_escuchar(t_log *logger, t_config* config ,int server_socket);
+void procesar_conexion(void *void_args);
 
 #endif

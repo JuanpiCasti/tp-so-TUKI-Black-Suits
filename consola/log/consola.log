@@ -1,32 +1,4 @@
-[INFO] 22:04:49:042 CONSOLA/(7856:7856): Conexión establecida con Kernel
-[ERROR] 22:04:49:045 CONSOLA/(7856:7856): Handshake rechazado
-[INFO] 22:05:31:379 CONSOLA/(7918:7918): Conexión establecida con Kernel
-[ERROR] 22:05:31:384 CONSOLA/(7918:7918): Handshake rechazado
-[INFO] 22:11:00:048 CONSOLA/(8872:8872): Conexión establecida con Kernel
-[INFO] 22:11:00:052 CONSOLA/(8872:8872): Handshake OK
-[INFO] 21:13:39:980 CONSOLA/(8029:8029): Conexión establecida con Kernel
-[INFO] 21:13:39:980 CONSOLA/(8029:8029): Handshake OK
-[INFO] 21:22:41:911 CONSOLA/(8761:8761): Conexión establecida con Kernel
-[INFO] 21:22:41:911 CONSOLA/(8761:8761): Handshake OK
-[INFO] 21:27:51:195 CONSOLA/(9023:9023): Conexión establecida con Kernel
-[INFO] 21:27:51:195 CONSOLA/(9023:9023): Handshake OK
-[INFO] 21:27:58:125 CONSOLA/(9025:9025): Conexión establecida con Kernel
-[INFO] 21:27:58:125 CONSOLA/(9025:9025): Handshake OK
-[INFO] 21:28:00:338 CONSOLA/(9027:9027): Conexión establecida con Kernel
-[INFO] 21:28:00:338 CONSOLA/(9027:9027): Handshake OK
-[INFO] 21:28:01:432 CONSOLA/(9029:9029): Conexión establecida con Kernel
-[INFO] 21:28:01:432 CONSOLA/(9029:9029): Handshake OK
-[INFO] 21:51:02:110 CONSOLA/(11438:11438): Conexión establecida con Kernel
-[INFO] 21:51:02:111 CONSOLA/(11438:11438): Handshake OK
-[ERROR] 21:52:04:274 CONSOLA/(11483:11483): Error creando la conexion para 127.0.0.1:35601
-[ERROR] 21:52:04:274 CONSOLA/(11483:11483): No se pudo conectar al servidor Kernel
-[INFO] 21:52:13:309 CONSOLA/(11485:11485): Conexión establecida con Kernel
-[INFO] 21:52:13:309 CONSOLA/(11485:11485): Handshake OK
-[INFO] 21:52:32:215 CONSOLA/(11495:11495): Conexión establecida con Kernel
-[INFO] 21:52:32:216 CONSOLA/(11495:11495): Handshake OK
-[INFO] 21:52:34:225 CONSOLA/(11498:11498): Conexión establecida con Kernel
-[INFO] 21:52:34:225 CONSOLA/(11498:11498): Handshake OK
-[ERROR] 22:11:41:012 CONSOLA/(13882:13882): Error creando la conexion para 127.0.0.1:35601
-[ERROR] 22:11:41:012 CONSOLA/(13882:13882): No se pudo conectar al servidor Kernel
-[INFO] 22:20:56:458 CONSOLA/(14833:14833): Conexión establecida con Kernel
-[INFO] 22:20:56:458 CONSOLA/(14833:14833): Handshake OK
+[INFO] 19:20:10:062 CONSOLA/(6942:6942): Conexión establecida con Kernel
+[INFO] 19:20:10:065 CONSOLA/(6942:6942): Handshake OK
+[INFO] 19:29:06:585 CONSOLA/(8322:8322): Conexión establecida con Kernel
+[INFO] 19:29:06:589 CONSOLA/(8322:8322): Handshake OK

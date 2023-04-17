@@ -1,6 +1,7 @@
 #include "filesystem.h"
 
 t_log *logger_filesystem;
+t_config *config_filesystem;
 int socket_servidor_filesystem;
 int socket_memoria;
 
@@ -14,7 +15,7 @@ int main(int argc, char **argv)
 	{
 		logger_filesystem = log_create("./log/filesystem.log", "FILESYSTEM", true, LOG_LEVEL_INFO);
 
-		t_config *config_filesystem = config_create("./cfg/filesystem.config");
+		config_filesystem = config_create("./cfg/filesystem.config");
 		char *ip_memoria = config_get_string_value(config_filesystem, "IP_MEMORIA");
 		char *puerto_memoria = config_get_string_value(config_filesystem, "PUERTO_MEMORIA");
 		char *puerto_escucha_filesystem = config_get_string_value(config_filesystem, "PUERTO_ESCUCHA");
@@ -30,6 +31,7 @@ int main(int argc, char **argv)
 		{
 			return EXIT_FAILURE;
 		}
+
 		//*********************
 		// SERVIDOR
 		socket_servidor_filesystem = iniciar_servidor(logger_filesystem, puerto_escucha_filesystem);
@@ -39,7 +41,7 @@ int main(int argc, char **argv)
 			return EXIT_FAILURE;
 		}
 		log_info(logger_filesystem, "Filesystem escuchando conexiones...");
-		while (server_escuchar(logger_filesystem, config_filesystem, socket_servidor_filesystem));
+		while (server_escuchar(logger_filesystem, config_filesystem, socket_servidor_filesystem, (void *)procesar_conexion));
 		return EXIT_SUCCESS;
 	}
 }

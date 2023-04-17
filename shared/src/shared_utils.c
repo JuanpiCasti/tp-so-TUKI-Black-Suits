@@ -81,9 +81,27 @@ void terminar_programa(t_log *logger, t_config *config)
 	config_destroy(config);
 }
 
+int server_escuchar(t_log *logger, t_config *config, int server_socket, void *(*procesar_conexion)(void *))
+{
+	int cliente_socket = esperar_cliente(logger, server_socket);
+
+	if (cliente_socket != -1)
+	{
+		pthread_t hilo;
+		t_conexion *args = malloc(sizeof(t_conexion));
+		args->log = logger;
+		args->config = config;
+		args->socket = cliente_socket;
+		pthread_create(&hilo, NULL, procesar_conexion, (void *)args);
+		pthread_detach(hilo);
+		return 1;
+	}
+
+	return 0;
+}
+
 int enviar_handshake(t_log *logger, int socket_cliente, cod_op handshake)
 {
-
 	int resultado;
 	send(socket_cliente, &handshake, sizeof(int), 0);
 	recv(socket_cliente, &resultado, sizeof(int), MSG_WAITALL);
@@ -99,19 +117,20 @@ int enviar_handshake(t_log *logger, int socket_cliente, cod_op handshake)
 	return resultado;
 }
 
-int realizar_handshake(t_log *logger, char * ip_servidor, char* puerto_servidor, cod_op handshake, char* tipo_servidor) {
+int realizar_handshake(t_log *logger, char *ip_servidor, char *puerto_servidor, cod_op handshake, char *tipo_servidor)
+{
 	int socket_servidor = conectar_servidor(logger, ip_servidor, puerto_servidor, tipo_servidor);
 	if (socket_servidor == -1)
-	{	
+	{
 		log_error(logger, "No se pudo conectar al servidor del %s", tipo_servidor);
 		return 0;
 	}
 
-	if (enviar_handshake(logger, socket_servidor,handshake) == -1) {
+	if (enviar_handshake(logger, socket_servidor, handshake) == -1)
+	{
 		close(socket_servidor);
 		return -1;
 	}
-	printf("Hola papu\n");
 
 	close(socket_servidor);
 	return 0;

@@ -1,6 +1,7 @@
 #include "cpu.h"
 
 t_log *logger_cpu;
+t_config *config_cpu;
 int socket_servidor_cpu;
 int socket_memoria;
 
@@ -14,7 +15,7 @@ int main(int argc, char **argv)
 	{
 		logger_cpu = log_create("./log/cpu.log", "CPU", true, LOG_LEVEL_INFO);
 
-		t_config *config_cpu = config_create("./cfg/cpu.config");
+		config_cpu = config_create("./cfg/cpu.config");
 		// char *retardo_instruccion = config_get_string_value(config_cpu, "RETARDO_INSTRUCCION");
 		char *ip_memoria = config_get_string_value(config_cpu, "IP_MEMORIA");
 		char *puerto_memoria = config_get_string_value(config_cpu, "PUERTO_MEMORIA");
@@ -22,7 +23,6 @@ int main(int argc, char **argv)
 		// char *tam_max_segmento = config_get_string_value(config_cpu, "TAM_MAX_SEGMENTO");
 
 		//*********************
-		// CLIENTE - MEMORIA
 		// HANDSHAKE - MEMORIA
 		if (realizar_handshake(logger_cpu, ip_memoria, puerto_memoria, HANDSHAKE_CPU, "Memoria") == -1)
 		{
@@ -38,7 +38,7 @@ int main(int argc, char **argv)
 			return EXIT_FAILURE;
 		}
 		log_info(logger_cpu, "CPU escuchando conexiones...");
-		while (server_escuchar(logger_cpu, config_cpu, socket_servidor_cpu));
+		while (server_escuchar(logger_cpu, config_cpu, socket_servidor_cpu, (void *)procesar_conexion));
 		return EXIT_SUCCESS;
 	}
 }
