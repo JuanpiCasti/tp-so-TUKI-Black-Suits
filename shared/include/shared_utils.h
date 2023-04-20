@@ -29,17 +29,19 @@ typedef struct
 	int socket;
 } t_conexion;
 
-typedef struct {
-    char instruccion[20];
-    char arg1[20];
-    char arg2[20];
-    char arg3[20];
+typedef struct
+{
+	char instruccion[20];
+	char arg1[20];
+	char arg2[20];
+	char arg3[20];
 } t_instruccion;
 
-typedef struct {
+typedef struct
+{
 	cod_op cop;
-    uint32_t size;
-    void* stream;
+	uint32_t size;
+	void *stream;
 } t_paquete;
 
 int iniciar_servidor(t_log *logger, char *puerto);
