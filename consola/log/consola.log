@@ -2,3 +2,9 @@
 [INFO] 19:20:10:065 CONSOLA/(6942:6942): Handshake OK
 [INFO] 19:29:06:585 CONSOLA/(8322:8322): Conexión establecida con Kernel
 [INFO] 19:29:06:589 CONSOLA/(8322:8322): Handshake OK
+[ERROR] 19:26:05:298 CONSOLA/(4994:4994): Error creando la conexion para 127.0.0.1:35601
+[ERROR] 19:26:05:367 CONSOLA/(4994:4994): No se pudo conectar al servidor Kernel
+[ERROR] 19:26:05:373 CONSOLA/(4994:4994): No se pudo conectar al servidor del Kernel
+[ERROR] 19:26:39:757 CONSOLA/(5043:5043): Error creando la conexion para 127.0.0.1:35601
+[ERROR] 19:26:39:798 CONSOLA/(5043:5043): No se pudo conectar al servidor Kernel
+[ERROR] 19:26:39:810 CONSOLA/(5043:5043): No se pudo conectar al servidor del Kernel

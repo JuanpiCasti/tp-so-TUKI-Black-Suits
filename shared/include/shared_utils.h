@@ -18,7 +18,8 @@ typedef enum
 	HANDSHAKE_KERNEL,
 	HANDSHAKE_CPU,
 	HANDSHAKE_FILESYSTEM,
-	HANDSHAKE_MEMORIA
+	HANDSHAKE_MEMORIA,
+	PAQUETE_INSTRUCCIONES
 } cod_op;
 
 typedef struct
@@ -27,6 +28,19 @@ typedef struct
 	t_config *config;
 	int socket;
 } t_conexion;
+
+typedef struct {
+    char instruccion[20];
+    char arg1[20];
+    char arg2[20];
+    char arg3[20];
+} t_instruccion;
+
+typedef struct {
+	cod_op cop;
+    uint32_t size;
+    void* stream;
+} t_paquete;
 
 int iniciar_servidor(t_log *logger, char *puerto);
 int esperar_cliente(t_log *logger, int socket_servidor);

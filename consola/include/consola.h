@@ -7,5 +7,6 @@
 #include <stdbool.h>
 #include "shared_utils.h"
 #include "tests.h"
+#include "utils.h"
 
 #endif
