@@ -81,7 +81,10 @@ void *serializar_paquete_instrucciones(t_paquete *paquete, t_list *instrucciones
     for (int i = 0; i < cant_instrucciones; i++)
     {
         t_instruccion *instruccion = list_get(instrucciones, i);
-        memcpy(buffer_instrucciones + desplazamiento, instruccion, sizeof(t_instruccion));
+        memcpy(buffer_instrucciones + desplazamiento, instruccion->instruccion, sizeof(char[20]));
+        memcpy(buffer_instrucciones + desplazamiento + sizeof(char[20]), instruccion->arg1, sizeof(char[20]));
+        memcpy(buffer_instrucciones + desplazamiento + sizeof(char[20])*2, instruccion->arg2, sizeof(char[20]));
+        memcpy(buffer_instrucciones + desplazamiento + sizeof(char[20])*3, instruccion->arg3, sizeof(char[20]));
         desplazamiento += sizeof(t_instruccion);
     }
 
@@ -98,16 +101,20 @@ t_list *deserializar_instrucciones(void *stream)
     memcpy(&tam_instrucciones, stream + sizeof(cod_op), sizeof(uint32_t));
     int cant_instrucciones = tam_instrucciones / sizeof(t_instruccion);
 
+    printf("%d %d %d\n", cop, tam_instrucciones, cant_instrucciones);
+
     t_list *lista_instrucciones = list_create();
 
     int desplazamiento = 0;
     for (int i = 0; i < cant_instrucciones; i++)
     {
         t_instruccion *instruccion = malloc(sizeof(t_instruccion));
-        memcpy(instruccion->instruccion, stream + sizeof(cod_op) + sizeof(uint32_t) + desplazamiento * sizeof(t_instruccion), sizeof(char[20]));
-        memcpy(instruccion->instruccion, stream + sizeof(cod_op) + sizeof(uint32_t) + desplazamiento * sizeof(t_instruccion), sizeof(char[20]));
-        memcpy(instruccion->instruccion, stream + sizeof(cod_op) + sizeof(uint32_t) + desplazamiento * sizeof(t_instruccion), sizeof(char[20]));
+        memcpy(instruccion->instruccion, stream + sizeof(cod_op) + sizeof(uint32_t) + desplazamiento, sizeof(char[20]));
+        memcpy(instruccion->arg1, stream + sizeof(cod_op) + sizeof(uint32_t) + desplazamiento + sizeof(char[20]), sizeof(char[20]));
+        memcpy(instruccion->arg2, stream + sizeof(cod_op) + sizeof(uint32_t) + desplazamiento + sizeof(char[20])*2, sizeof(char[20]));
+        memcpy(instruccion->arg3, stream + sizeof(cod_op) + sizeof(uint32_t) + desplazamiento + sizeof(char[20])*3, sizeof(char[20]));
         list_add(lista_instrucciones, instruccion);
+        desplazamiento += sizeof(t_instruccion);
     }
 
     return lista_instrucciones;
