@@ -28,15 +28,18 @@ t_list *parsear_archivo(char *nombre_archivo, t_log *logger)
         }
         else if (sscanf(linea, "%s %s %s", instruccion->instruccion, instruccion->arg1, instruccion->arg2) == 3)
         {
-            // Instrucción con 2 parámetros
+            strcpy(instruccion->arg3, "");
         }
         else if (sscanf(linea, "%s %s", instruccion->instruccion, instruccion->arg1) == 2)
         {
-            // Instrucción con 1 parámetro
+            strcpy(instruccion->arg2, "");
+            strcpy(instruccion->arg3, "");
         }
         else if (sscanf(linea, "%s", instruccion->instruccion) == 1)
         {
-            // Instrucción sin parámetros
+            strcpy(instruccion->arg1, "");
+            strcpy(instruccion->arg2, "");
+            strcpy(instruccion->arg3, "");
         }
 
         list_add(instrucciones, (void *)instruccion);
@@ -62,18 +65,13 @@ t_paquete *crear_paquete_instrucciones()
     return paquete;
 }
 
-void *serializar_paquete_instrucciones(t_paquete *paquete, t_list *instrucciones)
+void *serializar_paquete_instrucciones(t_paquete *paquete, t_list *instrucciones, int cant_instrucciones, int tam_buffer_instrucciones, uint32_t size_paquete)
 {
-    int cant_instrucciones = list_size(instrucciones);
-    int tam_buffer_instrucciones = cant_instrucciones * sizeof(t_instruccion);
-
-    uint32_t size_paquete = tam_buffer_instrucciones + sizeof(uint32_t) + sizeof(cod_op);
-
     paquete->size = size_paquete;
 
     paquete->stream = malloc(size_paquete);
     memcpy(paquete->stream, &paquete->cop, sizeof(cod_op));
-    memcpy(paquete->stream + sizeof(cod_op), &size_paquete, sizeof(uint32_t));
+    memcpy(paquete->stream + sizeof(cod_op), &tam_buffer_instrucciones, sizeof(uint32_t));
 
     void *buffer_instrucciones = malloc(tam_buffer_instrucciones);
     int desplazamiento = 0;
@@ -93,29 +91,26 @@ void *serializar_paquete_instrucciones(t_paquete *paquete, t_list *instrucciones
     return paquete->stream;
 }
 
-t_list *deserializar_instrucciones(void *stream)
-{
-    int cop;
-    memcpy(&cop, stream, sizeof(cod_op));
-    uint32_t tam_instrucciones;
-    memcpy(&tam_instrucciones, stream + sizeof(cod_op), sizeof(uint32_t));
-    int cant_instrucciones = tam_instrucciones / sizeof(t_instruccion);
+void enviar_instrucciones(t_log* logger, char* ip, char* puerto, char* archivo_instrucciones) {
+    int socket_kernel = conectar_servidor(logger, ip, puerto, "Kernel");
+    if (socket_kernel == -1)
+	{
+		log_error(logger, "No se pudo conectar al kernel");
+		return;
+	}
+    t_list *instrucciones = list_create();
+    instrucciones = parsear_archivo(archivo_instrucciones, logger);
 
-    printf("%d %d %d\n", cop, tam_instrucciones, cant_instrucciones);
+    int cant_instrucciones = list_size(instrucciones);
+    int tam_buffer_instrucciones = cant_instrucciones * sizeof(t_instruccion);
 
-    t_list *lista_instrucciones = list_create();
+    uint32_t size_paquete = tam_buffer_instrucciones + sizeof(uint32_t) + sizeof(cod_op);
 
-    int desplazamiento = 0;
-    for (int i = 0; i < cant_instrucciones; i++)
-    {
-        t_instruccion *instruccion = malloc(sizeof(t_instruccion));
-        memcpy(instruccion->instruccion, stream + sizeof(cod_op) + sizeof(uint32_t) + desplazamiento, sizeof(char[20]));
-        memcpy(instruccion->arg1, stream + sizeof(cod_op) + sizeof(uint32_t) + desplazamiento + sizeof(char[20]), sizeof(char[20]));
-        memcpy(instruccion->arg2, stream + sizeof(cod_op) + sizeof(uint32_t) + desplazamiento + sizeof(char[20])*2, sizeof(char[20]));
-        memcpy(instruccion->arg3, stream + sizeof(cod_op) + sizeof(uint32_t) + desplazamiento + sizeof(char[20])*3, sizeof(char[20]));
-        list_add(lista_instrucciones, instruccion);
-        desplazamiento += sizeof(t_instruccion);
-    }
+    t_paquete *paquete_instrucciones = crear_paquete_instrucciones();
+    void *stream_instrucciones = serializar_paquete_instrucciones(paquete_instrucciones, instrucciones, cant_instrucciones, tam_buffer_instrucciones, size_paquete);
+    
+    send(socket_kernel, stream_instrucciones, size_paquete, NULL);
+    close(socket_kernel);
 
-    return lista_instrucciones;
+    list_destroy_and_destroy_elements(instrucciones, instruccion_destruir);
 }

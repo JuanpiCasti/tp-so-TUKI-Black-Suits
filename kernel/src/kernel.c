@@ -32,26 +32,26 @@ int main(int argc, char **argv)
 		// char* recursos = config_get_string_value(config_kernel, "RECURSOS");
 		// char* instancias_recursos = config_get_string_value(config_kernel, "INSTANCIAS_RECURSOS");
 
-		//*********************
-		// HANDSHAKE - FILESYSTEM
-		if (realizar_handshake(logger_kernel, ip_filesystem, puerto_filesystem, HANDSHAKE_KERNEL, "Filesystem") == -1)
-		{
-			return EXIT_FAILURE;
-		}
+		// //*********************
+		// // HANDSHAKE - FILESYSTEM
+		// if (realizar_handshake(logger_kernel, ip_filesystem, puerto_filesystem, HANDSHAKE_KERNEL, "Filesystem") == -1)
+		// {
+		// 	return EXIT_FAILURE;
+		// }
 
-		//*********************
-		// HANDSHAKE - CPU
-		if (realizar_handshake(logger_kernel, ip_cpu, puerto_cpu, HANDSHAKE_KERNEL, "CPU") == -1)
-		{
-			return EXIT_FAILURE;
-		}
+		// //*********************
+		// // HANDSHAKE - CPU
+		// if (realizar_handshake(logger_kernel, ip_cpu, puerto_cpu, HANDSHAKE_KERNEL, "CPU") == -1)
+		// {
+		// 	return EXIT_FAILURE;
+		// }
 
-		//*********************
-		// HANDSHAKE - MEMORIA
-		if (realizar_handshake(logger_kernel, ip_memoria, puerto_memoria, HANDSHAKE_KERNEL, "Memoria") == -1)
-		{
-			return EXIT_FAILURE;
-		}
+		// //*********************
+		// // HANDSHAKE - MEMORIA
+		// if (realizar_handshake(logger_kernel, ip_memoria, puerto_memoria, HANDSHAKE_KERNEL, "Memoria") == -1)
+		// {
+		// 	return EXIT_FAILURE;
+		// }
 
 		//*********************
 		// SERVIDOR
