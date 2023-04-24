@@ -25,12 +25,11 @@ int main(int argc, char **argv)
         // HANDSHAKE - KERNEL
         if (realizar_handshake(logger_consola, ip_kernel, puerto_kernel, HANDSHAKE_CONSOLA, "Kernel") == -1)
         {
-            return 1;
+            return EXIT_FAILURE;
         }
 
         //*********************
-        // PARSEO - INSTRUCCIONES
-
+        // SEND - INSTRUCCIONES
         enviar_instrucciones(logger_consola, ip_kernel, puerto_kernel, argv[2]);
 
         terminar_programa(logger_consola, config_consola);
