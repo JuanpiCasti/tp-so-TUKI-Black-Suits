@@ -202,3 +202,39 @@
 [INFO] 15:20:36:286 KERNEL/(14882:14913): Recibiendo paquete de instrucciones...
 [WARNING] 15:20:36:286 KERNEL/(14882:14913): Cliente desconectado!
 [WARNING] 15:20:36:286 KERNEL/(14882:14913): El cliente se desconectó del server
+[INFO] 18:53:36:373 KERNEL/(116661:116661): Kernel escuchando conexiones...
+[INFO] 18:54:38:303 KERNEL/(116661:116661): Se conecto un cliente!
+[INFO] 18:54:38:307 KERNEL/(116661:116873): Recibido handshake HANDSHAKE_CONSOLA.
+[INFO] 18:54:38:315 KERNEL/(116661:116661): Se conecto un cliente!
+[WARNING] 18:54:38:317 KERNEL/(116661:116873): Cliente desconectado!
+[WARNING] 18:54:38:323 KERNEL/(116661:116873): El cliente se desconectó del server
+[INFO] 18:54:38:325 KERNEL/(116661:116874): Recibiendo paquete de instrucciones...
+[WARNING] 18:54:38:328 KERNEL/(116661:116874): Cliente desconectado!
+[WARNING] 18:54:38:328 KERNEL/(116661:116874): El cliente se desconectó del server
+[INFO] 18:55:41:448 KERNEL/(117022:117022): Kernel escuchando conexiones...
+[INFO] 18:55:46:602 KERNEL/(117022:117022): Se conecto un cliente!
+[INFO] 18:55:46:605 KERNEL/(117022:117061): Recibido handshake HANDSHAKE_CONSOLA.
+[INFO] 18:55:46:607 KERNEL/(117022:117022): Se conecto un cliente!
+[WARNING] 18:55:46:613 KERNEL/(117022:117061): Cliente desconectado!
+[WARNING] 18:55:46:614 KERNEL/(117022:117061): El cliente se desconectó del server
+[INFO] 18:55:46:616 KERNEL/(117022:117062): Recibiendo paquete de instrucciones...
+[WARNING] 18:55:46:619 KERNEL/(117022:117062): Cliente desconectado!
+[WARNING] 18:55:46:619 KERNEL/(117022:117062): El cliente se desconectó del server
+[INFO] 18:56:53:773 KERNEL/(117177:117177): Kernel escuchando conexiones...
+[INFO] 18:56:57:025 KERNEL/(117177:117177): Se conecto un cliente!
+[INFO] 18:56:57:033 KERNEL/(117177:117212): Recibido handshake HANDSHAKE_CONSOLA.
+[INFO] 18:56:57:035 KERNEL/(117177:117177): Se conecto un cliente!
+[WARNING] 18:56:57:039 KERNEL/(117177:117212): Cliente desconectado!
+[WARNING] 18:56:57:040 KERNEL/(117177:117212): El cliente se desconectó del server
+[INFO] 18:56:57:043 KERNEL/(117177:117213): Recibiendo paquete de instrucciones...
+[WARNING] 18:56:57:044 KERNEL/(117177:117213): Cliente desconectado!
+[WARNING] 18:56:57:046 KERNEL/(117177:117213): El cliente se desconectó del server
+[INFO] 18:57:47:588 KERNEL/(117338:117338): Kernel escuchando conexiones...
+[INFO] 18:57:50:091 KERNEL/(117338:117338): Se conecto un cliente!
+[INFO] 18:57:50:097 KERNEL/(117338:117370): Recibido handshake HANDSHAKE_CONSOLA.
+[INFO] 18:57:50:103 KERNEL/(117338:117338): Se conecto un cliente!
+[WARNING] 18:57:50:106 KERNEL/(117338:117370): Cliente desconectado!
+[WARNING] 18:57:50:107 KERNEL/(117338:117370): El cliente se desconectó del server
+[INFO] 18:57:50:108 KERNEL/(117338:117371): Recibiendo paquete de instrucciones...
+[WARNING] 18:57:50:112 KERNEL/(117338:117371): Cliente desconectado!
+[WARNING] 18:57:50:112 KERNEL/(117338:117371): El cliente se desconectó del server

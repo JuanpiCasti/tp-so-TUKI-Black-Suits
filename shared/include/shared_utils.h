@@ -37,13 +37,6 @@ typedef struct
 	char arg3[20];
 } t_instruccion;
 
-typedef struct
-{
-	cod_op cop;
-	uint32_t size;
-	void *stream;
-} t_paquete;
-
 int iniciar_servidor(t_log *logger, char *puerto);
 int esperar_cliente(t_log *logger, int socket_servidor);
 int crear_conexion(t_log *logger, char *ip, char *puerto);

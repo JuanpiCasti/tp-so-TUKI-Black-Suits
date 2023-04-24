@@ -5,7 +5,7 @@ FILE *leer_archivo(char *nombre_archivo, t_log *logger)
     FILE *archivo_instrucciones = fopen(nombre_archivo, "r");
     if (archivo_instrucciones == NULL)
     {
-        log_error(logger, "Error al abrir el archivo\n");
+        log_error(logger, "Error al abrir el archivo de instrucciones\n");
         exit(-1);
     }
 
@@ -56,22 +56,13 @@ void instruccion_destruir(void *instruccion)
     free((t_instruccion *)instruccion);
 }
 
-t_paquete *crear_paquete_instrucciones()
+void *serializar_paquete_instrucciones(t_list *instrucciones, int cant_instrucciones, int tam_buffer_instrucciones, uint32_t size_paquete)
 {
-    t_paquete *paquete = malloc(sizeof(t_paquete));
-    paquete->cop = PAQUETE_INSTRUCCIONES;
-    paquete->size = 0;
-    paquete->stream = NULL;
-    return paquete;
-}
+    int cop = PAQUETE_INSTRUCCIONES;
+    void* stream = malloc(size_paquete);
 
-void *serializar_paquete_instrucciones(t_paquete *paquete, t_list *instrucciones, int cant_instrucciones, int tam_buffer_instrucciones, uint32_t size_paquete)
-{
-    paquete->size = size_paquete;
-
-    paquete->stream = malloc(size_paquete);
-    memcpy(paquete->stream, &paquete->cop, sizeof(cod_op));
-    memcpy(paquete->stream + sizeof(cod_op), &tam_buffer_instrucciones, sizeof(uint32_t));
+    memcpy(stream, &cop, sizeof(cod_op));
+    memcpy(stream + sizeof(cod_op), &tam_buffer_instrucciones, sizeof(uint32_t));
 
     void *buffer_instrucciones = malloc(tam_buffer_instrucciones);
     int desplazamiento = 0;
@@ -86,9 +77,9 @@ void *serializar_paquete_instrucciones(t_paquete *paquete, t_list *instrucciones
         desplazamiento += sizeof(t_instruccion);
     }
 
-    memcpy(paquete->stream + sizeof(cod_op) + sizeof(uint32_t), buffer_instrucciones, tam_buffer_instrucciones);
+    memcpy(stream + sizeof(cod_op) + sizeof(uint32_t), buffer_instrucciones, tam_buffer_instrucciones);
 
-    return paquete->stream;
+    return stream;
 }
 
 void enviar_instrucciones(t_log* logger, char* ip, char* puerto, char* archivo_instrucciones) {
@@ -101,15 +92,21 @@ void enviar_instrucciones(t_log* logger, char* ip, char* puerto, char* archivo_i
     t_list *instrucciones = list_create();
     instrucciones = parsear_archivo(archivo_instrucciones, logger);
 
+    log_info(logger, "Enviando instrucciones al kernel...");
+
     int cant_instrucciones = list_size(instrucciones);
     int tam_buffer_instrucciones = cant_instrucciones * sizeof(t_instruccion);
 
     uint32_t size_paquete = tam_buffer_instrucciones + sizeof(uint32_t) + sizeof(cod_op);
 
-    t_paquete *paquete_instrucciones = crear_paquete_instrucciones();
-    void *stream_instrucciones = serializar_paquete_instrucciones(paquete_instrucciones, instrucciones, cant_instrucciones, tam_buffer_instrucciones, size_paquete);
+    void *stream_instrucciones = serializar_paquete_instrucciones(instrucciones, cant_instrucciones, tam_buffer_instrucciones, size_paquete);
     
-    send(socket_kernel, stream_instrucciones, size_paquete, NULL);
+    int result = send(socket_kernel, stream_instrucciones, size_paquete, NULL);
+    if (result == -1) {
+        log_error(logger, "No se pudo enviar el paquete de instrucciones");
+    }
+
+    free(stream_instrucciones);
     close(socket_kernel);
 
     list_destroy_and_destroy_elements(instrucciones, instruccion_destruir);
