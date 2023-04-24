@@ -30,11 +30,11 @@ void procesar_conexion(void *void_args)
             rechazar_handshake(logger, cliente_socket);
             break;
         case PAQUETE_INSTRUCCIONES:
-            t_list* instrucciones = recv_instrucciones(logger, cliente_socket);
-            // for (int i = 0; i < list_size(instrucciones); i++) {
-            //     t_instruccion* instruccion = list_get(instrucciones, i);
-            //     printf("Instrucción: %s, Arg1: %s, Arg2: %s, Arg3: %s\n", instruccion->instruccion, instruccion->arg1, instruccion->arg2, instruccion->arg3);
-            // }
+            t_list *instrucciones = recv_instrucciones(logger, cliente_socket);
+            for (int i = 0; i < list_size(instrucciones); i++) {
+                t_instruccion* instruccion = list_get(instrucciones, i);
+                printf("Instrucción: %s, Arg1: %s, Arg2: %s, Arg3: %s\n", instruccion->instruccion, instruccion->arg1, instruccion->arg2, instruccion->arg3);
+            }
             break;
         default:
             log_error(logger, "Algo anduvo mal en el server de Kernel");
@@ -47,17 +47,18 @@ void procesar_conexion(void *void_args)
     return;
 }
 
-t_list* recv_instrucciones(t_log* logger, int cliente_socket) {
+t_list *recv_instrucciones(t_log *logger, int cliente_socket)
+{
     log_info(logger, "Recibiendo paquete de instrucciones...");
 
     uint32_t size;
     recv(cliente_socket, &size, sizeof(uint32_t), NULL);
 
-    void* stream = malloc(size);
+    void *stream = malloc(size);
     recv(cliente_socket, stream, size, NULL);
 
-    t_list* instrucciones = deserializar_instrucciones(stream, size);
+    t_list *instrucciones = deserializar_instrucciones(stream, size);
     free(stream);
-    
+
     return instrucciones;
 }

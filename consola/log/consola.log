@@ -102,3 +102,11 @@
 [INFO] 18:57:50:102 CONSOLA/(117369:117369): Handshake OK
 [INFO] 18:57:50:103 CONSOLA/(117369:117369): Conexión establecida con Kernel
 [INFO] 18:57:50:104 CONSOLA/(117369:117369): Enviando instrucciones al kernel...
+[INFO] 19:42:49:831 CONSOLA/(2714:2714): Conexión establecida con Kernel
+[INFO] 19:42:49:839 CONSOLA/(2714:2714): Handshake OK
+[INFO] 19:42:49:839 CONSOLA/(2714:2714): Conexión establecida con Kernel
+[INFO] 19:42:49:840 CONSOLA/(2714:2714): Enviando instrucciones al kernel...
+[INFO] 19:53:35:377 CONSOLA/(4006:4006): Conexión establecida con Kernel
+[INFO] 19:53:35:381 CONSOLA/(4006:4006): Handshake OK
+[INFO] 19:53:35:383 CONSOLA/(4006:4006): Conexión establecida con Kernel
+[INFO] 19:53:35:384 CONSOLA/(4006:4006): Enviando instrucciones a Kernel...

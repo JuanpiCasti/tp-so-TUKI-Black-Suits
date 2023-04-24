@@ -12,8 +12,8 @@ t_list *deserializar_instrucciones(void *stream, uint32_t tam_instrucciones)
         t_instruccion *instruccion = malloc(sizeof(t_instruccion));
         memcpy(&instruccion->instruccion, stream + desplazamiento, sizeof(char[20]));
         memcpy(&instruccion->arg1, stream + desplazamiento + sizeof(char[20]), sizeof(char[20]));
-        memcpy(&instruccion->arg2, stream + desplazamiento + sizeof(char[20])*2, sizeof(char[20]));
-        memcpy(&instruccion->arg3, stream + desplazamiento + sizeof(char[20])*3, sizeof(char[20]));
+        memcpy(&instruccion->arg2, stream + desplazamiento + sizeof(char[20]) * 2, sizeof(char[20]));
+        memcpy(&instruccion->arg3, stream + desplazamiento + sizeof(char[20]) * 3, sizeof(char[20]));
         list_add(lista_instrucciones, instruccion);
         desplazamiento += sizeof(t_instruccion);
     }

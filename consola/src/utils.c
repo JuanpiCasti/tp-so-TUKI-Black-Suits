@@ -59,7 +59,7 @@ void instruccion_destruir(void *instruccion)
 void *serializar_paquete_instrucciones(t_list *instrucciones, int cant_instrucciones, int tam_buffer_instrucciones, uint32_t size_paquete)
 {
     int cop = PAQUETE_INSTRUCCIONES;
-    void* stream = malloc(size_paquete);
+    void *stream = malloc(size_paquete);
 
     memcpy(stream, &cop, sizeof(cod_op));
     memcpy(stream + sizeof(cod_op), &tam_buffer_instrucciones, sizeof(uint32_t));
@@ -72,8 +72,8 @@ void *serializar_paquete_instrucciones(t_list *instrucciones, int cant_instrucci
         t_instruccion *instruccion = list_get(instrucciones, i);
         memcpy(buffer_instrucciones + desplazamiento, instruccion->instruccion, sizeof(char[20]));
         memcpy(buffer_instrucciones + desplazamiento + sizeof(char[20]), instruccion->arg1, sizeof(char[20]));
-        memcpy(buffer_instrucciones + desplazamiento + sizeof(char[20])*2, instruccion->arg2, sizeof(char[20]));
-        memcpy(buffer_instrucciones + desplazamiento + sizeof(char[20])*3, instruccion->arg3, sizeof(char[20]));
+        memcpy(buffer_instrucciones + desplazamiento + sizeof(char[20]) * 2, instruccion->arg2, sizeof(char[20]));
+        memcpy(buffer_instrucciones + desplazamiento + sizeof(char[20]) * 3, instruccion->arg3, sizeof(char[20]));
         desplazamiento += sizeof(t_instruccion);
     }
 
@@ -82,17 +82,18 @@ void *serializar_paquete_instrucciones(t_list *instrucciones, int cant_instrucci
     return stream;
 }
 
-void enviar_instrucciones(t_log* logger, char* ip, char* puerto, char* archivo_instrucciones) {
+void enviar_instrucciones(t_log *logger, char *ip, char *puerto, char *archivo_instrucciones)
+{
     int socket_kernel = conectar_servidor(logger, ip, puerto, "Kernel");
     if (socket_kernel == -1)
-	{
-		log_error(logger, "No se pudo conectar al kernel");
-		return;
-	}
+    {
+        log_error(logger, "No se pudo conectar a Kernel");
+        return;
+    }
     t_list *instrucciones = list_create();
     instrucciones = parsear_archivo(archivo_instrucciones, logger);
 
-    log_info(logger, "Enviando instrucciones al kernel...");
+    log_info(logger, "Enviando instrucciones a Kernel...");
 
     int cant_instrucciones = list_size(instrucciones);
     int tam_buffer_instrucciones = cant_instrucciones * sizeof(t_instruccion);
@@ -100,9 +101,10 @@ void enviar_instrucciones(t_log* logger, char* ip, char* puerto, char* archivo_i
     uint32_t size_paquete = tam_buffer_instrucciones + sizeof(uint32_t) + sizeof(cod_op);
 
     void *stream_instrucciones = serializar_paquete_instrucciones(instrucciones, cant_instrucciones, tam_buffer_instrucciones, size_paquete);
-    
+
     int result = send(socket_kernel, stream_instrucciones, size_paquete, NULL);
-    if (result == -1) {
+    if (result == -1)
+    {
         log_error(logger, "No se pudo enviar el paquete de instrucciones");
     }
 
