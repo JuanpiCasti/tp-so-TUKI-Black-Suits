@@ -10,8 +10,14 @@ int main(int argc, char **argv)
         run_tests();
     else
     {
+        
         logger_consola = log_create("./log/consola.log", "CONSOLA", true, LOG_LEVEL_INFO);
-
+        if (argc < 3)
+        {
+            log_error(logger_consola, "Por favor especificar archivo de configuracion e instrucciones a enviar.");
+            log_destroy(logger_consola);
+            return EXIT_FAILURE;
+        }
         config_consola = config_create(argv[1]);
         char *ip_kernel = config_get_string_value(config_consola, "IP_KERNEL");
         char *puerto_kernel = config_get_string_value(config_consola, "PUERTO_KERNEL");
