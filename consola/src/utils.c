@@ -56,7 +56,7 @@ void instruccion_destruir(void *instruccion)
     free((t_instruccion *)instruccion);
 }
 
-void *serializar_paquete_instrucciones(t_list *instrucciones, int cant_instrucciones, int tam_buffer_instrucciones, uint32_t size_paquete)
+void *serializar_paquete_instrucciones(t_list *instrucciones, int cant_instrucciones, uint32_t tam_buffer_instrucciones, uint32_t size_paquete)
 {
     int cop = PAQUETE_INSTRUCCIONES;
     void *stream = malloc(size_paquete);
@@ -96,7 +96,7 @@ void enviar_instrucciones(t_log *logger, char *ip, char *puerto, char *archivo_i
     log_info(logger, "Enviando instrucciones a Kernel...");
 
     int cant_instrucciones = list_size(instrucciones);
-    int tam_buffer_instrucciones = cant_instrucciones * sizeof(t_instruccion);
+    uint32_t tam_buffer_instrucciones = cant_instrucciones * sizeof(t_instruccion);
 
     uint32_t size_paquete = tam_buffer_instrucciones + sizeof(uint32_t) + sizeof(cod_op);
 
