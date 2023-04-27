@@ -33,7 +33,9 @@
 			"comunicacion.h": "c",
 			"stdlib.h": "c",
 			"utils.h": "c",
-			"list.h": "c"
+			"list.h": "c",
+			"socket.h": "c",
+			"unistd.h": "c"
 		},
 		"editor.fontSize": 15,
 		"editor.formatOnSave": false

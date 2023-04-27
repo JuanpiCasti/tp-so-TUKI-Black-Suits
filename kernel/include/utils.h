@@ -5,8 +5,6 @@
 #include <commons/collections/list.h>
 #include "shared_utils.h"
 
-extern uint32_t next_pid;
-
 typedef struct
 {
   void *AX;
@@ -35,8 +33,9 @@ typedef struct
   t_list *archivos_abiertos;
 } t_pcb;
 
+extern uint32_t next_pid;
 t_list *deserializar_instrucciones(void *stream, uint32_t tam_instrucciones);
 t_pcb *crear_pcb(t_list *instrucciones, int estimacion_inicial);
-void imprimir_pcb(t_pcb* pcb);
+void imprimir_pcb(t_pcb *pcb);
 
 #endif

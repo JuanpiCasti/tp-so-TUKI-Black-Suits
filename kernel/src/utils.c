@@ -28,7 +28,7 @@ t_pcb *crear_pcb(t_list *instrucciones, int estimacion_inicial)
     next_pid++;
     pcb->instrucciones = instrucciones;
     pcb->program_counter = 0;
-    pcb->registros_cpu = malloc(4*4 + 8*4 + 16*4);
+    pcb->registros_cpu = malloc(4 * 4 + 8 * 4 + 16 * 4);
     pcb->registros_cpu->AX = malloc(4);
     pcb->registros_cpu->BX = malloc(4);
     pcb->registros_cpu->CX = malloc(4);
