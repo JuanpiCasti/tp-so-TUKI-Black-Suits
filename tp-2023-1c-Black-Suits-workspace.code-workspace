@@ -30,7 +30,12 @@
 			"consola.h": "c",
 			"filesystem.h": "c",
 			"pthread.h": "c",
-			"comunicacion.h": "c"
-		}
+			"comunicacion.h": "c",
+			"stdlib.h": "c",
+			"utils.h": "c",
+			"list.h": "c"
+		},
+		"editor.fontSize": 15,
+		"editor.formatOnSave": false
 	}
 }

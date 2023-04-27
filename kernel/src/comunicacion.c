@@ -4,6 +4,7 @@ void procesar_conexion(void *void_args)
 {
     t_conexion *args = (t_conexion *)void_args;
     t_log *logger = args->log;
+    t_config *config = args->config;
     int cliente_socket = args->socket;
     free(args);
 
@@ -31,10 +32,8 @@ void procesar_conexion(void *void_args)
             break;
         case PAQUETE_INSTRUCCIONES:
             t_list *instrucciones = recv_instrucciones(logger, cliente_socket);
-            for (int i = 0; i < list_size(instrucciones); i++) {
-                t_instruccion* instruccion = list_get(instrucciones, i);
-                printf("Instrucción: %s, Arg1: %s, Arg2: %s, Arg3: %s\n", instruccion->instruccion, instruccion->arg1, instruccion->arg2, instruccion->arg3);
-            }
+            t_pcb *n_pcb = crear_pcb(instrucciones, config_get_double_value(config, "ESTIMACION_INICIAL"));
+            imprimir_pcb(n_pcb);
             break;
         default:
             log_error(logger, "Algo anduvo mal en el server de Kernel");

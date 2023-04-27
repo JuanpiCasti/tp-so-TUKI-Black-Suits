@@ -6,6 +6,7 @@ int socket_servidor_kernel;
 int socket_filesystem;
 int socket_cpu;
 int socket_memoria;
+uint32_t next_pid;
 
 int main(int argc, char **argv)
 {
@@ -26,7 +27,6 @@ int main(int argc, char **argv)
 		char *ip_cpu = config_get_string_value(config_kernel, "IP_CPU");
 		char *puerto_cpu = config_get_string_value(config_kernel, "PUERTO_CPU");
 		// char* algoritmo_planificacion = config_get_string_value(config_kernel, "ALGORITMO_PLANIFICACION");
-		// char* estimacion_inicial = config_get_string_value(config_kernel, "ESTIMACION_INICIAL");
 		// char* hrrn_alfa = config_get_string_value(config_kernel, "HRRN_ALFA");
 		// char* grado_max_multiprogramacion = config_get_string_value(config_kernel, "GRADO_MAX_MULTIPROGRAMACION");
 		// char* recursos = config_get_string_value(config_kernel, "RECURSOS");
@@ -52,6 +52,8 @@ int main(int argc, char **argv)
 		// {
 		// 	return EXIT_FAILURE;
 		// }
+
+		next_pid = 1;
 
 		//*********************
 		// SERVIDOR
