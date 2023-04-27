@@ -1,0 +1,9 @@
+[INFO] 21:33:04:176 KERNEL/(8423:8423): Kernel escuchando conexiones...
+[INFO] 21:33:07:495 KERNEL/(8423:8423): Se conecto un cliente!
+[INFO] 21:33:07:505 KERNEL/(8423:8449): Recibido handshake HANDSHAKE_CONSOLA.
+[INFO] 21:33:07:508 KERNEL/(8423:8423): Se conecto un cliente!
+[WARNING] 21:33:07:510 KERNEL/(8423:8449): Cliente desconectado!
+[WARNING] 21:33:07:512 KERNEL/(8423:8449): El cliente se desconectó del server
+[INFO] 21:33:07:513 KERNEL/(8423:8450): Recibiendo paquete de instrucciones...
+[WARNING] 21:33:07:518 KERNEL/(8423:8450): Cliente desconectado!
+[WARNING] 21:33:07:518 KERNEL/(8423:8450): El cliente se desconectó del server

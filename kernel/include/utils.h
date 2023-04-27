@@ -35,7 +35,7 @@ typedef struct
 
 extern uint32_t next_pid;
 t_list *deserializar_instrucciones(void *stream, uint32_t tam_instrucciones);
-t_pcb *crear_pcb(t_list *instrucciones, int estimacion_inicial);
+t_pcb *crear_pcb(t_list *instrucciones, double estimacion_inicial);
 void imprimir_pcb(t_pcb *pcb);
 
 #endif
