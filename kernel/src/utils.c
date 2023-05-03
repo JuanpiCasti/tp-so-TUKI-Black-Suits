@@ -25,8 +25,10 @@ t_pcb *crear_pcb(t_list *instrucciones, double estimacion_inicial)
 {
     t_pcb *pcb = malloc(sizeof(t_pcb));
 
+    pthread_mutex_lock(&mutex_next_pid);
     pcb->pid = next_pid;
     next_pid++;
+    pthread_mutex_unlock(&mutex_next_pid);
 
     pcb->instrucciones = instrucciones;
     pcb->program_counter = 0;
@@ -79,4 +81,74 @@ void imprimir_pcb(t_pcb *pcb)
     printf("Estimado HRRN: %f\n", pcb->estimado_HRRN);
     printf("Tiempo ready: %ld\n", (long)pcb->tiempo_ready);
     printf("Archivos abiertos:\n");
+}
+
+void inicializar_colas() {
+    NEW = list_create();
+    READY = list_create();
+    BLOCKED = list_create();
+    RUNNING = list_create();
+}
+
+void inicializar_semaforos() {
+    if (pthread_mutex_init(&mutex_next_pid, NULL) != 0) {
+        log_error(logger_kernel_extra, "No se pudo inicializar el semaforo para next_pid");
+    }
+}
+
+void encolar_proceso(t_pcb* new_pcb, t_list* cola, pthread_mutex_t mutex_cola) {
+    pthread_mutex_lock(&mutex_cola);
+    list_add(cola, new_pcb);
+    pthread_mutex_unlock(&mutex_cola);
+}
+
+void loggear_cambio_estado(char* estado_anterior, char* estado_actual, t_pcb* pcb) {
+    log_info(logger_kernel, "PID: %d - Estado anterior: %s - Estado actual: %s", pcb->pid, estado_anterior, estado_actual);
+}
+
+void loggear_cola_ready() {
+    // TODO: que cambie segun el algoritmo
+    char* lista_pids = string_new();
+
+    uint32_t first_pid = ((t_pcb *)(list_get(READY, 0)))->pid;
+    string_append(&lista_pids, string_itoa(first_pid));
+
+    for (int i = 1; i < list_size(READY); i++)
+    {
+        t_pcb* pcb = list_get(READY, i);
+        string_append(&lista_pids, ",");
+        string_append(&lista_pids, string_itoa(pcb->pid));
+    }
+
+    log_info(logger_kernel, "Cola Ready FIFO: [%s]", lista_pids);
+}
+
+void planificador_largo_plazo() {
+    uint32_t grado_multiprogramacion = 0;
+    while(true) {
+        if (list_size(NEW) > 0 && grado_multiprogramacion < GRADO_MAX_MULTIPROGRAMACION)
+        {
+            t_pcb* new_pcb = list_remove(NEW, 0);
+
+            encolar_proceso(new_pcb, READY, mutex_READY);
+            grado_multiprogramacion++;
+
+            loggear_cambio_estado("NEW", "READY", new_pcb);
+            loggear_cola_ready();
+            // TODO: enviar mensaje a memoria para que inicialice las estructuras necesarias
+
+            // SACAR PRINT, USADO SOLO EN PRUEBAS RAPIDAS
+        }
+
+        // TODO: if, si el PC apunta a EXIT, mandar el PCB a EXIT (o free)
+
+
+        //     // SACAR PRINT, USADO SOLO EN PRUEBAS RAPIDAS
+        // printf("Cola NEW\n");
+        //     for (int i = 0; i < list_size(NEW); i++)
+        //     {
+        //         t_pcb* pcb = list_get(NEW, i);
+        //         printf("PID: %d\n", pcb->pid);
+        //     }
+    }
 }

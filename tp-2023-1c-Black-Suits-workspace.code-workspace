@@ -35,7 +35,8 @@
 			"utils.h": "c",
 			"list.h": "c",
 			"socket.h": "c",
-			"unistd.h": "c"
+			"unistd.h": "c",
+			"core.h": "c"
 		},
 		"editor.fontSize": 15,
 		"editor.formatOnSave": false

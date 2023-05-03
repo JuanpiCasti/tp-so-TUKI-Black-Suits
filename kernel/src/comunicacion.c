@@ -33,7 +33,17 @@ void procesar_conexion(void *void_args)
         case PAQUETE_INSTRUCCIONES:
             t_list *instrucciones = recv_instrucciones(logger, cliente_socket);
             t_pcb *n_pcb = crear_pcb(instrucciones, config_get_double_value(config, "ESTIMACION_INICIAL"));
-            imprimir_pcb(n_pcb);
+            // imprimir_pcb(n_pcb);
+            encolar_proceso(n_pcb, NEW, mutex_NEW);
+            log_info(logger_kernel, "Se crea el proceso %d en NEW", n_pcb->pid);
+
+            // SACAR PRINT, USADO SOLO EN PRUEBAS RAPIDAS
+            // printf("Cola NEW\n");
+            // for (int i = 0; i < list_size(NEW); i++)
+            // {
+            //     t_pcb* pcb = list_get(NEW, i);
+            //     printf("PID: %d\n", pcb->pid);
+            // }
             break;
         default:
             log_error(logger, "Algo anduvo mal en el server de Kernel");
