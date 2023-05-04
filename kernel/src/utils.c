@@ -87,7 +87,6 @@ void inicializar_colas() {
     NEW = list_create();
     READY = list_create();
     BLOCKED = list_create();
-    RUNNING = list_create();
 }
 
 void inicializar_semaforos() {
@@ -97,9 +96,9 @@ void inicializar_semaforos() {
 }
 
 void encolar_proceso(t_pcb* new_pcb, t_list* cola, pthread_mutex_t mutex_cola) {
-    pthread_mutex_lock(&mutex_cola);
-    list_add(cola, new_pcb);
-    pthread_mutex_unlock(&mutex_cola);
+    pthread_mutex_lock(&mutex_cola); // Wait
+    list_add(cola, new_pcb);c
+    pthread_mutex_unlock(&mutex_cola); // Signal
 }
 
 void loggear_cambio_estado(char* estado_anterior, char* estado_actual, t_pcb* pcb) {
@@ -126,9 +125,11 @@ void loggear_cola_ready() {
 void planificador_largo_plazo() {
     uint32_t grado_multiprogramacion = 0;
     while(true) {
+        pthread_mutex_lock(&mutex_NEW);
         if (list_size(NEW) > 0 && grado_multiprogramacion < GRADO_MAX_MULTIPROGRAMACION)
         {
             t_pcb* new_pcb = list_remove(NEW, 0);
+            pthread_mutex_unlock(&mutex_NEW);
 
             encolar_proceso(new_pcb, READY, mutex_READY);
             grado_multiprogramacion++;
@@ -139,6 +140,7 @@ void planificador_largo_plazo() {
 
             // SACAR PRINT, USADO SOLO EN PRUEBAS RAPIDAS
         }
+        pthread_mutex_unlock(&mutex_NEW);
 
         // TODO: if, si el PC apunta a EXIT, mandar el PCB a EXIT (o free)
 
@@ -150,5 +152,41 @@ void planificador_largo_plazo() {
         //         t_pcb* pcb = list_get(NEW, i);
         //         printf("PID: %d\n", pcb->pid);
         //     }
+    }
+}
+
+t_pcb* siguiente_proceso_a_ejecutar() {
+    if(strcmp(ALGORITMO_PLANIFICACION, "FIFO") == 0) {
+        // Saca un proceso de ready segun FIFO
+        return (t_pcb*)(list_remove(READY, 0));
+    } else if (strcmp(ALGORITMO_PLANIFICACION, "HRRN") == 0) {
+        // Saca un proceso de ready segun HRRN
+    }
+
+    log_error(logger_kernel_extra, "El algoritmo indicado en el archivo de configuracion es desconocido");
+    exit(-1);
+}
+
+void planificador_corto_plazo() {
+    // CHECKPOINT 2: solo FIFO
+    // TODO: algoritmo HRRN
+
+    while(true) {
+        pthread_mutex_lock(&mutex_READY);
+        pthread_mutex_lock(&mutex_RUNNING);
+        if(list_size(READY) > 0 && RUNNING == NULL){
+
+            t_pcb* r_pcb = siguiente_proceso_a_ejecutar();
+            RUNNING = r_pcb;
+            loggear_cambio_estado("READY", "RUNNING", r_pcb);
+
+            // TODO: Envio del proceso a la CPU
+            // Lo que haria es, serializar el pcb, mandarlo a la CPU
+            // y esperar a que lo devuelva con los registros actualizados 
+            pthread_mutex_unlock(&mutex_READY);
+            
+            pthread_mutex_unlock(&mutex_RUNNING);
+
+        }
     }
 }

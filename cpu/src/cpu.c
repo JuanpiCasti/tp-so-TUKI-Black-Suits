@@ -3,7 +3,20 @@
 t_log *logger_cpu;
 t_config *config_cpu;
 int socket_servidor_cpu;
-int socket_memoria;
+
+void* AX;
+void* BX;
+void* CX;
+void* DX;
+void* EAX;
+void* EBX;
+void* ECX;
+void* EDX;
+void* RAX;
+void* RBX;
+void* RCX;
+void* RDX;
+uint32_t program_counter;
 
 int main(int argc, char **argv)
 {
@@ -21,6 +34,8 @@ int main(int argc, char **argv)
 		char *puerto_memoria = config_get_string_value(config_cpu, "PUERTO_MEMORIA");
 		char *puerto_escucha_cpu = config_get_string_value(config_cpu, "PUERTO_ESCUCHA");
 		// char *tam_max_segmento = config_get_string_value(config_cpu, "TAM_MAX_SEGMENTO");
+
+		inicializar_registros();
 
 		//*********************
 		// HANDSHAKE - MEMORIA
@@ -41,4 +56,4 @@ int main(int argc, char **argv)
 		while (server_escuchar(logger_cpu, config_cpu, socket_servidor_cpu, (void *)procesar_conexion));
 		return EXIT_SUCCESS;
 	}
-}
+}	

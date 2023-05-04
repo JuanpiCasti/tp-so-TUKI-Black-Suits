@@ -48,15 +48,14 @@ extern pthread_mutex_t mutex_next_pid;
 extern t_list* NEW;
 extern t_list* READY;
 extern t_list* BLOCKED;
-extern t_list* RUNNING;
+extern t_pcb* RUNNING;
 extern t_list* EXIT;
 extern pthread_mutex_t mutex_NEW;
 extern pthread_mutex_t mutex_READY;
 extern pthread_mutex_t mutex_BLOCKED;
 extern pthread_mutex_t mutex_RUNNING;
 extern pthread_mutex_t mutex_EXIT;
-
-
+extern char* ALGORITMO_PLANIFICACION;
 
 t_list *deserializar_instrucciones(void *stream, uint32_t tam_instrucciones);
 
@@ -66,11 +65,11 @@ void inicializar_semaforos(); // Inicializa los semaforos usados en el modulo
 t_pcb *crear_pcb(t_list *instrucciones, double estimacion_inicial); // Recibe lista de instrucciones y crea pcb
 
 // Manda el proceso a la cola deseada,
-// por ejemplom, para mandar a NEW: encolar_proceso(new_pcb, NEW, mutex_NEW);
-void encolar_proceso(t_pcb* new_pcb, t_list* cola, pthread_mutex_t mutex_cola); 
+// por ejemplo, para mandar a NEW: encolar_proceso(new_pcb, NEW, mutex_NEW);
+void encolar_proceso(t_pcb* new_pcb, t_list* cola, pthread_mutex_t mutex_cola);
 void imprimir_pcb(t_pcb *pcb);
 
 
 void planificador_largo_plazo(); // Proceso del planificador de largo plazo
-
+void planificador_corto_plazo(); // Proceso del planificador de corto plazo
 #endif

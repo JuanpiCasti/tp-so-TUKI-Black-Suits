@@ -5,6 +5,7 @@ t_log *logger_kernel;
 
 t_config *config_kernel;
 uint32_t GRADO_MAX_MULTIPROGRAMACION;
+char* ALGORITMO_PLANIFICACION;
 
 
 int socket_servidor_kernel;
@@ -16,7 +17,6 @@ int socket_memoria;
 uint32_t next_pid;
 pthread_mutex_t mutex_next_pid;
 
-
 t_list* NEW;
 pthread_mutex_t mutex_NEW;
 
@@ -26,7 +26,7 @@ pthread_mutex_t mutex_READY;
 t_list* BLOCKED;
 pthread_mutex_t mutex_BLOCKED;
 
-t_list* RUNNING;
+t_pcb* RUNNING;
 pthread_mutex_t mutex_RUNNING;
 
 t_list* EXIT;
@@ -52,7 +52,8 @@ int main(int argc, char **argv)
 		char *puerto_filesystem = config_get_string_value(config_kernel, "PUERTO_FILESYSTEM");
 		char *ip_cpu = config_get_string_value(config_kernel, "IP_CPU");
 		char *puerto_cpu = config_get_string_value(config_kernel, "PUERTO_CPU");
-		// char* algoritmo_planificacion = config_get_string_value(config_kernel, "ALGORITMO_PLANIFICACION");
+		ALGORITMO_PLANIFICACION = config_get_string_value(config_kernel, "ALGORITMO_PLANIFICACION");
+
 		// char* hrrn_alfa = config_get_string_value(config_kernel, "HRRN_ALFA");
 		GRADO_MAX_MULTIPROGRAMACION = config_get_int_value(config_kernel, "GRADO_MAX_MULTIPROGRAMACION");
 		// char* recursos = config_get_string_value(config_kernel, "RECURSOS");
@@ -83,10 +84,19 @@ int main(int argc, char **argv)
 		inicializar_semaforos();
 		next_pid = 1;
 
-		// Planificador
-		pthread_t hilo_planificador;
-		pthread_create(&hilo_planificador, NULL, planificador_largo_plazo, NULL);
+		// Planificadores
+		pthread_t hilo_planificador_largo_plazo;
+		if (pthread_create(&hilo_planificador_largo_plazo, NULL, (void*)(planificador_largo_plazo), NULL) == -1) {
+			log_error(logger_kernel_extra, "No se pudo crear el hilo del planificador de largo plazo.");
+			return EXIT_FAILURE;
+		}
+		
 
+		pthread_t hilo_planificador_corto_plazo;
+		if(pthread_create(&hilo_planificador_corto_plazo, NULL, (void*)(planificador_corto_plazo), NULL) == -1) {
+			log_error(logger_kernel_extra, "No se pudo crear el hilo del planificador de largo plazo.");
+			return EXIT_FAILURE;
+		}
 		//*********************
 		// SERVIDOR
 		socket_servidor_kernel = iniciar_servidor(logger_kernel_extra, puerto_escucha_kernel);
@@ -98,7 +108,7 @@ int main(int argc, char **argv)
 		log_info(logger_kernel_extra, "Kernel escuchando conexiones...");
 		while (server_escuchar(logger_kernel_extra, config_kernel, socket_servidor_kernel, (void *)procesar_conexion));
 
-		pthread_detach(hilo_planificador);
+		pthread_detach(hilo_planificador_largo_plazo);
 		return EXIT_SUCCESS;
 	}
 }
