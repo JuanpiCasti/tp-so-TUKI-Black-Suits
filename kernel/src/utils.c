@@ -124,44 +124,6 @@ void loggear_cola_ready() {
     log_info(logger_kernel, "Cola Ready FIFO: [%s]", lista_pids);
 }
 
-void planificador_largo_plazo() {
-    uint32_t grado_multiprogramacion = 0;
-    while(true) {
-        pthread_mutex_lock(&mutex_NEW);
-        if (list_size(NEW) > 0 && grado_multiprogramacion < GRADO_MAX_MULTIPROGRAMACION)
-        {
-            t_pcb* new_pcb = list_remove(NEW, 0);
-            pthread_mutex_unlock(&mutex_NEW);
-
-            pthread_mutex_lock(&mutex_READY);
-
-            list_add(READY, new_pcb);
-            loggear_cambio_estado("NEW", "READY", new_pcb);
-            loggear_cola_ready();
-
-            pthread_mutex_unlock(&mutex_READY);
-
-            grado_multiprogramacion++;
-            // TODO: enviar mensaje a memoria para que inicialice las estructuras necesarias
-
-            // SACAR PRINT, USADO SOLO EN PRUEBAS RAPIDAS
-        } else {
-            pthread_mutex_unlock(&mutex_NEW);
-        }
-
-        // TODO: if, si el PC apunta a EXIT, mandar el PCB a EXIT (o free)
-
-
-        //     // SACAR PRINT, USADO SOLO EN PRUEBAS RAPIDAS
-        // printf("Cola NEW\n");
-        //     for (int i = 0; i < list_size(NEW); i++)
-        //     {
-        //         t_pcb* pcb = list_get(NEW, i);
-        //         printf("PID: %d\n", pcb->pid);
-        //     }
-    }
-}
-
 t_pcb* siguiente_proceso_a_ejecutar() {
     if(strcmp(ALGORITMO_PLANIFICACION, "FIFO") == 0) {
         if(list_size(READY) > 0) {
@@ -180,37 +142,57 @@ t_pcb* siguiente_proceso_a_ejecutar() {
     exit(-1);
 }
 
-void planificador_corto_plazo() {
-    // CHECKPOINT 2: solo FIFO
-    // TODO: algoritmo HRRN
+void planificacion() {
+    uint32_t grado_multiprogramacion = 0;
 
     while(true) {
-        pthread_mutex_lock(&mutex_READY);
-        pthread_mutex_lock(&mutex_RUNNING);
+        pthread_mutex_lock(&mutex_NEW);
+
+        // PASO de NEW a READY
+        if (list_size(NEW) > 0 && grado_multiprogramacion < GRADO_MAX_MULTIPROGRAMACION)
+        {
+            t_pcb* new_pcb = list_remove(NEW, 0);
+            pthread_mutex_unlock(&mutex_NEW);
+
+
+            list_add(READY, new_pcb);
+            loggear_cambio_estado("NEW", "READY", new_pcb);
+            loggear_cola_ready();
+
+            grado_multiprogramacion++;
+            // TODO: enviar mensaje a memoria para que inicialice las estructuras necesarias
+
+            // SACAR PRINT, USADO SOLO EN PRUEBAS RAPIDAS
+        } 
+        else {
+            pthread_mutex_unlock(&mutex_NEW);
+        }
+
+        // Paso de READY a RUNNING
         if(list_size(READY) > 0 && RUNNING == NULL){
 
             t_pcb* r_pcb = siguiente_proceso_a_ejecutar();
 
-            pthread_mutex_unlock(&mutex_READY);
             RUNNING = r_pcb;
             
+            // TODO:
             // Mandar a CPU
             // Recibir respuesta de CPU, 
             // decidir en base a eso, 
             // si mandar a READY o a EXIT
 
-            pthread_mutex_unlock(&mutex_RUNNING);
-
             loggear_cambio_estado("READY", "RUNNING", r_pcb);
-
-            // TODO: Envio del proceso a la CPU
-            // Lo que haria es, serializar el pcb, mandarlo a la CPU
-            // y esperar a que lo devuelva con los registros actualizados 
-            
-
-        } else {
-            pthread_mutex_unlock(&mutex_READY);
-            pthread_mutex_unlock(&mutex_RUNNING);      
         }
+
+        // TODO: if, si el PC apunta a EXIT, mandar el PCB a EXIT (o free)
+
+
+        //     // SACAR PRINT, USADO SOLO EN PRUEBAS RAPIDAS
+        // printf("Cola NEW\n");
+        //     for (int i = 0; i < list_size(NEW); i++)
+        //     {
+        //         t_pcb* pcb = list_get(NEW, i);
+        //         printf("PID: %d\n", pcb->pid);
+        //     }
     }
 }

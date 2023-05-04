@@ -70,6 +70,6 @@ void encolar_proceso(t_pcb* new_pcb, t_list* cola, pthread_mutex_t* mutex_cola);
 void imprimir_pcb(t_pcb *pcb);
 
 
-void planificador_largo_plazo(); // Proceso del planificador de largo plazo
-void planificador_corto_plazo(); // Proceso del planificador de corto plazo
+void planificacion(); // Proceso del planificador
+
 #endif

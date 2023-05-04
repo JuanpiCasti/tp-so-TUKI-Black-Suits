@@ -85,17 +85,17 @@ int main(int argc, char **argv)
 		next_pid = 1;
 
 		// Planificadores
-		pthread_t hilo_planificador_largo_plazo;
-		if (pthread_create(&hilo_planificador_largo_plazo, NULL, (void*)(planificador_largo_plazo), NULL) == -1) {
+		pthread_t hilo_planificacion;
+		if (pthread_create(&hilo_planificacion, NULL, (void*)(planificacion), NULL) == -1) {
 			log_error(logger_kernel_extra, "No se pudo crear el hilo del planificador de largo plazo.");
 			return EXIT_FAILURE;
 		}
 		
-		pthread_t hilo_planificador_corto_plazo;
-		if(pthread_create(&hilo_planificador_corto_plazo, NULL, (void*)(planificador_corto_plazo), NULL) == -1) {
-			log_error(logger_kernel_extra, "No se pudo crear el hilo del planificador de largo plazo.");
-			return EXIT_FAILURE;
-		}
+		// pthread_t hilo_planificador_corto_plazo;
+		// if(pthread_create(&hilo_planificador_corto_plazo, NULL, (void*)(planificador_corto_plazo), NULL) == -1) {
+		// 	log_error(logger_kernel_extra, "No se pudo crear el hilo del planificador de largo plazo.");
+		// 	return EXIT_FAILURE;
+		// }
 
 		//*********************
 		// SERVIDOR
@@ -108,7 +108,7 @@ int main(int argc, char **argv)
 		log_info(logger_kernel_extra, "Kernel escuchando conexiones...");
 		while (server_escuchar(logger_kernel_extra, config_kernel, socket_servidor_kernel, (void *)procesar_conexion));
 
-		pthread_detach(hilo_planificador_largo_plazo);
+		pthread_detach(hilo_planificacion);
 		return EXIT_SUCCESS;
 	}
 }
