@@ -334,3 +334,743 @@
 [INFO] 16:31:45:992 KERNEL_EXTRA/(44496:44546): Recibiendo paquete de instrucciones...
 [WARNING] 16:31:45:992 KERNEL_EXTRA/(44496:44546): Cliente desconectado!
 [WARNING] 16:31:45:992 KERNEL_EXTRA/(44496:44546): El cliente se desconectó del server
+[INFO] 16:35:38:921 KERNEL_EXTRA/(45501:45501): Kernel escuchando conexiones...
+[INFO] 16:35:41:257 KERNEL_EXTRA/(45501:45501): Se conecto un cliente!
+[INFO] 16:35:41:257 KERNEL_EXTRA/(45501:45514): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:35:41:257 KERNEL_EXTRA/(45501:45514): Cliente desconectado!
+[WARNING] 16:35:41:257 KERNEL_EXTRA/(45501:45514): El cliente se desconectó del server
+[INFO] 16:35:41:257 KERNEL_EXTRA/(45501:45501): Se conecto un cliente!
+[INFO] 16:35:41:257 KERNEL_EXTRA/(45501:45515): Recibiendo paquete de instrucciones...
+[INFO] 16:35:47:746 KERNEL_EXTRA/(45501:45501): Se conecto un cliente!
+[INFO] 16:35:47:747 KERNEL_EXTRA/(45501:45561): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:35:47:747 KERNEL_EXTRA/(45501:45561): Cliente desconectado!
+[INFO] 16:35:47:747 KERNEL_EXTRA/(45501:45501): Se conecto un cliente!
+[WARNING] 16:35:47:747 KERNEL_EXTRA/(45501:45561): El cliente se desconectó del server
+[INFO] 16:35:47:747 KERNEL_EXTRA/(45501:45562): Recibiendo paquete de instrucciones...
+[WARNING] 16:35:47:747 KERNEL_EXTRA/(45501:45562): Cliente desconectado!
+[WARNING] 16:35:47:747 KERNEL_EXTRA/(45501:45562): El cliente se desconectó del server
+[INFO] 16:36:01:008 KERNEL_EXTRA/(45632:45632): Kernel escuchando conexiones...
+[INFO] 16:36:03:229 KERNEL_EXTRA/(45632:45632): Se conecto un cliente!
+[INFO] 16:36:03:229 KERNEL_EXTRA/(45632:45651): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:36:03:229 KERNEL_EXTRA/(45632:45651): Cliente desconectado!
+[WARNING] 16:36:03:229 KERNEL_EXTRA/(45632:45651): El cliente se desconectó del server
+[INFO] 16:36:03:229 KERNEL_EXTRA/(45632:45632): Se conecto un cliente!
+[INFO] 16:36:03:229 KERNEL_EXTRA/(45632:45652): Recibiendo paquete de instrucciones...
+[INFO] 16:36:07:513 KERNEL_EXTRA/(45632:45632): Se conecto un cliente!
+[INFO] 16:36:07:513 KERNEL_EXTRA/(45632:45683): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:36:07:513 KERNEL_EXTRA/(45632:45683): Cliente desconectado!
+[INFO] 16:36:07:513 KERNEL_EXTRA/(45632:45632): Se conecto un cliente!
+[WARNING] 16:36:07:513 KERNEL_EXTRA/(45632:45683): El cliente se desconectó del server
+[INFO] 16:36:07:513 KERNEL_EXTRA/(45632:45684): Recibiendo paquete de instrucciones...
+[WARNING] 16:36:07:513 KERNEL_EXTRA/(45632:45684): Cliente desconectado!
+[WARNING] 16:36:07:513 KERNEL_EXTRA/(45632:45684): El cliente se desconectó del server
+[INFO] 16:36:11:307 KERNEL_EXTRA/(45632:45632): Se conecto un cliente!
+[INFO] 16:36:11:307 KERNEL_EXTRA/(45632:45712): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:36:11:307 KERNEL_EXTRA/(45632:45712): Cliente desconectado!
+[WARNING] 16:36:11:307 KERNEL_EXTRA/(45632:45712): El cliente se desconectó del server
+[INFO] 16:36:11:307 KERNEL_EXTRA/(45632:45632): Se conecto un cliente!
+[INFO] 16:36:11:307 KERNEL_EXTRA/(45632:45713): Recibiendo paquete de instrucciones...
+[INFO] 16:36:15:754 KERNEL_EXTRA/(45632:45632): Se conecto un cliente!
+[INFO] 16:36:15:754 KERNEL_EXTRA/(45632:45756): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:36:15:754 KERNEL_EXTRA/(45632:45756): Cliente desconectado!
+[WARNING] 16:36:15:754 KERNEL_EXTRA/(45632:45756): El cliente se desconectó del server
+[INFO] 16:36:15:754 KERNEL_EXTRA/(45632:45632): Se conecto un cliente!
+[INFO] 16:36:15:754 KERNEL_EXTRA/(45632:45757): Recibiendo paquete de instrucciones...
+[WARNING] 16:36:15:754 KERNEL_EXTRA/(45632:45757): Cliente desconectado!
+[WARNING] 16:36:15:754 KERNEL_EXTRA/(45632:45757): El cliente se desconectó del server
+[INFO] 16:36:28:844 KERNEL_EXTRA/(45632:45632): Se conecto un cliente!
+[INFO] 16:36:28:844 KERNEL_EXTRA/(45632:45810): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:36:28:844 KERNEL_EXTRA/(45632:45810): Cliente desconectado!
+[WARNING] 16:36:28:845 KERNEL_EXTRA/(45632:45810): El cliente se desconectó del server
+[INFO] 16:36:28:845 KERNEL_EXTRA/(45632:45632): Se conecto un cliente!
+[INFO] 16:36:28:845 KERNEL_EXTRA/(45632:45811): Recibiendo paquete de instrucciones...
+[WARNING] 16:36:28:845 KERNEL_EXTRA/(45632:45811): Cliente desconectado!
+[WARNING] 16:36:28:845 KERNEL_EXTRA/(45632:45811): El cliente se desconectó del server
+[INFO] 16:36:33:445 KERNEL_EXTRA/(45632:45632): Se conecto un cliente!
+[INFO] 16:36:33:445 KERNEL_EXTRA/(45632:45844): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:36:33:445 KERNEL_EXTRA/(45632:45844): Cliente desconectado!
+[WARNING] 16:36:33:445 KERNEL_EXTRA/(45632:45844): El cliente se desconectó del server
+[INFO] 16:36:33:445 KERNEL_EXTRA/(45632:45632): Se conecto un cliente!
+[INFO] 16:36:33:445 KERNEL_EXTRA/(45632:45845): Recibiendo paquete de instrucciones...
+[INFO] 16:37:49:131 KERNEL_EXTRA/(45969:45969): Kernel escuchando conexiones...
+[INFO] 16:37:52:847 KERNEL_EXTRA/(45969:45969): Se conecto un cliente!
+[INFO] 16:37:52:847 KERNEL_EXTRA/(45969:45988): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:37:52:847 KERNEL_EXTRA/(45969:45988): Cliente desconectado!
+[WARNING] 16:37:52:847 KERNEL_EXTRA/(45969:45988): El cliente se desconectó del server
+[INFO] 16:37:52:847 KERNEL_EXTRA/(45969:45969): Se conecto un cliente!
+[INFO] 16:37:52:847 KERNEL_EXTRA/(45969:45989): Recibiendo paquete de instrucciones...
+[INFO] 16:37:57:153 KERNEL_EXTRA/(45969:45969): Se conecto un cliente!
+[INFO] 16:37:57:153 KERNEL_EXTRA/(45969:46023): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:37:57:153 KERNEL_EXTRA/(45969:46023): Cliente desconectado!
+[WARNING] 16:37:57:153 KERNEL_EXTRA/(45969:46023): El cliente se desconectó del server
+[INFO] 16:37:57:153 KERNEL_EXTRA/(45969:45969): Se conecto un cliente!
+[INFO] 16:37:57:153 KERNEL_EXTRA/(45969:46024): Recibiendo paquete de instrucciones...
+[INFO] 16:38:04:293 KERNEL_EXTRA/(45969:45969): Se conecto un cliente!
+[INFO] 16:38:04:293 KERNEL_EXTRA/(45969:46070): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:38:04:293 KERNEL_EXTRA/(45969:46070): Cliente desconectado!
+[WARNING] 16:38:04:293 KERNEL_EXTRA/(45969:46070): El cliente se desconectó del server
+[INFO] 16:38:04:293 KERNEL_EXTRA/(45969:45969): Se conecto un cliente!
+[INFO] 16:38:04:293 KERNEL_EXTRA/(45969:46071): Recibiendo paquete de instrucciones...
+[WARNING] 16:38:04:293 KERNEL_EXTRA/(45969:46071): Cliente desconectado!
+[WARNING] 16:38:04:293 KERNEL_EXTRA/(45969:46071): El cliente se desconectó del server
+[INFO] 16:39:07:811 KERNEL_EXTRA/(46212:46212): Kernel escuchando conexiones...
+[INFO] 16:39:11:080 KERNEL_EXTRA/(46212:46212): Se conecto un cliente!
+[INFO] 16:39:11:080 KERNEL_EXTRA/(46212:46234): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:39:11:080 KERNEL_EXTRA/(46212:46234): Cliente desconectado!
+[WARNING] 16:39:11:080 KERNEL_EXTRA/(46212:46234): El cliente se desconectó del server
+[INFO] 16:39:11:080 KERNEL_EXTRA/(46212:46212): Se conecto un cliente!
+[INFO] 16:39:11:080 KERNEL_EXTRA/(46212:46235): Recibiendo paquete de instrucciones...
+[WARNING] 16:39:11:080 KERNEL_EXTRA/(46212:46235): Cliente desconectado!
+[WARNING] 16:39:11:080 KERNEL_EXTRA/(46212:46235): El cliente se desconectó del server
+[INFO] 16:39:14:451 KERNEL_EXTRA/(46212:46212): Se conecto un cliente!
+[INFO] 16:39:14:451 KERNEL_EXTRA/(46212:46266): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:39:14:451 KERNEL_EXTRA/(46212:46266): Cliente desconectado!
+[WARNING] 16:39:14:451 KERNEL_EXTRA/(46212:46266): El cliente se desconectó del server
+[INFO] 16:39:14:451 KERNEL_EXTRA/(46212:46212): Se conecto un cliente!
+[INFO] 16:39:14:451 KERNEL_EXTRA/(46212:46267): Recibiendo paquete de instrucciones...
+[WARNING] 16:39:14:451 KERNEL_EXTRA/(46212:46267): Cliente desconectado!
+[WARNING] 16:39:14:451 KERNEL_EXTRA/(46212:46267): El cliente se desconectó del server
+[INFO] 16:39:17:812 KERNEL_EXTRA/(46212:46212): Se conecto un cliente!
+[INFO] 16:39:17:812 KERNEL_EXTRA/(46212:46304): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:39:17:812 KERNEL_EXTRA/(46212:46304): Cliente desconectado!
+[WARNING] 16:39:17:812 KERNEL_EXTRA/(46212:46304): El cliente se desconectó del server
+[INFO] 16:39:17:812 KERNEL_EXTRA/(46212:46212): Se conecto un cliente!
+[INFO] 16:39:17:812 KERNEL_EXTRA/(46212:46305): Recibiendo paquete de instrucciones...
+[INFO] 16:39:50:403 KERNEL_EXTRA/(46416:46416): Kernel escuchando conexiones...
+[INFO] 16:39:53:068 KERNEL_EXTRA/(46416:46416): Se conecto un cliente!
+[INFO] 16:39:53:068 KERNEL_EXTRA/(46416:46435): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:39:53:068 KERNEL_EXTRA/(46416:46435): Cliente desconectado!
+[WARNING] 16:39:53:068 KERNEL_EXTRA/(46416:46435): El cliente se desconectó del server
+[INFO] 16:39:53:068 KERNEL_EXTRA/(46416:46416): Se conecto un cliente!
+[INFO] 16:39:53:068 KERNEL_EXTRA/(46416:46436): Recibiendo paquete de instrucciones...
+[INFO] 16:39:53:924 KERNEL_EXTRA/(46416:46416): Se conecto un cliente!
+[INFO] 16:39:53:925 KERNEL_EXTRA/(46416:46440): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:39:53:925 KERNEL_EXTRA/(46416:46440): Cliente desconectado!
+[WARNING] 16:39:53:925 KERNEL_EXTRA/(46416:46440): El cliente se desconectó del server
+[INFO] 16:39:53:925 KERNEL_EXTRA/(46416:46416): Se conecto un cliente!
+[INFO] 16:39:53:925 KERNEL_EXTRA/(46416:46441): Recibiendo paquete de instrucciones...
+[WARNING] 16:39:53:925 KERNEL_EXTRA/(46416:46441): Cliente desconectado!
+[WARNING] 16:39:53:925 KERNEL_EXTRA/(46416:46441): El cliente se desconectó del server
+[INFO] 16:39:54:433 KERNEL_EXTRA/(46416:46416): Se conecto un cliente!
+[INFO] 16:39:54:434 KERNEL_EXTRA/(46416:46445): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:39:54:434 KERNEL_EXTRA/(46416:46445): Cliente desconectado!
+[WARNING] 16:39:54:434 KERNEL_EXTRA/(46416:46445): El cliente se desconectó del server
+[INFO] 16:39:54:434 KERNEL_EXTRA/(46416:46416): Se conecto un cliente!
+[INFO] 16:39:54:434 KERNEL_EXTRA/(46416:46446): Recibiendo paquete de instrucciones...
+[WARNING] 16:39:54:434 KERNEL_EXTRA/(46416:46446): Cliente desconectado!
+[WARNING] 16:39:54:434 KERNEL_EXTRA/(46416:46446): El cliente se desconectó del server
+[INFO] 16:40:21:263 KERNEL_EXTRA/(46416:46416): Se conecto un cliente!
+[INFO] 16:40:21:264 KERNEL_EXTRA/(46416:46533): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:40:21:264 KERNEL_EXTRA/(46416:46533): Cliente desconectado!
+[WARNING] 16:40:21:264 KERNEL_EXTRA/(46416:46533): El cliente se desconectó del server
+[INFO] 16:40:21:264 KERNEL_EXTRA/(46416:46416): Se conecto un cliente!
+[INFO] 16:40:21:264 KERNEL_EXTRA/(46416:46534): Recibiendo paquete de instrucciones...
+[WARNING] 16:40:21:264 KERNEL_EXTRA/(46416:46534): Cliente desconectado!
+[WARNING] 16:40:21:264 KERNEL_EXTRA/(46416:46534): El cliente se desconectó del server
+[INFO] 16:42:33:415 KERNEL_EXTRA/(46806:46806): Kernel escuchando conexiones...
+[INFO] 16:42:35:838 KERNEL_EXTRA/(46806:46806): Se conecto un cliente!
+[INFO] 16:42:35:838 KERNEL_EXTRA/(46806:46822): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:42:35:838 KERNEL_EXTRA/(46806:46822): Cliente desconectado!
+[WARNING] 16:42:35:838 KERNEL_EXTRA/(46806:46822): El cliente se desconectó del server
+[INFO] 16:42:35:838 KERNEL_EXTRA/(46806:46806): Se conecto un cliente!
+[INFO] 16:42:35:838 KERNEL_EXTRA/(46806:46823): Recibiendo paquete de instrucciones...
+[WARNING] 16:42:35:838 KERNEL_EXTRA/(46806:46823): Cliente desconectado!
+[WARNING] 16:42:35:838 KERNEL_EXTRA/(46806:46823): El cliente se desconectó del server
+[INFO] 16:42:40:812 KERNEL_EXTRA/(46806:46806): Se conecto un cliente!
+[INFO] 16:42:40:812 KERNEL_EXTRA/(46806:46857): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:42:40:812 KERNEL_EXTRA/(46806:46857): Cliente desconectado!
+[WARNING] 16:42:40:812 KERNEL_EXTRA/(46806:46857): El cliente se desconectó del server
+[INFO] 16:42:40:812 KERNEL_EXTRA/(46806:46806): Se conecto un cliente!
+[INFO] 16:42:40:812 KERNEL_EXTRA/(46806:46858): Recibiendo paquete de instrucciones...
+[WARNING] 16:42:40:813 KERNEL_EXTRA/(46806:46858): Cliente desconectado!
+[WARNING] 16:42:40:813 KERNEL_EXTRA/(46806:46858): El cliente se desconectó del server
+[INFO] 16:42:41:354 KERNEL_EXTRA/(46806:46806): Se conecto un cliente!
+[INFO] 16:42:41:354 KERNEL_EXTRA/(46806:46862): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:42:41:354 KERNEL_EXTRA/(46806:46862): Cliente desconectado!
+[WARNING] 16:42:41:355 KERNEL_EXTRA/(46806:46862): El cliente se desconectó del server
+[INFO] 16:42:41:355 KERNEL_EXTRA/(46806:46806): Se conecto un cliente!
+[INFO] 16:42:41:355 KERNEL_EXTRA/(46806:46863): Recibiendo paquete de instrucciones...
+[WARNING] 16:42:41:355 KERNEL_EXTRA/(46806:46863): Cliente desconectado!
+[WARNING] 16:42:41:355 KERNEL_EXTRA/(46806:46863): El cliente se desconectó del server
+[INFO] 16:42:41:952 KERNEL_EXTRA/(46806:46806): Se conecto un cliente!
+[INFO] 16:42:41:952 KERNEL_EXTRA/(46806:46867): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:42:41:952 KERNEL_EXTRA/(46806:46867): Cliente desconectado!
+[WARNING] 16:42:41:952 KERNEL_EXTRA/(46806:46867): El cliente se desconectó del server
+[INFO] 16:42:41:952 KERNEL_EXTRA/(46806:46806): Se conecto un cliente!
+[INFO] 16:42:41:952 KERNEL_EXTRA/(46806:46868): Recibiendo paquete de instrucciones...
+[WARNING] 16:42:41:952 KERNEL_EXTRA/(46806:46868): Cliente desconectado!
+[WARNING] 16:42:41:952 KERNEL_EXTRA/(46806:46868): El cliente se desconectó del server
+[INFO] 16:42:43:134 KERNEL_EXTRA/(46806:46806): Se conecto un cliente!
+[INFO] 16:42:43:134 KERNEL_EXTRA/(46806:46885): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:42:43:134 KERNEL_EXTRA/(46806:46885): Cliente desconectado!
+[WARNING] 16:42:43:134 KERNEL_EXTRA/(46806:46885): El cliente se desconectó del server
+[INFO] 16:42:43:134 KERNEL_EXTRA/(46806:46806): Se conecto un cliente!
+[INFO] 16:42:43:134 KERNEL_EXTRA/(46806:46886): Recibiendo paquete de instrucciones...
+[WARNING] 16:42:43:134 KERNEL_EXTRA/(46806:46886): Cliente desconectado!
+[WARNING] 16:42:43:134 KERNEL_EXTRA/(46806:46886): El cliente se desconectó del server
+[INFO] 16:42:45:928 KERNEL_EXTRA/(46806:46806): Se conecto un cliente!
+[INFO] 16:42:45:928 KERNEL_EXTRA/(46806:46907): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:42:45:928 KERNEL_EXTRA/(46806:46907): Cliente desconectado!
+[WARNING] 16:42:45:928 KERNEL_EXTRA/(46806:46907): El cliente se desconectó del server
+[INFO] 16:42:45:928 KERNEL_EXTRA/(46806:46806): Se conecto un cliente!
+[INFO] 16:42:45:928 KERNEL_EXTRA/(46806:46908): Recibiendo paquete de instrucciones...
+[WARNING] 16:42:45:928 KERNEL_EXTRA/(46806:46908): Cliente desconectado!
+[WARNING] 16:42:45:928 KERNEL_EXTRA/(46806:46908): El cliente se desconectó del server
+[INFO] 16:42:46:236 KERNEL_EXTRA/(46806:46806): Se conecto un cliente!
+[INFO] 16:42:46:236 KERNEL_EXTRA/(46806:46912): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:42:46:236 KERNEL_EXTRA/(46806:46912): Cliente desconectado!
+[WARNING] 16:42:46:236 KERNEL_EXTRA/(46806:46912): El cliente se desconectó del server
+[INFO] 16:42:46:236 KERNEL_EXTRA/(46806:46806): Se conecto un cliente!
+[INFO] 16:42:46:236 KERNEL_EXTRA/(46806:46913): Recibiendo paquete de instrucciones...
+[WARNING] 16:42:46:236 KERNEL_EXTRA/(46806:46913): Cliente desconectado!
+[WARNING] 16:42:46:236 KERNEL_EXTRA/(46806:46913): El cliente se desconectó del server
+[INFO] 16:42:46:612 KERNEL_EXTRA/(46806:46806): Se conecto un cliente!
+[INFO] 16:42:46:612 KERNEL_EXTRA/(46806:46917): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:42:46:612 KERNEL_EXTRA/(46806:46917): Cliente desconectado!
+[WARNING] 16:42:46:612 KERNEL_EXTRA/(46806:46917): El cliente se desconectó del server
+[INFO] 16:42:46:612 KERNEL_EXTRA/(46806:46806): Se conecto un cliente!
+[INFO] 16:42:46:613 KERNEL_EXTRA/(46806:46918): Recibiendo paquete de instrucciones...
+[WARNING] 16:42:46:613 KERNEL_EXTRA/(46806:46918): Cliente desconectado!
+[WARNING] 16:42:46:613 KERNEL_EXTRA/(46806:46918): El cliente se desconectó del server
+[INFO] 16:42:46:888 KERNEL_EXTRA/(46806:46806): Se conecto un cliente!
+[INFO] 16:42:46:888 KERNEL_EXTRA/(46806:46922): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:42:46:888 KERNEL_EXTRA/(46806:46922): Cliente desconectado!
+[WARNING] 16:42:46:888 KERNEL_EXTRA/(46806:46922): El cliente se desconectó del server
+[INFO] 16:42:46:888 KERNEL_EXTRA/(46806:46806): Se conecto un cliente!
+[INFO] 16:42:46:888 KERNEL_EXTRA/(46806:46923): Recibiendo paquete de instrucciones...
+[WARNING] 16:42:46:889 KERNEL_EXTRA/(46806:46923): Cliente desconectado!
+[WARNING] 16:42:46:889 KERNEL_EXTRA/(46806:46923): El cliente se desconectó del server
+[INFO] 16:45:26:431 KERNEL_EXTRA/(47177:47177): Kernel escuchando conexiones...
+[INFO] 16:45:50:382 KERNEL_EXTRA/(46806:46806): Se conecto un cliente!
+[INFO] 16:45:50:382 KERNEL_EXTRA/(46806:47220): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:45:50:382 KERNEL_EXTRA/(46806:47220): Cliente desconectado!
+[WARNING] 16:45:50:382 KERNEL_EXTRA/(46806:47220): El cliente se desconectó del server
+[INFO] 16:45:50:382 KERNEL_EXTRA/(46806:46806): Se conecto un cliente!
+[INFO] 16:45:50:382 KERNEL_EXTRA/(46806:47221): Recibiendo paquete de instrucciones...
+[WARNING] 16:45:50:383 KERNEL_EXTRA/(46806:47221): Cliente desconectado!
+[WARNING] 16:45:50:383 KERNEL_EXTRA/(46806:47221): El cliente se desconectó del server
+[INFO] 16:46:39:677 KERNEL_EXTRA/(47357:47357): Kernel escuchando conexiones...
+[INFO] 16:46:49:815 KERNEL_EXTRA/(47439:47439): Kernel escuchando conexiones...
+[INFO] 16:46:52:647 KERNEL_EXTRA/(47439:47439): Se conecto un cliente!
+[INFO] 16:46:52:647 KERNEL_EXTRA/(47439:47471): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:46:52:647 KERNEL_EXTRA/(47439:47471): Cliente desconectado!
+[WARNING] 16:46:52:647 KERNEL_EXTRA/(47439:47471): El cliente se desconectó del server
+[INFO] 16:46:52:647 KERNEL_EXTRA/(47439:47439): Se conecto un cliente!
+[INFO] 16:46:52:648 KERNEL_EXTRA/(47439:47472): Recibiendo paquete de instrucciones...
+[WARNING] 16:46:52:648 KERNEL_EXTRA/(47439:47472): Cliente desconectado!
+[WARNING] 16:46:52:648 KERNEL_EXTRA/(47439:47472): El cliente se desconectó del server
+[INFO] 16:46:53:510 KERNEL_EXTRA/(47439:47439): Se conecto un cliente!
+[INFO] 16:46:53:511 KERNEL_EXTRA/(47439:47476): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:46:53:511 KERNEL_EXTRA/(47439:47476): Cliente desconectado!
+[WARNING] 16:46:53:511 KERNEL_EXTRA/(47439:47476): El cliente se desconectó del server
+[INFO] 16:46:53:511 KERNEL_EXTRA/(47439:47439): Se conecto un cliente!
+[INFO] 16:46:53:511 KERNEL_EXTRA/(47439:47477): Recibiendo paquete de instrucciones...
+[WARNING] 16:46:53:511 KERNEL_EXTRA/(47439:47477): Cliente desconectado!
+[WARNING] 16:46:53:511 KERNEL_EXTRA/(47439:47477): El cliente se desconectó del server
+[INFO] 16:46:54:184 KERNEL_EXTRA/(47439:47439): Se conecto un cliente!
+[INFO] 16:46:54:184 KERNEL_EXTRA/(47439:47481): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:46:54:184 KERNEL_EXTRA/(47439:47481): Cliente desconectado!
+[WARNING] 16:46:54:184 KERNEL_EXTRA/(47439:47481): El cliente se desconectó del server
+[INFO] 16:46:54:184 KERNEL_EXTRA/(47439:47439): Se conecto un cliente!
+[INFO] 16:46:54:184 KERNEL_EXTRA/(47439:47482): Recibiendo paquete de instrucciones...
+[WARNING] 16:46:54:184 KERNEL_EXTRA/(47439:47482): Cliente desconectado!
+[WARNING] 16:46:54:184 KERNEL_EXTRA/(47439:47482): El cliente se desconectó del server
+[INFO] 16:46:54:828 KERNEL_EXTRA/(47439:47439): Se conecto un cliente!
+[INFO] 16:46:54:828 KERNEL_EXTRA/(47439:47496): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:46:54:828 KERNEL_EXTRA/(47439:47496): Cliente desconectado!
+[WARNING] 16:46:54:828 KERNEL_EXTRA/(47439:47496): El cliente se desconectó del server
+[INFO] 16:46:54:828 KERNEL_EXTRA/(47439:47439): Se conecto un cliente!
+[INFO] 16:46:54:828 KERNEL_EXTRA/(47439:47497): Recibiendo paquete de instrucciones...
+[WARNING] 16:46:54:828 KERNEL_EXTRA/(47439:47497): Cliente desconectado!
+[WARNING] 16:46:54:828 KERNEL_EXTRA/(47439:47497): El cliente se desconectó del server
+[INFO] 16:46:55:366 KERNEL_EXTRA/(47439:47439): Se conecto un cliente!
+[INFO] 16:46:55:366 KERNEL_EXTRA/(47439:47501): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:46:55:366 KERNEL_EXTRA/(47439:47501): Cliente desconectado!
+[WARNING] 16:46:55:366 KERNEL_EXTRA/(47439:47501): El cliente se desconectó del server
+[INFO] 16:46:55:366 KERNEL_EXTRA/(47439:47439): Se conecto un cliente!
+[INFO] 16:46:55:367 KERNEL_EXTRA/(47439:47502): Recibiendo paquete de instrucciones...
+[WARNING] 16:46:55:367 KERNEL_EXTRA/(47439:47502): Cliente desconectado!
+[WARNING] 16:46:55:367 KERNEL_EXTRA/(47439:47502): El cliente se desconectó del server
+[INFO] 16:46:55:905 KERNEL_EXTRA/(47439:47439): Se conecto un cliente!
+[INFO] 16:46:55:905 KERNEL_EXTRA/(47439:47511): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:46:55:905 KERNEL_EXTRA/(47439:47511): Cliente desconectado!
+[WARNING] 16:46:55:905 KERNEL_EXTRA/(47439:47511): El cliente se desconectó del server
+[INFO] 16:46:55:905 KERNEL_EXTRA/(47439:47439): Se conecto un cliente!
+[INFO] 16:46:55:905 KERNEL_EXTRA/(47439:47512): Recibiendo paquete de instrucciones...
+[WARNING] 16:46:55:905 KERNEL_EXTRA/(47439:47512): Cliente desconectado!
+[WARNING] 16:46:55:905 KERNEL_EXTRA/(47439:47512): El cliente se desconectó del server
+[INFO] 16:46:56:509 KERNEL_EXTRA/(47439:47439): Se conecto un cliente!
+[INFO] 16:46:56:510 KERNEL_EXTRA/(47439:47516): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:46:56:510 KERNEL_EXTRA/(47439:47516): Cliente desconectado!
+[WARNING] 16:46:56:510 KERNEL_EXTRA/(47439:47516): El cliente se desconectó del server
+[INFO] 16:46:56:510 KERNEL_EXTRA/(47439:47439): Se conecto un cliente!
+[INFO] 16:46:56:510 KERNEL_EXTRA/(47439:47517): Recibiendo paquete de instrucciones...
+[WARNING] 16:46:56:510 KERNEL_EXTRA/(47439:47517): Cliente desconectado!
+[WARNING] 16:46:56:510 KERNEL_EXTRA/(47439:47517): El cliente se desconectó del server
+[INFO] 16:47:52:505 KERNEL_EXTRA/(47679:47679): Kernel escuchando conexiones...
+[INFO] 16:47:54:812 KERNEL_EXTRA/(47679:47679): Se conecto un cliente!
+[INFO] 16:47:54:812 KERNEL_EXTRA/(47679:47695): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:47:54:812 KERNEL_EXTRA/(47679:47695): Cliente desconectado!
+[WARNING] 16:47:54:812 KERNEL_EXTRA/(47679:47695): El cliente se desconectó del server
+[INFO] 16:47:54:812 KERNEL_EXTRA/(47679:47679): Se conecto un cliente!
+[INFO] 16:47:54:812 KERNEL_EXTRA/(47679:47696): Recibiendo paquete de instrucciones...
+[WARNING] 16:47:54:812 KERNEL_EXTRA/(47679:47696): Cliente desconectado!
+[WARNING] 16:47:54:812 KERNEL_EXTRA/(47679:47696): El cliente se desconectó del server
+[INFO] 16:47:55:360 KERNEL_EXTRA/(47679:47679): Se conecto un cliente!
+[INFO] 16:47:55:360 KERNEL_EXTRA/(47679:47700): Recibido handshake HANDSHAKE_CONSOLA.
+[INFO] 16:47:55:360 KERNEL_EXTRA/(47679:47679): Se conecto un cliente!
+[INFO] 16:47:55:360 KERNEL_EXTRA/(47679:47701): Recibiendo paquete de instrucciones...
+[WARNING] 16:47:55:360 KERNEL_EXTRA/(47679:47700): Cliente desconectado!
+[WARNING] 16:47:55:360 KERNEL_EXTRA/(47679:47701): Cliente desconectado!
+[WARNING] 16:47:55:360 KERNEL_EXTRA/(47679:47700): El cliente se desconectó del server
+[WARNING] 16:47:55:360 KERNEL_EXTRA/(47679:47701): El cliente se desconectó del server
+[INFO] 16:47:55:848 KERNEL_EXTRA/(47679:47679): Se conecto un cliente!
+[INFO] 16:47:55:848 KERNEL_EXTRA/(47679:47705): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:47:55:848 KERNEL_EXTRA/(47679:47705): Cliente desconectado!
+[WARNING] 16:47:55:848 KERNEL_EXTRA/(47679:47705): El cliente se desconectó del server
+[INFO] 16:47:55:848 KERNEL_EXTRA/(47679:47679): Se conecto un cliente!
+[INFO] 16:47:55:848 KERNEL_EXTRA/(47679:47706): Recibiendo paquete de instrucciones...
+[WARNING] 16:47:55:849 KERNEL_EXTRA/(47679:47706): Cliente desconectado!
+[WARNING] 16:47:55:849 KERNEL_EXTRA/(47679:47706): El cliente se desconectó del server
+[INFO] 16:47:56:347 KERNEL_EXTRA/(47679:47679): Se conecto un cliente!
+[INFO] 16:47:56:347 KERNEL_EXTRA/(47679:47710): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:47:56:347 KERNEL_EXTRA/(47679:47710): Cliente desconectado!
+[WARNING] 16:47:56:347 KERNEL_EXTRA/(47679:47710): El cliente se desconectó del server
+[INFO] 16:47:56:347 KERNEL_EXTRA/(47679:47679): Se conecto un cliente!
+[INFO] 16:47:56:347 KERNEL_EXTRA/(47679:47711): Recibiendo paquete de instrucciones...
+[WARNING] 16:47:56:347 KERNEL_EXTRA/(47679:47711): Cliente desconectado!
+[WARNING] 16:47:56:347 KERNEL_EXTRA/(47679:47711): El cliente se desconectó del server
+[INFO] 16:47:56:879 KERNEL_EXTRA/(47679:47679): Se conecto un cliente!
+[INFO] 16:47:56:879 KERNEL_EXTRA/(47679:47715): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:47:56:879 KERNEL_EXTRA/(47679:47715): Cliente desconectado!
+[WARNING] 16:47:56:879 KERNEL_EXTRA/(47679:47715): El cliente se desconectó del server
+[INFO] 16:47:56:879 KERNEL_EXTRA/(47679:47679): Se conecto un cliente!
+[INFO] 16:47:56:879 KERNEL_EXTRA/(47679:47716): Recibiendo paquete de instrucciones...
+[WARNING] 16:47:56:879 KERNEL_EXTRA/(47679:47716): Cliente desconectado!
+[WARNING] 16:47:56:879 KERNEL_EXTRA/(47679:47716): El cliente se desconectó del server
+[INFO] 16:48:10:879 KERNEL_EXTRA/(47679:47679): Se conecto un cliente!
+[INFO] 16:48:10:879 KERNEL_EXTRA/(47679:47800): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:48:10:879 KERNEL_EXTRA/(47679:47800): Cliente desconectado!
+[WARNING] 16:48:10:879 KERNEL_EXTRA/(47679:47800): El cliente se desconectó del server
+[INFO] 16:48:10:879 KERNEL_EXTRA/(47679:47679): Se conecto un cliente!
+[INFO] 16:48:10:879 KERNEL_EXTRA/(47679:47801): Recibiendo paquete de instrucciones...
+[WARNING] 16:48:10:879 KERNEL_EXTRA/(47679:47801): Cliente desconectado!
+[WARNING] 16:48:10:879 KERNEL_EXTRA/(47679:47801): El cliente se desconectó del server
+[INFO] 16:48:11:406 KERNEL_EXTRA/(47679:47679): Se conecto un cliente!
+[INFO] 16:48:11:406 KERNEL_EXTRA/(47679:47805): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:48:11:406 KERNEL_EXTRA/(47679:47805): Cliente desconectado!
+[WARNING] 16:48:11:406 KERNEL_EXTRA/(47679:47805): El cliente se desconectó del server
+[INFO] 16:48:11:406 KERNEL_EXTRA/(47679:47679): Se conecto un cliente!
+[INFO] 16:48:11:406 KERNEL_EXTRA/(47679:47806): Recibiendo paquete de instrucciones...
+[WARNING] 16:48:11:406 KERNEL_EXTRA/(47679:47806): Cliente desconectado!
+[WARNING] 16:48:11:406 KERNEL_EXTRA/(47679:47806): El cliente se desconectó del server
+[INFO] 16:48:11:953 KERNEL_EXTRA/(47679:47679): Se conecto un cliente!
+[INFO] 16:48:11:953 KERNEL_EXTRA/(47679:47820): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:48:11:953 KERNEL_EXTRA/(47679:47820): Cliente desconectado!
+[WARNING] 16:48:11:953 KERNEL_EXTRA/(47679:47820): El cliente se desconectó del server
+[INFO] 16:48:11:953 KERNEL_EXTRA/(47679:47679): Se conecto un cliente!
+[INFO] 16:48:11:953 KERNEL_EXTRA/(47679:47821): Recibiendo paquete de instrucciones...
+[WARNING] 16:48:11:953 KERNEL_EXTRA/(47679:47821): Cliente desconectado!
+[WARNING] 16:48:11:953 KERNEL_EXTRA/(47679:47821): El cliente se desconectó del server
+[INFO] 16:48:12:503 KERNEL_EXTRA/(47679:47679): Se conecto un cliente!
+[INFO] 16:48:12:503 KERNEL_EXTRA/(47679:47825): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:48:12:503 KERNEL_EXTRA/(47679:47825): Cliente desconectado!
+[WARNING] 16:48:12:503 KERNEL_EXTRA/(47679:47825): El cliente se desconectó del server
+[INFO] 16:48:12:503 KERNEL_EXTRA/(47679:47679): Se conecto un cliente!
+[INFO] 16:48:12:503 KERNEL_EXTRA/(47679:47826): Recibiendo paquete de instrucciones...
+[WARNING] 16:48:12:503 KERNEL_EXTRA/(47679:47826): Cliente desconectado!
+[WARNING] 16:48:12:503 KERNEL_EXTRA/(47679:47826): El cliente se desconectó del server
+[INFO] 16:49:27:696 KERNEL_EXTRA/(48079:48079): Kernel escuchando conexiones...
+[INFO] 16:49:30:626 KERNEL_EXTRA/(48079:48079): Se conecto un cliente!
+[INFO] 16:49:30:626 KERNEL_EXTRA/(48079:48095): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:49:30:626 KERNEL_EXTRA/(48079:48095): Cliente desconectado!
+[WARNING] 16:49:30:626 KERNEL_EXTRA/(48079:48095): El cliente se desconectó del server
+[INFO] 16:49:30:626 KERNEL_EXTRA/(48079:48079): Se conecto un cliente!
+[INFO] 16:49:30:626 KERNEL_EXTRA/(48079:48096): Recibiendo paquete de instrucciones...
+[WARNING] 16:49:30:626 KERNEL_EXTRA/(48079:48096): Cliente desconectado!
+[WARNING] 16:49:30:626 KERNEL_EXTRA/(48079:48096): El cliente se desconectó del server
+[INFO] 16:49:31:226 KERNEL_EXTRA/(48079:48079): Se conecto un cliente!
+[INFO] 16:49:31:226 KERNEL_EXTRA/(48079:48100): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:49:31:226 KERNEL_EXTRA/(48079:48100): Cliente desconectado!
+[WARNING] 16:49:31:226 KERNEL_EXTRA/(48079:48100): El cliente se desconectó del server
+[INFO] 16:49:31:226 KERNEL_EXTRA/(48079:48079): Se conecto un cliente!
+[INFO] 16:49:31:226 KERNEL_EXTRA/(48079:48101): Recibiendo paquete de instrucciones...
+[WARNING] 16:49:31:226 KERNEL_EXTRA/(48079:48101): Cliente desconectado!
+[WARNING] 16:49:31:226 KERNEL_EXTRA/(48079:48101): El cliente se desconectó del server
+[INFO] 16:49:31:878 KERNEL_EXTRA/(48079:48079): Se conecto un cliente!
+[INFO] 16:49:31:878 KERNEL_EXTRA/(48079:48115): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:49:31:878 KERNEL_EXTRA/(48079:48115): Cliente desconectado!
+[WARNING] 16:49:31:878 KERNEL_EXTRA/(48079:48115): El cliente se desconectó del server
+[INFO] 16:49:31:878 KERNEL_EXTRA/(48079:48079): Se conecto un cliente!
+[INFO] 16:49:31:879 KERNEL_EXTRA/(48079:48116): Recibiendo paquete de instrucciones...
+[WARNING] 16:49:31:879 KERNEL_EXTRA/(48079:48116): Cliente desconectado!
+[WARNING] 16:49:31:879 KERNEL_EXTRA/(48079:48116): El cliente se desconectó del server
+[INFO] 16:49:32:574 KERNEL_EXTRA/(48079:48079): Se conecto un cliente!
+[INFO] 16:49:32:574 KERNEL_EXTRA/(48079:48120): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:49:32:574 KERNEL_EXTRA/(48079:48120): Cliente desconectado!
+[WARNING] 16:49:32:574 KERNEL_EXTRA/(48079:48120): El cliente se desconectó del server
+[INFO] 16:49:32:574 KERNEL_EXTRA/(48079:48079): Se conecto un cliente!
+[INFO] 16:49:32:574 KERNEL_EXTRA/(48079:48121): Recibiendo paquete de instrucciones...
+[WARNING] 16:49:32:574 KERNEL_EXTRA/(48079:48121): Cliente desconectado!
+[WARNING] 16:49:32:574 KERNEL_EXTRA/(48079:48121): El cliente se desconectó del server
+[INFO] 16:49:33:191 KERNEL_EXTRA/(48079:48079): Se conecto un cliente!
+[INFO] 16:49:33:191 KERNEL_EXTRA/(48079:48130): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:49:33:191 KERNEL_EXTRA/(48079:48130): Cliente desconectado!
+[WARNING] 16:49:33:191 KERNEL_EXTRA/(48079:48130): El cliente se desconectó del server
+[INFO] 16:49:33:191 KERNEL_EXTRA/(48079:48079): Se conecto un cliente!
+[INFO] 16:49:33:191 KERNEL_EXTRA/(48079:48131): Recibiendo paquete de instrucciones...
+[WARNING] 16:49:33:191 KERNEL_EXTRA/(48079:48131): Cliente desconectado!
+[WARNING] 16:49:33:191 KERNEL_EXTRA/(48079:48131): El cliente se desconectó del server
+[INFO] 16:49:50:976 KERNEL_EXTRA/(48213:48213): Kernel escuchando conexiones...
+[INFO] 16:49:53:193 KERNEL_EXTRA/(48213:48213): Se conecto un cliente!
+[INFO] 16:49:53:193 KERNEL_EXTRA/(48213:48239): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:49:53:193 KERNEL_EXTRA/(48213:48239): Cliente desconectado!
+[WARNING] 16:49:53:193 KERNEL_EXTRA/(48213:48239): El cliente se desconectó del server
+[INFO] 16:49:53:193 KERNEL_EXTRA/(48213:48213): Se conecto un cliente!
+[INFO] 16:49:53:193 KERNEL_EXTRA/(48213:48240): Recibiendo paquete de instrucciones...
+[WARNING] 16:49:53:193 KERNEL_EXTRA/(48213:48240): Cliente desconectado!
+[WARNING] 16:49:53:193 KERNEL_EXTRA/(48213:48240): El cliente se desconectó del server
+[INFO] 16:49:53:689 KERNEL_EXTRA/(48213:48213): Se conecto un cliente!
+[INFO] 16:49:53:689 KERNEL_EXTRA/(48213:48244): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:49:53:689 KERNEL_EXTRA/(48213:48244): Cliente desconectado!
+[WARNING] 16:49:53:689 KERNEL_EXTRA/(48213:48244): El cliente se desconectó del server
+[INFO] 16:49:53:689 KERNEL_EXTRA/(48213:48213): Se conecto un cliente!
+[INFO] 16:49:53:689 KERNEL_EXTRA/(48213:48245): Recibiendo paquete de instrucciones...
+[WARNING] 16:49:53:689 KERNEL_EXTRA/(48213:48245): Cliente desconectado!
+[WARNING] 16:49:53:689 KERNEL_EXTRA/(48213:48245): El cliente se desconectó del server
+[INFO] 16:49:54:195 KERNEL_EXTRA/(48213:48213): Se conecto un cliente!
+[INFO] 16:49:54:195 KERNEL_EXTRA/(48213:48252): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:49:54:195 KERNEL_EXTRA/(48213:48252): Cliente desconectado!
+[WARNING] 16:49:54:195 KERNEL_EXTRA/(48213:48252): El cliente se desconectó del server
+[INFO] 16:49:54:196 KERNEL_EXTRA/(48213:48213): Se conecto un cliente!
+[INFO] 16:49:54:196 KERNEL_EXTRA/(48213:48253): Recibiendo paquete de instrucciones...
+[WARNING] 16:49:54:196 KERNEL_EXTRA/(48213:48253): Cliente desconectado!
+[WARNING] 16:49:54:196 KERNEL_EXTRA/(48213:48253): El cliente se desconectó del server
+[INFO] 16:49:54:722 KERNEL_EXTRA/(48213:48213): Se conecto un cliente!
+[INFO] 16:49:54:722 KERNEL_EXTRA/(48213:48257): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:49:54:722 KERNEL_EXTRA/(48213:48257): Cliente desconectado!
+[WARNING] 16:49:54:722 KERNEL_EXTRA/(48213:48257): El cliente se desconectó del server
+[INFO] 16:49:54:722 KERNEL_EXTRA/(48213:48213): Se conecto un cliente!
+[INFO] 16:49:54:722 KERNEL_EXTRA/(48213:48258): Recibiendo paquete de instrucciones...
+[WARNING] 16:49:54:722 KERNEL_EXTRA/(48213:48258): Cliente desconectado!
+[WARNING] 16:49:54:722 KERNEL_EXTRA/(48213:48258): El cliente se desconectó del server
+[INFO] 16:50:42:729 KERNEL_EXTRA/(48411:48411): Kernel escuchando conexiones...
+[INFO] 16:50:46:362 KERNEL_EXTRA/(48411:48411): Se conecto un cliente!
+[INFO] 16:50:46:362 KERNEL_EXTRA/(48411:48431): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:50:46:362 KERNEL_EXTRA/(48411:48431): Cliente desconectado!
+[WARNING] 16:50:46:362 KERNEL_EXTRA/(48411:48431): El cliente se desconectó del server
+[INFO] 16:50:46:362 KERNEL_EXTRA/(48411:48411): Se conecto un cliente!
+[INFO] 16:50:46:362 KERNEL_EXTRA/(48411:48432): Recibiendo paquete de instrucciones...
+[WARNING] 16:50:46:362 KERNEL_EXTRA/(48411:48432): Cliente desconectado!
+[INFO] 16:51:50:479 KERNEL_EXTRA/(48553:48553): Kernel escuchando conexiones...
+[INFO] 16:51:53:203 KERNEL_EXTRA/(48553:48553): Se conecto un cliente!
+[INFO] 16:51:53:203 KERNEL_EXTRA/(48553:48573): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:51:53:203 KERNEL_EXTRA/(48553:48573): Cliente desconectado!
+[WARNING] 16:51:53:203 KERNEL_EXTRA/(48553:48573): El cliente se desconectó del server
+[INFO] 16:51:53:203 KERNEL_EXTRA/(48553:48553): Se conecto un cliente!
+[INFO] 16:51:53:203 KERNEL_EXTRA/(48553:48574): Recibiendo paquete de instrucciones...
+[WARNING] 16:51:53:204 KERNEL_EXTRA/(48553:48574): Cliente desconectado!
+[WARNING] 16:51:53:204 KERNEL_EXTRA/(48553:48574): El cliente se desconectó del server
+[INFO] 16:51:53:772 KERNEL_EXTRA/(48553:48553): Se conecto un cliente!
+[INFO] 16:51:53:773 KERNEL_EXTRA/(48553:48578): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:51:53:773 KERNEL_EXTRA/(48553:48578): Cliente desconectado!
+[WARNING] 16:51:53:773 KERNEL_EXTRA/(48553:48578): El cliente se desconectó del server
+[INFO] 16:51:53:773 KERNEL_EXTRA/(48553:48553): Se conecto un cliente!
+[INFO] 16:51:53:773 KERNEL_EXTRA/(48553:48579): Recibiendo paquete de instrucciones...
+[WARNING] 16:51:53:773 KERNEL_EXTRA/(48553:48579): Cliente desconectado!
+[WARNING] 16:51:53:773 KERNEL_EXTRA/(48553:48579): El cliente se desconectó del server
+[INFO] 16:51:54:273 KERNEL_EXTRA/(48553:48553): Se conecto un cliente!
+[INFO] 16:51:54:273 KERNEL_EXTRA/(48553:48583): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:51:54:274 KERNEL_EXTRA/(48553:48583): Cliente desconectado!
+[WARNING] 16:51:54:274 KERNEL_EXTRA/(48553:48583): El cliente se desconectó del server
+[INFO] 16:51:54:274 KERNEL_EXTRA/(48553:48553): Se conecto un cliente!
+[INFO] 16:51:54:274 KERNEL_EXTRA/(48553:48584): Recibiendo paquete de instrucciones...
+[WARNING] 16:51:54:274 KERNEL_EXTRA/(48553:48584): Cliente desconectado!
+[WARNING] 16:51:54:274 KERNEL_EXTRA/(48553:48584): El cliente se desconectó del server
+[INFO] 16:51:54:783 KERNEL_EXTRA/(48553:48553): Se conecto un cliente!
+[INFO] 16:51:54:783 KERNEL_EXTRA/(48553:48597): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:51:54:784 KERNEL_EXTRA/(48553:48597): Cliente desconectado!
+[WARNING] 16:51:54:784 KERNEL_EXTRA/(48553:48597): El cliente se desconectó del server
+[INFO] 16:51:54:784 KERNEL_EXTRA/(48553:48553): Se conecto un cliente!
+[INFO] 16:51:54:784 KERNEL_EXTRA/(48553:48598): Recibiendo paquete de instrucciones...
+[WARNING] 16:51:54:784 KERNEL_EXTRA/(48553:48598): Cliente desconectado!
+[WARNING] 16:51:54:784 KERNEL_EXTRA/(48553:48598): El cliente se desconectó del server
+[INFO] 16:51:55:312 KERNEL_EXTRA/(48553:48553): Se conecto un cliente!
+[INFO] 16:51:55:312 KERNEL_EXTRA/(48553:48602): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:51:55:312 KERNEL_EXTRA/(48553:48602): Cliente desconectado!
+[WARNING] 16:51:55:312 KERNEL_EXTRA/(48553:48602): El cliente se desconectó del server
+[INFO] 16:51:55:312 KERNEL_EXTRA/(48553:48553): Se conecto un cliente!
+[INFO] 16:51:55:312 KERNEL_EXTRA/(48553:48603): Recibiendo paquete de instrucciones...
+[WARNING] 16:51:55:312 KERNEL_EXTRA/(48553:48603): Cliente desconectado!
+[WARNING] 16:51:55:312 KERNEL_EXTRA/(48553:48603): El cliente se desconectó del server
+[INFO] 16:51:55:833 KERNEL_EXTRA/(48553:48553): Se conecto un cliente!
+[INFO] 16:51:55:833 KERNEL_EXTRA/(48553:48610): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:51:55:833 KERNEL_EXTRA/(48553:48610): Cliente desconectado!
+[WARNING] 16:51:55:833 KERNEL_EXTRA/(48553:48610): El cliente se desconectó del server
+[INFO] 16:51:55:833 KERNEL_EXTRA/(48553:48553): Se conecto un cliente!
+[INFO] 16:51:55:833 KERNEL_EXTRA/(48553:48611): Recibiendo paquete de instrucciones...
+[WARNING] 16:51:55:833 KERNEL_EXTRA/(48553:48611): Cliente desconectado!
+[WARNING] 16:51:55:833 KERNEL_EXTRA/(48553:48611): El cliente se desconectó del server
+[INFO] 16:52:29:146 KERNEL_EXTRA/(48696:48696): Kernel escuchando conexiones...
+[INFO] 16:52:31:636 KERNEL_EXTRA/(48710:48710): Kernel escuchando conexiones...
+[INFO] 16:52:38:681 KERNEL_EXTRA/(48760:48760): Kernel escuchando conexiones...
+[INFO] 16:53:47:039 KERNEL_EXTRA/(48958:48958): Kernel escuchando conexiones...
+[INFO] 16:53:49:542 KERNEL_EXTRA/(48978:48978): Kernel escuchando conexiones...
+[INFO] 16:53:52:198 KERNEL_EXTRA/(48978:48978): Se conecto un cliente!
+[INFO] 16:53:52:198 KERNEL_EXTRA/(48978:48995): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:53:52:199 KERNEL_EXTRA/(48978:48995): Cliente desconectado!
+[WARNING] 16:53:52:199 KERNEL_EXTRA/(48978:48995): El cliente se desconectó del server
+[INFO] 16:53:52:199 KERNEL_EXTRA/(48978:48978): Se conecto un cliente!
+[INFO] 16:53:52:199 KERNEL_EXTRA/(48978:48996): Recibiendo paquete de instrucciones...
+[WARNING] 16:53:52:199 KERNEL_EXTRA/(48978:48996): Cliente desconectado!
+[WARNING] 16:53:52:199 KERNEL_EXTRA/(48978:48996): El cliente se desconectó del server
+[INFO] 16:55:01:822 KERNEL_EXTRA/(49120:49120): Kernel escuchando conexiones...
+[INFO] 16:55:05:334 KERNEL_EXTRA/(49120:49120): Se conecto un cliente!
+[INFO] 16:55:05:334 KERNEL_EXTRA/(49120:49140): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:55:05:334 KERNEL_EXTRA/(49120:49140): Cliente desconectado!
+[WARNING] 16:55:05:334 KERNEL_EXTRA/(49120:49140): El cliente se desconectó del server
+[INFO] 16:55:05:334 KERNEL_EXTRA/(49120:49120): Se conecto un cliente!
+[INFO] 16:55:05:334 KERNEL_EXTRA/(49120:49141): Recibiendo paquete de instrucciones...
+[WARNING] 16:55:05:336 KERNEL_EXTRA/(49120:49141): Cliente desconectado!
+[WARNING] 16:55:05:336 KERNEL_EXTRA/(49120:49141): El cliente se desconectó del server
+[INFO] 16:59:08:288 KERNEL_EXTRA/(49579:49579): Kernel escuchando conexiones...
+[INFO] 16:59:21:523 KERNEL_EXTRA/(49636:49636): Kernel escuchando conexiones...
+[INFO] 16:59:24:243 KERNEL_EXTRA/(49636:49636): Se conecto un cliente!
+[INFO] 16:59:24:243 KERNEL_EXTRA/(49636:49687): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 16:59:24:243 KERNEL_EXTRA/(49636:49687): Cliente desconectado!
+[WARNING] 16:59:24:243 KERNEL_EXTRA/(49636:49687): El cliente se desconectó del server
+[INFO] 16:59:24:243 KERNEL_EXTRA/(49636:49636): Se conecto un cliente!
+[INFO] 16:59:24:243 KERNEL_EXTRA/(49636:49688): Recibiendo paquete de instrucciones...
+[WARNING] 16:59:24:243 KERNEL_EXTRA/(49636:49688): Cliente desconectado!
+[WARNING] 16:59:24:243 KERNEL_EXTRA/(49636:49688): El cliente se desconectó del server
+[INFO] 17:02:57:439 KERNEL_EXTRA/(50014:50014): Kernel escuchando conexiones...
+[INFO] 17:03:00:125 KERNEL_EXTRA/(50014:50014): Se conecto un cliente!
+[INFO] 17:03:00:125 KERNEL_EXTRA/(50014:50037): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:03:00:125 KERNEL_EXTRA/(50014:50037): Cliente desconectado!
+[WARNING] 17:03:00:125 KERNEL_EXTRA/(50014:50037): El cliente se desconectó del server
+[INFO] 17:03:00:125 KERNEL_EXTRA/(50014:50014): Se conecto un cliente!
+[INFO] 17:03:00:125 KERNEL_EXTRA/(50014:50038): Recibiendo paquete de instrucciones...
+[WARNING] 17:03:00:129 KERNEL_EXTRA/(50014:50038): Cliente desconectado!
+[WARNING] 17:03:00:129 KERNEL_EXTRA/(50014:50038): El cliente se desconectó del server
+[INFO] 17:04:25:342 KERNEL_EXTRA/(50157:50157): Kernel escuchando conexiones...
+[INFO] 17:04:27:909 KERNEL_EXTRA/(50157:50157): Se conecto un cliente!
+[INFO] 17:04:27:909 KERNEL_EXTRA/(50157:50177): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:04:27:909 KERNEL_EXTRA/(50157:50177): Cliente desconectado!
+[WARNING] 17:04:27:909 KERNEL_EXTRA/(50157:50177): El cliente se desconectó del server
+[INFO] 17:04:27:909 KERNEL_EXTRA/(50157:50157): Se conecto un cliente!
+[INFO] 17:04:27:909 KERNEL_EXTRA/(50157:50178): Recibiendo paquete de instrucciones...
+[WARNING] 17:04:27:912 KERNEL_EXTRA/(50157:50178): Cliente desconectado!
+[WARNING] 17:04:27:912 KERNEL_EXTRA/(50157:50178): El cliente se desconectó del server
+[INFO] 17:04:55:331 KERNEL_EXTRA/(50243:50243): Kernel escuchando conexiones...
+[INFO] 17:04:58:818 KERNEL_EXTRA/(50243:50243): Se conecto un cliente!
+[INFO] 17:04:58:819 KERNEL_EXTRA/(50243:50289): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:04:58:819 KERNEL_EXTRA/(50243:50289): Cliente desconectado!
+[WARNING] 17:04:58:819 KERNEL_EXTRA/(50243:50289): El cliente se desconectó del server
+[INFO] 17:04:58:819 KERNEL_EXTRA/(50243:50243): Se conecto un cliente!
+[INFO] 17:04:58:819 KERNEL_EXTRA/(50243:50290): Recibiendo paquete de instrucciones...
+[WARNING] 17:04:58:819 KERNEL_EXTRA/(50243:50290): Cliente desconectado!
+[WARNING] 17:04:58:819 KERNEL_EXTRA/(50243:50290): El cliente se desconectó del server
+[INFO] 17:07:44:523 KERNEL_EXTRA/(50477:50477): Kernel escuchando conexiones...
+[INFO] 17:07:46:708 KERNEL_EXTRA/(50477:50477): Se conecto un cliente!
+[INFO] 17:07:46:708 KERNEL_EXTRA/(50477:50494): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:07:46:708 KERNEL_EXTRA/(50477:50494): Cliente desconectado!
+[WARNING] 17:07:46:708 KERNEL_EXTRA/(50477:50494): El cliente se desconectó del server
+[INFO] 17:07:46:708 KERNEL_EXTRA/(50477:50477): Se conecto un cliente!
+[INFO] 17:07:46:709 KERNEL_EXTRA/(50477:50495): Recibiendo paquete de instrucciones...
+[WARNING] 17:07:46:709 KERNEL_EXTRA/(50477:50495): Cliente desconectado!
+[WARNING] 17:07:46:709 KERNEL_EXTRA/(50477:50495): El cliente se desconectó del server
+[INFO] 17:08:08:446 KERNEL_EXTRA/(50563:50563): Kernel escuchando conexiones...
+[INFO] 17:08:11:146 KERNEL_EXTRA/(50563:50563): Se conecto un cliente!
+[INFO] 17:08:11:146 KERNEL_EXTRA/(50563:50580): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:08:11:146 KERNEL_EXTRA/(50563:50580): Cliente desconectado!
+[WARNING] 17:08:11:146 KERNEL_EXTRA/(50563:50580): El cliente se desconectó del server
+[INFO] 17:08:11:146 KERNEL_EXTRA/(50563:50563): Se conecto un cliente!
+[INFO] 17:08:11:146 KERNEL_EXTRA/(50563:50581): Recibiendo paquete de instrucciones...
+[WARNING] 17:08:11:146 KERNEL_EXTRA/(50563:50581): Cliente desconectado!
+[WARNING] 17:08:11:146 KERNEL_EXTRA/(50563:50581): El cliente se desconectó del server
+[INFO] 17:08:56:775 KERNEL_EXTRA/(50690:50690): Kernel escuchando conexiones...
+[INFO] 17:08:59:543 KERNEL_EXTRA/(50740:50740): Kernel escuchando conexiones...
+[INFO] 17:09:01:494 KERNEL_EXTRA/(50740:50740): Se conecto un cliente!
+[INFO] 17:09:01:494 KERNEL_EXTRA/(50740:50754): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:09:01:494 KERNEL_EXTRA/(50740:50754): Cliente desconectado!
+[WARNING] 17:09:01:494 KERNEL_EXTRA/(50740:50754): El cliente se desconectó del server
+[INFO] 17:09:01:494 KERNEL_EXTRA/(50740:50740): Se conecto un cliente!
+[INFO] 17:09:01:494 KERNEL_EXTRA/(50740:50755): Recibiendo paquete de instrucciones...
+[WARNING] 17:09:01:494 KERNEL_EXTRA/(50740:50755): Cliente desconectado!
+[WARNING] 17:09:01:494 KERNEL_EXTRA/(50740:50755): El cliente se desconectó del server
+[INFO] 17:11:23:454 KERNEL_EXTRA/(50889:50889): Kernel escuchando conexiones...
+[INFO] 17:11:25:604 KERNEL_EXTRA/(50889:50889): Se conecto un cliente!
+[INFO] 17:11:25:604 KERNEL_EXTRA/(50889:50906): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:11:25:604 KERNEL_EXTRA/(50889:50906): Cliente desconectado!
+[WARNING] 17:11:25:604 KERNEL_EXTRA/(50889:50906): El cliente se desconectó del server
+[INFO] 17:11:25:604 KERNEL_EXTRA/(50889:50889): Se conecto un cliente!
+[INFO] 17:11:25:604 KERNEL_EXTRA/(50889:50907): Recibiendo paquete de instrucciones...
+[WARNING] 17:11:25:604 KERNEL_EXTRA/(50889:50907): Cliente desconectado!
+[WARNING] 17:11:25:604 KERNEL_EXTRA/(50889:50907): El cliente se desconectó del server
+[INFO] 17:11:26:411 KERNEL_EXTRA/(50889:50889): Se conecto un cliente!
+[INFO] 17:11:26:411 KERNEL_EXTRA/(50889:50911): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:11:26:411 KERNEL_EXTRA/(50889:50911): Cliente desconectado!
+[WARNING] 17:11:26:411 KERNEL_EXTRA/(50889:50911): El cliente se desconectó del server
+[INFO] 17:11:26:411 KERNEL_EXTRA/(50889:50889): Se conecto un cliente!
+[INFO] 17:11:26:411 KERNEL_EXTRA/(50889:50912): Recibiendo paquete de instrucciones...
+[WARNING] 17:11:26:412 KERNEL_EXTRA/(50889:50912): Cliente desconectado!
+[WARNING] 17:11:26:412 KERNEL_EXTRA/(50889:50912): El cliente se desconectó del server
+[INFO] 17:11:27:078 KERNEL_EXTRA/(50889:50889): Se conecto un cliente!
+[INFO] 17:11:27:078 KERNEL_EXTRA/(50889:50922): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:11:27:078 KERNEL_EXTRA/(50889:50922): Cliente desconectado!
+[WARNING] 17:11:27:078 KERNEL_EXTRA/(50889:50922): El cliente se desconectó del server
+[INFO] 17:11:27:078 KERNEL_EXTRA/(50889:50889): Se conecto un cliente!
+[INFO] 17:11:27:078 KERNEL_EXTRA/(50889:50923): Recibiendo paquete de instrucciones...
+[WARNING] 17:11:27:078 KERNEL_EXTRA/(50889:50923): Cliente desconectado!
+[WARNING] 17:11:27:078 KERNEL_EXTRA/(50889:50923): El cliente se desconectó del server
+[INFO] 17:11:27:662 KERNEL_EXTRA/(50889:50889): Se conecto un cliente!
+[INFO] 17:11:27:663 KERNEL_EXTRA/(50889:50927): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:11:27:663 KERNEL_EXTRA/(50889:50927): Cliente desconectado!
+[WARNING] 17:11:27:663 KERNEL_EXTRA/(50889:50927): El cliente se desconectó del server
+[INFO] 17:11:27:663 KERNEL_EXTRA/(50889:50889): Se conecto un cliente!
+[INFO] 17:11:27:663 KERNEL_EXTRA/(50889:50928): Recibiendo paquete de instrucciones...
+[WARNING] 17:11:27:663 KERNEL_EXTRA/(50889:50928): Cliente desconectado!
+[WARNING] 17:11:27:663 KERNEL_EXTRA/(50889:50928): El cliente se desconectó del server
+[INFO] 17:11:28:202 KERNEL_EXTRA/(50889:50889): Se conecto un cliente!
+[INFO] 17:11:28:202 KERNEL_EXTRA/(50889:50965): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:11:28:202 KERNEL_EXTRA/(50889:50965): Cliente desconectado!
+[WARNING] 17:11:28:202 KERNEL_EXTRA/(50889:50965): El cliente se desconectó del server
+[INFO] 17:11:28:202 KERNEL_EXTRA/(50889:50889): Se conecto un cliente!
+[INFO] 17:11:28:202 KERNEL_EXTRA/(50889:50966): Recibiendo paquete de instrucciones...
+[WARNING] 17:11:28:202 KERNEL_EXTRA/(50889:50966): Cliente desconectado!
+[WARNING] 17:11:28:202 KERNEL_EXTRA/(50889:50966): El cliente se desconectó del server
+[INFO] 17:11:28:714 KERNEL_EXTRA/(50889:50889): Se conecto un cliente!
+[INFO] 17:11:28:714 KERNEL_EXTRA/(50889:50973): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:11:28:714 KERNEL_EXTRA/(50889:50973): Cliente desconectado!
+[INFO] 17:11:28:714 KERNEL_EXTRA/(50889:50889): Se conecto un cliente!
+[WARNING] 17:11:28:714 KERNEL_EXTRA/(50889:50973): El cliente se desconectó del server
+[INFO] 17:11:28:715 KERNEL_EXTRA/(50889:50974): Recibiendo paquete de instrucciones...
+[WARNING] 17:11:28:715 KERNEL_EXTRA/(50889:50974): Cliente desconectado!
+[WARNING] 17:11:28:715 KERNEL_EXTRA/(50889:50974): El cliente se desconectó del server
+[INFO] 17:12:52:069 KERNEL_EXTRA/(51125:51125): Kernel escuchando conexiones...
+[INFO] 17:12:54:577 KERNEL_EXTRA/(51125:51125): Se conecto un cliente!
+[INFO] 17:12:54:578 KERNEL_EXTRA/(51125:51145): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:12:54:578 KERNEL_EXTRA/(51125:51145): Cliente desconectado!
+[WARNING] 17:12:54:578 KERNEL_EXTRA/(51125:51145): El cliente se desconectó del server
+[INFO] 17:12:54:578 KERNEL_EXTRA/(51125:51125): Se conecto un cliente!
+[INFO] 17:12:54:578 KERNEL_EXTRA/(51125:51146): Recibiendo paquete de instrucciones...
+[WARNING] 17:12:54:578 KERNEL_EXTRA/(51125:51146): Cliente desconectado!
+[WARNING] 17:12:54:578 KERNEL_EXTRA/(51125:51146): El cliente se desconectó del server
+[INFO] 17:17:38:701 KERNEL_EXTRA/(51492:51492): Kernel escuchando conexiones...
+[INFO] 17:17:40:884 KERNEL_EXTRA/(51492:51492): Se conecto un cliente!
+[INFO] 17:17:40:884 KERNEL_EXTRA/(51492:51512): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:17:40:884 KERNEL_EXTRA/(51492:51512): Cliente desconectado!
+[WARNING] 17:17:40:884 KERNEL_EXTRA/(51492:51512): El cliente se desconectó del server
+[INFO] 17:17:40:884 KERNEL_EXTRA/(51492:51492): Se conecto un cliente!
+[INFO] 17:17:40:884 KERNEL_EXTRA/(51492:51513): Recibiendo paquete de instrucciones...
+[WARNING] 17:17:40:884 KERNEL_EXTRA/(51492:51513): Cliente desconectado!
+[WARNING] 17:17:40:884 KERNEL_EXTRA/(51492:51513): El cliente se desconectó del server
+[INFO] 17:18:20:131 KERNEL_EXTRA/(51573:51573): Kernel escuchando conexiones...
+[INFO] 17:18:22:353 KERNEL_EXTRA/(51573:51573): Se conecto un cliente!
+[INFO] 17:18:22:353 KERNEL_EXTRA/(51573:51593): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:18:22:353 KERNEL_EXTRA/(51573:51593): Cliente desconectado!
+[WARNING] 17:18:22:353 KERNEL_EXTRA/(51573:51593): El cliente se desconectó del server
+[INFO] 17:18:22:353 KERNEL_EXTRA/(51573:51573): Se conecto un cliente!
+[INFO] 17:18:22:353 KERNEL_EXTRA/(51573:51594): Recibiendo paquete de instrucciones...
+[WARNING] 17:18:22:353 KERNEL_EXTRA/(51573:51594): Cliente desconectado!
+[WARNING] 17:18:22:353 KERNEL_EXTRA/(51573:51594): El cliente se desconectó del server
+[INFO] 17:18:48:068 KERNEL_EXTRA/(51743:51743): Kernel escuchando conexiones...
+[INFO] 17:18:50:129 KERNEL_EXTRA/(51743:51743): Se conecto un cliente!
+[INFO] 17:18:50:129 KERNEL_EXTRA/(51743:51763): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:18:50:129 KERNEL_EXTRA/(51743:51763): Cliente desconectado!
+[WARNING] 17:18:50:129 KERNEL_EXTRA/(51743:51763): El cliente se desconectó del server
+[INFO] 17:18:50:129 KERNEL_EXTRA/(51743:51743): Se conecto un cliente!
+[INFO] 17:18:50:129 KERNEL_EXTRA/(51743:51764): Recibiendo paquete de instrucciones...
+[WARNING] 17:18:50:129 KERNEL_EXTRA/(51743:51764): Cliente desconectado!
+[WARNING] 17:18:50:129 KERNEL_EXTRA/(51743:51764): El cliente se desconectó del server
+[INFO] 17:23:43:372 KERNEL_EXTRA/(52472:52472): Kernel escuchando conexiones...
+[INFO] 17:23:46:304 KERNEL_EXTRA/(52472:52472): Se conecto un cliente!
+[INFO] 17:23:46:304 KERNEL_EXTRA/(52472:52501): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:23:46:304 KERNEL_EXTRA/(52472:52501): Cliente desconectado!
+[WARNING] 17:23:46:304 KERNEL_EXTRA/(52472:52501): El cliente se desconectó del server
+[INFO] 17:23:46:304 KERNEL_EXTRA/(52472:52472): Se conecto un cliente!
+[INFO] 17:23:46:304 KERNEL_EXTRA/(52472:52502): Recibiendo paquete de instrucciones...
+[WARNING] 17:23:46:304 KERNEL_EXTRA/(52472:52502): Cliente desconectado!
+[WARNING] 17:23:46:304 KERNEL_EXTRA/(52472:52502): El cliente se desconectó del server
+[INFO] 17:25:16:044 KERNEL_EXTRA/(52673:52673): Kernel escuchando conexiones...
+[INFO] 17:25:18:421 KERNEL_EXTRA/(52673:52673): Se conecto un cliente!
+[INFO] 17:25:18:421 KERNEL_EXTRA/(52673:52690): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:25:18:421 KERNEL_EXTRA/(52673:52690): Cliente desconectado!
+[WARNING] 17:25:18:421 KERNEL_EXTRA/(52673:52690): El cliente se desconectó del server
+[INFO] 17:25:18:421 KERNEL_EXTRA/(52673:52673): Se conecto un cliente!
+[INFO] 17:25:18:421 KERNEL_EXTRA/(52673:52691): Recibiendo paquete de instrucciones...
+[WARNING] 17:25:18:421 KERNEL_EXTRA/(52673:52691): Cliente desconectado!
+[WARNING] 17:25:18:421 KERNEL_EXTRA/(52673:52691): El cliente se desconectó del server
+[INFO] 17:25:19:064 KERNEL_EXTRA/(52673:52673): Se conecto un cliente!
+[INFO] 17:25:19:064 KERNEL_EXTRA/(52673:52698): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:25:19:064 KERNEL_EXTRA/(52673:52698): Cliente desconectado!
+[WARNING] 17:25:19:064 KERNEL_EXTRA/(52673:52698): El cliente se desconectó del server
+[INFO] 17:25:19:064 KERNEL_EXTRA/(52673:52673): Se conecto un cliente!
+[INFO] 17:25:19:064 KERNEL_EXTRA/(52673:52699): Recibiendo paquete de instrucciones...
+[WARNING] 17:25:19:065 KERNEL_EXTRA/(52673:52699): Cliente desconectado!
+[WARNING] 17:25:19:065 KERNEL_EXTRA/(52673:52699): El cliente se desconectó del server
+[INFO] 17:25:20:368 KERNEL_EXTRA/(52673:52673): Se conecto un cliente!
+[INFO] 17:25:20:368 KERNEL_EXTRA/(52673:52714): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:25:20:368 KERNEL_EXTRA/(52673:52714): Cliente desconectado!
+[WARNING] 17:25:20:368 KERNEL_EXTRA/(52673:52714): El cliente se desconectó del server
+[INFO] 17:25:20:368 KERNEL_EXTRA/(52673:52673): Se conecto un cliente!
+[INFO] 17:25:20:368 KERNEL_EXTRA/(52673:52715): Recibiendo paquete de instrucciones...
+[WARNING] 17:25:20:368 KERNEL_EXTRA/(52673:52715): Cliente desconectado!
+[WARNING] 17:25:20:368 KERNEL_EXTRA/(52673:52715): El cliente se desconectó del server
+[INFO] 17:25:20:967 KERNEL_EXTRA/(52673:52673): Se conecto un cliente!
+[INFO] 17:25:20:967 KERNEL_EXTRA/(52673:52719): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:25:20:967 KERNEL_EXTRA/(52673:52719): Cliente desconectado!
+[WARNING] 17:25:20:967 KERNEL_EXTRA/(52673:52719): El cliente se desconectó del server
+[INFO] 17:25:20:967 KERNEL_EXTRA/(52673:52673): Se conecto un cliente!
+[INFO] 17:25:20:967 KERNEL_EXTRA/(52673:52720): Recibiendo paquete de instrucciones...
+[WARNING] 17:25:20:967 KERNEL_EXTRA/(52673:52720): Cliente desconectado!
+[WARNING] 17:25:20:967 KERNEL_EXTRA/(52673:52720): El cliente se desconectó del server
+[INFO] 17:25:21:515 KERNEL_EXTRA/(52673:52673): Se conecto un cliente!
+[INFO] 17:25:21:515 KERNEL_EXTRA/(52673:52737): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:25:21:515 KERNEL_EXTRA/(52673:52737): Cliente desconectado!
+[WARNING] 17:25:21:515 KERNEL_EXTRA/(52673:52737): El cliente se desconectó del server
+[INFO] 17:25:21:515 KERNEL_EXTRA/(52673:52673): Se conecto un cliente!
+[INFO] 17:25:21:515 KERNEL_EXTRA/(52673:52738): Recibiendo paquete de instrucciones...
+[WARNING] 17:25:21:515 KERNEL_EXTRA/(52673:52738): Cliente desconectado!
+[WARNING] 17:25:21:515 KERNEL_EXTRA/(52673:52738): El cliente se desconectó del server
+[INFO] 17:25:22:071 KERNEL_EXTRA/(52673:52673): Se conecto un cliente!
+[INFO] 17:25:22:071 KERNEL_EXTRA/(52673:52742): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:25:22:071 KERNEL_EXTRA/(52673:52742): Cliente desconectado!
+[WARNING] 17:25:22:071 KERNEL_EXTRA/(52673:52742): El cliente se desconectó del server
+[INFO] 17:25:22:071 KERNEL_EXTRA/(52673:52673): Se conecto un cliente!
+[INFO] 17:25:22:072 KERNEL_EXTRA/(52673:52743): Recibiendo paquete de instrucciones...
+[WARNING] 17:25:22:072 KERNEL_EXTRA/(52673:52743): Cliente desconectado!
+[WARNING] 17:25:22:072 KERNEL_EXTRA/(52673:52743): El cliente se desconectó del server
+[INFO] 17:25:35:219 KERNEL_EXTRA/(52829:52829): Kernel escuchando conexiones...
+[INFO] 17:25:38:658 KERNEL_EXTRA/(52829:52829): Se conecto un cliente!
+[INFO] 17:25:38:658 KERNEL_EXTRA/(52829:52876): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:25:38:658 KERNEL_EXTRA/(52829:52876): Cliente desconectado!
+[WARNING] 17:25:38:658 KERNEL_EXTRA/(52829:52876): El cliente se desconectó del server
+[INFO] 17:25:38:658 KERNEL_EXTRA/(52829:52829): Se conecto un cliente!
+[INFO] 17:25:38:658 KERNEL_EXTRA/(52829:52877): Recibiendo paquete de instrucciones...
+[WARNING] 17:25:38:658 KERNEL_EXTRA/(52829:52877): Cliente desconectado!
+[WARNING] 17:25:38:658 KERNEL_EXTRA/(52829:52877): El cliente se desconectó del server
+[INFO] 17:25:39:811 KERNEL_EXTRA/(52829:52829): Se conecto un cliente!
+[INFO] 17:25:39:811 KERNEL_EXTRA/(52829:52881): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:25:39:811 KERNEL_EXTRA/(52829:52881): Cliente desconectado!
+[WARNING] 17:25:39:811 KERNEL_EXTRA/(52829:52881): El cliente se desconectó del server
+[INFO] 17:25:39:811 KERNEL_EXTRA/(52829:52829): Se conecto un cliente!
+[INFO] 17:25:39:811 KERNEL_EXTRA/(52829:52882): Recibiendo paquete de instrucciones...
+[WARNING] 17:25:39:811 KERNEL_EXTRA/(52829:52882): Cliente desconectado!
+[WARNING] 17:25:39:811 KERNEL_EXTRA/(52829:52882): El cliente se desconectó del server
+[INFO] 17:25:40:588 KERNEL_EXTRA/(52829:52829): Se conecto un cliente!
+[INFO] 17:25:40:588 KERNEL_EXTRA/(52829:52888): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:25:40:588 KERNEL_EXTRA/(52829:52888): Cliente desconectado!
+[WARNING] 17:25:40:588 KERNEL_EXTRA/(52829:52888): El cliente se desconectó del server
+[INFO] 17:25:40:588 KERNEL_EXTRA/(52829:52829): Se conecto un cliente!
+[INFO] 17:25:40:588 KERNEL_EXTRA/(52829:52889): Recibiendo paquete de instrucciones...
+[WARNING] 17:25:40:588 KERNEL_EXTRA/(52829:52889): Cliente desconectado!
+[WARNING] 17:25:40:589 KERNEL_EXTRA/(52829:52889): El cliente se desconectó del server
+[INFO] 17:25:41:109 KERNEL_EXTRA/(52829:52829): Se conecto un cliente!
+[INFO] 17:25:41:109 KERNEL_EXTRA/(52829:52893): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:25:41:109 KERNEL_EXTRA/(52829:52893): Cliente desconectado!
+[WARNING] 17:25:41:109 KERNEL_EXTRA/(52829:52893): El cliente se desconectó del server
+[INFO] 17:25:41:109 KERNEL_EXTRA/(52829:52829): Se conecto un cliente!
+[INFO] 17:25:41:109 KERNEL_EXTRA/(52829:52894): Recibiendo paquete de instrucciones...
+[WARNING] 17:25:41:109 KERNEL_EXTRA/(52829:52894): Cliente desconectado!
+[WARNING] 17:25:41:109 KERNEL_EXTRA/(52829:52894): El cliente se desconectó del server

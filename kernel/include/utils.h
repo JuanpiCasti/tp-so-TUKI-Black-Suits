@@ -66,7 +66,7 @@ t_pcb *crear_pcb(t_list *instrucciones, double estimacion_inicial); // Recibe li
 
 // Manda el proceso a la cola deseada,
 // por ejemplo, para mandar a NEW: encolar_proceso(new_pcb, NEW, mutex_NEW);
-void encolar_proceso(t_pcb* new_pcb, t_list* cola, pthread_mutex_t mutex_cola);
+void encolar_proceso(t_pcb* new_pcb, t_list* cola, pthread_mutex_t* mutex_cola);
 void imprimir_pcb(t_pcb *pcb);
 
 

@@ -87,6 +87,7 @@ void inicializar_colas() {
     NEW = list_create();
     READY = list_create();
     BLOCKED = list_create();
+    RUNNING = NULL;
 }
 
 void inicializar_semaforos() {
@@ -95,10 +96,10 @@ void inicializar_semaforos() {
     }
 }
 
-void encolar_proceso(t_pcb* new_pcb, t_list* cola, pthread_mutex_t mutex_cola) {
-    pthread_mutex_lock(&mutex_cola); // Wait
-    list_add(cola, new_pcb);c
-    pthread_mutex_unlock(&mutex_cola); // Signal
+void encolar_proceso(t_pcb* new_pcb, t_list* cola, pthread_mutex_t *mutex_cola) {
+    pthread_mutex_lock(mutex_cola); // Wait
+    list_add(cola, new_pcb);
+    pthread_mutex_unlock(mutex_cola); // Signal
 }
 
 void loggear_cambio_estado(char* estado_anterior, char* estado_actual, t_pcb* pcb) {
@@ -112,6 +113,7 @@ void loggear_cola_ready() {
     uint32_t first_pid = ((t_pcb *)(list_get(READY, 0)))->pid;
     string_append(&lista_pids, string_itoa(first_pid));
 
+    
     for (int i = 1; i < list_size(READY); i++)
     {
         t_pcb* pcb = list_get(READY, i);
@@ -131,16 +133,21 @@ void planificador_largo_plazo() {
             t_pcb* new_pcb = list_remove(NEW, 0);
             pthread_mutex_unlock(&mutex_NEW);
 
-            encolar_proceso(new_pcb, READY, mutex_READY);
-            grado_multiprogramacion++;
+            pthread_mutex_lock(&mutex_READY);
 
+            list_add(READY, new_pcb);
             loggear_cambio_estado("NEW", "READY", new_pcb);
             loggear_cola_ready();
+
+            pthread_mutex_unlock(&mutex_READY);
+
+            grado_multiprogramacion++;
             // TODO: enviar mensaje a memoria para que inicialice las estructuras necesarias
 
             // SACAR PRINT, USADO SOLO EN PRUEBAS RAPIDAS
+        } else {
+            pthread_mutex_unlock(&mutex_NEW);
         }
-        pthread_mutex_unlock(&mutex_NEW);
 
         // TODO: if, si el PC apunta a EXIT, mandar el PCB a EXIT (o free)
 
@@ -157,10 +164,16 @@ void planificador_largo_plazo() {
 
 t_pcb* siguiente_proceso_a_ejecutar() {
     if(strcmp(ALGORITMO_PLANIFICACION, "FIFO") == 0) {
-        // Saca un proceso de ready segun FIFO
-        return (t_pcb*)(list_remove(READY, 0));
+        if(list_size(READY) > 0) {
+            // Saca un proceso de ready segun FIFO
+            return (t_pcb*)(list_remove(READY, 0));
+        } else {
+            // No hay procesos en READY
+            return NULL;
+        }
     } else if (strcmp(ALGORITMO_PLANIFICACION, "HRRN") == 0) {
         // Saca un proceso de ready segun HRRN
+        // TODO: Implementar HRRN
     }
 
     log_error(logger_kernel_extra, "El algoritmo indicado en el archivo de configuracion es desconocido");
@@ -177,16 +190,27 @@ void planificador_corto_plazo() {
         if(list_size(READY) > 0 && RUNNING == NULL){
 
             t_pcb* r_pcb = siguiente_proceso_a_ejecutar();
+
+            pthread_mutex_unlock(&mutex_READY);
             RUNNING = r_pcb;
+            
+            // Mandar a CPU
+            // Recibir respuesta de CPU, 
+            // decidir en base a eso, 
+            // si mandar a READY o a EXIT
+
+            pthread_mutex_unlock(&mutex_RUNNING);
+
             loggear_cambio_estado("READY", "RUNNING", r_pcb);
 
             // TODO: Envio del proceso a la CPU
             // Lo que haria es, serializar el pcb, mandarlo a la CPU
             // y esperar a que lo devuelva con los registros actualizados 
-            pthread_mutex_unlock(&mutex_READY);
             
-            pthread_mutex_unlock(&mutex_RUNNING);
 
+        } else {
+            pthread_mutex_unlock(&mutex_READY);
+            pthread_mutex_unlock(&mutex_RUNNING);      
         }
     }
 }

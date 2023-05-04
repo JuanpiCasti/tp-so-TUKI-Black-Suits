@@ -33,8 +33,8 @@ void procesar_conexion(void *void_args)
         case PAQUETE_INSTRUCCIONES:
             t_list *instrucciones = recv_instrucciones(logger, cliente_socket);
             t_pcb *n_pcb = crear_pcb(instrucciones, config_get_double_value(config, "ESTIMACION_INICIAL"));
-            // imprimir_pcb(n_pcb);
-            encolar_proceso(n_pcb, NEW, mutex_NEW);
+            //imprimir_pcb(n_pcb);
+            encolar_proceso(n_pcb, NEW, &mutex_NEW);
             log_info(logger_kernel, "Se crea el proceso %d en NEW", n_pcb->pid);
 
             // SACAR PRINT, USADO SOLO EN PRUEBAS RAPIDAS

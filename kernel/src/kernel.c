@@ -41,7 +41,7 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-		logger_kernel_extra = log_create("./log/kernel_extra.log", "KERNEL_EXTRA", true, LOG_LEVEL_INFO);
+		logger_kernel_extra = log_create("./log/kernel_extra.log", "KERNEL_EXTRA", false, LOG_LEVEL_INFO);
 		logger_kernel = log_create("./log/kernel.log", "KERNEL", true, LOG_LEVEL_INFO);
 
 		config_kernel = config_create("./cfg/kernel.config");
@@ -91,12 +91,12 @@ int main(int argc, char **argv)
 			return EXIT_FAILURE;
 		}
 		
-
 		pthread_t hilo_planificador_corto_plazo;
 		if(pthread_create(&hilo_planificador_corto_plazo, NULL, (void*)(planificador_corto_plazo), NULL) == -1) {
 			log_error(logger_kernel_extra, "No se pudo crear el hilo del planificador de largo plazo.");
 			return EXIT_FAILURE;
 		}
+
 		//*********************
 		// SERVIDOR
 		socket_servidor_kernel = iniciar_servidor(logger_kernel_extra, puerto_escucha_kernel);
