@@ -19,13 +19,13 @@ typedef enum
 	HANDSHAKE_CPU,
 	HANDSHAKE_FILESYSTEM,
 	HANDSHAKE_MEMORIA,
-	PAQUETE_INSTRUCCIONES
+	PAQUETE_INSTRUCCIONES,
+	NUEVO_CONTEXTO_PCB
 } cod_op;
 
 typedef struct
 {
 	t_log *log;
-	t_config *config;
 	int socket;
 } t_conexion;
 
@@ -41,11 +41,16 @@ int iniciar_servidor(t_log *logger, char *puerto);
 int esperar_cliente(t_log *logger, int socket_servidor);
 int crear_conexion(t_log *logger, char *ip, char *puerto);
 void terminar_programa(t_log *logger, t_config *config);
-int server_escuchar(t_log *logger, t_config *config, int server_socket, void *(*procesar_conexion)(void *));
+int server_escuchar(t_log *logger, int server_socket, void *(*procesar_conexion)(void *));
 int enviar_handshake(t_log *logger, int socket_cliente, cod_op handshake);
 int realizar_handshake(t_log *logger, char *ip_servidor, char *puerto_servidor, cod_op handshake, char *tipo_servidor);
 void aceptar_handshake(t_log *logger, int socket_cliente, cod_op cop);
 void rechazar_handshake(t_log *logger, int socket_cliente);
 int conectar_servidor(t_log *logger, char *ip, char *puerto, char *tipo_servidor);
+
+void* serializar_instrucciones(t_list* instrucciones, int cant_instrucciones, uint32_t tam_buffer_instrucciones);
+// Esta funcion devuelve un stream del tamanio sizeof(uint32_t) + tam_buffer_instrucciones. Por lo que los primeros
+// 4 bytes son para indicar el tamanio de lo que leer a continuacion.
+t_list *deserializar_instrucciones(void *stream, uint32_t tam_instrucciones);
 
 #endif

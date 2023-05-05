@@ -41,7 +41,7 @@ int main(int argc, char **argv)
 			return EXIT_FAILURE;
 		}
 		log_info(logger_filesystem, "Filesystem escuchando conexiones...");
-		while (server_escuchar(logger_filesystem, config_filesystem, socket_servidor_filesystem, (void *)procesar_conexion));
+		while (server_escuchar(logger_filesystem, socket_servidor_filesystem, (void *)procesar_conexion));
 		return EXIT_SUCCESS;
 	}
 }

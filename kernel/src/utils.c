@@ -1,28 +1,8 @@
 #include "utils.h"
 
-t_list *deserializar_instrucciones(void *stream, uint32_t tam_instrucciones)
+t_pcb *crear_pcb(t_list *instrucciones)
 {
-    int cant_instrucciones = tam_instrucciones / sizeof(t_instruccion);
-
-    t_list *lista_instrucciones = list_create();
-
-    int desplazamiento = 0;
-    for (int i = 0; i < cant_instrucciones; i++)
-    {
-        t_instruccion *instruccion = malloc(sizeof(t_instruccion));
-        memcpy(&instruccion->instruccion, stream + desplazamiento, sizeof(char[20]));
-        memcpy(&instruccion->arg1, stream + desplazamiento + sizeof(char[20]), sizeof(char[20]));
-        memcpy(&instruccion->arg2, stream + desplazamiento + sizeof(char[20]) * 2, sizeof(char[20]));
-        memcpy(&instruccion->arg3, stream + desplazamiento + sizeof(char[20]) * 3, sizeof(char[20]));
-        list_add(lista_instrucciones, instruccion);
-        desplazamiento += sizeof(t_instruccion);
-    }
-
-    return lista_instrucciones;
-}
-
-t_pcb *crear_pcb(t_list *instrucciones, double estimacion_inicial)
-{
+    
     t_pcb *pcb = malloc(sizeof(t_pcb));
 
     pthread_mutex_lock(&mutex_next_pid);
@@ -47,7 +27,7 @@ t_pcb *crear_pcb(t_list *instrucciones, double estimacion_inicial)
     pcb->registros_cpu->RCX = malloc(16);
     pcb->registros_cpu->RDX = malloc(16);
 
-    pcb->estimado_HRRN = estimacion_inicial;
+    pcb->estimado_HRRN = ESTIMACION_INICIAL;
     pcb->tiempo_ready = time(NULL);
     pcb->archivos_abiertos = list_create();
 
@@ -60,8 +40,8 @@ void imprimir_pcb(t_pcb *pcb)
     printf("Instrucciones:\n");
     for (int i = 0; i < pcb->instrucciones->elements_count; i++)
     {
-        char *instruccion = list_get(pcb->instrucciones, i);
-        printf("\t%d: %s\n", i, instruccion);
+        t_instruccion *instruccion = list_get(pcb->instrucciones, i);
+        printf("\t%d: %s %s %s %s\n", i, instruccion -> instruccion, instruccion -> arg1, instruccion -> arg2, instruccion -> arg3);
     }
     printf("Program Counter: %d\n", pcb->program_counter);
     printf("Registros CPU:\n");
@@ -83,6 +63,25 @@ void imprimir_pcb(t_pcb *pcb)
     printf("Archivos abiertos:\n");
 }
 
+
+void levantar_config_kernel() {
+			CONFIG_KERNEL = config_create("./cfg/kernel.config");
+
+			PUERTO_ESCUCHA_KERNEL = config_get_string_value(CONFIG_KERNEL, "PUERTO_ESCUCHA");
+			IP_MEMORIA = config_get_string_value(CONFIG_KERNEL, "IP_MEMORIA");
+			PUERTO_MEMORIA = config_get_string_value(CONFIG_KERNEL, "PUERTO_MEMORIA");
+			IP_FILESYSTEM = config_get_string_value(CONFIG_KERNEL, "IP_FILESYSTEM");
+			PUERTO_FILESYSTEM = config_get_string_value(CONFIG_KERNEL, "PUERTO_FILESYSTEM");
+			IP_CPU = config_get_string_value(CONFIG_KERNEL, "IP_CPU");
+			PUERTO_CPU = config_get_string_value(CONFIG_KERNEL, "PUERTO_CPU");
+			ALGORITMO_PLANIFICACION = config_get_string_value(CONFIG_KERNEL, "ALGORITMO_PLANIFICACION");
+			ESTIMACION_INICIAL = config_get_double_value(CONFIG_KERNEL, "ESTIMACION_INICIAL");
+			// char* HRRN_ALFA = config_get_string_value(CONFIG_KERNEL, "HRRN_ALFA");
+			GRADO_MAX_MULTIPROGRAMACION = config_get_int_value(CONFIG_KERNEL, "GRADO_MAX_MULTIPROGRAMACION");
+			// char* RECURSOS = config_get_string_value(CONFIG_KERNEL, "RECURSOS");
+			// char* INSTANCIAS_RECURSOS = config_get_string_value(CONFIG_KERNEL, "INSTANCIAS_RECURSOS");
+}
+
 void inicializar_colas() {
     NEW = list_create();
     READY = list_create();
@@ -93,6 +92,27 @@ void inicializar_colas() {
 void inicializar_semaforos() {
     if (pthread_mutex_init(&mutex_next_pid, NULL) != 0) {
         log_error(logger_kernel_extra, "No se pudo inicializar el semaforo para next_pid");
+        exit(-1);
+    }
+    if (pthread_mutex_init(&mutex_NEW, NULL) != 0) {
+        log_error(logger_kernel_extra, "No se pudo inicializar el semaforo para la cola de NEW");
+        exit(-1);
+    }
+    if (pthread_mutex_init(&mutex_READY, NULL) != 0) {
+        log_error(logger_kernel_extra, "No se pudo inicializar el semaforo para la cola de READY");
+        exit(-1);
+    }
+    if (pthread_mutex_init(&mutex_RUNNING, NULL) != 0) {
+        log_error(logger_kernel_extra, "No se pudo inicializar el semaforo para RUNNING");
+        exit(-1);
+    }
+    if (pthread_mutex_init(&mutex_BLOCKED, NULL) != 0) {
+        log_error(logger_kernel_extra, "No se pudo inicializar el semaforo para la cola de BLOCKED");
+        exit(-1);
+    }
+    if (pthread_mutex_init(&mutex_EXIT, NULL) != 0) {
+        log_error(logger_kernel_extra, "No se pudo inicializar el semaforo para la cola de EXIT");
+        exit(-1);
     }
 }
 

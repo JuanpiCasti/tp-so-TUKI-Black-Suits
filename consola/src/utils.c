@@ -62,23 +62,12 @@ void *serializar_paquete_instrucciones(t_list *instrucciones, int cant_instrucci
     void *stream = malloc(size_paquete);
 
     memcpy(stream, &cop, sizeof(cod_op));
-    memcpy(stream + sizeof(cod_op), &tam_buffer_instrucciones, sizeof(uint32_t));
 
-    void *buffer_instrucciones = malloc(tam_buffer_instrucciones);
-    int desplazamiento = 0;
+    void *buffer_instrucciones = serializar_instrucciones(instrucciones, cant_instrucciones, tam_buffer_instrucciones);
 
-    for (int i = 0; i < cant_instrucciones; i++)
-    {
-        t_instruccion *instruccion = list_get(instrucciones, i);
-        memcpy(buffer_instrucciones + desplazamiento, instruccion->instruccion, sizeof(char[20]));
-        memcpy(buffer_instrucciones + desplazamiento + sizeof(char[20]), instruccion->arg1, sizeof(char[20]));
-        memcpy(buffer_instrucciones + desplazamiento + sizeof(char[20]) * 2, instruccion->arg2, sizeof(char[20]));
-        memcpy(buffer_instrucciones + desplazamiento + sizeof(char[20]) * 3, instruccion->arg3, sizeof(char[20]));
-        desplazamiento += sizeof(t_instruccion);
-    }
+    memcpy(stream + sizeof(cod_op), buffer_instrucciones, sizeof(uint32_t) + tam_buffer_instrucciones);
 
-    memcpy(stream + sizeof(cod_op) + sizeof(uint32_t), buffer_instrucciones, tam_buffer_instrucciones);
-
+    free(buffer_instrucciones);
     return stream;
 }
 
@@ -97,7 +86,6 @@ void enviar_instrucciones(t_log *logger, char *ip, char *puerto, char *archivo_i
 
     int cant_instrucciones = list_size(instrucciones);
     uint32_t tam_buffer_instrucciones = cant_instrucciones * sizeof(t_instruccion);
-
     uint32_t size_paquete = tam_buffer_instrucciones + sizeof(uint32_t) + sizeof(cod_op);
 
     void *stream_instrucciones = serializar_paquete_instrucciones(instrucciones, cant_instrucciones, tam_buffer_instrucciones, size_paquete);

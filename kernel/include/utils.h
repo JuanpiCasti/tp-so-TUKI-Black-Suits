@@ -55,14 +55,26 @@ extern pthread_mutex_t mutex_READY;
 extern pthread_mutex_t mutex_BLOCKED;
 extern pthread_mutex_t mutex_RUNNING;
 extern pthread_mutex_t mutex_EXIT;
+
+// Configs
+extern t_config* CONFIG_KERNEL;
+extern char *PUERTO_ESCUCHA_KERNEL;
+extern char *IP_MEMORIA;
+extern char *PUERTO_MEMORIA;
+extern char *IP_FILESYSTEM;
+extern char *PUERTO_FILESYSTEM;
+extern char *IP_CPU;
+extern char *PUERTO_CPU;
+extern double ESTIMACION_INICIAL;
+extern uint32_t GRADO_MAX_MULTIPROGRAMACION;
 extern char* ALGORITMO_PLANIFICACION;
 
-t_list *deserializar_instrucciones(void *stream, uint32_t tam_instrucciones);
 
+void levantar_config_kernel(); // setea todas las variables globales de configuracion
 void inicializar_colas(); // Inicializa las colas de procesos
 void inicializar_semaforos(); // Inicializa los semaforos usados en el modulo
 
-t_pcb *crear_pcb(t_list *instrucciones, double estimacion_inicial); // Recibe lista de instrucciones y crea pcb
+t_pcb *crear_pcb(t_list *instrucciones); // Recibe lista de instrucciones y crea pcb
 
 // Manda el proceso a la cola deseada,
 // por ejemplo, para mandar a NEW: encolar_proceso(new_pcb, NEW, mutex_NEW);

@@ -32,7 +32,7 @@ int main(int argc, char **argv)
 			return EXIT_FAILURE;
 		}
 		log_info(logger_memoria, "Memoria escuchando conexiones...");
-		while (server_escuchar(logger_memoria, config_memoria, socket_servidor_memoria, (void *)procesar_conexion));
+		while (server_escuchar(logger_memoria, socket_servidor_memoria, (void *)procesar_conexion));
 		return EXIT_SUCCESS;
 	}
 }

@@ -53,7 +53,7 @@ int main(int argc, char **argv)
 			return EXIT_FAILURE;
 		}
 		log_info(logger_cpu, "CPU escuchando conexiones...");
-		while (server_escuchar(logger_cpu, config_cpu, socket_servidor_cpu, (void *)procesar_conexion));
+		while (server_escuchar(logger_cpu, socket_servidor_cpu, (void *)procesar_conexion));
 		return EXIT_SUCCESS;
 	}
 }	

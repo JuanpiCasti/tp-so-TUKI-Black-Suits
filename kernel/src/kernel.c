@@ -3,7 +3,16 @@
 t_log *logger_kernel_extra;
 t_log *logger_kernel;
 
-t_config *config_kernel;
+t_config *CONFIG_KERNEL;
+
+char *PUERTO_ESCUCHA_KERNEL;
+char *IP_MEMORIA;
+char *PUERTO_MEMORIA;
+char *IP_FILESYSTEM;
+char *PUERTO_FILESYSTEM;
+char *IP_CPU;
+char *PUERTO_CPU;
+double ESTIMACION_INICIAL;
 uint32_t GRADO_MAX_MULTIPROGRAMACION;
 char* ALGORITMO_PLANIFICACION;
 
@@ -44,42 +53,29 @@ int main(int argc, char **argv)
 		logger_kernel_extra = log_create("./log/kernel_extra.log", "KERNEL_EXTRA", false, LOG_LEVEL_INFO);
 		logger_kernel = log_create("./log/kernel.log", "KERNEL", true, LOG_LEVEL_INFO);
 
-		config_kernel = config_create("./cfg/kernel.config");
-		char *puerto_escucha_kernel = config_get_string_value(config_kernel, "PUERTO_ESCUCHA");
-		char *ip_memoria = config_get_string_value(config_kernel, "IP_MEMORIA");
-		char *puerto_memoria = config_get_string_value(config_kernel, "PUERTO_MEMORIA");
-		char *ip_filesystem = config_get_string_value(config_kernel, "IP_FILESYSTEM");
-		char *puerto_filesystem = config_get_string_value(config_kernel, "PUERTO_FILESYSTEM");
-		char *ip_cpu = config_get_string_value(config_kernel, "IP_CPU");
-		char *puerto_cpu = config_get_string_value(config_kernel, "PUERTO_CPU");
-		ALGORITMO_PLANIFICACION = config_get_string_value(config_kernel, "ALGORITMO_PLANIFICACION");
-
-		// char* hrrn_alfa = config_get_string_value(config_kernel, "HRRN_ALFA");
-		GRADO_MAX_MULTIPROGRAMACION = config_get_int_value(config_kernel, "GRADO_MAX_MULTIPROGRAMACION");
-		// char* recursos = config_get_string_value(config_kernel, "RECURSOS");
-		// char* instancias_recursos = config_get_string_value(config_kernel, "INSTANCIAS_RECURSOS");
+		levantar_config_kernel();
 
 		// //*********************
 		// // HANDSHAKE - FILESYSTEM
-		// if (realizar_handshake(logger_kernel_extra, ip_filesystem, puerto_filesystem, HANDSHAKE_KERNEL, "Filesystem") == -1)
+		// if (realizar_handshake(logger_kernel_extra, IP_FILESYSTEM, PUERTO_FILESYSTEM, HANDSHAKE_KERNEL, "Filesystem") == -1)
 		// {
 		// 	return EXIT_FAILURE;
 		// }
 
 		// //*********************
 		// // HANDSHAKE - CPU
-		// if (realizar_handshake(logger_kernel_extra, ip_cpu, puerto_cpu, HANDSHAKE_KERNEL, "CPU") == -1)
+		// if (realizar_handshake(logger_kernel_extra, IP_CPU, PUERTO_CPU, HANDSHAKE_KERNEL, "CPU") == -1)
 		// {
 		// 	return EXIT_FAILURE;
 		// }
 
 		// //*********************
 		// // HANDSHAKE - MEMORIA
-		// if (realizar_handshake(logger_kernel_extra, ip_memoria, puerto_memoria, HANDSHAKE_KERNEL, "Memoria") == -1)
+		// if (realizar_handshake(logger_kernel_extra, IP_MEMORIA, PUERTO_MEMORIA, HANDSHAKE_KERNEL, "Memoria") == -1)
 		// {
 		// 	return EXIT_FAILURE;
 		// }
-
+		
 		inicializar_colas();
 		inicializar_semaforos();
 		next_pid = 1;
@@ -96,17 +92,16 @@ int main(int argc, char **argv)
 		// 	log_error(logger_kernel_extra, "No se pudo crear el hilo del planificador de largo plazo.");
 		// 	return EXIT_FAILURE;
 		// }
-
 		//*********************
 		// SERVIDOR
-		socket_servidor_kernel = iniciar_servidor(logger_kernel_extra, puerto_escucha_kernel);
+		socket_servidor_kernel = iniciar_servidor(logger_kernel_extra, PUERTO_ESCUCHA_KERNEL);
 		if (socket_servidor_kernel == -1)
 		{
 			log_error(logger_kernel_extra, "No se pudo iniciar el servidor en Kernel...");
 			return EXIT_FAILURE;
 		}
 		log_info(logger_kernel_extra, "Kernel escuchando conexiones...");
-		while (server_escuchar(logger_kernel_extra, config_kernel, socket_servidor_kernel, (void *)procesar_conexion));
+		while (server_escuchar(logger_kernel_extra, socket_servidor_kernel, (void *)procesar_conexion));
 
 		pthread_detach(hilo_planificacion);
 		return EXIT_SUCCESS;
