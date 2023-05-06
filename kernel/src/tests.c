@@ -8,27 +8,22 @@ void envio_contexto_cpu() {
     // Inicializar los campos del t_pcb
     nuevo_pcb->pid = 1234;
     nuevo_pcb->instrucciones = list_create();
-    nuevo_pcb->program_counter = 0;
+    nuevo_pcb->program_counter = 2;
 
-    t_registros_cpu* registros_cpu = malloc(sizeof(t_registros_cpu));
+    t_registros_cpu *registros_cpu = malloc(sizeof(t_registros_cpu));
+    memset(registros_cpu->AX, 0, sizeof(registros_cpu->AX));
+    memset(registros_cpu->BX, 0, sizeof(registros_cpu->BX));
+    memset(registros_cpu->CX, 0, sizeof(registros_cpu->CX));
+    memset(registros_cpu->DX, 0, sizeof(registros_cpu->DX));
+    memset(registros_cpu->EAX, 0, sizeof(registros_cpu->EAX));
+    memset(registros_cpu->EBX, 0, sizeof(registros_cpu->EBX));
+    memset(registros_cpu->ECX, 0, sizeof(registros_cpu->ECX));
+    memset(registros_cpu->EDX, 0, sizeof(registros_cpu->EDX));
+    memset(registros_cpu->RAX, 0, sizeof(registros_cpu->RAX));
+    memset(registros_cpu->RBX, 0, sizeof(registros_cpu->RBX));
+    memset(registros_cpu->RCX, 0, sizeof(registros_cpu->RCX));
+    memset(registros_cpu->RDX, 0, sizeof(registros_cpu->RDX));
 
-    // Asignar memoria para los registros de 4 bytes
-    registros_cpu->AX = malloc(4);
-    registros_cpu->BX = malloc(4);
-    registros_cpu->CX = malloc(4);
-    registros_cpu->DX = malloc(4);
-
-    // Asignar memoria para los registros de 8 bytes
-    registros_cpu->EAX = malloc(8);
-    registros_cpu->EBX = malloc(8);
-    registros_cpu->ECX = malloc(8);
-    registros_cpu->EDX = malloc(8);
-
-    // Asignar memoria para los registros de 16 bytes
-    registros_cpu->RAX = malloc(16);
-    registros_cpu->RBX = malloc(16);
-    registros_cpu->RCX = malloc(16);
-    registros_cpu->RDX = malloc(16);
 
     nuevo_pcb->registros_cpu = registros_cpu;
 
@@ -47,21 +42,33 @@ void envio_contexto_cpu() {
     nuevo_pcb->tiempo_ready = time(NULL);
     nuevo_pcb->archivos_abiertos = list_create();
 
-    uint32_t tam_contexto = sizeof(cod_op) + 
-                          4*4 + // (AX, BX, CX, DX) 
+    uint32_t tam_contexto = 4*4 + // (AX, BX, CX, DX) 
                           4*8 + // (EAX, EBX, ECX, EDX)
                           4*16 + // (RAX, RBX, RCX, RDX)
                           sizeof(uint32_t) +
                           sizeof(uint32_t) +
                           list_size(nuevo_pcb->instrucciones) * sizeof(t_instruccion); 
     
-    void* buffer = serializar_contexto_pcb(nuevo_pcb, tam_contexto);
+    char* prueba = "HOLACOMOESTASBRO";
+    char* prueba2 = "HOLA";
+    strcpy(nuevo_pcb->registros_cpu->AX, prueba2);
+    strcpy(nuevo_pcb->registros_cpu->RDX, prueba);
+    strcpy(nuevo_pcb->registros_cpu->RAX, prueba);
+    
+    imprimir_pcb(nuevo_pcb);
+
     cod_op cop;
+    
 
 
     imprimir_pcb(nuevo_pcb);
-    mandar_a_cpu(nuevo_pcb, tam_contexto);
-    free(buffer);
+    int socket_cpu = mandar_a_cpu(nuevo_pcb, tam_contexto);
+    
+    void* buffer = recibir_nuevo_contexto(socket_cpu, &cop);
+    deserializar_contexto_pcb(buffer, nuevo_pcb);
+    imprimir_pcb(nuevo_pcb);
+    printf("COP: %d\n", cop);
+
 }
 
 int run_tests()

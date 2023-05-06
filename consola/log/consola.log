@@ -1165,3 +1165,16 @@
 [INFO] 22:22:26:368 CONSOLA/(29403:29403): Handshake OK
 [INFO] 22:22:26:368 CONSOLA/(29403:29403): Conexión establecida con Kernel
 [INFO] 22:22:26:368 CONSOLA/(29403:29403): Enviando instrucciones a Kernel...
+[INFO] 18:36:57:306 CONSOLA/(13893:13893): Conexión establecida con Kernel
+[INFO] 18:36:57:306 CONSOLA/(13893:13893): Handshake OK
+[INFO] 18:36:57:306 CONSOLA/(13893:13893): Conexión establecida con Kernel
+[INFO] 18:36:57:306 CONSOLA/(13893:13893): Enviando instrucciones a Kernel...
+[INFO] 18:37:41:422 CONSOLA/(13932:13932): Conexión establecida con Kernel
+[INFO] 18:37:41:423 CONSOLA/(13932:13932): Handshake OK
+[INFO] 18:37:41:423 CONSOLA/(13932:13932): Conexión establecida con Kernel
+[INFO] 18:37:41:423 CONSOLA/(13932:13932): Enviando instrucciones a Kernel...
+[INFO] 18:39:14:563 CONSOLA/(14006:14006): Conexión establecida con Kernel
+[INFO] 18:39:14:564 CONSOLA/(14006:14006): Handshake OK
+[INFO] 18:39:14:564 CONSOLA/(14006:14006): Conexión establecida con Kernel
+[INFO] 18:39:14:564 CONSOLA/(14006:14006): Enviando instrucciones a Kernel...
+[ERROR] 19:48:44:777 CONSOLA/(17663:17663): Por favor especificar archivo de configuración e instrucciones a enviar

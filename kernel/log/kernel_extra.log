@@ -1534,3 +1534,36 @@
 [INFO] 23:22:10:500 KERNEL_EXTRA/(36634:36634): Conexión establecida con CPU
 [INFO] 23:22:10:500 KERNEL_EXTRA/(36634:36634): Handshake OK
 [INFO] 23:22:10:500 KERNEL_EXTRA/(36634:36634): Kernel escuchando conexiones...
+[INFO] 18:36:38:127 KERNEL_EXTRA/(13882:13882): Conexión establecida con CPU
+[INFO] 18:36:38:127 KERNEL_EXTRA/(13882:13882): Handshake OK
+[INFO] 18:36:38:127 KERNEL_EXTRA/(13882:13882): Kernel escuchando conexiones...
+[INFO] 18:36:57:306 KERNEL_EXTRA/(13882:13882): Se conecto un cliente!
+[INFO] 18:36:57:306 KERNEL_EXTRA/(13882:13894): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 18:36:57:306 KERNEL_EXTRA/(13882:13894): Cliente desconectado!
+[WARNING] 18:36:57:306 KERNEL_EXTRA/(13882:13894): El cliente se desconectó del server
+[INFO] 18:36:57:306 KERNEL_EXTRA/(13882:13882): Se conecto un cliente!
+[INFO] 18:36:57:306 KERNEL_EXTRA/(13882:13895): Recibiendo paquete de instrucciones...
+[WARNING] 18:36:57:306 KERNEL_EXTRA/(13882:13895): Cliente desconectado!
+[WARNING] 18:36:57:306 KERNEL_EXTRA/(13882:13895): El cliente se desconectó del server
+[INFO] 18:37:36:825 KERNEL_EXTRA/(13929:13929): Conexión establecida con CPU
+[INFO] 18:37:36:825 KERNEL_EXTRA/(13929:13929): Handshake OK
+[INFO] 18:37:36:826 KERNEL_EXTRA/(13929:13929): Kernel escuchando conexiones...
+[INFO] 18:37:41:422 KERNEL_EXTRA/(13929:13929): Se conecto un cliente!
+[INFO] 18:37:41:423 KERNEL_EXTRA/(13929:13933): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 18:37:41:423 KERNEL_EXTRA/(13929:13933): Cliente desconectado!
+[WARNING] 18:37:41:423 KERNEL_EXTRA/(13929:13933): El cliente se desconectó del server
+[INFO] 18:37:41:423 KERNEL_EXTRA/(13929:13929): Se conecto un cliente!
+[INFO] 18:37:41:423 KERNEL_EXTRA/(13929:13934): Recibiendo paquete de instrucciones...
+[WARNING] 18:37:41:423 KERNEL_EXTRA/(13929:13934): Cliente desconectado!
+[WARNING] 18:37:41:423 KERNEL_EXTRA/(13929:13934): El cliente se desconectó del server
+[INFO] 18:39:12:921 KERNEL_EXTRA/(14003:14003): Conexión establecida con CPU
+[INFO] 18:39:12:921 KERNEL_EXTRA/(14003:14003): Handshake OK
+[INFO] 18:39:12:921 KERNEL_EXTRA/(14003:14003): Kernel escuchando conexiones...
+[INFO] 18:39:14:563 KERNEL_EXTRA/(14003:14003): Se conecto un cliente!
+[INFO] 18:39:14:564 KERNEL_EXTRA/(14003:14007): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 18:39:14:564 KERNEL_EXTRA/(14003:14007): Cliente desconectado!
+[WARNING] 18:39:14:564 KERNEL_EXTRA/(14003:14007): El cliente se desconectó del server
+[INFO] 18:39:14:564 KERNEL_EXTRA/(14003:14003): Se conecto un cliente!
+[INFO] 18:39:14:564 KERNEL_EXTRA/(14003:14008): Recibiendo paquete de instrucciones...
+[WARNING] 18:39:14:564 KERNEL_EXTRA/(14003:14008): Cliente desconectado!
+[WARNING] 18:39:14:564 KERNEL_EXTRA/(14003:14008): El cliente se desconectó del server

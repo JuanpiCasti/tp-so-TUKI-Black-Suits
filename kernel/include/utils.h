@@ -8,18 +8,18 @@
 
 typedef struct
 {
-  void *AX;
-  void *BX;
-  void *CX;
-  void *DX;
-  void *EAX;
-  void *EBX;
-  void *ECX;
-  void *EDX;
-  void *RAX;
-  void *RBX;
-  void *RCX;
-  void *RDX;
+  char AX[4];
+  char BX[4];
+  char CX[4];
+  char DX[4];
+  char EAX[8];
+  char EBX[8];
+  char ECX[8];
+  char EDX[8];
+  char RAX[16];
+  char RBX[16];
+  char RCX[16];
+  char RDX[16];
 } t_registros_cpu;
 
 typedef struct
@@ -33,12 +33,6 @@ typedef struct
   time_t tiempo_ready;
   t_list *archivos_abiertos;
 } t_pcb;
-
-typedef enum {
-    CPU_EXIT,
-    CPU_YIELD
-    // BLOCK calculo que tambien, ya veremos cuando lleguemos ahi
-} cod_op_kernel;
 
 // Logger del kernel
 extern t_log* logger_kernel_extra;

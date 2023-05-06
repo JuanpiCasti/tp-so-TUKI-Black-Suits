@@ -11,19 +11,20 @@ char *PUERTO_ESCUCHA_CPU;
 char *TAM_MAX_SEGMENTO;
 
 
-void* AX;
-void* BX;
-void* CX;
-void* DX;
-void* EAX;
-void* EBX;
-void* ECX;
-void* EDX;
-void* RAX;
-void* RBX;
-void* RCX;
-void* RDX;
+char AX[4];
+char BX[4];
+char CX[4];
+char DX[4];
+char EAX[8];
+char EBX[8];
+char ECX[8];
+char EDX[8];
+char RAX[16];
+char RBX[16];
+char RCX[16];
+char RDX[16];
 uint32_t PROGRAM_COUNTER;
+t_list* INSTRUCTION_LIST;
 
 int main(int argc, char **argv)
 {

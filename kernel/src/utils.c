@@ -2,7 +2,6 @@
 
 t_pcb *crear_pcb(t_list *instrucciones)
 {
-    
     t_pcb *pcb = malloc(sizeof(t_pcb));
 
     pthread_mutex_lock(&mutex_next_pid);
@@ -13,19 +12,19 @@ t_pcb *crear_pcb(t_list *instrucciones)
     pcb->instrucciones = instrucciones;
     pcb->program_counter = 0;
 
-    pcb->registros_cpu = malloc(sizeof(t_registros_cpu));
-    pcb->registros_cpu->AX = malloc(4);
-    pcb->registros_cpu->BX = malloc(4);
-    pcb->registros_cpu->CX = malloc(4);
-    pcb->registros_cpu->DX = malloc(4);
-    pcb->registros_cpu->EAX = malloc(8);
-    pcb->registros_cpu->EBX = malloc(8);
-    pcb->registros_cpu->ECX = malloc(8);
-    pcb->registros_cpu->EDX = malloc(8);
-    pcb->registros_cpu->RAX = malloc(16);
-    pcb->registros_cpu->RBX = malloc(16);
-    pcb->registros_cpu->RCX = malloc(16);
-    pcb->registros_cpu->RDX = malloc(16);
+    t_registros_cpu *registros_cpu = malloc(sizeof(t_registros_cpu));
+    memset(registros_cpu->AX, 0, sizeof(registros_cpu->AX));
+    memset(registros_cpu->BX, 0, sizeof(registros_cpu->BX));
+    memset(registros_cpu->CX, 0, sizeof(registros_cpu->CX));
+    memset(registros_cpu->DX, 0, sizeof(registros_cpu->DX));
+    memset(registros_cpu->EAX, 0, sizeof(registros_cpu->EAX));
+    memset(registros_cpu->EBX, 0, sizeof(registros_cpu->EBX));
+    memset(registros_cpu->ECX, 0, sizeof(registros_cpu->ECX));
+    memset(registros_cpu->EDX, 0, sizeof(registros_cpu->EDX));
+    memset(registros_cpu->RAX, 0, sizeof(registros_cpu->RAX));
+    memset(registros_cpu->RBX, 0, sizeof(registros_cpu->RBX));
+    memset(registros_cpu->RCX, 0, sizeof(registros_cpu->RCX));
+    memset(registros_cpu->RDX, 0, sizeof(registros_cpu->RDX));
 
     pcb->estimado_HRRN = ESTIMACION_INICIAL;
     pcb->tiempo_ready = time(NULL);
@@ -33,6 +32,7 @@ t_pcb *crear_pcb(t_list *instrucciones)
 
     return pcb;
 }
+
 
 void imprimir_pcb(t_pcb *pcb)
 {
@@ -45,18 +45,18 @@ void imprimir_pcb(t_pcb *pcb)
     }
     printf("Program Counter: %d\n", pcb->program_counter);
     printf("Registros CPU:\n");
-    printf("\tAX: %p\n", pcb->registros_cpu->AX);
-    printf("\tBX: %p\n", pcb->registros_cpu->BX);
-    printf("\tCX: %p\n", pcb->registros_cpu->CX);
-    printf("\tDX: %p\n", pcb->registros_cpu->DX);
-    printf("\tEAX: %p\n", pcb->registros_cpu->EAX);
-    printf("\tEBX: %p\n", pcb->registros_cpu->EBX);
-    printf("\tECX: %p\n", pcb->registros_cpu->ECX);
-    printf("\tEDX: %p\n", pcb->registros_cpu->EDX);
-    printf("\tRAX: %p\n", pcb->registros_cpu->RAX);
-    printf("\tRBX: %p\n", pcb->registros_cpu->RBX);
-    printf("\tRCX: %p\n", pcb->registros_cpu->RCX);
-    printf("\tRDX: %p\n", pcb->registros_cpu->RDX);
+    printf("\tAX: %s\n", pcb->registros_cpu->AX);
+    printf("\tBX: %s\n", pcb->registros_cpu->BX);
+    printf("\tCX: %s\n", pcb->registros_cpu->CX);
+    printf("\tDX: %s\n", pcb->registros_cpu->DX);
+    printf("\tEAX: %s\n", pcb->registros_cpu->EAX);
+    printf("\tEBX: %s\n", pcb->registros_cpu->EBX);
+    printf("\tECX: %s\n", pcb->registros_cpu->ECX);
+    printf("\tEDX: %s\n", pcb->registros_cpu->EDX);
+    printf("\tRAX: %s\n", pcb->registros_cpu->RAX);
+    printf("\tRBX: %s\n", pcb->registros_cpu->RBX);
+    printf("\tRCX: %s\n", pcb->registros_cpu->RCX);
+    printf("\tRDX: %s\n", pcb->registros_cpu->RDX);
     printf("Tabla de Segmentos:\n");
     printf("Estimado HRRN: %f\n", pcb->estimado_HRRN);
     printf("Tiempo ready: %ld\n", (long)pcb->tiempo_ready);
