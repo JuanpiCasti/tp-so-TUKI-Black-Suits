@@ -14,3 +14,23 @@ void inicializar_registros() {
     RCX = malloc(16);
     RDX = malloc(16);
 }
+
+void cambiar_contexto() {
+    // TODO:
+
+}
+
+as_instruction decode(t_instruccion instruccion) {
+
+    // strcmp con instruccion -> instruccion y devuelve que elemetno del enum as_instruction es.
+
+}
+
+void ejecutar_instrucciones() {
+    while(true) {
+        // TODO: ejecutar hasta que encuentre un YIELD o un EXIT (break)
+        // Un ciclo de ejecucion implica hacer un decode de la instruccion,
+        // ejecutar la funcion asociada a esa instruccion,
+        // y aumentar el program counter en 1.
+    }
+}

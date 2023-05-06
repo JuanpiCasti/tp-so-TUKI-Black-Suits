@@ -71,7 +71,7 @@ t_list *recv_instrucciones(t_log *logger, int cliente_socket)
     return instrucciones;
 }
 
-void* serializar_contexto_pcb(t_pcb* pcb) {
+void* serializar_contexto_pcb(t_pcb* pcb, int tam_contexto) {
     // Se envia:
     // cod_op, (sizeof(cod_op))
     // registros CPU, (4x4 bytes, 4x8 bytes, 4x16 bytes, en orden alfabetico)
@@ -80,14 +80,7 @@ void* serializar_contexto_pcb(t_pcb* pcb) {
     // instrucciones...
     
     uint32_t tam_instrucciones = list_size(pcb -> instrucciones) * sizeof(t_instruccion); 
-    void* buffer = malloc(sizeof(cod_op) + 
-                          4*4 + // (AX, BX, CX, DX) 
-                          4*8 + // (EAX, EBX, ECX, EDX)
-                          4*16 + // (RAX, RBX, RCX, RDX)
-                          sizeof(uint32_t) +
-                          sizeof(uint32_t) +
-                          tam_instrucciones
-                          );
+    void* buffer = malloc(tam_contexto);
     
     uint32_t desplazamiento = 0;
     cod_op cop = NUEVO_CONTEXTO_PCB;
@@ -128,7 +121,7 @@ void* serializar_contexto_pcb(t_pcb* pcb) {
     desplazamiento += sizeof(uint32_t);
 
     // Instrucciones
-    void* buffer_instrucciones = serializar_instrucciones(pcb->instrucciones, sizeof(pcb->instrucciones), tam_instrucciones);
+    void* buffer_instrucciones = serializar_instrucciones(pcb->instrucciones, list_size(pcb->instrucciones), tam_instrucciones);
     memcpy(buffer + desplazamiento, buffer_instrucciones, sizeof(uint32_t) + tam_instrucciones);
     free(buffer_instrucciones);
 
@@ -136,11 +129,53 @@ void* serializar_contexto_pcb(t_pcb* pcb) {
 
 }
 
-void enviar_contexto_a_cpu(t_pcb* pcb) {
+void deserializar_contexto_pcb(void* buffer,t_pcb* pcb, cod_op *cop) {
+    int desplazamiento = 0;
+    memcpy(cop, buffer, sizeof(cod_op));
+    desplazamiento += sizeof(cod_op);
 
-    void* buffer = serializar_contexto_pcb(pcb);
+    
 
-    //conn
+    memcpy(pcb->registros_cpu->AX, buffer + desplazamiento, 4);
+    desplazamiento += 4;
+    memcpy(pcb->registros_cpu->BX, buffer + desplazamiento, 4);
+    desplazamiento += 4;
+    memcpy(pcb->registros_cpu->CX, buffer + desplazamiento, 4);
+    desplazamiento += 4;
+    memcpy(pcb->registros_cpu->DX, buffer + desplazamiento, 4);
+    desplazamiento += 4;
+    memcpy(pcb->registros_cpu->EAX, buffer + desplazamiento, 8);
+    desplazamiento += 8;
+    memcpy(pcb->registros_cpu->EBX, buffer + desplazamiento, 8);
+    desplazamiento += 8;
+    memcpy(pcb->registros_cpu->ECX, buffer + desplazamiento, 8);
+    desplazamiento += 8;
+    memcpy(pcb->registros_cpu->EDX, buffer + desplazamiento, 8);
+    desplazamiento += 8;
+    memcpy(pcb->registros_cpu->RAX, buffer + desplazamiento, 16);
+    desplazamiento += 16;
+    memcpy(pcb->registros_cpu->RBX, buffer + desplazamiento, 16);
+    desplazamiento += 16;
+    memcpy(pcb->registros_cpu->RCX, buffer + desplazamiento, 16);
+    desplazamiento += 16;
+    memcpy(pcb->registros_cpu->RDX, buffer + desplazamiento, 16);
+    desplazamiento += 16;
+    memcpy(&(pcb->program_counter), buffer + desplazamiento, sizeof(uint32_t));
 
     free(buffer);
+}
+
+void mandar_a_cpu(t_pcb* pcb, int tam_contexto) {
+    
+    int socket_cpu = crear_conexion(logger_kernel_extra, IP_CPU, PUERTO_CPU);
+
+    void* buffer = serializar_contexto_pcb(pcb, tam_contexto);
+
+    send(socket_cpu, buffer, tam_contexto, NULL);
+
+    free(buffer);
+}
+
+cod_op_kernel recibir_de_cpu(t_pcb* pcb) {
+    
 }

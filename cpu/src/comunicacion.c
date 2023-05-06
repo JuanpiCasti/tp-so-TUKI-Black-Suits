@@ -29,6 +29,13 @@ void procesar_conexion(void *void_args)
         case HANDSHAKE_MEMORIA:
             rechazar_handshake(logger, cliente_socket);
             break;
+        case NUEVO_CONTEXTO_PCB:
+            printf("Hola manito :)\n");
+            // TODO: Cambio de contexto y comenzar a ejecutar instrucciones.
+            cambiar_contexto();
+            ejecutar_instrucciones();
+            cliente_socket = -1;
+            break;
         default:
             log_error(logger, "Algo anduvo mal en el server de CPU");
             log_info(logger, "Cop: %d", cop);

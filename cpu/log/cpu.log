@@ -1,0 +1,112 @@
+[INFO] 19:53:58:546 CPU/(18792:18792): CPU escuchando conexiones...
+[INFO] 21:16:39:500 CPU/(22349:22349): CPU escuchando conexiones...
+[INFO] 21:16:42:139 CPU/(22349:22349): Se conecto un cliente!
+[INFO] 21:16:42:139 CPU/(22349:22352): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 21:16:42:139 CPU/(22349:22352): Cliente desconectado!
+[WARNING] 21:16:42:139 CPU/(22349:22352): El cliente se desconectó del server
+[INFO] 21:17:18:812 CPU/(22349:22349): Se conecto un cliente!
+[INFO] 21:17:18:812 CPU/(22349:22376): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 21:17:18:812 CPU/(22349:22376): Cliente desconectado!
+[WARNING] 21:17:18:812 CPU/(22349:22376): El cliente se desconectó del server
+[INFO] 21:24:46:468 CPU/(22349:22349): Se conecto un cliente!
+[INFO] 21:24:46:468 CPU/(22349:23598): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 21:24:46:468 CPU/(22349:23598): Cliente desconectado!
+[WARNING] 21:24:46:468 CPU/(22349:23598): El cliente se desconectó del server
+[INFO] 22:20:35:139 CPU/(22349:22349): Se conecto un cliente!
+[INFO] 22:20:35:139 CPU/(22349:29073): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:20:35:139 CPU/(22349:29073): Cliente desconectado!
+[WARNING] 22:20:35:139 CPU/(22349:29073): El cliente se desconectó del server
+[INFO] 22:21:51:631 CPU/(22349:22349): Se conecto un cliente!
+[INFO] 22:21:51:631 CPU/(22349:29371): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:21:51:631 CPU/(22349:29371): Cliente desconectado!
+[WARNING] 22:21:51:631 CPU/(22349:29371): El cliente se desconectó del server
+[INFO] 22:22:00:656 CPU/(22349:22349): Se conecto un cliente!
+[INFO] 22:22:00:656 CPU/(22349:29374): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:22:00:656 CPU/(22349:29374): Cliente desconectado!
+[WARNING] 22:22:00:656 CPU/(22349:29374): El cliente se desconectó del server
+[INFO] 22:34:18:242 CPU/(22349:22349): Se conecto un cliente!
+[INFO] 22:34:18:242 CPU/(22349:30261): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:34:18:243 CPU/(22349:30261): Cliente desconectado!
+[WARNING] 22:34:18:243 CPU/(22349:30261): El cliente se desconectó del server
+[INFO] 22:34:25:435 CPU/(22349:22349): Se conecto un cliente!
+[WARNING] 22:34:25:511 CPU/(22349:30265): Cliente desconectado!
+[WARNING] 22:34:25:511 CPU/(22349:30265): El cliente se desconectó del server
+[INFO] 22:34:28:557 CPU/(22349:22349): Se conecto un cliente!
+[WARNING] 22:34:28:619 CPU/(22349:30268): Cliente desconectado!
+[WARNING] 22:34:28:619 CPU/(22349:30268): El cliente se desconectó del server
+[INFO] 22:34:29:755 CPU/(22349:22349): Se conecto un cliente!
+[WARNING] 22:34:29:816 CPU/(22349:30271): Cliente desconectado!
+[WARNING] 22:34:29:816 CPU/(22349:30271): El cliente se desconectó del server
+[INFO] 22:34:30:805 CPU/(22349:22349): Se conecto un cliente!
+[WARNING] 22:34:30:863 CPU/(22349:30274): Cliente desconectado!
+[WARNING] 22:34:30:863 CPU/(22349:30274): El cliente se desconectó del server
+[INFO] 22:34:51:994 CPU/(22349:22349): Se conecto un cliente!
+[WARNING] 22:34:52:052 CPU/(22349:30314): Cliente desconectado!
+[WARNING] 22:34:52:052 CPU/(22349:30314): El cliente se desconectó del server
+[INFO] 22:35:11:599 CPU/(22349:22349): Se conecto un cliente!
+[WARNING] 22:35:11:599 CPU/(22349:30340): Cliente desconectado!
+[WARNING] 22:35:11:599 CPU/(22349:30340): El cliente se desconectó del server
+[INFO] 22:36:00:400 CPU/(22349:22349): Se conecto un cliente!
+[WARNING] 22:36:00:400 CPU/(22349:30408): Cliente desconectado!
+[WARNING] 22:36:00:400 CPU/(22349:30408): El cliente se desconectó del server
+[INFO] 22:36:17:908 CPU/(22349:22349): Se conecto un cliente!
+[ERROR] 22:36:17:908 CPU/(22349:30429): Algo anduvo mal en el server de CPU
+[INFO] 22:36:17:908 CPU/(22349:30429): Cop: 6
+[INFO] 22:36:19:367 CPU/(22349:22349): Se conecto un cliente!
+[ERROR] 22:36:19:367 CPU/(22349:30431): Algo anduvo mal en el server de CPU
+[INFO] 22:36:19:367 CPU/(22349:30431): Cop: 6
+[INFO] 22:36:20:169 CPU/(22349:22349): Se conecto un cliente!
+[ERROR] 22:36:20:169 CPU/(22349:30433): Algo anduvo mal en el server de CPU
+[INFO] 22:36:20:169 CPU/(22349:30433): Cop: 6
+[INFO] 22:36:21:313 CPU/(22349:22349): Se conecto un cliente!
+[ERROR] 22:36:21:313 CPU/(22349:30435): Algo anduvo mal en el server de CPU
+[INFO] 22:36:21:313 CPU/(22349:30435): Cop: 6
+[INFO] 22:36:22:377 CPU/(22349:22349): Se conecto un cliente!
+[ERROR] 22:36:22:378 CPU/(22349:30437): Algo anduvo mal en el server de CPU
+[INFO] 22:36:22:378 CPU/(22349:30437): Cop: 6
+[INFO] 22:46:29:312 CPU/(31417:31417): CPU escuchando conexiones...
+[INFO] 22:46:32:804 CPU/(31417:31417): Se conecto un cliente!
+[ERROR] 22:46:32:804 CPU/(31417:31421): Algo anduvo mal en el server de CPU
+[INFO] 22:46:32:804 CPU/(31417:31421): Cop: 6
+[INFO] 22:47:04:197 CPU/(31417:31417): Se conecto un cliente!
+[ERROR] 22:47:04:197 CPU/(31417:31447): Algo anduvo mal en el server de CPU
+[INFO] 22:47:04:197 CPU/(31417:31447): Cop: 10
+[INFO] 22:49:05:001 CPU/(32743:32743): CPU escuchando conexiones...
+[INFO] 22:49:10:903 CPU/(32743:32743): Se conecto un cliente!
+[ERROR] 22:49:10:903 CPU/(32743:32750): Algo anduvo mal en el server de CPU
+[INFO] 22:49:10:903 CPU/(32743:32750): Cop: 6
+[INFO] 22:50:26:579 CPU/(32801:32801): CPU escuchando conexiones...
+[INFO] 22:50:29:139 CPU/(32801:32801): Se conecto un cliente!
+[ERROR] 22:50:29:139 CPU/(32801:32803): Algo anduvo mal en el server de CPU
+[INFO] 22:50:29:139 CPU/(32801:32803): Cop: -816834816
+[INFO] 22:50:30:247 CPU/(32801:32801): Se conecto un cliente!
+[ERROR] 22:50:30:247 CPU/(32801:32805): Algo anduvo mal en el server de CPU
+[INFO] 22:50:30:247 CPU/(32801:32805): Cop: -1428261120
+[INFO] 22:50:31:169 CPU/(32801:32801): Se conecto un cliente!
+[ERROR] 22:50:31:169 CPU/(32801:32807): Algo anduvo mal en el server de CPU
+[INFO] 22:50:31:169 CPU/(32801:32807): Cop: 1402107648
+[INFO] 22:50:56:186 CPU/(32826:32826): CPU escuchando conexiones...
+[INFO] 22:50:58:825 CPU/(32826:32826): Se conecto un cliente!
+[ERROR] 22:50:58:826 CPU/(32826:32829): Algo anduvo mal en el server de CPU
+[INFO] 22:50:58:826 CPU/(32826:32829): Cop: 1005451008
+[INFO] 22:52:29:052 CPU/(32915:32915): CPU escuchando conexiones...
+[INFO] 22:52:31:592 CPU/(32915:32915): Se conecto un cliente!
+[WARNING] 22:52:31:592 CPU/(32915:32917): El cliente se desconectó del server
+[INFO] 22:52:33:296 CPU/(32915:32915): Se conecto un cliente!
+[WARNING] 22:52:33:296 CPU/(32915:32919): El cliente se desconectó del server
+[INFO] 22:52:34:167 CPU/(32915:32915): Se conecto un cliente!
+[WARNING] 22:52:34:167 CPU/(32915:32921): El cliente se desconectó del server
+[INFO] 22:52:35:303 CPU/(32915:32915): Se conecto un cliente!
+[WARNING] 22:52:35:303 CPU/(32915:32923): El cliente se desconectó del server
+[INFO] 22:52:35:970 CPU/(32915:32915): Se conecto un cliente!
+[WARNING] 22:52:35:970 CPU/(32915:32925): El cliente se desconectó del server
+[INFO] 22:52:36:648 CPU/(32915:32915): Se conecto un cliente!
+[WARNING] 22:52:36:648 CPU/(32915:32927): El cliente se desconectó del server
+[INFO] 22:52:37:348 CPU/(32915:32915): Se conecto un cliente!
+[WARNING] 22:52:37:348 CPU/(32915:32929): El cliente se desconectó del server
+[INFO] 23:22:01:061 CPU/(36613:36613): CPU escuchando conexiones...
+[INFO] 23:22:04:983 CPU/(36614:36614): CPU escuchando conexiones...
+[INFO] 23:22:10:500 CPU/(36614:36614): Se conecto un cliente!
+[INFO] 23:22:10:500 CPU/(36614:36635): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:22:10:500 CPU/(36614:36635): Cliente desconectado!
+[WARNING] 23:22:10:500 CPU/(36614:36635): El cliente se desconectó del server

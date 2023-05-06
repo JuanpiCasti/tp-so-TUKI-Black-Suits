@@ -34,6 +34,12 @@ typedef struct
   t_list *archivos_abiertos;
 } t_pcb;
 
+typedef enum {
+    CPU_EXIT,
+    CPU_YIELD
+    // BLOCK calculo que tambien, ya veremos cuando lleguemos ahi
+} cod_op_kernel;
+
 // Logger del kernel
 extern t_log* logger_kernel_extra;
 extern t_log* logger_kernel;

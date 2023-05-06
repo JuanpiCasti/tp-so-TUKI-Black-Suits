@@ -13,7 +13,7 @@ t_pcb *crear_pcb(t_list *instrucciones)
     pcb->instrucciones = instrucciones;
     pcb->program_counter = 0;
 
-    pcb->registros_cpu = malloc(4 * 4 + 8 * 4 + 16 * 4);
+    pcb->registros_cpu = malloc(sizeof(t_registros_cpu));
     pcb->registros_cpu->AX = malloc(4);
     pcb->registros_cpu->BX = malloc(4);
     pcb->registros_cpu->CX = malloc(4);
@@ -194,6 +194,15 @@ void planificacion() {
             t_pcb* r_pcb = siguiente_proceso_a_ejecutar();
 
             RUNNING = r_pcb;
+
+            uint32_t tam_contexto = sizeof(cod_op) + 
+                          4*4 + // (AX, BX, CX, DX) 
+                          4*8 + // (EAX, EBX, ECX, EDX)
+                          4*16 + // (RAX, RBX, RCX, RDX)
+                          sizeof(uint32_t) +
+                          sizeof(uint32_t) +
+                          list_size(r_pcb->instrucciones) * sizeof(t_instruccion);
+            
             
             // TODO:
             // Mandar a CPU

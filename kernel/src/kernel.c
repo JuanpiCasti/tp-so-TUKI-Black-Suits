@@ -46,6 +46,10 @@ int main(int argc, char **argv)
 {
 	if (argc > 1 && strcmp(argv[1], "-test") == 0)
 	{
+		levantar_config_kernel();
+		inicializar_colas();
+		inicializar_semaforos();
+		printf("Corriendo tests...\n");
 		run_tests();
 	}
 	else
@@ -62,12 +66,12 @@ int main(int argc, char **argv)
 		// 	return EXIT_FAILURE;
 		// }
 
-		// //*********************
-		// // HANDSHAKE - CPU
-		// if (realizar_handshake(logger_kernel_extra, IP_CPU, PUERTO_CPU, HANDSHAKE_KERNEL, "CPU") == -1)
-		// {
-		// 	return EXIT_FAILURE;
-		// }
+		//*********************
+		// HANDSHAKE - CPU
+		if (realizar_handshake(logger_kernel_extra, IP_CPU, PUERTO_CPU, HANDSHAKE_KERNEL, "CPU") == -1)
+		{
+			return EXIT_FAILURE;
+		}
 
 		// //*********************
 		// // HANDSHAKE - MEMORIA
