@@ -92,11 +92,10 @@ void procesar_conexion(void *void_args)
             rechazar_handshake(logger, cliente_socket);
             break;
         case NUEVO_CONTEXTO_PCB:
-            // TODO: Cambio de contexto y comenzar a ejecutar instrucciones.
             void* buffer = recibir_buffer(cliente_socket);
             cambiar_contexto(buffer);
-            imprimir_contexto_actual();
-            cod_op_kernel cop = ejecutar_instrucciones();
+            //imprimir_contexto_actual();
+            cod_op_kernel cop = ejecutar_instrucciones(); // Ejecuta hasta encontrar un YIELD o EXIT
             devolver_contexto(cliente_socket, cop);
             break;
         default:

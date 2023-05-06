@@ -122,23 +122,44 @@ void imprimir_contexto_actual() {
     }
 }
 
-as_instruction decode(t_instruccion instruccion) {
+as_instruction decode(t_instruccion* instruccion) {
 
-    // strcmp con instruccion -> instruccion y devuelve que elemetno del enum as_instruction es.
+    // TODO: strcmp con instruccion -> instruccion y devuelve que elemetno del enum as_instruction es.
 
 }
 
+
+
 cod_op_kernel ejecutar_instrucciones() {
     while(true) {
+
         // TODO: ejecutar hasta que encuentre un YIELD o un EXIT (break)
         // Un ciclo de ejecucion implica hacer un decode de la instruccion,
         // ejecutar la funcion asociada a esa instruccion,
-        // y aumentar el program counter en 1.
+        // y aumentar el program counter en 1. El program counter es el indice
+        // para hacer list_get con INSTRUCTION_LIST 
         
+        t_instruccion* instruccion;
+
+        as_instruction instruction_code = decode(instruccion);
+
+        switch (instruction_code)
+        {
+        case SET:
+            // completar
+            break;
+        case YIELD:
+            // completar
+            break;
+        case EXIT:
+            // completar
+            break;
+        
+        default:
+            break;
+        }
+
         PROGRAM_COUNTER++;
         break;
     }
-
-
-    return CPU_YIELD; // Esto para probar, dentro del if hay que ver que 
 }

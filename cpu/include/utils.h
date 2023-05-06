@@ -44,7 +44,7 @@ void levantar_config_cpu();
 void inicializar_registros();
 
 void cambiar_contexto(void* buffer);   // Setea los registros y demas estructuras del CPU con los datos recibidos de un proceso
-as_instruction decode(t_instruccion instruccion); // Toma una instruccion y devuelve a que elemento del enum as_instruction corresponde
+as_instruction decode(t_instruccion* instruccion); // Toma una instruccion y devuelve a que elemento del enum as_instruction corresponde
 cod_op_kernel ejecutar_instrucciones(); // Ejecuta instrucciones hasta  que se encuentra con alguna que requiere terminar la ejecucion (break)
 void imprimir_contexto_actual();
 

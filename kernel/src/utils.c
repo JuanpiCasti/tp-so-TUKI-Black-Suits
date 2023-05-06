@@ -132,7 +132,6 @@ void loggear_cambio_estado(char* estado_anterior, char* estado_actual, t_pcb* pc
 }
 
 void loggear_cola_ready() {
-    // TODO: que cambie segun el algoritmo
     char* lista_pids = string_new();
 
     uint32_t first_pid = ((t_pcb *)(list_get(READY, 0)))->pid;
@@ -160,7 +159,6 @@ t_pcb* siguiente_proceso_a_ejecutar() {
         }
     } else if (strcmp(ALGORITMO_PLANIFICACION, "HRRN") == 0) {
         // Saca un proceso de ready segun HRRN
-        // TODO: Implementar HRRN
     }
 
     log_error(logger_kernel_extra, "El algoritmo indicado en el archivo de configuracion es desconocido");
@@ -185,7 +183,6 @@ void planificacion() {
             loggear_cola_ready();
 
             grado_multiprogramacion++;
-            // TODO: enviar mensaje a memoria para que inicialice las estructuras necesarias
 
             // SACAR PRINT, USADO SOLO EN PRUEBAS RAPIDAS
         } 
@@ -217,9 +214,6 @@ void planificacion() {
 
             loggear_cambio_estado("READY", "RUNNING", r_pcb);
         }
-
-        // TODO: if, si el PC apunta a EXIT, mandar el PCB a EXIT (o free)
-
 
         //     // SACAR PRINT, USADO SOLO EN PRUEBAS RAPIDAS
         // printf("Cola NEW\n");
