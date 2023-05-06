@@ -110,3 +110,4 @@
 [INFO] 23:22:10:500 CPU/(36614:36635): Recibido handshake HANDSHAKE_KERNEL.
 [WARNING] 23:22:10:500 CPU/(36614:36635): Cliente desconectado!
 [WARNING] 23:22:10:500 CPU/(36614:36635): El cliente se desconectó del server
+[INFO] 14:43:50:637 CPU/(64158:64158): CPU escuchando conexiones...

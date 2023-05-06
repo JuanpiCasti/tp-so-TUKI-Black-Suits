@@ -24,8 +24,20 @@ extern void* RAX;
 extern void* RBX;
 extern void* RCX;
 extern void* RDX;
-extern uint32_t program_counter;
+extern uint32_t PROGRAM_COUNTER;
 
+extern t_log* logger_cpu_extra;
+extern t_log* logger_cpu;
+
+extern t_config *CONFIG_CPU;
+extern char *RETARDO_INSTRUCCION;
+extern char *IP_MEMORIA;
+extern char *PUERTO_MEMORIA;
+extern char *PUERTO_ESCUCHA_CPU;
+extern char *TAM_MAX_SEGMENTO;
+
+void levantar_loggers_cpu();
+void levantar_config_cpu();
 void inicializar_registros();
 
 void cambiar_contexto(); // Setea los registros y demas estructuras del CPU con los datos recibidos de un proceso

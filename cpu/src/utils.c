@@ -15,6 +15,22 @@ void inicializar_registros() {
     RDX = malloc(16);
 }
 
+void levantar_loggers_cpu() {
+    logger_cpu_extra = log_create("./log/cpu_extra.log", "CPU", true, LOG_LEVEL_INFO);
+    logger_cpu = log_create("./log/cpu_extra.log", "CPU", true, LOG_LEVEL_INFO);
+}
+
+void levantar_config_cpu() {
+    CONFIG_CPU = config_create("./cfg/cpu.config");
+    RETARDO_INSTRUCCION = config_get_string_value(CONFIG_CPU, "RETARDO_INSTRUCCION");
+    IP_MEMORIA = config_get_string_value(CONFIG_CPU, "IP_MEMORIA");
+    PUERTO_MEMORIA = config_get_string_value(CONFIG_CPU, "PUERTO_MEMORIA");
+    PUERTO_ESCUCHA_CPU = config_get_string_value(CONFIG_CPU, "PUERTO_ESCUCHA");
+    TAM_MAX_SEGMENTO = config_get_string_value(CONFIG_CPU, "TAM_MAX_SEGMENTO");
+}
+
+
+
 void cambiar_contexto() {
     // TODO:
 

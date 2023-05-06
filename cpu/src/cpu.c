@@ -1,7 +1,14 @@
 #include "cpu.h"
 
-t_log *logger_cpu;
+t_log *logger_cpu_extra;
+t_log* logger_cpu;
+
 t_config *CONFIG_CPU;
+char *RETARDO_INSTRUCCION;
+char *IP_MEMORIA;
+char *PUERTO_MEMORIA;
+char *PUERTO_ESCUCHA_CPU;
+char *TAM_MAX_SEGMENTO;
 
 
 void* AX;
@@ -16,7 +23,7 @@ void* RAX;
 void* RBX;
 void* RCX;
 void* RDX;
-uint32_t program_counter;
+uint32_t PROGRAM_COUNTER;
 
 int main(int argc, char **argv)
 {
@@ -26,34 +33,30 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-		logger_cpu = log_create("./log/cpu.log", "CPU", true, LOG_LEVEL_INFO);
 
-		CONFIG_CPU = config_create("./cfg/cpu.config");
-		// char *retardo_instruccion = config_get_string_value(CONFIG_CPU, "RETARDO_INSTRUCCION");
-		char *ip_memoria = config_get_string_value(CONFIG_CPU, "IP_MEMORIA");
-		char *puerto_memoria = config_get_string_value(CONFIG_CPU, "PUERTO_MEMORIA");
-		char *puerto_escucha_cpu = config_get_string_value(CONFIG_CPU, "PUERTO_ESCUCHA");
-		// char *tam_max_segmento = config_get_string_value(CONFIG_CPU, "TAM_MAX_SEGMENTO");
-
+		// Rutinas de preparacion
+		levantar_loggers_cpu();
+		levantar_config_cpu();
 		inicializar_registros();
+
 
 		// *********************
 		// HANDSHAKE - MEMORIA
-		// if (realizar_handshake(logger_cpu, ip_memoria, puerto_memoria, HANDSHAKE_CPU, "Memoria") == -1)
+		// if (realizar_handshake(logger_cpu_extra, IP_MEMORIA, PUERTO_MEMORIA, HANDSHAKE_CPU, "Memoria") == -1)
 		// {
 		// 	return EXIT_FAILURE;
 		// }
 
 		//*********************
 		// SERVIDOR
-		int socket_servidor_cpu = iniciar_servidor(logger_cpu, puerto_escucha_cpu);
+		int socket_servidor_cpu = iniciar_servidor(logger_cpu_extra, PUERTO_ESCUCHA_CPU);
 		if (socket_servidor_cpu == -1)
 		{
-			log_error(logger_cpu, "No se pudo iniciar el servidor en CPU...");
+			log_error(logger_cpu_extra, "No se pudo iniciar el servidor en CPU...");
 			return EXIT_FAILURE;
 		}
-		log_info(logger_cpu, "CPU escuchando conexiones...");
-		while (server_escuchar(logger_cpu, socket_servidor_cpu, (void *)procesar_conexion));
+		log_info(logger_cpu_extra, "CPU escuchando conexiones...");
+		while (server_escuchar(logger_cpu_extra, socket_servidor_cpu, (void *)procesar_conexion));
 		return EXIT_SUCCESS;
 	}
 }	
