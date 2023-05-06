@@ -75,7 +75,7 @@ extern double ESTIMACION_INICIAL;
 extern uint32_t GRADO_MAX_MULTIPROGRAMACION;
 extern char* ALGORITMO_PLANIFICACION;
 
-
+void inicializar_loggers_kernel(); // crea loggers (oficial y extra)
 void levantar_config_kernel(); // setea todas las variables globales de configuracion
 void inicializar_colas(); // Inicializa las colas de procesos
 void inicializar_semaforos(); // Inicializa los semaforos usados en el modulo

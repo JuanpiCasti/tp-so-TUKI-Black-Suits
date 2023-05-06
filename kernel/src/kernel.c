@@ -54,10 +54,12 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-		logger_kernel_extra = log_create("./log/kernel_extra.log", "KERNEL_EXTRA", false, LOG_LEVEL_INFO);
-		logger_kernel = log_create("./log/kernel.log", "KERNEL", true, LOG_LEVEL_INFO);
 
+		inicializar_loggers_kernel();
 		levantar_config_kernel();
+		inicializar_colas();
+		inicializar_semaforos();
+		next_pid = 1;
 
 		// //*********************
 		// // HANDSHAKE - FILESYSTEM
@@ -79,10 +81,7 @@ int main(int argc, char **argv)
 		// {
 		// 	return EXIT_FAILURE;
 		// }
-		
-		inicializar_colas();
-		inicializar_semaforos();
-		next_pid = 1;
+	
 
 		// Planificadores
 		pthread_t hilo_planificacion;
