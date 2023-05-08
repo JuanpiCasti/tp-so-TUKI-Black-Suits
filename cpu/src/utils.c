@@ -42,8 +42,6 @@ void levantar_config_cpu() {
     TAM_MAX_SEGMENTO = config_get_string_value(CONFIG_CPU, "TAM_MAX_SEGMENTO");
 }
 
-
-
 void cambiar_contexto(void* buffer) {
     uint32_t desplazamiento = 0;
 
@@ -122,44 +120,104 @@ void imprimir_contexto_actual() {
     }
 }
 
-as_instruction decode(t_instruccion* instruccion) {
-
-    // TODO: strcmp con instruccion -> instruccion y devuelve que elemetno del enum as_instruction es.
-
+as_instruction decode(t_instruccion *instruccion){
+    if (strcmp(instruccion->instruccion, "SET") == 0 ){
+        return SET;
+    } 
+    else if (strcmp(instruccion->instruccion, "YIELD") == 0)
+    {
+        return YIELD;
+    } 
+    else if (strcmp(instruccion->instruccion, "EXIT") == 0)
+    {
+        return EXIT;
+    } 
+    else {
+        log_error(logger_cpu, "La intrucción no es válida.");
+        return EXIT;
+    }
 }
 
+void ejecutar_set(t_instruccion* instruccion)
+{
+    if (strcmp(instruccion->arg1, "AX") == 0)
+    {
+        strncpy(AX, instruccion->arg2, 4);
+    }
+    else if (strcmp(instruccion->arg1, "BX") == 0)
+    {
+        strncpy(BX, instruccion->arg2, 4);
+    }
+    else if (strcmp(instruccion->arg1, "CX") == 0)
+    {
+        strncpy(CX, instruccion->arg2, 4);
+    }
+    else if (strcmp(instruccion->arg1, "DX") == 0)
+    {
+        strncpy(DX, instruccion->arg2, 4);
+    }
+    else if (strcmp(instruccion->arg1, "EAX") == 0)
+    {
+        strncpy(EAX, instruccion->arg2, 8);
+    }
+    else if (strcmp(instruccion->arg1, "EBX") == 0)
+    {
+        strncpy(EBX, instruccion->arg2, 8);
+    }
+    else if (strcmp(instruccion->arg1, "ECX") == 0)
+    {
+        strncpy(ECX, instruccion->arg2, 8);
+    }
+    else if (strcmp(instruccion->arg1, "EDX") == 0)
+    {
+        strncpy(EDX, instruccion->arg2, 8);
+    }
+    else if (strcmp(instruccion->arg1, "RAX") == 0)
+    {
+        strncpy(RAX, instruccion->arg2, 16);
+    }
+    else if (strcmp(instruccion->arg1, "RBX") == 0)
+    {
+        strncpy(RBX, instruccion->arg2, 16);
+    }
+    else if (strcmp(instruccion->arg1, "RCX") == 0)
+    {
+        strncpy(RCX, instruccion->arg2, 16);
+    }
+    else if (strcmp(instruccion->arg1, "RDX") == 0)
+    {
+        strncpy(RDX, instruccion->arg2, 16);
+    } else {
+        log_error(logger_cpu, "El argumento 1 de la instrucción SET no corresponde a ningún registro.");
+    }
+}
 
+cod_op_kernel ejecutar_instrucciones()
+{
+    t_instruccion *instruccion = list_get(INSTRUCTION_LIST, PROGRAM_COUNTER);
+    PROGRAM_COUNTER++;
+    as_instruction instruction_code = decode(instruccion);
 
-cod_op_kernel ejecutar_instrucciones() {
     while(true) {
-
-        // TODO: ejecutar hasta que encuentre un YIELD o un EXIT (break)
-        // Un ciclo de ejecucion implica hacer un decode de la instruccion,
-        // ejecutar la funcion asociada a esa instruccion,
-        // y aumentar el program counter en 1. El program counter es el indice
-        // para hacer list_get con INSTRUCTION_LIST 
+        instruccion = list_get(INSTRUCTION_LIST, PROGRAM_COUNTER);
+        PROGRAM_COUNTER++;
+        instruction_code = decode(instruccion);
         
-        t_instruccion* instruccion;
-
-        as_instruction instruction_code = decode(instruccion);
-
         switch (instruction_code)
         {
         case SET:
-            // completar
+            printf("HOLA");
+            ejecutar_set(instruccion);
+            printf("CHAU");
             break;
         case YIELD:
-            // completar
-            break;
+            return CPU_YIELD;
         case EXIT:
-            // completar
-            break;
+            return CPU_EXIT;
         
         default:
             break;
         }
-
-        PROGRAM_COUNTER++;
-        break;
+        imprimir_contexto_actual();
     }
 }

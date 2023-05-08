@@ -8,7 +8,7 @@ void envio_contexto_cpu() {
     // Inicializar los campos del t_pcb
     nuevo_pcb->pid = 1234;
     nuevo_pcb->instrucciones = list_create();
-    nuevo_pcb->program_counter = 2;
+    nuevo_pcb->program_counter = 0;
 
     t_registros_cpu *registros_cpu = malloc(sizeof(t_registros_cpu));
     memset(registros_cpu->AX, 0, sizeof(registros_cpu->AX));
@@ -28,14 +28,10 @@ void envio_contexto_cpu() {
     nuevo_pcb->registros_cpu = registros_cpu;
 
     // Crear algunas instrucciones de prueba
-    t_instruccion instruccion1 = {"SET", "AX", "HOLA", ""};
-    t_instruccion instruccion2 = {"MOV", "CX", "10", ""};
-    t_instruccion instruccion3 = {"ADD", "BX", "1", ""};
+    t_instruccion instruccion1 = {"SET", "AX", "CHAU", ""};
 
     // Agregar las instrucciones a la lista de instrucciones del t_pcb
     list_add(nuevo_pcb->instrucciones, &instruccion1);
-    list_add(nuevo_pcb->instrucciones, &instruccion2);
-    list_add(nuevo_pcb->instrucciones, &instruccion3);
 
     nuevo_pcb->tabla_segmentos = list_create();
     nuevo_pcb->estimado_HRRN = 0.0;
@@ -57,17 +53,17 @@ void envio_contexto_cpu() {
     
     imprimir_pcb(nuevo_pcb);
 
-    cod_op cop;
+    cod_op_kernel cop;
     
 
 
     imprimir_pcb(nuevo_pcb);
     int socket_cpu = mandar_a_cpu(nuevo_pcb, tam_contexto);
     
-    void* buffer = recibir_nuevo_contexto(socket_cpu, &cop);
-    deserializar_contexto_pcb(buffer, nuevo_pcb);
-    imprimir_pcb(nuevo_pcb);
-    printf("COP: %d\n", cop);
+    // void* buffer = recibir_nuevo_contexto(socket_cpu, &cop);
+    // deserializar_contexto_pcb(buffer, nuevo_pcb);
+    // imprimir_pcb(nuevo_pcb);
+    // printf("COP: %d\n", cop);
 
 }
 

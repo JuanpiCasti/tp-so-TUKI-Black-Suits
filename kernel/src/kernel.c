@@ -16,13 +16,12 @@ double ESTIMACION_INICIAL;
 uint32_t GRADO_MAX_MULTIPROGRAMACION;
 char* ALGORITMO_PLANIFICACION;
 
-
 int socket_servidor_kernel;
 int socket_filesystem;
 int socket_cpu;
 int socket_memoria;
 
-// Process ID del proximo PCB que se cree
+// Process ID del próximo PCB que se cree
 uint32_t next_pid;
 pthread_mutex_t mutex_next_pid;
 
@@ -40,7 +39,6 @@ pthread_mutex_t mutex_RUNNING;
 
 t_list* EXIT;
 pthread_mutex_t mutex_EXIT;
-
 
 int main(int argc, char **argv)
 {
@@ -81,20 +79,14 @@ int main(int argc, char **argv)
 		// {
 		// 	return EXIT_FAILURE;
 		// }
-	
 
 		// Planificadores
 		pthread_t hilo_planificacion;
 		if (pthread_create(&hilo_planificacion, NULL, (void*)(planificacion), NULL) == -1) {
-			log_error(logger_kernel_extra, "No se pudo crear el hilo del planificador de largo plazo.");
+			log_error(logger_kernel_extra, "No se pudo crear el hilo del planificador.");
 			return EXIT_FAILURE;
 		}
 		
-		// pthread_t hilo_planificador_corto_plazo;
-		// if(pthread_create(&hilo_planificador_corto_plazo, NULL, (void*)(planificador_corto_plazo), NULL) == -1) {
-		// 	log_error(logger_kernel_extra, "No se pudo crear el hilo del planificador de largo plazo.");
-		// 	return EXIT_FAILURE;
-		// }
 		//*********************
 		// SERVIDOR
 		socket_servidor_kernel = iniciar_servidor(logger_kernel_extra, PUERTO_ESCUCHA_KERNEL);

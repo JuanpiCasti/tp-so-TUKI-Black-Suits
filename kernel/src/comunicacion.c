@@ -35,14 +35,6 @@ void procesar_conexion(void *void_args)
             imprimir_pcb(n_pcb);
             encolar_proceso(n_pcb, NEW, &mutex_NEW);
             log_info(logger_kernel, "Se crea el proceso %d en NEW", n_pcb->pid);
-
-            // SACAR PRINT, USADO SOLO EN PRUEBAS RAPIDAS
-            // printf("Cola NEW\n");
-            // for (int i = 0; i < list_size(NEW); i++)
-            // {
-            //     t_pcb* pcb = list_get(NEW, i);
-            //     printf("PID: %d\n", pcb->pid);
-            // }
             break;
         default:
             log_error(logger, "Algo anduvo mal en el server de Kernel");
@@ -129,12 +121,10 @@ void* serializar_contexto_pcb(t_pcb* pcb, uint32_t tam_contexto) {
     free(buffer_instrucciones);
 
     return buffer;
-
 }
 
 void deserializar_contexto_pcb(void* buffer,t_pcb* pcb) {
     int desplazamiento = 0;
-    
 
     memcpy(&(pcb->registros_cpu->AX), buffer + desplazamiento, 4);
     desplazamiento += 4;
@@ -166,7 +156,6 @@ void deserializar_contexto_pcb(void* buffer,t_pcb* pcb) {
 }
 
 int mandar_a_cpu(t_pcb* pcb, uint32_t tam_contexto) {
-    
     int socket_cpu = crear_conexion(logger_kernel_extra, IP_CPU, PUERTO_CPU);
 
     uint32_t tam_paquete = tam_contexto + sizeof(uint32_t) + sizeof(cod_op);

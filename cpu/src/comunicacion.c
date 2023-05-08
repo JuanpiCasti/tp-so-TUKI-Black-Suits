@@ -42,7 +42,6 @@ void serializar_contexto(void* buffer, cod_op_kernel cop, int tamanio_contexto) 
     desplazamiento += 16;
     memcpy(buffer + desplazamiento, &PROGRAM_COUNTER, sizeof(uint32_t));
     desplazamiento += sizeof(uint32_t);
-
 }
 
 void devolver_contexto(int cliente_socket, cod_op_kernel cop) {
@@ -94,9 +93,10 @@ void procesar_conexion(void *void_args)
         case NUEVO_CONTEXTO_PCB:
             void* buffer = recibir_buffer(cliente_socket);
             cambiar_contexto(buffer);
-            //imprimir_contexto_actual();
+            printf("AAAAAA");
+            imprimir_contexto_actual();
             cod_op_kernel cop = ejecutar_instrucciones(); // Ejecuta hasta encontrar un YIELD o EXIT
-            devolver_contexto(cliente_socket, cop);
+            // devolver_contexto(cliente_socket, cop);
             break;
         default:
             log_error(logger, "Algo anduvo mal en el server de CPU");

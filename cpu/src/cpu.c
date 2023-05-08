@@ -10,7 +10,6 @@ char *PUERTO_MEMORIA;
 char *PUERTO_ESCUCHA_CPU;
 char *TAM_MAX_SEGMENTO;
 
-
 char AX[4];
 char BX[4];
 char CX[4];
@@ -34,12 +33,10 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-
-		// Rutinas de preparacion
+		// Rutinas de preparación
 		levantar_loggers_cpu();
 		levantar_config_cpu();
 		inicializar_registros();
-
 
 		// *********************
 		// HANDSHAKE - MEMORIA
