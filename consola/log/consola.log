@@ -1220,3 +1220,79 @@
 [INFO] 19:47:06:953 CONSOLA/(13283:13283): Handshake OK
 [INFO] 19:47:06:954 CONSOLA/(13283:13283): Conexión establecida con Kernel
 [INFO] 19:47:06:954 CONSOLA/(13283:13283): Enviando instrucciones a Kernel...
+[INFO] 17:09:05:111 CONSOLA/(21932:21932): Conexión establecida con Kernel
+[INFO] 17:09:05:111 CONSOLA/(21932:21932): Handshake OK
+[INFO] 17:09:05:111 CONSOLA/(21932:21932): Conexión establecida con Kernel
+[INFO] 17:09:05:111 CONSOLA/(21932:21932): Enviando instrucciones a Kernel...
+[INFO] 17:09:59:457 CONSOLA/(22200:22200): Conexión establecida con Kernel
+[INFO] 17:09:59:457 CONSOLA/(22200:22200): Handshake OK
+[INFO] 17:09:59:458 CONSOLA/(22200:22200): Conexión establecida con Kernel
+[INFO] 17:09:59:458 CONSOLA/(22200:22200): Enviando instrucciones a Kernel...
+[INFO] 17:10:54:980 CONSOLA/(22345:22345): Conexión establecida con Kernel
+[INFO] 17:10:54:980 CONSOLA/(22345:22345): Handshake OK
+[INFO] 17:10:54:981 CONSOLA/(22345:22345): Conexión establecida con Kernel
+[INFO] 17:10:54:981 CONSOLA/(22345:22345): Enviando instrucciones a Kernel...
+[ERROR] 17:12:37:408 CONSOLA/(22539:22539): Error creando la conexion para 127.0.0.1:35601
+[ERROR] 17:12:37:408 CONSOLA/(22539:22539): No se pudo conectar al servidor Kernel
+[ERROR] 17:12:37:408 CONSOLA/(22539:22539): No se pudo conectar al servidor del Kernel
+[ERROR] 17:12:37:408 CONSOLA/(22539:22539): Error creando la conexion para 127.0.0.1:35601
+[ERROR] 17:12:37:408 CONSOLA/(22539:22539): No se pudo conectar al servidor Kernel
+[ERROR] 17:12:37:408 CONSOLA/(22539:22539): No se pudo conectar a Kernel
+[INFO] 17:12:50:085 CONSOLA/(22645:22645): Conexión establecida con Kernel
+[INFO] 17:12:50:085 CONSOLA/(22645:22645): Handshake OK
+[INFO] 17:12:50:085 CONSOLA/(22645:22645): Conexión establecida con Kernel
+[INFO] 17:12:50:085 CONSOLA/(22645:22645): Enviando instrucciones a Kernel...
+[ERROR] 17:12:53:944 CONSOLA/(22700:22700): Error creando la conexion para 127.0.0.1:35601
+[ERROR] 17:12:53:944 CONSOLA/(22700:22700): No se pudo conectar al servidor Kernel
+[ERROR] 17:12:53:944 CONSOLA/(22700:22700): No se pudo conectar al servidor del Kernel
+[ERROR] 17:12:53:944 CONSOLA/(22700:22700): Error creando la conexion para 127.0.0.1:35601
+[ERROR] 17:12:53:944 CONSOLA/(22700:22700): No se pudo conectar al servidor Kernel
+[ERROR] 17:12:53:944 CONSOLA/(22700:22700): No se pudo conectar a Kernel
+[INFO] 17:14:20:786 CONSOLA/(22884:22884): Conexión establecida con Kernel
+[INFO] 17:14:20:787 CONSOLA/(22884:22884): Handshake OK
+[INFO] 17:14:20:787 CONSOLA/(22884:22884): Conexión establecida con Kernel
+[INFO] 17:14:20:787 CONSOLA/(22884:22884): Enviando instrucciones a Kernel...
+[INFO] 17:14:37:708 CONSOLA/(22986:22986): Conexión establecida con Kernel
+[INFO] 17:14:37:708 CONSOLA/(22986:22986): Handshake OK
+[INFO] 17:14:37:708 CONSOLA/(22986:22986): Conexión establecida con Kernel
+[INFO] 17:14:37:708 CONSOLA/(22986:22986): Enviando instrucciones a Kernel...
+[INFO] 17:17:20:145 CONSOLA/(23150:23150): Conexión establecida con Kernel
+[INFO] 17:17:20:145 CONSOLA/(23150:23150): Handshake OK
+[INFO] 17:17:20:145 CONSOLA/(23150:23150): Conexión establecida con Kernel
+[INFO] 17:17:20:145 CONSOLA/(23150:23150): Enviando instrucciones a Kernel...
+[INFO] 17:17:32:817 CONSOLA/(23274:23274): Conexión establecida con Kernel
+[INFO] 17:17:32:817 CONSOLA/(23274:23274): Handshake OK
+[INFO] 17:17:32:817 CONSOLA/(23274:23274): Conexión establecida con Kernel
+[INFO] 17:17:32:817 CONSOLA/(23274:23274): Enviando instrucciones a Kernel...
+[INFO] 17:20:37:316 CONSOLA/(23636:23636): Conexión establecida con Kernel
+[INFO] 17:20:37:316 CONSOLA/(23636:23636): Handshake OK
+[INFO] 17:20:37:316 CONSOLA/(23636:23636): Conexión establecida con Kernel
+[INFO] 17:20:37:316 CONSOLA/(23636:23636): Enviando instrucciones a Kernel...
+[INFO] 17:24:38:712 CONSOLA/(23927:23927): Conexión establecida con Kernel
+[INFO] 17:24:38:712 CONSOLA/(23927:23927): Handshake OK
+[INFO] 17:24:38:712 CONSOLA/(23927:23927): Conexión establecida con Kernel
+[INFO] 17:24:38:712 CONSOLA/(23927:23927): Enviando instrucciones a Kernel...
+[INFO] 17:24:52:970 CONSOLA/(24051:24051): Conexión establecida con Kernel
+[INFO] 17:24:52:970 CONSOLA/(24051:24051): Handshake OK
+[INFO] 17:24:52:970 CONSOLA/(24051:24051): Conexión establecida con Kernel
+[INFO] 17:24:52:970 CONSOLA/(24051:24051): Enviando instrucciones a Kernel...
+[INFO] 17:25:40:552 CONSOLA/(24216:24216): Conexión establecida con Kernel
+[INFO] 17:25:40:552 CONSOLA/(24216:24216): Handshake OK
+[INFO] 17:25:40:552 CONSOLA/(24216:24216): Conexión establecida con Kernel
+[INFO] 17:25:40:552 CONSOLA/(24216:24216): Enviando instrucciones a Kernel...
+[INFO] 17:25:41:092 CONSOLA/(24223:24223): Conexión establecida con Kernel
+[INFO] 17:25:41:092 CONSOLA/(24223:24223): Handshake OK
+[INFO] 17:25:41:092 CONSOLA/(24223:24223): Conexión establecida con Kernel
+[INFO] 17:25:41:092 CONSOLA/(24223:24223): Enviando instrucciones a Kernel...
+[INFO] 17:25:41:611 CONSOLA/(24233:24233): Conexión establecida con Kernel
+[INFO] 17:25:41:611 CONSOLA/(24233:24233): Handshake OK
+[INFO] 17:25:41:611 CONSOLA/(24233:24233): Conexión establecida con Kernel
+[INFO] 17:25:41:612 CONSOLA/(24233:24233): Enviando instrucciones a Kernel...
+[INFO] 17:25:42:090 CONSOLA/(24240:24240): Conexión establecida con Kernel
+[INFO] 17:25:42:091 CONSOLA/(24240:24240): Handshake OK
+[INFO] 17:25:42:091 CONSOLA/(24240:24240): Conexión establecida con Kernel
+[INFO] 17:25:42:091 CONSOLA/(24240:24240): Enviando instrucciones a Kernel...
+[INFO] 17:26:46:033 CONSOLA/(24378:24378): Conexión establecida con Kernel
+[INFO] 17:26:46:034 CONSOLA/(24378:24378): Handshake OK
+[INFO] 17:26:46:034 CONSOLA/(24378:24378): Conexión establecida con Kernel
+[INFO] 17:26:46:034 CONSOLA/(24378:24378): Enviando instrucciones a Kernel...

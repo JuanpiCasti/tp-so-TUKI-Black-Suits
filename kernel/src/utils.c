@@ -25,6 +25,7 @@ t_pcb *crear_pcb(t_list *instrucciones)
     memset(registros_cpu->RBX, 0, sizeof(registros_cpu->RBX));
     memset(registros_cpu->RCX, 0, sizeof(registros_cpu->RCX));
     memset(registros_cpu->RDX, 0, sizeof(registros_cpu->RDX));
+    pcb->registros_cpu = registros_cpu;
 
     pcb->estimado_HRRN = ESTIMACION_INICIAL;
     pcb->tiempo_ready = time(NULL);
@@ -92,6 +93,7 @@ void inicializar_colas()
     NEW = list_create();
     READY = list_create();
     BLOCKED = list_create();
+    EXIT = list_create();
     RUNNING = NULL;
 }
 
@@ -211,7 +213,6 @@ void planificacion()
         if (list_size(READY) > 0 && RUNNING == NULL)
         {
             t_pcb *r_pcb = siguiente_proceso_a_ejecutar();
-
             RUNNING = r_pcb;
             loggear_cambio_estado("READY", "RUNNING", r_pcb);
             uint32_t tam_contexto = sizeof(cod_op) +
@@ -223,24 +224,28 @@ void planificacion()
                                     list_size(r_pcb->instrucciones) * sizeof(t_instruccion);
 
             int socket_cpu = mandar_a_cpu(RUNNING, tam_contexto);
-            // cod_op_kernel cop;
-            // void* buffer = recibir_nuevo_contexto(socket_cpu, &cop);
-            // deserializar_contexto_pcb(buffer, r_pcb);
+            cod_op_kernel cop;
+            void* buffer = recibir_nuevo_contexto(socket_cpu, &cop);
+            deserializar_contexto_pcb(buffer, r_pcb);
 
-            // switch (cop)
-            // {
-            // case CPU_YIELD:
-            //     encolar_proceso(r_pcb, READY, &mutex_READY);
-            //     RUNNING = NULL;
-            //     break;
-            // case CPU_EXIT:
-            //     encolar_proceso(r_pcb, EXIT, &mutex_EXIT);
-            //     RUNNING = NULL;
-            //     break;
-            // default:
-            //     break;
+            switch (cop)
+            {
+            case CPU_YIELD:
+                encolar_proceso(r_pcb, READY, &mutex_READY);
+                loggear_cambio_estado("RUNNING", "READY", r_pcb);
+                RUNNING = NULL;
+                break;
+            case CPU_EXIT:
+                encolar_proceso(r_pcb, EXIT, &mutex_EXIT);
+                loggear_cambio_estado("RUNNING", "EXIT", r_pcb);
+                imprimir_pcb(r_pcb);
+                RUNNING = NULL;
+                break;
+            default:
+                break;
             }
 
         }
+    }
 }
 

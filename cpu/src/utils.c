@@ -195,20 +195,18 @@ void ejecutar_set(t_instruccion* instruccion)
 cod_op_kernel ejecutar_instrucciones()
 {
     t_instruccion *instruccion = list_get(INSTRUCTION_LIST, PROGRAM_COUNTER);
-    PROGRAM_COUNTER++;
+    PROGRAM_COUNTER+=1;
     as_instruction instruction_code = decode(instruccion);
 
     while(true) {
-        instruccion = list_get(INSTRUCTION_LIST, PROGRAM_COUNTER);
-        PROGRAM_COUNTER++;
-        instruction_code = decode(instruccion);
         
+        printf("HOLLAAA INSTURCCION: %d\n", instruction_code);
         switch (instruction_code)
         {
         case SET:
-            printf("HOLA");
+            printf("HOLA\n");
             ejecutar_set(instruccion);
-            printf("CHAU");
+            printf("CHAU\n");
             break;
         case YIELD:
             return CPU_YIELD;
@@ -219,5 +217,13 @@ cod_op_kernel ejecutar_instrucciones()
             break;
         }
         imprimir_contexto_actual();
+
+        if (PROGRAM_COUNTER >= list_size(INSTRUCTION_LIST)) {
+            return CPU_EXIT; // o hacer otra cosa para manejar este error
+        }
+        
+        instruccion = list_get(INSTRUCTION_LIST, PROGRAM_COUNTER);
+        PROGRAM_COUNTER+=1;
+        instruction_code = decode(instruccion);
     }
 }
