@@ -35,7 +35,7 @@ void levantar_loggers_cpu() {
 
 void levantar_config_cpu() {
     CONFIG_CPU = config_create("./cfg/cpu.config");
-    RETARDO_INSTRUCCION = config_get_string_value(CONFIG_CPU, "RETARDO_INSTRUCCION");
+    RETARDO_INSTRUCCION = config_get_int_value(CONFIG_CPU, "RETARDO_INSTRUCCION");
     IP_MEMORIA = config_get_string_value(CONFIG_CPU, "IP_MEMORIA");
     PUERTO_MEMORIA = config_get_string_value(CONFIG_CPU, "PUERTO_MEMORIA");
     PUERTO_ESCUCHA_CPU = config_get_string_value(CONFIG_CPU, "PUERTO_ESCUCHA");
@@ -81,20 +81,6 @@ void cambiar_contexto(void* buffer) {
     desplazamiento += sizeof(uint32_t);
 
     INSTRUCTION_LIST = deserializar_instrucciones(buffer + desplazamiento, tam_instrucciones);
-}
-
-char* imprimir_cadena(char *cadena, size_t longitud) {
-    char *cadena_imprimir = malloc(longitud+1);
-    int i;
-    for (i=0; i<longitud && cadena[i] != '\0'; i++) {
-        if (isprint(cadena[i])) {
-            cadena_imprimir[i] = cadena[i];
-        } else {
-            cadena_imprimir[i] = '?'; // si el caracter no es imprimible, lo reemplazamos por '?'
-        }
-    }
-    cadena_imprimir[i] = '\0'; // aseguramos que la cadena termina en el primer caracter nulo encontrado
-    return cadena_imprimir;
 }
 
 void imprimir_contexto_actual() {
@@ -190,6 +176,7 @@ void ejecutar_set(t_instruccion* instruccion)
     } else {
         log_error(logger_cpu, "El argumento 1 de la instrucción SET no corresponde a ningún registro.");
     }
+
 }
 
 cod_op_kernel ejecutar_instrucciones()
@@ -200,13 +187,11 @@ cod_op_kernel ejecutar_instrucciones()
 
     while(true) {
         
-        printf("HOLLAAA INSTURCCION: %d\n", instruction_code);
         switch (instruction_code)
         {
         case SET:
-            printf("HOLA\n");
+            sleep(RETARDO_INSTRUCCION/1000);
             ejecutar_set(instruccion);
-            printf("CHAU\n");
             break;
         case YIELD:
             return CPU_YIELD;
@@ -216,6 +201,7 @@ cod_op_kernel ejecutar_instrucciones()
         default:
             break;
         }
+        
         imprimir_contexto_actual();
 
         if (PROGRAM_COUNTER >= list_size(INSTRUCTION_LIST)) {

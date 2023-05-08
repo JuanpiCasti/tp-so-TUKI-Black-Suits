@@ -201,3 +201,17 @@ t_list *deserializar_instrucciones(void *stream, uint32_t tam_instrucciones)
 
     return lista_instrucciones;
 }
+
+char* imprimir_cadena(char *cadena, size_t longitud) {
+    char *cadena_imprimir = malloc(longitud+1);
+    int i;
+    for (i=0; i<longitud && cadena[i] != '\0'; i++) {
+        if (isprint(cadena[i])) {
+            cadena_imprimir[i] = cadena[i];
+        } else {
+            cadena_imprimir[i] = '?'; // si el caracter no es imprimible, lo reemplazamos por '?'
+        }
+    }
+    cadena_imprimir[i] = '\0'; // aseguramos que la cadena termina en el primer caracter nulo encontrado
+    return cadena_imprimir;
+}

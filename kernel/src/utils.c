@@ -45,18 +45,18 @@ void imprimir_pcb(t_pcb *pcb)
     }
     printf("Program Counter: %d\n", pcb->program_counter);
     printf("Registros CPU:\n");
-    printf("\tAX: %s\n", pcb->registros_cpu->AX);
-    printf("\tBX: %s\n", pcb->registros_cpu->BX);
-    printf("\tCX: %s\n", pcb->registros_cpu->CX);
-    printf("\tDX: %s\n", pcb->registros_cpu->DX);
-    printf("\tEAX: %s\n", pcb->registros_cpu->EAX);
-    printf("\tEBX: %s\n", pcb->registros_cpu->EBX);
-    printf("\tECX: %s\n", pcb->registros_cpu->ECX);
-    printf("\tEDX: %s\n", pcb->registros_cpu->EDX);
-    printf("\tRAX: %s\n", pcb->registros_cpu->RAX);
-    printf("\tRBX: %s\n", pcb->registros_cpu->RBX);
-    printf("\tRCX: %s\n", pcb->registros_cpu->RCX);
-    printf("\tRDX: %s\n", pcb->registros_cpu->RDX);
+    printf("\tAX: %s\n", imprimir_cadena(pcb->registros_cpu->AX, 4));
+    printf("\tBX: %s\n", imprimir_cadena(pcb->registros_cpu->BX, 4));
+    printf("\tCX: %s\n", imprimir_cadena(pcb->registros_cpu->CX, 4));
+    printf("\tDX: %s\n", imprimir_cadena(pcb->registros_cpu->DX, 4));
+    printf("\tEAX: %s\n", imprimir_cadena(pcb->registros_cpu->EAX, 8));
+    printf("\tEBX: %s\n", imprimir_cadena(pcb->registros_cpu->EBX, 8));
+    printf("\tECX: %s\n", imprimir_cadena(pcb->registros_cpu->ECX, 8));
+    printf("\tEDX: %s\n", imprimir_cadena(pcb->registros_cpu->EDX, 8));
+    printf("\tRAX: %s\n", imprimir_cadena(pcb->registros_cpu->RAX, 16));
+    printf("\tRBX: %s\n", imprimir_cadena(pcb->registros_cpu->RBX, 16));
+    printf("\tRCX: %s\n", imprimir_cadena(pcb->registros_cpu->RCX, 16));
+    printf("\tRDX: %s\n", imprimir_cadena(pcb->registros_cpu->RDX, 16));
     printf("Tabla de Segmentos:\n");
     printf("Estimado HRRN: %f\n", pcb->estimado_HRRN);
     printf("Tiempo ready: %ld\n", (long)pcb->tiempo_ready);
@@ -238,7 +238,6 @@ void planificacion()
             case CPU_EXIT:
                 encolar_proceso(r_pcb, EXIT, &mutex_EXIT);
                 loggear_cambio_estado("RUNNING", "EXIT", r_pcb);
-                imprimir_pcb(r_pcb);
                 RUNNING = NULL;
                 break;
             default:

@@ -33,7 +33,7 @@ extern t_log* logger_cpu_extra;
 extern t_log* logger_cpu;
 
 extern t_config *CONFIG_CPU;
-extern char *RETARDO_INSTRUCCION;
+extern int RETARDO_INSTRUCCION;
 extern char *IP_MEMORIA;
 extern char *PUERTO_MEMORIA;
 extern char *PUERTO_ESCUCHA_CPU;

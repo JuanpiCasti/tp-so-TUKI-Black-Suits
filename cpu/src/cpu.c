@@ -4,7 +4,7 @@ t_log *logger_cpu_extra;
 t_log* logger_cpu;
 
 t_config *CONFIG_CPU;
-char *RETARDO_INSTRUCCION;
+int RETARDO_INSTRUCCION;
 char *IP_MEMORIA;
 char *PUERTO_MEMORIA;
 char *PUERTO_ESCUCHA_CPU;

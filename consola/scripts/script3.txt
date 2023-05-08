@@ -1,0 +1,2 @@
+SET CX 1234
+EXIT
