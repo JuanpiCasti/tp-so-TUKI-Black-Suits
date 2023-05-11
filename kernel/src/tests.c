@@ -1,9 +1,9 @@
 #include "tests.h"
 
-
-void envio_contexto_cpu() {
+void envio_contexto_cpu()
+{
     // Crear un nuevo t_pcb
-    t_pcb* nuevo_pcb = malloc(sizeof(t_pcb));
+    t_pcb *nuevo_pcb = malloc(sizeof(t_pcb));
 
     // Inicializar los campos del t_pcb
     nuevo_pcb->pid = 1234;
@@ -24,7 +24,6 @@ void envio_contexto_cpu() {
     memset(registros_cpu->RCX, 0, sizeof(registros_cpu->RCX));
     memset(registros_cpu->RDX, 0, sizeof(registros_cpu->RDX));
 
-
     nuevo_pcb->registros_cpu = registros_cpu;
 
     // Crear algunas instrucciones de prueba
@@ -38,33 +37,29 @@ void envio_contexto_cpu() {
     nuevo_pcb->tiempo_ready = time(NULL);
     nuevo_pcb->archivos_abiertos = list_create();
 
-    uint32_t tam_contexto = 4*4 + // (AX, BX, CX, DX) 
-                          4*8 + // (EAX, EBX, ECX, EDX)
-                          4*16 + // (RAX, RBX, RCX, RDX)
-                          sizeof(uint32_t) +
-                          sizeof(uint32_t) +
-                          list_size(nuevo_pcb->instrucciones) * sizeof(t_instruccion); 
-    
-    char* prueba = "HOLACOMOESTASBRO";
-    char* prueba2 = "HOLA";
+    uint32_t tam_contexto = 4 * 4 +  // (AX, BX, CX, DX)
+                            4 * 8 +  // (EAX, EBX, ECX, EDX)
+                            4 * 16 + // (RAX, RBX, RCX, RDX)
+                            sizeof(uint32_t) +
+                            sizeof(uint32_t) +
+                            list_size(nuevo_pcb->instrucciones) * sizeof(t_instruccion);
+
+    char *prueba = "HOLACOMOESTASBRO";
+    char *prueba2 = "HOLA";
     strcpy(nuevo_pcb->registros_cpu->AX, prueba2);
     strcpy(nuevo_pcb->registros_cpu->RDX, prueba);
     strcpy(nuevo_pcb->registros_cpu->RAX, prueba);
-    
 
     cod_op_kernel cop;
-    
+
     int socket_cpu = mandar_a_cpu(nuevo_pcb, tam_contexto);
-    
-    void* buffer = recibir_nuevo_contexto(socket_cpu, &cop);
+
+    void *buffer = recibir_nuevo_contexto(socket_cpu, &cop);
     deserializar_contexto_pcb(buffer, nuevo_pcb);
     imprimir_pcb(nuevo_pcb);
-    printf("COP: %d\n", cop);
-
 }
 
 int run_tests()
 {
     envio_contexto_cpu();
-
 }

@@ -1420,3 +1420,64 @@
 [INFO] 17:53:40:017 CONSOLA/(29853:29853): Handshake OK
 [INFO] 17:53:40:017 CONSOLA/(29853:29853): Conexión establecida con Kernel
 [INFO] 17:53:40:017 CONSOLA/(29853:29853): Enviando instrucciones a Kernel...
+[INFO] 20:42:53:683 CONSOLA/(65004:65004): Conexión establecida con Kernel
+[INFO] 20:42:53:694 CONSOLA/(65004:65004): Handshake OK
+[INFO] 20:42:53:695 CONSOLA/(65004:65004): Conexión establecida con Kernel
+[INFO] 20:42:53:696 CONSOLA/(65004:65004): Enviando instrucciones a Kernel...
+[INFO] 20:42:53:710 CONSOLA/(65007:65007): Conexión establecida con Kernel
+[INFO] 20:42:53:712 CONSOLA/(65007:65007): Handshake OK
+[INFO] 20:42:53:714 CONSOLA/(65007:65007): Conexión establecida con Kernel
+[INFO] 20:42:53:715 CONSOLA/(65007:65007): Enviando instrucciones a Kernel...
+[INFO] 20:48:49:634 CONSOLA/(65584:65584): Conexión establecida con Kernel
+[INFO] 20:48:49:639 CONSOLA/(65584:65584): Handshake OK
+[INFO] 20:48:49:641 CONSOLA/(65584:65584): Conexión establecida con Kernel
+[INFO] 20:48:49:642 CONSOLA/(65584:65584): Enviando instrucciones a Kernel...
+[INFO] 20:48:49:655 CONSOLA/(65587:65587): Conexión establecida con Kernel
+[INFO] 20:48:49:659 CONSOLA/(65587:65587): Handshake OK
+[INFO] 20:48:49:661 CONSOLA/(65587:65587): Conexión establecida con Kernel
+[INFO] 20:48:49:662 CONSOLA/(65587:65587): Enviando instrucciones a Kernel...
+[INFO] 20:52:51:302 CONSOLA/(65878:65878): Conexión establecida con Kernel
+[INFO] 20:52:51:308 CONSOLA/(65878:65878): Handshake OK
+[INFO] 20:52:51:309 CONSOLA/(65878:65878): Conexión establecida con Kernel
+[INFO] 20:52:51:310 CONSOLA/(65878:65878): Enviando instrucciones a Kernel...
+[INFO] 20:52:51:326 CONSOLA/(65881:65881): Conexión establecida con Kernel
+[INFO] 20:52:51:328 CONSOLA/(65881:65881): Handshake OK
+[INFO] 20:52:51:329 CONSOLA/(65881:65881): Conexión establecida con Kernel
+[INFO] 20:52:51:330 CONSOLA/(65881:65881): Enviando instrucciones a Kernel...
+[INFO] 21:02:14:050 CONSOLA/(66420:66420): Conexión establecida con Kernel
+[INFO] 21:02:14:054 CONSOLA/(66420:66420): Handshake OK
+[INFO] 21:02:14:055 CONSOLA/(66420:66420): Conexión establecida con Kernel
+[INFO] 21:02:14:056 CONSOLA/(66420:66420): Enviando instrucciones a Kernel...
+[INFO] 21:02:14:058 CONSOLA/(66423:66423): Conexión establecida con Kernel
+[INFO] 21:02:14:066 CONSOLA/(66423:66423): Handshake OK
+[INFO] 21:02:14:067 CONSOLA/(66423:66423): Conexión establecida con Kernel
+[ERROR] 21:02:14:068 CONSOLA/(66423:66423): Error al abrir el archivo de instrucciones
+
+[INFO] 21:02:14:084 CONSOLA/(66426:66426): Conexión establecida con Kernel
+[INFO] 21:02:14:087 CONSOLA/(66426:66426): Handshake OK
+[INFO] 21:02:14:087 CONSOLA/(66426:66426): Conexión establecida con Kernel
+[INFO] 21:02:14:087 CONSOLA/(66426:66426): Enviando instrucciones a Kernel...
+[INFO] 21:02:57:378 CONSOLA/(66612:66612): Conexión establecida con Kernel
+[INFO] 21:02:57:379 CONSOLA/(66612:66612): Handshake OK
+[INFO] 21:02:57:380 CONSOLA/(66612:66612): Conexión establecida con Kernel
+[INFO] 21:02:57:381 CONSOLA/(66612:66612): Enviando instrucciones a Kernel...
+[INFO] 21:02:57:406 CONSOLA/(66615:66615): Conexión establecida con Kernel
+[INFO] 21:02:57:408 CONSOLA/(66615:66615): Handshake OK
+[INFO] 21:02:57:409 CONSOLA/(66615:66615): Conexión establecida con Kernel
+[INFO] 21:02:57:410 CONSOLA/(66615:66615): Enviando instrucciones a Kernel...
+[INFO] 21:02:57:440 CONSOLA/(66618:66618): Conexión establecida con Kernel
+[INFO] 21:02:57:442 CONSOLA/(66618:66618): Handshake OK
+[INFO] 21:02:57:442 CONSOLA/(66618:66618): Conexión establecida con Kernel
+[INFO] 21:02:57:442 CONSOLA/(66618:66618): Enviando instrucciones a Kernel...
+[INFO] 21:03:27:606 CONSOLA/(66899:66899): Conexión establecida con Kernel
+[INFO] 21:03:27:611 CONSOLA/(66899:66899): Handshake OK
+[INFO] 21:03:27:612 CONSOLA/(66899:66899): Conexión establecida con Kernel
+[INFO] 21:03:27:613 CONSOLA/(66899:66899): Enviando instrucciones a Kernel...
+[INFO] 21:03:27:626 CONSOLA/(66902:66902): Conexión establecida con Kernel
+[INFO] 21:03:27:638 CONSOLA/(66902:66902): Handshake OK
+[INFO] 21:03:27:639 CONSOLA/(66902:66902): Conexión establecida con Kernel
+[INFO] 21:03:27:640 CONSOLA/(66902:66902): Enviando instrucciones a Kernel...
+[INFO] 21:03:27:656 CONSOLA/(66905:66905): Conexión establecida con Kernel
+[INFO] 21:03:27:657 CONSOLA/(66905:66905): Handshake OK
+[INFO] 21:03:27:657 CONSOLA/(66905:66905): Conexión establecida con Kernel
+[INFO] 21:03:27:658 CONSOLA/(66905:66905): Enviando instrucciones a Kernel...

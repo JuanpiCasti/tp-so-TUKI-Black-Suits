@@ -1,6 +1,7 @@
 #include "utils.h"
 
-void inicializar_registros() {
+void inicializar_registros()
+{
     memset(AX, 0, sizeof(AX));
     AX[0] = '\0';
     memset(BX, 0, sizeof(BX));
@@ -28,12 +29,14 @@ void inicializar_registros() {
     INSTRUCTION_LIST = list_create();
 }
 
-void levantar_loggers_cpu() {
+void levantar_loggers_cpu()
+{
     logger_cpu_extra = log_create("./log/cpu_extra.log", "CPU", true, LOG_LEVEL_INFO);
     logger_cpu = log_create("./log/cpu_extra.log", "CPU", true, LOG_LEVEL_INFO);
 }
 
-void levantar_config_cpu() {
+void levantar_config_cpu()
+{
     CONFIG_CPU = config_create("./cfg/cpu.config");
     RETARDO_INSTRUCCION = config_get_int_value(CONFIG_CPU, "RETARDO_INSTRUCCION");
     IP_MEMORIA = config_get_string_value(CONFIG_CPU, "IP_MEMORIA");
@@ -42,7 +45,8 @@ void levantar_config_cpu() {
     TAM_MAX_SEGMENTO = config_get_string_value(CONFIG_CPU, "TAM_MAX_SEGMENTO");
 }
 
-void cambiar_contexto(void* buffer) {
+void cambiar_contexto(void *buffer)
+{
     uint32_t desplazamiento = 0;
 
     // Registros CPU
@@ -83,7 +87,8 @@ void cambiar_contexto(void* buffer) {
     INSTRUCTION_LIST = deserializar_instrucciones(buffer + desplazamiento, tam_instrucciones);
 }
 
-void imprimir_contexto_actual() {
+void imprimir_contexto_actual()
+{
     printf("PC: %d\n", PROGRAM_COUNTER);
     printf("AX: %s\n", imprimir_cadena(AX, 4));
     printf("BX: %s\n", imprimir_cadena(BX, 4));
@@ -102,29 +107,32 @@ void imprimir_contexto_actual() {
     for (int i = 0; i < list_size(INSTRUCTION_LIST); i++)
     {
         t_instruccion *instruccion = list_get(INSTRUCTION_LIST, i);
-        printf("\t%d: %s %s %s %s\n", i, instruccion -> instruccion, instruccion -> arg1, instruccion -> arg2, instruccion -> arg3);
+        printf("\t%d: %s %s %s %s\n", i, instruccion->instruccion, instruccion->arg1, instruccion->arg2, instruccion->arg3);
     }
 }
 
-as_instruction decode(t_instruccion *instruccion){
-    if (strcmp(instruccion->instruccion, "SET") == 0 ){
+as_instruction decode(t_instruccion *instruccion)
+{
+    if (strcmp(instruccion->instruccion, "SET") == 0)
+    {
         return SET;
-    } 
+    }
     else if (strcmp(instruccion->instruccion, "YIELD") == 0)
     {
         return YIELD;
-    } 
+    }
     else if (strcmp(instruccion->instruccion, "EXIT") == 0)
     {
         return EXIT;
-    } 
-    else {
+    }
+    else
+    {
         log_error(logger_cpu, "La intrucción no es válida.");
         return EXIT;
     }
 }
 
-void ejecutar_set(t_instruccion* instruccion)
+void ejecutar_set(t_instruccion *instruccion)
 {
     if (strcmp(instruccion->arg1, "AX") == 0)
     {
@@ -173,43 +181,46 @@ void ejecutar_set(t_instruccion* instruccion)
     else if (strcmp(instruccion->arg1, "RDX") == 0)
     {
         strncpy(RDX, instruccion->arg2, 16);
-    } else {
+    }
+    else
+    {
         log_error(logger_cpu, "El argumento 1 de la instrucción SET no corresponde a ningún registro.");
     }
-
 }
 
 cod_op_kernel ejecutar_instrucciones()
 {
     t_instruccion *instruccion = list_get(INSTRUCTION_LIST, PROGRAM_COUNTER);
-    PROGRAM_COUNTER+=1;
+    PROGRAM_COUNTER += 1;
     as_instruction instruction_code = decode(instruccion);
 
-    while(true) {
-        
+    while (true)
+    {
+
         switch (instruction_code)
         {
         case SET:
-            sleep(RETARDO_INSTRUCCION/1000);
+            sleep(RETARDO_INSTRUCCION / 1000);
             ejecutar_set(instruccion);
             break;
         case YIELD:
             return CPU_YIELD;
         case EXIT:
             return CPU_EXIT;
-        
+
         default:
             break;
         }
-        
+
         imprimir_contexto_actual();
 
-        if (PROGRAM_COUNTER >= list_size(INSTRUCTION_LIST)) {
+        if (PROGRAM_COUNTER >= list_size(INSTRUCTION_LIST))
+        {
             return CPU_EXIT; // o hacer otra cosa para manejar este error
         }
-        
+
         instruccion = list_get(INSTRUCTION_LIST, PROGRAM_COUNTER);
-        PROGRAM_COUNTER+=1;
+        PROGRAM_COUNTER += 1;
         instruction_code = decode(instruccion);
     }
 }

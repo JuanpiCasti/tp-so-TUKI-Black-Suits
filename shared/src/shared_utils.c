@@ -16,8 +16,8 @@ int iniciar_servidor(t_log *logger, char *puerto)
 	getaddrinfo(NULL, puerto, &hints, &servinfo);
 
 	socket_servidor = socket(servinfo->ai_family,
-							 servinfo->ai_socktype,
-							 servinfo->ai_protocol);
+													 servinfo->ai_socktype,
+													 servinfo->ai_protocol);
 
 	bind(socket_servidor, servinfo->ai_addr, servinfo->ai_addrlen);
 
@@ -52,8 +52,8 @@ int crear_conexion(t_log *logger, char *ip, char *puerto)
 
 	int socket_cliente = 0;
 	socket_cliente = socket(server_info->ai_family,
-							server_info->ai_socktype,
-							server_info->ai_protocol);
+													server_info->ai_socktype,
+													server_info->ai_protocol);
 
 	if (socket_cliente == -1)
 	{
@@ -161,57 +161,63 @@ int conectar_servidor(t_log *logger, char *ip, char *puerto, char *tipo_servidor
 	return socket_servidor;
 }
 
-void* serializar_instrucciones(t_list* instrucciones, int cant_instrucciones, uint32_t tam_buffer_instrucciones) {
+void *serializar_instrucciones(t_list *instrucciones, int cant_instrucciones, uint32_t tam_buffer_instrucciones)
+{
 	void *buffer_instrucciones = malloc(tam_buffer_instrucciones);
-    int desplazamiento = 0;
+	int desplazamiento = 0;
 
 	memcpy(buffer_instrucciones, &tam_buffer_instrucciones, sizeof(uint32_t));
 	desplazamiento += sizeof(uint32_t);
 
-    for (int i = 0; i < cant_instrucciones; i++)
-    {
-        t_instruccion *instruccion = list_get(instrucciones, i);
-        memcpy(buffer_instrucciones + desplazamiento, instruccion->instruccion, sizeof(char[20]));
-        memcpy(buffer_instrucciones + desplazamiento + sizeof(char[20]), instruccion->arg1, sizeof(char[20]));
-        memcpy(buffer_instrucciones + desplazamiento + sizeof(char[20]) * 2, instruccion->arg2, sizeof(char[20]));
-        memcpy(buffer_instrucciones + desplazamiento + sizeof(char[20]) * 3, instruccion->arg3, sizeof(char[20]));
-        desplazamiento += sizeof(t_instruccion);
-    }
+	for (int i = 0; i < cant_instrucciones; i++)
+	{
+		t_instruccion *instruccion = list_get(instrucciones, i);
+		memcpy(buffer_instrucciones + desplazamiento, instruccion->instruccion, sizeof(char[20]));
+		memcpy(buffer_instrucciones + desplazamiento + sizeof(char[20]), instruccion->arg1, sizeof(char[20]));
+		memcpy(buffer_instrucciones + desplazamiento + sizeof(char[20]) * 2, instruccion->arg2, sizeof(char[20]));
+		memcpy(buffer_instrucciones + desplazamiento + sizeof(char[20]) * 3, instruccion->arg3, sizeof(char[20]));
+		desplazamiento += sizeof(t_instruccion);
+	}
 
 	return buffer_instrucciones;
 }
 
 t_list *deserializar_instrucciones(void *stream, uint32_t tam_instrucciones)
 {
-    int cant_instrucciones = tam_instrucciones / sizeof(t_instruccion);
+	int cant_instrucciones = tam_instrucciones / sizeof(t_instruccion);
 
-    t_list *lista_instrucciones = list_create();
+	t_list *lista_instrucciones = list_create();
 
-    int desplazamiento = 0;
-    for (int i = 0; i < cant_instrucciones; i++)
-    {
-        t_instruccion *instruccion = malloc(sizeof(t_instruccion));
-        memcpy(&instruccion->instruccion, stream + desplazamiento, sizeof(char[20]));
-        memcpy(&instruccion->arg1, stream + desplazamiento + sizeof(char[20]), sizeof(char[20]));
-        memcpy(&instruccion->arg2, stream + desplazamiento + sizeof(char[20]) * 2, sizeof(char[20]));
-        memcpy(&instruccion->arg3, stream + desplazamiento + sizeof(char[20]) * 3, sizeof(char[20]));
-        list_add(lista_instrucciones, instruccion);
-        desplazamiento += sizeof(t_instruccion);
-    }
+	int desplazamiento = 0;
+	for (int i = 0; i < cant_instrucciones; i++)
+	{
+		t_instruccion *instruccion = malloc(sizeof(t_instruccion));
+		memcpy(&instruccion->instruccion, stream + desplazamiento, sizeof(char[20]));
+		memcpy(&instruccion->arg1, stream + desplazamiento + sizeof(char[20]), sizeof(char[20]));
+		memcpy(&instruccion->arg2, stream + desplazamiento + sizeof(char[20]) * 2, sizeof(char[20]));
+		memcpy(&instruccion->arg3, stream + desplazamiento + sizeof(char[20]) * 3, sizeof(char[20]));
+		list_add(lista_instrucciones, instruccion);
+		desplazamiento += sizeof(t_instruccion);
+	}
 
-    return lista_instrucciones;
+	return lista_instrucciones;
 }
 
-char* imprimir_cadena(char *cadena, size_t longitud) {
-    char *cadena_imprimir = malloc(longitud+1);
-    int i;
-    for (i=0; i<longitud && cadena[i] != '\0'; i++) {
-        if (isprint(cadena[i])) {
-            cadena_imprimir[i] = cadena[i];
-        } else {
-            cadena_imprimir[i] = '?'; // si el caracter no es imprimible, lo reemplazamos por '?'
-        }
-    }
-    cadena_imprimir[i] = '\0'; // aseguramos que la cadena termina en el primer caracter nulo encontrado
-    return cadena_imprimir;
+char *imprimir_cadena(char *cadena, size_t longitud)
+{
+	char *cadena_imprimir = malloc(longitud + 1);
+	int i;
+	for (i = 0; i < longitud && cadena[i] != '\0'; i++)
+	{
+		if (isprint(cadena[i]))
+		{
+			cadena_imprimir[i] = cadena[i];
+		}
+		else
+		{
+			cadena_imprimir[i] = '?'; // si el caracter no es imprimible, lo reemplazamos por '?'
+		}
+	}
+	cadena_imprimir[i] = '\0'; // aseguramos que la cadena termina en el primer caracter nulo encontrado
+	return cadena_imprimir;
 }

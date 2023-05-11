@@ -32,9 +32,11 @@ void procesar_conexion(void *void_args)
         case PAQUETE_INSTRUCCIONES:
             t_list *instrucciones = recv_instrucciones(logger, cliente_socket);
             t_pcb *n_pcb = crear_pcb(instrucciones);
-            //imprimir_pcb(n_pcb);
-            encolar_proceso(n_pcb, NEW, &mutex_NEW);
+            // imprimir_pcb(n_pcb);
+            pthread_mutex_lock(&mutex_NEW);
+            list_add(NEW, n_pcb);
             log_info(logger_kernel, "Se crea el proceso %d en NEW", n_pcb->pid);
+            pthread_mutex_unlock(&mutex_NEW);
             break;
         default:
             log_error(logger, "Algo anduvo mal en el server de Kernel");
@@ -63,17 +65,18 @@ t_list *recv_instrucciones(t_log *logger, int cliente_socket)
     return instrucciones;
 }
 
-void* serializar_contexto_pcb(t_pcb* pcb, uint32_t tam_contexto) {
+void *serializar_contexto_pcb(t_pcb *pcb, uint32_t tam_contexto)
+{
     // Se envia:
     // cod_op, (sizeof(cod_op))
     // registros CPU, (4x4 bytes, 4x8 bytes, 4x16 bytes, en orden alfabetico)
     // uint32, program_counter (4 bytes)
     // uint32, tamanio de las instrucciones
     // instrucciones...
-    
-    uint32_t tam_instrucciones = list_size(pcb -> instrucciones) * sizeof(t_instruccion); 
-    void* buffer = malloc(tam_contexto + sizeof(cod_op) + sizeof(uint32_t));
-    
+
+    uint32_t tam_instrucciones = list_size(pcb->instrucciones) * sizeof(t_instruccion);
+    void *buffer = malloc(tam_contexto + sizeof(cod_op) + sizeof(uint32_t));
+
     uint32_t desplazamiento = 0;
     cod_op cop = NUEVO_CONTEXTO_PCB;
 
@@ -82,7 +85,7 @@ void* serializar_contexto_pcb(t_pcb* pcb, uint32_t tam_contexto) {
 
     memcpy(buffer + desplazamiento, &tam_contexto, sizeof(uint32_t));
     desplazamiento += sizeof(uint32_t);
-    
+
     // Registros CPU
     memcpy(buffer + desplazamiento, &(pcb->registros_cpu->AX), 4);
     desplazamiento += 4;
@@ -116,14 +119,15 @@ void* serializar_contexto_pcb(t_pcb* pcb, uint32_t tam_contexto) {
     desplazamiento += sizeof(uint32_t);
 
     // Instrucciones
-    void* buffer_instrucciones = serializar_instrucciones(pcb->instrucciones, list_size(pcb->instrucciones), tam_instrucciones);
+    void *buffer_instrucciones = serializar_instrucciones(pcb->instrucciones, list_size(pcb->instrucciones), tam_instrucciones);
     memcpy(buffer + desplazamiento, buffer_instrucciones, sizeof(uint32_t) + tam_instrucciones);
     free(buffer_instrucciones);
 
     return buffer;
 }
 
-void deserializar_contexto_pcb(void* buffer,t_pcb* pcb) {
+void deserializar_contexto_pcb(void *buffer, t_pcb *pcb)
+{
     int desplazamiento = 0;
 
     memcpy(&(pcb->registros_cpu->AX), buffer + desplazamiento, 4);
@@ -155,24 +159,26 @@ void deserializar_contexto_pcb(void* buffer,t_pcb* pcb) {
     free(buffer);
 }
 
-int mandar_a_cpu(t_pcb* pcb, uint32_t tam_contexto) {
+int mandar_a_cpu(t_pcb *pcb, uint32_t tam_contexto)
+{
     int socket_cpu = crear_conexion(logger_kernel_extra, IP_CPU, PUERTO_CPU);
 
     uint32_t tam_paquete = tam_contexto + sizeof(uint32_t) + sizeof(cod_op);
-    void* buffer = serializar_contexto_pcb(pcb, tam_contexto);
+    void *buffer = serializar_contexto_pcb(pcb, tam_contexto);
 
     send(socket_cpu, buffer, tam_paquete, NULL);
 
     return socket_cpu;
 }
 
-void* recibir_nuevo_contexto(int socket_cpu, cod_op_kernel *cop) {
+void *recibir_nuevo_contexto(int socket_cpu, cod_op_kernel *cop)
+{
     recv(socket_cpu, cop, sizeof(cod_op_kernel), NULL);
 
     uint32_t size;
     recv(socket_cpu, &size, sizeof(uint32_t), NULL);
-    
-    void* buffer = malloc(size);
+
+    void *buffer = malloc(size);
     recv(socket_cpu, buffer, size, NULL);
 
     return buffer;

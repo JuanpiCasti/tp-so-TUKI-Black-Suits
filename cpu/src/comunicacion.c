@@ -1,14 +1,16 @@
 #include "cpu.h"
 
-void* recibir_buffer(int cliente_socket) {
+void *recibir_buffer(int cliente_socket)
+{
     uint32_t size;
     recv(cliente_socket, &size, sizeof(uint32_t), NULL);
-    void* buffer = malloc(size);
+    void *buffer = malloc(size);
     recv(cliente_socket, buffer, size, NULL);
     return buffer;
 }
 
-void serializar_contexto(void* buffer, cod_op_kernel cop, int tamanio_contexto) {
+void serializar_contexto(void *buffer, cod_op_kernel cop, int tamanio_contexto)
+{
     int desplazamiento = 0;
 
     memcpy(buffer + desplazamiento, &cop, sizeof(cod_op_kernel));
@@ -44,17 +46,18 @@ void serializar_contexto(void* buffer, cod_op_kernel cop, int tamanio_contexto) 
     desplazamiento += sizeof(uint32_t);
 }
 
-void devolver_contexto(int cliente_socket, cod_op_kernel cop) {
-    int tamanio_contexto = // Por ahora fijo 
-        4*4 + 4*8 + 4*16 // Registros
-        + sizeof(uint32_t); // program counter
+void devolver_contexto(int cliente_socket, cod_op_kernel cop)
+{
+    int tamanio_contexto =     // Por ahora fijo
+        4 * 4 + 4 * 8 + 4 * 16 // Registros
+        + sizeof(uint32_t);    // Program Counter
 
-    int tamanio_paquete = sizeof(cod_op_kernel) + // cod op
-        sizeof(uint32_t) + // size
-        tamanio_contexto; // program counter
+    int tamanio_paquete = sizeof(cod_op_kernel) + // Cod OP
+                          sizeof(uint32_t) +      // Size
+                          tamanio_contexto;       // Program Counter
 
-    void* buffer = malloc(
-        tamanio_paquete // program counter
+    void *buffer = malloc(
+        tamanio_paquete // Program Counter
     );
 
     serializar_contexto(buffer, cop, tamanio_contexto);
@@ -91,7 +94,7 @@ void procesar_conexion(void *void_args)
             rechazar_handshake(logger, cliente_socket);
             break;
         case NUEVO_CONTEXTO_PCB:
-            void* buffer = recibir_buffer(cliente_socket);
+            void *buffer = recibir_buffer(cliente_socket);
             cambiar_contexto(buffer);
             imprimir_contexto_actual();
             cod_op_kernel cop = ejecutar_instrucciones(); // Ejecuta hasta encontrar un YIELD o EXIT

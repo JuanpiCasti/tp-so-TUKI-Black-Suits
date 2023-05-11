@@ -11,6 +11,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <ctype.h>
 
 typedef enum
 {
@@ -37,10 +38,11 @@ typedef struct
 	char arg3[20];
 } t_instruccion;
 
-typedef enum {
-    CPU_EXIT,
-    CPU_YIELD
-    // BLOCK calculo que tambien, ya veremos cuando lleguemos ahi
+typedef enum
+{
+	CPU_EXIT,
+	CPU_YIELD
+	// BLOCK calculo que tambien, ya veremos cuando lleguemos ahi
 } cod_op_kernel;
 
 int iniciar_servidor(t_log *logger, char *puerto);
@@ -54,10 +56,9 @@ void aceptar_handshake(t_log *logger, int socket_cliente, cod_op cop);
 void rechazar_handshake(t_log *logger, int socket_cliente);
 int conectar_servidor(t_log *logger, char *ip, char *puerto, char *tipo_servidor);
 
+char *imprimir_cadena(char *cadena, size_t longitud); // Imprime cadena no terminada en '\0'
 
-char* imprimir_cadena(char *cadena, size_t longitud); // Imprime cadena no terminada en '\0'
-
-void* serializar_instrucciones(t_list* instrucciones, int cant_instrucciones, uint32_t tam_buffer_instrucciones);
+void *serializar_instrucciones(t_list *instrucciones, int cant_instrucciones, uint32_t tam_buffer_instrucciones);
 // Esta funcion devuelve un stream del tamanio sizeof(uint32_t) + tam_buffer_instrucciones. Por lo que los primeros
 // 4 bytes son para indicar el tamanio de lo que leer a continuacion.
 t_list *deserializar_instrucciones(void *stream, uint32_t tam_instrucciones);

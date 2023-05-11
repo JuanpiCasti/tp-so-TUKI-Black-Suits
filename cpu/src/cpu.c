@@ -1,7 +1,7 @@
 #include "cpu.h"
 
 t_log *logger_cpu_extra;
-t_log* logger_cpu;
+t_log *logger_cpu;
 
 t_config *CONFIG_CPU;
 int RETARDO_INSTRUCCION;
@@ -23,7 +23,7 @@ char RBX[16];
 char RCX[16];
 char RDX[16];
 uint32_t PROGRAM_COUNTER;
-t_list* INSTRUCTION_LIST;
+t_list *INSTRUCTION_LIST;
 
 int main(int argc, char **argv)
 {
@@ -54,7 +54,8 @@ int main(int argc, char **argv)
 			return EXIT_FAILURE;
 		}
 		log_info(logger_cpu_extra, "CPU escuchando conexiones...");
-		while (server_escuchar(logger_cpu_extra, socket_servidor_cpu, (void *)procesar_conexion));
+		while (server_escuchar(logger_cpu_extra, socket_servidor_cpu, (void *)procesar_conexion))
+			;
 		return EXIT_SUCCESS;
 	}
-}	
+}

@@ -131,13 +131,6 @@ void inicializar_semaforos()
     }
 }
 
-void encolar_proceso(t_pcb *new_pcb, t_list *cola, pthread_mutex_t *mutex_cola)
-{
-    pthread_mutex_lock(mutex_cola); // Wait
-    list_add(cola, new_pcb);
-    pthread_mutex_unlock(mutex_cola); // Signal
-}
-
 void loggear_cambio_estado(char *estado_anterior, char *estado_actual, t_pcb *pcb)
 {
     log_info(logger_kernel, "PID: %d - Estado anterior: %s - Estado actual: %s", pcb->pid, estado_anterior, estado_actual);
@@ -158,6 +151,14 @@ void loggear_cola_ready()
     }
 
     log_info(logger_kernel, "Cola Ready FIFO: [%s]", lista_pids);
+}
+
+void encolar_proceso(t_pcb *new_pcb, t_list *cola, pthread_mutex_t *mutex_cola, char *estado_anterior, char *estado_actual)
+{
+    pthread_mutex_lock(mutex_cola); // Wait
+    list_add(cola, new_pcb);
+    loggear_cambio_estado(estado_anterior, estado_actual, new_pcb);
+    pthread_mutex_unlock(mutex_cola); // Signal
 }
 
 t_pcb *siguiente_proceso_a_ejecutar()
@@ -184,7 +185,7 @@ t_pcb *siguiente_proceso_a_ejecutar()
     exit(-1);
 }
 
-void planificacion()
+void planificacion_largo_plazo()
 {
     uint32_t grado_multiprogramacion = 0;
 
@@ -196,10 +197,14 @@ void planificacion()
         if (list_size(NEW) > 0 && grado_multiprogramacion < GRADO_MAX_MULTIPROGRAMACION)
         {
             t_pcb *new_pcb = list_remove(NEW, 0);
-            pthread_mutex_unlock(&mutex_NEW);
 
+            pthread_mutex_lock(&mutex_READY);
             list_add(READY, new_pcb);
             loggear_cambio_estado("NEW", "READY", new_pcb);
+            pthread_mutex_unlock(&mutex_READY);
+
+            pthread_mutex_unlock(&mutex_NEW);
+
             loggear_cola_ready();
 
             grado_multiprogramacion++;
@@ -208,13 +213,22 @@ void planificacion()
         {
             pthread_mutex_unlock(&mutex_NEW);
         }
+    }
+}
 
+void planificacion_corto_plazo()
+{
+    while (true)
+    {
         // Paso de READY a RUNNING - Corto Plazo
+        pthread_mutex_lock(&mutex_READY);
         if (list_size(READY) > 0 && RUNNING == NULL)
         {
             t_pcb *r_pcb = siguiente_proceso_a_ejecutar();
             RUNNING = r_pcb;
             loggear_cambio_estado("READY", "RUNNING", r_pcb);
+            pthread_mutex_unlock(&mutex_READY);
+
             uint32_t tam_contexto = sizeof(cod_op) +
                                     4 * 4 +  // (AX, BX, CX, DX)
                                     4 * 8 +  // (EAX, EBX, ECX, EDX)
@@ -225,26 +239,24 @@ void planificacion()
 
             int socket_cpu = mandar_a_cpu(RUNNING, tam_contexto);
             cod_op_kernel cop;
-            void* buffer = recibir_nuevo_contexto(socket_cpu, &cop);
+            void *buffer = recibir_nuevo_contexto(socket_cpu, &cop);
             deserializar_contexto_pcb(buffer, r_pcb);
 
             switch (cop)
             {
             case CPU_YIELD:
-                encolar_proceso(r_pcb, READY, &mutex_READY);
-                loggear_cambio_estado("RUNNING", "READY", r_pcb);
+                encolar_proceso(r_pcb, READY, &mutex_READY, "RUNNING", "READY");
                 RUNNING = NULL;
                 break;
             case CPU_EXIT:
-                encolar_proceso(r_pcb, EXIT, &mutex_EXIT);
-                loggear_cambio_estado("RUNNING", "EXIT", r_pcb);
+                encolar_proceso(r_pcb, EXIT, &mutex_EXIT, "RUNNING", "EXIT");
                 RUNNING = NULL;
                 break;
             default:
                 break;
             }
-
+        } else {
+            pthread_mutex_unlock(&mutex_READY);
         }
     }
 }
-
