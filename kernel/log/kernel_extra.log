@@ -2254,3 +2254,57 @@
 [INFO] 21:03:27:662 KERNEL_EXTRA/(66849:66908): Recibiendo paquete de instrucciones...
 [WARNING] 21:03:27:662 KERNEL_EXTRA/(66849:66908): Cliente desconectado!
 [WARNING] 21:03:27:662 KERNEL_EXTRA/(66849:66908): El cliente se desconectó del server
+[INFO] 17:58:32:279 KERNEL_EXTRA/(37185:37185): Conexión establecida con CPU
+[INFO] 17:58:32:279 KERNEL_EXTRA/(37185:37185): Handshake OK
+[INFO] 17:58:32:279 KERNEL_EXTRA/(37185:37185): Kernel escuchando conexiones...
+[INFO] 17:59:43:817 KERNEL_EXTRA/(37185:37185): Se conecto un cliente!
+[INFO] 17:59:43:817 KERNEL_EXTRA/(37185:37278): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:59:43:817 KERNEL_EXTRA/(37185:37278): Cliente desconectado!
+[WARNING] 17:59:43:817 KERNEL_EXTRA/(37185:37278): El cliente se desconectó del server
+[INFO] 17:59:43:817 KERNEL_EXTRA/(37185:37185): Se conecto un cliente!
+[INFO] 17:59:43:817 KERNEL_EXTRA/(37185:37279): Recibiendo paquete de instrucciones...
+[WARNING] 17:59:43:817 KERNEL_EXTRA/(37185:37279): Cliente desconectado!
+[WARNING] 17:59:43:817 KERNEL_EXTRA/(37185:37279): El cliente se desconectó del server
+[INFO] 17:59:43:818 KERNEL_EXTRA/(37185:37185): Se conecto un cliente!
+[INFO] 17:59:43:818 KERNEL_EXTRA/(37185:37282): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:59:43:818 KERNEL_EXTRA/(37185:37282): Cliente desconectado!
+[WARNING] 17:59:43:818 KERNEL_EXTRA/(37185:37282): El cliente se desconectó del server
+[INFO] 17:59:43:818 KERNEL_EXTRA/(37185:37185): Se conecto un cliente!
+[INFO] 17:59:43:818 KERNEL_EXTRA/(37185:37283): Recibiendo paquete de instrucciones...
+[WARNING] 17:59:43:818 KERNEL_EXTRA/(37185:37283): Cliente desconectado!
+[WARNING] 17:59:43:818 KERNEL_EXTRA/(37185:37283): El cliente se desconectó del server
+[INFO] 17:59:43:819 KERNEL_EXTRA/(37185:37185): Se conecto un cliente!
+[INFO] 17:59:43:819 KERNEL_EXTRA/(37185:37285): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 17:59:43:819 KERNEL_EXTRA/(37185:37285): Cliente desconectado!
+[WARNING] 17:59:43:819 KERNEL_EXTRA/(37185:37285): El cliente se desconectó del server
+[INFO] 17:59:43:819 KERNEL_EXTRA/(37185:37185): Se conecto un cliente!
+[INFO] 17:59:43:819 KERNEL_EXTRA/(37185:37286): Recibiendo paquete de instrucciones...
+[WARNING] 17:59:43:819 KERNEL_EXTRA/(37185:37286): Cliente desconectado!
+[WARNING] 17:59:43:819 KERNEL_EXTRA/(37185:37286): El cliente se desconectó del server
+[INFO] 18:06:35:057 KERNEL_EXTRA/(37907:37907): Conexión establecida con CPU
+[INFO] 18:06:35:057 KERNEL_EXTRA/(37907:37907): Handshake OK
+[INFO] 18:06:35:058 KERNEL_EXTRA/(37907:37907): Kernel escuchando conexiones...
+[INFO] 18:06:37:491 KERNEL_EXTRA/(37907:37907): Se conecto un cliente!
+[INFO] 18:06:37:491 KERNEL_EXTRA/(37907:37912): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 18:06:37:491 KERNEL_EXTRA/(37907:37912): Cliente desconectado!
+[WARNING] 18:06:37:491 KERNEL_EXTRA/(37907:37912): El cliente se desconectó del server
+[INFO] 18:06:37:491 KERNEL_EXTRA/(37907:37907): Se conecto un cliente!
+[INFO] 18:06:37:491 KERNEL_EXTRA/(37907:37913): Recibiendo paquete de instrucciones...
+[WARNING] 18:06:37:491 KERNEL_EXTRA/(37907:37913): Cliente desconectado!
+[WARNING] 18:06:37:491 KERNEL_EXTRA/(37907:37913): El cliente se desconectó del server
+[INFO] 18:06:37:492 KERNEL_EXTRA/(37907:37907): Se conecto un cliente!
+[INFO] 18:06:37:492 KERNEL_EXTRA/(37907:37916): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 18:06:37:492 KERNEL_EXTRA/(37907:37916): Cliente desconectado!
+[WARNING] 18:06:37:492 KERNEL_EXTRA/(37907:37916): El cliente se desconectó del server
+[INFO] 18:06:37:492 KERNEL_EXTRA/(37907:37907): Se conecto un cliente!
+[INFO] 18:06:37:492 KERNEL_EXTRA/(37907:37917): Recibiendo paquete de instrucciones...
+[WARNING] 18:06:37:492 KERNEL_EXTRA/(37907:37917): Cliente desconectado!
+[WARNING] 18:06:37:492 KERNEL_EXTRA/(37907:37917): El cliente se desconectó del server
+[INFO] 18:06:37:493 KERNEL_EXTRA/(37907:37907): Se conecto un cliente!
+[INFO] 18:06:37:493 KERNEL_EXTRA/(37907:37919): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 18:06:37:493 KERNEL_EXTRA/(37907:37919): Cliente desconectado!
+[WARNING] 18:06:37:493 KERNEL_EXTRA/(37907:37919): El cliente se desconectó del server
+[INFO] 18:06:37:493 KERNEL_EXTRA/(37907:37907): Se conecto un cliente!
+[INFO] 18:06:37:493 KERNEL_EXTRA/(37907:37920): Recibiendo paquete de instrucciones...
+[WARNING] 18:06:37:493 KERNEL_EXTRA/(37907:37920): Cliente desconectado!
+[WARNING] 18:06:37:493 KERNEL_EXTRA/(37907:37920): El cliente se desconectó del server

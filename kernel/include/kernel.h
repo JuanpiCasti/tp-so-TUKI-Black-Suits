@@ -10,5 +10,6 @@
 #include "tests.h"
 #include "comunicacion.h"
 #include "utils.h"
+#include "core.h"
 
 #endif

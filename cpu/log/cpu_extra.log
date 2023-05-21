@@ -1077,3 +1077,36 @@
 [WARNING] 21:05:43:056 CPU/(66827:66947): El cliente se desconectó del server
 [WARNING] 21:05:43:056 CPU/(66827:66907): Cliente desconectado!
 [WARNING] 21:05:43:056 CPU/(66827:66907): El cliente se desconectó del server
+[INFO] 17:58:28:161 CPU/(37183:37183): CPU escuchando conexiones...
+[INFO] 17:58:32:279 CPU/(37183:37183): Se conecto un cliente!
+[INFO] 17:58:32:279 CPU/(37183:37186): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 17:58:32:279 CPU/(37183:37186): Cliente desconectado!
+[WARNING] 17:58:32:279 CPU/(37183:37186): El cliente se desconectó del server
+[INFO] 17:59:43:817 CPU/(37183:37183): Se conecto un cliente!
+[INFO] 17:59:46:818 CPU/(37183:37183): Se conecto un cliente!
+[INFO] 17:59:47:818 CPU/(37183:37183): Se conecto un cliente!
+[INFO] 17:59:49:819 CPU/(37183:37183): Se conecto un cliente!
+[WARNING] 18:06:29:594 CPU/(37183:37288): Cliente desconectado!
+[WARNING] 18:06:29:594 CPU/(37183:37290): Cliente desconectado!
+[WARNING] 18:06:29:594 CPU/(37183:37287): Cliente desconectado!
+[WARNING] 18:06:29:594 CPU/(37183:37290): El cliente se desconectó del server
+[WARNING] 18:06:29:594 CPU/(37183:37288): El cliente se desconectó del server
+[WARNING] 18:06:29:594 CPU/(37183:37287): El cliente se desconectó del server
+[WARNING] 18:06:29:594 CPU/(37183:37280): Cliente desconectado!
+[WARNING] 18:06:29:594 CPU/(37183:37280): El cliente se desconectó del server
+[INFO] 18:06:35:057 CPU/(37183:37183): Se conecto un cliente!
+[INFO] 18:06:35:057 CPU/(37183:37908): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 18:06:35:057 CPU/(37183:37908): Cliente desconectado!
+[WARNING] 18:06:35:057 CPU/(37183:37908): El cliente se desconectó del server
+[INFO] 18:06:37:492 CPU/(37183:37183): Se conecto un cliente!
+[INFO] 18:06:40:492 CPU/(37183:37183): Se conecto un cliente!
+[INFO] 18:06:41:492 CPU/(37183:37183): Se conecto un cliente!
+[INFO] 18:06:43:493 CPU/(37183:37183): Se conecto un cliente!
+[WARNING] 18:07:28:746 CPU/(37183:37923): Cliente desconectado!
+[WARNING] 18:07:28:746 CPU/(37183:37921): Cliente desconectado!
+[WARNING] 18:07:28:746 CPU/(37183:37922): Cliente desconectado!
+[WARNING] 18:07:28:746 CPU/(37183:37915): Cliente desconectado!
+[WARNING] 18:07:28:746 CPU/(37183:37921): El cliente se desconectó del server
+[WARNING] 18:07:28:746 CPU/(37183:37923): El cliente se desconectó del server
+[WARNING] 18:07:28:746 CPU/(37183:37922): El cliente se desconectó del server
+[WARNING] 18:07:28:747 CPU/(37183:37915): El cliente se desconectó del server

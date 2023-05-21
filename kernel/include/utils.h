@@ -34,7 +34,6 @@ typedef struct
   t_list *archivos_abiertos;
 } t_pcb;
 
-#include "comunicacion.h"
 // Logger del kernel
 extern t_log *logger_kernel_extra;
 extern t_log *logger_kernel;
@@ -79,10 +78,10 @@ t_pcb *crear_pcb(t_list *instrucciones); // Recibe lista de instrucciones y crea
 
 // Manda el proceso a la cola deseada,
 // por ejemplo, para mandar a NEW: encolar_proceso(new_pcb, NEW, mutex_NEW);
-void encolar_proceso(t_pcb *new_pcb, t_list *cola, pthread_mutex_t *mutex_cola, char *estado_anterior, char *estado_actual);
-void imprimir_pcb(t_pcb *pcb);
 
-void planificacion_largo_plazo(); // Proceso del planificador a largo plazo
-void planificacion_corto_plazo(); // Proceso del planificador a corto plazo
+void imprimir_pcb(t_pcb *pcb);
+void loggear_cambio_estado(char *estado_anterior, char *estado_actual, t_pcb *pcb);
+void loggear_cola_ready();
+
 
 #endif
