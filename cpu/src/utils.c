@@ -31,7 +31,7 @@ void inicializar_registros()
 
 void levantar_loggers_cpu()
 {
-    logger_cpu_extra = log_create("./log/cpu_extra.log", "CPU", true, LOG_LEVEL_INFO);
+    logger_cpu_extra = log_create("./log/cpu_extra.log", "CPU", false, LOG_LEVEL_INFO);
     logger_cpu = log_create("./log/cpu_extra.log", "CPU", true, LOG_LEVEL_INFO);
 }
 
@@ -48,7 +48,11 @@ void levantar_config_cpu()
 void cambiar_contexto(void *buffer)
 {
     uint32_t desplazamiento = 0;
+    // PID
+    memcpy(&PID_RUNNING, buffer + desplazamiento, sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
 
+    
     // Registros CPU
     memcpy(AX, buffer + desplazamiento, 4);
     desplazamiento += 4;
@@ -109,6 +113,14 @@ void imprimir_contexto_actual()
         t_instruccion *instruccion = list_get(INSTRUCTION_LIST, i);
         printf("\t%d: %s %s %s %s\n", i, instruccion->instruccion, instruccion->arg1, instruccion->arg2, instruccion->arg3);
     }
+}
+
+void loggear_ejecucion(t_instruccion* instruccion) {
+    log_info(logger_cpu, "PID: %d - Ejecutando: %s - arg1: %s, arg2: %s, arg3: %s", PID_RUNNING,
+     instruccion->instruccion,
+     instruccion->arg1,
+     instruccion->arg2,
+     instruccion->arg3);
 }
 
 as_instruction decode(t_instruccion *instruccion)
@@ -196,6 +208,7 @@ cod_op_kernel ejecutar_instrucciones()
 
     while (true)
     {
+        loggear_ejecucion(instruccion);
 
         switch (instruction_code)
         {
@@ -212,7 +225,8 @@ cod_op_kernel ejecutar_instrucciones()
             break;
         }
 
-        imprimir_contexto_actual();
+        //imprimir_contexto_actual();
+
 
         if (PROGRAM_COUNTER >= list_size(INSTRUCTION_LIST))
         {

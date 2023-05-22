@@ -30,7 +30,9 @@ int main(int argc, char **argv)
 
         //*********************
         // SEND - INSTRUCCIONES
-        enviar_instrucciones(logger_consola, ip_kernel, puerto_kernel, argv[2]);
+        int socket_kernel = enviar_instrucciones(logger_consola, ip_kernel, puerto_kernel, argv[2]);
+        cod_op_kernel resultado = recibir_resultado(socket_kernel);
+        log_info(logger_consola, "Resultado de ejecutar el script '%s': %s", argv[2], cod_op_kernel_description[resultado]);
 
         terminar_programa(logger_consola, config_consola);
         return EXIT_SUCCESS;

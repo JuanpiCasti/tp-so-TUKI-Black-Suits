@@ -25,6 +25,9 @@ int socket_memoria;
 uint32_t next_pid;
 pthread_mutex_t mutex_next_pid;
 
+uint32_t GRADO_ACTUAL_MPROG = 0;
+pthread_mutex_t mutex_mp;
+
 t_list *NEW;
 pthread_mutex_t mutex_NEW;
 

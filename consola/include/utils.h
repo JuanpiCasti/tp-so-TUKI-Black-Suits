@@ -5,6 +5,7 @@
 #include <consola.h>
 #include <commons/collections/list.h>
 
-void enviar_instrucciones(t_log *logger, char *ip, char *puerto, char *archivo_instrucciones);
+int enviar_instrucciones(t_log *logger, char *ip, char *puerto, char *archivo_instrucciones);
+cod_op_kernel recibir_resultado(int socket_kernel);
 
 #endif

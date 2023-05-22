@@ -71,7 +71,7 @@ void *serializar_paquete_instrucciones(t_list *instrucciones, int cant_instrucci
     return stream;
 }
 
-void enviar_instrucciones(t_log *logger, char *ip, char *puerto, char *archivo_instrucciones)
+int enviar_instrucciones(t_log *logger, char *ip, char *puerto, char *archivo_instrucciones)
 {
     int socket_kernel = conectar_servidor(logger, ip, puerto, "Kernel");
     if (socket_kernel == -1)
@@ -97,7 +97,13 @@ void enviar_instrucciones(t_log *logger, char *ip, char *puerto, char *archivo_i
     }
 
     free(stream_instrucciones);
-    close(socket_kernel);
 
     list_destroy_and_destroy_elements(instrucciones, instruccion_destruir);
+    return socket_kernel;
+}
+
+cod_op_kernel recibir_resultado(int socket_kernel) {
+    cod_op_kernel resultado;
+    recv(socket_kernel, &resultado, sizeof(cod_op_kernel), NULL);
+    return resultado;
 }

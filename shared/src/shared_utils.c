@@ -1,6 +1,7 @@
 #include "shared_utils.h"
 
 char *cod_op_desc[] = {"HANDSHAKE_CONSOLA", "HANDSHAKE_KERNEL", "HANDSHAKE_CPU", "HANDSHAKE_FILESYSTEM", "HANDSHAKE_MEMORIA"};
+char* cod_op_kernel_description[] = {"SUCCESS", "YIELD"};
 
 int iniciar_servidor(t_log *logger, char *puerto)
 {

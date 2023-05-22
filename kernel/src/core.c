@@ -34,15 +34,17 @@ t_pcb *siguiente_proceso_a_ejecutar()
 
 void planificacion_largo_plazo()
 {
-    uint32_t grado_multiprogramacion = 0;
+    
 
     while (true)
     {
         pthread_mutex_lock(&mutex_NEW);
 
         // PASO de NEW a READY - Largo Plazo
-        if (list_size(NEW) > 0 && grado_multiprogramacion < GRADO_MAX_MULTIPROGRAMACION)
+        pthread_mutex_lock(&mutex_mp);
+        if (list_size(NEW) > 0 && GRADO_ACTUAL_MPROG < GRADO_MAX_MULTIPROGRAMACION)
         {
+            pthread_mutex_unlock(&mutex_mp);
             t_pcb *new_pcb = list_remove(NEW, 0);
             pthread_mutex_unlock(&mutex_NEW);
 
@@ -54,11 +56,14 @@ void planificacion_largo_plazo()
 
             loggear_cola_ready();
 
-            grado_multiprogramacion++;
+            pthread_mutex_lock(&mutex_mp);
+            GRADO_ACTUAL_MPROG++;
+            pthread_mutex_unlock(&mutex_mp);
         }
         else
         {
             pthread_mutex_unlock(&mutex_NEW);
+            pthread_mutex_unlock(&mutex_mp);
         }
     }
 }
@@ -77,6 +82,7 @@ void planificacion_corto_plazo()
             pthread_mutex_unlock(&mutex_READY);
 
             uint32_t tam_contexto = sizeof(cod_op) +
+                                    sizeof(uint32_t) + // PID
                                     4 * 4 +  // (AX, BX, CX, DX)
                                     4 * 8 +  // (EAX, EBX, ECX, EDX)
                                     4 * 16 + // (RAX, RBX, RCX, RDX)
@@ -97,6 +103,13 @@ void planificacion_corto_plazo()
                 break;
             case CPU_EXIT:
                 encolar_proceso(r_pcb, EXIT, &mutex_EXIT, "RUNNING", "EXIT");
+
+                pthread_mutex_lock(&mutex_mp);
+                GRADO_ACTUAL_MPROG--;
+                pthread_mutex_unlock(&mutex_mp);
+                
+                loggear_fin_proceso(r_pcb, CPU_EXIT);
+                devolver_resultado(RUNNING, CPU_EXIT);
                 RUNNING = NULL;
                 break;
             default:

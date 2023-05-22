@@ -96,7 +96,7 @@ void procesar_conexion(void *void_args)
         case NUEVO_CONTEXTO_PCB:
             void *buffer = recibir_buffer(cliente_socket);
             cambiar_contexto(buffer);
-            imprimir_contexto_actual();
+            //imprimir_contexto_actual();
             cod_op_kernel cop = ejecutar_instrucciones(); // Ejecuta hasta encontrar un YIELD o EXIT
             devolver_contexto(cliente_socket, cop);
             break;

@@ -31,7 +31,7 @@ void procesar_conexion(void *void_args)
             break;
         case PAQUETE_INSTRUCCIONES:
             t_list *instrucciones = recv_instrucciones(logger, cliente_socket);
-            t_pcb *n_pcb = crear_pcb(instrucciones);
+            t_pcb *n_pcb = crear_pcb(instrucciones, cliente_socket);
             // imprimir_pcb(n_pcb);
             pthread_mutex_lock(&mutex_NEW);
             list_add(NEW, n_pcb);
@@ -69,6 +69,7 @@ void *serializar_contexto_pcb(t_pcb *pcb, uint32_t tam_contexto)
 {
     // Se envia:
     // cod_op, (sizeof(cod_op))
+    // PID, sizeof(uint32_t)
     // registros CPU, (4x4 bytes, 4x8 bytes, 4x16 bytes, en orden alfabetico)
     // uint32, program_counter (4 bytes)
     // uint32, tamanio de las instrucciones
@@ -86,6 +87,8 @@ void *serializar_contexto_pcb(t_pcb *pcb, uint32_t tam_contexto)
     memcpy(buffer + desplazamiento, &tam_contexto, sizeof(uint32_t));
     desplazamiento += sizeof(uint32_t);
 
+    memcpy(buffer + desplazamiento, &(pcb->pid), sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
     // Registros CPU
     memcpy(buffer + desplazamiento, &(pcb->registros_cpu->AX), 4);
     desplazamiento += 4;
@@ -181,5 +184,11 @@ void *recibir_nuevo_contexto(int socket_cpu, cod_op_kernel *cop)
     void *buffer = malloc(size);
     recv(socket_cpu, buffer, size, NULL);
 
+    close(socket_cpu);
     return buffer;
+}
+
+
+void devolver_resultado(t_pcb* pcb, cod_op_kernel exit_code) {
+    send(pcb->socket_consola, &exit_code, sizeof(cod_op_kernel), NULL);
 }

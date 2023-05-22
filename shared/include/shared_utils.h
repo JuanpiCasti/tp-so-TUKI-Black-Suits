@@ -45,6 +45,8 @@ typedef enum
 	// BLOCK calculo que tambien, ya veremos cuando lleguemos ahi
 } cod_op_kernel;
 
+extern char* cod_op_kernel_description[2];
+
 int iniciar_servidor(t_log *logger, char *puerto);
 int esperar_cliente(t_log *logger, int socket_servidor);
 int crear_conexion(t_log *logger, char *ip, char *puerto);

@@ -32,17 +32,20 @@ typedef struct
   float estimado_HRRN;
   time_t tiempo_ready;
   t_list *archivos_abiertos;
+  int socket_consola;
 } t_pcb;
 
 // Logger del kernel
 extern t_log *logger_kernel_extra;
 extern t_log *logger_kernel;
 
-// Configs del kernel
-extern uint32_t GRADO_MAX_MULTIPROGRAMACION;
 
 extern uint32_t next_pid;
 extern pthread_mutex_t mutex_next_pid;
+
+//Grado multiprogramacion
+extern uint32_t GRADO_ACTUAL_MPROG;
+extern pthread_mutex_t mutex_mp;
 
 // Colas de procesos
 extern t_list *NEW;
@@ -74,7 +77,7 @@ void levantar_config_kernel();     // setea todas las variables globales de conf
 void inicializar_colas();          // Inicializa las colas de procesos
 void inicializar_semaforos();      // Inicializa los semaforos usados en el modulo
 
-t_pcb *crear_pcb(t_list *instrucciones); // Recibe lista de instrucciones y crea pcb
+t_pcb *crear_pcb(t_list *instrucciones, int socket_consola); // Recibe lista de instrucciones y crea pcb
 
 // Manda el proceso a la cola deseada,
 // por ejemplo, para mandar a NEW: encolar_proceso(new_pcb, NEW, mutex_NEW);
@@ -82,6 +85,6 @@ t_pcb *crear_pcb(t_list *instrucciones); // Recibe lista de instrucciones y crea
 void imprimir_pcb(t_pcb *pcb);
 void loggear_cambio_estado(char *estado_anterior, char *estado_actual, t_pcb *pcb);
 void loggear_cola_ready();
-
+void loggear_fin_proceso(t_pcb* pcb, cod_op_kernel exit_code);
 
 #endif

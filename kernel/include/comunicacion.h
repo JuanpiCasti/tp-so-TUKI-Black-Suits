@@ -15,4 +15,5 @@ void deserializar_contexto_pcb(void *buffer, t_pcb *pcb);         // Deserializa
 int mandar_a_cpu(t_pcb *pcb, uint32_t tam_contexto);              // Toma un PCB y el tamanio de su contexto, y lo envia al CPU para ser ejecutado, devuelve socket del cpu
 void *recibir_nuevo_contexto(int socket_cpu, cod_op_kernel *cop); // Recibe el nuevo contexto del CPU y lo actualiza al PCB
 
+void devolver_resultado(t_pcb* pcb, cod_op_kernel exit_code); // devuelve resultado de ejecucion a la consola de origen
 #endif

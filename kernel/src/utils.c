@@ -1,6 +1,6 @@
 #include "utils.h"
 
-t_pcb *crear_pcb(t_list *instrucciones)
+t_pcb *crear_pcb(t_list *instrucciones, int socket_consola)
 {
     t_pcb *pcb = malloc(sizeof(t_pcb));
 
@@ -30,6 +30,7 @@ t_pcb *crear_pcb(t_list *instrucciones)
     pcb->estimado_HRRN = ESTIMACION_INICIAL;
     pcb->tiempo_ready = time(NULL);
     pcb->archivos_abiertos = list_create();
+    pcb->socket_consola = socket_consola;
 
     return pcb;
 }
@@ -65,7 +66,7 @@ void imprimir_pcb(t_pcb *pcb)
 
 void inicializar_loggers_kernel()
 {
-    logger_kernel_extra = log_create("./log/kernel_extra.log", "KERNEL_EXTRA", false, LOG_LEVEL_INFO);
+    logger_kernel_extra = log_create("./log/kernel_extra.log", "KERNEL_EXTRA", true, LOG_LEVEL_INFO);
     logger_kernel = log_create("./log/kernel.log", "KERNEL", true, LOG_LEVEL_INFO);
 }
 
@@ -104,6 +105,12 @@ void inicializar_semaforos()
         log_error(logger_kernel_extra, "No se pudo inicializar el semaforo para next_pid");
         exit(-1);
     }
+    if (pthread_mutex_init(&mutex_mp, NULL) != 0)
+    {
+        log_error(logger_kernel_extra, "No se pudo inicializar el semaforo para GRADO_ACTUAL_MPROG");
+        exit(-1);
+    }
+
     if (pthread_mutex_init(&mutex_NEW, NULL) != 0)
     {
         log_error(logger_kernel_extra, "No se pudo inicializar el semaforo para la cola de NEW");
@@ -151,4 +158,8 @@ void loggear_cola_ready()
     }
 
     log_info(logger_kernel, "Cola Ready FIFO: [%s]", lista_pids);
+}
+
+void loggear_fin_proceso(t_pcb* pcb, cod_op_kernel exit_code) {
+    log_info(logger_kernel, "Finaliza el proceso %d - Motivo: %s", pcb->pid, cod_op_kernel_description[exit_code]);
 }

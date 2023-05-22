@@ -14,6 +14,7 @@ typedef enum {
     EXIT
 } as_instruction;
 
+extern uint32_t PID_RUNNING;
 extern char AX[4];
 extern char BX[4];
 extern char CX[4];

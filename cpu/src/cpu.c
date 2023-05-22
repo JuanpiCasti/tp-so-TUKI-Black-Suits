@@ -10,6 +10,7 @@ char *PUERTO_MEMORIA;
 char *PUERTO_ESCUCHA_CPU;
 char *TAM_MAX_SEGMENTO;
 
+uint32_t PID_RUNNING;
 char AX[4];
 char BX[4];
 char CX[4];
