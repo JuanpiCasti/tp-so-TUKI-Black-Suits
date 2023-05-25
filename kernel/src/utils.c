@@ -66,7 +66,7 @@ void imprimir_pcb(t_pcb *pcb)
 
 void inicializar_loggers_kernel()
 {
-    logger_kernel_extra = log_create("./log/kernel_extra.log", "KERNEL_EXTRA", true, LOG_LEVEL_INFO);
+    logger_kernel_extra = log_create("./log/kernel_extra.log", "KERNEL_EXTRA", false, LOG_LEVEL_INFO);
     logger_kernel = log_create("./log/kernel.log", "KERNEL", true, LOG_LEVEL_INFO);
 }
 

@@ -34,8 +34,6 @@ t_pcb *siguiente_proceso_a_ejecutar()
 
 void planificacion_largo_plazo()
 {
-    
-
     while (true)
     {
         pthread_mutex_lock(&mutex_NEW);
@@ -52,7 +50,6 @@ void planificacion_largo_plazo()
             list_add(READY, new_pcb);
             loggear_cambio_estado("NEW", "READY", new_pcb);
             pthread_mutex_unlock(&mutex_READY);
-
 
             loggear_cola_ready();
 

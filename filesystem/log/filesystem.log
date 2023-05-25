@@ -1,0 +1,58 @@
+[INFO] 22:39:16:157 FILESYSTEM/(3054:3054): Conexión establecida con Memoria
+[INFO] 22:39:16:161 FILESYSTEM/(3054:3054): Handshake OK
+[INFO] 22:39:16:162 FILESYSTEM/(3054:3054): Filesystem escuchando conexiones...
+[INFO] 22:43:35:311 FILESYSTEM/(3918:3918): Conexión establecida con Memoria
+[INFO] 22:43:35:315 FILESYSTEM/(3918:3918): Handshake OK
+[INFO] 22:43:35:316 FILESYSTEM/(3918:3918): Filesystem escuchando conexiones...
+[INFO] 22:48:41:614 FILESYSTEM/(4367:4367): Conexión establecida con Memoria
+[INFO] 22:48:41:617 FILESYSTEM/(4367:4367): Handshake OK
+[INFO] 22:48:41:618 FILESYSTEM/(4367:4367): Filesystem escuchando conexiones...
+[INFO] 22:49:49:451 FILESYSTEM/(4367:4367): Se conecto un cliente!
+[INFO] 22:49:49:458 FILESYSTEM/(4367:4625): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:49:49:461 FILESYSTEM/(4367:4625): Cliente desconectado!
+[WARNING] 22:49:49:464 FILESYSTEM/(4367:4625): El cliente se desconectó del server
+[INFO] 22:58:12:882 FILESYSTEM/(5550:5550): Conexión establecida con Memoria
+[INFO] 22:58:12:886 FILESYSTEM/(5550:5550): Handshake OK
+[INFO] 22:58:12:887 FILESYSTEM/(5550:5550): Filesystem escuchando conexiones...
+[INFO] 22:59:02:306 FILESYSTEM/(5550:5550): Se conecto un cliente!
+[INFO] 22:59:02:309 FILESYSTEM/(5550:5843): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:59:02:313 FILESYSTEM/(5550:5843): Cliente desconectado!
+[WARNING] 22:59:02:314 FILESYSTEM/(5550:5843): El cliente se desconectó del server
+[INFO] 23:03:36:234 FILESYSTEM/(5550:5550): Se conecto un cliente!
+[INFO] 23:03:36:240 FILESYSTEM/(5550:6477): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:03:36:244 FILESYSTEM/(5550:6477): Cliente desconectado!
+[WARNING] 23:03:36:244 FILESYSTEM/(5550:6477): El cliente se desconectó del server
+[INFO] 23:06:00:059 FILESYSTEM/(5550:5550): Se conecto un cliente!
+[INFO] 23:06:00:065 FILESYSTEM/(5550:7118): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:06:00:074 FILESYSTEM/(5550:7118): Cliente desconectado!
+[WARNING] 23:06:00:077 FILESYSTEM/(5550:7118): El cliente se desconectó del server
+[INFO] 23:07:53:468 FILESYSTEM/(5550:5550): Se conecto un cliente!
+[INFO] 23:07:53:475 FILESYSTEM/(5550:7372): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:07:53:477 FILESYSTEM/(5550:7372): Cliente desconectado!
+[WARNING] 23:07:53:478 FILESYSTEM/(5550:7372): El cliente se desconectó del server
+[INFO] 23:41:55:358 FILESYSTEM/(9762:9762): Conexión establecida con Memoria
+[INFO] 23:41:55:369 FILESYSTEM/(9762:9762): Handshake OK
+[INFO] 23:41:55:370 FILESYSTEM/(9762:9762): Filesystem escuchando conexiones...
+[INFO] 23:42:15:926 FILESYSTEM/(9762:9762): Se conecto un cliente!
+[INFO] 23:42:15:933 FILESYSTEM/(9762:9931): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:42:15:937 FILESYSTEM/(9762:9931): Cliente desconectado!
+[WARNING] 23:42:15:937 FILESYSTEM/(9762:9931): El cliente se desconectó del server
+[INFO] 23:56:19:692 FILESYSTEM/(10974:10974): Conexión establecida con Memoria
+[INFO] 23:56:19:694 FILESYSTEM/(10974:10974): Handshake OK
+[INFO] 23:56:19:695 FILESYSTEM/(10974:10974): Filesystem escuchando conexiones...
+[INFO] 23:56:50:495 FILESYSTEM/(11104:11104): Conexión establecida con Memoria
+[INFO] 23:56:50:498 FILESYSTEM/(11104:11104): Handshake OK
+[INFO] 23:56:50:499 FILESYSTEM/(11104:11104): Filesystem escuchando conexiones...
+[INFO] 23:58:07:583 FILESYSTEM/(11214:11214): Conexión establecida con Memoria
+[INFO] 23:58:07:586 FILESYSTEM/(11214:11214): Handshake OK
+[INFO] 23:58:07:587 FILESYSTEM/(11214:11214): Filesystem escuchando conexiones...
+[INFO] 23:58:32:957 FILESYSTEM/(11310:11310): Conexión establecida con Memoria
+[INFO] 23:58:32:963 FILESYSTEM/(11310:11310): Handshake OK
+[INFO] 23:58:32:964 FILESYSTEM/(11310:11310): Filesystem escuchando conexiones...
+[INFO] 23:59:11:733 FILESYSTEM/(11413:11413): Conexión establecida con Memoria
+[INFO] 23:59:11:737 FILESYSTEM/(11413:11413): Handshake OK
+[INFO] 23:59:11:738 FILESYSTEM/(11413:11413): Filesystem escuchando conexiones...
+[INFO] 00:00:36:090 FILESYSTEM/(11667:11667): Conexión establecida con Memoria
+[INFO] 00:00:36:094 FILESYSTEM/(11667:11667): Handshake OK
+[INFO] 00:00:36:095 FILESYSTEM/(11667:11667): Filesystem escuchando conexiones...
+[INFO] 00:02:49:344 FILESYSTEM/(11896:11896): Filesystem escuchando conexiones...
