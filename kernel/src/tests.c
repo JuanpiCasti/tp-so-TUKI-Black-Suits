@@ -61,5 +61,9 @@ void envio_contexto_cpu()
 
 int run_tests()
 {
-    envio_contexto_cpu();
+    //envio_contexto_cpu();
+
+    t_list* lista_recursos = levantar_recursos();
+    imprimir_lista_recursos(lista_recursos);
+
 }

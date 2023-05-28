@@ -41,7 +41,10 @@ typedef struct
 typedef enum
 {
 	CPU_EXIT,
-	CPU_YIELD
+	CPU_YIELD,
+	CPU_IO,
+	CPU_WAIT, 
+	CPU_SIGNAL
 	// BLOCK calculo que tambien, ya veremos cuando lleguemos ahi
 } cod_op_kernel;
 

@@ -11,7 +11,10 @@
 typedef enum {
     SET,
     YIELD,
-    EXIT
+    EXIT,
+    IO,
+    WAIT,
+    SIGNAL
 } as_instruction;
 
 extern uint32_t PID_RUNNING;

@@ -35,6 +35,12 @@ typedef struct
   int socket_consola;
 } t_pcb;
 
+typedef struct{
+  char nombre[20];
+  uint32_t instancias_disponibles;
+  t_list* cola_bloqueados; // Lista de t_pcb
+} t_recurso;
+
 // Logger del kernel
 extern t_log *logger_kernel_extra;
 extern t_log *logger_kernel;
@@ -53,11 +59,13 @@ extern t_list *READY;
 extern t_list *BLOCKED;
 extern t_pcb *RUNNING;
 extern t_list *EXIT;
+extern t_list* RECURSOS;
 extern pthread_mutex_t mutex_NEW;
 extern pthread_mutex_t mutex_READY;
 extern pthread_mutex_t mutex_BLOCKED;
 extern pthread_mutex_t mutex_RUNNING;
 extern pthread_mutex_t mutex_EXIT;
+extern pthread_mutex_t mutex_RECURSOS;
 
 // Configs
 extern t_config *CONFIG_KERNEL;
@@ -71,6 +79,8 @@ extern char *PUERTO_CPU;
 extern double ESTIMACION_INICIAL;
 extern uint32_t GRADO_MAX_MULTIPROGRAMACION;
 extern char *ALGORITMO_PLANIFICACION;
+extern char** RECURSOS_EXISTENTES;
+extern char** INSTANCIAS_RECURSOS;
 
 void inicializar_loggers_kernel(); // crea loggers (oficial y extra)
 void levantar_config_kernel();     // setea todas las variables globales de configuracion
@@ -86,5 +96,8 @@ void imprimir_pcb(t_pcb *pcb);
 void loggear_cambio_estado(char *estado_anterior, char *estado_actual, t_pcb *pcb);
 void loggear_cola_ready();
 void loggear_fin_proceso(t_pcb* pcb, cod_op_kernel exit_code);
+
+t_list* levantar_recursos(); // Levanta recursos e instancias de la lista de configuracion
+void imprimir_lista_recursos(t_list* lista);
 
 #endif

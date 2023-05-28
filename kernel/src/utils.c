@@ -85,17 +85,58 @@ void levantar_config_kernel()
     ESTIMACION_INICIAL = config_get_double_value(CONFIG_KERNEL, "ESTIMACION_INICIAL");
     // char* HRRN_ALFA = config_get_string_value(CONFIG_KERNEL, "HRRN_ALFA");
     GRADO_MAX_MULTIPROGRAMACION = config_get_int_value(CONFIG_KERNEL, "GRADO_MAX_MULTIPROGRAMACION");
-    // char* RECURSOS = config_get_string_value(CONFIG_KERNEL, "RECURSOS");
-    // char* INSTANCIAS_RECURSOS = config_get_string_value(CONFIG_KERNEL, "INSTANCIAS_RECURSOS");
+    RECURSOS_EXISTENTES = config_get_array_value(CONFIG_KERNEL, "RECURSOS");
+    INSTANCIAS_RECURSOS = config_get_array_value(CONFIG_KERNEL, "INSTANCIAS_RECURSOS");
 }
 
 void inicializar_colas()
 {
     NEW = list_create();
     READY = list_create();
-    BLOCKED = list_create();
     EXIT = list_create();
     RUNNING = NULL;
+    RECURSOS = levantar_recursos();
+}
+
+t_recurso* crear_recurso(char* nombre, uint32_t n_instancias) {
+    t_recurso* n_recurso = malloc(sizeof(t_recurso));
+    
+    strcpy(n_recurso -> nombre, nombre);
+    n_recurso -> instancias_disponibles = n_instancias;
+    n_recurso -> cola_bloqueados = list_create();
+
+    return n_recurso;
+}
+
+t_list* levantar_recursos(){
+    t_list* lista_recursos = list_create();
+
+    int i = 0;
+    while (RECURSOS_EXISTENTES[i] != NULL)
+    {
+
+        list_add(lista_recursos, crear_recurso(RECURSOS_EXISTENTES[i], atoi(INSTANCIAS_RECURSOS[i])));
+
+        // Aniade a la lista de recursos el recurso con su numero de instancias correspondientes
+        // ya que coincide su posicion dada en el archivo de config.
+        // la funcion config_get_array_value devuelve un array de char*, por eso hay que convertir
+        // cada elemento de INSTANCIAS_RECURSOS a un int con la funcion "atoi"
+
+        i++;
+
+    }
+
+    return lista_recursos;
+}
+
+void imprimir_lista_recursos(t_list* lista) {
+    int i;
+    int size = list_size(lista);
+    for (i = 0; i < size; i++) {
+        t_recurso* recurso = list_get(lista, i);
+        printf("Nombre: %s\n", recurso->nombre);
+        printf("Instancias disponibles: %d\n", recurso->instancias_disponibles);
+    }
 }
 
 void inicializar_semaforos()
@@ -126,16 +167,17 @@ void inicializar_semaforos()
         log_error(logger_kernel_extra, "No se pudo inicializar el semaforo para RUNNING");
         exit(-1);
     }
-    if (pthread_mutex_init(&mutex_BLOCKED, NULL) != 0)
-    {
-        log_error(logger_kernel_extra, "No se pudo inicializar el semaforo para la cola de BLOCKED");
-        exit(-1);
-    }
     if (pthread_mutex_init(&mutex_EXIT, NULL) != 0)
     {
         log_error(logger_kernel_extra, "No se pudo inicializar el semaforo para la cola de EXIT");
         exit(-1);
     }
+    if (pthread_mutex_init(&mutex_RECURSOS, NULL) != 0)
+    {
+        log_error(logger_kernel_extra, "No se pudo inicializar el semaforo para la lista de recursos disponibles");
+        exit(-1);
+    }
+
 }
 
 void loggear_cambio_estado(char *estado_anterior, char *estado_actual, t_pcb *pcb)

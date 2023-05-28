@@ -2449,3 +2449,12 @@
 [INFO] 23:13:55:777 CONSOLA/(7885:7885): Conexión establecida con Kernel
 [INFO] 23:13:55:778 CONSOLA/(7885:7885): Enviando instrucciones a Kernel...
 [INFO] 23:14:01:813 CONSOLA/(7885:7885): Resultado de ejecutar el script 'scripts/script2.txt': SUCCESS
+[INFO] 23:48:11:116 CONSOLA/(44946:44946): Conexión establecida con Kernel
+[INFO] 23:48:11:117 CONSOLA/(44946:44946): Handshake OK
+[INFO] 23:48:11:117 CONSOLA/(44946:44946): Conexión establecida con Kernel
+[INFO] 23:48:11:117 CONSOLA/(44946:44946): Enviando instrucciones a Kernel...
+[INFO] 23:48:17:118 CONSOLA/(44946:44946): Resultado de ejecutar el script 'scripts/script2.txt': SUCCESS
+[INFO] 23:48:56:996 CONSOLA/(45000:45000): Conexión establecida con Kernel
+[INFO] 23:48:56:996 CONSOLA/(45000:45000): Handshake OK
+[INFO] 23:48:56:996 CONSOLA/(45000:45000): Conexión establecida con Kernel
+[INFO] 23:48:56:996 CONSOLA/(45000:45000): Enviando instrucciones a Kernel...

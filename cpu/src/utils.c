@@ -137,6 +137,15 @@ as_instruction decode(t_instruccion *instruccion)
     {
         return EXIT;
     }
+    else if (strcmp(instruccion->instruccion, "I/O") == 0) {
+        return IO;
+    }
+    else if (strcmp(instruccion->instruccion, "WAIT") == 0) {
+        return WAIT;
+    }
+    else if (strcmp(instruccion->instruccion, "SIGNAL") == 0) {
+        return SIGNAL;
+    }
     else
     {
         log_error(logger_cpu, "La intrucción no es válida.");
@@ -220,7 +229,15 @@ cod_op_kernel ejecutar_instrucciones()
             return CPU_YIELD;
         case EXIT:
             return CPU_EXIT;
-
+        case IO:
+            //TODO
+            return CPU_IO;
+        case WAIT:
+            //TODO
+            return CPU_WAIT;
+        case SIGNAL:
+            //TODO
+            return CPU_SIGNAL;
         default:
             break;
         }

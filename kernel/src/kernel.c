@@ -15,6 +15,8 @@ char *PUERTO_CPU;
 double ESTIMACION_INICIAL;
 uint32_t GRADO_MAX_MULTIPROGRAMACION;
 char *ALGORITMO_PLANIFICACION;
+char** RECURSOS_EXISTENTES;
+char** INSTANCIAS_RECURSOS;
 
 int socket_servidor_kernel;
 int socket_filesystem;
@@ -34,14 +36,14 @@ pthread_mutex_t mutex_NEW;
 t_list *READY;
 pthread_mutex_t mutex_READY;
 
-t_list *BLOCKED;
-pthread_mutex_t mutex_BLOCKED;
-
 t_pcb *RUNNING;
 pthread_mutex_t mutex_RUNNING;
 
 t_list *EXIT;
 pthread_mutex_t mutex_EXIT;
+
+t_list* RECURSOS; // Cada recurso tiene su lista de bloqueados
+pthread_mutex_t mutex_RECURSOS;
 
 int main(int argc, char **argv)
 {
@@ -59,7 +61,7 @@ int main(int argc, char **argv)
 		levantar_config_kernel();
 		inicializar_colas();
 		inicializar_semaforos();
-		next_pid = 1;
+		next_pid = 1; // Primer PID del sistema sera el '1'
 
 		//*********************
 		// HANDSHAKE - FILESYSTEM

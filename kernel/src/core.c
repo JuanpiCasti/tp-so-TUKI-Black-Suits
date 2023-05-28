@@ -109,6 +109,16 @@ void planificacion_corto_plazo()
                 devolver_resultado(RUNNING, CPU_EXIT);
                 RUNNING = NULL;
                 break;
+            case CPU_IO:
+                //TODO
+                // 
+                break;
+            case CPU_WAIT:
+                //TODO
+                break;
+            case CPU_SIGNAL:
+                //TODO
+                break;
             default:
                 break;
             }

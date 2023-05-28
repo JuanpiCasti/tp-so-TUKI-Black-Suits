@@ -2097,3 +2097,58 @@
 [INFO] 23:42:15:948 KERNEL/(9930:9930): Conexión establecida con Memoria
 [INFO] 23:42:15:955 KERNEL/(9930:9930): Handshake OK
 [INFO] 23:42:15:955 KERNEL/(9930:9930): Kernel escuchando conexiones...
+[ERROR] 23:23:12:630 KERNEL/(43274:43274): Error creando la conexion para 127.0.0.1:35604
+[ERROR] 23:23:12:630 KERNEL/(43274:43274): No se pudo conectar al servidor Filesystem
+[ERROR] 23:23:12:630 KERNEL/(43274:43274): No se pudo conectar al servidor del Filesystem
+[ERROR] 23:23:12:630 KERNEL/(43274:43274): Error creando la conexion para 127.0.0.1:35602
+[ERROR] 23:23:12:630 KERNEL/(43274:43274): No se pudo conectar al servidor CPU
+[ERROR] 23:23:12:630 KERNEL/(43274:43274): No se pudo conectar al servidor del CPU
+[ERROR] 23:23:12:630 KERNEL/(43274:43274): Error creando la conexion para 127.0.0.1:35603
+[ERROR] 23:23:12:630 KERNEL/(43274:43274): No se pudo conectar al servidor Memoria
+[ERROR] 23:23:12:630 KERNEL/(43274:43274): No se pudo conectar al servidor del Memoria
+[INFO] 23:23:12:630 KERNEL/(43274:43274): Kernel escuchando conexiones...
+[ERROR] 23:47:49:360 KERNEL/(44928:44928): Error creando la conexion para 127.0.0.1:35604
+[ERROR] 23:47:49:360 KERNEL/(44928:44928): No se pudo conectar al servidor Filesystem
+[ERROR] 23:47:49:360 KERNEL/(44928:44928): No se pudo conectar al servidor del Filesystem
+[INFO] 23:47:49:360 KERNEL/(44928:44928): Conexión establecida con CPU
+[INFO] 23:47:49:361 KERNEL/(44928:44928): Handshake OK
+[ERROR] 23:47:49:361 KERNEL/(44928:44928): Error creando la conexion para 127.0.0.1:35603
+[ERROR] 23:47:49:361 KERNEL/(44928:44928): No se pudo conectar al servidor Memoria
+[ERROR] 23:47:49:361 KERNEL/(44928:44928): No se pudo conectar al servidor del Memoria
+[INFO] 23:47:49:361 KERNEL/(44928:44928): Kernel escuchando conexiones...
+[INFO] 23:48:11:116 KERNEL/(44928:44928): Se conecto un cliente!
+[INFO] 23:48:11:116 KERNEL/(44928:44947): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 23:48:11:117 KERNEL/(44928:44947): Cliente desconectado!
+[WARNING] 23:48:11:117 KERNEL/(44928:44947): El cliente se desconectó del server
+[INFO] 23:48:11:117 KERNEL/(44928:44928): Se conecto un cliente!
+[INFO] 23:48:11:117 KERNEL/(44928:44948): Recibiendo paquete de instrucciones...
+[INFO] 23:48:11:117 KERNEL/(44928:44948): Se crea el proceso 1 en NEW
+[INFO] 23:48:11:117 KERNEL/(44928:44930): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 23:48:11:117 KERNEL/(44928:44930): Cola Ready FIFO: [1]
+[INFO] 23:48:11:117 KERNEL/(44928:44931): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 23:48:14:117 KERNEL/(44928:44931): PID: 1 - Estado anterior: RUNNING - Estado actual: READY
+[INFO] 23:48:14:118 KERNEL/(44928:44931): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 23:48:17:118 KERNEL/(44928:44931): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 23:48:17:118 KERNEL/(44928:44931): Finaliza el proceso 1 - Motivo: SUCCESS
+[WARNING] 23:48:17:118 KERNEL/(44928:44948): Cliente desconectado!
+[WARNING] 23:48:17:118 KERNEL/(44928:44948): El cliente se desconectó del server
+[ERROR] 23:48:54:115 KERNEL/(44996:44996): Error creando la conexion para 127.0.0.1:35604
+[ERROR] 23:48:54:115 KERNEL/(44996:44996): No se pudo conectar al servidor Filesystem
+[ERROR] 23:48:54:115 KERNEL/(44996:44996): No se pudo conectar al servidor del Filesystem
+[INFO] 23:48:54:115 KERNEL/(44996:44996): Conexión establecida con CPU
+[INFO] 23:48:54:116 KERNEL/(44996:44996): Handshake OK
+[ERROR] 23:48:54:116 KERNEL/(44996:44996): Error creando la conexion para 127.0.0.1:35603
+[ERROR] 23:48:54:116 KERNEL/(44996:44996): No se pudo conectar al servidor Memoria
+[ERROR] 23:48:54:116 KERNEL/(44996:44996): No se pudo conectar al servidor del Memoria
+[INFO] 23:48:54:116 KERNEL/(44996:44996): Kernel escuchando conexiones...
+[INFO] 23:48:56:996 KERNEL/(44996:44996): Se conecto un cliente!
+[INFO] 23:48:56:996 KERNEL/(44996:45001): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 23:48:56:996 KERNEL/(44996:45001): Cliente desconectado!
+[WARNING] 23:48:56:996 KERNEL/(44996:45001): El cliente se desconectó del server
+[INFO] 23:48:56:996 KERNEL/(44996:44996): Se conecto un cliente!
+[INFO] 23:48:56:996 KERNEL/(44996:45002): Recibiendo paquete de instrucciones...
+[INFO] 23:48:56:996 KERNEL/(44996:45002): Se crea el proceso 1 en NEW
+[INFO] 23:48:56:996 KERNEL/(44996:44998): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 23:48:56:996 KERNEL/(44996:44998): Cola Ready FIFO: [1]
+[INFO] 23:48:56:996 KERNEL/(44996:44999): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 23:48:59:996 KERNEL/(44996:44999): PID: 1 - Estado anterior: RUNNING - Estado actual: READY

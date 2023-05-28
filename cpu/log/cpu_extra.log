@@ -1900,3 +1900,36 @@
 [INFO] 23:42:15:946 CPU/(9837:9932): Recibido handshake HANDSHAKE_KERNEL.
 [WARNING] 23:42:15:949 CPU/(9837:9932): Cliente desconectado!
 [WARNING] 23:42:15:950 CPU/(9837:9932): El cliente se desconectó del server
+[ERROR] 23:47:41:479 CPU/(44924:44924): Error creando la conexion para 127.0.0.1:35603
+[ERROR] 23:47:41:479 CPU/(44924:44924): No se pudo conectar al servidor Memoria
+[ERROR] 23:47:41:479 CPU/(44924:44924): No se pudo conectar al servidor del Memoria
+[INFO] 23:47:41:480 CPU/(44924:44924): CPU escuchando conexiones...
+[INFO] 23:47:49:360 CPU/(44924:44924): Se conecto un cliente!
+[INFO] 23:47:49:361 CPU/(44924:44929): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:47:49:361 CPU/(44924:44929): Cliente desconectado!
+[WARNING] 23:47:49:361 CPU/(44924:44929): El cliente se desconectó del server
+[INFO] 23:48:11:117 CPU/(44924:44924): Se conecto un cliente!
+[INFO] 23:48:11:117 CPU/(44924:44949): PID: 1 - Ejecutando: SET - arg1: AX, arg2: HOLA, arg3: 
+[INFO] 23:48:12:117 CPU/(44924:44949): PID: 1 - Ejecutando: SET - arg1: BX, arg2: CHAU, arg3: 
+[INFO] 23:48:13:117 CPU/(44924:44949): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: COMOANDASPAPUMAN, arg3: 
+[INFO] 23:48:14:117 CPU/(44924:44949): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 23:48:14:117 CPU/(44924:44949): Cliente desconectado!
+[WARNING] 23:48:14:118 CPU/(44924:44949): El cliente se desconectó del server
+[INFO] 23:48:14:118 CPU/(44924:44924): Se conecto un cliente!
+[INFO] 23:48:14:118 CPU/(44924:44950): PID: 1 - Ejecutando: SET - arg1: AX, arg2: PAPU, arg3: 
+[INFO] 23:48:15:118 CPU/(44924:44950): PID: 1 - Ejecutando: SET - arg1: BX, arg2: COSA, arg3: 
+[INFO] 23:48:16:118 CPU/(44924:44950): PID: 1 - Ejecutando: SET - arg1: AX, arg2: CASA, arg3: 
+[INFO] 23:48:17:118 CPU/(44924:44950): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 23:48:17:118 CPU/(44924:44950): Cliente desconectado!
+[WARNING] 23:48:17:118 CPU/(44924:44950): El cliente se desconectó del server
+[INFO] 23:48:54:115 CPU/(44924:44924): Se conecto un cliente!
+[INFO] 23:48:54:116 CPU/(44924:44997): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:48:54:116 CPU/(44924:44997): Cliente desconectado!
+[WARNING] 23:48:54:116 CPU/(44924:44997): El cliente se desconectó del server
+[INFO] 23:48:56:996 CPU/(44924:44924): Se conecto un cliente!
+[INFO] 23:48:56:996 CPU/(44924:45003): PID: 1 - Ejecutando: SET - arg1: AX, arg2: HOLA, arg3: 
+[INFO] 23:48:57:996 CPU/(44924:45003): PID: 1 - Ejecutando: SET - arg1: BX, arg2: CHAU, arg3: 
+[INFO] 23:48:58:996 CPU/(44924:45003): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: COMOANDASPAPUMAN, arg3: 
+[INFO] 23:48:59:996 CPU/(44924:45003): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 23:48:59:996 CPU/(44924:45003): Cliente desconectado!
+[WARNING] 23:48:59:996 CPU/(44924:45003): El cliente se desconectó del server
