@@ -106,11 +106,14 @@ int main(int argc, char **argv)
 			log_error(logger_kernel, "No se pudo iniciar el servidor en Kernel...");
 			return EXIT_FAILURE;
 		}
+
 		log_info(logger_kernel, "Kernel escuchando conexiones...");
+
 		while (server_escuchar(logger_kernel, socket_servidor_kernel, (void *)procesar_conexion));
 
 		pthread_detach(hilo_planificacion_largo);
 		pthread_detach(hilo_planificacion_corto);
+
 		return EXIT_SUCCESS;
 	}
 }

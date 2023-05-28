@@ -3,6 +3,9 @@
 char *cod_op_desc[] = {"HANDSHAKE_CONSOLA", "HANDSHAKE_KERNEL", "HANDSHAKE_CPU", "HANDSHAKE_FILESYSTEM", "HANDSHAKE_MEMORIA"};
 char* cod_op_kernel_description[] = {"SUCCESS", "YIELD"};
 
+uint32_t TAMANIO_CONTEXTO = 4 * 4 + 4 * 8 + 4 * 16 // Registros
+        + sizeof(uint32_t);    // Program Counter
+
 int iniciar_servidor(t_log *logger, char *puerto)
 {
 	int socket_servidor;

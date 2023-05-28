@@ -159,7 +159,6 @@ void deserializar_contexto_pcb(void *buffer, t_pcb *pcb)
     desplazamiento += 16;
     memcpy(&(pcb->program_counter), buffer + desplazamiento, sizeof(uint32_t));
 
-    free(buffer);
 }
 
 int mandar_a_cpu(t_pcb *pcb, uint32_t tam_contexto)
@@ -183,6 +182,7 @@ void *recibir_nuevo_contexto(int socket_cpu, cod_op_kernel *cop)
 
     void *buffer = malloc(size);
     recv(socket_cpu, buffer, size, NULL);
+    
 
     close(socket_cpu);
     return buffer;

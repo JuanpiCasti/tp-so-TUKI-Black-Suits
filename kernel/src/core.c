@@ -65,16 +65,35 @@ void planificacion_largo_plazo()
     }
 }
 
+void bloquear_proceso_io(void* wait_time_arg) {  
+    
+    int wait_time = * (int *) wait_time_arg; // Castea el puntero a void a puntero a entero y lo derreferencia.
+
+    pthread_mutex_lock(&mutex_RUNNING);
+    t_pcb* proceso = RUNNING;
+    RUNNING = NULL;
+    pthread_mutex_unlock(&mutex_RUNNING);
+    loggear_cambio_estado("RUNNING", "BLOQUEADO I/O", proceso);
+
+    sleep(wait_time);
+
+    encolar_proceso(proceso, READY, &mutex_READY, "BLOQUEADO I/O", "READY");
+
+    pthread_exit(NULL);
+}
+
 void planificacion_corto_plazo()
 {
     while (true)
     {
         // Paso de READY a RUNNING - Corto Plazo
         pthread_mutex_lock(&mutex_READY);
+        pthread_mutex_lock(&mutex_RUNNING);
         if (list_size(READY) > 0 && RUNNING == NULL)
         {
             t_pcb *r_pcb = siguiente_proceso_a_ejecutar();
             RUNNING = r_pcb;
+            pthread_mutex_unlock(&mutex_RUNNING);
             loggear_cambio_estado("READY", "RUNNING", r_pcb);
             pthread_mutex_unlock(&mutex_READY);
 
@@ -86,7 +105,6 @@ void planificacion_corto_plazo()
                                     sizeof(uint32_t) +
                                     sizeof(uint32_t) +
                                     list_size(r_pcb->instrucciones) * sizeof(t_instruccion);
-
             int socket_cpu = mandar_a_cpu(RUNNING, tam_contexto);
             cod_op_kernel cop;
             void *buffer = recibir_nuevo_contexto(socket_cpu, &cop);
@@ -96,7 +114,11 @@ void planificacion_corto_plazo()
             {
             case CPU_YIELD:
                 encolar_proceso(r_pcb, READY, &mutex_READY, "RUNNING", "READY");
+
+                pthread_mutex_lock(&mutex_RUNNING);
                 RUNNING = NULL;
+                pthread_mutex_unlock(&mutex_RUNNING);
+
                 break;
             case CPU_EXIT:
                 encolar_proceso(r_pcb, EXIT, &mutex_EXIT, "RUNNING", "EXIT");
@@ -107,11 +129,20 @@ void planificacion_corto_plazo()
                 
                 loggear_fin_proceso(r_pcb, CPU_EXIT);
                 devolver_resultado(RUNNING, CPU_EXIT);
+                
+                pthread_mutex_lock(&mutex_RUNNING);
                 RUNNING = NULL;
+                pthread_mutex_unlock(&mutex_RUNNING);
+
                 break;
             case CPU_IO:
-                //TODO
-                // 
+                uint32_t wait_time;
+                memcpy(&wait_time, buffer + TAMANIO_CONTEXTO, sizeof(uint32_t));
+
+                pthread_t hilo_io;
+                pthread_create(&hilo_io, NULL, bloquear_proceso_io, (void *) (&wait_time));
+                pthread_detach(&hilo_io);
+                
                 break;
             case CPU_WAIT:
                 //TODO
@@ -124,6 +155,7 @@ void planificacion_corto_plazo()
             }
         } else {
             pthread_mutex_unlock(&mutex_READY);
+            pthread_mutex_unlock(&mutex_RUNNING);
         }
     }
 }
