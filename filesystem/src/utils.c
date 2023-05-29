@@ -75,6 +75,7 @@ char *levantar_bloques()
   fread(blocks_buffer, BLOCK_SIZE, BLOCK_COUNT, blocks_file);
 
   fclose(blocks_file); // ??
+  //free(blocks_buffer); // Se debería destruír una vez terminado el programa ??
   return blocks_buffer;
 }
 
