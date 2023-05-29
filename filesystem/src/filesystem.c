@@ -16,6 +16,9 @@ t_config *CONFIG_SUPERBLOQUE;
 int BLOCK_SIZE;
 int BLOCK_COUNT;
 
+t_bitarray *bitmap;
+char* blocks_buffer;
+
 int socket_servidor_filesystem;
 int socket_memoria;
 
@@ -31,7 +34,13 @@ int main(int argc, char **argv)
 		levantar_loggers_filesystem();
 		levantar_config_filesystem();
 		levantar_superbloque();
-		levantar_bitmap();
+		bitmap = levantar_bitmap();
+		blocks_buffer = levantar_bloques();
+
+		// Prueba de archivo de bloques
+		// char* bloque_nuevo = malloc(BLOCK_SIZE);
+		// memset(bloque_nuevo, '1', BLOCK_SIZE);
+		// modificar_bloque(blocks_buffer, 3, bloque_nuevo);
 
 		//*********************
 		// HANDSHAKE - MEMORIA

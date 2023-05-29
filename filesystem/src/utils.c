@@ -25,7 +25,7 @@ void levantar_superbloque()
   BLOCK_COUNT = config_get_int_value(CONFIG_SUPERBLOQUE, "BLOCK_COUNT");
 }
 
-void levantar_bitmap()
+t_bitarray *levantar_bitmap() // Se podría hacer con mmap, sería mejor??
 {
   // Calcular la longitud del bitmap en bits
   int bitmap_size = BLOCK_COUNT / 8;
@@ -33,7 +33,8 @@ void levantar_bitmap()
 
   // Crear el bitarray
   t_bitarray *bitarray = bitarray_create_with_mode(puntero_a_bits, bitmap_size, LSB_FIRST);
-  for (int i = 0; i < BLOCK_COUNT; i++) {
+  for (int i = 0; i < BLOCK_COUNT; i++)
+  {
     bitarray_clean_bit(bitarray, i);
   }
 
@@ -54,7 +55,37 @@ void levantar_bitmap()
   //   printf("Pos. %d: %d\n", i+1, bitarray_test_bit(bitarray, i));
   // }
 
-  fclose(bitmap_file);
-  bitarray_destroy(bitarray);
+  fclose(bitmap_file); // ??
   free(puntero_a_bits);
+  // bitarray_destroy(bitarray); // Se debería destruír una vez terminado el programa ??
+  return bitarray;
+}
+
+char *levantar_bloques()
+{
+  char *blocks_buffer = calloc(BLOCK_COUNT, BLOCK_SIZE); // Crea un buffer con todo inicializado en ceros
+
+  FILE *blocks_file = fopen("./blocks/blocks.bin", "r+");
+  if (blocks_file == NULL)
+  {
+    blocks_file = fopen("./blocks/blocks.bin", "w+");
+    fwrite(blocks_buffer, BLOCK_SIZE, BLOCK_COUNT, blocks_file);
+  }
+
+  fread(blocks_buffer, BLOCK_SIZE, BLOCK_COUNT, blocks_file);
+
+  fclose(blocks_file); // ??
+  return blocks_buffer;
+}
+
+void modificar_bloque(char *blocks_buffer, int numero_bloque, const char *bloque_nuevo)
+{
+  size_t offset = (numero_bloque - 1) * BLOCK_SIZE;
+  memcpy(blocks_buffer + offset, bloque_nuevo, BLOCK_SIZE);
+
+  FILE *blocks_file = fopen("./blocks/blocks.bin", "r+");
+  fseek(blocks_file, offset, SEEK_SET);
+  fwrite(blocks_buffer + offset, BLOCK_SIZE, 1, blocks_file);
+
+  free(bloque_nuevo);
 }

@@ -8,5 +8,6 @@
 #include "shared_utils.h"
 #include "tests.h"
 #include "comunicacion.h"
+#include "utils.h"
 
 #endif

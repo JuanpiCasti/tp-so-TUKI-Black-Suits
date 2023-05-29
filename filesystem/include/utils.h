@@ -30,6 +30,8 @@ extern int BLOCK_COUNT;
 void levantar_loggers_filesystem();
 void levantar_config_filesystem();
 void levantar_superbloque();
-void levantar_bitmap();
+t_bitarray *levantar_bitmap();
+char* levantar_bloques();
+void modificar_bloque(char* blocks_buffer, int numero_bloque, const char* bloque_nuevo);
 
 #endif
