@@ -65,21 +65,21 @@ int main(int argc, char **argv)
 
 		//*********************
 		// HANDSHAKE - FILESYSTEM
-		if (realizar_handshake(logger_kernel, IP_FILESYSTEM, PUERTO_FILESYSTEM, HANDSHAKE_KERNEL, "Filesystem") == -1)
+		if (realizar_handshake(logger_kernel_extra, IP_FILESYSTEM, PUERTO_FILESYSTEM, HANDSHAKE_KERNEL, "Filesystem") == -1)
 		{
 			return EXIT_FAILURE;
 		}
 
 		//*********************
 		// HANDSHAKE - CPU
-		if (realizar_handshake(logger_kernel, IP_CPU, PUERTO_CPU, HANDSHAKE_KERNEL, "CPU") == -1)
+		if (realizar_handshake(logger_kernel_extra, IP_CPU, PUERTO_CPU, HANDSHAKE_KERNEL, "CPU") == -1)
 		{
 			return EXIT_FAILURE;
 		}
 
 		//*********************
 		// HANDSHAKE - MEMORIA
-		if (realizar_handshake(logger_kernel, IP_MEMORIA, PUERTO_MEMORIA, HANDSHAKE_KERNEL, "Memoria") == -1)
+		if (realizar_handshake(logger_kernel_extra, IP_MEMORIA, PUERTO_MEMORIA, HANDSHAKE_KERNEL, "Memoria") == -1)
 		{
 			return EXIT_FAILURE;
 		}
@@ -88,28 +88,28 @@ int main(int argc, char **argv)
 		pthread_t hilo_planificacion_largo;
 		if (pthread_create(&hilo_planificacion_largo, NULL, (void *)(planificacion_largo_plazo), NULL) == -1)
 		{
-			log_error(logger_kernel, "No se pudo crear el hilo del planificador de largo plazo.");
+			log_error(logger_kernel_extra, "No se pudo crear el hilo del planificador de largo plazo.");
 			return EXIT_FAILURE;
 		}
 		pthread_t hilo_planificacion_corto;
 		if (pthread_create(&hilo_planificacion_corto, NULL, (void *)(planificacion_corto_plazo), NULL) == -1)
 		{
-			log_error(logger_kernel, "No se pudo crear el hilo del planificador de corto plazo.");
+			log_error(logger_kernel_extra, "No se pudo crear el hilo del planificador de corto plazo.");
 			return EXIT_FAILURE;
 		}
 
 		//*********************
 		// SERVIDOR
-		socket_servidor_kernel = iniciar_servidor(logger_kernel, PUERTO_ESCUCHA_KERNEL);
+		socket_servidor_kernel = iniciar_servidor(logger_kernel_extra, PUERTO_ESCUCHA_KERNEL);
 		if (socket_servidor_kernel == -1)
 		{
-			log_error(logger_kernel, "No se pudo iniciar el servidor en Kernel...");
+			log_error(logger_kernel_extra, "No se pudo iniciar el servidor en Kernel...");
 			return EXIT_FAILURE;
 		}
 
-		log_info(logger_kernel, "Kernel escuchando conexiones...");
+		log_info(logger_kernel_extra, "Kernel escuchando conexiones...");
 
-		while (server_escuchar(logger_kernel, socket_servidor_kernel, (void *)procesar_conexion));
+		while (server_escuchar(logger_kernel_extra, socket_servidor_kernel, (void *)procesar_conexion));
 
 		pthread_detach(hilo_planificacion_largo);
 		pthread_detach(hilo_planificacion_corto);

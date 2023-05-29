@@ -48,8 +48,15 @@ void serializar_contexto(void *buffer, cod_op_kernel cop, int tamanio_contexto)
     if (cop == CPU_IO) {
         t_instruccion* instruccion = list_get(INSTRUCTION_LIST, PROGRAM_COUNTER - 1);
         uint32_t wait_time = atoi(instruccion->arg1);
-        memcpy(buffer + desplazamiento, &PROGRAM_COUNTER, sizeof(uint32_t));
+        memcpy(buffer + desplazamiento, &wait_time, sizeof(uint32_t));
         desplazamiento += sizeof(uint32_t);
+    }
+
+    if (cop == CPU_WAIT || cop == CPU_SIGNAL) {
+        t_instruccion* instruccion = list_get(INSTRUCTION_LIST, PROGRAM_COUNTER - 1);
+        char* recurso = instruccion ->arg1;
+        memcpy(buffer + desplazamiento, recurso, 20);
+        desplazamiento += 20;
     }
 }
 
@@ -61,6 +68,10 @@ void devolver_contexto(int cliente_socket, cod_op_kernel cop)
     {
         tamanio_contexto += sizeof(uint32_t); // Tiempo del proceso bloqueado en IO
     }
+
+    if (cop == CPU_WAIT || cop == CPU_SIGNAL) {
+        tamanio_contexto += 20;
+    } 
     
 
     int tamanio_paquete = sizeof(cod_op_kernel) + // Cod OP

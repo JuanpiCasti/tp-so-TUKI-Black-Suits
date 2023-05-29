@@ -205,3 +205,15 @@ void loggear_cola_ready()
 void loggear_fin_proceso(t_pcb* pcb, cod_op_kernel exit_code) {
     log_info(logger_kernel, "Finaliza el proceso %d - Motivo: %s", pcb->pid, cod_op_kernel_description[exit_code]);
 }
+
+t_recurso* buscar_recurso_por_nombre(char* nombre_deseado) {
+    
+    for (int i = 0; i < list_size(RECURSOS); i++) {
+        t_recurso* recurso = list_get(RECURSOS, i);
+        if (strcmp(recurso->nombre, nombre_deseado) == 0) {
+            return recurso;
+        }
+    }
+    
+    return NULL;
+}

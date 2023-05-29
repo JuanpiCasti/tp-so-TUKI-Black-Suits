@@ -37,7 +37,7 @@ typedef struct
 
 typedef struct{
   char nombre[20];
-  uint32_t instancias_disponibles;
+  int32_t instancias_disponibles;
   t_list* cola_bloqueados; // Lista de t_pcb
 } t_recurso;
 
@@ -99,5 +99,7 @@ void loggear_fin_proceso(t_pcb* pcb, cod_op_kernel exit_code);
 
 t_list* levantar_recursos(); // Levanta recursos e instancias de la lista de configuracion
 void imprimir_lista_recursos(t_list* lista);
+
+t_recurso* buscar_recurso_por_nombre(char* nombre_deseado);
 
 #endif
