@@ -68,17 +68,17 @@ void planificacion_largo_plazo()
 void bloquear_proceso_io(void* wait_time_arg) {  
     
     int wait_time = * (int *) wait_time_arg; // Castea el puntero a void a puntero a entero y lo derreferencia.
-
+    
     pthread_mutex_lock(&mutex_RUNNING);
     t_pcb* proceso = RUNNING;
     RUNNING = NULL;
     loggear_cambio_estado("RUNNING", "BLOQUEADO", proceso);
-    // TODO: log bloqueo con motivo
     pthread_mutex_unlock(&mutex_RUNNING);
-
+    log_info(logger_kernel, "PID: %d - Ejecuta IO: %d", proceso->pid, wait_time);
+    log_info(logger_kernel, "PID: %d - Bloqueado por: IO", proceso->pid);
     sleep(wait_time);
-
-    encolar_proceso(proceso, READY, &mutex_READY, "BLOQUEADO I/O", "READY");
+    // TODO: Tiempo de llegada a ready
+    encolar_proceso(proceso, READY, &mutex_READY, "BLOQUEADO", "READY");
     loggear_cola_ready();
 
     pthread_exit(NULL);
@@ -101,19 +101,40 @@ void desalojar() {
     pthread_mutex_unlock(&mutex_RUNNING);
 }
 
+void terminar_proceso(t_pcb* proceso, cod_op_kernel motivo) {
+    encolar_proceso(proceso, EXIT, &mutex_EXIT, "RUNNING", "EXIT");
+
+    pthread_mutex_lock(&mutex_mp);
+    GRADO_ACTUAL_MPROG--;
+    pthread_mutex_unlock(&mutex_mp);
+    
+    loggear_fin_proceso(proceso, motivo);
+    devolver_resultado(proceso, motivo);
+    
+    desalojar();
+}
+
 void wait_recurso(t_pcb* proceso, char* nombre_recurso) {
 
     t_recurso* recurso = buscar_recurso_por_nombre(nombre_recurso);
 
+    if (recurso == NULL)
+    {
+        terminar_proceso(proceso, EXIT_RESOURCE_NOT_FOUND);
+        return;
+    }
+    
 
-    if (recurso ->instancias_disponibles > 0) {
+    recurso ->instancias_disponibles --;
+    log_info(logger_kernel, "PID: %d - Wait: %s - Instancias: ", proceso->pid, nombre_recurso, recurso -> instancias_disponibles);
 
-        recurso ->instancias_disponibles --;
+    if (recurso ->instancias_disponibles >= 0) {
+
         desalojar_a_ready();
 
     } else {
-        recurso ->instancias_disponibles --;
         list_add(recurso->cola_bloqueados, proceso);
+        log_info(logger_kernel, "PID: %d - Bloqueado por: %s", proceso->pid, nombre_recurso);
         desalojar();
     }
 
@@ -122,16 +143,22 @@ void wait_recurso(t_pcb* proceso, char* nombre_recurso) {
 }
 
 
-void signal_recurso(char* nombre_recurso) {
+void signal_recurso(t_pcb* proceso, char* nombre_recurso) {
 
     t_recurso* recurso = buscar_recurso_por_nombre(nombre_recurso);
 
+    if (recurso == NULL)
+    {
+        terminar_proceso(proceso, EXIT_RESOURCE_NOT_FOUND);
+        return;
+    }
     
     recurso -> instancias_disponibles ++;
+    log_info(logger_kernel, "PID: %d - Signal: %s - Instancias: ", proceso->pid, nombre_recurso, recurso -> instancias_disponibles);
 
     if (list_size(recurso -> cola_bloqueados) > 0) {
         t_pcb* proceso_bloqueado = list_remove(recurso->cola_bloqueados, 0);
-
+        
         encolar_proceso(proceso_bloqueado, READY, &mutex_READY, "RUNNING", "READY");
         loggear_cambio_estado("BLOQUEADO", "READY", proceso_bloqueado);
         loggear_cola_ready();
@@ -177,30 +204,13 @@ void planificacion_corto_plazo()
             case CPU_YIELD:
                 free(buffer);
 
-                encolar_proceso(r_pcb, READY, &mutex_READY, "RUNNING", "READY");
-                loggear_cola_ready();
-
-                pthread_mutex_lock(&mutex_RUNNING);
-                RUNNING = NULL;
-                pthread_mutex_unlock(&mutex_RUNNING);
+                desalojar_a_ready();
 
                 break;
             case CPU_EXIT:
             
                 free(buffer);
-
-                encolar_proceso(r_pcb, EXIT, &mutex_EXIT, "RUNNING", "EXIT");
-
-                pthread_mutex_lock(&mutex_mp);
-                GRADO_ACTUAL_MPROG--;
-                pthread_mutex_unlock(&mutex_mp);
-                
-                loggear_fin_proceso(r_pcb, CPU_EXIT);
-                devolver_resultado(r_pcb, CPU_EXIT);
-                
-                pthread_mutex_lock(&mutex_RUNNING);
-                RUNNING = NULL;
-                pthread_mutex_unlock(&mutex_RUNNING);
+                terminar_proceso(r_pcb, CPU_EXIT);
 
                 break;
 
@@ -223,7 +233,7 @@ void planificacion_corto_plazo()
             case CPU_SIGNAL:
                 memcpy(&nombre_recurso, buffer + TAMANIO_CONTEXTO, 20);
                 free(buffer);
-                signal_recurso(nombre_recurso);
+                signal_recurso(r_pcb, nombre_recurso);
                 
                 break;
             default:
