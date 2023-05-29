@@ -83,7 +83,7 @@ void levantar_config_kernel()
     PUERTO_CPU = config_get_string_value(CONFIG_KERNEL, "PUERTO_CPU");
     ALGORITMO_PLANIFICACION = config_get_string_value(CONFIG_KERNEL, "ALGORITMO_PLANIFICACION");
     ESTIMACION_INICIAL = config_get_double_value(CONFIG_KERNEL, "ESTIMACION_INICIAL");
-    // char* HRRN_ALFA = config_get_string_value(CONFIG_KERNEL, "HRRN_ALFA");
+    HRRN_ALFA = config_get_double_value(CONFIG_KERNEL, "HRRN_ALFA");
     GRADO_MAX_MULTIPROGRAMACION = config_get_int_value(CONFIG_KERNEL, "GRADO_MAX_MULTIPROGRAMACION");
     RECURSOS_EXISTENTES = config_get_array_value(CONFIG_KERNEL, "RECURSOS");
     INSTANCIAS_RECURSOS = config_get_array_value(CONFIG_KERNEL, "INSTANCIAS_RECURSOS");

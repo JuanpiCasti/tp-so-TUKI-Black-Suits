@@ -81,6 +81,7 @@ extern uint32_t GRADO_MAX_MULTIPROGRAMACION;
 extern char *ALGORITMO_PLANIFICACION;
 extern char** RECURSOS_EXISTENTES;
 extern char** INSTANCIAS_RECURSOS;
+extern double HRRN_ALFA;
 
 void inicializar_loggers_kernel(); // crea loggers (oficial y extra)
 void levantar_config_kernel();     // setea todas las variables globales de configuracion

@@ -17,6 +17,7 @@ uint32_t GRADO_MAX_MULTIPROGRAMACION;
 char *ALGORITMO_PLANIFICACION;
 char** RECURSOS_EXISTENTES;
 char** INSTANCIAS_RECURSOS;
+double HRRN_ALFA;
 
 int socket_servidor_kernel;
 int socket_filesystem;
