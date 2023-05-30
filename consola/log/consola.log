@@ -3619,3 +3619,118 @@
 [INFO] 13:45:14:028 CONSOLA/(16110:16110): Resultado de ejecutar el script 'scripts/scriptwait2.txt': SUCCESS
 [INFO] 13:45:16:029 CONSOLA/(16114:16114): Resultado de ejecutar el script 'scripts/scriptwait2.txt': SUCCESS
 [INFO] 13:45:16:029 CONSOLA/(16117:16117): Resultado de ejecutar el script 'scripts/scriptwait2.txt': SUCCESS
+[INFO] 19:55:32:182 CONSOLA/(3429:3429): Conexión establecida con Kernel
+[INFO] 19:55:32:182 CONSOLA/(3429:3429): Handshake OK
+[INFO] 19:55:32:182 CONSOLA/(3429:3429): Conexión establecida con Kernel
+[INFO] 19:55:32:183 CONSOLA/(3429:3429): Enviando instrucciones a Kernel...
+[INFO] 19:55:44:185 CONSOLA/(3429:3429): Resultado de ejecutar el script 'scripts/script2.txt': SUCCESS
+[INFO] 19:56:23:967 CONSOLA/(3482:3482): Conexión establecida con Kernel
+[INFO] 19:56:23:967 CONSOLA/(3482:3482): Handshake OK
+[INFO] 19:56:23:967 CONSOLA/(3482:3482): Conexión establecida con Kernel
+[INFO] 19:56:23:967 CONSOLA/(3482:3482): Enviando instrucciones a Kernel...
+[INFO] 19:56:24:247 CONSOLA/(3486:3486): Conexión establecida con Kernel
+[INFO] 19:56:24:247 CONSOLA/(3486:3486): Handshake OK
+[INFO] 19:56:24:247 CONSOLA/(3486:3486): Conexión establecida con Kernel
+[INFO] 19:56:24:247 CONSOLA/(3486:3486): Enviando instrucciones a Kernel...
+[INFO] 19:56:27:969 CONSOLA/(3482:3482): Resultado de ejecutar el script 'scripts/scriptwait2.txt': SUCCESS
+[INFO] 19:56:31:970 CONSOLA/(3486:3486): Resultado de ejecutar el script 'scripts/scriptwait2.txt': SUCCESS
+[INFO] 19:58:36:897 CONSOLA/(3555:3555): Conexión establecida con Kernel
+[INFO] 19:58:36:897 CONSOLA/(3555:3555): Handshake OK
+[INFO] 19:58:36:897 CONSOLA/(3555:3555): Conexión establecida con Kernel
+[INFO] 19:58:36:897 CONSOLA/(3555:3555): Enviando instrucciones a Kernel...
+[INFO] 19:58:37:284 CONSOLA/(3559:3559): Conexión establecida con Kernel
+[INFO] 19:58:37:284 CONSOLA/(3559:3559): Handshake OK
+[INFO] 19:58:37:284 CONSOLA/(3559:3559): Conexión establecida con Kernel
+[INFO] 19:58:37:284 CONSOLA/(3559:3559): Enviando instrucciones a Kernel...
+[INFO] 19:58:40:899 CONSOLA/(3555:3555): Resultado de ejecutar el script 'scripts/scriptwait2.txt': SUCCESS
+[INFO] 19:58:44:900 CONSOLA/(3559:3559): Resultado de ejecutar el script 'scripts/scriptwait2.txt': SUCCESS
+[INFO] 20:08:21:492 CONSOLA/(4733:4733): Conexión establecida con Kernel
+[INFO] 20:08:21:492 CONSOLA/(4733:4733): Handshake OK
+[INFO] 20:08:21:492 CONSOLA/(4733:4733): Conexión establecida con Kernel
+[INFO] 20:08:21:492 CONSOLA/(4733:4733): Enviando instrucciones a Kernel...
+[INFO] 20:08:21:830 CONSOLA/(4740:4740): Conexión establecida con Kernel
+[INFO] 20:08:21:830 CONSOLA/(4740:4740): Handshake OK
+[INFO] 20:08:21:830 CONSOLA/(4740:4740): Conexión establecida con Kernel
+[INFO] 20:08:21:830 CONSOLA/(4740:4740): Enviando instrucciones a Kernel...
+[INFO] 20:08:22:180 CONSOLA/(4744:4744): Conexión establecida con Kernel
+[INFO] 20:08:22:180 CONSOLA/(4744:4744): Handshake OK
+[INFO] 20:08:22:180 CONSOLA/(4744:4744): Conexión establecida con Kernel
+[INFO] 20:08:22:180 CONSOLA/(4744:4744): Enviando instrucciones a Kernel...
+[INFO] 20:08:22:474 CONSOLA/(4751:4751): Conexión establecida con Kernel
+[INFO] 20:08:22:474 CONSOLA/(4751:4751): Handshake OK
+[INFO] 20:08:22:474 CONSOLA/(4751:4751): Conexión establecida con Kernel
+[INFO] 20:08:22:474 CONSOLA/(4751:4751): Enviando instrucciones a Kernel...
+[INFO] 20:08:31:494 CONSOLA/(4733:4733): Resultado de ejecutar el script 'scripts/DEADLOCK_1': SUCCESS
+[INFO] 20:08:33:495 CONSOLA/(4751:4751): Resultado de ejecutar el script 'scripts/DEADLOCK_4': SUCCESS
+[INFO] 20:08:33:495 CONSOLA/(4744:4744): Resultado de ejecutar el script 'scripts/DEADLOCK_3': SUCCESS
+[INFO] 20:08:33:554 CONSOLA/(4740:4740): Resultado de ejecutar el script 'scripts/DEADLOCK_2': SUCCESS
+[INFO] 20:08:57:623 CONSOLA/(4774:4774): Conexión establecida con Kernel
+[INFO] 20:08:57:623 CONSOLA/(4774:4774): Handshake OK
+[INFO] 20:08:57:623 CONSOLA/(4774:4774): Conexión establecida con Kernel
+[INFO] 20:08:57:623 CONSOLA/(4774:4774): Enviando instrucciones a Kernel...
+[INFO] 20:08:57:623 CONSOLA/(4774:4774): Resultado de ejecutar el script 'scripts/DEADLOCK_1': SUCCESS
+[INFO] 20:08:58:080 CONSOLA/(4787:4787): Conexión establecida con Kernel
+[INFO] 20:08:58:080 CONSOLA/(4787:4787): Handshake OK
+[INFO] 20:08:58:080 CONSOLA/(4787:4787): Conexión establecida con Kernel
+[INFO] 20:08:58:080 CONSOLA/(4787:4787): Enviando instrucciones a Kernel...
+[INFO] 20:08:58:080 CONSOLA/(4787:4787): Resultado de ejecutar el script 'scripts/DEADLOCK_2': SUCCESS
+[INFO] 20:08:58:596 CONSOLA/(4790:4790): Conexión establecida con Kernel
+[INFO] 20:08:58:596 CONSOLA/(4790:4790): Handshake OK
+[INFO] 20:08:58:596 CONSOLA/(4790:4790): Conexión establecida con Kernel
+[INFO] 20:08:58:597 CONSOLA/(4790:4790): Enviando instrucciones a Kernel...
+[INFO] 20:08:58:597 CONSOLA/(4790:4790): Resultado de ejecutar el script 'scripts/DEADLOCK_3': SUCCESS
+[INFO] 20:08:59:070 CONSOLA/(4793:4793): Conexión establecida con Kernel
+[INFO] 20:08:59:070 CONSOLA/(4793:4793): Handshake OK
+[INFO] 20:08:59:070 CONSOLA/(4793:4793): Conexión establecida con Kernel
+[INFO] 20:08:59:070 CONSOLA/(4793:4793): Enviando instrucciones a Kernel...
+[INFO] 20:08:59:070 CONSOLA/(4793:4793): Resultado de ejecutar el script 'scripts/DEADLOCK_4': SUCCESS
+[INFO] 20:10:53:490 CONSOLA/(5080:5080): Conexión establecida con Kernel
+[INFO] 20:10:53:490 CONSOLA/(5080:5080): Handshake OK
+[INFO] 20:10:53:490 CONSOLA/(5080:5080): Conexión establecida con Kernel
+[INFO] 20:10:53:490 CONSOLA/(5080:5080): Enviando instrucciones a Kernel...
+[INFO] 20:10:53:863 CONSOLA/(5087:5087): Conexión establecida con Kernel
+[INFO] 20:10:53:863 CONSOLA/(5087:5087): Handshake OK
+[INFO] 20:10:53:863 CONSOLA/(5087:5087): Conexión establecida con Kernel
+[INFO] 20:10:53:863 CONSOLA/(5087:5087): Enviando instrucciones a Kernel...
+[INFO] 20:10:54:272 CONSOLA/(5091:5091): Conexión establecida con Kernel
+[INFO] 20:10:54:272 CONSOLA/(5091:5091): Handshake OK
+[INFO] 20:10:54:272 CONSOLA/(5091:5091): Conexión establecida con Kernel
+[INFO] 20:10:54:272 CONSOLA/(5091:5091): Enviando instrucciones a Kernel...
+[INFO] 20:10:54:677 CONSOLA/(5098:5098): Conexión establecida con Kernel
+[INFO] 20:10:54:677 CONSOLA/(5098:5098): Handshake OK
+[INFO] 20:10:54:677 CONSOLA/(5098:5098): Conexión establecida con Kernel
+[INFO] 20:10:54:677 CONSOLA/(5098:5098): Enviando instrucciones a Kernel...
+[INFO] 20:11:03:492 CONSOLA/(5080:5080): Resultado de ejecutar el script 'scripts/DEADLOCK_1': SUCCESS
+[INFO] 20:11:05:494 CONSOLA/(5098:5098): Resultado de ejecutar el script 'scripts/DEADLOCK_4': SUCCESS
+[INFO] 20:11:05:494 CONSOLA/(5091:5091): Resultado de ejecutar el script 'scripts/DEADLOCK_3': SUCCESS
+[INFO] 20:11:05:551 CONSOLA/(5087:5087): Resultado de ejecutar el script 'scripts/DEADLOCK_2': SUCCESS
+[INFO] 20:18:16:636 CONSOLA/(5315:5315): Conexión establecida con Kernel
+[INFO] 20:18:16:636 CONSOLA/(5315:5315): Handshake OK
+[INFO] 20:18:16:636 CONSOLA/(5315:5315): Conexión establecida con Kernel
+[INFO] 20:18:16:636 CONSOLA/(5315:5315): Enviando instrucciones a Kernel...
+[INFO] 20:18:26:638 CONSOLA/(5315:5315): Resultado de ejecutar el script 'scripts/DEADLOCK_1': SUCCESS
+[INFO] 20:19:53:881 CONSOLA/(5408:5408): Conexión establecida con Kernel
+[INFO] 20:19:53:881 CONSOLA/(5408:5408): Handshake OK
+[INFO] 20:19:53:881 CONSOLA/(5408:5408): Conexión establecida con Kernel
+[INFO] 20:19:53:881 CONSOLA/(5408:5408): Enviando instrucciones a Kernel...
+[INFO] 21:23:48:433 CONSOLA/(9704:9704): Conexión establecida con Kernel
+[INFO] 21:23:48:433 CONSOLA/(9704:9704): Handshake OK
+[INFO] 21:23:48:433 CONSOLA/(9704:9704): Conexión establecida con Kernel
+[INFO] 21:23:48:433 CONSOLA/(9704:9704): Enviando instrucciones a Kernel...
+[INFO] 21:23:58:436 CONSOLA/(9704:9704): Resultado de ejecutar el script 'scripts/DEADLOCK_1': SUCCESS
+[INFO] 21:24:08:472 CONSOLA/(9745:9745): Conexión establecida con Kernel
+[INFO] 21:24:08:472 CONSOLA/(9745:9745): Handshake OK
+[INFO] 21:24:08:472 CONSOLA/(9745:9745): Conexión establecida con Kernel
+[INFO] 21:24:08:472 CONSOLA/(9745:9745): Enviando instrucciones a Kernel...
+[INFO] 21:24:08:866 CONSOLA/(9751:9751): Conexión establecida con Kernel
+[INFO] 21:24:08:867 CONSOLA/(9751:9751): Handshake OK
+[INFO] 21:24:08:867 CONSOLA/(9751:9751): Conexión establecida con Kernel
+[INFO] 21:24:08:867 CONSOLA/(9751:9751): Enviando instrucciones a Kernel...
+[INFO] 21:24:09:233 CONSOLA/(9757:9757): Conexión establecida con Kernel
+[INFO] 21:24:09:233 CONSOLA/(9757:9757): Handshake OK
+[INFO] 21:24:09:234 CONSOLA/(9757:9757): Conexión establecida con Kernel
+[INFO] 21:24:09:234 CONSOLA/(9757:9757): Enviando instrucciones a Kernel...
+[INFO] 21:24:23:371 CONSOLA/(9767:9767): Conexión establecida con Kernel
+[INFO] 21:24:23:371 CONSOLA/(9767:9767): Handshake OK
+[INFO] 21:24:23:371 CONSOLA/(9767:9767): Conexión establecida con Kernel
+[INFO] 21:24:23:371 CONSOLA/(9767:9767): Enviando instrucciones a Kernel...

@@ -69,7 +69,7 @@ void bloquear_proceso_io(void* wait_time_arg) {
     
     int wait_time = * (int *) wait_time_arg; // Castea el puntero a void a puntero a entero y lo derreferencia.
     
-    pthread_mutex_lock(&mutex_RUNNING);
+    
     t_pcb* proceso = RUNNING;
     RUNNING = NULL;
     loggear_cambio_estado("RUNNING", "BLOQUEADO", proceso);
@@ -128,11 +128,7 @@ void wait_recurso(t_pcb* proceso, char* nombre_recurso) {
     recurso ->instancias_disponibles --;
     log_info(logger_kernel, "PID: %d - Wait: %s - Instancias: ", proceso->pid, nombre_recurso, recurso -> instancias_disponibles);
 
-    if (recurso ->instancias_disponibles >= 0) {
-
-        desalojar_a_ready();
-
-    } else {
+    if (recurso ->instancias_disponibles < 0) {
         list_add(recurso->cola_bloqueados, proceso);
         log_info(logger_kernel, "PID: %d - Bloqueado por: %s", proceso->pid, nombre_recurso);
         desalojar();
@@ -163,27 +159,38 @@ void signal_recurso(t_pcb* proceso, char* nombre_recurso) {
         loggear_cambio_estado("BLOQUEADO", "READY", proceso_bloqueado);
         loggear_cola_ready();
     }
-
-    desalojar_a_ready();
-
     
-   // TODO: log wait
+
 }
 
 void planificacion_corto_plazo()
 {
+    t_pcb *r_pcb;
     while (true)
     {
         // Paso de READY a RUNNING - Corto Plazo
         pthread_mutex_lock(&mutex_READY);
         pthread_mutex_lock(&mutex_RUNNING);
+
         if (list_size(READY) > 0 && RUNNING == NULL)
         {
-            t_pcb *r_pcb = siguiente_proceso_a_ejecutar();
+            r_pcb = siguiente_proceso_a_ejecutar();
             RUNNING = r_pcb;
             pthread_mutex_unlock(&mutex_RUNNING);
             loggear_cambio_estado("READY", "RUNNING", r_pcb);
             pthread_mutex_unlock(&mutex_READY);
+        } else {
+            pthread_mutex_unlock(&mutex_READY);
+            pthread_mutex_unlock(&mutex_RUNNING);
+        }
+
+        pthread_mutex_lock(&mutex_READY);
+        pthread_mutex_lock(&mutex_RUNNING);
+
+        if( RUNNING != NULL) {
+            pthread_mutex_unlock(&mutex_READY);
+            r_pcb = RUNNING;
+            pthread_mutex_unlock(&mutex_RUNNING);
 
             uint32_t tam_contexto = sizeof(cod_op) +
                                     sizeof(uint32_t) + // PID
@@ -193,7 +200,8 @@ void planificacion_corto_plazo()
                                     sizeof(uint32_t) +
                                     sizeof(uint32_t) +
                                     list_size(r_pcb->instrucciones) * sizeof(t_instruccion);
-            int socket_cpu = mandar_a_cpu(RUNNING, tam_contexto);
+
+            int socket_cpu = mandar_a_cpu(r_pcb, tam_contexto);
             cod_op_kernel cop;
             void *buffer = recibir_nuevo_contexto(socket_cpu, &cop);
             deserializar_contexto_pcb(buffer, r_pcb);
@@ -221,6 +229,8 @@ void planificacion_corto_plazo()
                 free(buffer);
 
                 pthread_t hilo_io;
+                
+                pthread_mutex_lock(&mutex_RUNNING);
                 pthread_create(&hilo_io, NULL, bloquear_proceso_io, (void *) (&wait_time));
                 pthread_detach(&hilo_io);
                 
