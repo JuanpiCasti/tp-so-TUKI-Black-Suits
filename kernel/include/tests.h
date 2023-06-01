@@ -5,6 +5,6 @@
 #include "utils.h"
 #include "comunicacion.h"
 
-int run_tests();
+void run_tests();
 
 #endif

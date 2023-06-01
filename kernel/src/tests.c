@@ -34,7 +34,8 @@ void envio_contexto_cpu()
 
     nuevo_pcb->tabla_segmentos = list_create();
     nuevo_pcb->estimado_HRRN = 0.0;
-    nuevo_pcb->tiempo_ready = time(NULL);
+    nuevo_pcb->ultima_rafaga = 0;
+    nuevo_pcb->llegada_ready = time(NULL);
     nuevo_pcb->archivos_abiertos = list_create();
 
     uint32_t tam_contexto = 4 * 4 +  // (AX, BX, CX, DX)
@@ -59,7 +60,7 @@ void envio_contexto_cpu()
     imprimir_pcb(nuevo_pcb);
 }
 
-int run_tests()
+void run_tests()
 {
     //envio_contexto_cpu();
 

@@ -32,6 +32,6 @@ void levantar_config_filesystem();
 void levantar_superbloque();
 t_bitarray *levantar_bitmap();
 char* levantar_bloques();
-void modificar_bloque(char* blocks_buffer, int numero_bloque, const char* bloque_nuevo);
+void modificar_bloque(char* blocks_buffer, int numero_bloque, char* bloque_nuevo);
 
 #endif

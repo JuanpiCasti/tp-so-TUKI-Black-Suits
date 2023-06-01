@@ -79,7 +79,7 @@ char *levantar_bloques()
   return blocks_buffer;
 }
 
-void modificar_bloque(char *blocks_buffer, int numero_bloque, const char *bloque_nuevo)
+void modificar_bloque(char *blocks_buffer, int numero_bloque, char *bloque_nuevo)
 {
   size_t offset = (numero_bloque - 1) * BLOCK_SIZE;
   memcpy(blocks_buffer + offset, bloque_nuevo, BLOCK_SIZE);
