@@ -27,8 +27,8 @@ t_pcb *crear_pcb(t_list *instrucciones, int socket_consola)
     memset(registros_cpu->RDX, 0, sizeof(registros_cpu->RDX));
     pcb->registros_cpu = registros_cpu;
 
-    pcb->estimado_HRRN = ESTIMACION_INICIAL;
-    pcb->llegada_ready = time(NULL);
+    pcb->estimado_HRRN = ESTIMACION_INICIAL / 1000;
+    pcb->llegada_ready = 0;
     pcb->ultima_rafaga = 0;
     pcb->archivos_abiertos = list_create();
     pcb->socket_consola = socket_consola;
@@ -99,18 +99,20 @@ void inicializar_colas()
     RECURSOS = levantar_recursos();
 }
 
-t_recurso* crear_recurso(char* nombre, uint32_t n_instancias) {
-    t_recurso* n_recurso = malloc(sizeof(t_recurso));
-    
-    strcpy(n_recurso -> nombre, nombre);
-    n_recurso -> instancias_disponibles = n_instancias;
-    n_recurso -> cola_bloqueados = list_create();
+t_recurso *crear_recurso(char *nombre, uint32_t n_instancias)
+{
+    t_recurso *n_recurso = malloc(sizeof(t_recurso));
+
+    strcpy(n_recurso->nombre, nombre);
+    n_recurso->instancias_disponibles = n_instancias;
+    n_recurso->cola_bloqueados = list_create();
 
     return n_recurso;
 }
 
-t_list* levantar_recursos(){
-    t_list* lista_recursos = list_create();
+t_list *levantar_recursos()
+{
+    t_list *lista_recursos = list_create();
 
     int i = 0;
     while (RECURSOS_EXISTENTES[i] != NULL)
@@ -124,17 +126,18 @@ t_list* levantar_recursos(){
         // cada elemento de INSTANCIAS_RECURSOS a un int con la funcion "atoi"
 
         i++;
-
     }
 
     return lista_recursos;
 }
 
-void imprimir_lista_recursos(t_list* lista) {
+void imprimir_lista_recursos(t_list *lista)
+{
     int i;
     int size = list_size(lista);
-    for (i = 0; i < size; i++) {
-        t_recurso* recurso = list_get(lista, i);
+    for (i = 0; i < size; i++)
+    {
+        t_recurso *recurso = list_get(lista, i);
         printf("Nombre: %s\n", recurso->nombre);
         printf("Instancias disponibles: %d\n", recurso->instancias_disponibles);
     }
@@ -178,7 +181,6 @@ void inicializar_semaforos()
         log_error(logger_kernel_extra, "No se pudo inicializar el semaforo para la lista de recursos disponibles");
         exit(-1);
     }
-
 }
 
 void loggear_cambio_estado(char *estado_anterior, char *estado_actual, t_pcb *pcb)
@@ -186,35 +188,101 @@ void loggear_cambio_estado(char *estado_anterior, char *estado_actual, t_pcb *pc
     log_info(logger_kernel, "PID: %d - Estado anterior: %s - Estado actual: %s", pcb->pid, estado_anterior, estado_actual);
 }
 
-void loggear_cola_ready()
+void loggear_cola_ready(t_list *cola_ready)
 {
     char *lista_pids = string_new();
+    t_pcb *pcb;
 
-    uint32_t first_pid = ((t_pcb *)(list_get(READY, 0)))->pid;
-    string_append(&lista_pids, string_itoa(first_pid));
-
-    for (int i = 1; i < list_size(READY); i++)
+    if (strcmp(ALGORITMO_PLANIFICACION, "FIFO") == 0)
     {
-        t_pcb *pcb = list_get(READY, i);
-        string_append(&lista_pids, ",");
-        string_append(&lista_pids, string_itoa(pcb->pid));
-    }
+        uint32_t first_pid = ((t_pcb *)(list_get(cola_ready, 0)))->pid;
+        string_append(&lista_pids, string_itoa(first_pid));
 
-    log_info(logger_kernel, "Cola Ready FIFO: [%s]", lista_pids);
+        for (int i = 1; i < list_size(cola_ready); i++)
+        {
+            pcb = list_get(cola_ready, i);
+            string_append(&lista_pids, ",");
+            string_append(&lista_pids, string_itoa(pcb->pid));
+        }
+
+        log_info(logger_kernel, "Cola Ready FIFO: [%s]", lista_pids);
+    }
+    else if (strcmp(ALGORITMO_PLANIFICACION, "HRRN") == 0)
+    {
+        t_list *READY_aux = list_take(cola_ready, list_size(cola_ready));
+
+        float RR_aux = 0;
+        float RR_mayor = 0;
+        int index_de_RR_mayor = 0;
+
+        for (int i = 0; i < list_size(READY_aux); i++)
+        {
+            pcb = list_get(READY_aux, i);
+            if (pcb->ultima_rafaga != 0)
+            {
+                pcb->estimado_HRRN = HRRN_ALFA * pcb->estimado_HRRN + (1 - HRRN_ALFA) * pcb->ultima_rafaga;
+            }
+
+            RR_aux = ((time(NULL) - pcb->llegada_ready) + pcb->estimado_HRRN) / pcb->estimado_HRRN;
+
+            if (RR_aux > RR_mayor)
+            {
+                RR_mayor = RR_aux;
+                index_de_RR_mayor = i;
+            }
+        }
+
+        pcb = (t_pcb *)(list_remove(READY_aux, index_de_RR_mayor));
+        string_append(&lista_pids, string_itoa(pcb->pid));
+
+        for (int i = 0; i < list_size(READY_aux); i++)
+        {
+            RR_aux = 0;
+            RR_mayor = 0;
+            index_de_RR_mayor = 0;
+
+            for (int i = 0; i < list_size(READY_aux); i++)
+            {
+                pcb = list_get(READY_aux, i);
+                if (pcb->ultima_rafaga != 0)
+                {
+                    pcb->estimado_HRRN = HRRN_ALFA * pcb->estimado_HRRN + (1 - HRRN_ALFA) * pcb->ultima_rafaga;
+                }
+
+                RR_aux = ((time(NULL) - pcb->llegada_ready) + pcb->estimado_HRRN) / pcb->estimado_HRRN;
+
+                if (RR_aux > RR_mayor)
+                {
+                    RR_mayor = RR_aux;
+                    index_de_RR_mayor = i;
+                }
+            }
+
+            pcb = (t_pcb *)(list_remove(READY_aux, index_de_RR_mayor));
+            string_append(&lista_pids, ",");
+            string_append(&lista_pids, string_itoa(pcb->pid));
+        }
+
+        log_info(logger_kernel, "Cola Ready HRRN: [%s]", lista_pids);
+    }
 }
 
-void loggear_fin_proceso(t_pcb* pcb, cod_op_kernel exit_code) {
+void loggear_fin_proceso(t_pcb *pcb, cod_op_kernel exit_code)
+{
     log_info(logger_kernel, "Finaliza el proceso %d - Motivo: %s", pcb->pid, cod_op_kernel_description[exit_code]);
 }
 
-t_recurso* buscar_recurso_por_nombre(char* nombre_deseado) {
-    
-    for (int i = 0; i < list_size(RECURSOS); i++) {
-        t_recurso* recurso = list_get(RECURSOS, i);
-        if (strcmp(recurso->nombre, nombre_deseado) == 0) {
+t_recurso *buscar_recurso_por_nombre(char *nombre_deseado)
+{
+
+    for (int i = 0; i < list_size(RECURSOS); i++)
+    {
+        t_recurso *recurso = list_get(RECURSOS, i);
+        if (strcmp(recurso->nombre, nombre_deseado) == 0)
+        {
             return recurso;
         }
     }
-    
+
     return NULL;
 }

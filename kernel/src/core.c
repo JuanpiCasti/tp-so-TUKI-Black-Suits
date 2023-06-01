@@ -5,7 +5,13 @@ void encolar_proceso(t_pcb *new_pcb, t_list *cola, pthread_mutex_t *mutex_cola, 
     pthread_mutex_lock(mutex_cola); // Wait
     list_add(cola, new_pcb);
     loggear_cambio_estado(estado_anterior, estado_actual, new_pcb);
+    t_list *cola_ready = list_take(cola, list_size(cola));
     pthread_mutex_unlock(mutex_cola); // Signal
+    if(strcmp("READY", estado_actual) == 0)
+    { 
+        new_pcb->llegada_ready = time(NULL);
+        loggear_cola_ready(cola_ready);
+    }
 }
 
 t_pcb *siguiente_proceso_a_ejecutar()
@@ -25,21 +31,25 @@ t_pcb *siguiente_proceso_a_ejecutar()
     }
     else if (strcmp(ALGORITMO_PLANIFICACION, "HRRN") == 0)
     {
+        t_pcb *proceso;
+
         float RR_aux = 0;
         float RR_mayor = 0;
         int index_de_RR_mayor = 0;
 
         for (int i = 0; i < list_size(READY); i++)
         {
-            t_pcb *proceso = list_get(READY, i);
+            proceso = list_get(READY, i);
             if (proceso->ultima_rafaga != 0)
             {
-                proceso->estimado_HRRN = HRRN_ALFA * proceso->estimado_HRRN + (1 - HRRN_ALFA) * proceso->ultima_rafaga;
+                proceso->estimado_HRRN = HRRN_ALFA * proceso->estimado_HRRN + (1 - HRRN_ALFA) * proceso->ultima_rafaga; // S
             }
 
-            RR_aux = ((time(NULL) - proceso->llegada_ready) + proceso->estimado_HRRN) / proceso->estimado_HRRN;
+            RR_aux = ((time(NULL) - proceso->llegada_ready) + proceso->estimado_HRRN) / proceso->estimado_HRRN; // (W + S) / S
+            printf("RR %d: %f\n", proceso->pid, RR_aux);
 
-            if(RR_aux > RR_mayor) {
+            if (RR_aux > RR_mayor)
+            {
                 RR_mayor = RR_aux;
                 index_de_RR_mayor = i;
             }
@@ -66,12 +76,7 @@ void planificacion_largo_plazo()
             t_pcb *new_pcb = list_remove(NEW, 0);
             pthread_mutex_unlock(&mutex_NEW);
 
-            pthread_mutex_lock(&mutex_READY);
-            new_pcb->llegada_ready = time(NULL);
-            list_add(READY, new_pcb);
-            loggear_cambio_estado("NEW", "READY", new_pcb);
-            loggear_cola_ready();
-            pthread_mutex_unlock(&mutex_READY);
+            encolar_proceso(new_pcb, READY, &mutex_READY, "NEW", "READY");
 
             pthread_mutex_lock(&mutex_mp);
             GRADO_ACTUAL_MPROG++;
@@ -85,7 +90,7 @@ void planificacion_largo_plazo()
     }
 }
 
-void bloquear_proceso_io(void *wait_time_arg)
+void *bloquear_proceso_io(void *wait_time_arg)
 {
     int wait_time = *(int *)wait_time_arg; // Castea el puntero a void a puntero a entero y lo derreferencia.
 
@@ -96,23 +101,16 @@ void bloquear_proceso_io(void *wait_time_arg)
     log_info(logger_kernel, "PID: %d - Ejecuta IO: %d", proceso->pid, wait_time);
     log_info(logger_kernel, "PID: %d - Bloqueado por: IO", proceso->pid);
     sleep(wait_time);
-    proceso->llegada_ready = time(NULL);
     encolar_proceso(proceso, READY, &mutex_READY, "BLOQUEADO", "READY");
-    loggear_cola_ready();
-
     pthread_exit(NULL);
 }
 
 void desalojar_a_ready()
 {
-    pthread_mutex_lock(&mutex_READY);
     pthread_mutex_lock(&mutex_RUNNING); // Wait
-    list_add(READY, RUNNING);
-    loggear_cambio_estado("RUNNING", "READY", RUNNING);
+    encolar_proceso(RUNNING, READY, &mutex_READY, "RUNNING", "READY");
     RUNNING = NULL;
-    loggear_cola_ready();
     pthread_mutex_unlock(&mutex_RUNNING);
-    pthread_mutex_unlock(&mutex_READY);
 }
 
 void desalojar()
@@ -147,7 +145,7 @@ void wait_recurso(t_pcb *proceso, char *nombre_recurso)
     }
 
     recurso->instancias_disponibles--;
-    log_info(logger_kernel, "PID: %d - Wait: %s - Instancias: ", proceso->pid, nombre_recurso, recurso->instancias_disponibles);
+    log_info(logger_kernel, "PID: %d - Wait: %s - Instancias: %d", proceso->pid, nombre_recurso, recurso->instancias_disponibles);
 
     if (recurso->instancias_disponibles < 0)
     {
@@ -170,15 +168,12 @@ void signal_recurso(t_pcb *proceso, char *nombre_recurso)
     }
 
     recurso->instancias_disponibles++;
-    log_info(logger_kernel, "PID: %d - Signal: %s - Instancias: ", proceso->pid, nombre_recurso, recurso->instancias_disponibles);
+    log_info(logger_kernel, "PID: %d - Signal: %s - Instancias: %d", proceso->pid, nombre_recurso, recurso->instancias_disponibles);
 
     if (list_size(recurso->cola_bloqueados) > 0)
     {
         t_pcb *proceso_bloqueado = list_remove(recurso->cola_bloqueados, 0);
-
-        encolar_proceso(proceso_bloqueado, READY, &mutex_READY, "RUNNING", "READY");
-        loggear_cambio_estado("BLOQUEADO", "READY", proceso_bloqueado);
-        loggear_cola_ready();
+        encolar_proceso(proceso_bloqueado, READY, &mutex_READY, "BLOQUEADO", "READY");
     }
 }
 
@@ -236,8 +231,8 @@ void planificacion_corto_plazo()
             {
             case CPU_YIELD:
                 free(buffer);
+                RUNNING->ultima_rafaga = time(NULL) - llegada_running;
                 desalojar_a_ready();
-                r_pcb->ultima_rafaga = time(NULL) - llegada_running;
                 break;
             case CPU_EXIT:
                 free(buffer);
@@ -251,7 +246,7 @@ void planificacion_corto_plazo()
                 r_pcb->ultima_rafaga = time(NULL) - llegada_running;
                 pthread_mutex_lock(&mutex_RUNNING);
                 pthread_create(&hilo_io, NULL, bloquear_proceso_io, (void *)(&wait_time));
-                pthread_detach(&hilo_io);
+                pthread_detach(hilo_io);
                 break;
             case CPU_WAIT:
                 memcpy(&nombre_recurso, buffer + TAMANIO_CONTEXTO, 20);

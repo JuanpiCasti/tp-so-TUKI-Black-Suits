@@ -97,7 +97,7 @@ t_pcb *crear_pcb(t_list *instrucciones, int socket_consola); // Recibe lista de 
 
 void imprimir_pcb(t_pcb *pcb);
 void loggear_cambio_estado(char *estado_anterior, char *estado_actual, t_pcb *pcb);
-void loggear_cola_ready();
+void loggear_cola_ready(t_list *cola_ready);
 void loggear_fin_proceso(t_pcb* pcb, cod_op_kernel exit_code);
 
 t_list* levantar_recursos(); // Levanta recursos e instancias de la lista de configuracion
