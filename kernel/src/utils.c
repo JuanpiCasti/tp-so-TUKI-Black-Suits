@@ -28,7 +28,8 @@ t_pcb *crear_pcb(t_list *instrucciones, int socket_consola)
     pcb->registros_cpu = registros_cpu;
 
     pcb->estimado_HRRN = ESTIMACION_INICIAL;
-    pcb->tiempo_ready = time(NULL);
+    pcb->llegada_ready = time(NULL);
+    pcb->ultima_rafaga = 0;
     pcb->archivos_abiertos = list_create();
     pcb->socket_consola = socket_consola;
 
@@ -60,7 +61,7 @@ void imprimir_pcb(t_pcb *pcb)
     printf("\tRDX: %s\n", imprimir_cadena(pcb->registros_cpu->RDX, 16));
     printf("Tabla de Segmentos:\n");
     printf("Estimado HRRN: %f\n", pcb->estimado_HRRN);
-    printf("Tiempo ready: %ld\n", (long)pcb->tiempo_ready);
+    printf("Tiempo ready: %ld\n", (long)pcb->llegada_ready);
     printf("Archivos abiertos:\n");
 }
 

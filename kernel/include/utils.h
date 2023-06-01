@@ -2,6 +2,7 @@
 #define UTILS_KERNEL_H
 
 #include <stdio.h>
+#include <time.h>
 #include <commons/collections/list.h>
 #include <commons/string.h>
 #include "shared_utils.h"
@@ -30,7 +31,8 @@ typedef struct
   t_registros_cpu *registros_cpu;
   t_list *tabla_segmentos;
   float estimado_HRRN;
-  time_t tiempo_ready;
+  float ultima_rafaga;
+  time_t llegada_ready;
   t_list *archivos_abiertos;
   int socket_consola;
 } t_pcb;

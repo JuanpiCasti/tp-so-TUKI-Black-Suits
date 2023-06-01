@@ -62,7 +62,8 @@
 			"system_error": "c",
 			"typeinfo": "c",
 			"utility": "c",
-			"bitarray.h": "c"
+			"bitarray.h": "c",
+			"time.h": "c"
 		},
 		"editor.fontSize": 15,
 		"editor.formatOnSave": false
