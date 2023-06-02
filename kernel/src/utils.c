@@ -36,6 +36,29 @@ t_pcb *crear_pcb(t_list *instrucciones, int socket_consola)
     return pcb;
 }
 
+void destroy_pcb(void* element) {
+  t_pcb* pcb = (t_pcb*)element;
+  
+  // Liberar memoria de la lista de instrucciones
+  if (pcb->instrucciones != NULL) {
+    list_destroy_and_destroy_elements(pcb->instrucciones, destroy_instruccion);
+  }
+  
+  // Liberar memoria de la lista de segmentos
+  if (pcb->tabla_segmentos != NULL) {
+    list_destroy(pcb->tabla_segmentos);
+  }
+  
+  // Liberar memoria de la lista de archivos abiertos
+  if (pcb->archivos_abiertos != NULL) {
+    list_destroy(pcb->archivos_abiertos);
+  }
+  
+  // Liberar memoria del struct t_pcb
+  free(pcb);
+}
+
+
 void imprimir_pcb(t_pcb *pcb)
 {
     printf("PID: %d\n", pcb->pid);
@@ -234,8 +257,8 @@ void loggear_cola_ready(t_list *cola_ready)
 
         pcb = (t_pcb *)(list_remove(READY_aux, index_de_RR_mayor));
         string_append(&lista_pids, string_itoa(pcb->pid));
-
-        for (int i = 0; i < list_size(READY_aux); i++)
+        int size_cola = list_size(READY_aux);
+        for (int j = 0; j < size_cola; j++)
         {
             RR_aux = 0;
             RR_mayor = 0;
@@ -258,12 +281,14 @@ void loggear_cola_ready(t_list *cola_ready)
                 }
             }
 
+
             pcb = (t_pcb *)(list_remove(READY_aux, index_de_RR_mayor));
             string_append(&lista_pids, ",");
             string_append(&lista_pids, string_itoa(pcb->pid));
         }
 
         log_info(logger_kernel, "Cola Ready HRRN: [%s]", lista_pids);
+        list_destroy_and_destroy_elements(READY_aux, destroy_pcb);
     }
 }
 

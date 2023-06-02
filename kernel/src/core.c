@@ -5,13 +5,13 @@ void encolar_proceso(t_pcb *new_pcb, t_list *cola, pthread_mutex_t *mutex_cola, 
     pthread_mutex_lock(mutex_cola); // Wait
     list_add(cola, new_pcb);
     loggear_cambio_estado(estado_anterior, estado_actual, new_pcb);
-    t_list *cola_ready = list_take(cola, list_size(cola));
-    pthread_mutex_unlock(mutex_cola); // Signal
     if(strcmp("READY", estado_actual) == 0)
     { 
         new_pcb->llegada_ready = time(NULL);
-        loggear_cola_ready(cola_ready);
+        loggear_cola_ready(cola);
     }
+    pthread_mutex_unlock(mutex_cola); // Signal
+
 }
 
 t_pcb *siguiente_proceso_a_ejecutar()
@@ -46,7 +46,7 @@ t_pcb *siguiente_proceso_a_ejecutar()
             }
 
             RR_aux = ((time(NULL) - proceso->llegada_ready) + proceso->estimado_HRRN) / proceso->estimado_HRRN; // (W + S) / S
-            printf("RR %d: %f\n", proceso->pid, RR_aux);
+            //printf("RR %d: %f\n", proceso->pid, RR_aux);
 
             if (RR_aux > RR_mayor)
             {

@@ -225,3 +225,11 @@ char *imprimir_cadena(char *cadena, size_t longitud)
 	cadena_imprimir[i] = '\0'; // aseguramos que la cadena termina en el primer caracter nulo encontrado
 	return cadena_imprimir;
 }
+
+
+void destroy_instruccion(void* element) {
+  t_instruccion* instruccion = (t_instruccion*)element;
+  
+  // Liberar memoria del struct t_instruccion
+  free(instruccion);
+}

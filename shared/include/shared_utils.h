@@ -49,7 +49,7 @@ typedef enum
 	// BLOCK calculo que tambien, ya veremos cuando lleguemos ahi
 } cod_op_kernel;
 
-extern char* cod_op_kernel_description[2];
+extern char* cod_op_kernel_description[3];
 
 extern uint32_t TAMANIO_CONTEXTO;
 
@@ -70,5 +70,5 @@ void *serializar_instrucciones(t_list *instrucciones, int cant_instrucciones, ui
 // Esta funcion devuelve un stream del tamanio sizeof(uint32_t) + tam_buffer_instrucciones. Por lo que los primeros
 // 4 bytes son para indicar el tamanio de lo que leer a continuacion.
 t_list *deserializar_instrucciones(void *stream, uint32_t tam_instrucciones);
-
+void destroy_instruccion(void* element);
 #endif

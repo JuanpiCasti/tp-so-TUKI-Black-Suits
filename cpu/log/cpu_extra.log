@@ -6410,3 +6410,1725 @@
 [INFO] 22:04:47:191 CPU/(4760:15170): PID: 3 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
 [WARNING] 22:04:47:194 CPU/(4760:15170): Cliente desconectado!
 [WARNING] 22:04:47:195 CPU/(4760:15170): El cliente se desconectó del server
+[ERROR] 19:15:39:337 CPU/(3316:3316): Error creando la conexion para 127.0.0.1:35603
+[ERROR] 19:15:39:337 CPU/(3316:3316): No se pudo conectar al servidor Memoria
+[ERROR] 19:15:39:337 CPU/(3316:3316): No se pudo conectar al servidor del Memoria
+[INFO] 19:15:39:337 CPU/(3316:3316): CPU escuchando conexiones...
+[INFO] 19:16:31:724 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:16:31:724 CPU/(3316:3416): PID: 1 - Ejecutando: SET - arg1: AX, arg2: AAAA, arg3: 
+[INFO] 19:16:32:724 CPU/(3316:3416): PID: 1 - Ejecutando: SET - arg1: BX, arg2: BBBB, arg3: 
+[INFO] 19:16:33:724 CPU/(3316:3416): PID: 1 - Ejecutando: SET - arg1: CX, arg2: CCCC, arg3: 
+[INFO] 19:16:34:724 CPU/(3316:3416): PID: 1 - Ejecutando: SET - arg1: DX, arg2: DDDD, arg3: 
+[INFO] 19:16:35:725 CPU/(3316:3416): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 19:16:36:725 CPU/(3316:3416): PID: 1 - Ejecutando: SET - arg1: EBX, arg2: BBBBBBBB, arg3: 
+[INFO] 19:16:37:725 CPU/(3316:3416): PID: 1 - Ejecutando: SET - arg1: ECX, arg2: CCCCCCCC, arg3: 
+[INFO] 19:16:38:725 CPU/(3316:3416): PID: 1 - Ejecutando: SET - arg1: EDX, arg2: DDDDDDDD, arg3: 
+[INFO] 19:16:39:725 CPU/(3316:3416): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: AAAAAAAAAAAAAAAA, arg3: 
+[INFO] 19:16:40:725 CPU/(3316:3416): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: BBBBBBBBBBBBBBBB, arg3: 
+[INFO] 19:16:41:725 CPU/(3316:3416): PID: 1 - Ejecutando: SET - arg1: RCX, arg2: CCCCCCCCCCCCCCCC, arg3: 
+[INFO] 19:16:42:726 CPU/(3316:3416): PID: 1 - Ejecutando: SET - arg1: RDX, arg2: DDDDDDDDDDDDDDDD, arg3: 
+[INFO] 19:16:43:726 CPU/(3316:3416): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:16:43:726 CPU/(3316:3416): Cliente desconectado!
+[WARNING] 19:16:43:726 CPU/(3316:3416): El cliente se desconectó del server
+[INFO] 19:16:43:726 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:16:43:726 CPU/(3316:3423): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG0, arg3: 
+[INFO] 19:16:44:726 CPU/(3316:3423): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:16:45:726 CPU/(3316:3423): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:16:45:727 CPU/(3316:3423): Cliente desconectado!
+[WARNING] 19:16:45:727 CPU/(3316:3423): El cliente se desconectó del server
+[INFO] 19:16:45:727 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:16:45:727 CPU/(3316:3424): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG0, arg3: 
+[INFO] 19:16:46:727 CPU/(3316:3424): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:16:47:727 CPU/(3316:3424): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:16:47:728 CPU/(3316:3424): Cliente desconectado!
+[WARNING] 19:16:47:728 CPU/(3316:3424): El cliente se desconectó del server
+[INFO] 19:16:47:728 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:16:47:728 CPU/(3316:3425): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG1, arg3: 
+[INFO] 19:16:48:728 CPU/(3316:3425): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:16:49:728 CPU/(3316:3425): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:16:49:728 CPU/(3316:3425): Cliente desconectado!
+[WARNING] 19:16:49:728 CPU/(3316:3425): El cliente se desconectó del server
+[INFO] 19:16:49:728 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:16:49:728 CPU/(3316:3426): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG1, arg3: 
+[INFO] 19:16:50:728 CPU/(3316:3426): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:16:51:729 CPU/(3316:3426): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:16:51:729 CPU/(3316:3426): Cliente desconectado!
+[WARNING] 19:16:51:729 CPU/(3316:3426): El cliente se desconectó del server
+[INFO] 19:16:51:729 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:16:51:729 CPU/(3316:3427): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:16:52:729 CPU/(3316:3427): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:16:53:729 CPU/(3316:3427): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:16:53:730 CPU/(3316:3427): Cliente desconectado!
+[WARNING] 19:16:53:730 CPU/(3316:3427): El cliente se desconectó del server
+[INFO] 19:16:53:730 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:16:53:730 CPU/(3316:3428): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:16:54:730 CPU/(3316:3428): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:16:55:730 CPU/(3316:3428): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:16:55:730 CPU/(3316:3428): Cliente desconectado!
+[WARNING] 19:16:55:731 CPU/(3316:3428): El cliente se desconectó del server
+[INFO] 19:16:55:731 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:16:55:731 CPU/(3316:3432): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: TCHOUAMENIAFUERA, arg3: 
+[INFO] 19:16:56:731 CPU/(3316:3432): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SEGUNDO_FRANCIA_, arg3: 
+[INFO] 19:16:57:731 CPU/(3316:3432): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 19:16:57:731 CPU/(3316:3432): Cliente desconectado!
+[WARNING] 19:16:57:731 CPU/(3316:3432): El cliente se desconectó del server
+[INFO] 19:16:57:731 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:16:57:731 CPU/(3316:3436): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:16:58:731 CPU/(3316:3436): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA1, arg3: 
+[INFO] 19:16:59:732 CPU/(3316:3436): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:16:59:732 CPU/(3316:3436): Cliente desconectado!
+[WARNING] 19:16:59:732 CPU/(3316:3436): El cliente se desconectó del server
+[INFO] 19:16:59:732 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:16:59:732 CPU/(3316:3438): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:17:00:732 CPU/(3316:3438): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA1, arg3: 
+[INFO] 19:17:01:732 CPU/(3316:3438): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:17:01:732 CPU/(3316:3438): Cliente desconectado!
+[WARNING] 19:17:01:732 CPU/(3316:3438): El cliente se desconectó del server
+[INFO] 19:17:01:732 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:17:01:733 CPU/(3316:3442): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:17:02:733 CPU/(3316:3442): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:17:03:733 CPU/(3316:3442): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:17:03:733 CPU/(3316:3442): Cliente desconectado!
+[WARNING] 19:17:03:733 CPU/(3316:3442): El cliente se desconectó del server
+[INFO] 19:17:03:733 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:17:03:733 CPU/(3316:3443): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:17:04:733 CPU/(3316:3443): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:17:05:733 CPU/(3316:3443): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:17:05:733 CPU/(3316:3443): Cliente desconectado!
+[WARNING] 19:17:05:733 CPU/(3316:3443): El cliente se desconectó del server
+[INFO] 19:17:05:733 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:17:05:734 CPU/(3316:3444): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:17:06:734 CPU/(3316:3444): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:17:07:734 CPU/(3316:3444): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:17:07:734 CPU/(3316:3444): Cliente desconectado!
+[WARNING] 19:17:07:734 CPU/(3316:3444): El cliente se desconectó del server
+[INFO] 19:17:07:734 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:17:07:734 CPU/(3316:3445): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:17:08:734 CPU/(3316:3445): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:17:09:734 CPU/(3316:3445): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:17:09:735 CPU/(3316:3445): Cliente desconectado!
+[WARNING] 19:17:09:735 CPU/(3316:3445): El cliente se desconectó del server
+[INFO] 19:17:09:735 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:17:09:735 CPU/(3316:3457): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:17:10:735 CPU/(3316:3457): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA3, arg3: 
+[INFO] 19:17:11:735 CPU/(3316:3457): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:17:11:735 CPU/(3316:3457): Cliente desconectado!
+[WARNING] 19:17:11:735 CPU/(3316:3457): El cliente se desconectó del server
+[INFO] 19:17:11:735 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:17:11:735 CPU/(3316:3458): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:17:12:736 CPU/(3316:3458): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA3, arg3: 
+[INFO] 19:17:13:736 CPU/(3316:3458): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:17:13:737 CPU/(3316:3458): Cliente desconectado!
+[WARNING] 19:17:13:737 CPU/(3316:3458): El cliente se desconectó del server
+[INFO] 19:17:13:737 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:17:13:737 CPU/(3316:3459): PID: 2 - Ejecutando: SET - arg1: RDX, arg2: VAMOSALOSPENALES, arg3: 
+[INFO] 19:17:14:737 CPU/(3316:3459): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:17:14:737 CPU/(3316:3459): Cliente desconectado!
+[WARNING] 19:17:14:737 CPU/(3316:3459): El cliente se desconectó del server
+[INFO] 19:17:14:737 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:17:14:737 CPU/(3316:3460): PID: 3 - Ejecutando: SET - arg1: RDX, arg2: VAMOSALOSPENALES, arg3: 
+[INFO] 19:17:15:737 CPU/(3316:3460): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:17:15:738 CPU/(3316:3460): Cliente desconectado!
+[WARNING] 19:17:15:738 CPU/(3316:3460): El cliente se desconectó del server
+[INFO] 19:17:15:738 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:17:15:738 CPU/(3316:3461): PID: 2 - Ejecutando: SET - arg1: RAX, arg2: ARGENTINACAMPEON, arg3: 
+[INFO] 19:17:16:738 CPU/(3316:3461): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 19:17:16:738 CPU/(3316:3461): Cliente desconectado!
+[WARNING] 19:17:16:738 CPU/(3316:3461): El cliente se desconectó del server
+[INFO] 19:17:16:738 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:17:16:738 CPU/(3316:3462): PID: 3 - Ejecutando: SET - arg1: RAX, arg2: ARGENTINACAMPEON, arg3: 
+[INFO] 19:17:17:738 CPU/(3316:3462): PID: 3 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 19:17:17:739 CPU/(3316:3462): Cliente desconectado!
+[WARNING] 19:17:17:739 CPU/(3316:3462): El cliente se desconectó del server
+[INFO] 19:20:28:450 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:20:28:450 CPU/(3316:3561): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 19:20:28:450 CPU/(3316:3561): Cliente desconectado!
+[WARNING] 19:20:28:450 CPU/(3316:3561): El cliente se desconectó del server
+[INFO] 19:20:34:642 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:20:34:642 CPU/(3316:3567): PID: 1 - Ejecutando: SET - arg1: AX, arg2: AAAA, arg3: 
+[INFO] 19:20:35:642 CPU/(3316:3567): PID: 1 - Ejecutando: SET - arg1: BX, arg2: BBBB, arg3: 
+[INFO] 19:20:36:642 CPU/(3316:3567): PID: 1 - Ejecutando: SET - arg1: CX, arg2: CCCC, arg3: 
+[INFO] 19:20:37:642 CPU/(3316:3567): PID: 1 - Ejecutando: SET - arg1: DX, arg2: DDDD, arg3: 
+[INFO] 19:20:38:642 CPU/(3316:3567): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 19:20:39:643 CPU/(3316:3567): PID: 1 - Ejecutando: SET - arg1: EBX, arg2: BBBBBBBB, arg3: 
+[INFO] 19:20:40:643 CPU/(3316:3567): PID: 1 - Ejecutando: SET - arg1: ECX, arg2: CCCCCCCC, arg3: 
+[INFO] 19:20:41:643 CPU/(3316:3567): PID: 1 - Ejecutando: SET - arg1: EDX, arg2: DDDDDDDD, arg3: 
+[INFO] 19:20:42:643 CPU/(3316:3567): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: AAAAAAAAAAAAAAAA, arg3: 
+[INFO] 19:20:43:643 CPU/(3316:3567): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: BBBBBBBBBBBBBBBB, arg3: 
+[INFO] 19:20:44:643 CPU/(3316:3567): PID: 1 - Ejecutando: SET - arg1: RCX, arg2: CCCCCCCCCCCCCCCC, arg3: 
+[INFO] 19:20:45:643 CPU/(3316:3567): PID: 1 - Ejecutando: SET - arg1: RDX, arg2: DDDDDDDDDDDDDDDD, arg3: 
+[INFO] 19:20:46:643 CPU/(3316:3567): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:20:46:644 CPU/(3316:3567): Cliente desconectado!
+[WARNING] 19:20:46:644 CPU/(3316:3567): El cliente se desconectó del server
+[INFO] 19:20:46:644 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:20:46:644 CPU/(3316:3574): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG0, arg3: 
+[INFO] 19:20:47:644 CPU/(3316:3574): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:20:48:644 CPU/(3316:3574): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:20:48:644 CPU/(3316:3574): Cliente desconectado!
+[WARNING] 19:20:48:644 CPU/(3316:3574): El cliente se desconectó del server
+[INFO] 19:20:48:644 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:20:48:645 CPU/(3316:3575): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG0, arg3: 
+[INFO] 19:20:49:645 CPU/(3316:3575): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:20:50:645 CPU/(3316:3575): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:20:50:645 CPU/(3316:3575): Cliente desconectado!
+[WARNING] 19:20:50:645 CPU/(3316:3575): El cliente se desconectó del server
+[INFO] 19:20:50:646 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:20:50:646 CPU/(3316:3576): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: TCHOUAMENIAFUERA, arg3: 
+[INFO] 19:20:51:646 CPU/(3316:3576): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SEGUNDO_FRANCIA_, arg3: 
+[INFO] 19:20:52:646 CPU/(3316:3576): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 19:20:52:646 CPU/(3316:3576): Cliente desconectado!
+[WARNING] 19:20:52:646 CPU/(3316:3576): El cliente se desconectó del server
+[INFO] 19:20:52:646 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:20:52:646 CPU/(3316:3584): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG1, arg3: 
+[INFO] 19:20:53:646 CPU/(3316:3584): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:20:54:646 CPU/(3316:3584): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:20:54:647 CPU/(3316:3584): Cliente desconectado!
+[WARNING] 19:20:54:647 CPU/(3316:3584): El cliente se desconectó del server
+[INFO] 19:20:54:647 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:20:54:647 CPU/(3316:3585): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG1, arg3: 
+[INFO] 19:20:55:647 CPU/(3316:3585): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:20:56:647 CPU/(3316:3585): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:20:56:648 CPU/(3316:3585): Cliente desconectado!
+[WARNING] 19:20:56:648 CPU/(3316:3585): El cliente se desconectó del server
+[INFO] 19:20:56:648 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:20:56:648 CPU/(3316:3586): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:20:57:648 CPU/(3316:3586): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:20:58:648 CPU/(3316:3586): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:20:58:648 CPU/(3316:3586): Cliente desconectado!
+[WARNING] 19:20:58:649 CPU/(3316:3586): El cliente se desconectó del server
+[INFO] 19:20:58:649 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:20:58:649 CPU/(3316:3587): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:20:59:649 CPU/(3316:3587): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:21:00:649 CPU/(3316:3587): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:21:00:649 CPU/(3316:3587): Cliente desconectado!
+[WARNING] 19:21:00:649 CPU/(3316:3587): El cliente se desconectó del server
+[INFO] 19:21:00:649 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:21:00:649 CPU/(3316:3588): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:21:01:649 CPU/(3316:3588): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA1, arg3: 
+[INFO] 19:21:02:650 CPU/(3316:3588): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:21:02:650 CPU/(3316:3588): Cliente desconectado!
+[WARNING] 19:21:02:650 CPU/(3316:3588): El cliente se desconectó del server
+[INFO] 19:21:02:650 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:21:02:650 CPU/(3316:3589): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:21:03:650 CPU/(3316:3589): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA1, arg3: 
+[INFO] 19:21:04:650 CPU/(3316:3589): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:21:04:651 CPU/(3316:3589): Cliente desconectado!
+[WARNING] 19:21:04:651 CPU/(3316:3589): El cliente se desconectó del server
+[INFO] 19:21:04:651 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:21:04:651 CPU/(3316:3599): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:21:05:651 CPU/(3316:3599): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:21:06:651 CPU/(3316:3599): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:21:06:651 CPU/(3316:3599): Cliente desconectado!
+[WARNING] 19:21:06:651 CPU/(3316:3599): El cliente se desconectó del server
+[INFO] 19:21:06:652 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:21:06:652 CPU/(3316:3604): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:21:07:652 CPU/(3316:3604): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:21:08:652 CPU/(3316:3604): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:21:08:652 CPU/(3316:3604): Cliente desconectado!
+[WARNING] 19:21:08:652 CPU/(3316:3604): El cliente se desconectó del server
+[INFO] 19:21:08:652 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:21:08:652 CPU/(3316:3607): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:21:09:653 CPU/(3316:3607): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:21:10:653 CPU/(3316:3607): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:21:10:653 CPU/(3316:3607): Cliente desconectado!
+[WARNING] 19:21:10:653 CPU/(3316:3607): El cliente se desconectó del server
+[INFO] 19:21:10:653 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:21:10:653 CPU/(3316:3608): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:21:11:653 CPU/(3316:3608): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:21:12:653 CPU/(3316:3608): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:21:12:654 CPU/(3316:3608): Cliente desconectado!
+[WARNING] 19:21:12:654 CPU/(3316:3608): El cliente se desconectó del server
+[INFO] 19:21:12:654 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:21:12:654 CPU/(3316:3609): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:21:13:654 CPU/(3316:3609): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA3, arg3: 
+[INFO] 19:21:14:654 CPU/(3316:3609): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:21:14:655 CPU/(3316:3609): Cliente desconectado!
+[WARNING] 19:21:14:655 CPU/(3316:3609): El cliente se desconectó del server
+[INFO] 19:21:14:655 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:21:14:655 CPU/(3316:3610): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:21:15:655 CPU/(3316:3610): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA3, arg3: 
+[INFO] 19:21:16:655 CPU/(3316:3610): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:21:16:655 CPU/(3316:3610): Cliente desconectado!
+[WARNING] 19:21:16:655 CPU/(3316:3610): El cliente se desconectó del server
+[INFO] 19:21:16:656 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:21:16:656 CPU/(3316:3611): PID: 2 - Ejecutando: SET - arg1: RDX, arg2: VAMOSALOSPENALES, arg3: 
+[INFO] 19:21:17:656 CPU/(3316:3611): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:21:17:656 CPU/(3316:3611): Cliente desconectado!
+[WARNING] 19:21:17:656 CPU/(3316:3611): El cliente se desconectó del server
+[INFO] 19:21:17:656 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:21:17:656 CPU/(3316:3612): PID: 3 - Ejecutando: SET - arg1: RDX, arg2: VAMOSALOSPENALES, arg3: 
+[INFO] 19:21:18:656 CPU/(3316:3612): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:21:18:657 CPU/(3316:3612): Cliente desconectado!
+[WARNING] 19:21:18:657 CPU/(3316:3612): El cliente se desconectó del server
+[INFO] 19:21:18:657 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:21:18:657 CPU/(3316:3613): PID: 2 - Ejecutando: SET - arg1: RAX, arg2: ARGENTINACAMPEON, arg3: 
+[INFO] 19:21:19:657 CPU/(3316:3613): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 19:21:19:658 CPU/(3316:3613): Cliente desconectado!
+[WARNING] 19:21:19:658 CPU/(3316:3613): El cliente se desconectó del server
+[INFO] 19:21:19:658 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:21:19:658 CPU/(3316:3614): PID: 3 - Ejecutando: SET - arg1: RAX, arg2: ARGENTINACAMPEON, arg3: 
+[INFO] 19:21:20:658 CPU/(3316:3614): PID: 3 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 19:21:20:659 CPU/(3316:3614): Cliente desconectado!
+[WARNING] 19:21:20:659 CPU/(3316:3614): El cliente se desconectó del server
+[INFO] 19:26:45:501 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:26:45:501 CPU/(3316:4954): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 19:26:45:501 CPU/(3316:4954): Cliente desconectado!
+[WARNING] 19:26:45:501 CPU/(3316:4954): El cliente se desconectó del server
+[INFO] 19:29:26:843 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:29:26:843 CPU/(3316:5050): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 19:29:26:844 CPU/(3316:5050): Cliente desconectado!
+[WARNING] 19:29:26:844 CPU/(3316:5050): El cliente se desconectó del server
+[INFO] 19:29:32:316 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:29:32:316 CPU/(3316:5056): PID: 1 - Ejecutando: SET - arg1: AX, arg2: AAAA, arg3: 
+[INFO] 19:29:33:316 CPU/(3316:5056): PID: 1 - Ejecutando: SET - arg1: BX, arg2: BBBB, arg3: 
+[INFO] 19:29:34:316 CPU/(3316:5056): PID: 1 - Ejecutando: SET - arg1: CX, arg2: CCCC, arg3: 
+[INFO] 19:29:35:317 CPU/(3316:5056): PID: 1 - Ejecutando: SET - arg1: DX, arg2: DDDD, arg3: 
+[INFO] 19:29:36:317 CPU/(3316:5056): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 19:29:37:317 CPU/(3316:5056): PID: 1 - Ejecutando: SET - arg1: EBX, arg2: BBBBBBBB, arg3: 
+[INFO] 19:29:38:317 CPU/(3316:5056): PID: 1 - Ejecutando: SET - arg1: ECX, arg2: CCCCCCCC, arg3: 
+[INFO] 19:29:39:317 CPU/(3316:5056): PID: 1 - Ejecutando: SET - arg1: EDX, arg2: DDDDDDDD, arg3: 
+[INFO] 19:29:40:317 CPU/(3316:5056): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: AAAAAAAAAAAAAAAA, arg3: 
+[INFO] 19:29:41:317 CPU/(3316:5056): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: BBBBBBBBBBBBBBBB, arg3: 
+[INFO] 19:29:42:317 CPU/(3316:5056): PID: 1 - Ejecutando: SET - arg1: RCX, arg2: CCCCCCCCCCCCCCCC, arg3: 
+[INFO] 19:29:43:318 CPU/(3316:5056): PID: 1 - Ejecutando: SET - arg1: RDX, arg2: DDDDDDDDDDDDDDDD, arg3: 
+[INFO] 19:29:44:318 CPU/(3316:5056): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:29:44:318 CPU/(3316:5056): Cliente desconectado!
+[WARNING] 19:29:44:318 CPU/(3316:5056): El cliente se desconectó del server
+[INFO] 19:29:44:318 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:29:44:318 CPU/(3316:5063): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG0, arg3: 
+[INFO] 19:29:45:318 CPU/(3316:5063): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:29:46:318 CPU/(3316:5063): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:29:46:318 CPU/(3316:5063): Cliente desconectado!
+[WARNING] 19:29:46:318 CPU/(3316:5063): El cliente se desconectó del server
+[INFO] 19:29:46:319 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:29:46:319 CPU/(3316:5064): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG0, arg3: 
+[INFO] 19:29:47:319 CPU/(3316:5064): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:29:48:319 CPU/(3316:5064): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:29:48:319 CPU/(3316:5064): Cliente desconectado!
+[WARNING] 19:29:48:320 CPU/(3316:5064): El cliente se desconectó del server
+[INFO] 19:29:48:320 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:29:48:320 CPU/(3316:5065): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG1, arg3: 
+[INFO] 19:29:49:320 CPU/(3316:5065): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:29:50:320 CPU/(3316:5065): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:29:50:320 CPU/(3316:5065): Cliente desconectado!
+[WARNING] 19:29:50:321 CPU/(3316:5065): El cliente se desconectó del server
+[INFO] 19:29:50:321 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:29:50:321 CPU/(3316:5066): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG1, arg3: 
+[INFO] 19:29:51:321 CPU/(3316:5066): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:29:52:321 CPU/(3316:5066): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:29:52:321 CPU/(3316:5066): Cliente desconectado!
+[WARNING] 19:29:52:321 CPU/(3316:5066): El cliente se desconectó del server
+[INFO] 19:29:52:321 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:29:52:322 CPU/(3316:5067): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:29:53:322 CPU/(3316:5067): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:29:54:322 CPU/(3316:5067): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:29:54:322 CPU/(3316:5067): Cliente desconectado!
+[WARNING] 19:29:54:322 CPU/(3316:5067): El cliente se desconectó del server
+[INFO] 19:29:54:322 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:29:54:322 CPU/(3316:5068): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:29:55:323 CPU/(3316:5068): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:29:56:323 CPU/(3316:5068): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:29:56:323 CPU/(3316:5068): Cliente desconectado!
+[WARNING] 19:29:56:323 CPU/(3316:5068): El cliente se desconectó del server
+[INFO] 19:29:56:323 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:29:56:323 CPU/(3316:5069): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: TCHOUAMENIAFUERA, arg3: 
+[INFO] 19:29:57:323 CPU/(3316:5069): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SEGUNDO_FRANCIA_, arg3: 
+[INFO] 19:29:58:324 CPU/(3316:5069): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 19:29:58:324 CPU/(3316:5069): Cliente desconectado!
+[WARNING] 19:29:58:324 CPU/(3316:5069): El cliente se desconectó del server
+[INFO] 19:29:58:324 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:29:58:324 CPU/(3316:5070): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:29:59:324 CPU/(3316:5070): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA1, arg3: 
+[INFO] 19:30:00:324 CPU/(3316:5070): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:30:00:325 CPU/(3316:5070): Cliente desconectado!
+[WARNING] 19:30:00:325 CPU/(3316:5070): El cliente se desconectó del server
+[INFO] 19:30:00:325 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:30:00:325 CPU/(3316:5071): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:30:01:325 CPU/(3316:5071): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA1, arg3: 
+[INFO] 19:30:02:325 CPU/(3316:5071): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:30:02:325 CPU/(3316:5071): Cliente desconectado!
+[WARNING] 19:30:02:325 CPU/(3316:5071): El cliente se desconectó del server
+[INFO] 19:30:02:326 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:30:02:326 CPU/(3316:5080): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:30:03:326 CPU/(3316:5080): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:30:04:326 CPU/(3316:5080): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:30:04:326 CPU/(3316:5080): Cliente desconectado!
+[WARNING] 19:30:04:326 CPU/(3316:5080): El cliente se desconectó del server
+[INFO] 19:30:04:326 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:30:04:326 CPU/(3316:5081): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:30:05:326 CPU/(3316:5081): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:30:06:326 CPU/(3316:5081): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:30:06:327 CPU/(3316:5081): Cliente desconectado!
+[WARNING] 19:30:06:327 CPU/(3316:5081): El cliente se desconectó del server
+[INFO] 19:30:06:327 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:30:06:327 CPU/(3316:5082): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:30:07:327 CPU/(3316:5082): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:30:08:327 CPU/(3316:5082): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:30:08:328 CPU/(3316:5082): Cliente desconectado!
+[WARNING] 19:30:08:328 CPU/(3316:5082): El cliente se desconectó del server
+[INFO] 19:30:08:328 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:30:08:328 CPU/(3316:5086): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:30:09:328 CPU/(3316:5086): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:30:10:328 CPU/(3316:5086): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:30:10:328 CPU/(3316:5086): Cliente desconectado!
+[WARNING] 19:30:10:328 CPU/(3316:5086): El cliente se desconectó del server
+[INFO] 19:30:10:328 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:30:10:328 CPU/(3316:5087): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:30:11:328 CPU/(3316:5087): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA3, arg3: 
+[INFO] 19:30:12:329 CPU/(3316:5087): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:30:12:329 CPU/(3316:5087): Cliente desconectado!
+[WARNING] 19:30:12:329 CPU/(3316:5087): El cliente se desconectó del server
+[INFO] 19:30:12:329 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:30:12:329 CPU/(3316:5091): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:30:13:329 CPU/(3316:5091): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA3, arg3: 
+[INFO] 19:30:14:330 CPU/(3316:5091): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:30:14:330 CPU/(3316:5091): Cliente desconectado!
+[WARNING] 19:30:14:330 CPU/(3316:5091): El cliente se desconectó del server
+[INFO] 19:30:14:330 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:30:14:330 CPU/(3316:5102): PID: 2 - Ejecutando: SET - arg1: RDX, arg2: VAMOSALOSPENALES, arg3: 
+[INFO] 19:30:15:330 CPU/(3316:5102): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:30:15:330 CPU/(3316:5102): Cliente desconectado!
+[WARNING] 19:30:15:330 CPU/(3316:5102): El cliente se desconectó del server
+[INFO] 19:30:15:330 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:30:15:330 CPU/(3316:5103): PID: 3 - Ejecutando: SET - arg1: RDX, arg2: VAMOSALOSPENALES, arg3: 
+[INFO] 19:30:16:331 CPU/(3316:5103): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:30:16:331 CPU/(3316:5103): Cliente desconectado!
+[WARNING] 19:30:16:331 CPU/(3316:5103): El cliente se desconectó del server
+[INFO] 19:30:16:331 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:30:16:331 CPU/(3316:5104): PID: 2 - Ejecutando: SET - arg1: RAX, arg2: ARGENTINACAMPEON, arg3: 
+[INFO] 19:30:17:331 CPU/(3316:5104): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 19:30:17:331 CPU/(3316:5104): Cliente desconectado!
+[WARNING] 19:30:17:331 CPU/(3316:5104): El cliente se desconectó del server
+[INFO] 19:30:17:331 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:30:17:332 CPU/(3316:5105): PID: 3 - Ejecutando: SET - arg1: RAX, arg2: ARGENTINACAMPEON, arg3: 
+[INFO] 19:30:18:332 CPU/(3316:5105): PID: 3 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 19:30:18:332 CPU/(3316:5105): Cliente desconectado!
+[WARNING] 19:30:18:332 CPU/(3316:5105): El cliente se desconectó del server
+[INFO] 19:35:17:333 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:35:17:334 CPU/(3316:5845): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 19:35:17:334 CPU/(3316:5845): Cliente desconectado!
+[WARNING] 19:35:17:334 CPU/(3316:5845): El cliente se desconectó del server
+[INFO] 19:35:22:355 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:35:22:355 CPU/(3316:5851): PID: 1 - Ejecutando: SET - arg1: AX, arg2: AAAA, arg3: 
+[INFO] 19:35:23:355 CPU/(3316:5851): PID: 1 - Ejecutando: SET - arg1: BX, arg2: BBBB, arg3: 
+[INFO] 19:35:24:355 CPU/(3316:5851): PID: 1 - Ejecutando: SET - arg1: CX, arg2: CCCC, arg3: 
+[INFO] 19:35:25:355 CPU/(3316:5851): PID: 1 - Ejecutando: SET - arg1: DX, arg2: DDDD, arg3: 
+[INFO] 19:35:26:355 CPU/(3316:5851): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 19:35:27:356 CPU/(3316:5851): PID: 1 - Ejecutando: SET - arg1: EBX, arg2: BBBBBBBB, arg3: 
+[INFO] 19:35:28:356 CPU/(3316:5851): PID: 1 - Ejecutando: SET - arg1: ECX, arg2: CCCCCCCC, arg3: 
+[INFO] 19:35:29:356 CPU/(3316:5851): PID: 1 - Ejecutando: SET - arg1: EDX, arg2: DDDDDDDD, arg3: 
+[INFO] 19:35:30:356 CPU/(3316:5851): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: AAAAAAAAAAAAAAAA, arg3: 
+[INFO] 19:35:31:356 CPU/(3316:5851): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: BBBBBBBBBBBBBBBB, arg3: 
+[INFO] 19:35:32:356 CPU/(3316:5851): PID: 1 - Ejecutando: SET - arg1: RCX, arg2: CCCCCCCCCCCCCCCC, arg3: 
+[INFO] 19:35:33:357 CPU/(3316:5851): PID: 1 - Ejecutando: SET - arg1: RDX, arg2: DDDDDDDDDDDDDDDD, arg3: 
+[INFO] 19:35:34:357 CPU/(3316:5851): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:35:34:357 CPU/(3316:5851): Cliente desconectado!
+[WARNING] 19:35:34:357 CPU/(3316:5851): El cliente se desconectó del server
+[INFO] 19:35:34:357 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:35:34:357 CPU/(3316:5858): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG0, arg3: 
+[INFO] 19:35:35:357 CPU/(3316:5858): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:35:36:358 CPU/(3316:5858): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:35:36:358 CPU/(3316:5858): Cliente desconectado!
+[WARNING] 19:35:36:358 CPU/(3316:5858): El cliente se desconectó del server
+[INFO] 19:35:36:358 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:35:36:358 CPU/(3316:5859): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG0, arg3: 
+[INFO] 19:35:37:358 CPU/(3316:5859): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:35:38:358 CPU/(3316:5859): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:35:38:358 CPU/(3316:5859): Cliente desconectado!
+[WARNING] 19:35:38:358 CPU/(3316:5859): El cliente se desconectó del server
+[INFO] 19:35:38:358 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:35:38:358 CPU/(3316:5860): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG1, arg3: 
+[INFO] 19:35:39:359 CPU/(3316:5860): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:35:40:359 CPU/(3316:5860): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:35:40:359 CPU/(3316:5860): Cliente desconectado!
+[WARNING] 19:35:40:359 CPU/(3316:5860): El cliente se desconectó del server
+[INFO] 19:35:40:359 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:35:40:359 CPU/(3316:5861): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG1, arg3: 
+[INFO] 19:35:41:359 CPU/(3316:5861): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:35:42:359 CPU/(3316:5861): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:35:42:360 CPU/(3316:5861): Cliente desconectado!
+[WARNING] 19:35:42:360 CPU/(3316:5861): El cliente se desconectó del server
+[INFO] 19:35:42:360 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:35:42:360 CPU/(3316:5862): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:35:43:360 CPU/(3316:5862): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:35:44:360 CPU/(3316:5862): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:35:44:360 CPU/(3316:5862): Cliente desconectado!
+[WARNING] 19:35:44:360 CPU/(3316:5862): El cliente se desconectó del server
+[INFO] 19:35:44:360 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:35:44:360 CPU/(3316:5863): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:35:45:360 CPU/(3316:5863): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:35:46:361 CPU/(3316:5863): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:35:46:361 CPU/(3316:5863): Cliente desconectado!
+[WARNING] 19:35:46:361 CPU/(3316:5863): El cliente se desconectó del server
+[INFO] 19:35:46:361 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:35:46:361 CPU/(3316:5864): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: TCHOUAMENIAFUERA, arg3: 
+[INFO] 19:35:47:361 CPU/(3316:5864): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SEGUNDO_FRANCIA_, arg3: 
+[INFO] 19:35:48:361 CPU/(3316:5864): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 19:35:48:361 CPU/(3316:5864): Cliente desconectado!
+[WARNING] 19:35:48:361 CPU/(3316:5864): El cliente se desconectó del server
+[INFO] 19:35:48:362 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:35:48:362 CPU/(3316:5866): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:35:49:362 CPU/(3316:5866): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA1, arg3: 
+[INFO] 19:35:50:362 CPU/(3316:5866): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:35:50:362 CPU/(3316:5866): Cliente desconectado!
+[WARNING] 19:35:50:362 CPU/(3316:5866): El cliente se desconectó del server
+[INFO] 19:35:50:362 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:35:50:362 CPU/(3316:5867): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:35:51:362 CPU/(3316:5867): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA1, arg3: 
+[INFO] 19:35:52:363 CPU/(3316:5867): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:35:52:363 CPU/(3316:5867): Cliente desconectado!
+[WARNING] 19:35:52:363 CPU/(3316:5867): El cliente se desconectó del server
+[INFO] 19:35:52:363 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:35:52:363 CPU/(3316:5868): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:35:53:363 CPU/(3316:5868): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:35:54:363 CPU/(3316:5868): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:35:54:363 CPU/(3316:5868): Cliente desconectado!
+[WARNING] 19:35:54:363 CPU/(3316:5868): El cliente se desconectó del server
+[INFO] 19:35:54:364 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:35:54:364 CPU/(3316:5869): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:35:55:364 CPU/(3316:5869): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:35:56:364 CPU/(3316:5869): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:35:56:364 CPU/(3316:5869): Cliente desconectado!
+[WARNING] 19:35:56:364 CPU/(3316:5869): El cliente se desconectó del server
+[INFO] 19:35:56:364 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:35:56:365 CPU/(3316:5870): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:35:57:365 CPU/(3316:5870): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:35:58:365 CPU/(3316:5870): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:35:58:365 CPU/(3316:5870): Cliente desconectado!
+[WARNING] 19:35:58:365 CPU/(3316:5870): El cliente se desconectó del server
+[INFO] 19:35:58:365 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:35:58:365 CPU/(3316:5871): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:35:59:365 CPU/(3316:5871): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:36:00:366 CPU/(3316:5871): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:36:00:366 CPU/(3316:5871): Cliente desconectado!
+[WARNING] 19:36:00:366 CPU/(3316:5871): El cliente se desconectó del server
+[INFO] 19:36:00:366 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:36:00:366 CPU/(3316:5872): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:36:01:367 CPU/(3316:5872): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA3, arg3: 
+[INFO] 19:36:02:367 CPU/(3316:5872): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:36:02:367 CPU/(3316:5872): Cliente desconectado!
+[WARNING] 19:36:02:367 CPU/(3316:5872): El cliente se desconectó del server
+[INFO] 19:36:02:367 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:36:02:367 CPU/(3316:5873): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:36:03:367 CPU/(3316:5873): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA3, arg3: 
+[INFO] 19:36:04:367 CPU/(3316:5873): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:36:04:367 CPU/(3316:5873): Cliente desconectado!
+[WARNING] 19:36:04:367 CPU/(3316:5873): El cliente se desconectó del server
+[INFO] 19:36:04:367 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:36:04:368 CPU/(3316:5874): PID: 2 - Ejecutando: SET - arg1: RDX, arg2: VAMOSALOSPENALES, arg3: 
+[INFO] 19:36:05:368 CPU/(3316:5874): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:36:05:368 CPU/(3316:5874): Cliente desconectado!
+[WARNING] 19:36:05:368 CPU/(3316:5874): El cliente se desconectó del server
+[INFO] 19:36:05:368 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:36:05:368 CPU/(3316:5888): PID: 3 - Ejecutando: SET - arg1: RDX, arg2: VAMOSALOSPENALES, arg3: 
+[INFO] 19:36:06:368 CPU/(3316:5888): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:36:06:368 CPU/(3316:5888): Cliente desconectado!
+[WARNING] 19:36:06:368 CPU/(3316:5888): El cliente se desconectó del server
+[INFO] 19:36:06:368 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:36:06:368 CPU/(3316:5889): PID: 2 - Ejecutando: SET - arg1: RAX, arg2: ARGENTINACAMPEON, arg3: 
+[INFO] 19:36:07:368 CPU/(3316:5889): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 19:36:07:369 CPU/(3316:5889): Cliente desconectado!
+[WARNING] 19:36:07:369 CPU/(3316:5889): El cliente se desconectó del server
+[INFO] 19:36:07:369 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:36:07:369 CPU/(3316:5890): PID: 3 - Ejecutando: SET - arg1: RAX, arg2: ARGENTINACAMPEON, arg3: 
+[INFO] 19:36:08:369 CPU/(3316:5890): PID: 3 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 19:36:08:369 CPU/(3316:5890): Cliente desconectado!
+[WARNING] 19:36:08:369 CPU/(3316:5890): El cliente se desconectó del server
+[INFO] 19:40:57:298 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:40:57:298 CPU/(3316:5982): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 19:40:57:299 CPU/(3316:5982): Cliente desconectado!
+[WARNING] 19:40:57:299 CPU/(3316:5982): El cliente se desconectó del server
+[INFO] 19:44:46:327 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:44:46:327 CPU/(3316:6479): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 19:44:46:327 CPU/(3316:6479): Cliente desconectado!
+[WARNING] 19:44:46:327 CPU/(3316:6479): El cliente se desconectó del server
+[INFO] 19:44:52:046 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:44:52:046 CPU/(3316:6486): PID: 1 - Ejecutando: SET - arg1: AX, arg2: AAAA, arg3: 
+[INFO] 19:44:53:046 CPU/(3316:6486): PID: 1 - Ejecutando: SET - arg1: BX, arg2: BBBB, arg3: 
+[INFO] 19:44:54:046 CPU/(3316:6486): PID: 1 - Ejecutando: SET - arg1: CX, arg2: CCCC, arg3: 
+[INFO] 19:44:55:046 CPU/(3316:6486): PID: 1 - Ejecutando: SET - arg1: DX, arg2: DDDD, arg3: 
+[INFO] 19:44:56:046 CPU/(3316:6486): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 19:44:57:046 CPU/(3316:6486): PID: 1 - Ejecutando: SET - arg1: EBX, arg2: BBBBBBBB, arg3: 
+[INFO] 19:44:58:046 CPU/(3316:6486): PID: 1 - Ejecutando: SET - arg1: ECX, arg2: CCCCCCCC, arg3: 
+[INFO] 19:44:59:046 CPU/(3316:6486): PID: 1 - Ejecutando: SET - arg1: EDX, arg2: DDDDDDDD, arg3: 
+[INFO] 19:45:00:047 CPU/(3316:6486): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: AAAAAAAAAAAAAAAA, arg3: 
+[INFO] 19:45:01:047 CPU/(3316:6486): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: BBBBBBBBBBBBBBBB, arg3: 
+[INFO] 19:45:02:047 CPU/(3316:6486): PID: 1 - Ejecutando: SET - arg1: RCX, arg2: CCCCCCCCCCCCCCCC, arg3: 
+[INFO] 19:45:03:047 CPU/(3316:6486): PID: 1 - Ejecutando: SET - arg1: RDX, arg2: DDDDDDDDDDDDDDDD, arg3: 
+[INFO] 19:45:04:047 CPU/(3316:6486): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:45:04:047 CPU/(3316:6486): Cliente desconectado!
+[WARNING] 19:45:04:047 CPU/(3316:6486): El cliente se desconectó del server
+[INFO] 19:45:04:048 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:45:04:048 CPU/(3316:6494): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG0, arg3: 
+[INFO] 19:45:05:048 CPU/(3316:6494): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:45:06:048 CPU/(3316:6494): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:45:06:048 CPU/(3316:6494): Cliente desconectado!
+[WARNING] 19:45:06:048 CPU/(3316:6494): El cliente se desconectó del server
+[INFO] 19:45:06:049 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:45:06:049 CPU/(3316:6495): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG0, arg3: 
+[INFO] 19:45:07:049 CPU/(3316:6495): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:45:08:049 CPU/(3316:6495): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:45:08:049 CPU/(3316:6495): Cliente desconectado!
+[WARNING] 19:45:08:049 CPU/(3316:6495): El cliente se desconectó del server
+[INFO] 19:45:08:049 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:45:08:049 CPU/(3316:6496): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG1, arg3: 
+[INFO] 19:45:09:050 CPU/(3316:6496): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:45:10:050 CPU/(3316:6496): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:45:10:050 CPU/(3316:6496): Cliente desconectado!
+[WARNING] 19:45:10:050 CPU/(3316:6496): El cliente se desconectó del server
+[INFO] 19:45:10:050 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:45:10:050 CPU/(3316:6497): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG1, arg3: 
+[INFO] 19:45:11:050 CPU/(3316:6497): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:45:12:050 CPU/(3316:6497): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:45:12:051 CPU/(3316:6497): Cliente desconectado!
+[WARNING] 19:45:12:051 CPU/(3316:6497): El cliente se desconectó del server
+[INFO] 19:45:12:051 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:45:12:051 CPU/(3316:6498): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:45:13:051 CPU/(3316:6498): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:45:14:051 CPU/(3316:6498): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:45:14:051 CPU/(3316:6498): Cliente desconectado!
+[WARNING] 19:45:14:051 CPU/(3316:6498): El cliente se desconectó del server
+[INFO] 19:45:14:051 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:45:14:051 CPU/(3316:6511): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:45:15:051 CPU/(3316:6511): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:45:16:052 CPU/(3316:6511): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:45:16:052 CPU/(3316:6511): Cliente desconectado!
+[WARNING] 19:45:16:052 CPU/(3316:6511): El cliente se desconectó del server
+[INFO] 19:45:16:052 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:45:16:052 CPU/(3316:6512): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: TCHOUAMENIAFUERA, arg3: 
+[INFO] 19:45:17:052 CPU/(3316:6512): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SEGUNDO_FRANCIA_, arg3: 
+[INFO] 19:45:18:052 CPU/(3316:6512): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 19:45:18:052 CPU/(3316:6512): Cliente desconectado!
+[WARNING] 19:45:18:052 CPU/(3316:6512): El cliente se desconectó del server
+[INFO] 19:45:18:052 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:45:18:053 CPU/(3316:6513): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:45:19:053 CPU/(3316:6513): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA1, arg3: 
+[INFO] 19:45:20:053 CPU/(3316:6513): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:45:20:053 CPU/(3316:6513): Cliente desconectado!
+[WARNING] 19:45:20:053 CPU/(3316:6513): El cliente se desconectó del server
+[INFO] 19:45:20:053 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:45:20:053 CPU/(3316:6514): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:45:21:053 CPU/(3316:6514): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA1, arg3: 
+[INFO] 19:45:22:053 CPU/(3316:6514): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:45:22:053 CPU/(3316:6514): Cliente desconectado!
+[WARNING] 19:45:22:053 CPU/(3316:6514): El cliente se desconectó del server
+[INFO] 19:45:22:054 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:45:22:054 CPU/(3316:6516): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:45:23:054 CPU/(3316:6516): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:45:24:054 CPU/(3316:6516): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:45:24:054 CPU/(3316:6516): Cliente desconectado!
+[WARNING] 19:45:24:054 CPU/(3316:6516): El cliente se desconectó del server
+[INFO] 19:45:24:065 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:45:24:065 CPU/(3316:6517): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:45:25:065 CPU/(3316:6517): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:45:26:065 CPU/(3316:6517): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:45:26:065 CPU/(3316:6517): Cliente desconectado!
+[WARNING] 19:45:26:065 CPU/(3316:6517): El cliente se desconectó del server
+[INFO] 19:45:26:077 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:45:26:077 CPU/(3316:6518): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:45:27:077 CPU/(3316:6518): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:45:28:077 CPU/(3316:6518): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:45:28:077 CPU/(3316:6518): Cliente desconectado!
+[WARNING] 19:45:28:077 CPU/(3316:6518): El cliente se desconectó del server
+[INFO] 19:45:28:089 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:45:28:089 CPU/(3316:6519): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:45:29:089 CPU/(3316:6519): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:45:30:089 CPU/(3316:6519): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:45:30:089 CPU/(3316:6519): Cliente desconectado!
+[WARNING] 19:45:30:089 CPU/(3316:6519): El cliente se desconectó del server
+[INFO] 19:45:30:089 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:45:30:089 CPU/(3316:6520): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:45:31:090 CPU/(3316:6520): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA3, arg3: 
+[INFO] 19:45:32:090 CPU/(3316:6520): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:45:32:090 CPU/(3316:6520): Cliente desconectado!
+[WARNING] 19:45:32:090 CPU/(3316:6520): El cliente se desconectó del server
+[INFO] 19:45:32:090 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:45:32:090 CPU/(3316:6521): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:45:33:090 CPU/(3316:6521): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA3, arg3: 
+[INFO] 19:45:34:090 CPU/(3316:6521): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:45:34:090 CPU/(3316:6521): Cliente desconectado!
+[WARNING] 19:45:34:090 CPU/(3316:6521): El cliente se desconectó del server
+[INFO] 19:45:34:090 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:45:34:091 CPU/(3316:6522): PID: 2 - Ejecutando: SET - arg1: RDX, arg2: VAMOSALOSPENALES, arg3: 
+[INFO] 19:45:35:091 CPU/(3316:6522): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:45:35:091 CPU/(3316:6522): Cliente desconectado!
+[WARNING] 19:45:35:091 CPU/(3316:6522): El cliente se desconectó del server
+[INFO] 19:45:35:091 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:45:35:091 CPU/(3316:6523): PID: 3 - Ejecutando: SET - arg1: RDX, arg2: VAMOSALOSPENALES, arg3: 
+[INFO] 19:45:36:091 CPU/(3316:6523): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:45:36:091 CPU/(3316:6523): Cliente desconectado!
+[WARNING] 19:45:36:091 CPU/(3316:6523): El cliente se desconectó del server
+[INFO] 19:45:36:092 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:45:36:092 CPU/(3316:6524): PID: 2 - Ejecutando: SET - arg1: RAX, arg2: ARGENTINACAMPEON, arg3: 
+[INFO] 19:45:37:092 CPU/(3316:6524): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 19:45:37:092 CPU/(3316:6524): Cliente desconectado!
+[WARNING] 19:45:37:092 CPU/(3316:6524): El cliente se desconectó del server
+[INFO] 19:45:37:092 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:45:37:092 CPU/(3316:6525): PID: 3 - Ejecutando: SET - arg1: RAX, arg2: ARGENTINACAMPEON, arg3: 
+[INFO] 19:45:38:092 CPU/(3316:6525): PID: 3 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 19:45:38:092 CPU/(3316:6525): Cliente desconectado!
+[WARNING] 19:45:38:092 CPU/(3316:6525): El cliente se desconectó del server
+[INFO] 19:48:45:132 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:48:45:132 CPU/(3316:6745): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 19:48:45:132 CPU/(3316:6745): Cliente desconectado!
+[WARNING] 19:48:45:132 CPU/(3316:6745): El cliente se desconectó del server
+[INFO] 19:49:03:901 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:49:03:901 CPU/(3316:6755): PID: 1 - Ejecutando: SET - arg1: AX, arg2: AAAA, arg3: 
+[INFO] 19:49:04:901 CPU/(3316:6755): PID: 1 - Ejecutando: SET - arg1: BX, arg2: BBBB, arg3: 
+[INFO] 19:49:05:901 CPU/(3316:6755): PID: 1 - Ejecutando: SET - arg1: CX, arg2: CCCC, arg3: 
+[INFO] 19:49:06:901 CPU/(3316:6755): PID: 1 - Ejecutando: SET - arg1: DX, arg2: DDDD, arg3: 
+[INFO] 19:49:07:901 CPU/(3316:6755): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 19:49:08:902 CPU/(3316:6755): PID: 1 - Ejecutando: SET - arg1: EBX, arg2: BBBBBBBB, arg3: 
+[INFO] 19:49:09:902 CPU/(3316:6755): PID: 1 - Ejecutando: SET - arg1: ECX, arg2: CCCCCCCC, arg3: 
+[INFO] 19:49:10:902 CPU/(3316:6755): PID: 1 - Ejecutando: SET - arg1: EDX, arg2: DDDDDDDD, arg3: 
+[INFO] 19:49:11:902 CPU/(3316:6755): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: AAAAAAAAAAAAAAAA, arg3: 
+[INFO] 19:49:12:902 CPU/(3316:6755): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: BBBBBBBBBBBBBBBB, arg3: 
+[INFO] 19:49:13:902 CPU/(3316:6755): PID: 1 - Ejecutando: SET - arg1: RCX, arg2: CCCCCCCCCCCCCCCC, arg3: 
+[INFO] 19:49:14:903 CPU/(3316:6755): PID: 1 - Ejecutando: SET - arg1: RDX, arg2: DDDDDDDDDDDDDDDD, arg3: 
+[INFO] 19:49:15:903 CPU/(3316:6755): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:49:15:903 CPU/(3316:6755): Cliente desconectado!
+[WARNING] 19:49:15:903 CPU/(3316:6755): El cliente se desconectó del server
+[INFO] 19:49:15:903 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:49:15:903 CPU/(3316:6762): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG0, arg3: 
+[INFO] 19:49:16:903 CPU/(3316:6762): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:49:17:903 CPU/(3316:6762): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:49:17:903 CPU/(3316:6762): Cliente desconectado!
+[WARNING] 19:49:17:903 CPU/(3316:6762): El cliente se desconectó del server
+[INFO] 19:49:17:903 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:49:17:903 CPU/(3316:6763): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG0, arg3: 
+[INFO] 19:49:18:904 CPU/(3316:6763): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:49:19:904 CPU/(3316:6763): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:49:19:904 CPU/(3316:6763): Cliente desconectado!
+[WARNING] 19:49:19:904 CPU/(3316:6763): El cliente se desconectó del server
+[INFO] 19:49:19:904 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:49:19:904 CPU/(3316:6764): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG1, arg3: 
+[INFO] 19:49:20:904 CPU/(3316:6764): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:49:21:904 CPU/(3316:6764): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:49:21:904 CPU/(3316:6764): Cliente desconectado!
+[WARNING] 19:49:21:904 CPU/(3316:6764): El cliente se desconectó del server
+[INFO] 19:49:21:905 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:49:21:905 CPU/(3316:6766): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG1, arg3: 
+[INFO] 19:49:22:905 CPU/(3316:6766): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:49:23:905 CPU/(3316:6766): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:49:23:905 CPU/(3316:6766): Cliente desconectado!
+[WARNING] 19:49:23:905 CPU/(3316:6766): El cliente se desconectó del server
+[INFO] 19:49:23:906 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:49:23:906 CPU/(3316:6767): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:49:24:906 CPU/(3316:6767): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:49:25:906 CPU/(3316:6767): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:49:25:906 CPU/(3316:6767): Cliente desconectado!
+[WARNING] 19:49:25:906 CPU/(3316:6767): El cliente se desconectó del server
+[INFO] 19:49:25:906 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:49:25:907 CPU/(3316:6768): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:49:26:907 CPU/(3316:6768): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:49:27:907 CPU/(3316:6768): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:49:27:907 CPU/(3316:6768): Cliente desconectado!
+[WARNING] 19:49:27:907 CPU/(3316:6768): El cliente se desconectó del server
+[INFO] 19:49:27:907 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:49:27:907 CPU/(3316:6769): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: TCHOUAMENIAFUERA, arg3: 
+[INFO] 19:49:28:907 CPU/(3316:6769): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SEGUNDO_FRANCIA_, arg3: 
+[INFO] 19:49:29:907 CPU/(3316:6769): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 19:49:29:907 CPU/(3316:6769): Cliente desconectado!
+[WARNING] 19:49:29:907 CPU/(3316:6769): El cliente se desconectó del server
+[INFO] 19:49:29:908 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:49:29:908 CPU/(3316:6770): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:49:30:908 CPU/(3316:6770): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA1, arg3: 
+[INFO] 19:49:31:908 CPU/(3316:6770): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:49:31:908 CPU/(3316:6770): Cliente desconectado!
+[WARNING] 19:49:31:908 CPU/(3316:6770): El cliente se desconectó del server
+[INFO] 19:49:31:908 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:49:31:908 CPU/(3316:6778): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:49:32:908 CPU/(3316:6778): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA1, arg3: 
+[INFO] 19:49:33:908 CPU/(3316:6778): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:49:33:908 CPU/(3316:6778): Cliente desconectado!
+[WARNING] 19:49:33:908 CPU/(3316:6778): El cliente se desconectó del server
+[INFO] 19:49:33:909 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:49:33:909 CPU/(3316:6780): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:49:34:909 CPU/(3316:6780): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:49:35:909 CPU/(3316:6780): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:49:35:909 CPU/(3316:6780): Cliente desconectado!
+[WARNING] 19:49:35:909 CPU/(3316:6780): El cliente se desconectó del server
+[INFO] 19:49:35:909 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:49:35:909 CPU/(3316:6794): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:49:36:909 CPU/(3316:6794): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:49:37:910 CPU/(3316:6794): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:49:37:910 CPU/(3316:6794): Cliente desconectado!
+[WARNING] 19:49:37:910 CPU/(3316:6794): El cliente se desconectó del server
+[INFO] 19:49:37:910 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:49:37:910 CPU/(3316:6796): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:49:38:910 CPU/(3316:6796): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:49:39:910 CPU/(3316:6796): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:49:39:910 CPU/(3316:6796): Cliente desconectado!
+[WARNING] 19:49:39:910 CPU/(3316:6796): El cliente se desconectó del server
+[INFO] 19:49:39:910 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:49:39:911 CPU/(3316:6797): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:49:40:911 CPU/(3316:6797): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:49:41:911 CPU/(3316:6797): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:49:41:911 CPU/(3316:6797): Cliente desconectado!
+[WARNING] 19:49:41:911 CPU/(3316:6797): El cliente se desconectó del server
+[INFO] 19:49:41:911 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:49:41:911 CPU/(3316:6801): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:49:42:911 CPU/(3316:6801): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA3, arg3: 
+[INFO] 19:49:43:911 CPU/(3316:6801): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:49:43:912 CPU/(3316:6801): Cliente desconectado!
+[WARNING] 19:49:43:912 CPU/(3316:6801): El cliente se desconectó del server
+[INFO] 19:49:43:912 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:49:43:912 CPU/(3316:6802): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:49:44:912 CPU/(3316:6802): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA3, arg3: 
+[INFO] 19:49:45:912 CPU/(3316:6802): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:49:45:912 CPU/(3316:6802): Cliente desconectado!
+[WARNING] 19:49:45:912 CPU/(3316:6802): El cliente se desconectó del server
+[INFO] 19:49:45:912 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:49:45:912 CPU/(3316:6809): PID: 2 - Ejecutando: SET - arg1: RDX, arg2: VAMOSALOSPENALES, arg3: 
+[INFO] 19:49:46:913 CPU/(3316:6809): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:49:46:913 CPU/(3316:6809): Cliente desconectado!
+[WARNING] 19:49:46:913 CPU/(3316:6809): El cliente se desconectó del server
+[INFO] 19:49:46:913 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:49:46:913 CPU/(3316:6811): PID: 3 - Ejecutando: SET - arg1: RDX, arg2: VAMOSALOSPENALES, arg3: 
+[INFO] 19:49:47:913 CPU/(3316:6811): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:49:47:913 CPU/(3316:6811): Cliente desconectado!
+[WARNING] 19:49:47:913 CPU/(3316:6811): El cliente se desconectó del server
+[INFO] 19:49:47:913 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:49:47:913 CPU/(3316:6812): PID: 2 - Ejecutando: SET - arg1: RAX, arg2: ARGENTINACAMPEON, arg3: 
+[INFO] 19:49:48:913 CPU/(3316:6812): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 19:49:48:914 CPU/(3316:6812): Cliente desconectado!
+[WARNING] 19:49:48:914 CPU/(3316:6812): El cliente se desconectó del server
+[INFO] 19:49:48:914 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:49:48:914 CPU/(3316:6813): PID: 3 - Ejecutando: SET - arg1: RAX, arg2: ARGENTINACAMPEON, arg3: 
+[INFO] 19:49:49:914 CPU/(3316:6813): PID: 3 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 19:49:49:914 CPU/(3316:6813): Cliente desconectado!
+[WARNING] 19:49:49:914 CPU/(3316:6813): El cliente se desconectó del server
+[INFO] 19:50:54:096 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:50:54:096 CPU/(3316:6925): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 19:50:54:096 CPU/(3316:6925): Cliente desconectado!
+[WARNING] 19:50:54:096 CPU/(3316:6925): El cliente se desconectó del server
+[INFO] 19:51:02:491 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:51:02:491 CPU/(3316:6932): PID: 1 - Ejecutando: SET - arg1: AX, arg2: AAAA, arg3: 
+[INFO] 19:51:03:491 CPU/(3316:6932): PID: 1 - Ejecutando: SET - arg1: BX, arg2: BBBB, arg3: 
+[INFO] 19:51:04:491 CPU/(3316:6932): PID: 1 - Ejecutando: SET - arg1: CX, arg2: CCCC, arg3: 
+[INFO] 19:51:05:491 CPU/(3316:6932): PID: 1 - Ejecutando: SET - arg1: DX, arg2: DDDD, arg3: 
+[INFO] 19:51:06:491 CPU/(3316:6932): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 19:51:07:492 CPU/(3316:6932): PID: 1 - Ejecutando: SET - arg1: EBX, arg2: BBBBBBBB, arg3: 
+[INFO] 19:51:08:492 CPU/(3316:6932): PID: 1 - Ejecutando: SET - arg1: ECX, arg2: CCCCCCCC, arg3: 
+[INFO] 19:51:09:492 CPU/(3316:6932): PID: 1 - Ejecutando: SET - arg1: EDX, arg2: DDDDDDDD, arg3: 
+[INFO] 19:51:10:492 CPU/(3316:6932): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: AAAAAAAAAAAAAAAA, arg3: 
+[INFO] 19:51:11:492 CPU/(3316:6932): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: BBBBBBBBBBBBBBBB, arg3: 
+[INFO] 19:51:12:493 CPU/(3316:6932): PID: 1 - Ejecutando: SET - arg1: RCX, arg2: CCCCCCCCCCCCCCCC, arg3: 
+[INFO] 19:51:13:493 CPU/(3316:6932): PID: 1 - Ejecutando: SET - arg1: RDX, arg2: DDDDDDDDDDDDDDDD, arg3: 
+[INFO] 19:51:14:493 CPU/(3316:6932): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:51:14:493 CPU/(3316:6932): Cliente desconectado!
+[WARNING] 19:51:14:493 CPU/(3316:6932): El cliente se desconectó del server
+[INFO] 19:51:14:493 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:51:14:493 CPU/(3316:6940): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG0, arg3: 
+[INFO] 19:51:15:493 CPU/(3316:6940): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:51:16:493 CPU/(3316:6940): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:51:16:494 CPU/(3316:6940): Cliente desconectado!
+[WARNING] 19:51:16:494 CPU/(3316:6940): El cliente se desconectó del server
+[INFO] 19:51:16:494 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:51:16:494 CPU/(3316:6941): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG0, arg3: 
+[INFO] 19:51:17:494 CPU/(3316:6941): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:51:18:494 CPU/(3316:6941): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:51:18:494 CPU/(3316:6941): Cliente desconectado!
+[WARNING] 19:51:18:494 CPU/(3316:6941): El cliente se desconectó del server
+[INFO] 19:51:18:494 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:51:18:494 CPU/(3316:6942): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG1, arg3: 
+[INFO] 19:51:19:494 CPU/(3316:6942): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:51:20:495 CPU/(3316:6942): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:51:20:495 CPU/(3316:6942): Cliente desconectado!
+[WARNING] 19:51:20:495 CPU/(3316:6942): El cliente se desconectó del server
+[INFO] 19:51:20:495 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:51:20:495 CPU/(3316:6949): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG1, arg3: 
+[INFO] 19:51:21:495 CPU/(3316:6949): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:51:22:495 CPU/(3316:6949): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:51:22:495 CPU/(3316:6949): Cliente desconectado!
+[WARNING] 19:51:22:495 CPU/(3316:6949): El cliente se desconectó del server
+[INFO] 19:51:22:495 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:51:22:496 CPU/(3316:6950): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:51:23:496 CPU/(3316:6950): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:51:24:496 CPU/(3316:6950): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:51:24:496 CPU/(3316:6950): Cliente desconectado!
+[WARNING] 19:51:24:496 CPU/(3316:6950): El cliente se desconectó del server
+[INFO] 19:51:24:496 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:51:24:496 CPU/(3316:6955): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:51:25:496 CPU/(3316:6955): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:51:26:497 CPU/(3316:6955): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:51:26:497 CPU/(3316:6955): Cliente desconectado!
+[WARNING] 19:51:26:497 CPU/(3316:6955): El cliente se desconectó del server
+[INFO] 19:51:26:497 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:51:26:497 CPU/(3316:6956): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: TCHOUAMENIAFUERA, arg3: 
+[INFO] 19:51:27:497 CPU/(3316:6956): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SEGUNDO_FRANCIA_, arg3: 
+[INFO] 19:51:28:497 CPU/(3316:6956): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 19:51:28:498 CPU/(3316:6956): Cliente desconectado!
+[WARNING] 19:51:28:498 CPU/(3316:6956): El cliente se desconectó del server
+[INFO] 19:51:28:498 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:51:28:498 CPU/(3316:6957): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:51:29:498 CPU/(3316:6957): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA1, arg3: 
+[INFO] 19:51:30:498 CPU/(3316:6957): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:51:30:498 CPU/(3316:6957): Cliente desconectado!
+[WARNING] 19:51:30:498 CPU/(3316:6957): El cliente se desconectó del server
+[INFO] 19:51:30:498 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:51:30:498 CPU/(3316:6961): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:51:31:498 CPU/(3316:6961): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA1, arg3: 
+[INFO] 19:51:32:499 CPU/(3316:6961): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:51:32:499 CPU/(3316:6961): Cliente desconectado!
+[WARNING] 19:51:32:499 CPU/(3316:6961): El cliente se desconectó del server
+[INFO] 19:51:32:499 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:51:32:499 CPU/(3316:6962): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:51:33:499 CPU/(3316:6962): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:51:34:499 CPU/(3316:6962): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:51:34:499 CPU/(3316:6962): Cliente desconectado!
+[WARNING] 19:51:34:500 CPU/(3316:6962): El cliente se desconectó del server
+[INFO] 19:51:34:500 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:51:34:500 CPU/(3316:6963): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:51:35:500 CPU/(3316:6963): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:51:36:500 CPU/(3316:6963): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:51:36:500 CPU/(3316:6963): Cliente desconectado!
+[WARNING] 19:51:36:500 CPU/(3316:6963): El cliente se desconectó del server
+[INFO] 19:51:36:500 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:51:36:500 CPU/(3316:6964): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:51:37:500 CPU/(3316:6964): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:51:38:500 CPU/(3316:6964): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:51:38:501 CPU/(3316:6964): Cliente desconectado!
+[WARNING] 19:51:38:501 CPU/(3316:6964): El cliente se desconectó del server
+[INFO] 19:51:38:501 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:51:38:501 CPU/(3316:6973): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:51:39:501 CPU/(3316:6973): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:51:40:501 CPU/(3316:6973): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:51:40:501 CPU/(3316:6973): Cliente desconectado!
+[WARNING] 19:51:40:501 CPU/(3316:6973): El cliente se desconectó del server
+[INFO] 19:51:40:501 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:51:40:501 CPU/(3316:6974): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:51:41:502 CPU/(3316:6974): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA3, arg3: 
+[INFO] 19:51:42:502 CPU/(3316:6974): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:51:42:502 CPU/(3316:6974): Cliente desconectado!
+[WARNING] 19:51:42:502 CPU/(3316:6974): El cliente se desconectó del server
+[INFO] 19:51:42:502 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:51:42:502 CPU/(3316:6981): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:51:43:502 CPU/(3316:6981): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA3, arg3: 
+[INFO] 19:51:44:502 CPU/(3316:6981): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:51:44:502 CPU/(3316:6981): Cliente desconectado!
+[WARNING] 19:51:44:502 CPU/(3316:6981): El cliente se desconectó del server
+[INFO] 19:51:44:502 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:51:44:502 CPU/(3316:6982): PID: 2 - Ejecutando: SET - arg1: RDX, arg2: VAMOSALOSPENALES, arg3: 
+[INFO] 19:51:45:503 CPU/(3316:6982): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:51:45:503 CPU/(3316:6982): Cliente desconectado!
+[WARNING] 19:51:45:503 CPU/(3316:6982): El cliente se desconectó del server
+[INFO] 19:51:45:503 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:51:45:503 CPU/(3316:6983): PID: 3 - Ejecutando: SET - arg1: RDX, arg2: VAMOSALOSPENALES, arg3: 
+[INFO] 19:51:46:503 CPU/(3316:6983): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:51:46:503 CPU/(3316:6983): Cliente desconectado!
+[WARNING] 19:51:46:503 CPU/(3316:6983): El cliente se desconectó del server
+[INFO] 19:51:46:503 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:51:46:503 CPU/(3316:6984): PID: 2 - Ejecutando: SET - arg1: RAX, arg2: ARGENTINACAMPEON, arg3: 
+[INFO] 19:51:47:503 CPU/(3316:6984): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 19:51:47:504 CPU/(3316:6984): Cliente desconectado!
+[WARNING] 19:51:47:504 CPU/(3316:6984): El cliente se desconectó del server
+[INFO] 19:51:47:504 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:51:47:504 CPU/(3316:6989): PID: 3 - Ejecutando: SET - arg1: RAX, arg2: ARGENTINACAMPEON, arg3: 
+[INFO] 19:51:48:504 CPU/(3316:6989): PID: 3 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 19:51:48:504 CPU/(3316:6989): Cliente desconectado!
+[WARNING] 19:51:48:504 CPU/(3316:6989): El cliente se desconectó del server
+[INFO] 19:52:09:856 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:52:09:856 CPU/(3316:7008): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 19:52:09:856 CPU/(3316:7008): Cliente desconectado!
+[WARNING] 19:52:09:856 CPU/(3316:7008): El cliente se desconectó del server
+[INFO] 19:53:27:702 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:53:27:703 CPU/(3316:7063): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 19:53:27:703 CPU/(3316:7063): Cliente desconectado!
+[WARNING] 19:53:27:703 CPU/(3316:7063): El cliente se desconectó del server
+[INFO] 19:53:40:560 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:53:40:560 CPU/(3316:7069): PID: 1 - Ejecutando: SET - arg1: AX, arg2: AAAA, arg3: 
+[INFO] 19:53:41:560 CPU/(3316:7069): PID: 1 - Ejecutando: SET - arg1: BX, arg2: BBBB, arg3: 
+[INFO] 19:53:42:560 CPU/(3316:7069): PID: 1 - Ejecutando: SET - arg1: CX, arg2: CCCC, arg3: 
+[INFO] 19:53:43:560 CPU/(3316:7069): PID: 1 - Ejecutando: SET - arg1: DX, arg2: DDDD, arg3: 
+[INFO] 19:53:44:560 CPU/(3316:7069): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 19:53:45:560 CPU/(3316:7069): PID: 1 - Ejecutando: SET - arg1: EBX, arg2: BBBBBBBB, arg3: 
+[INFO] 19:53:46:561 CPU/(3316:7069): PID: 1 - Ejecutando: SET - arg1: ECX, arg2: CCCCCCCC, arg3: 
+[INFO] 19:53:47:561 CPU/(3316:7069): PID: 1 - Ejecutando: SET - arg1: EDX, arg2: DDDDDDDD, arg3: 
+[INFO] 19:53:48:561 CPU/(3316:7069): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: AAAAAAAAAAAAAAAA, arg3: 
+[INFO] 19:53:49:561 CPU/(3316:7069): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: BBBBBBBBBBBBBBBB, arg3: 
+[INFO] 19:53:50:561 CPU/(3316:7069): PID: 1 - Ejecutando: SET - arg1: RCX, arg2: CCCCCCCCCCCCCCCC, arg3: 
+[INFO] 19:53:51:561 CPU/(3316:7069): PID: 1 - Ejecutando: SET - arg1: RDX, arg2: DDDDDDDDDDDDDDDD, arg3: 
+[INFO] 19:53:52:561 CPU/(3316:7069): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:53:52:561 CPU/(3316:7069): Cliente desconectado!
+[WARNING] 19:53:52:561 CPU/(3316:7069): El cliente se desconectó del server
+[INFO] 19:53:52:562 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:53:52:562 CPU/(3316:7076): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG0, arg3: 
+[INFO] 19:53:53:562 CPU/(3316:7076): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:53:54:562 CPU/(3316:7076): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:53:54:562 CPU/(3316:7076): Cliente desconectado!
+[WARNING] 19:53:54:562 CPU/(3316:7076): El cliente se desconectó del server
+[INFO] 19:53:54:562 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:53:54:562 CPU/(3316:7077): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG0, arg3: 
+[INFO] 19:53:55:563 CPU/(3316:7077): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:53:56:563 CPU/(3316:7077): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:53:56:563 CPU/(3316:7077): Cliente desconectado!
+[WARNING] 19:53:56:563 CPU/(3316:7077): El cliente se desconectó del server
+[INFO] 19:53:56:563 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:53:56:563 CPU/(3316:7078): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG1, arg3: 
+[INFO] 19:53:57:563 CPU/(3316:7078): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:53:58:563 CPU/(3316:7078): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:53:58:563 CPU/(3316:7078): Cliente desconectado!
+[WARNING] 19:53:58:563 CPU/(3316:7078): El cliente se desconectó del server
+[INFO] 19:53:58:563 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:53:58:564 CPU/(3316:7079): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG1, arg3: 
+[INFO] 19:53:59:564 CPU/(3316:7079): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:54:00:564 CPU/(3316:7079): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:54:00:564 CPU/(3316:7079): Cliente desconectado!
+[WARNING] 19:54:00:564 CPU/(3316:7079): El cliente se desconectó del server
+[INFO] 19:54:00:564 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:54:00:564 CPU/(3316:7080): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:54:01:564 CPU/(3316:7080): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:54:02:564 CPU/(3316:7080): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:54:02:565 CPU/(3316:7080): Cliente desconectado!
+[WARNING] 19:54:02:565 CPU/(3316:7080): El cliente se desconectó del server
+[INFO] 19:54:02:565 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:54:02:565 CPU/(3316:7081): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:54:03:565 CPU/(3316:7081): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 19:54:04:565 CPU/(3316:7081): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:54:04:565 CPU/(3316:7081): Cliente desconectado!
+[WARNING] 19:54:04:565 CPU/(3316:7081): El cliente se desconectó del server
+[INFO] 19:54:04:565 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:54:04:565 CPU/(3316:7082): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: TCHOUAMENIAFUERA, arg3: 
+[INFO] 19:54:05:566 CPU/(3316:7082): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SEGUNDO_FRANCIA_, arg3: 
+[INFO] 19:54:06:566 CPU/(3316:7082): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 19:54:06:566 CPU/(3316:7082): Cliente desconectado!
+[WARNING] 19:54:06:566 CPU/(3316:7082): El cliente se desconectó del server
+[INFO] 19:54:06:566 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:54:06:566 CPU/(3316:7089): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:54:07:566 CPU/(3316:7089): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA1, arg3: 
+[INFO] 19:54:08:566 CPU/(3316:7089): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:54:08:566 CPU/(3316:7089): Cliente desconectado!
+[WARNING] 19:54:08:567 CPU/(3316:7089): El cliente se desconectó del server
+[INFO] 19:54:08:567 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:54:08:567 CPU/(3316:7090): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:54:09:567 CPU/(3316:7090): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA1, arg3: 
+[INFO] 19:54:10:567 CPU/(3316:7090): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:54:10:567 CPU/(3316:7090): Cliente desconectado!
+[WARNING] 19:54:10:567 CPU/(3316:7090): El cliente se desconectó del server
+[INFO] 19:54:10:567 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:54:10:567 CPU/(3316:7091): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:54:11:567 CPU/(3316:7091): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:54:12:568 CPU/(3316:7091): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:54:12:568 CPU/(3316:7091): Cliente desconectado!
+[WARNING] 19:54:12:568 CPU/(3316:7091): El cliente se desconectó del server
+[INFO] 19:54:12:568 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:54:12:568 CPU/(3316:7095): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 19:54:13:568 CPU/(3316:7095): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:54:14:568 CPU/(3316:7095): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:54:14:568 CPU/(3316:7095): Cliente desconectado!
+[WARNING] 19:54:14:568 CPU/(3316:7095): El cliente se desconectó del server
+[INFO] 19:54:14:568 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:54:14:568 CPU/(3316:7096): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:54:15:568 CPU/(3316:7096): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:54:16:569 CPU/(3316:7096): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:54:16:569 CPU/(3316:7096): Cliente desconectado!
+[WARNING] 19:54:16:569 CPU/(3316:7096): El cliente se desconectó del server
+[INFO] 19:54:16:569 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:54:16:569 CPU/(3316:7106): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:54:17:569 CPU/(3316:7106): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 19:54:18:569 CPU/(3316:7106): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:54:18:569 CPU/(3316:7106): Cliente desconectado!
+[WARNING] 19:54:18:569 CPU/(3316:7106): El cliente se desconectó del server
+[INFO] 19:54:18:570 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:54:18:570 CPU/(3316:7107): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:54:19:570 CPU/(3316:7107): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA3, arg3: 
+[INFO] 19:54:20:570 CPU/(3316:7107): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:54:20:570 CPU/(3316:7107): Cliente desconectado!
+[WARNING] 19:54:20:570 CPU/(3316:7107): El cliente se desconectó del server
+[INFO] 19:54:20:570 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:54:20:570 CPU/(3316:7108): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 19:54:21:570 CPU/(3316:7108): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA3, arg3: 
+[INFO] 19:54:22:570 CPU/(3316:7108): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:54:22:571 CPU/(3316:7108): Cliente desconectado!
+[WARNING] 19:54:22:571 CPU/(3316:7108): El cliente se desconectó del server
+[INFO] 19:54:22:571 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:54:22:571 CPU/(3316:7109): PID: 2 - Ejecutando: SET - arg1: RDX, arg2: VAMOSALOSPENALES, arg3: 
+[INFO] 19:54:23:571 CPU/(3316:7109): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:54:23:571 CPU/(3316:7109): Cliente desconectado!
+[WARNING] 19:54:23:571 CPU/(3316:7109): El cliente se desconectó del server
+[INFO] 19:54:23:572 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:54:23:572 CPU/(3316:7110): PID: 3 - Ejecutando: SET - arg1: RDX, arg2: VAMOSALOSPENALES, arg3: 
+[INFO] 19:54:24:572 CPU/(3316:7110): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:54:24:572 CPU/(3316:7110): Cliente desconectado!
+[WARNING] 19:54:24:572 CPU/(3316:7110): El cliente se desconectó del server
+[INFO] 19:54:24:572 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:54:24:572 CPU/(3316:7111): PID: 2 - Ejecutando: SET - arg1: RAX, arg2: ARGENTINACAMPEON, arg3: 
+[INFO] 19:54:25:573 CPU/(3316:7111): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 19:54:25:573 CPU/(3316:7111): Cliente desconectado!
+[WARNING] 19:54:25:573 CPU/(3316:7111): El cliente se desconectó del server
+[INFO] 19:54:25:573 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:54:25:573 CPU/(3316:7112): PID: 3 - Ejecutando: SET - arg1: RAX, arg2: ARGENTINACAMPEON, arg3: 
+[INFO] 19:54:26:573 CPU/(3316:7112): PID: 3 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 19:54:26:573 CPU/(3316:7112): Cliente desconectado!
+[WARNING] 19:54:26:573 CPU/(3316:7112): El cliente se desconectó del server
+[INFO] 19:57:55:662 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:57:55:662 CPU/(3316:7201): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 19:57:55:663 CPU/(3316:7201): Cliente desconectado!
+[WARNING] 19:57:55:663 CPU/(3316:7201): El cliente se desconectó del server
+[INFO] 19:58:00:562 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:58:00:562 CPU/(3316:7207): PID: 1 - Ejecutando: SET - arg1: AX, arg2: AAAA, arg3: 
+[INFO] 19:58:01:562 CPU/(3316:7207): PID: 1 - Ejecutando: SET - arg1: BX, arg2: BBBB, arg3: 
+[INFO] 19:58:02:562 CPU/(3316:7207): PID: 1 - Ejecutando: SET - arg1: CX, arg2: CCCC, arg3: 
+[INFO] 19:58:03:562 CPU/(3316:7207): PID: 1 - Ejecutando: SET - arg1: DX, arg2: DDDD, arg3: 
+[INFO] 19:58:04:562 CPU/(3316:7207): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 19:58:05:562 CPU/(3316:7207): PID: 1 - Ejecutando: SET - arg1: EBX, arg2: BBBBBBBB, arg3: 
+[INFO] 19:58:06:563 CPU/(3316:7207): PID: 1 - Ejecutando: SET - arg1: ECX, arg2: CCCCCCCC, arg3: 
+[INFO] 19:58:07:563 CPU/(3316:7207): PID: 1 - Ejecutando: SET - arg1: EDX, arg2: DDDDDDDD, arg3: 
+[INFO] 19:58:08:563 CPU/(3316:7207): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: AAAAAAAAAAAAAAAA, arg3: 
+[INFO] 19:58:09:563 CPU/(3316:7207): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: BBBBBBBBBBBBBBBB, arg3: 
+[INFO] 19:58:10:563 CPU/(3316:7207): PID: 1 - Ejecutando: SET - arg1: RCX, arg2: CCCCCCCCCCCCCCCC, arg3: 
+[INFO] 19:58:11:564 CPU/(3316:7207): PID: 1 - Ejecutando: SET - arg1: RDX, arg2: DDDDDDDDDDDDDDDD, arg3: 
+[INFO] 19:58:12:564 CPU/(3316:7207): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:58:12:564 CPU/(3316:7207): Cliente desconectado!
+[WARNING] 19:58:12:564 CPU/(3316:7207): El cliente se desconectó del server
+[INFO] 19:59:49:996 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:59:49:996 CPU/(3316:7265): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 19:59:49:996 CPU/(3316:7265): Cliente desconectado!
+[WARNING] 19:59:49:996 CPU/(3316:7265): El cliente se desconectó del server
+[INFO] 19:59:55:882 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 19:59:55:882 CPU/(3316:7271): PID: 1 - Ejecutando: SET - arg1: AX, arg2: AAAA, arg3: 
+[INFO] 19:59:56:882 CPU/(3316:7271): PID: 1 - Ejecutando: SET - arg1: BX, arg2: BBBB, arg3: 
+[INFO] 19:59:57:882 CPU/(3316:7271): PID: 1 - Ejecutando: SET - arg1: CX, arg2: CCCC, arg3: 
+[INFO] 19:59:58:883 CPU/(3316:7271): PID: 1 - Ejecutando: SET - arg1: DX, arg2: DDDD, arg3: 
+[INFO] 19:59:59:883 CPU/(3316:7271): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 20:00:00:883 CPU/(3316:7271): PID: 1 - Ejecutando: SET - arg1: EBX, arg2: BBBBBBBB, arg3: 
+[INFO] 20:00:01:883 CPU/(3316:7271): PID: 1 - Ejecutando: SET - arg1: ECX, arg2: CCCCCCCC, arg3: 
+[INFO] 20:00:02:883 CPU/(3316:7271): PID: 1 - Ejecutando: SET - arg1: EDX, arg2: DDDDDDDD, arg3: 
+[INFO] 20:00:03:883 CPU/(3316:7271): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: AAAAAAAAAAAAAAAA, arg3: 
+[INFO] 20:00:04:883 CPU/(3316:7271): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: BBBBBBBBBBBBBBBB, arg3: 
+[INFO] 20:00:05:883 CPU/(3316:7271): PID: 1 - Ejecutando: SET - arg1: RCX, arg2: CCCCCCCCCCCCCCCC, arg3: 
+[INFO] 20:00:06:883 CPU/(3316:7271): PID: 1 - Ejecutando: SET - arg1: RDX, arg2: DDDDDDDDDDDDDDDD, arg3: 
+[INFO] 20:00:07:884 CPU/(3316:7271): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:00:07:884 CPU/(3316:7271): Cliente desconectado!
+[WARNING] 20:00:07:884 CPU/(3316:7271): El cliente se desconectó del server
+[INFO] 20:00:07:884 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:00:07:884 CPU/(3316:7288): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG0, arg3: 
+[INFO] 20:00:08:884 CPU/(3316:7288): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 20:00:09:884 CPU/(3316:7288): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:00:09:884 CPU/(3316:7288): Cliente desconectado!
+[WARNING] 20:00:09:884 CPU/(3316:7288): El cliente se desconectó del server
+[INFO] 20:00:09:884 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:00:09:884 CPU/(3316:7289): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG0, arg3: 
+[INFO] 20:00:10:885 CPU/(3316:7289): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 20:00:11:885 CPU/(3316:7289): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:00:11:885 CPU/(3316:7289): Cliente desconectado!
+[WARNING] 20:00:11:885 CPU/(3316:7289): El cliente se desconectó del server
+[INFO] 20:00:11:885 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:00:11:885 CPU/(3316:7293): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG1, arg3: 
+[INFO] 20:00:12:885 CPU/(3316:7293): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 20:00:13:885 CPU/(3316:7293): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:00:13:885 CPU/(3316:7293): Cliente desconectado!
+[WARNING] 20:00:13:885 CPU/(3316:7293): El cliente se desconectó del server
+[INFO] 20:00:13:885 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:00:13:886 CPU/(3316:7294): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG1, arg3: 
+[INFO] 20:00:14:886 CPU/(3316:7294): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 20:00:15:886 CPU/(3316:7294): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:00:15:886 CPU/(3316:7294): Cliente desconectado!
+[WARNING] 20:00:15:886 CPU/(3316:7294): El cliente se desconectó del server
+[INFO] 20:00:15:886 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:00:15:886 CPU/(3316:7295): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 20:00:16:886 CPU/(3316:7295): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 20:00:17:886 CPU/(3316:7295): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:00:17:887 CPU/(3316:7295): Cliente desconectado!
+[WARNING] 20:00:17:887 CPU/(3316:7295): El cliente se desconectó del server
+[INFO] 20:00:17:887 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:00:17:887 CPU/(3316:7296): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 20:00:18:887 CPU/(3316:7296): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 20:00:19:887 CPU/(3316:7296): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:00:19:887 CPU/(3316:7296): Cliente desconectado!
+[WARNING] 20:00:19:887 CPU/(3316:7296): El cliente se desconectó del server
+[INFO] 20:00:19:887 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:00:19:887 CPU/(3316:7303): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: TCHOUAMENIAFUERA, arg3: 
+[INFO] 20:00:20:887 CPU/(3316:7303): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SEGUNDO_FRANCIA_, arg3: 
+[INFO] 20:00:21:887 CPU/(3316:7303): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 20:00:21:888 CPU/(3316:7303): Cliente desconectado!
+[WARNING] 20:00:21:888 CPU/(3316:7303): El cliente se desconectó del server
+[INFO] 20:00:21:888 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:00:21:888 CPU/(3316:7304): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 20:00:22:888 CPU/(3316:7304): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA1, arg3: 
+[INFO] 20:00:23:888 CPU/(3316:7304): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:00:23:888 CPU/(3316:7304): Cliente desconectado!
+[WARNING] 20:00:23:888 CPU/(3316:7304): El cliente se desconectó del server
+[INFO] 20:00:23:888 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:00:23:888 CPU/(3316:7308): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 20:00:24:889 CPU/(3316:7308): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA1, arg3: 
+[INFO] 20:00:25:889 CPU/(3316:7308): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:00:25:889 CPU/(3316:7308): Cliente desconectado!
+[WARNING] 20:00:25:889 CPU/(3316:7308): El cliente se desconectó del server
+[INFO] 20:00:25:889 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:00:25:889 CPU/(3316:7309): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 20:00:26:889 CPU/(3316:7309): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 20:00:27:889 CPU/(3316:7309): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:00:27:890 CPU/(3316:7309): Cliente desconectado!
+[WARNING] 20:00:27:890 CPU/(3316:7309): El cliente se desconectó del server
+[INFO] 20:00:27:890 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:00:27:890 CPU/(3316:7310): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 20:00:28:890 CPU/(3316:7310): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 20:00:29:890 CPU/(3316:7310): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:00:29:890 CPU/(3316:7310): Cliente desconectado!
+[WARNING] 20:00:29:890 CPU/(3316:7310): El cliente se desconectó del server
+[INFO] 20:00:29:890 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:00:29:890 CPU/(3316:7314): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 20:00:30:890 CPU/(3316:7314): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 20:00:31:891 CPU/(3316:7314): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:00:31:891 CPU/(3316:7314): Cliente desconectado!
+[WARNING] 20:00:31:891 CPU/(3316:7314): El cliente se desconectó del server
+[INFO] 20:00:31:891 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:00:31:891 CPU/(3316:7315): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 20:00:32:891 CPU/(3316:7315): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 20:00:33:891 CPU/(3316:7315): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:00:33:891 CPU/(3316:7315): Cliente desconectado!
+[WARNING] 20:00:33:891 CPU/(3316:7315): El cliente se desconectó del server
+[INFO] 20:00:33:891 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:00:33:892 CPU/(3316:7320): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 20:00:34:892 CPU/(3316:7320): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA3, arg3: 
+[INFO] 20:00:35:892 CPU/(3316:7320): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:00:35:892 CPU/(3316:7320): Cliente desconectado!
+[WARNING] 20:00:35:892 CPU/(3316:7320): El cliente se desconectó del server
+[INFO] 20:00:35:892 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:00:35:892 CPU/(3316:7321): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 20:00:36:892 CPU/(3316:7321): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA3, arg3: 
+[INFO] 20:00:37:892 CPU/(3316:7321): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:00:37:893 CPU/(3316:7321): Cliente desconectado!
+[WARNING] 20:00:37:893 CPU/(3316:7321): El cliente se desconectó del server
+[INFO] 20:00:37:893 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:00:37:893 CPU/(3316:7322): PID: 2 - Ejecutando: SET - arg1: RDX, arg2: VAMOSALOSPENALES, arg3: 
+[INFO] 20:00:38:893 CPU/(3316:7322): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:00:38:893 CPU/(3316:7322): Cliente desconectado!
+[WARNING] 20:00:38:893 CPU/(3316:7322): El cliente se desconectó del server
+[INFO] 20:00:38:893 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:00:38:893 CPU/(3316:7326): PID: 3 - Ejecutando: SET - arg1: RDX, arg2: VAMOSALOSPENALES, arg3: 
+[INFO] 20:00:39:893 CPU/(3316:7326): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:00:39:894 CPU/(3316:7326): Cliente desconectado!
+[WARNING] 20:00:39:894 CPU/(3316:7326): El cliente se desconectó del server
+[INFO] 20:00:39:894 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:00:39:894 CPU/(3316:7327): PID: 2 - Ejecutando: SET - arg1: RAX, arg2: ARGENTINACAMPEON, arg3: 
+[INFO] 20:00:40:894 CPU/(3316:7327): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 20:00:40:894 CPU/(3316:7327): Cliente desconectado!
+[WARNING] 20:00:40:894 CPU/(3316:7327): El cliente se desconectó del server
+[INFO] 20:00:40:894 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:00:40:894 CPU/(3316:7328): PID: 3 - Ejecutando: SET - arg1: RAX, arg2: ARGENTINACAMPEON, arg3: 
+[INFO] 20:00:41:894 CPU/(3316:7328): PID: 3 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 20:00:41:895 CPU/(3316:7328): Cliente desconectado!
+[WARNING] 20:00:41:895 CPU/(3316:7328): El cliente se desconectó del server
+[INFO] 20:00:49:735 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:00:49:736 CPU/(3316:7338): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 20:00:49:736 CPU/(3316:7338): Cliente desconectado!
+[WARNING] 20:00:49:736 CPU/(3316:7338): El cliente se desconectó del server
+[INFO] 20:00:55:198 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:00:55:198 CPU/(3316:7344): PID: 1 - Ejecutando: SET - arg1: AX, arg2: AAAA, arg3: 
+[INFO] 20:00:56:198 CPU/(3316:7344): PID: 1 - Ejecutando: SET - arg1: BX, arg2: BBBB, arg3: 
+[INFO] 20:00:57:198 CPU/(3316:7344): PID: 1 - Ejecutando: SET - arg1: CX, arg2: CCCC, arg3: 
+[INFO] 20:00:58:198 CPU/(3316:7344): PID: 1 - Ejecutando: SET - arg1: DX, arg2: DDDD, arg3: 
+[INFO] 20:00:59:198 CPU/(3316:7344): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 20:01:00:198 CPU/(3316:7344): PID: 1 - Ejecutando: SET - arg1: EBX, arg2: BBBBBBBB, arg3: 
+[INFO] 20:01:01:198 CPU/(3316:7344): PID: 1 - Ejecutando: SET - arg1: ECX, arg2: CCCCCCCC, arg3: 
+[INFO] 20:01:02:199 CPU/(3316:7344): PID: 1 - Ejecutando: SET - arg1: EDX, arg2: DDDDDDDD, arg3: 
+[INFO] 20:01:03:199 CPU/(3316:7344): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: AAAAAAAAAAAAAAAA, arg3: 
+[INFO] 20:01:04:199 CPU/(3316:7344): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: BBBBBBBBBBBBBBBB, arg3: 
+[INFO] 20:01:05:199 CPU/(3316:7344): PID: 1 - Ejecutando: SET - arg1: RCX, arg2: CCCCCCCCCCCCCCCC, arg3: 
+[INFO] 20:01:06:200 CPU/(3316:7344): PID: 1 - Ejecutando: SET - arg1: RDX, arg2: DDDDDDDDDDDDDDDD, arg3: 
+[INFO] 20:01:07:200 CPU/(3316:7344): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:01:07:201 CPU/(3316:7344): Cliente desconectado!
+[WARNING] 20:01:07:201 CPU/(3316:7344): El cliente se desconectó del server
+[INFO] 20:01:07:201 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:01:07:201 CPU/(3316:7351): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG0, arg3: 
+[INFO] 20:01:08:201 CPU/(3316:7351): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 20:01:09:201 CPU/(3316:7351): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:01:09:201 CPU/(3316:7351): Cliente desconectado!
+[WARNING] 20:01:09:201 CPU/(3316:7351): El cliente se desconectó del server
+[INFO] 20:01:09:201 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:01:09:201 CPU/(3316:7353): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG0, arg3: 
+[INFO] 20:01:10:201 CPU/(3316:7353): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 20:01:11:201 CPU/(3316:7353): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:01:11:202 CPU/(3316:7353): Cliente desconectado!
+[WARNING] 20:01:11:202 CPU/(3316:7353): El cliente se desconectó del server
+[INFO] 20:01:11:202 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:01:11:202 CPU/(3316:7354): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG1, arg3: 
+[INFO] 20:01:12:202 CPU/(3316:7354): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 20:01:13:202 CPU/(3316:7354): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:01:13:202 CPU/(3316:7354): Cliente desconectado!
+[WARNING] 20:01:13:203 CPU/(3316:7354): El cliente se desconectó del server
+[INFO] 20:01:13:202 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:01:13:203 CPU/(3316:7355): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG1, arg3: 
+[INFO] 20:01:14:203 CPU/(3316:7355): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 20:01:15:203 CPU/(3316:7355): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:01:15:203 CPU/(3316:7355): Cliente desconectado!
+[WARNING] 20:01:15:203 CPU/(3316:7355): El cliente se desconectó del server
+[INFO] 20:01:15:203 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:01:15:203 CPU/(3316:7356): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 20:01:16:203 CPU/(3316:7356): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 20:01:17:204 CPU/(3316:7356): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:01:17:204 CPU/(3316:7356): Cliente desconectado!
+[WARNING] 20:01:17:204 CPU/(3316:7356): El cliente se desconectó del server
+[INFO] 20:01:17:204 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:01:17:204 CPU/(3316:7357): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 20:01:18:204 CPU/(3316:7357): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 20:01:19:204 CPU/(3316:7357): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:01:19:204 CPU/(3316:7357): Cliente desconectado!
+[WARNING] 20:01:19:204 CPU/(3316:7357): El cliente se desconectó del server
+[INFO] 20:01:19:204 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:01:19:205 CPU/(3316:7358): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: TCHOUAMENIAFUERA, arg3: 
+[INFO] 20:01:20:205 CPU/(3316:7358): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SEGUNDO_FRANCIA_, arg3: 
+[INFO] 20:01:21:205 CPU/(3316:7358): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 20:01:21:205 CPU/(3316:7358): Cliente desconectado!
+[WARNING] 20:01:21:205 CPU/(3316:7358): El cliente se desconectó del server
+[INFO] 20:01:21:205 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:01:21:205 CPU/(3316:7359): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 20:01:22:205 CPU/(3316:7359): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA1, arg3: 
+[INFO] 20:01:23:205 CPU/(3316:7359): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:01:23:205 CPU/(3316:7359): Cliente desconectado!
+[WARNING] 20:01:23:205 CPU/(3316:7359): El cliente se desconectó del server
+[INFO] 20:01:23:206 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:01:23:206 CPU/(3316:7360): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 20:01:24:206 CPU/(3316:7360): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA1, arg3: 
+[INFO] 20:01:25:206 CPU/(3316:7360): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:01:25:206 CPU/(3316:7360): Cliente desconectado!
+[WARNING] 20:01:25:206 CPU/(3316:7360): El cliente se desconectó del server
+[INFO] 20:01:25:206 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:01:25:206 CPU/(3316:7361): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 20:01:26:206 CPU/(3316:7361): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 20:01:27:207 CPU/(3316:7361): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:01:27:207 CPU/(3316:7361): Cliente desconectado!
+[WARNING] 20:01:27:207 CPU/(3316:7361): El cliente se desconectó del server
+[INFO] 20:01:27:207 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:01:27:207 CPU/(3316:7362): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 20:01:28:207 CPU/(3316:7362): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 20:01:29:207 CPU/(3316:7362): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:01:29:207 CPU/(3316:7362): Cliente desconectado!
+[WARNING] 20:01:29:207 CPU/(3316:7362): El cliente se desconectó del server
+[INFO] 20:01:29:207 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:01:29:207 CPU/(3316:7363): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 20:01:30:208 CPU/(3316:7363): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 20:01:31:208 CPU/(3316:7363): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:01:31:208 CPU/(3316:7363): Cliente desconectado!
+[WARNING] 20:01:31:208 CPU/(3316:7363): El cliente se desconectó del server
+[INFO] 20:01:31:208 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:01:31:208 CPU/(3316:7364): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 20:01:32:209 CPU/(3316:7364): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 20:01:33:209 CPU/(3316:7364): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:01:33:210 CPU/(3316:7364): Cliente desconectado!
+[WARNING] 20:01:33:210 CPU/(3316:7364): El cliente se desconectó del server
+[INFO] 20:01:33:210 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:01:33:210 CPU/(3316:7365): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 20:01:34:210 CPU/(3316:7365): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA3, arg3: 
+[INFO] 20:01:35:210 CPU/(3316:7365): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:01:35:210 CPU/(3316:7365): Cliente desconectado!
+[WARNING] 20:01:35:210 CPU/(3316:7365): El cliente se desconectó del server
+[INFO] 20:01:35:210 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:01:35:210 CPU/(3316:7366): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 20:01:36:211 CPU/(3316:7366): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA3, arg3: 
+[INFO] 20:01:37:211 CPU/(3316:7366): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:01:37:211 CPU/(3316:7366): Cliente desconectado!
+[WARNING] 20:01:37:211 CPU/(3316:7366): El cliente se desconectó del server
+[INFO] 20:01:37:211 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:01:37:211 CPU/(3316:7367): PID: 2 - Ejecutando: SET - arg1: RDX, arg2: VAMOSALOSPENALES, arg3: 
+[INFO] 20:01:38:211 CPU/(3316:7367): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:01:38:211 CPU/(3316:7367): Cliente desconectado!
+[WARNING] 20:01:38:211 CPU/(3316:7367): El cliente se desconectó del server
+[INFO] 20:01:38:211 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:01:38:212 CPU/(3316:7368): PID: 3 - Ejecutando: SET - arg1: RDX, arg2: VAMOSALOSPENALES, arg3: 
+[INFO] 20:01:39:212 CPU/(3316:7368): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:01:39:212 CPU/(3316:7368): Cliente desconectado!
+[WARNING] 20:01:39:212 CPU/(3316:7368): El cliente se desconectó del server
+[INFO] 20:01:39:212 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:01:39:213 CPU/(3316:7369): PID: 2 - Ejecutando: SET - arg1: RAX, arg2: ARGENTINACAMPEON, arg3: 
+[INFO] 20:01:40:213 CPU/(3316:7369): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 20:01:40:213 CPU/(3316:7369): Cliente desconectado!
+[WARNING] 20:01:40:213 CPU/(3316:7369): El cliente se desconectó del server
+[INFO] 20:01:40:213 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:01:40:213 CPU/(3316:7370): PID: 3 - Ejecutando: SET - arg1: RAX, arg2: ARGENTINACAMPEON, arg3: 
+[INFO] 20:01:41:214 CPU/(3316:7370): PID: 3 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 20:01:41:214 CPU/(3316:7370): Cliente desconectado!
+[WARNING] 20:01:41:214 CPU/(3316:7370): El cliente se desconectó del server
+[INFO] 20:03:09:925 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:03:09:925 CPU/(3316:7410): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 20:03:09:925 CPU/(3316:7410): Cliente desconectado!
+[WARNING] 20:03:09:925 CPU/(3316:7410): El cliente se desconectó del server
+[INFO] 20:03:15:110 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:03:15:110 CPU/(3316:7417): PID: 1 - Ejecutando: SET - arg1: AX, arg2: AAAA, arg3: 
+[INFO] 20:03:16:110 CPU/(3316:7417): PID: 1 - Ejecutando: SET - arg1: BX, arg2: BBBB, arg3: 
+[INFO] 20:03:17:110 CPU/(3316:7417): PID: 1 - Ejecutando: SET - arg1: CX, arg2: CCCC, arg3: 
+[INFO] 20:03:18:110 CPU/(3316:7417): PID: 1 - Ejecutando: SET - arg1: DX, arg2: DDDD, arg3: 
+[INFO] 20:03:19:110 CPU/(3316:7417): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 20:03:20:111 CPU/(3316:7417): PID: 1 - Ejecutando: SET - arg1: EBX, arg2: BBBBBBBB, arg3: 
+[INFO] 20:03:21:111 CPU/(3316:7417): PID: 1 - Ejecutando: SET - arg1: ECX, arg2: CCCCCCCC, arg3: 
+[INFO] 20:03:22:111 CPU/(3316:7417): PID: 1 - Ejecutando: SET - arg1: EDX, arg2: DDDDDDDD, arg3: 
+[INFO] 20:03:23:111 CPU/(3316:7417): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: AAAAAAAAAAAAAAAA, arg3: 
+[INFO] 20:03:24:111 CPU/(3316:7417): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: BBBBBBBBBBBBBBBB, arg3: 
+[INFO] 20:03:25:111 CPU/(3316:7417): PID: 1 - Ejecutando: SET - arg1: RCX, arg2: CCCCCCCCCCCCCCCC, arg3: 
+[INFO] 20:03:26:111 CPU/(3316:7417): PID: 1 - Ejecutando: SET - arg1: RDX, arg2: DDDDDDDDDDDDDDDD, arg3: 
+[INFO] 20:03:27:111 CPU/(3316:7417): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:03:27:111 CPU/(3316:7417): Cliente desconectado!
+[WARNING] 20:03:27:111 CPU/(3316:7417): El cliente se desconectó del server
+[INFO] 20:03:27:112 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:03:27:112 CPU/(3316:7424): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG0, arg3: 
+[INFO] 20:03:28:112 CPU/(3316:7424): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 20:03:29:112 CPU/(3316:7424): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:03:29:112 CPU/(3316:7424): Cliente desconectado!
+[WARNING] 20:03:29:112 CPU/(3316:7424): El cliente se desconectó del server
+[INFO] 20:03:29:112 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:03:29:112 CPU/(3316:7425): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG0, arg3: 
+[INFO] 20:03:30:112 CPU/(3316:7425): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 20:03:31:113 CPU/(3316:7425): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:03:31:113 CPU/(3316:7425): Cliente desconectado!
+[WARNING] 20:03:31:113 CPU/(3316:7425): El cliente se desconectó del server
+[INFO] 20:03:31:113 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:03:31:113 CPU/(3316:7426): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG1, arg3: 
+[INFO] 20:03:32:113 CPU/(3316:7426): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 20:03:33:113 CPU/(3316:7426): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:03:33:113 CPU/(3316:7426): Cliente desconectado!
+[WARNING] 20:03:33:113 CPU/(3316:7426): El cliente se desconectó del server
+[INFO] 20:03:33:113 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:03:33:113 CPU/(3316:7429): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG1, arg3: 
+[INFO] 20:03:34:114 CPU/(3316:7429): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 20:03:35:114 CPU/(3316:7429): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:03:35:114 CPU/(3316:7429): Cliente desconectado!
+[WARNING] 20:03:35:114 CPU/(3316:7429): El cliente se desconectó del server
+[INFO] 20:03:35:114 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:03:35:114 CPU/(3316:7430): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 20:03:36:114 CPU/(3316:7430): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 20:03:37:114 CPU/(3316:7430): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:03:37:114 CPU/(3316:7430): Cliente desconectado!
+[WARNING] 20:03:37:115 CPU/(3316:7430): El cliente se desconectó del server
+[INFO] 20:03:37:115 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:03:37:115 CPU/(3316:7431): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 20:03:38:115 CPU/(3316:7431): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 20:03:39:115 CPU/(3316:7431): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:03:39:115 CPU/(3316:7431): Cliente desconectado!
+[WARNING] 20:03:39:115 CPU/(3316:7431): El cliente se desconectó del server
+[INFO] 20:03:39:115 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:03:39:115 CPU/(3316:7432): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: TCHOUAMENIAFUERA, arg3: 
+[INFO] 20:03:40:116 CPU/(3316:7432): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SEGUNDO_FRANCIA_, arg3: 
+[INFO] 20:03:41:116 CPU/(3316:7432): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 20:03:41:116 CPU/(3316:7432): Cliente desconectado!
+[WARNING] 20:03:41:116 CPU/(3316:7432): El cliente se desconectó del server
+[INFO] 20:03:41:116 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:03:41:116 CPU/(3316:7433): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 20:03:42:116 CPU/(3316:7433): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA1, arg3: 
+[INFO] 20:03:43:116 CPU/(3316:7433): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:03:43:117 CPU/(3316:7433): Cliente desconectado!
+[WARNING] 20:03:43:117 CPU/(3316:7433): El cliente se desconectó del server
+[INFO] 20:03:43:117 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:03:43:117 CPU/(3316:7436): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 20:03:44:117 CPU/(3316:7436): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA1, arg3: 
+[INFO] 20:03:45:117 CPU/(3316:7436): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:03:45:117 CPU/(3316:7436): Cliente desconectado!
+[WARNING] 20:03:45:118 CPU/(3316:7436): El cliente se desconectó del server
+[INFO] 20:03:45:118 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:03:45:118 CPU/(3316:7437): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 20:03:46:118 CPU/(3316:7437): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 20:03:47:118 CPU/(3316:7437): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:03:47:118 CPU/(3316:7437): Cliente desconectado!
+[WARNING] 20:03:47:118 CPU/(3316:7437): El cliente se desconectó del server
+[INFO] 20:03:47:118 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:03:47:119 CPU/(3316:7438): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 20:03:48:119 CPU/(3316:7438): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 20:03:49:119 CPU/(3316:7438): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:03:49:120 CPU/(3316:7438): Cliente desconectado!
+[WARNING] 20:03:49:120 CPU/(3316:7438): El cliente se desconectó del server
+[INFO] 20:03:49:120 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:03:49:120 CPU/(3316:7439): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 20:03:50:120 CPU/(3316:7439): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 20:03:51:121 CPU/(3316:7439): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:03:51:121 CPU/(3316:7439): Cliente desconectado!
+[WARNING] 20:03:51:121 CPU/(3316:7439): El cliente se desconectó del server
+[INFO] 20:03:51:121 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:03:51:121 CPU/(3316:7440): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 20:03:52:122 CPU/(3316:7440): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 20:03:53:122 CPU/(3316:7440): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:03:53:122 CPU/(3316:7440): Cliente desconectado!
+[WARNING] 20:03:53:122 CPU/(3316:7440): El cliente se desconectó del server
+[INFO] 20:03:53:122 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:03:53:122 CPU/(3316:7441): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 20:03:54:122 CPU/(3316:7441): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA3, arg3: 
+[INFO] 20:03:55:122 CPU/(3316:7441): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:03:55:122 CPU/(3316:7441): Cliente desconectado!
+[WARNING] 20:03:55:122 CPU/(3316:7441): El cliente se desconectó del server
+[INFO] 20:03:55:123 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:03:55:123 CPU/(3316:7442): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 20:03:56:123 CPU/(3316:7442): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA3, arg3: 
+[INFO] 20:03:57:123 CPU/(3316:7442): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:03:57:123 CPU/(3316:7442): Cliente desconectado!
+[WARNING] 20:03:57:123 CPU/(3316:7442): El cliente se desconectó del server
+[INFO] 20:03:57:123 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:03:57:124 CPU/(3316:7443): PID: 2 - Ejecutando: SET - arg1: RDX, arg2: VAMOSALOSPENALES, arg3: 
+[INFO] 20:03:58:124 CPU/(3316:7443): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:03:58:124 CPU/(3316:7443): Cliente desconectado!
+[WARNING] 20:03:58:124 CPU/(3316:7443): El cliente se desconectó del server
+[INFO] 20:03:58:124 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:03:58:124 CPU/(3316:7444): PID: 3 - Ejecutando: SET - arg1: RDX, arg2: VAMOSALOSPENALES, arg3: 
+[INFO] 20:03:59:124 CPU/(3316:7444): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 20:03:59:124 CPU/(3316:7444): Cliente desconectado!
+[WARNING] 20:03:59:125 CPU/(3316:7444): El cliente se desconectó del server
+[INFO] 20:03:59:125 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:03:59:125 CPU/(3316:7445): PID: 2 - Ejecutando: SET - arg1: RAX, arg2: ARGENTINACAMPEON, arg3: 
+[INFO] 20:04:00:125 CPU/(3316:7445): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 20:04:00:125 CPU/(3316:7445): Cliente desconectado!
+[WARNING] 20:04:00:125 CPU/(3316:7445): El cliente se desconectó del server
+[INFO] 20:04:00:125 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 20:04:00:125 CPU/(3316:7446): PID: 3 - Ejecutando: SET - arg1: RAX, arg2: ARGENTINACAMPEON, arg3: 
+[INFO] 20:04:01:125 CPU/(3316:7446): PID: 3 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 20:04:01:125 CPU/(3316:7446): Cliente desconectado!
+[WARNING] 20:04:01:125 CPU/(3316:7446): El cliente se desconectó del server
+[INFO] 21:40:09:265 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:40:09:265 CPU/(3316:13498): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 21:40:09:265 CPU/(3316:13498): Cliente desconectado!
+[WARNING] 21:40:09:265 CPU/(3316:13498): El cliente se desconectó del server
+[INFO] 21:40:14:605 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:40:14:605 CPU/(3316:13506): PID: 1 - Ejecutando: SET - arg1: AX, arg2: AAAA, arg3: 
+[INFO] 21:40:15:605 CPU/(3316:13506): PID: 1 - Ejecutando: SET - arg1: BX, arg2: BBBB, arg3: 
+[INFO] 21:40:16:605 CPU/(3316:13506): PID: 1 - Ejecutando: SET - arg1: CX, arg2: CCCC, arg3: 
+[INFO] 21:40:17:606 CPU/(3316:13506): PID: 1 - Ejecutando: SET - arg1: DX, arg2: DDDD, arg3: 
+[INFO] 21:40:18:606 CPU/(3316:13506): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 21:40:19:606 CPU/(3316:13506): PID: 1 - Ejecutando: SET - arg1: EBX, arg2: BBBBBBBB, arg3: 
+[INFO] 21:40:20:606 CPU/(3316:13506): PID: 1 - Ejecutando: SET - arg1: ECX, arg2: CCCCCCCC, arg3: 
+[INFO] 21:40:21:606 CPU/(3316:13506): PID: 1 - Ejecutando: SET - arg1: EDX, arg2: DDDDDDDD, arg3: 
+[INFO] 21:40:22:606 CPU/(3316:13506): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: AAAAAAAAAAAAAAAA, arg3: 
+[INFO] 21:40:23:606 CPU/(3316:13506): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: BBBBBBBBBBBBBBBB, arg3: 
+[INFO] 21:40:24:606 CPU/(3316:13506): PID: 1 - Ejecutando: SET - arg1: RCX, arg2: CCCCCCCCCCCCCCCC, arg3: 
+[INFO] 21:40:25:606 CPU/(3316:13506): PID: 1 - Ejecutando: SET - arg1: RDX, arg2: DDDDDDDDDDDDDDDD, arg3: 
+[INFO] 21:40:26:607 CPU/(3316:13506): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:40:26:607 CPU/(3316:13506): Cliente desconectado!
+[WARNING] 21:40:26:607 CPU/(3316:13506): El cliente se desconectó del server
+[INFO] 21:40:26:607 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:40:26:607 CPU/(3316:13515): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG0, arg3: 
+[INFO] 21:40:27:607 CPU/(3316:13515): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 21:40:28:607 CPU/(3316:13515): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:40:28:607 CPU/(3316:13515): Cliente desconectado!
+[WARNING] 21:40:28:607 CPU/(3316:13515): El cliente se desconectó del server
+[INFO] 21:40:28:607 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:40:28:607 CPU/(3316:13517): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG0, arg3: 
+[INFO] 21:40:29:608 CPU/(3316:13517): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 21:40:30:608 CPU/(3316:13517): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:40:30:608 CPU/(3316:13517): Cliente desconectado!
+[WARNING] 21:40:30:608 CPU/(3316:13517): El cliente se desconectó del server
+[INFO] 21:40:30:608 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:40:30:608 CPU/(3316:13518): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG1, arg3: 
+[INFO] 21:40:31:608 CPU/(3316:13518): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 21:40:32:608 CPU/(3316:13518): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:40:32:609 CPU/(3316:13518): Cliente desconectado!
+[WARNING] 21:40:32:609 CPU/(3316:13518): El cliente se desconectó del server
+[INFO] 21:40:32:609 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:40:32:609 CPU/(3316:13519): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG1, arg3: 
+[INFO] 21:40:33:609 CPU/(3316:13519): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 21:40:34:609 CPU/(3316:13519): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:40:34:609 CPU/(3316:13519): Cliente desconectado!
+[WARNING] 21:40:34:609 CPU/(3316:13519): El cliente se desconectó del server
+[INFO] 21:40:34:609 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:40:34:609 CPU/(3316:13520): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 21:40:35:609 CPU/(3316:13520): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 21:40:36:610 CPU/(3316:13520): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:40:36:610 CPU/(3316:13520): Cliente desconectado!
+[WARNING] 21:40:36:610 CPU/(3316:13520): El cliente se desconectó del server
+[INFO] 21:40:36:610 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:40:36:610 CPU/(3316:13521): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 21:40:37:610 CPU/(3316:13521): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 21:40:38:610 CPU/(3316:13521): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:40:38:610 CPU/(3316:13521): Cliente desconectado!
+[WARNING] 21:40:38:610 CPU/(3316:13521): El cliente se desconectó del server
+[INFO] 21:40:38:610 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:40:38:610 CPU/(3316:13522): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: TCHOUAMENIAFUERA, arg3: 
+[INFO] 21:40:39:611 CPU/(3316:13522): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SEGUNDO_FRANCIA_, arg3: 
+[INFO] 21:40:40:611 CPU/(3316:13522): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 21:40:40:611 CPU/(3316:13522): Cliente desconectado!
+[WARNING] 21:40:40:611 CPU/(3316:13522): El cliente se desconectó del server
+[INFO] 21:40:40:611 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:40:40:611 CPU/(3316:13523): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 21:40:41:611 CPU/(3316:13523): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA1, arg3: 
+[INFO] 21:40:42:611 CPU/(3316:13523): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:40:42:611 CPU/(3316:13523): Cliente desconectado!
+[WARNING] 21:40:42:612 CPU/(3316:13523): El cliente se desconectó del server
+[INFO] 21:40:42:612 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:40:42:612 CPU/(3316:13525): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 21:40:43:612 CPU/(3316:13525): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA1, arg3: 
+[INFO] 21:40:44:612 CPU/(3316:13525): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:40:44:612 CPU/(3316:13525): Cliente desconectado!
+[WARNING] 21:40:44:612 CPU/(3316:13525): El cliente se desconectó del server
+[INFO] 21:40:44:612 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:40:44:612 CPU/(3316:13526): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 21:40:45:612 CPU/(3316:13526): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 21:40:46:613 CPU/(3316:13526): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:40:46:613 CPU/(3316:13526): Cliente desconectado!
+[WARNING] 21:40:46:613 CPU/(3316:13526): El cliente se desconectó del server
+[INFO] 21:40:46:613 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:40:46:613 CPU/(3316:13527): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 21:40:47:613 CPU/(3316:13527): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 21:40:48:613 CPU/(3316:13527): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:40:48:613 CPU/(3316:13527): Cliente desconectado!
+[WARNING] 21:40:48:613 CPU/(3316:13527): El cliente se desconectó del server
+[INFO] 21:40:48:613 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:40:48:614 CPU/(3316:13535): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 21:40:49:614 CPU/(3316:13535): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 21:40:50:614 CPU/(3316:13535): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:40:50:614 CPU/(3316:13535): Cliente desconectado!
+[WARNING] 21:40:50:614 CPU/(3316:13535): El cliente se desconectó del server
+[INFO] 21:40:50:614 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:40:50:614 CPU/(3316:13779): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 21:40:51:614 CPU/(3316:13779): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 21:40:52:614 CPU/(3316:13779): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:40:52:614 CPU/(3316:13779): Cliente desconectado!
+[WARNING] 21:40:52:614 CPU/(3316:13779): El cliente se desconectó del server
+[INFO] 21:40:52:615 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:40:52:615 CPU/(3316:13786): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 21:40:53:615 CPU/(3316:13786): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA3, arg3: 
+[INFO] 21:40:54:615 CPU/(3316:13786): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:40:54:615 CPU/(3316:13786): Cliente desconectado!
+[WARNING] 21:40:54:615 CPU/(3316:13786): El cliente se desconectó del server
+[INFO] 21:40:54:615 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:40:54:615 CPU/(3316:13789): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 21:40:55:615 CPU/(3316:13789): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA3, arg3: 
+[INFO] 21:40:56:615 CPU/(3316:13789): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:40:56:616 CPU/(3316:13789): Cliente desconectado!
+[WARNING] 21:40:56:616 CPU/(3316:13789): El cliente se desconectó del server
+[INFO] 21:40:56:616 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:40:56:616 CPU/(3316:13791): PID: 2 - Ejecutando: SET - arg1: RDX, arg2: VAMOSALOSPENALES, arg3: 
+[INFO] 21:40:57:616 CPU/(3316:13791): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:40:57:616 CPU/(3316:13791): Cliente desconectado!
+[WARNING] 21:40:57:616 CPU/(3316:13791): El cliente se desconectó del server
+[INFO] 21:40:57:616 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:40:57:616 CPU/(3316:13796): PID: 3 - Ejecutando: SET - arg1: RDX, arg2: VAMOSALOSPENALES, arg3: 
+[INFO] 21:40:58:616 CPU/(3316:13796): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:40:58:616 CPU/(3316:13796): Cliente desconectado!
+[WARNING] 21:40:58:616 CPU/(3316:13796): El cliente se desconectó del server
+[INFO] 21:40:58:617 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:40:58:617 CPU/(3316:13797): PID: 2 - Ejecutando: SET - arg1: RAX, arg2: ARGENTINACAMPEON, arg3: 
+[INFO] 21:40:59:617 CPU/(3316:13797): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 21:40:59:617 CPU/(3316:13797): Cliente desconectado!
+[WARNING] 21:40:59:617 CPU/(3316:13797): El cliente se desconectó del server
+[INFO] 21:40:59:617 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:40:59:617 CPU/(3316:13798): PID: 3 - Ejecutando: SET - arg1: RAX, arg2: ARGENTINACAMPEON, arg3: 
+[INFO] 21:41:00:617 CPU/(3316:13798): PID: 3 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 21:41:00:617 CPU/(3316:13798): Cliente desconectado!
+[WARNING] 21:41:00:617 CPU/(3316:13798): El cliente se desconectó del server
+[INFO] 21:44:08:770 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:44:08:770 CPU/(3316:14154): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 21:44:08:771 CPU/(3316:14154): Cliente desconectado!
+[WARNING] 21:44:08:771 CPU/(3316:14154): El cliente se desconectó del server
+[INFO] 21:44:13:479 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:44:13:479 CPU/(3316:14166): PID: 1 - Ejecutando: SET - arg1: AX, arg2: AAAA, arg3: 
+[INFO] 21:44:14:479 CPU/(3316:14166): PID: 1 - Ejecutando: SET - arg1: BX, arg2: BBBB, arg3: 
+[INFO] 21:44:15:480 CPU/(3316:14166): PID: 1 - Ejecutando: SET - arg1: CX, arg2: CCCC, arg3: 
+[INFO] 21:44:16:480 CPU/(3316:14166): PID: 1 - Ejecutando: SET - arg1: DX, arg2: DDDD, arg3: 
+[INFO] 21:44:17:480 CPU/(3316:14166): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 21:44:18:480 CPU/(3316:14166): PID: 1 - Ejecutando: SET - arg1: EBX, arg2: BBBBBBBB, arg3: 
+[INFO] 21:44:19:480 CPU/(3316:14166): PID: 1 - Ejecutando: SET - arg1: ECX, arg2: CCCCCCCC, arg3: 
+[INFO] 21:44:20:480 CPU/(3316:14166): PID: 1 - Ejecutando: SET - arg1: EDX, arg2: DDDDDDDD, arg3: 
+[INFO] 21:44:21:480 CPU/(3316:14166): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: AAAAAAAAAAAAAAAA, arg3: 
+[INFO] 21:44:22:480 CPU/(3316:14166): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: BBBBBBBBBBBBBBBB, arg3: 
+[INFO] 21:44:23:481 CPU/(3316:14166): PID: 1 - Ejecutando: SET - arg1: RCX, arg2: CCCCCCCCCCCCCCCC, arg3: 
+[INFO] 21:44:24:481 CPU/(3316:14166): PID: 1 - Ejecutando: SET - arg1: RDX, arg2: DDDDDDDDDDDDDDDD, arg3: 
+[INFO] 21:44:25:481 CPU/(3316:14166): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:44:25:481 CPU/(3316:14166): Cliente desconectado!
+[WARNING] 21:44:25:481 CPU/(3316:14166): El cliente se desconectó del server
+[INFO] 21:44:25:481 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:44:25:481 CPU/(3316:14185): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG0, arg3: 
+[INFO] 21:44:26:481 CPU/(3316:14185): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 21:44:27:481 CPU/(3316:14185): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:44:27:481 CPU/(3316:14185): Cliente desconectado!
+[WARNING] 21:44:27:481 CPU/(3316:14185): El cliente se desconectó del server
+[INFO] 21:44:27:482 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:44:27:482 CPU/(3316:14186): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG0, arg3: 
+[INFO] 21:44:28:482 CPU/(3316:14186): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 21:44:29:482 CPU/(3316:14186): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:44:29:482 CPU/(3316:14186): Cliente desconectado!
+[WARNING] 21:44:29:482 CPU/(3316:14186): El cliente se desconectó del server
+[INFO] 21:44:29:482 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:44:29:482 CPU/(3316:14188): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG1, arg3: 
+[INFO] 21:44:30:482 CPU/(3316:14188): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 21:44:31:482 CPU/(3316:14188): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:44:31:483 CPU/(3316:14188): Cliente desconectado!
+[WARNING] 21:44:31:483 CPU/(3316:14188): El cliente se desconectó del server
+[INFO] 21:44:31:483 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:44:31:483 CPU/(3316:14196): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG1, arg3: 
+[INFO] 21:44:32:483 CPU/(3316:14196): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 21:44:33:483 CPU/(3316:14196): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:44:33:483 CPU/(3316:14196): Cliente desconectado!
+[WARNING] 21:44:33:483 CPU/(3316:14196): El cliente se desconectó del server
+[INFO] 21:44:33:483 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:44:33:483 CPU/(3316:14197): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 21:44:34:483 CPU/(3316:14197): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 21:44:35:483 CPU/(3316:14197): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:44:35:484 CPU/(3316:14197): Cliente desconectado!
+[WARNING] 21:44:35:484 CPU/(3316:14197): El cliente se desconectó del server
+[INFO] 21:44:35:484 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:44:35:484 CPU/(3316:14198): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 21:44:36:484 CPU/(3316:14198): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA0, arg3: 
+[INFO] 21:44:37:484 CPU/(3316:14198): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:44:37:484 CPU/(3316:14198): Cliente desconectado!
+[WARNING] 21:44:37:484 CPU/(3316:14198): El cliente se desconectó del server
+[INFO] 21:44:37:484 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:44:37:484 CPU/(3316:14205): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: TCHOUAMENIAFUERA, arg3: 
+[INFO] 21:44:38:485 CPU/(3316:14205): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SEGUNDO_FRANCIA_, arg3: 
+[INFO] 21:44:39:485 CPU/(3316:14205): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 21:44:39:485 CPU/(3316:14205): Cliente desconectado!
+[WARNING] 21:44:39:485 CPU/(3316:14205): El cliente se desconectó del server
+[INFO] 21:44:39:485 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:44:39:485 CPU/(3316:14206): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 21:44:40:485 CPU/(3316:14206): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA1, arg3: 
+[INFO] 21:44:41:485 CPU/(3316:14206): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:44:41:485 CPU/(3316:14206): Cliente desconectado!
+[WARNING] 21:44:41:485 CPU/(3316:14206): El cliente se desconectó del server
+[INFO] 21:44:41:485 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:44:41:485 CPU/(3316:14207): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 21:44:42:486 CPU/(3316:14207): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA1, arg3: 
+[INFO] 21:44:43:486 CPU/(3316:14207): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:44:43:486 CPU/(3316:14207): Cliente desconectado!
+[WARNING] 21:44:43:486 CPU/(3316:14207): El cliente se desconectó del server
+[INFO] 21:44:43:486 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:44:43:486 CPU/(3316:14214): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 21:44:44:486 CPU/(3316:14214): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 21:44:45:486 CPU/(3316:14214): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:44:45:486 CPU/(3316:14214): Cliente desconectado!
+[WARNING] 21:44:45:486 CPU/(3316:14214): El cliente se desconectó del server
+[INFO] 21:44:45:486 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:44:45:487 CPU/(3316:14216): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG2, arg3: 
+[INFO] 21:44:46:487 CPU/(3316:14216): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 21:44:47:487 CPU/(3316:14216): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:44:47:487 CPU/(3316:14216): Cliente desconectado!
+[WARNING] 21:44:47:487 CPU/(3316:14216): El cliente se desconectó del server
+[INFO] 21:44:47:487 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:44:47:487 CPU/(3316:14217): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 21:44:48:487 CPU/(3316:14217): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 21:44:49:487 CPU/(3316:14217): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:44:49:487 CPU/(3316:14217): Cliente desconectado!
+[WARNING] 21:44:49:488 CPU/(3316:14217): El cliente se desconectó del server
+[INFO] 21:44:49:488 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:44:49:488 CPU/(3316:14224): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 21:44:50:488 CPU/(3316:14224): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA2, arg3: 
+[INFO] 21:44:51:488 CPU/(3316:14224): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:44:51:488 CPU/(3316:14224): Cliente desconectado!
+[WARNING] 21:44:51:488 CPU/(3316:14224): El cliente se desconectó del server
+[INFO] 21:44:51:488 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:44:51:488 CPU/(3316:14225): PID: 2 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 21:44:52:488 CPU/(3316:14225): PID: 2 - Ejecutando: SET - arg1: BX, arg2: FRA3, arg3: 
+[INFO] 21:44:53:489 CPU/(3316:14225): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:44:53:489 CPU/(3316:14225): Cliente desconectado!
+[WARNING] 21:44:53:489 CPU/(3316:14225): El cliente se desconectó del server
+[INFO] 21:44:53:489 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:44:53:489 CPU/(3316:14226): PID: 3 - Ejecutando: SET - arg1: AX, arg2: ARG3, arg3: 
+[INFO] 21:44:54:489 CPU/(3316:14226): PID: 3 - Ejecutando: SET - arg1: BX, arg2: FRA3, arg3: 
+[INFO] 21:44:55:489 CPU/(3316:14226): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:44:55:489 CPU/(3316:14226): Cliente desconectado!
+[WARNING] 21:44:55:489 CPU/(3316:14226): El cliente se desconectó del server
+[INFO] 21:44:55:490 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:44:55:490 CPU/(3316:14233): PID: 2 - Ejecutando: SET - arg1: RDX, arg2: VAMOSALOSPENALES, arg3: 
+[INFO] 21:44:56:490 CPU/(3316:14233): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:44:56:490 CPU/(3316:14233): Cliente desconectado!
+[WARNING] 21:44:56:490 CPU/(3316:14233): El cliente se desconectó del server
+[INFO] 21:44:56:490 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:44:56:490 CPU/(3316:14234): PID: 3 - Ejecutando: SET - arg1: RDX, arg2: VAMOSALOSPENALES, arg3: 
+[INFO] 21:44:57:490 CPU/(3316:14234): PID: 3 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 21:44:57:490 CPU/(3316:14234): Cliente desconectado!
+[WARNING] 21:44:57:490 CPU/(3316:14234): El cliente se desconectó del server
+[INFO] 21:44:57:491 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:44:57:491 CPU/(3316:14252): PID: 2 - Ejecutando: SET - arg1: RAX, arg2: ARGENTINACAMPEON, arg3: 
+[INFO] 21:44:58:491 CPU/(3316:14252): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 21:44:58:491 CPU/(3316:14252): Cliente desconectado!
+[WARNING] 21:44:58:491 CPU/(3316:14252): El cliente se desconectó del server
+[INFO] 21:44:58:491 CPU/(3316:3316): Se conecto un cliente!
+[INFO] 21:44:58:491 CPU/(3316:14254): PID: 3 - Ejecutando: SET - arg1: RAX, arg2: ARGENTINACAMPEON, arg3: 
+[INFO] 21:44:59:491 CPU/(3316:14254): PID: 3 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 21:44:59:491 CPU/(3316:14254): Cliente desconectado!
+[WARNING] 21:44:59:491 CPU/(3316:14254): El cliente se desconectó del server
