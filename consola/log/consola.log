@@ -4257,3 +4257,122 @@
 [INFO] 21:44:39:485 CONSOLA/(14163:14163): Resultado de ejecutar el script 'scripts/BASE_1.txt': SUCCESS
 [INFO] 21:44:58:491 CONSOLA/(14167:14167): Resultado de ejecutar el script 'scripts/BASE_2.txt': SUCCESS
 [INFO] 21:44:59:491 CONSOLA/(14170:14170): Resultado de ejecutar el script 'scripts/BASE_2.txt': SUCCESS
+[ERROR] 00:56:30:395 CONSOLA/(5927:5927): Error creando la conexion para 127.0.0.1:35601
+[ERROR] 00:56:30:397 CONSOLA/(5927:5927): No se pudo conectar al servidor Kernel
+[ERROR] 00:56:30:398 CONSOLA/(5927:5927): No se pudo conectar al servidor del Kernel
+[ERROR] 00:56:30:426 CONSOLA/(5927:5927): Error creando la conexion para 127.0.0.1:35601
+[ERROR] 00:56:30:427 CONSOLA/(5927:5927): No se pudo conectar al servidor Kernel
+[ERROR] 00:56:30:428 CONSOLA/(5927:5927): No se pudo conectar a Kernel
+[ERROR] 00:56:30:901 CONSOLA/(5936:5936): Error creando la conexion para 127.0.0.1:35601
+[ERROR] 00:56:30:901 CONSOLA/(5936:5936): No se pudo conectar al servidor Kernel
+[ERROR] 00:56:30:901 CONSOLA/(5936:5936): No se pudo conectar al servidor del Kernel
+[ERROR] 00:56:30:902 CONSOLA/(5936:5936): Error creando la conexion para 127.0.0.1:35601
+[ERROR] 00:56:30:902 CONSOLA/(5936:5936): No se pudo conectar al servidor Kernel
+[ERROR] 00:56:30:902 CONSOLA/(5936:5936): No se pudo conectar a Kernel
+[INFO] 00:57:11:069 CONSOLA/(6175:6175): Conexión establecida con Kernel
+[INFO] 00:57:11:072 CONSOLA/(6175:6175): Handshake OK
+[INFO] 00:57:11:072 CONSOLA/(6175:6175): Conexión establecida con Kernel
+[INFO] 00:57:11:072 CONSOLA/(6175:6175): Enviando instrucciones a Kernel...
+[INFO] 00:57:11:491 CONSOLA/(6180:6180): Conexión establecida con Kernel
+[INFO] 00:57:11:491 CONSOLA/(6180:6180): Handshake OK
+[INFO] 00:57:11:492 CONSOLA/(6180:6180): Conexión establecida con Kernel
+[INFO] 00:57:11:492 CONSOLA/(6180:6180): Enviando instrucciones a Kernel...
+[INFO] 00:57:27:097 CONSOLA/(6175:6175): Resultado de ejecutar el script 'scripts/BASE_1': SUCCESS
+[INFO] 00:57:41:145 CONSOLA/(6180:6180): Resultado de ejecutar el script 'scripts/BASE_2': SUCCESS
+[INFO] 00:58:02:214 CONSOLA/(6745:6745): Conexión establecida con Kernel
+[INFO] 00:58:02:220 CONSOLA/(6745:6745): Handshake OK
+[INFO] 00:58:02:223 CONSOLA/(6745:6745): Conexión establecida con Kernel
+[INFO] 00:58:02:224 CONSOLA/(6745:6745): Enviando instrucciones a Kernel...
+[INFO] 00:58:04:231 CONSOLA/(6769:6769): Conexión establecida con Kernel
+[INFO] 00:58:04:232 CONSOLA/(6769:6769): Handshake OK
+[INFO] 00:58:04:233 CONSOLA/(6769:6769): Conexión establecida con Kernel
+[INFO] 00:58:04:233 CONSOLA/(6769:6769): Enviando instrucciones a Kernel...
+[INFO] 00:58:05:394 CONSOLA/(6805:6805): Conexión establecida con Kernel
+[INFO] 00:58:05:398 CONSOLA/(6805:6805): Handshake OK
+[INFO] 00:58:05:398 CONSOLA/(6805:6805): Conexión establecida con Kernel
+[INFO] 00:58:05:398 CONSOLA/(6805:6805): Enviando instrucciones a Kernel...
+[INFO] 00:58:20:245 CONSOLA/(6745:6745): Resultado de ejecutar el script 'scripts/BASE_1': SUCCESS
+[INFO] 00:58:47:291 CONSOLA/(6769:6769): Resultado de ejecutar el script 'scripts/BASE_2': SUCCESS
+[INFO] 00:58:48:298 CONSOLA/(6805:6805): Resultado de ejecutar el script 'scripts/BASE_2': SUCCESS
+[INFO] 01:10:13:826 CONSOLA/(7729:7729): Conexión establecida con Kernel
+[INFO] 01:10:13:835 CONSOLA/(7729:7729): Handshake OK
+[INFO] 01:10:13:835 CONSOLA/(7729:7729): Conexión establecida con Kernel
+[INFO] 01:10:13:835 CONSOLA/(7729:7729): Enviando instrucciones a Kernel...
+[ERROR] 01:10:14:396 CONSOLA/(7736:7736): Error creando la conexion para 127.0.0.1:35601
+[ERROR] 01:10:14:396 CONSOLA/(7736:7736): No se pudo conectar al servidor Kernel
+[ERROR] 01:10:14:396 CONSOLA/(7736:7736): No se pudo conectar al servidor del Kernel
+[ERROR] 01:10:14:396 CONSOLA/(7736:7736): Error creando la conexion para 127.0.0.1:35601
+[ERROR] 01:10:14:397 CONSOLA/(7736:7736): No se pudo conectar al servidor Kernel
+[ERROR] 01:10:14:397 CONSOLA/(7736:7736): No se pudo conectar a Kernel
+[INFO] 01:10:15:093 CONSOLA/(7770:7770): Conexión establecida con Kernel
+[INFO] 01:10:15:107 CONSOLA/(7770:7770): Handshake OK
+[INFO] 01:10:15:107 CONSOLA/(7770:7770): Conexión establecida con Kernel
+[INFO] 01:10:15:107 CONSOLA/(7770:7770): Enviando instrucciones a Kernel...
+[INFO] 01:10:23:847 CONSOLA/(7729:7729): Resultado de ejecutar el script 'scripts/DEADLOCK_1': SUCCESS
+[INFO] 01:10:25:134 CONSOLA/(7770:7770): Resultado de ejecutar el script 'scripts/DEADLOCK_3': SUCCESS
+[INFO] 01:11:12:125 CONSOLA/(8350:8350): Conexión establecida con Kernel
+[INFO] 01:11:12:131 CONSOLA/(8350:8350): Handshake OK
+[INFO] 01:11:12:146 CONSOLA/(8350:8350): Conexión establecida con Kernel
+[INFO] 01:11:12:146 CONSOLA/(8350:8350): Enviando instrucciones a Kernel...
+[INFO] 01:11:13:094 CONSOLA/(8369:8369): Conexión establecida con Kernel
+[INFO] 01:11:13:096 CONSOLA/(8369:8369): Handshake OK
+[INFO] 01:11:13:096 CONSOLA/(8369:8369): Conexión establecida con Kernel
+[INFO] 01:11:13:097 CONSOLA/(8369:8369): Enviando instrucciones a Kernel...
+[INFO] 01:11:13:615 CONSOLA/(8406:8406): Conexión establecida con Kernel
+[INFO] 01:11:13:624 CONSOLA/(8406:8406): Handshake OK
+[INFO] 01:11:13:631 CONSOLA/(8406:8406): Conexión establecida con Kernel
+[INFO] 01:11:13:632 CONSOLA/(8406:8406): Enviando instrucciones a Kernel...
+[INFO] 01:11:40:772 CONSOLA/(8607:8607): Conexión establecida con Kernel
+[INFO] 01:11:40:778 CONSOLA/(8607:8607): Handshake OK
+[INFO] 01:11:40:778 CONSOLA/(8607:8607): Conexión establecida con Kernel
+[INFO] 01:11:40:778 CONSOLA/(8607:8607): Enviando instrucciones a Kernel...
+[INFO] 01:20:52:025 CONSOLA/(9500:9500): Conexión establecida con Kernel
+[INFO] 01:20:52:031 CONSOLA/(9500:9500): Handshake OK
+[INFO] 01:20:52:038 CONSOLA/(9500:9500): Conexión establecida con Kernel
+[INFO] 01:20:52:039 CONSOLA/(9500:9500): Enviando instrucciones a Kernel...
+[INFO] 01:20:52:642 CONSOLA/(9505:9505): Conexión establecida con Kernel
+[INFO] 01:20:52:643 CONSOLA/(9505:9505): Handshake OK
+[INFO] 01:20:52:643 CONSOLA/(9505:9505): Conexión establecida con Kernel
+[INFO] 01:20:52:643 CONSOLA/(9505:9505): Enviando instrucciones a Kernel...
+[INFO] 01:20:53:043 CONSOLA/(9500:9500): Resultado de ejecutar el script 'scripts/ERROR_1': Ц���U
+[INFO] 01:20:54:043 CONSOLA/(9505:9505): Resultado de ejecutar el script 'scripts/ERROR_2': ��;V
+[INFO] 01:31:42:441 CONSOLA/(10186:10186): Conexión establecida con Kernel
+[INFO] 01:31:42:449 CONSOLA/(10186:10186): Handshake OK
+[INFO] 01:31:42:450 CONSOLA/(10186:10186): Conexión establecida con Kernel
+[INFO] 01:31:42:453 CONSOLA/(10186:10186): Enviando instrucciones a Kernel...
+[INFO] 01:31:43:463 CONSOLA/(10186:10186): Resultado de ejecutar el script 'scripts/ERROR_1': ��L�SV
+[INFO] 01:31:43:723 CONSOLA/(10214:10214): Conexión establecida con Kernel
+[INFO] 01:31:43:726 CONSOLA/(10214:10214): Handshake OK
+[INFO] 01:31:43:726 CONSOLA/(10214:10214): Conexión establecida con Kernel
+[INFO] 01:31:43:726 CONSOLA/(10214:10214): Enviando instrucciones a Kernel...
+[INFO] 01:31:44:744 CONSOLA/(10214:10214): Resultado de ejecutar el script 'scripts/ERROR_2': ��j��U
+[INFO] 01:32:02:016 CONSOLA/(10369:10369): Conexión establecida con Kernel
+[INFO] 01:32:02:018 CONSOLA/(10369:10369): Handshake OK
+[INFO] 01:32:02:018 CONSOLA/(10369:10369): Conexión establecida con Kernel
+[INFO] 01:32:02:018 CONSOLA/(10369:10369): Enviando instrucciones a Kernel...
+[INFO] 01:32:03:022 CONSOLA/(10369:10369): Resultado de ejecutar el script 'scripts/ERROR_1': �cKjU
+[INFO] 01:32:03:054 CONSOLA/(10388:10388): Conexión establecida con Kernel
+[INFO] 01:32:03:057 CONSOLA/(10388:10388): Handshake OK
+[INFO] 01:32:03:058 CONSOLA/(10388:10388): Conexión establecida con Kernel
+[INFO] 01:32:03:058 CONSOLA/(10388:10388): Enviando instrucciones a Kernel...
+[INFO] 01:32:04:074 CONSOLA/(10388:10388): Resultado de ejecutar el script 'scripts/ERROR_2': ��TZ�U
+[INFO] 01:34:03:563 CONSOLA/(10693:10693): Conexión establecida con Kernel
+[INFO] 01:34:03:563 CONSOLA/(10693:10693): Handshake OK
+[INFO] 01:34:03:563 CONSOLA/(10693:10693): Conexión establecida con Kernel
+[INFO] 01:34:03:563 CONSOLA/(10693:10693): Enviando instrucciones a Kernel...
+[INFO] 01:34:04:571 CONSOLA/(10693:10693): Resultado de ejecutar el script 'scripts/ERROR_1': �v�
+[INFO] 01:34:20:301 CONSOLA/(10813:10813): Conexión establecida con Kernel
+[INFO] 01:34:20:303 CONSOLA/(10813:10813): Handshake OK
+[INFO] 01:34:20:304 CONSOLA/(10813:10813): Conexión establecida con Kernel
+[INFO] 01:34:20:309 CONSOLA/(10813:10813): Enviando instrucciones a Kernel...
+[INFO] 01:34:21:311 CONSOLA/(10813:10813): Resultado de ejecutar el script 'scripts/ERROR_1': RESOURCE NOT FOUND
+[INFO] 01:34:24:917 CONSOLA/(10879:10879): Conexión establecida con Kernel
+[INFO] 01:34:24:924 CONSOLA/(10879:10879): Handshake OK
+[INFO] 01:34:24:924 CONSOLA/(10879:10879): Conexión establecida con Kernel
+[INFO] 01:34:24:924 CONSOLA/(10879:10879): Enviando instrucciones a Kernel...
+[INFO] 01:34:25:934 CONSOLA/(10879:10879): Resultado de ejecutar el script 'scripts/ERROR_2': RESOURCE NOT FOUND
+[INFO] 01:34:31:438 CONSOLA/(10967:10967): Conexión establecida con Kernel
+[INFO] 01:34:31:440 CONSOLA/(10967:10967): Handshake OK
+[INFO] 01:34:31:440 CONSOLA/(10967:10967): Conexión establecida con Kernel
+[INFO] 01:34:31:440 CONSOLA/(10967:10967): Enviando instrucciones a Kernel...
+[INFO] 01:34:45:447 CONSOLA/(10967:10967): Resultado de ejecutar el script 'scripts/BASE_1': SUCCESS

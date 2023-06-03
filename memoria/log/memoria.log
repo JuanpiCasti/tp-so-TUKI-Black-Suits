@@ -194,3 +194,53 @@
 [INFO] 22:03:57:094 MEMORIA/(4726:14633): Recibido handshake HANDSHAKE_KERNEL.
 [WARNING] 22:03:57:095 MEMORIA/(4726:14633): Cliente desconectado!
 [WARNING] 22:03:57:096 MEMORIA/(4726:14633): El cliente se desconectó del server
+[INFO] 00:48:45:578 MEMORIA/(3945:3945): Memoria escuchando conexiones...
+[INFO] 00:49:45:720 MEMORIA/(3945:3945): Se conecto un cliente!
+[INFO] 00:49:45:722 MEMORIA/(3945:4254): Recibido handshake HANDSHAKE_FILESYSTEM.
+[WARNING] 00:49:45:723 MEMORIA/(3945:4254): Cliente desconectado!
+[WARNING] 00:49:45:724 MEMORIA/(3945:4254): El cliente se desconectó del server
+[INFO] 00:52:04:736 MEMORIA/(4847:4847): Memoria escuchando conexiones...
+[INFO] 00:52:42:437 MEMORIA/(4847:4847): Se conecto un cliente!
+[INFO] 00:52:42:437 MEMORIA/(4847:5006): Recibido handshake HANDSHAKE_CPU.
+[WARNING] 00:52:42:437 MEMORIA/(4847:5006): Cliente desconectado!
+[WARNING] 00:52:42:437 MEMORIA/(4847:5006): El cliente se desconectó del server
+[INFO] 00:55:05:240 MEMORIA/(4847:4847): Se conecto un cliente!
+[INFO] 00:55:05:240 MEMORIA/(4847:5400): Recibido handshake HANDSHAKE_FILESYSTEM.
+[WARNING] 00:55:05:240 MEMORIA/(4847:5400): Cliente desconectado!
+[WARNING] 00:55:05:240 MEMORIA/(4847:5400): El cliente se desconectó del server
+[INFO] 00:55:14:116 MEMORIA/(4847:4847): Se conecto un cliente!
+[INFO] 00:55:14:116 MEMORIA/(4847:5547): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:55:14:117 MEMORIA/(4847:5547): Cliente desconectado!
+[WARNING] 00:55:14:117 MEMORIA/(4847:5547): El cliente se desconectó del server
+[INFO] 00:57:53:391 MEMORIA/(4847:4847): Se conecto un cliente!
+[INFO] 00:57:53:391 MEMORIA/(4847:6594): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:57:53:392 MEMORIA/(4847:6594): Cliente desconectado!
+[WARNING] 00:57:53:392 MEMORIA/(4847:6594): El cliente se desconectó del server
+[INFO] 01:09:24:853 MEMORIA/(4847:4847): Se conecto un cliente!
+[INFO] 01:09:24:853 MEMORIA/(4847:7415): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 01:09:24:853 MEMORIA/(4847:7415): Cliente desconectado!
+[WARNING] 01:09:24:853 MEMORIA/(4847:7415): El cliente se desconectó del server
+[INFO] 01:10:29:769 MEMORIA/(4847:4847): Se conecto un cliente!
+[INFO] 01:10:29:769 MEMORIA/(4847:7979): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 01:10:29:770 MEMORIA/(4847:7979): Cliente desconectado!
+[WARNING] 01:10:29:770 MEMORIA/(4847:7979): El cliente se desconectó del server
+[INFO] 01:20:14:216 MEMORIA/(4847:4847): Se conecto un cliente!
+[INFO] 01:20:14:216 MEMORIA/(4847:9127): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 01:20:14:216 MEMORIA/(4847:9127): Cliente desconectado!
+[WARNING] 01:20:14:216 MEMORIA/(4847:9127): El cliente se desconectó del server
+[INFO] 01:31:26:099 MEMORIA/(4847:4847): Se conecto un cliente!
+[INFO] 01:31:26:099 MEMORIA/(4847:9937): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 01:31:26:099 MEMORIA/(4847:9937): Cliente desconectado!
+[WARNING] 01:31:26:100 MEMORIA/(4847:9937): El cliente se desconectó del server
+[INFO] 01:31:30:696 MEMORIA/(4847:4847): Se conecto un cliente!
+[INFO] 01:31:30:696 MEMORIA/(4847:10021): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 01:31:30:697 MEMORIA/(4847:10021): Cliente desconectado!
+[WARNING] 01:31:30:697 MEMORIA/(4847:10021): El cliente se desconectó del server
+[INFO] 01:31:35:084 MEMORIA/(4847:4847): Se conecto un cliente!
+[INFO] 01:31:35:084 MEMORIA/(4847:10092): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 01:31:35:085 MEMORIA/(4847:10092): Cliente desconectado!
+[WARNING] 01:31:35:085 MEMORIA/(4847:10092): El cliente se desconectó del server
+[INFO] 01:33:58:006 MEMORIA/(4847:4847): Se conecto un cliente!
+[INFO] 01:33:58:006 MEMORIA/(4847:10614): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 01:33:58:006 MEMORIA/(4847:10614): Cliente desconectado!
+[WARNING] 01:33:58:006 MEMORIA/(4847:10614): El cliente se desconectó del server

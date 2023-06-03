@@ -49,7 +49,7 @@ typedef enum
 	// BLOCK calculo que tambien, ya veremos cuando lleguemos ahi
 } cod_op_kernel;
 
-extern char* cod_op_kernel_description[3];
+extern char* cod_op_kernel_description[6];
 
 extern uint32_t TAMANIO_CONTEXTO;
 
