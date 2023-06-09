@@ -11,6 +11,23 @@
 #include <commons/bitarray.h>
 #include "shared_utils.h"
 
+typedef enum
+{
+  OPEN,
+  CREATE,
+  TRUNCATE,
+  READ,
+  WRITE
+} f_instruction;
+
+typedef struct
+{
+  char f_name[30]; // Nombre del archivo
+  uint32_t f_size; // Tamaño del archivo en bytes del archivo
+  uint32_t f_dp;   // Puntero directo al primer bloque de datos del archivo
+  uint32_t f_ip;   // Puntero indirecto al bloque que contiene los punteros a los siguientes bloques del archivo
+} t_fcb;
+
 extern t_log *logger_filesystem;
 
 extern t_config *CONFIG_FILESYSTEM;
@@ -31,7 +48,12 @@ void levantar_loggers_filesystem();
 void levantar_config_filesystem();
 void levantar_superbloque();
 t_bitarray *levantar_bitmap();
-char* levantar_bloques();
-void modificar_bloque(char* blocks_buffer, int numero_bloque, char* bloque_nuevo);
+void ocupar_bloque(t_bitarray *bitmap, int index);
+void desocupar_bloque(t_bitarray *bitmap, int index);
+char *levantar_bloques();
+void modificar_bloque(char *blocks_buffer, int numero_bloque, char *bloque_nuevo);
+int crear_archivo(char f_name[30]);
+int abrir_archivo(char f_name[30]);
+void truncar_archivo(char f_name[30], uint32_t new_size);
 
 #endif

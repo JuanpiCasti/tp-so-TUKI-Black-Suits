@@ -17,7 +17,7 @@ int BLOCK_SIZE;
 int BLOCK_COUNT;
 
 t_bitarray *bitmap;
-char* blocks_buffer;
+char *blocks_buffer;
 
 int socket_servidor_filesystem;
 int socket_memoria;
@@ -34,7 +34,24 @@ int main(int argc, char **argv)
 		levantar_loggers_filesystem();
 		levantar_config_filesystem();
 		levantar_superbloque();
-		bitmap = levantar_bitmap();
+
+		//*********************
+		// HANDSHAKE - MEMORIA
+		// if (realizar_handshake(logger_filesystem, IP_MEMORIA, PUERTO_MEMORIA, HANDSHAKE_FILESYSTEM, "Memoria") == -1)
+		// {
+		// 	return EXIT_FAILURE;
+		// }
+
+		//*********************
+		// PREPARACIÓN DE BLOQUES
+		bitmap = levantar_bitmap(); // TODO: Fixear esto, por alguna razón cuando lo imprimo desde acá se imprime mal ????????
+
+		for (int i = 0; i < BLOCK_COUNT; i++)
+		{
+			printf("Pos. %d: %d\n", i + 1, bitarray_test_bit(bitmap, i));
+		}
+
+		//ocupar_bloque(bitmap, 3);
 		blocks_buffer = levantar_bloques();
 
 		// Prueba de archivo de bloques
@@ -42,23 +59,24 @@ int main(int argc, char **argv)
 		// memset(bloque_nuevo, '1', BLOCK_SIZE);
 		// modificar_bloque(blocks_buffer, 3, bloque_nuevo);
 
-		//*********************
-		// HANDSHAKE - MEMORIA
-		if (realizar_handshake(logger_filesystem, IP_MEMORIA, PUERTO_MEMORIA, HANDSHAKE_FILESYSTEM, "Memoria") == -1)
-		{
-			return EXIT_FAILURE;
-		}
+		// crear_archivo("elpicante");
+		// abrir_archivo("elpicante");
+		// truncar_archivo("elpicante", 64);
 
 		//*********************
-		//SERVIDOR
-		socket_servidor_filesystem = iniciar_servidor(logger_filesystem, PUERTO_ESCUCHA_FILESYSTEM);
-		if (socket_servidor_filesystem == -1)
-		{
-			log_error(logger_filesystem, "No se pudo iniciar el servidor en Filesystem...");
-			return EXIT_FAILURE;
-		}
-		log_info(logger_filesystem, "Filesystem escuchando conexiones...");
-		while (server_escuchar(logger_filesystem, socket_servidor_filesystem, (void *)procesar_conexion));
+		// SERVIDOR
+		// socket_servidor_filesystem = iniciar_servidor(logger_filesystem, PUERTO_ESCUCHA_FILESYSTEM);
+		// if (socket_servidor_filesystem == -1)
+		// {
+		// 	log_error(logger_filesystem, "No se pudo iniciar el servidor en Filesystem...");
+		// 	return EXIT_FAILURE;
+		// }
+		// log_info(logger_filesystem, "Filesystem escuchando conexiones...");
+		// while (server_escuchar(logger_filesystem, socket_servidor_filesystem, (void *)procesar_conexion));
+
+		bitarray_destroy(bitmap);
+		free(blocks_buffer);
+		config_destroy(CONFIG_FILESYSTEM);
 		return EXIT_SUCCESS;
 	}
 }
