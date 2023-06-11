@@ -4376,3 +4376,4 @@
 [INFO] 01:34:31:440 CONSOLA/(10967:10967): Conexión establecida con Kernel
 [INFO] 01:34:31:440 CONSOLA/(10967:10967): Enviando instrucciones a Kernel...
 [INFO] 01:34:45:447 CONSOLA/(10967:10967): Resultado de ejecutar el script 'scripts/BASE_1': SUCCESS
+[ERROR] 20:01:28:202 CONSOLA/(49955:49955): Por favor especificar archivo de configuración e instrucciones a enviar

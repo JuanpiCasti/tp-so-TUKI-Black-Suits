@@ -7589,3 +7589,23 @@
 [WARNING] 01:34:31:442 KERNEL_EXTRA/(10611:10968): El cliente se desconectó del server
 [WARNING] 01:34:45:447 KERNEL_EXTRA/(10611:10969): Cliente desconectado!
 [WARNING] 01:34:45:447 KERNEL_EXTRA/(10611:10969): El cliente se desconectó del server
+[ERROR] 18:00:44:033 KERNEL_EXTRA/(38420:38420): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 18:00:44:033 KERNEL_EXTRA/(38420:38420): No se pudo conectar al servidor Filesystem
+[ERROR] 18:00:44:033 KERNEL_EXTRA/(38420:38420): No se pudo conectar al servidor del Filesystem
+[ERROR] 18:00:44:033 KERNEL_EXTRA/(38420:38420): Error creando la conexion para 127.0.0.1:8001
+[ERROR] 18:00:44:034 KERNEL_EXTRA/(38420:38420): No se pudo conectar al servidor CPU
+[ERROR] 18:00:44:034 KERNEL_EXTRA/(38420:38420): No se pudo conectar al servidor del CPU
+[ERROR] 18:00:44:034 KERNEL_EXTRA/(38420:38420): Error creando la conexion para 127.0.0.1:8002
+[ERROR] 18:00:44:034 KERNEL_EXTRA/(38420:38420): No se pudo conectar al servidor Memoria
+[ERROR] 18:00:44:034 KERNEL_EXTRA/(38420:38420): No se pudo conectar al servidor del Memoria
+[INFO] 18:00:44:034 KERNEL_EXTRA/(38420:38420): Kernel escuchando conexiones...
+[ERROR] 18:01:15:916 KERNEL_EXTRA/(38478:38478): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 18:01:15:916 KERNEL_EXTRA/(38478:38478): No se pudo conectar al servidor Filesystem
+[ERROR] 18:01:15:916 KERNEL_EXTRA/(38478:38478): No se pudo conectar al servidor del Filesystem
+[ERROR] 18:01:15:916 KERNEL_EXTRA/(38478:38478): Error creando la conexion para 127.0.0.1:8001
+[ERROR] 18:01:15:916 KERNEL_EXTRA/(38478:38478): No se pudo conectar al servidor CPU
+[ERROR] 18:01:15:916 KERNEL_EXTRA/(38478:38478): No se pudo conectar al servidor del CPU
+[ERROR] 18:01:15:916 KERNEL_EXTRA/(38478:38478): Error creando la conexion para 127.0.0.1:8002
+[ERROR] 18:01:15:916 KERNEL_EXTRA/(38478:38478): No se pudo conectar al servidor Memoria
+[ERROR] 18:01:15:916 KERNEL_EXTRA/(38478:38478): No se pudo conectar al servidor del Memoria
+[INFO] 18:01:15:916 KERNEL_EXTRA/(38478:38478): Kernel escuchando conexiones...

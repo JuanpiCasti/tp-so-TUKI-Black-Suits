@@ -1,31 +1,48 @@
 #include "memoria.h"
 
+t_config* config_memoria;
 t_log *logger_memoria;
-t_config *config_memoria;
+t_log *logger_memoria_extra;
+
 int socket_servidor_memoria;
+
+int PUERTO_ESCUCHA_MEMORIA;
+uint32_t TAM_MEMORIA;
+uint32_t TAM_SEGMENTO_0;
+uint32_t CANT_SEGMENTOS;
+uint32_t RETARDO_MEMORIA;
+uint32_t RETARDO_COMPACTACION;
+t_algo_asig ALGORITMO_ASIGNACION;
+
+void* ESPACIO_USUARIO;
+uint32_t ESPACIO_LIBRE_TOTAL;
+t_list* LISTA_ESPACIOS_LIBRES;
 
 int main(int argc, char **argv)
 {
 	if (argc > 1 && strcmp(argv[1], "-test") == 0)
 	{
+		levantar_config_memoria();
+		levantar_loggers_memoria();
+		levantar_estructuras_administrativas();
 		run_tests();
+		return EXIT_SUCCESS;
 	}
 	else
 	{
-		logger_memoria = log_create("./log/memoria.log", "MEMORIA", true, LOG_LEVEL_INFO);
+		
 
-		config_memoria = config_create("./cfg/memoria.config");
-		char *puerto_escucha_memoria = config_get_string_value(config_memoria, "PUERTO_ESCUCHA");
-		// char *tam_memoria = config_get_string_value(config_memoria, "TAM_MEMORIA");
-		// char *tam_segmento = config_get_string_value(config_memoria, "TAM_SEGMENTO_0");
-		// char *cant_segmentos = config_get_string_value(config_memoria, "CANT_SEGMENTOS");
-		// char *retardo_memoria = config_get_string_value(config_memoria, "RETARDO_MEMORIA");
-		// char *retardo_compactacion = config_get_string_value(config_memoria, "RETARDO_COMPACTACION");
-		// char *algoritmo_asignacion = config_get_string_value(config_memoria, "ALGORITMO_ASIGNACION");
+		levantar_config_memoria();
+		levantar_loggers_memoria();
+		levantar_estructuras_administrativas();
+
+
 
 		//*********************
 		// SERVIDOR
-		socket_servidor_memoria = iniciar_servidor(logger_memoria, puerto_escucha_memoria);
+		char* puerto_escucha;
+		sprintf(puerto_escucha, "%d", PUERTO_ESCUCHA_MEMORIA);
+		socket_servidor_memoria = iniciar_servidor(logger_memoria, puerto_escucha);
 		if (socket_servidor_memoria == -1)
 		{
 			log_error(logger_memoria, "No se pudo iniciar el servidor en Memoria...");

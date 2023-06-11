@@ -49,6 +49,12 @@ typedef enum
 	// BLOCK calculo que tambien, ya veremos cuando lleguemos ahi
 } cod_op_kernel;
 
+typedef struct {
+    uint32_t id_seg;
+    uint32_t base;
+    uint32_t tam;
+} t_ent_ts; // Entrada de la tabla de segmentos.
+
 extern char* cod_op_kernel_description[6];
 
 extern uint32_t TAMANIO_CONTEXTO;
