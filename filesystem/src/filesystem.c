@@ -43,15 +43,8 @@ int main(int argc, char **argv)
 		// }
 
 		//*********************
-		// PREPARACIÓN DE BLOQUES
-		bitmap = levantar_bitmap(); // TODO: Fixear esto, por alguna razón cuando lo imprimo desde acá se imprime mal ????????
-
-		for (int i = 0; i < BLOCK_COUNT; i++)
-		{
-			printf("Pos. %d: %d\n", i + 1, bitarray_test_bit(bitmap, i));
-		}
-
-		//ocupar_bloque(bitmap, 3);
+		// PREPARACIÓN DE BLOQUES - TODO: Hacer logs
+		bitmap = levantar_bitmap();
 		blocks_buffer = levantar_bloques();
 
 		// Prueba de archivo de bloques

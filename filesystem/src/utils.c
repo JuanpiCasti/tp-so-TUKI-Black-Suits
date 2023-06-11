@@ -46,8 +46,13 @@ t_bitarray *levantar_bitmap()
 
   fread(bitarray->bitarray, 1, bitmap_size, bitmap_file);
 
+  // for (int i = 0; i < BLOCK_COUNT; i++)
+  // {
+  //   printf("Pos. %d: %d\n", i + 1, bitarray_test_bit(bitarray, i));
+  // }
+
   fclose(bitmap_file);
-  free(puntero_a_bits);
+  // free(puntero_a_bits); TODO: Liberar esto al final del programa
   return bitarray;
 }
 
@@ -55,7 +60,7 @@ void ocupar_bloque(t_bitarray *bitarray, int numero_bloque)
 {
   int bitmap_size = BLOCK_COUNT / 8;
 
-  bitarray_set_bit(bitarray, numero_bloque-1);
+  bitarray_set_bit(bitarray, numero_bloque - 1);
 
   FILE *bitmap_file = fopen(PATH_BITMAP, "r+b");
   fwrite(bitarray->bitarray, 1, bitmap_size, bitmap_file);
@@ -67,7 +72,7 @@ void desocupar_bloque(t_bitarray *bitarray, int numero_bloque)
 {
   int bitmap_size = BLOCK_COUNT / 8;
 
-  bitarray_clean_bit(bitarray, numero_bloque-1);
+  bitarray_clean_bit(bitarray, numero_bloque - 1);
 
   FILE *bitmap_file = fopen(PATH_BITMAP, "r+b");
   fwrite(bitarray->bitarray, 1, bitmap_size, bitmap_file);
