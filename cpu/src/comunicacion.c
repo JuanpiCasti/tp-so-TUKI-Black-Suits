@@ -58,6 +58,18 @@ void serializar_contexto(void *buffer, cod_op_kernel cop, int tamanio_contexto)
         memcpy(buffer + desplazamiento, recurso, 20);
         desplazamiento += 20;
     }
+
+    if (cop == CPU_CREATE_SEGMENT) {
+        t_instruccion* instruccion = list_get(INSTRUCTION_LIST, PROGRAM_COUNTER - 1);
+        uint32_t id_seg = atoi(instruccion -> arg1);
+        uint32_t tam_seg = atoi(instruccion -> arg2);
+        //printf("ID: %d, TAM: %d\n", id_seg, tam_seg);
+        
+        memcpy(buffer + desplazamiento, &id_seg, sizeof(uint32_t)); // ID SEGMENTO
+        desplazamiento += sizeof(uint32_t);
+        memcpy(buffer + desplazamiento, &tam_seg, sizeof(uint32_t)); // TAMANIO SEGMENTO
+        desplazamiento += sizeof(uint32_t);
+    }
 }
 
 void devolver_contexto(int cliente_socket, cod_op_kernel cop)
@@ -72,6 +84,10 @@ void devolver_contexto(int cliente_socket, cod_op_kernel cop)
     if (cop == CPU_WAIT || cop == CPU_SIGNAL) {
         tamanio_contexto += 20;
     } 
+
+    if(cop == CPU_CREATE_SEGMENT) {
+        tamanio_contexto += sizeof(uint32_t) * 2;
+    }
     
 
     int tamanio_paquete = sizeof(cod_op_kernel) + // Cod OP
@@ -84,6 +100,7 @@ void devolver_contexto(int cliente_socket, cod_op_kernel cop)
 
     serializar_contexto(buffer, cop, tamanio_contexto);
     send(cliente_socket, buffer, tamanio_paquete, NULL);
+    free(buffer);
 }
 
 void procesar_conexion(void *void_args)

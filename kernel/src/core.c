@@ -227,6 +227,8 @@ void planificacion_corto_plazo()
             deserializar_contexto_pcb(buffer, r_pcb);
 
             char nombre_recurso[20];
+            uint32_t id_segmento;
+            uint32_t tam_segmento;
             switch (cop)
             {
             case CPU_YIELD:
@@ -257,6 +259,13 @@ void planificacion_corto_plazo()
                 memcpy(&nombre_recurso, buffer + TAMANIO_CONTEXTO, 20);
                 free(buffer);
                 signal_recurso(r_pcb, nombre_recurso);
+                break;
+            case CPU_CREATE_SEGMENT:
+                memcpy(&id_segmento, buffer + TAMANIO_CONTEXTO, sizeof(uint32_t));
+                memcpy(&tam_segmento, buffer + TAMANIO_CONTEXTO + sizeof(uint32_t), sizeof(uint32_t));
+                free(buffer);
+                //printf("ID: %d, TAM: %d\n", id_segmento, tam_segmento);
+                
                 break;
             default:
                 break;

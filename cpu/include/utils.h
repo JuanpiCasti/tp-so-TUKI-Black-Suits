@@ -14,7 +14,11 @@ typedef enum {
     EXIT,
     IO,
     WAIT,
-    SIGNAL
+    SIGNAL,
+    CREATE_SEGMENT,
+    DELETE_SEGMENT,
+    MOV_IN,
+    MOV_OUT
 } as_instruction;
 
 extern uint32_t PID_RUNNING;

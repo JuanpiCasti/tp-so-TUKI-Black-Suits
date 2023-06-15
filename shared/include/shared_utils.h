@@ -46,6 +46,7 @@ typedef enum
 	CPU_IO,
 	CPU_WAIT, 
 	CPU_SIGNAL,
+	CPU_CREATE_SEGMENT,
 	EXIT_RESOURCE_NOT_FOUND
 	// BLOCK calculo que tambien, ya veremos cuando lleguemos ahi
 } cod_op_kernel;

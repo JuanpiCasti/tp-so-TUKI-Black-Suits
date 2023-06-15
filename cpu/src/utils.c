@@ -146,6 +146,18 @@ as_instruction decode(t_instruccion *instruccion)
     else if (strcmp(instruccion->instruccion, "SIGNAL") == 0) {
         return SIGNAL;
     }
+    else if (strcmp(instruccion->instruccion, "CREATE_SEGMENT") == 0) {
+        return CREATE_SEGMENT;
+    }
+    else if (strcmp(instruccion->instruccion, "DELETE_SEGMENT") == 0) {
+        return DELETE_SEGMENT;
+    }
+    else if (strcmp(instruccion->instruccion, "MOV_IN") == 0) {
+        return MOV_IN;
+    }
+    else if (strcmp(instruccion->instruccion, "MOV_OUT") == 0) {
+        return MOV_OUT;
+    }
     else
     {
         log_error(logger_cpu, "La intrucción no es válida.");
@@ -230,14 +242,13 @@ cod_op_kernel ejecutar_instrucciones()
         case EXIT:
             return CPU_EXIT;
         case IO:
-            //TODO
             return CPU_IO;
         case WAIT:
-            //TODO
             return CPU_WAIT;
         case SIGNAL:
-            //TODO
             return CPU_SIGNAL;
+        case CREATE_SEGMENT:
+            return CPU_CREATE_SEGMENT;
         default:
             break;
         }
