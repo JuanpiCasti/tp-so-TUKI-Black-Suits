@@ -8542,3 +8542,435 @@
 [INFO] 01:34:45:447 CPU/(5005:11064): PID: 4 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
 [WARNING] 01:34:45:449 CPU/(5005:11064): Cliente desconectado!
 [WARNING] 01:34:45:449 CPU/(5005:11064): El cliente se desconectó del server
+[INFO] 23:38:47:815 CPU/(9786:9786): Conexión establecida con Memoria
+[INFO] 23:38:47:816 CPU/(9786:9786): Handshake OK
+[INFO] 23:38:47:816 CPU/(9786:9786): CPU escuchando conexiones...
+[ERROR] 23:41:52:658 CPU/(9915:9915): Error creando la conexion para 127.0.0.1:8002
+[ERROR] 23:41:52:658 CPU/(9915:9915): No se pudo conectar al servidor Memoria
+[ERROR] 23:41:52:658 CPU/(9915:9915): No se pudo conectar al servidor del Memoria
+[INFO] 23:41:52:658 CPU/(9915:9915): CPU escuchando conexiones...
+[INFO] 23:41:59:030 CPU/(9915:9915): Se conecto un cliente!
+[INFO] 23:41:59:030 CPU/(9915:9918): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:41:59:030 CPU/(9915:9918): Cliente desconectado!
+[WARNING] 23:41:59:030 CPU/(9915:9918): El cliente se desconectó del server
+[INFO] 23:45:05:691 CPU/(10150:10150): Conexión establecida con Memoria
+[INFO] 23:45:05:691 CPU/(10150:10150): Handshake OK
+[INFO] 23:45:05:692 CPU/(10150:10150): CPU escuchando conexiones...
+[INFO] 23:45:10:773 CPU/(10150:10150): Se conecto un cliente!
+[INFO] 23:45:10:774 CPU/(10150:10160): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:45:10:774 CPU/(10150:10160): Cliente desconectado!
+[WARNING] 23:45:10:774 CPU/(10150:10160): El cliente se desconectó del server
+[ERROR] 23:47:03:799 CPU/(10214:10214): Error creando la conexion para 127.0.0.1:8002
+[ERROR] 23:47:03:799 CPU/(10214:10214): No se pudo conectar al servidor Memoria
+[ERROR] 23:47:03:799 CPU/(10214:10214): No se pudo conectar al servidor del Memoria
+[INFO] 23:47:03:799 CPU/(10214:10214): CPU escuchando conexiones...
+[INFO] 23:47:11:062 CPU/(10214:10214): Se conecto un cliente!
+[INFO] 23:47:11:062 CPU/(10214:10224): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:47:11:062 CPU/(10214:10224): Cliente desconectado!
+[WARNING] 23:47:11:062 CPU/(10214:10224): El cliente se desconectó del server
+[ERROR] 23:48:10:733 CPU/(10271:10271): Error creando la conexion para 127.0.0.1:8002
+[ERROR] 23:48:10:733 CPU/(10271:10271): No se pudo conectar al servidor Memoria
+[ERROR] 23:48:10:733 CPU/(10271:10271): No se pudo conectar al servidor del Memoria
+[INFO] 23:48:10:733 CPU/(10271:10271): CPU escuchando conexiones...
+[INFO] 23:48:16:894 CPU/(10271:10271): Se conecto un cliente!
+[INFO] 23:48:16:894 CPU/(10271:10281): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:48:16:894 CPU/(10271:10281): Cliente desconectado!
+[WARNING] 23:48:16:894 CPU/(10271:10281): El cliente se desconectó del server
+[INFO] 23:49:08:084 CPU/(10271:10271): Se conecto un cliente!
+[INFO] 23:49:08:084 CPU/(10271:10328): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:49:08:084 CPU/(10271:10328): Cliente desconectado!
+[WARNING] 23:49:08:084 CPU/(10271:10328): El cliente se desconectó del server
+[ERROR] 23:50:16:147 CPU/(10490:10490): Error creando la conexion para 127.0.0.1:8002
+[ERROR] 23:50:16:147 CPU/(10490:10490): No se pudo conectar al servidor Memoria
+[ERROR] 23:50:16:147 CPU/(10490:10490): No se pudo conectar al servidor del Memoria
+[INFO] 23:50:16:147 CPU/(10490:10490): CPU escuchando conexiones...
+[INFO] 23:50:22:122 CPU/(10490:10490): Se conecto un cliente!
+[INFO] 23:50:22:122 CPU/(10490:10495): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:50:22:122 CPU/(10490:10495): Cliente desconectado!
+[WARNING] 23:50:22:122 CPU/(10490:10495): El cliente se desconectó del server
+[INFO] 23:51:14:087 CPU/(10490:10490): Se conecto un cliente!
+[INFO] 23:51:14:087 CPU/(10490:10541): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:51:14:088 CPU/(10490:10541): Cliente desconectado!
+[WARNING] 23:51:14:088 CPU/(10490:10541): El cliente se desconectó del server
+[INFO] 23:52:05:895 CPU/(10490:10490): Se conecto un cliente!
+[INFO] 23:52:05:895 CPU/(10490:10584): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:52:05:895 CPU/(10490:10584): Cliente desconectado!
+[WARNING] 23:52:05:895 CPU/(10490:10584): El cliente se desconectó del server
+[INFO] 23:52:07:923 CPU/(10490:10490): Se conecto un cliente!
+[INFO] 23:52:07:923 CPU/(10490:10593): PID: 1 - Ejecutando: SET - arg1: AX, arg2: AAAA, arg3: 
+[INFO] 23:52:08:923 CPU/(10490:10593): PID: 1 - Ejecutando: SET - arg1: BX, arg2: BBBB, arg3: 
+[INFO] 23:52:09:923 CPU/(10490:10593): PID: 1 - Ejecutando: SET - arg1: CX, arg2: CCCC, arg3: 
+[INFO] 23:52:10:923 CPU/(10490:10593): PID: 1 - Ejecutando: SET - arg1: DX, arg2: DDDD, arg3: 
+[INFO] 23:52:11:923 CPU/(10490:10593): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 23:52:12:923 CPU/(10490:10593): PID: 1 - Ejecutando: SET - arg1: EBX, arg2: BBBBBBBB, arg3: 
+[INFO] 23:52:13:923 CPU/(10490:10593): PID: 1 - Ejecutando: SET - arg1: ECX, arg2: CCCCCCCC, arg3: 
+[INFO] 23:52:14:924 CPU/(10490:10593): PID: 1 - Ejecutando: SET - arg1: EDX, arg2: DDDDDDDD, arg3: 
+[INFO] 23:52:15:924 CPU/(10490:10593): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: AAAAAAAAAAAAAAAA, arg3: 
+[INFO] 23:52:16:924 CPU/(10490:10593): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: BBBBBBBBBBBBBBBB, arg3: 
+[INFO] 23:52:17:924 CPU/(10490:10593): PID: 1 - Ejecutando: SET - arg1: RCX, arg2: CCCCCCCCCCCCCCCC, arg3: 
+[INFO] 23:52:18:924 CPU/(10490:10593): PID: 1 - Ejecutando: SET - arg1: RDX, arg2: DDDDDDDDDDDDDDDD, arg3: 
+[INFO] 23:52:19:924 CPU/(10490:10593): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 23:52:19:924 CPU/(10490:10593): Cliente desconectado!
+[WARNING] 23:52:19:924 CPU/(10490:10593): El cliente se desconectó del server
+[INFO] 23:52:19:924 CPU/(10490:10490): Se conecto un cliente!
+[INFO] 23:52:19:924 CPU/(10490:10594): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: TCHOUAMENIAFUERA, arg3: 
+[INFO] 23:52:20:924 CPU/(10490:10594): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SEGUNDO_FRANCIA_, arg3: 
+[INFO] 23:52:21:925 CPU/(10490:10594): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 23:52:21:925 CPU/(10490:10594): Cliente desconectado!
+[WARNING] 23:52:21:925 CPU/(10490:10594): El cliente se desconectó del server
+[INFO] 23:55:05:349 CPU/(10490:10490): Se conecto un cliente!
+[INFO] 23:55:05:349 CPU/(10490:10729): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:55:05:349 CPU/(10490:10729): Cliente desconectado!
+[WARNING] 23:55:05:349 CPU/(10490:10729): El cliente se desconectó del server
+[INFO] 23:56:02:754 CPU/(10490:10490): Se conecto un cliente!
+[INFO] 23:56:02:754 CPU/(10490:10962): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:56:02:754 CPU/(10490:10962): Cliente desconectado!
+[WARNING] 23:56:02:754 CPU/(10490:10962): El cliente se desconectó del server
+[ERROR] 23:56:11:054 CPU/(10969:10969): Error creando la conexion para 127.0.0.1:8002
+[ERROR] 23:56:11:054 CPU/(10969:10969): No se pudo conectar al servidor Memoria
+[ERROR] 23:56:11:054 CPU/(10969:10969): No se pudo conectar al servidor del Memoria
+[INFO] 23:56:11:054 CPU/(10969:10969): CPU escuchando conexiones...
+[INFO] 23:56:18:451 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 23:56:18:451 CPU/(10969:10972): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:56:18:451 CPU/(10969:10972): Cliente desconectado!
+[WARNING] 23:56:18:451 CPU/(10969:10972): El cliente se desconectó del server
+[INFO] 23:57:52:241 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 23:57:52:241 CPU/(10969:11039): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:57:52:241 CPU/(10969:11039): Cliente desconectado!
+[WARNING] 23:57:52:241 CPU/(10969:11039): El cliente se desconectó del server
+[INFO] 23:58:28:141 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 23:58:28:141 CPU/(10969:11075): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:58:28:141 CPU/(10969:11075): Cliente desconectado!
+[WARNING] 23:58:28:141 CPU/(10969:11075): El cliente se desconectó del server
+[INFO] 23:58:54:993 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 23:58:54:993 CPU/(10969:11102): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:58:54:993 CPU/(10969:11102): Cliente desconectado!
+[WARNING] 23:58:54:993 CPU/(10969:11102): El cliente se desconectó del server
+[INFO] 23:59:01:871 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 23:59:01:871 CPU/(10969:11115): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:59:01:871 CPU/(10969:11115): Cliente desconectado!
+[WARNING] 23:59:01:871 CPU/(10969:11115): El cliente se desconectó del server
+[INFO] 23:59:24:578 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 23:59:24:578 CPU/(10969:11146): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:59:24:578 CPU/(10969:11146): Cliente desconectado!
+[WARNING] 23:59:24:578 CPU/(10969:11146): El cliente se desconectó del server
+[INFO] 00:00:05:587 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:00:05:587 CPU/(10969:11284): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:00:05:587 CPU/(10969:11284): Cliente desconectado!
+[WARNING] 00:00:05:587 CPU/(10969:11284): El cliente se desconectó del server
+[INFO] 00:00:24:982 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:00:24:982 CPU/(10969:11318): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:00:24:982 CPU/(10969:11318): Cliente desconectado!
+[WARNING] 00:00:24:982 CPU/(10969:11318): El cliente se desconectó del server
+[INFO] 00:00:37:846 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:00:37:846 CPU/(10969:11330): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:00:37:846 CPU/(10969:11330): Cliente desconectado!
+[WARNING] 00:00:37:846 CPU/(10969:11330): El cliente se desconectó del server
+[INFO] 00:02:37:735 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:02:37:735 CPU/(10969:11404): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:02:37:735 CPU/(10969:11404): Cliente desconectado!
+[WARNING] 00:02:37:735 CPU/(10969:11404): El cliente se desconectó del server
+[INFO] 00:04:34:267 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:04:34:267 CPU/(10969:11552): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:04:34:267 CPU/(10969:11552): Cliente desconectado!
+[WARNING] 00:04:34:267 CPU/(10969:11552): El cliente se desconectó del server
+[INFO] 00:07:07:839 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:07:07:839 CPU/(10969:11698): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:07:07:839 CPU/(10969:11698): Cliente desconectado!
+[WARNING] 00:07:07:839 CPU/(10969:11698): El cliente se desconectó del server
+[INFO] 00:07:09:411 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:07:09:411 CPU/(10969:11706): PID: 1 - Ejecutando: SET - arg1: AX, arg2: AAAA, arg3: 
+[INFO] 00:07:10:411 CPU/(10969:11706): PID: 1 - Ejecutando: SET - arg1: BX, arg2: BBBB, arg3: 
+[INFO] 00:07:11:411 CPU/(10969:11706): PID: 1 - Ejecutando: SET - arg1: CX, arg2: CCCC, arg3: 
+[INFO] 00:07:12:412 CPU/(10969:11706): PID: 1 - Ejecutando: SET - arg1: DX, arg2: DDDD, arg3: 
+[INFO] 00:07:13:412 CPU/(10969:11706): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 00:07:14:412 CPU/(10969:11706): PID: 1 - Ejecutando: SET - arg1: EBX, arg2: BBBBBBBB, arg3: 
+[INFO] 00:07:15:412 CPU/(10969:11706): PID: 1 - Ejecutando: SET - arg1: ECX, arg2: CCCCCCCC, arg3: 
+[INFO] 00:07:16:412 CPU/(10969:11706): PID: 1 - Ejecutando: SET - arg1: EDX, arg2: DDDDDDDD, arg3: 
+[INFO] 00:07:17:412 CPU/(10969:11706): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: AAAAAAAAAAAAAAAA, arg3: 
+[INFO] 00:07:18:412 CPU/(10969:11706): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: BBBBBBBBBBBBBBBB, arg3: 
+[INFO] 00:07:19:412 CPU/(10969:11706): PID: 1 - Ejecutando: SET - arg1: RCX, arg2: CCCCCCCCCCCCCCCC, arg3: 
+[INFO] 00:07:20:412 CPU/(10969:11706): PID: 1 - Ejecutando: SET - arg1: RDX, arg2: DDDDDDDDDDDDDDDD, arg3: 
+[INFO] 00:07:21:413 CPU/(10969:11706): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 00:07:21:413 CPU/(10969:11706): Cliente desconectado!
+[WARNING] 00:07:21:413 CPU/(10969:11706): El cliente se desconectó del server
+[INFO] 00:07:21:413 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:07:21:413 CPU/(10969:11707): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: TCHOUAMENIAFUERA, arg3: 
+[INFO] 00:07:22:413 CPU/(10969:11707): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SEGUNDO_FRANCIA_, arg3: 
+[INFO] 00:07:23:413 CPU/(10969:11707): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 00:07:23:413 CPU/(10969:11707): Cliente desconectado!
+[WARNING] 00:07:23:413 CPU/(10969:11707): El cliente se desconectó del server
+[INFO] 00:08:34:691 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:08:34:691 CPU/(10969:11752): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:08:34:691 CPU/(10969:11752): Cliente desconectado!
+[WARNING] 00:08:34:691 CPU/(10969:11752): El cliente se desconectó del server
+[INFO] 00:08:35:997 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:08:35:997 CPU/(10969:11760): PID: 1 - Ejecutando: SET - arg1: AX, arg2: AAAA, arg3: 
+[INFO] 00:08:36:997 CPU/(10969:11760): PID: 1 - Ejecutando: SET - arg1: BX, arg2: BBBB, arg3: 
+[INFO] 00:08:37:998 CPU/(10969:11760): PID: 1 - Ejecutando: SET - arg1: CX, arg2: CCCC, arg3: 
+[INFO] 00:08:38:998 CPU/(10969:11760): PID: 1 - Ejecutando: SET - arg1: DX, arg2: DDDD, arg3: 
+[INFO] 00:08:39:998 CPU/(10969:11760): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 00:08:40:998 CPU/(10969:11760): PID: 1 - Ejecutando: SET - arg1: EBX, arg2: BBBBBBBB, arg3: 
+[INFO] 00:08:41:998 CPU/(10969:11760): PID: 1 - Ejecutando: SET - arg1: ECX, arg2: CCCCCCCC, arg3: 
+[INFO] 00:08:42:998 CPU/(10969:11760): PID: 1 - Ejecutando: SET - arg1: EDX, arg2: DDDDDDDD, arg3: 
+[INFO] 00:08:43:998 CPU/(10969:11760): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: AAAAAAAAAAAAAAAA, arg3: 
+[INFO] 00:08:44:998 CPU/(10969:11760): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: BBBBBBBBBBBBBBBB, arg3: 
+[INFO] 00:08:45:998 CPU/(10969:11760): PID: 1 - Ejecutando: SET - arg1: RCX, arg2: CCCCCCCCCCCCCCCC, arg3: 
+[INFO] 00:08:46:999 CPU/(10969:11760): PID: 1 - Ejecutando: SET - arg1: RDX, arg2: DDDDDDDDDDDDDDDD, arg3: 
+[INFO] 00:08:47:999 CPU/(10969:11760): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 00:08:47:999 CPU/(10969:11760): Cliente desconectado!
+[WARNING] 00:08:47:999 CPU/(10969:11760): El cliente se desconectó del server
+[INFO] 00:08:47:999 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:08:47:999 CPU/(10969:11774): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: TCHOUAMENIAFUERA, arg3: 
+[INFO] 00:08:48:999 CPU/(10969:11774): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SEGUNDO_FRANCIA_, arg3: 
+[INFO] 00:08:49:999 CPU/(10969:11774): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 00:08:49:999 CPU/(10969:11774): Cliente desconectado!
+[WARNING] 00:08:49:999 CPU/(10969:11774): El cliente se desconectó del server
+[INFO] 00:11:08:442 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:11:08:442 CPU/(10969:11864): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:11:08:442 CPU/(10969:11864): Cliente desconectado!
+[WARNING] 00:11:08:442 CPU/(10969:11864): El cliente se desconectó del server
+[INFO] 00:13:25:013 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:13:25:014 CPU/(10969:11971): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:13:25:014 CPU/(10969:11971): Cliente desconectado!
+[WARNING] 00:13:25:014 CPU/(10969:11971): El cliente se desconectó del server
+[INFO] 00:14:32:161 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:14:32:161 CPU/(10969:12096): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:14:32:161 CPU/(10969:12096): Cliente desconectado!
+[WARNING] 00:14:32:161 CPU/(10969:12096): El cliente se desconectó del server
+[INFO] 00:15:47:183 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:15:47:183 CPU/(10969:12161): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:15:47:184 CPU/(10969:12161): Cliente desconectado!
+[WARNING] 00:15:47:184 CPU/(10969:12161): El cliente se desconectó del server
+[INFO] 00:17:54:124 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:17:54:124 CPU/(10969:12301): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:17:54:124 CPU/(10969:12301): Cliente desconectado!
+[WARNING] 00:17:54:124 CPU/(10969:12301): El cliente se desconectó del server
+[INFO] 00:18:54:309 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:18:54:309 CPU/(10969:12367): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:18:54:309 CPU/(10969:12367): Cliente desconectado!
+[WARNING] 00:18:54:309 CPU/(10969:12367): El cliente se desconectó del server
+[INFO] 00:18:59:128 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:18:59:128 CPU/(10969:12379): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:18:59:128 CPU/(10969:12379): Cliente desconectado!
+[WARNING] 00:18:59:128 CPU/(10969:12379): El cliente se desconectó del server
+[INFO] 00:22:33:590 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:22:33:590 CPU/(10969:12577): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:22:33:591 CPU/(10969:12577): Cliente desconectado!
+[WARNING] 00:22:33:591 CPU/(10969:12577): El cliente se desconectó del server
+[INFO] 00:23:34:137 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:23:34:137 CPU/(10969:12623): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:23:34:137 CPU/(10969:12623): Cliente desconectado!
+[WARNING] 00:23:34:137 CPU/(10969:12623): El cliente se desconectó del server
+[INFO] 00:23:44:617 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:23:44:617 CPU/(10969:12633): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:23:44:618 CPU/(10969:12633): Cliente desconectado!
+[WARNING] 00:23:44:618 CPU/(10969:12633): El cliente se desconectó del server
+[INFO] 00:25:06:498 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:25:06:498 CPU/(10969:12722): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:25:06:498 CPU/(10969:12722): Cliente desconectado!
+[WARNING] 00:25:06:498 CPU/(10969:12722): El cliente se desconectó del server
+[INFO] 00:26:54:445 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:26:54:445 CPU/(10969:12794): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:26:54:445 CPU/(10969:12794): Cliente desconectado!
+[WARNING] 00:26:54:445 CPU/(10969:12794): El cliente se desconectó del server
+[INFO] 00:28:16:382 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:28:16:382 CPU/(10969:12859): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:28:16:382 CPU/(10969:12859): Cliente desconectado!
+[WARNING] 00:28:16:382 CPU/(10969:12859): El cliente se desconectó del server
+[INFO] 00:30:08:402 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:30:08:403 CPU/(10969:13027): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:30:08:403 CPU/(10969:13027): Cliente desconectado!
+[WARNING] 00:30:08:403 CPU/(10969:13027): El cliente se desconectó del server
+[INFO] 00:30:40:751 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:30:40:752 CPU/(10969:13091): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:30:40:752 CPU/(10969:13091): Cliente desconectado!
+[WARNING] 00:30:40:752 CPU/(10969:13091): El cliente se desconectó del server
+[INFO] 00:30:55:864 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:30:55:864 CPU/(10969:13120): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:30:55:864 CPU/(10969:13120): Cliente desconectado!
+[WARNING] 00:30:55:864 CPU/(10969:13120): El cliente se desconectó del server
+[INFO] 00:31:02:375 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:31:02:376 CPU/(10969:13134): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:31:02:376 CPU/(10969:13134): Cliente desconectado!
+[WARNING] 00:31:02:376 CPU/(10969:13134): El cliente se desconectó del server
+[INFO] 00:31:28:937 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:31:28:937 CPU/(10969:13214): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:31:28:937 CPU/(10969:13214): Cliente desconectado!
+[WARNING] 00:31:28:937 CPU/(10969:13214): El cliente se desconectó del server
+[INFO] 00:32:24:554 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:32:24:555 CPU/(10969:13272): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:32:24:555 CPU/(10969:13272): Cliente desconectado!
+[WARNING] 00:32:24:555 CPU/(10969:13272): El cliente se desconectó del server
+[INFO] 00:32:28:574 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:32:28:574 CPU/(10969:13279): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:32:28:575 CPU/(10969:13279): Cliente desconectado!
+[WARNING] 00:32:28:575 CPU/(10969:13279): El cliente se desconectó del server
+[INFO] 00:32:55:794 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:32:55:794 CPU/(10969:13310): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:32:55:794 CPU/(10969:13310): Cliente desconectado!
+[WARNING] 00:32:55:794 CPU/(10969:13310): El cliente se desconectó del server
+[INFO] 00:39:49:625 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:39:49:625 CPU/(10969:13717): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:39:49:625 CPU/(10969:13717): Cliente desconectado!
+[WARNING] 00:39:49:625 CPU/(10969:13717): El cliente se desconectó del server
+[INFO] 00:39:51:627 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:39:51:627 CPU/(10969:13725): PID: 1 - Ejecutando: SET - arg1: AX, arg2: AAAA, arg3: 
+[INFO] 00:39:52:627 CPU/(10969:13725): PID: 1 - Ejecutando: SET - arg1: BX, arg2: BBBB, arg3: 
+[INFO] 00:39:53:627 CPU/(10969:13725): PID: 1 - Ejecutando: SET - arg1: CX, arg2: CCCC, arg3: 
+[INFO] 00:39:54:627 CPU/(10969:13725): PID: 1 - Ejecutando: SET - arg1: DX, arg2: DDDD, arg3: 
+[INFO] 00:39:55:627 CPU/(10969:13725): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 00:39:56:627 CPU/(10969:13725): PID: 1 - Ejecutando: SET - arg1: EBX, arg2: BBBBBBBB, arg3: 
+[INFO] 00:39:57:627 CPU/(10969:13725): PID: 1 - Ejecutando: SET - arg1: ECX, arg2: CCCCCCCC, arg3: 
+[INFO] 00:39:58:627 CPU/(10969:13725): PID: 1 - Ejecutando: SET - arg1: EDX, arg2: DDDDDDDD, arg3: 
+[INFO] 00:39:59:627 CPU/(10969:13725): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: AAAAAAAAAAAAAAAA, arg3: 
+[INFO] 00:40:00:628 CPU/(10969:13725): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: BBBBBBBBBBBBBBBB, arg3: 
+[INFO] 00:40:01:628 CPU/(10969:13725): PID: 1 - Ejecutando: SET - arg1: RCX, arg2: CCCCCCCCCCCCCCCC, arg3: 
+[INFO] 00:40:02:628 CPU/(10969:13725): PID: 1 - Ejecutando: SET - arg1: RDX, arg2: DDDDDDDDDDDDDDDD, arg3: 
+[INFO] 00:40:03:628 CPU/(10969:13725): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 00:40:03:628 CPU/(10969:13725): Cliente desconectado!
+[WARNING] 00:40:03:628 CPU/(10969:13725): El cliente se desconectó del server
+[INFO] 00:40:03:628 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:40:03:628 CPU/(10969:13728): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: TCHOUAMENIAFUERA, arg3: 
+[INFO] 00:40:04:628 CPU/(10969:13728): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SEGUNDO_FRANCIA_, arg3: 
+[INFO] 00:40:05:629 CPU/(10969:13728): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 00:40:05:629 CPU/(10969:13728): Cliente desconectado!
+[WARNING] 00:40:05:629 CPU/(10969:13728): El cliente se desconectó del server
+[INFO] 00:40:13:737 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:40:13:737 CPU/(10969:13738): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:40:13:737 CPU/(10969:13738): Cliente desconectado!
+[WARNING] 00:40:13:737 CPU/(10969:13738): El cliente se desconectó del server
+[INFO] 00:40:15:294 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:40:15:294 CPU/(10969:13746): PID: 1 - Ejecutando: SET - arg1: AX, arg2: AAAA, arg3: 
+[INFO] 00:40:16:294 CPU/(10969:13746): PID: 1 - Ejecutando: SET - arg1: BX, arg2: BBBB, arg3: 
+[INFO] 00:40:17:294 CPU/(10969:13746): PID: 1 - Ejecutando: SET - arg1: CX, arg2: CCCC, arg3: 
+[INFO] 00:40:18:295 CPU/(10969:13746): PID: 1 - Ejecutando: SET - arg1: DX, arg2: DDDD, arg3: 
+[INFO] 00:40:19:295 CPU/(10969:13746): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 00:40:20:295 CPU/(10969:13746): PID: 1 - Ejecutando: SET - arg1: EBX, arg2: BBBBBBBB, arg3: 
+[INFO] 00:40:21:295 CPU/(10969:13746): PID: 1 - Ejecutando: SET - arg1: ECX, arg2: CCCCCCCC, arg3: 
+[INFO] 00:40:22:295 CPU/(10969:13746): PID: 1 - Ejecutando: SET - arg1: EDX, arg2: DDDDDDDD, arg3: 
+[INFO] 00:40:23:295 CPU/(10969:13746): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: AAAAAAAAAAAAAAAA, arg3: 
+[INFO] 00:40:24:295 CPU/(10969:13746): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: BBBBBBBBBBBBBBBB, arg3: 
+[INFO] 00:40:25:295 CPU/(10969:13746): PID: 1 - Ejecutando: SET - arg1: RCX, arg2: CCCCCCCCCCCCCCCC, arg3: 
+[INFO] 00:40:26:295 CPU/(10969:13746): PID: 1 - Ejecutando: SET - arg1: RDX, arg2: DDDDDDDDDDDDDDDD, arg3: 
+[INFO] 00:40:27:296 CPU/(10969:13746): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 00:40:27:296 CPU/(10969:13746): Cliente desconectado!
+[WARNING] 00:40:27:296 CPU/(10969:13746): El cliente se desconectó del server
+[INFO] 00:40:27:296 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:40:27:296 CPU/(10969:13753): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: TCHOUAMENIAFUERA, arg3: 
+[INFO] 00:40:28:296 CPU/(10969:13753): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SEGUNDO_FRANCIA_, arg3: 
+[INFO] 00:40:29:296 CPU/(10969:13753): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 00:40:29:296 CPU/(10969:13753): Cliente desconectado!
+[WARNING] 00:40:29:296 CPU/(10969:13753): El cliente se desconectó del server
+[INFO] 00:43:52:807 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:43:52:807 CPU/(10969:13864): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:43:52:807 CPU/(10969:13864): Cliente desconectado!
+[WARNING] 00:43:52:807 CPU/(10969:13864): El cliente se desconectó del server
+[INFO] 00:43:54:313 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:43:54:313 CPU/(10969:13872): PID: 1 - Ejecutando: SET - arg1: AX, arg2: AAAA, arg3: 
+[INFO] 00:43:55:313 CPU/(10969:13872): PID: 1 - Ejecutando: SET - arg1: BX, arg2: BBBB, arg3: 
+[INFO] 00:43:56:313 CPU/(10969:13872): PID: 1 - Ejecutando: SET - arg1: CX, arg2: CCCC, arg3: 
+[INFO] 00:43:57:313 CPU/(10969:13872): PID: 1 - Ejecutando: SET - arg1: DX, arg2: DDDD, arg3: 
+[INFO] 00:43:58:313 CPU/(10969:13872): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 00:43:59:313 CPU/(10969:13872): PID: 1 - Ejecutando: SET - arg1: EBX, arg2: BBBBBBBB, arg3: 
+[INFO] 00:44:00:313 CPU/(10969:13872): PID: 1 - Ejecutando: SET - arg1: ECX, arg2: CCCCCCCC, arg3: 
+[INFO] 00:44:01:313 CPU/(10969:13872): PID: 1 - Ejecutando: SET - arg1: EDX, arg2: DDDDDDDD, arg3: 
+[INFO] 00:44:02:314 CPU/(10969:13872): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: AAAAAAAAAAAAAAAA, arg3: 
+[INFO] 00:44:03:314 CPU/(10969:13872): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: BBBBBBBBBBBBBBBB, arg3: 
+[INFO] 00:44:04:314 CPU/(10969:13872): PID: 1 - Ejecutando: SET - arg1: RCX, arg2: CCCCCCCCCCCCCCCC, arg3: 
+[INFO] 00:44:05:314 CPU/(10969:13872): PID: 1 - Ejecutando: SET - arg1: RDX, arg2: DDDDDDDDDDDDDDDD, arg3: 
+[INFO] 00:44:06:314 CPU/(10969:13872): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 00:44:06:314 CPU/(10969:13872): Cliente desconectado!
+[WARNING] 00:44:06:314 CPU/(10969:13872): El cliente se desconectó del server
+[INFO] 00:44:06:314 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:44:06:314 CPU/(10969:13898): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: TCHOUAMENIAFUERA, arg3: 
+[INFO] 00:44:07:314 CPU/(10969:13898): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SEGUNDO_FRANCIA_, arg3: 
+[INFO] 00:44:08:315 CPU/(10969:13898): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 00:44:08:315 CPU/(10969:13898): Cliente desconectado!
+[WARNING] 00:44:08:315 CPU/(10969:13898): El cliente se desconectó del server
+[INFO] 00:44:16:660 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:44:16:660 CPU/(10969:13917): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:44:16:660 CPU/(10969:13917): Cliente desconectado!
+[WARNING] 00:44:16:660 CPU/(10969:13917): El cliente se desconectó del server
+[INFO] 00:44:49:443 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:44:49:443 CPU/(10969:14024): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:44:49:443 CPU/(10969:14024): Cliente desconectado!
+[WARNING] 00:44:49:443 CPU/(10969:14024): El cliente se desconectó del server
+[INFO] 00:44:55:995 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:44:55:995 CPU/(10969:14033): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:44:55:995 CPU/(10969:14033): Cliente desconectado!
+[WARNING] 00:44:55:995 CPU/(10969:14033): El cliente se desconectó del server
+[INFO] 00:45:25:726 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:45:25:726 CPU/(10969:14059): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:45:25:726 CPU/(10969:14059): Cliente desconectado!
+[WARNING] 00:45:25:726 CPU/(10969:14059): El cliente se desconectó del server
+[INFO] 00:45:27:350 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:45:27:350 CPU/(10969:14067): PID: 1 - Ejecutando: SET - arg1: AX, arg2: AAAA, arg3: 
+[INFO] 00:45:28:350 CPU/(10969:14067): PID: 1 - Ejecutando: SET - arg1: BX, arg2: BBBB, arg3: 
+[INFO] 00:45:29:350 CPU/(10969:14067): PID: 1 - Ejecutando: SET - arg1: CX, arg2: CCCC, arg3: 
+[INFO] 00:45:30:350 CPU/(10969:14067): PID: 1 - Ejecutando: SET - arg1: DX, arg2: DDDD, arg3: 
+[INFO] 00:45:31:350 CPU/(10969:14067): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 00:45:32:350 CPU/(10969:14067): PID: 1 - Ejecutando: SET - arg1: EBX, arg2: BBBBBBBB, arg3: 
+[INFO] 00:45:33:351 CPU/(10969:14067): PID: 1 - Ejecutando: SET - arg1: ECX, arg2: CCCCCCCC, arg3: 
+[INFO] 00:45:34:351 CPU/(10969:14067): PID: 1 - Ejecutando: SET - arg1: EDX, arg2: DDDDDDDD, arg3: 
+[INFO] 00:45:35:351 CPU/(10969:14067): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: AAAAAAAAAAAAAAAA, arg3: 
+[INFO] 00:45:36:351 CPU/(10969:14067): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: BBBBBBBBBBBBBBBB, arg3: 
+[INFO] 00:45:37:351 CPU/(10969:14067): PID: 1 - Ejecutando: SET - arg1: RCX, arg2: CCCCCCCCCCCCCCCC, arg3: 
+[INFO] 00:45:38:351 CPU/(10969:14067): PID: 1 - Ejecutando: SET - arg1: RDX, arg2: DDDDDDDDDDDDDDDD, arg3: 
+[INFO] 00:45:39:351 CPU/(10969:14067): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 00:45:39:351 CPU/(10969:14067): Cliente desconectado!
+[WARNING] 00:45:39:351 CPU/(10969:14067): El cliente se desconectó del server
+[INFO] 00:45:39:351 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:45:39:352 CPU/(10969:14071): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: TCHOUAMENIAFUERA, arg3: 
+[INFO] 00:45:40:352 CPU/(10969:14071): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SEGUNDO_FRANCIA_, arg3: 
+[INFO] 00:45:41:352 CPU/(10969:14071): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 00:45:41:352 CPU/(10969:14071): Cliente desconectado!
+[WARNING] 00:45:41:352 CPU/(10969:14071): El cliente se desconectó del server
+[INFO] 00:46:00:489 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:46:00:489 CPU/(10969:14106): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 00:46:00:489 CPU/(10969:14106): Cliente desconectado!
+[WARNING] 00:46:00:489 CPU/(10969:14106): El cliente se desconectó del server
+[INFO] 00:46:01:985 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:46:01:985 CPU/(10969:14114): PID: 1 - Ejecutando: SET - arg1: AX, arg2: AAAA, arg3: 
+[INFO] 00:46:02:985 CPU/(10969:14114): PID: 1 - Ejecutando: SET - arg1: BX, arg2: BBBB, arg3: 
+[INFO] 00:46:03:985 CPU/(10969:14114): PID: 1 - Ejecutando: SET - arg1: CX, arg2: CCCC, arg3: 
+[INFO] 00:46:04:985 CPU/(10969:14114): PID: 1 - Ejecutando: SET - arg1: DX, arg2: DDDD, arg3: 
+[INFO] 00:46:05:985 CPU/(10969:14114): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 00:46:06:985 CPU/(10969:14114): PID: 1 - Ejecutando: SET - arg1: EBX, arg2: BBBBBBBB, arg3: 
+[INFO] 00:46:07:986 CPU/(10969:14114): PID: 1 - Ejecutando: SET - arg1: ECX, arg2: CCCCCCCC, arg3: 
+[INFO] 00:46:08:986 CPU/(10969:14114): PID: 1 - Ejecutando: SET - arg1: EDX, arg2: DDDDDDDD, arg3: 
+[INFO] 00:46:09:986 CPU/(10969:14114): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: AAAAAAAAAAAAAAAA, arg3: 
+[INFO] 00:46:10:986 CPU/(10969:14114): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: BBBBBBBBBBBBBBBB, arg3: 
+[INFO] 00:46:11:986 CPU/(10969:14114): PID: 1 - Ejecutando: SET - arg1: RCX, arg2: CCCCCCCCCCCCCCCC, arg3: 
+[INFO] 00:46:12:986 CPU/(10969:14114): PID: 1 - Ejecutando: SET - arg1: RDX, arg2: DDDDDDDDDDDDDDDD, arg3: 
+[INFO] 00:46:13:986 CPU/(10969:14114): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 00:46:13:986 CPU/(10969:14114): Cliente desconectado!
+[WARNING] 00:46:13:986 CPU/(10969:14114): El cliente se desconectó del server
+[INFO] 00:46:13:986 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:46:13:987 CPU/(10969:14121): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: TCHOUAMENIAFUERA, arg3: 
+[INFO] 00:46:14:987 CPU/(10969:14121): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SEGUNDO_FRANCIA_, arg3: 
+[INFO] 00:46:15:987 CPU/(10969:14121): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 00:46:15:987 CPU/(10969:14121): Cliente desconectado!
+[WARNING] 00:46:15:987 CPU/(10969:14121): El cliente se desconectó del server
+[INFO] 00:46:19:615 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:46:19:615 CPU/(10969:14129): PID: 2 - Ejecutando: SET - arg1: AX, arg2: AAAA, arg3: 
+[INFO] 00:46:20:615 CPU/(10969:14129): PID: 2 - Ejecutando: SET - arg1: BX, arg2: BBBB, arg3: 
+[INFO] 00:46:21:615 CPU/(10969:14129): PID: 2 - Ejecutando: SET - arg1: CX, arg2: CCCC, arg3: 
+[INFO] 00:46:22:615 CPU/(10969:14129): PID: 2 - Ejecutando: SET - arg1: DX, arg2: DDDD, arg3: 
+[INFO] 00:46:23:615 CPU/(10969:14129): PID: 2 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 00:46:24:615 CPU/(10969:14129): PID: 2 - Ejecutando: SET - arg1: EBX, arg2: BBBBBBBB, arg3: 
+[INFO] 00:46:25:615 CPU/(10969:14129): PID: 2 - Ejecutando: SET - arg1: ECX, arg2: CCCCCCCC, arg3: 
+[INFO] 00:46:26:615 CPU/(10969:14129): PID: 2 - Ejecutando: SET - arg1: EDX, arg2: DDDDDDDD, arg3: 
+[INFO] 00:46:27:615 CPU/(10969:14129): PID: 2 - Ejecutando: SET - arg1: RAX, arg2: AAAAAAAAAAAAAAAA, arg3: 
+[INFO] 00:46:28:616 CPU/(10969:14129): PID: 2 - Ejecutando: SET - arg1: RBX, arg2: BBBBBBBBBBBBBBBB, arg3: 
+[INFO] 00:46:29:616 CPU/(10969:14129): PID: 2 - Ejecutando: SET - arg1: RCX, arg2: CCCCCCCCCCCCCCCC, arg3: 
+[INFO] 00:46:30:616 CPU/(10969:14129): PID: 2 - Ejecutando: SET - arg1: RDX, arg2: DDDDDDDDDDDDDDDD, arg3: 
+[INFO] 00:46:31:616 CPU/(10969:14129): PID: 2 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 00:46:31:616 CPU/(10969:14129): Cliente desconectado!
+[WARNING] 00:46:31:616 CPU/(10969:14129): El cliente se desconectó del server
+[INFO] 00:46:31:616 CPU/(10969:10969): Se conecto un cliente!
+[INFO] 00:46:31:616 CPU/(10969:14143): PID: 2 - Ejecutando: SET - arg1: RAX, arg2: TCHOUAMENIAFUERA, arg3: 
+[INFO] 00:46:32:616 CPU/(10969:14143): PID: 2 - Ejecutando: SET - arg1: RBX, arg2: SEGUNDO_FRANCIA_, arg3: 
+[INFO] 00:46:33:616 CPU/(10969:14143): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 00:46:33:616 CPU/(10969:14143): Cliente desconectado!
+[WARNING] 00:46:33:616 CPU/(10969:14143): El cliente se desconectó del server

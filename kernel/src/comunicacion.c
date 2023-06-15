@@ -32,7 +32,7 @@ void procesar_conexion(void *void_args)
         case PAQUETE_INSTRUCCIONES:
             t_list *instrucciones = recv_instrucciones(logger, cliente_socket);
             t_pcb *n_pcb = crear_pcb(instrucciones, cliente_socket);
-            // imprimir_pcb(n_pcb);
+            imprimir_pcb(n_pcb);
             pthread_mutex_lock(&mutex_NEW);
             list_add(NEW, n_pcb);
             log_info(logger_kernel, "Se crea el proceso %d en NEW", n_pcb->pid);

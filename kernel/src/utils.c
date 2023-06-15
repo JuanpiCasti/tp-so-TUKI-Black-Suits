@@ -33,6 +33,9 @@ t_pcb *crear_pcb(t_list *instrucciones, int socket_consola)
     pcb->archivos_abiertos = list_create();
     pcb->socket_consola = socket_consola;
 
+    
+    pcb -> tabla_segmentos = solicitar_tabla_segmentos(logger_kernel_extra, IP_MEMORIA, PUERTO_MEMORIA);
+
     return pcb;
 }
 
@@ -83,9 +86,20 @@ void imprimir_pcb(t_pcb *pcb)
     printf("\tRCX: %s\n", imprimir_cadena(pcb->registros_cpu->RCX, 16));
     printf("\tRDX: %s\n", imprimir_cadena(pcb->registros_cpu->RDX, 16));
     printf("Tabla de Segmentos:\n");
+
+    for (int i = 0; i < list_size(pcb->tabla_segmentos); i++) {
+        t_ent_ts* elemento = list_get(pcb->tabla_segmentos, i);
+        printf("Elemento %d:\n", i);
+        printf("ID Seg: %u\n", elemento->id_seg);
+        printf("Base: %u\n", elemento->base);
+        printf("Tamaño: %u\n", elemento->tam);
+        printf("Activo: %u\n", elemento->activo);
+    }
+
     printf("Estimado HRRN: %f\n", pcb->estimado_HRRN);
     printf("Tiempo ready: %ld\n", (long)pcb->llegada_ready);
     printf("Archivos abiertos:\n");
+
 }
 
 void inicializar_loggers_kernel()

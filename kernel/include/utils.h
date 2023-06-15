@@ -7,6 +7,7 @@
 #include <commons/string.h>
 #include "shared_utils.h"
 
+
 typedef struct
 {
   char AX[4];
@@ -90,8 +91,6 @@ void levantar_config_kernel();     // setea todas las variables globales de conf
 void inicializar_colas();          // Inicializa las colas de procesos
 void inicializar_semaforos();      // Inicializa los semaforos usados en el modulo
 
-t_pcb *crear_pcb(t_list *instrucciones, int socket_consola); // Recibe lista de instrucciones y crea pcb
-
 // Manda el proceso a la cola deseada,
 // por ejemplo, para mandar a NEW: encolar_proceso(new_pcb, NEW, mutex_NEW);
 
@@ -104,5 +103,7 @@ t_list* levantar_recursos(); // Levanta recursos e instancias de la lista de con
 void imprimir_lista_recursos(t_list* lista);
 
 t_recurso* buscar_recurso_por_nombre(char* nombre_deseado);
+
+t_pcb *crear_pcb(t_list *instrucciones, int socket_consola); // Recibe lista de instrucciones y crea pcb
 
 #endif

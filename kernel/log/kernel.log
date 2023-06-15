@@ -6643,3 +6643,82 @@
 [INFO] 01:34:43:446 KERNEL/(10611:10616): PID: 4 - Estado anterior: READY - Estado actual: RUNNING
 [INFO] 01:34:45:447 KERNEL/(10611:10616): PID: 4 - Estado anterior: RUNNING - Estado actual: EXIT
 [INFO] 01:34:45:447 KERNEL/(10611:10616): Finaliza el proceso 4 - Motivo: SUCCESS
+[INFO] 23:52:07:923 KERNEL/(10583:10591): Se crea el proceso 1 en NEW
+[INFO] 23:52:07:923 KERNEL/(10583:10586): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 23:52:07:923 KERNEL/(10583:10586): Cola Ready FIFO: [1]
+[INFO] 23:52:07:923 KERNEL/(10583:10587): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 23:52:19:924 KERNEL/(10583:10587): PID: 1 - Estado anterior: RUNNING - Estado actual: READY
+[INFO] 23:52:19:924 KERNEL/(10583:10587): Cola Ready FIFO: [1]
+[INFO] 23:52:19:924 KERNEL/(10583:10587): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 23:52:21:925 KERNEL/(10583:10587): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 23:52:21:925 KERNEL/(10583:10587): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 00:07:09:411 KERNEL/(11697:11704): Se crea el proceso 1 en NEW
+[INFO] 00:07:09:411 KERNEL/(11697:11700): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 00:07:09:411 KERNEL/(11697:11700): Cola Ready FIFO: [1]
+[INFO] 00:07:09:411 KERNEL/(11697:11701): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 00:07:21:413 KERNEL/(11697:11701): PID: 1 - Estado anterior: RUNNING - Estado actual: READY
+[INFO] 00:07:21:413 KERNEL/(11697:11701): Cola Ready FIFO: [1]
+[INFO] 00:07:21:413 KERNEL/(11697:11701): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 00:07:23:413 KERNEL/(11697:11701): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 00:07:23:413 KERNEL/(11697:11701): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 00:08:35:997 KERNEL/(11751:11758): Se crea el proceso 1 en NEW
+[INFO] 00:08:35:997 KERNEL/(11751:11754): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 00:08:35:997 KERNEL/(11751:11754): Cola Ready FIFO: [1]
+[INFO] 00:08:35:997 KERNEL/(11751:11755): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 00:08:47:999 KERNEL/(11751:11755): PID: 1 - Estado anterior: RUNNING - Estado actual: READY
+[INFO] 00:08:47:999 KERNEL/(11751:11755): Cola Ready FIFO: [1]
+[INFO] 00:08:47:999 KERNEL/(11751:11755): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 00:08:49:999 KERNEL/(11751:11755): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 00:08:49:999 KERNEL/(11751:11755): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 00:39:51:626 KERNEL/(13716:13723): Se crea el proceso 1 en NEW
+[INFO] 00:39:51:626 KERNEL/(13716:13719): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 00:39:51:626 KERNEL/(13716:13719): Cola Ready FIFO: [1]
+[INFO] 00:39:51:626 KERNEL/(13716:13720): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 00:40:03:628 KERNEL/(13716:13720): PID: 1 - Estado anterior: RUNNING - Estado actual: READY
+[INFO] 00:40:03:628 KERNEL/(13716:13720): Cola Ready FIFO: [1]
+[INFO] 00:40:03:628 KERNEL/(13716:13720): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 00:40:05:629 KERNEL/(13716:13720): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 00:40:05:629 KERNEL/(13716:13720): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 00:40:15:294 KERNEL/(13737:13744): Se crea el proceso 1 en NEW
+[INFO] 00:40:15:294 KERNEL/(13737:13740): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 00:40:15:294 KERNEL/(13737:13740): Cola Ready FIFO: [1]
+[INFO] 00:40:15:294 KERNEL/(13737:13741): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 00:40:27:296 KERNEL/(13737:13741): PID: 1 - Estado anterior: RUNNING - Estado actual: READY
+[INFO] 00:40:27:296 KERNEL/(13737:13741): Cola Ready FIFO: [1]
+[INFO] 00:40:27:296 KERNEL/(13737:13741): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 00:40:29:296 KERNEL/(13737:13741): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 00:40:29:296 KERNEL/(13737:13741): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 00:43:54:312 KERNEL/(13863:13870): Se crea el proceso 1 en NEW
+[INFO] 00:43:54:312 KERNEL/(13863:13866): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 00:43:54:312 KERNEL/(13863:13866): Cola Ready FIFO: [1]
+[INFO] 00:43:54:313 KERNEL/(13863:13867): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 00:44:06:314 KERNEL/(13863:13867): PID: 1 - Estado anterior: RUNNING - Estado actual: READY
+[INFO] 00:44:06:314 KERNEL/(13863:13867): Cola Ready FIFO: [1]
+[INFO] 00:44:06:314 KERNEL/(13863:13867): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 00:45:27:350 KERNEL/(14058:14065): Se crea el proceso 1 en NEW
+[INFO] 00:45:27:350 KERNEL/(14058:14061): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 00:45:27:350 KERNEL/(14058:14061): Cola Ready FIFO: [1]
+[INFO] 00:45:27:350 KERNEL/(14058:14062): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 00:45:39:351 KERNEL/(14058:14062): PID: 1 - Estado anterior: RUNNING - Estado actual: READY
+[INFO] 00:45:39:351 KERNEL/(14058:14062): Cola Ready FIFO: [1]
+[INFO] 00:45:39:351 KERNEL/(14058:14062): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 00:45:41:352 KERNEL/(14058:14062): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 00:45:41:352 KERNEL/(14058:14062): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 00:46:01:985 KERNEL/(14105:14112): Se crea el proceso 1 en NEW
+[INFO] 00:46:01:985 KERNEL/(14105:14108): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 00:46:01:985 KERNEL/(14105:14108): Cola Ready FIFO: [1]
+[INFO] 00:46:01:985 KERNEL/(14105:14109): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 00:46:13:986 KERNEL/(14105:14109): PID: 1 - Estado anterior: RUNNING - Estado actual: READY
+[INFO] 00:46:13:986 KERNEL/(14105:14109): Cola Ready FIFO: [1]
+[INFO] 00:46:13:986 KERNEL/(14105:14109): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 00:46:15:987 KERNEL/(14105:14109): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 00:46:15:987 KERNEL/(14105:14109): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 00:46:19:614 KERNEL/(14105:14127): Se crea el proceso 2 en NEW
+[INFO] 00:46:19:614 KERNEL/(14105:14108): PID: 2 - Estado anterior: NEW - Estado actual: READY
+[INFO] 00:46:19:614 KERNEL/(14105:14108): Cola Ready FIFO: [2]
+[INFO] 00:46:19:614 KERNEL/(14105:14109): PID: 2 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 00:46:31:616 KERNEL/(14105:14109): PID: 2 - Estado anterior: RUNNING - Estado actual: READY
+[INFO] 00:46:31:616 KERNEL/(14105:14109): Cola Ready FIFO: [2]
+[INFO] 00:46:31:616 KERNEL/(14105:14109): PID: 2 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 00:46:33:616 KERNEL/(14105:14109): PID: 2 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 00:46:33:617 KERNEL/(14105:14109): Finaliza el proceso 2 - Motivo: SUCCESS

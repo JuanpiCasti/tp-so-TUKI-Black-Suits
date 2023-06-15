@@ -233,3 +233,49 @@ void destroy_instruccion(void* element) {
   // Liberar memoria del struct t_instruccion
   free(instruccion);
 }
+
+t_list* deserializar_tabla_segmentos(void* buffer, uint32_t size) {
+    t_list* tabla = list_create();
+    uint32_t despl = 0;
+
+    t_ent_ts* entrada;
+    
+    for (int i = 0; i < size; i++)
+    {
+
+        entrada = malloc(sizeof(t_ent_ts));
+
+        memcpy(&entrada->id_seg, buffer + despl, sizeof(uint32_t));
+        despl += sizeof(uint32_t);
+
+        memcpy(&entrada->base, buffer + despl, sizeof(uint32_t));
+        despl += sizeof(uint32_t);
+
+        memcpy(&entrada->tam, buffer + despl, sizeof(uint32_t));
+        despl += sizeof(uint32_t);
+
+        memcpy(&entrada->activo, buffer + despl, sizeof(uint8_t));
+        despl += sizeof(uint8_t);
+
+        list_add(tabla, entrada);
+
+    }
+    return tabla;
+}
+
+t_list* solicitar_tabla_segmentos(t_log* logger, char* ip, char* puerto) {
+    int socket_memoria = crear_conexion(logger, ip, puerto);
+    cod_op cod = CREATE_SEGTABLE;
+    send(socket_memoria, &cod, sizeof(cod_op), NULL);
+    uint32_t size;
+    recv(socket_memoria, &size, sizeof(uint32_t), NULL);
+
+    void* buffer = malloc(size * sizeof(t_ent_ts));
+    recv(socket_memoria, buffer, size * sizeof(t_ent_ts), NULL);
+
+    t_list* tabla = deserializar_tabla_segmentos(buffer, size);
+
+    close(socket_memoria);
+
+    return tabla;
+}

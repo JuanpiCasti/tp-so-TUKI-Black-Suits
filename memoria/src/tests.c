@@ -18,12 +18,13 @@ int run_tests()
     // printf("RETARDO_COMPACTACION: %u\n", RETARDO_COMPACTACION);
     // printf("ALGORITMO_ASIGNACION: %s\n", t_algo_asig_desc[ALGORITMO_ASIGNACION]);
     //crear_tabla_segmentos();
-    // char* data1 = "PAPU";
-    // mov_out(150, data1, 4);
-    // char* data2 = (char *)mov_in(150, 4);
-    // char* cadena = imprimir_cadena(data2, 4);
-    // printf("%s\n", cadena);
-    // free(cadena);
+
+    char* data1 = "PAPU";
+    escribir(150, data1, 4);
+    char* data2 = (char *)leer(150, 4);
+    char* cadena = imprimir_cadena(data2, 4);
+    printf("%s\n", cadena);
+    free(cadena);
 
     crear_segmento(150);
     crear_segmento(100);

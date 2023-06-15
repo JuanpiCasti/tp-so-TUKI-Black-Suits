@@ -40,7 +40,7 @@ int main(int argc, char **argv)
 
 		//*********************
 		// SERVIDOR
-		char* puerto_escucha;
+		char puerto_escucha[10];
 		sprintf(puerto_escucha, "%d", PUERTO_ESCUCHA_MEMORIA);
 		socket_servidor_memoria = iniciar_servidor(logger_memoria, puerto_escucha);
 		if (socket_servidor_memoria == -1)

@@ -1,5 +1,22 @@
 #include "comunicacion.h"
 
+void devolver_tabla_inicial(int socket) {
+    uint32_t size = sizeof(t_ent_ts) * CANT_SEGMENTOS + sizeof(uint32_t);
+    void* buffer = malloc(size);
+
+    memcpy(buffer, &CANT_SEGMENTOS, sizeof(uint32_t));
+
+    void* tabla = crear_tabla_segmentos();
+
+    memcpy(buffer + sizeof(uint32_t), tabla, sizeof(t_ent_ts) * CANT_SEGMENTOS);
+
+    send(socket, buffer, size, NULL);
+
+    free(buffer);
+    free(tabla);
+
+}
+
 void procesar_conexion(void *void_args)
 {
     t_conexion *args = (t_conexion *)void_args;
@@ -28,6 +45,9 @@ void procesar_conexion(void *void_args)
         case HANDSHAKE_CONSOLA:
         case HANDSHAKE_MEMORIA:
             rechazar_handshake(logger, cliente_socket);
+            break;
+        case CREATE_SEGTABLE:
+            devolver_tabla_inicial(cliente_socket);
             break;
         default:
             log_error(logger, "Algo anduvo mal en el server Memoria");

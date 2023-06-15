@@ -7609,3 +7609,654 @@
 [ERROR] 18:01:15:916 KERNEL_EXTRA/(38478:38478): No se pudo conectar al servidor Memoria
 [ERROR] 18:01:15:916 KERNEL_EXTRA/(38478:38478): No se pudo conectar al servidor del Memoria
 [INFO] 18:01:15:916 KERNEL_EXTRA/(38478:38478): Kernel escuchando conexiones...
+[ERROR] 23:41:59:030 KERNEL_EXTRA/(9917:9917): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 23:41:59:030 KERNEL_EXTRA/(9917:9917): No se pudo conectar al servidor Filesystem
+[ERROR] 23:41:59:030 KERNEL_EXTRA/(9917:9917): No se pudo conectar al servidor del Filesystem
+[INFO] 23:41:59:030 KERNEL_EXTRA/(9917:9917): Conexión establecida con CPU
+[INFO] 23:41:59:030 KERNEL_EXTRA/(9917:9917): Handshake OK
+[INFO] 23:41:59:030 KERNEL_EXTRA/(9917:9917): Conexión establecida con Memoria
+[INFO] 23:41:59:031 KERNEL_EXTRA/(9917:9917): Handshake OK
+[INFO] 23:41:59:031 KERNEL_EXTRA/(9917:9917): Kernel escuchando conexiones...
+[INFO] 23:42:08:418 KERNEL_EXTRA/(9917:9917): Se conecto un cliente!
+[INFO] 23:42:08:418 KERNEL_EXTRA/(9917:9932): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 23:42:08:418 KERNEL_EXTRA/(9917:9932): Cliente desconectado!
+[WARNING] 23:42:08:418 KERNEL_EXTRA/(9917:9932): El cliente se desconectó del server
+[INFO] 23:42:08:418 KERNEL_EXTRA/(9917:9917): Se conecto un cliente!
+[INFO] 23:42:08:419 KERNEL_EXTRA/(9917:9933): Recibiendo paquete de instrucciones...
+[ERROR] 23:45:10:773 KERNEL_EXTRA/(10159:10159): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 23:45:10:773 KERNEL_EXTRA/(10159:10159): No se pudo conectar al servidor Filesystem
+[ERROR] 23:45:10:773 KERNEL_EXTRA/(10159:10159): No se pudo conectar al servidor del Filesystem
+[INFO] 23:45:10:773 KERNEL_EXTRA/(10159:10159): Conexión establecida con CPU
+[INFO] 23:45:10:774 KERNEL_EXTRA/(10159:10159): Handshake OK
+[INFO] 23:45:10:774 KERNEL_EXTRA/(10159:10159): Conexión establecida con Memoria
+[INFO] 23:45:10:774 KERNEL_EXTRA/(10159:10159): Handshake OK
+[INFO] 23:45:10:774 KERNEL_EXTRA/(10159:10159): Kernel escuchando conexiones...
+[INFO] 23:45:42:054 KERNEL_EXTRA/(10159:10159): Se conecto un cliente!
+[INFO] 23:45:42:054 KERNEL_EXTRA/(10159:10171): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 23:45:42:054 KERNEL_EXTRA/(10159:10171): Cliente desconectado!
+[WARNING] 23:45:42:054 KERNEL_EXTRA/(10159:10171): El cliente se desconectó del server
+[INFO] 23:45:42:054 KERNEL_EXTRA/(10159:10159): Se conecto un cliente!
+[INFO] 23:45:42:054 KERNEL_EXTRA/(10159:10172): Recibiendo paquete de instrucciones...
+[ERROR] 23:47:11:062 KERNEL_EXTRA/(10223:10223): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 23:47:11:062 KERNEL_EXTRA/(10223:10223): No se pudo conectar al servidor Filesystem
+[ERROR] 23:47:11:062 KERNEL_EXTRA/(10223:10223): No se pudo conectar al servidor del Filesystem
+[INFO] 23:47:11:062 KERNEL_EXTRA/(10223:10223): Conexión establecida con CPU
+[INFO] 23:47:11:062 KERNEL_EXTRA/(10223:10223): Handshake OK
+[INFO] 23:47:11:062 KERNEL_EXTRA/(10223:10223): Conexión establecida con Memoria
+[INFO] 23:47:11:063 KERNEL_EXTRA/(10223:10223): Handshake OK
+[INFO] 23:47:11:063 KERNEL_EXTRA/(10223:10223): Kernel escuchando conexiones...
+[INFO] 23:47:13:035 KERNEL_EXTRA/(10223:10223): Se conecto un cliente!
+[INFO] 23:47:13:035 KERNEL_EXTRA/(10223:10229): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 23:47:13:036 KERNEL_EXTRA/(10223:10229): Cliente desconectado!
+[WARNING] 23:47:13:036 KERNEL_EXTRA/(10223:10229): El cliente se desconectó del server
+[INFO] 23:47:13:036 KERNEL_EXTRA/(10223:10223): Se conecto un cliente!
+[INFO] 23:47:13:036 KERNEL_EXTRA/(10223:10230): Recibiendo paquete de instrucciones...
+[ERROR] 23:48:16:894 KERNEL_EXTRA/(10280:10280): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 23:48:16:894 KERNEL_EXTRA/(10280:10280): No se pudo conectar al servidor Filesystem
+[ERROR] 23:48:16:894 KERNEL_EXTRA/(10280:10280): No se pudo conectar al servidor del Filesystem
+[INFO] 23:48:16:894 KERNEL_EXTRA/(10280:10280): Conexión establecida con CPU
+[INFO] 23:48:16:894 KERNEL_EXTRA/(10280:10280): Handshake OK
+[ERROR] 23:48:16:894 KERNEL_EXTRA/(10280:10280): Error creando la conexion para 127.0.0.1:8002
+[ERROR] 23:48:16:894 KERNEL_EXTRA/(10280:10280): No se pudo conectar al servidor Memoria
+[ERROR] 23:48:16:894 KERNEL_EXTRA/(10280:10280): No se pudo conectar al servidor del Memoria
+[INFO] 23:48:16:895 KERNEL_EXTRA/(10280:10280): Kernel escuchando conexiones...
+[INFO] 23:48:19:478 KERNEL_EXTRA/(10280:10280): Se conecto un cliente!
+[INFO] 23:48:19:478 KERNEL_EXTRA/(10280:10285): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 23:48:19:478 KERNEL_EXTRA/(10280:10285): Cliente desconectado!
+[WARNING] 23:48:19:478 KERNEL_EXTRA/(10280:10285): El cliente se desconectó del server
+[INFO] 23:48:19:478 KERNEL_EXTRA/(10280:10280): Se conecto un cliente!
+[INFO] 23:48:19:478 KERNEL_EXTRA/(10280:10286): Recibiendo paquete de instrucciones...
+[ERROR] 23:48:19:478 KERNEL_EXTRA/(10280:10286): Error creando la conexion para 127.0.0.1:8002
+[ERROR] 23:49:08:084 KERNEL_EXTRA/(10327:10327): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 23:49:08:084 KERNEL_EXTRA/(10327:10327): No se pudo conectar al servidor Filesystem
+[ERROR] 23:49:08:084 KERNEL_EXTRA/(10327:10327): No se pudo conectar al servidor del Filesystem
+[INFO] 23:49:08:084 KERNEL_EXTRA/(10327:10327): Conexión establecida con CPU
+[INFO] 23:49:08:084 KERNEL_EXTRA/(10327:10327): Handshake OK
+[ERROR] 23:49:08:084 KERNEL_EXTRA/(10327:10327): Error creando la conexion para 127.0.0.1:8002
+[ERROR] 23:49:08:084 KERNEL_EXTRA/(10327:10327): No se pudo conectar al servidor Memoria
+[ERROR] 23:49:08:084 KERNEL_EXTRA/(10327:10327): No se pudo conectar al servidor del Memoria
+[INFO] 23:49:08:084 KERNEL_EXTRA/(10327:10327): Kernel escuchando conexiones...
+[ERROR] 23:50:22:122 KERNEL_EXTRA/(10494:10494): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 23:50:22:122 KERNEL_EXTRA/(10494:10494): No se pudo conectar al servidor Filesystem
+[ERROR] 23:50:22:122 KERNEL_EXTRA/(10494:10494): No se pudo conectar al servidor del Filesystem
+[INFO] 23:50:22:122 KERNEL_EXTRA/(10494:10494): Conexión establecida con CPU
+[INFO] 23:50:22:122 KERNEL_EXTRA/(10494:10494): Handshake OK
+[INFO] 23:50:22:122 KERNEL_EXTRA/(10494:10494): Conexión establecida con Memoria
+[INFO] 23:50:22:122 KERNEL_EXTRA/(10494:10494): Handshake OK
+[INFO] 23:50:22:122 KERNEL_EXTRA/(10494:10494): Kernel escuchando conexiones...
+[INFO] 23:50:24:156 KERNEL_EXTRA/(10494:10494): Se conecto un cliente!
+[INFO] 23:50:24:156 KERNEL_EXTRA/(10494:10500): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 23:50:24:156 KERNEL_EXTRA/(10494:10500): Cliente desconectado!
+[WARNING] 23:50:24:156 KERNEL_EXTRA/(10494:10500): El cliente se desconectó del server
+[INFO] 23:50:24:156 KERNEL_EXTRA/(10494:10494): Se conecto un cliente!
+[INFO] 23:50:24:156 KERNEL_EXTRA/(10494:10501): Recibiendo paquete de instrucciones...
+[ERROR] 23:51:14:087 KERNEL_EXTRA/(10540:10540): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 23:51:14:087 KERNEL_EXTRA/(10540:10540): No se pudo conectar al servidor Filesystem
+[ERROR] 23:51:14:087 KERNEL_EXTRA/(10540:10540): No se pudo conectar al servidor del Filesystem
+[INFO] 23:51:14:087 KERNEL_EXTRA/(10540:10540): Conexión establecida con CPU
+[INFO] 23:51:14:088 KERNEL_EXTRA/(10540:10540): Handshake OK
+[INFO] 23:51:14:088 KERNEL_EXTRA/(10540:10540): Conexión establecida con Memoria
+[INFO] 23:51:14:088 KERNEL_EXTRA/(10540:10540): Handshake OK
+[INFO] 23:51:14:088 KERNEL_EXTRA/(10540:10540): Kernel escuchando conexiones...
+[INFO] 23:51:18:027 KERNEL_EXTRA/(10540:10540): Se conecto un cliente!
+[INFO] 23:51:18:027 KERNEL_EXTRA/(10540:10546): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 23:51:18:027 KERNEL_EXTRA/(10540:10546): Cliente desconectado!
+[WARNING] 23:51:18:027 KERNEL_EXTRA/(10540:10546): El cliente se desconectó del server
+[INFO] 23:51:18:027 KERNEL_EXTRA/(10540:10540): Se conecto un cliente!
+[INFO] 23:51:18:027 KERNEL_EXTRA/(10540:10547): Recibiendo paquete de instrucciones...
+[ERROR] 23:52:05:895 KERNEL_EXTRA/(10583:10583): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 23:52:05:895 KERNEL_EXTRA/(10583:10583): No se pudo conectar al servidor Filesystem
+[ERROR] 23:52:05:895 KERNEL_EXTRA/(10583:10583): No se pudo conectar al servidor del Filesystem
+[INFO] 23:52:05:895 KERNEL_EXTRA/(10583:10583): Conexión establecida con CPU
+[INFO] 23:52:05:895 KERNEL_EXTRA/(10583:10583): Handshake OK
+[INFO] 23:52:05:895 KERNEL_EXTRA/(10583:10583): Conexión establecida con Memoria
+[INFO] 23:52:05:895 KERNEL_EXTRA/(10583:10583): Handshake OK
+[INFO] 23:52:05:895 KERNEL_EXTRA/(10583:10583): Kernel escuchando conexiones...
+[INFO] 23:52:07:922 KERNEL_EXTRA/(10583:10583): Se conecto un cliente!
+[INFO] 23:52:07:922 KERNEL_EXTRA/(10583:10590): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 23:52:07:922 KERNEL_EXTRA/(10583:10590): Cliente desconectado!
+[WARNING] 23:52:07:922 KERNEL_EXTRA/(10583:10590): El cliente se desconectó del server
+[INFO] 23:52:07:922 KERNEL_EXTRA/(10583:10583): Se conecto un cliente!
+[INFO] 23:52:07:922 KERNEL_EXTRA/(10583:10591): Recibiendo paquete de instrucciones...
+[WARNING] 23:52:21:925 KERNEL_EXTRA/(10583:10591): Cliente desconectado!
+[WARNING] 23:52:21:925 KERNEL_EXTRA/(10583:10591): El cliente se desconectó del server
+[ERROR] 23:55:05:349 KERNEL_EXTRA/(10728:10728): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 23:55:05:349 KERNEL_EXTRA/(10728:10728): No se pudo conectar al servidor Filesystem
+[ERROR] 23:55:05:349 KERNEL_EXTRA/(10728:10728): No se pudo conectar al servidor del Filesystem
+[INFO] 23:55:05:349 KERNEL_EXTRA/(10728:10728): Conexión establecida con CPU
+[INFO] 23:55:05:349 KERNEL_EXTRA/(10728:10728): Handshake OK
+[INFO] 23:55:05:349 KERNEL_EXTRA/(10728:10728): Conexión establecida con Memoria
+[INFO] 23:55:05:349 KERNEL_EXTRA/(10728:10728): Handshake OK
+[INFO] 23:55:05:350 KERNEL_EXTRA/(10728:10728): Kernel escuchando conexiones...
+[INFO] 23:55:06:997 KERNEL_EXTRA/(10728:10728): Se conecto un cliente!
+[INFO] 23:55:06:997 KERNEL_EXTRA/(10728:10734): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 23:55:06:997 KERNEL_EXTRA/(10728:10734): Cliente desconectado!
+[WARNING] 23:55:06:997 KERNEL_EXTRA/(10728:10734): El cliente se desconectó del server
+[INFO] 23:55:06:997 KERNEL_EXTRA/(10728:10728): Se conecto un cliente!
+[INFO] 23:55:06:997 KERNEL_EXTRA/(10728:10735): Recibiendo paquete de instrucciones...
+[ERROR] 23:56:02:754 KERNEL_EXTRA/(10961:10961): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 23:56:02:754 KERNEL_EXTRA/(10961:10961): No se pudo conectar al servidor Filesystem
+[ERROR] 23:56:02:754 KERNEL_EXTRA/(10961:10961): No se pudo conectar al servidor del Filesystem
+[INFO] 23:56:02:754 KERNEL_EXTRA/(10961:10961): Conexión establecida con CPU
+[INFO] 23:56:02:754 KERNEL_EXTRA/(10961:10961): Handshake OK
+[INFO] 23:56:02:754 KERNEL_EXTRA/(10961:10961): Conexión establecida con Memoria
+[INFO] 23:56:02:754 KERNEL_EXTRA/(10961:10961): Handshake OK
+[INFO] 23:56:02:755 KERNEL_EXTRA/(10961:10961): Kernel escuchando conexiones...
+[ERROR] 23:56:18:451 KERNEL_EXTRA/(10971:10971): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 23:56:18:451 KERNEL_EXTRA/(10971:10971): No se pudo conectar al servidor Filesystem
+[ERROR] 23:56:18:451 KERNEL_EXTRA/(10971:10971): No se pudo conectar al servidor del Filesystem
+[INFO] 23:56:18:451 KERNEL_EXTRA/(10971:10971): Conexión establecida con CPU
+[INFO] 23:56:18:451 KERNEL_EXTRA/(10971:10971): Handshake OK
+[INFO] 23:56:18:451 KERNEL_EXTRA/(10971:10971): Conexión establecida con Memoria
+[INFO] 23:56:18:451 KERNEL_EXTRA/(10971:10971): Handshake OK
+[INFO] 23:56:18:452 KERNEL_EXTRA/(10971:10971): Kernel escuchando conexiones...
+[INFO] 23:56:20:723 KERNEL_EXTRA/(10971:10971): Se conecto un cliente!
+[INFO] 23:56:20:723 KERNEL_EXTRA/(10971:10977): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 23:56:20:723 KERNEL_EXTRA/(10971:10977): Cliente desconectado!
+[WARNING] 23:56:20:723 KERNEL_EXTRA/(10971:10977): El cliente se desconectó del server
+[INFO] 23:56:20:723 KERNEL_EXTRA/(10971:10971): Se conecto un cliente!
+[INFO] 23:56:20:723 KERNEL_EXTRA/(10971:10978): Recibiendo paquete de instrucciones...
+[ERROR] 23:57:52:241 KERNEL_EXTRA/(11038:11038): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 23:57:52:241 KERNEL_EXTRA/(11038:11038): No se pudo conectar al servidor Filesystem
+[ERROR] 23:57:52:241 KERNEL_EXTRA/(11038:11038): No se pudo conectar al servidor del Filesystem
+[INFO] 23:57:52:241 KERNEL_EXTRA/(11038:11038): Conexión establecida con CPU
+[INFO] 23:57:52:241 KERNEL_EXTRA/(11038:11038): Handshake OK
+[INFO] 23:57:52:241 KERNEL_EXTRA/(11038:11038): Conexión establecida con Memoria
+[INFO] 23:57:52:241 KERNEL_EXTRA/(11038:11038): Handshake OK
+[INFO] 23:57:52:242 KERNEL_EXTRA/(11038:11038): Kernel escuchando conexiones...
+[INFO] 23:57:53:834 KERNEL_EXTRA/(11038:11038): Se conecto un cliente!
+[INFO] 23:57:53:834 KERNEL_EXTRA/(11038:11044): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 23:57:53:834 KERNEL_EXTRA/(11038:11044): Cliente desconectado!
+[WARNING] 23:57:53:834 KERNEL_EXTRA/(11038:11044): El cliente se desconectó del server
+[INFO] 23:57:53:835 KERNEL_EXTRA/(11038:11038): Se conecto un cliente!
+[INFO] 23:57:53:835 KERNEL_EXTRA/(11038:11045): Recibiendo paquete de instrucciones...
+[ERROR] 23:58:28:141 KERNEL_EXTRA/(11074:11074): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 23:58:28:141 KERNEL_EXTRA/(11074:11074): No se pudo conectar al servidor Filesystem
+[ERROR] 23:58:28:141 KERNEL_EXTRA/(11074:11074): No se pudo conectar al servidor del Filesystem
+[INFO] 23:58:28:141 KERNEL_EXTRA/(11074:11074): Conexión establecida con CPU
+[INFO] 23:58:28:141 KERNEL_EXTRA/(11074:11074): Handshake OK
+[INFO] 23:58:28:141 KERNEL_EXTRA/(11074:11074): Conexión establecida con Memoria
+[INFO] 23:58:28:141 KERNEL_EXTRA/(11074:11074): Handshake OK
+[INFO] 23:58:28:142 KERNEL_EXTRA/(11074:11074): Kernel escuchando conexiones...
+[ERROR] 23:58:54:993 KERNEL_EXTRA/(11101:11101): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 23:58:54:993 KERNEL_EXTRA/(11101:11101): No se pudo conectar al servidor Filesystem
+[ERROR] 23:58:54:993 KERNEL_EXTRA/(11101:11101): No se pudo conectar al servidor del Filesystem
+[INFO] 23:58:54:993 KERNEL_EXTRA/(11101:11101): Conexión establecida con CPU
+[INFO] 23:58:54:993 KERNEL_EXTRA/(11101:11101): Handshake OK
+[INFO] 23:58:54:993 KERNEL_EXTRA/(11101:11101): Conexión establecida con Memoria
+[INFO] 23:58:54:993 KERNEL_EXTRA/(11101:11101): Handshake OK
+[INFO] 23:58:54:993 KERNEL_EXTRA/(11101:11101): Kernel escuchando conexiones...
+[ERROR] 23:59:01:871 KERNEL_EXTRA/(11114:11114): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 23:59:01:871 KERNEL_EXTRA/(11114:11114): No se pudo conectar al servidor Filesystem
+[ERROR] 23:59:01:871 KERNEL_EXTRA/(11114:11114): No se pudo conectar al servidor del Filesystem
+[INFO] 23:59:01:871 KERNEL_EXTRA/(11114:11114): Conexión establecida con CPU
+[INFO] 23:59:01:871 KERNEL_EXTRA/(11114:11114): Handshake OK
+[INFO] 23:59:01:871 KERNEL_EXTRA/(11114:11114): Conexión establecida con Memoria
+[INFO] 23:59:01:872 KERNEL_EXTRA/(11114:11114): Handshake OK
+[INFO] 23:59:01:872 KERNEL_EXTRA/(11114:11114): Kernel escuchando conexiones...
+[ERROR] 23:59:24:578 KERNEL_EXTRA/(11145:11145): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 23:59:24:578 KERNEL_EXTRA/(11145:11145): No se pudo conectar al servidor Filesystem
+[ERROR] 23:59:24:578 KERNEL_EXTRA/(11145:11145): No se pudo conectar al servidor del Filesystem
+[INFO] 23:59:24:578 KERNEL_EXTRA/(11145:11145): Conexión establecida con CPU
+[INFO] 23:59:24:578 KERNEL_EXTRA/(11145:11145): Handshake OK
+[INFO] 23:59:24:578 KERNEL_EXTRA/(11145:11145): Conexión establecida con Memoria
+[INFO] 23:59:24:579 KERNEL_EXTRA/(11145:11145): Handshake OK
+[INFO] 23:59:24:579 KERNEL_EXTRA/(11145:11145): Kernel escuchando conexiones...
+[INFO] 23:59:26:661 KERNEL_EXTRA/(11145:11145): Se conecto un cliente!
+[INFO] 23:59:26:661 KERNEL_EXTRA/(11145:11151): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 23:59:26:661 KERNEL_EXTRA/(11145:11151): Cliente desconectado!
+[WARNING] 23:59:26:661 KERNEL_EXTRA/(11145:11151): El cliente se desconectó del server
+[INFO] 23:59:26:661 KERNEL_EXTRA/(11145:11145): Se conecto un cliente!
+[INFO] 23:59:26:661 KERNEL_EXTRA/(11145:11152): Recibiendo paquete de instrucciones...
+[ERROR] 00:00:05:587 KERNEL_EXTRA/(11283:11283): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:00:05:587 KERNEL_EXTRA/(11283:11283): No se pudo conectar al servidor Filesystem
+[ERROR] 00:00:05:587 KERNEL_EXTRA/(11283:11283): No se pudo conectar al servidor del Filesystem
+[INFO] 00:00:05:587 KERNEL_EXTRA/(11283:11283): Conexión establecida con CPU
+[INFO] 00:00:05:587 KERNEL_EXTRA/(11283:11283): Handshake OK
+[INFO] 00:00:05:587 KERNEL_EXTRA/(11283:11283): Conexión establecida con Memoria
+[INFO] 00:00:05:587 KERNEL_EXTRA/(11283:11283): Handshake OK
+[INFO] 00:00:05:587 KERNEL_EXTRA/(11283:11283): Kernel escuchando conexiones...
+[ERROR] 00:00:24:982 KERNEL_EXTRA/(11317:11317): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:00:24:982 KERNEL_EXTRA/(11317:11317): No se pudo conectar al servidor Filesystem
+[ERROR] 00:00:24:982 KERNEL_EXTRA/(11317:11317): No se pudo conectar al servidor del Filesystem
+[INFO] 00:00:24:982 KERNEL_EXTRA/(11317:11317): Conexión establecida con CPU
+[INFO] 00:00:24:982 KERNEL_EXTRA/(11317:11317): Handshake OK
+[INFO] 00:00:24:982 KERNEL_EXTRA/(11317:11317): Conexión establecida con Memoria
+[INFO] 00:00:24:982 KERNEL_EXTRA/(11317:11317): Handshake OK
+[INFO] 00:00:24:982 KERNEL_EXTRA/(11317:11317): Kernel escuchando conexiones...
+[ERROR] 00:00:37:846 KERNEL_EXTRA/(11329:11329): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:00:37:846 KERNEL_EXTRA/(11329:11329): No se pudo conectar al servidor Filesystem
+[ERROR] 00:00:37:846 KERNEL_EXTRA/(11329:11329): No se pudo conectar al servidor del Filesystem
+[INFO] 00:00:37:846 KERNEL_EXTRA/(11329:11329): Conexión establecida con CPU
+[INFO] 00:00:37:846 KERNEL_EXTRA/(11329:11329): Handshake OK
+[INFO] 00:00:37:846 KERNEL_EXTRA/(11329:11329): Conexión establecida con Memoria
+[INFO] 00:00:37:846 KERNEL_EXTRA/(11329:11329): Handshake OK
+[INFO] 00:00:37:846 KERNEL_EXTRA/(11329:11329): Kernel escuchando conexiones...
+[INFO] 00:00:39:670 KERNEL_EXTRA/(11329:11329): Se conecto un cliente!
+[INFO] 00:00:39:670 KERNEL_EXTRA/(11329:11335): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 00:00:39:670 KERNEL_EXTRA/(11329:11335): Cliente desconectado!
+[WARNING] 00:00:39:670 KERNEL_EXTRA/(11329:11335): El cliente se desconectó del server
+[INFO] 00:00:39:670 KERNEL_EXTRA/(11329:11329): Se conecto un cliente!
+[INFO] 00:00:39:670 KERNEL_EXTRA/(11329:11336): Recibiendo paquete de instrucciones...
+[ERROR] 00:02:37:735 KERNEL_EXTRA/(11403:11403): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:02:37:735 KERNEL_EXTRA/(11403:11403): No se pudo conectar al servidor Filesystem
+[ERROR] 00:02:37:735 KERNEL_EXTRA/(11403:11403): No se pudo conectar al servidor del Filesystem
+[INFO] 00:02:37:735 KERNEL_EXTRA/(11403:11403): Conexión establecida con CPU
+[INFO] 00:02:37:735 KERNEL_EXTRA/(11403:11403): Handshake OK
+[INFO] 00:02:37:735 KERNEL_EXTRA/(11403:11403): Conexión establecida con Memoria
+[INFO] 00:02:37:735 KERNEL_EXTRA/(11403:11403): Handshake OK
+[INFO] 00:02:37:736 KERNEL_EXTRA/(11403:11403): Kernel escuchando conexiones...
+[INFO] 00:02:40:654 KERNEL_EXTRA/(11403:11403): Se conecto un cliente!
+[INFO] 00:02:40:654 KERNEL_EXTRA/(11403:11409): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 00:02:40:654 KERNEL_EXTRA/(11403:11409): Cliente desconectado!
+[WARNING] 00:02:40:654 KERNEL_EXTRA/(11403:11409): El cliente se desconectó del server
+[INFO] 00:02:40:654 KERNEL_EXTRA/(11403:11403): Se conecto un cliente!
+[INFO] 00:02:40:654 KERNEL_EXTRA/(11403:11410): Recibiendo paquete de instrucciones...
+[ERROR] 00:04:34:267 KERNEL_EXTRA/(11551:11551): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:04:34:267 KERNEL_EXTRA/(11551:11551): No se pudo conectar al servidor Filesystem
+[ERROR] 00:04:34:267 KERNEL_EXTRA/(11551:11551): No se pudo conectar al servidor del Filesystem
+[INFO] 00:04:34:267 KERNEL_EXTRA/(11551:11551): Conexión establecida con CPU
+[INFO] 00:04:34:267 KERNEL_EXTRA/(11551:11551): Handshake OK
+[INFO] 00:04:34:267 KERNEL_EXTRA/(11551:11551): Conexión establecida con Memoria
+[INFO] 00:04:34:267 KERNEL_EXTRA/(11551:11551): Handshake OK
+[INFO] 00:04:34:267 KERNEL_EXTRA/(11551:11551): Kernel escuchando conexiones...
+[INFO] 00:04:35:719 KERNEL_EXTRA/(11551:11551): Se conecto un cliente!
+[INFO] 00:04:35:719 KERNEL_EXTRA/(11551:11557): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 00:04:35:719 KERNEL_EXTRA/(11551:11557): Cliente desconectado!
+[WARNING] 00:04:35:719 KERNEL_EXTRA/(11551:11557): El cliente se desconectó del server
+[INFO] 00:04:35:719 KERNEL_EXTRA/(11551:11551): Se conecto un cliente!
+[INFO] 00:04:35:719 KERNEL_EXTRA/(11551:11558): Recibiendo paquete de instrucciones...
+[ERROR] 00:07:07:839 KERNEL_EXTRA/(11697:11697): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:07:07:839 KERNEL_EXTRA/(11697:11697): No se pudo conectar al servidor Filesystem
+[ERROR] 00:07:07:839 KERNEL_EXTRA/(11697:11697): No se pudo conectar al servidor del Filesystem
+[INFO] 00:07:07:839 KERNEL_EXTRA/(11697:11697): Conexión establecida con CPU
+[INFO] 00:07:07:839 KERNEL_EXTRA/(11697:11697): Handshake OK
+[INFO] 00:07:07:839 KERNEL_EXTRA/(11697:11697): Conexión establecida con Memoria
+[INFO] 00:07:07:839 KERNEL_EXTRA/(11697:11697): Handshake OK
+[INFO] 00:07:07:839 KERNEL_EXTRA/(11697:11697): Kernel escuchando conexiones...
+[INFO] 00:07:09:410 KERNEL_EXTRA/(11697:11697): Se conecto un cliente!
+[INFO] 00:07:09:411 KERNEL_EXTRA/(11697:11703): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 00:07:09:411 KERNEL_EXTRA/(11697:11703): Cliente desconectado!
+[WARNING] 00:07:09:411 KERNEL_EXTRA/(11697:11703): El cliente se desconectó del server
+[INFO] 00:07:09:411 KERNEL_EXTRA/(11697:11697): Se conecto un cliente!
+[INFO] 00:07:09:411 KERNEL_EXTRA/(11697:11704): Recibiendo paquete de instrucciones...
+[WARNING] 00:07:23:413 KERNEL_EXTRA/(11697:11704): Cliente desconectado!
+[WARNING] 00:07:23:413 KERNEL_EXTRA/(11697:11704): El cliente se desconectó del server
+[ERROR] 00:08:34:691 KERNEL_EXTRA/(11751:11751): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:08:34:691 KERNEL_EXTRA/(11751:11751): No se pudo conectar al servidor Filesystem
+[ERROR] 00:08:34:691 KERNEL_EXTRA/(11751:11751): No se pudo conectar al servidor del Filesystem
+[INFO] 00:08:34:691 KERNEL_EXTRA/(11751:11751): Conexión establecida con CPU
+[INFO] 00:08:34:691 KERNEL_EXTRA/(11751:11751): Handshake OK
+[INFO] 00:08:34:691 KERNEL_EXTRA/(11751:11751): Conexión establecida con Memoria
+[INFO] 00:08:34:691 KERNEL_EXTRA/(11751:11751): Handshake OK
+[INFO] 00:08:34:691 KERNEL_EXTRA/(11751:11751): Kernel escuchando conexiones...
+[INFO] 00:08:35:997 KERNEL_EXTRA/(11751:11751): Se conecto un cliente!
+[INFO] 00:08:35:997 KERNEL_EXTRA/(11751:11757): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 00:08:35:997 KERNEL_EXTRA/(11751:11757): Cliente desconectado!
+[WARNING] 00:08:35:997 KERNEL_EXTRA/(11751:11757): El cliente se desconectó del server
+[INFO] 00:08:35:997 KERNEL_EXTRA/(11751:11751): Se conecto un cliente!
+[INFO] 00:08:35:997 KERNEL_EXTRA/(11751:11758): Recibiendo paquete de instrucciones...
+[WARNING] 00:08:50:000 KERNEL_EXTRA/(11751:11758): Cliente desconectado!
+[WARNING] 00:08:50:000 KERNEL_EXTRA/(11751:11758): El cliente se desconectó del server
+[ERROR] 00:11:08:442 KERNEL_EXTRA/(11863:11863): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:11:08:442 KERNEL_EXTRA/(11863:11863): No se pudo conectar al servidor Filesystem
+[ERROR] 00:11:08:442 KERNEL_EXTRA/(11863:11863): No se pudo conectar al servidor del Filesystem
+[INFO] 00:11:08:442 KERNEL_EXTRA/(11863:11863): Conexión establecida con CPU
+[INFO] 00:11:08:442 KERNEL_EXTRA/(11863:11863): Handshake OK
+[INFO] 00:11:08:442 KERNEL_EXTRA/(11863:11863): Conexión establecida con Memoria
+[INFO] 00:11:08:442 KERNEL_EXTRA/(11863:11863): Handshake OK
+[INFO] 00:11:08:442 KERNEL_EXTRA/(11863:11863): Kernel escuchando conexiones...
+[INFO] 00:11:09:925 KERNEL_EXTRA/(11863:11863): Se conecto un cliente!
+[INFO] 00:11:09:925 KERNEL_EXTRA/(11863:11869): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 00:11:09:925 KERNEL_EXTRA/(11863:11869): Cliente desconectado!
+[WARNING] 00:11:09:925 KERNEL_EXTRA/(11863:11869): El cliente se desconectó del server
+[INFO] 00:11:09:925 KERNEL_EXTRA/(11863:11863): Se conecto un cliente!
+[INFO] 00:11:09:925 KERNEL_EXTRA/(11863:11870): Recibiendo paquete de instrucciones...
+[ERROR] 00:13:25:013 KERNEL_EXTRA/(11970:11970): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:13:25:013 KERNEL_EXTRA/(11970:11970): No se pudo conectar al servidor Filesystem
+[ERROR] 00:13:25:013 KERNEL_EXTRA/(11970:11970): No se pudo conectar al servidor del Filesystem
+[INFO] 00:13:25:013 KERNEL_EXTRA/(11970:11970): Conexión establecida con CPU
+[INFO] 00:13:25:014 KERNEL_EXTRA/(11970:11970): Handshake OK
+[INFO] 00:13:25:014 KERNEL_EXTRA/(11970:11970): Conexión establecida con Memoria
+[INFO] 00:13:25:014 KERNEL_EXTRA/(11970:11970): Handshake OK
+[INFO] 00:13:25:014 KERNEL_EXTRA/(11970:11970): Kernel escuchando conexiones...
+[INFO] 00:13:27:204 KERNEL_EXTRA/(11970:11970): Se conecto un cliente!
+[INFO] 00:13:27:204 KERNEL_EXTRA/(11970:11976): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 00:13:27:204 KERNEL_EXTRA/(11970:11976): Cliente desconectado!
+[WARNING] 00:13:27:204 KERNEL_EXTRA/(11970:11976): El cliente se desconectó del server
+[INFO] 00:13:27:204 KERNEL_EXTRA/(11970:11970): Se conecto un cliente!
+[INFO] 00:13:27:204 KERNEL_EXTRA/(11970:11977): Recibiendo paquete de instrucciones...
+[ERROR] 00:14:32:161 KERNEL_EXTRA/(12095:12095): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:14:32:161 KERNEL_EXTRA/(12095:12095): No se pudo conectar al servidor Filesystem
+[ERROR] 00:14:32:161 KERNEL_EXTRA/(12095:12095): No se pudo conectar al servidor del Filesystem
+[INFO] 00:14:32:161 KERNEL_EXTRA/(12095:12095): Conexión establecida con CPU
+[INFO] 00:14:32:161 KERNEL_EXTRA/(12095:12095): Handshake OK
+[INFO] 00:14:32:161 KERNEL_EXTRA/(12095:12095): Conexión establecida con Memoria
+[INFO] 00:14:32:161 KERNEL_EXTRA/(12095:12095): Handshake OK
+[INFO] 00:14:32:162 KERNEL_EXTRA/(12095:12095): Kernel escuchando conexiones...
+[INFO] 00:14:35:307 KERNEL_EXTRA/(12095:12095): Se conecto un cliente!
+[INFO] 00:14:35:307 KERNEL_EXTRA/(12095:12101): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 00:14:35:307 KERNEL_EXTRA/(12095:12101): Cliente desconectado!
+[WARNING] 00:14:35:307 KERNEL_EXTRA/(12095:12101): El cliente se desconectó del server
+[INFO] 00:14:35:307 KERNEL_EXTRA/(12095:12095): Se conecto un cliente!
+[INFO] 00:14:35:307 KERNEL_EXTRA/(12095:12102): Recibiendo paquete de instrucciones...
+[ERROR] 00:15:47:183 KERNEL_EXTRA/(12160:12160): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:15:47:183 KERNEL_EXTRA/(12160:12160): No se pudo conectar al servidor Filesystem
+[ERROR] 00:15:47:183 KERNEL_EXTRA/(12160:12160): No se pudo conectar al servidor del Filesystem
+[INFO] 00:15:47:183 KERNEL_EXTRA/(12160:12160): Conexión establecida con CPU
+[INFO] 00:15:47:183 KERNEL_EXTRA/(12160:12160): Handshake OK
+[INFO] 00:15:47:184 KERNEL_EXTRA/(12160:12160): Conexión establecida con Memoria
+[INFO] 00:15:47:184 KERNEL_EXTRA/(12160:12160): Handshake OK
+[INFO] 00:15:47:184 KERNEL_EXTRA/(12160:12160): Kernel escuchando conexiones...
+[INFO] 00:15:48:551 KERNEL_EXTRA/(12160:12160): Se conecto un cliente!
+[INFO] 00:15:48:551 KERNEL_EXTRA/(12160:12166): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 00:15:48:551 KERNEL_EXTRA/(12160:12166): Cliente desconectado!
+[WARNING] 00:15:48:551 KERNEL_EXTRA/(12160:12166): El cliente se desconectó del server
+[INFO] 00:15:48:551 KERNEL_EXTRA/(12160:12160): Se conecto un cliente!
+[INFO] 00:15:48:551 KERNEL_EXTRA/(12160:12167): Recibiendo paquete de instrucciones...
+[ERROR] 00:17:54:124 KERNEL_EXTRA/(12300:12300): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:17:54:124 KERNEL_EXTRA/(12300:12300): No se pudo conectar al servidor Filesystem
+[ERROR] 00:17:54:124 KERNEL_EXTRA/(12300:12300): No se pudo conectar al servidor del Filesystem
+[INFO] 00:17:54:124 KERNEL_EXTRA/(12300:12300): Conexión establecida con CPU
+[INFO] 00:17:54:124 KERNEL_EXTRA/(12300:12300): Handshake OK
+[INFO] 00:17:54:124 KERNEL_EXTRA/(12300:12300): Conexión establecida con Memoria
+[INFO] 00:17:54:125 KERNEL_EXTRA/(12300:12300): Handshake OK
+[INFO] 00:17:54:125 KERNEL_EXTRA/(12300:12300): Kernel escuchando conexiones...
+[INFO] 00:17:55:824 KERNEL_EXTRA/(12300:12300): Se conecto un cliente!
+[INFO] 00:17:55:824 KERNEL_EXTRA/(12300:12306): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 00:17:55:824 KERNEL_EXTRA/(12300:12306): Cliente desconectado!
+[WARNING] 00:17:55:824 KERNEL_EXTRA/(12300:12306): El cliente se desconectó del server
+[INFO] 00:17:55:824 KERNEL_EXTRA/(12300:12300): Se conecto un cliente!
+[INFO] 00:17:55:824 KERNEL_EXTRA/(12300:12307): Recibiendo paquete de instrucciones...
+[ERROR] 00:18:54:309 KERNEL_EXTRA/(12366:12366): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:18:54:309 KERNEL_EXTRA/(12366:12366): No se pudo conectar al servidor Filesystem
+[ERROR] 00:18:54:309 KERNEL_EXTRA/(12366:12366): No se pudo conectar al servidor del Filesystem
+[INFO] 00:18:54:309 KERNEL_EXTRA/(12366:12366): Conexión establecida con CPU
+[INFO] 00:18:54:309 KERNEL_EXTRA/(12366:12366): Handshake OK
+[INFO] 00:18:54:309 KERNEL_EXTRA/(12366:12366): Conexión establecida con Memoria
+[INFO] 00:18:54:309 KERNEL_EXTRA/(12366:12366): Handshake OK
+[INFO] 00:18:54:310 KERNEL_EXTRA/(12366:12366): Kernel escuchando conexiones...
+[ERROR] 00:18:59:127 KERNEL_EXTRA/(12378:12378): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:18:59:127 KERNEL_EXTRA/(12378:12378): No se pudo conectar al servidor Filesystem
+[ERROR] 00:18:59:127 KERNEL_EXTRA/(12378:12378): No se pudo conectar al servidor del Filesystem
+[INFO] 00:18:59:128 KERNEL_EXTRA/(12378:12378): Conexión establecida con CPU
+[INFO] 00:18:59:128 KERNEL_EXTRA/(12378:12378): Handshake OK
+[INFO] 00:18:59:128 KERNEL_EXTRA/(12378:12378): Conexión establecida con Memoria
+[INFO] 00:18:59:128 KERNEL_EXTRA/(12378:12378): Handshake OK
+[INFO] 00:18:59:128 KERNEL_EXTRA/(12378:12378): Kernel escuchando conexiones...
+[INFO] 00:19:16:723 KERNEL_EXTRA/(12378:12378): Se conecto un cliente!
+[INFO] 00:19:16:723 KERNEL_EXTRA/(12378:12384): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 00:19:16:723 KERNEL_EXTRA/(12378:12384): Cliente desconectado!
+[WARNING] 00:19:16:723 KERNEL_EXTRA/(12378:12384): El cliente se desconectó del server
+[INFO] 00:19:16:723 KERNEL_EXTRA/(12378:12378): Se conecto un cliente!
+[INFO] 00:19:16:723 KERNEL_EXTRA/(12378:12385): Recibiendo paquete de instrucciones...
+[ERROR] 00:22:33:590 KERNEL_EXTRA/(12576:12576): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:22:33:590 KERNEL_EXTRA/(12576:12576): No se pudo conectar al servidor Filesystem
+[ERROR] 00:22:33:590 KERNEL_EXTRA/(12576:12576): No se pudo conectar al servidor del Filesystem
+[INFO] 00:22:33:590 KERNEL_EXTRA/(12576:12576): Conexión establecida con CPU
+[INFO] 00:22:33:591 KERNEL_EXTRA/(12576:12576): Handshake OK
+[INFO] 00:22:33:591 KERNEL_EXTRA/(12576:12576): Conexión establecida con Memoria
+[INFO] 00:22:33:591 KERNEL_EXTRA/(12576:12576): Handshake OK
+[INFO] 00:22:33:591 KERNEL_EXTRA/(12576:12576): Kernel escuchando conexiones...
+[INFO] 00:22:35:643 KERNEL_EXTRA/(12576:12576): Se conecto un cliente!
+[INFO] 00:22:35:644 KERNEL_EXTRA/(12576:12582): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 00:22:35:644 KERNEL_EXTRA/(12576:12582): Cliente desconectado!
+[WARNING] 00:22:35:644 KERNEL_EXTRA/(12576:12582): El cliente se desconectó del server
+[INFO] 00:22:35:644 KERNEL_EXTRA/(12576:12576): Se conecto un cliente!
+[INFO] 00:22:35:644 KERNEL_EXTRA/(12576:12583): Recibiendo paquete de instrucciones...
+[ERROR] 00:23:34:137 KERNEL_EXTRA/(12622:12622): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:23:34:137 KERNEL_EXTRA/(12622:12622): No se pudo conectar al servidor Filesystem
+[ERROR] 00:23:34:137 KERNEL_EXTRA/(12622:12622): No se pudo conectar al servidor del Filesystem
+[INFO] 00:23:34:137 KERNEL_EXTRA/(12622:12622): Conexión establecida con CPU
+[INFO] 00:23:34:137 KERNEL_EXTRA/(12622:12622): Handshake OK
+[INFO] 00:23:34:137 KERNEL_EXTRA/(12622:12622): Conexión establecida con Memoria
+[INFO] 00:23:34:137 KERNEL_EXTRA/(12622:12622): Handshake OK
+[INFO] 00:23:34:138 KERNEL_EXTRA/(12622:12622): Kernel escuchando conexiones...
+[ERROR] 00:23:44:617 KERNEL_EXTRA/(12632:12632): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:23:44:617 KERNEL_EXTRA/(12632:12632): No se pudo conectar al servidor Filesystem
+[ERROR] 00:23:44:617 KERNEL_EXTRA/(12632:12632): No se pudo conectar al servidor del Filesystem
+[INFO] 00:23:44:617 KERNEL_EXTRA/(12632:12632): Conexión establecida con CPU
+[INFO] 00:23:44:617 KERNEL_EXTRA/(12632:12632): Handshake OK
+[INFO] 00:23:44:618 KERNEL_EXTRA/(12632:12632): Conexión establecida con Memoria
+[INFO] 00:23:44:618 KERNEL_EXTRA/(12632:12632): Handshake OK
+[INFO] 00:23:44:618 KERNEL_EXTRA/(12632:12632): Kernel escuchando conexiones...
+[INFO] 00:23:46:841 KERNEL_EXTRA/(12632:12632): Se conecto un cliente!
+[INFO] 00:23:46:841 KERNEL_EXTRA/(12632:12638): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 00:23:46:841 KERNEL_EXTRA/(12632:12638): Cliente desconectado!
+[WARNING] 00:23:46:841 KERNEL_EXTRA/(12632:12638): El cliente se desconectó del server
+[INFO] 00:23:46:841 KERNEL_EXTRA/(12632:12632): Se conecto un cliente!
+[INFO] 00:23:46:842 KERNEL_EXTRA/(12632:12639): Recibiendo paquete de instrucciones...
+[ERROR] 00:25:06:498 KERNEL_EXTRA/(12721:12721): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:25:06:498 KERNEL_EXTRA/(12721:12721): No se pudo conectar al servidor Filesystem
+[ERROR] 00:25:06:498 KERNEL_EXTRA/(12721:12721): No se pudo conectar al servidor del Filesystem
+[INFO] 00:25:06:498 KERNEL_EXTRA/(12721:12721): Conexión establecida con CPU
+[INFO] 00:25:06:498 KERNEL_EXTRA/(12721:12721): Handshake OK
+[INFO] 00:25:06:498 KERNEL_EXTRA/(12721:12721): Conexión establecida con Memoria
+[INFO] 00:25:06:498 KERNEL_EXTRA/(12721:12721): Handshake OK
+[INFO] 00:25:06:498 KERNEL_EXTRA/(12721:12721): Kernel escuchando conexiones...
+[INFO] 00:25:07:998 KERNEL_EXTRA/(12721:12721): Se conecto un cliente!
+[INFO] 00:25:07:998 KERNEL_EXTRA/(12721:12727): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 00:25:07:998 KERNEL_EXTRA/(12721:12727): Cliente desconectado!
+[WARNING] 00:25:07:998 KERNEL_EXTRA/(12721:12727): El cliente se desconectó del server
+[INFO] 00:25:07:998 KERNEL_EXTRA/(12721:12721): Se conecto un cliente!
+[INFO] 00:25:07:998 KERNEL_EXTRA/(12721:12728): Recibiendo paquete de instrucciones...
+[ERROR] 00:26:54:445 KERNEL_EXTRA/(12793:12793): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:26:54:445 KERNEL_EXTRA/(12793:12793): No se pudo conectar al servidor Filesystem
+[ERROR] 00:26:54:445 KERNEL_EXTRA/(12793:12793): No se pudo conectar al servidor del Filesystem
+[INFO] 00:26:54:445 KERNEL_EXTRA/(12793:12793): Conexión establecida con CPU
+[INFO] 00:26:54:445 KERNEL_EXTRA/(12793:12793): Handshake OK
+[INFO] 00:26:54:445 KERNEL_EXTRA/(12793:12793): Conexión establecida con Memoria
+[INFO] 00:26:54:445 KERNEL_EXTRA/(12793:12793): Handshake OK
+[INFO] 00:26:54:445 KERNEL_EXTRA/(12793:12793): Kernel escuchando conexiones...
+[INFO] 00:26:59:046 KERNEL_EXTRA/(12793:12793): Se conecto un cliente!
+[INFO] 00:26:59:046 KERNEL_EXTRA/(12793:12800): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 00:26:59:046 KERNEL_EXTRA/(12793:12800): Cliente desconectado!
+[WARNING] 00:26:59:046 KERNEL_EXTRA/(12793:12800): El cliente se desconectó del server
+[INFO] 00:26:59:046 KERNEL_EXTRA/(12793:12793): Se conecto un cliente!
+[INFO] 00:26:59:046 KERNEL_EXTRA/(12793:12801): Recibiendo paquete de instrucciones...
+[ERROR] 00:28:16:382 KERNEL_EXTRA/(12858:12858): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:28:16:382 KERNEL_EXTRA/(12858:12858): No se pudo conectar al servidor Filesystem
+[ERROR] 00:28:16:382 KERNEL_EXTRA/(12858:12858): No se pudo conectar al servidor del Filesystem
+[INFO] 00:28:16:382 KERNEL_EXTRA/(12858:12858): Conexión establecida con CPU
+[INFO] 00:28:16:382 KERNEL_EXTRA/(12858:12858): Handshake OK
+[INFO] 00:28:16:382 KERNEL_EXTRA/(12858:12858): Conexión establecida con Memoria
+[INFO] 00:28:16:382 KERNEL_EXTRA/(12858:12858): Handshake OK
+[INFO] 00:28:16:382 KERNEL_EXTRA/(12858:12858): Kernel escuchando conexiones...
+[INFO] 00:28:17:945 KERNEL_EXTRA/(12858:12858): Se conecto un cliente!
+[INFO] 00:28:17:945 KERNEL_EXTRA/(12858:12864): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 00:28:17:945 KERNEL_EXTRA/(12858:12864): Cliente desconectado!
+[WARNING] 00:28:17:945 KERNEL_EXTRA/(12858:12864): El cliente se desconectó del server
+[INFO] 00:28:17:945 KERNEL_EXTRA/(12858:12858): Se conecto un cliente!
+[INFO] 00:28:17:945 KERNEL_EXTRA/(12858:12865): Recibiendo paquete de instrucciones...
+[ERROR] 00:30:08:402 KERNEL_EXTRA/(13026:13026): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:30:08:402 KERNEL_EXTRA/(13026:13026): No se pudo conectar al servidor Filesystem
+[ERROR] 00:30:08:402 KERNEL_EXTRA/(13026:13026): No se pudo conectar al servidor del Filesystem
+[INFO] 00:30:08:402 KERNEL_EXTRA/(13026:13026): Conexión establecida con CPU
+[INFO] 00:30:08:403 KERNEL_EXTRA/(13026:13026): Handshake OK
+[INFO] 00:30:08:403 KERNEL_EXTRA/(13026:13026): Conexión establecida con Memoria
+[INFO] 00:30:08:403 KERNEL_EXTRA/(13026:13026): Handshake OK
+[INFO] 00:30:08:403 KERNEL_EXTRA/(13026:13026): Kernel escuchando conexiones...
+[INFO] 00:30:12:285 KERNEL_EXTRA/(13026:13026): Se conecto un cliente!
+[INFO] 00:30:12:285 KERNEL_EXTRA/(13026:13032): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 00:30:12:285 KERNEL_EXTRA/(13026:13032): Cliente desconectado!
+[WARNING] 00:30:12:285 KERNEL_EXTRA/(13026:13032): El cliente se desconectó del server
+[INFO] 00:30:12:285 KERNEL_EXTRA/(13026:13026): Se conecto un cliente!
+[INFO] 00:30:12:285 KERNEL_EXTRA/(13026:13033): Recibiendo paquete de instrucciones...
+[ERROR] 00:30:40:751 KERNEL_EXTRA/(13090:13090): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:30:40:751 KERNEL_EXTRA/(13090:13090): No se pudo conectar al servidor Filesystem
+[ERROR] 00:30:40:751 KERNEL_EXTRA/(13090:13090): No se pudo conectar al servidor del Filesystem
+[INFO] 00:30:40:751 KERNEL_EXTRA/(13090:13090): Conexión establecida con CPU
+[INFO] 00:30:40:752 KERNEL_EXTRA/(13090:13090): Handshake OK
+[INFO] 00:30:40:752 KERNEL_EXTRA/(13090:13090): Conexión establecida con Memoria
+[INFO] 00:30:40:752 KERNEL_EXTRA/(13090:13090): Handshake OK
+[INFO] 00:30:40:752 KERNEL_EXTRA/(13090:13090): Kernel escuchando conexiones...
+[ERROR] 00:30:55:864 KERNEL_EXTRA/(13119:13119): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:30:55:864 KERNEL_EXTRA/(13119:13119): No se pudo conectar al servidor Filesystem
+[ERROR] 00:30:55:864 KERNEL_EXTRA/(13119:13119): No se pudo conectar al servidor del Filesystem
+[INFO] 00:30:55:864 KERNEL_EXTRA/(13119:13119): Conexión establecida con CPU
+[INFO] 00:30:55:864 KERNEL_EXTRA/(13119:13119): Handshake OK
+[INFO] 00:30:55:864 KERNEL_EXTRA/(13119:13119): Conexión establecida con Memoria
+[INFO] 00:30:55:864 KERNEL_EXTRA/(13119:13119): Handshake OK
+[INFO] 00:30:55:865 KERNEL_EXTRA/(13119:13119): Kernel escuchando conexiones...
+[ERROR] 00:31:02:375 KERNEL_EXTRA/(13133:13133): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:31:02:375 KERNEL_EXTRA/(13133:13133): No se pudo conectar al servidor Filesystem
+[ERROR] 00:31:02:375 KERNEL_EXTRA/(13133:13133): No se pudo conectar al servidor del Filesystem
+[INFO] 00:31:02:375 KERNEL_EXTRA/(13133:13133): Conexión establecida con CPU
+[INFO] 00:31:02:376 KERNEL_EXTRA/(13133:13133): Handshake OK
+[INFO] 00:31:02:376 KERNEL_EXTRA/(13133:13133): Conexión establecida con Memoria
+[INFO] 00:31:02:376 KERNEL_EXTRA/(13133:13133): Handshake OK
+[INFO] 00:31:02:376 KERNEL_EXTRA/(13133:13133): Kernel escuchando conexiones...
+[ERROR] 00:31:28:937 KERNEL_EXTRA/(13213:13213): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:31:28:937 KERNEL_EXTRA/(13213:13213): No se pudo conectar al servidor Filesystem
+[ERROR] 00:31:28:937 KERNEL_EXTRA/(13213:13213): No se pudo conectar al servidor del Filesystem
+[INFO] 00:31:28:937 KERNEL_EXTRA/(13213:13213): Conexión establecida con CPU
+[INFO] 00:31:28:937 KERNEL_EXTRA/(13213:13213): Handshake OK
+[INFO] 00:31:28:937 KERNEL_EXTRA/(13213:13213): Conexión establecida con Memoria
+[INFO] 00:31:28:937 KERNEL_EXTRA/(13213:13213): Handshake OK
+[INFO] 00:31:28:937 KERNEL_EXTRA/(13213:13213): Kernel escuchando conexiones...
+[INFO] 00:31:30:331 KERNEL_EXTRA/(13213:13213): Se conecto un cliente!
+[INFO] 00:31:30:331 KERNEL_EXTRA/(13213:13220): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 00:31:30:331 KERNEL_EXTRA/(13213:13220): Cliente desconectado!
+[WARNING] 00:31:30:331 KERNEL_EXTRA/(13213:13220): El cliente se desconectó del server
+[INFO] 00:31:30:331 KERNEL_EXTRA/(13213:13213): Se conecto un cliente!
+[INFO] 00:31:30:331 KERNEL_EXTRA/(13213:13221): Recibiendo paquete de instrucciones...
+[ERROR] 00:32:24:554 KERNEL_EXTRA/(13271:13271): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:32:24:554 KERNEL_EXTRA/(13271:13271): No se pudo conectar al servidor Filesystem
+[ERROR] 00:32:24:554 KERNEL_EXTRA/(13271:13271): No se pudo conectar al servidor del Filesystem
+[INFO] 00:32:24:554 KERNEL_EXTRA/(13271:13271): Conexión establecida con CPU
+[INFO] 00:32:24:555 KERNEL_EXTRA/(13271:13271): Handshake OK
+[INFO] 00:32:24:555 KERNEL_EXTRA/(13271:13271): Conexión establecida con Memoria
+[INFO] 00:32:24:555 KERNEL_EXTRA/(13271:13271): Handshake OK
+[INFO] 00:32:24:555 KERNEL_EXTRA/(13271:13271): Kernel escuchando conexiones...
+[ERROR] 00:32:28:574 KERNEL_EXTRA/(13278:13278): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:32:28:574 KERNEL_EXTRA/(13278:13278): No se pudo conectar al servidor Filesystem
+[ERROR] 00:32:28:574 KERNEL_EXTRA/(13278:13278): No se pudo conectar al servidor del Filesystem
+[INFO] 00:32:28:574 KERNEL_EXTRA/(13278:13278): Conexión establecida con CPU
+[INFO] 00:32:28:575 KERNEL_EXTRA/(13278:13278): Handshake OK
+[INFO] 00:32:28:575 KERNEL_EXTRA/(13278:13278): Conexión establecida con Memoria
+[INFO] 00:32:28:575 KERNEL_EXTRA/(13278:13278): Handshake OK
+[INFO] 00:32:28:575 KERNEL_EXTRA/(13278:13278): Kernel escuchando conexiones...
+[ERROR] 00:32:55:794 KERNEL_EXTRA/(13309:13309): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:32:55:794 KERNEL_EXTRA/(13309:13309): No se pudo conectar al servidor Filesystem
+[ERROR] 00:32:55:794 KERNEL_EXTRA/(13309:13309): No se pudo conectar al servidor del Filesystem
+[INFO] 00:32:55:794 KERNEL_EXTRA/(13309:13309): Conexión establecida con CPU
+[INFO] 00:32:55:794 KERNEL_EXTRA/(13309:13309): Handshake OK
+[INFO] 00:32:55:794 KERNEL_EXTRA/(13309:13309): Conexión establecida con Memoria
+[INFO] 00:32:55:794 KERNEL_EXTRA/(13309:13309): Handshake OK
+[INFO] 00:32:55:794 KERNEL_EXTRA/(13309:13309): Kernel escuchando conexiones...
+[INFO] 00:32:56:154 KERNEL_EXTRA/(13309:13309): Se conecto un cliente!
+[INFO] 00:32:56:154 KERNEL_EXTRA/(13309:13315): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 00:32:56:154 KERNEL_EXTRA/(13309:13315): Cliente desconectado!
+[WARNING] 00:32:56:154 KERNEL_EXTRA/(13309:13315): El cliente se desconectó del server
+[INFO] 00:32:56:154 KERNEL_EXTRA/(13309:13309): Se conecto un cliente!
+[INFO] 00:32:56:154 KERNEL_EXTRA/(13309:13316): Recibiendo paquete de instrucciones...
+[ERROR] 00:39:49:625 KERNEL_EXTRA/(13716:13716): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:39:49:625 KERNEL_EXTRA/(13716:13716): No se pudo conectar al servidor Filesystem
+[ERROR] 00:39:49:625 KERNEL_EXTRA/(13716:13716): No se pudo conectar al servidor del Filesystem
+[INFO] 00:39:49:625 KERNEL_EXTRA/(13716:13716): Conexión establecida con CPU
+[INFO] 00:39:49:625 KERNEL_EXTRA/(13716:13716): Handshake OK
+[INFO] 00:39:49:625 KERNEL_EXTRA/(13716:13716): Conexión establecida con Memoria
+[INFO] 00:39:49:625 KERNEL_EXTRA/(13716:13716): Handshake OK
+[INFO] 00:39:49:625 KERNEL_EXTRA/(13716:13716): Kernel escuchando conexiones...
+[INFO] 00:39:51:626 KERNEL_EXTRA/(13716:13716): Se conecto un cliente!
+[INFO] 00:39:51:626 KERNEL_EXTRA/(13716:13722): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 00:39:51:626 KERNEL_EXTRA/(13716:13722): Cliente desconectado!
+[WARNING] 00:39:51:626 KERNEL_EXTRA/(13716:13722): El cliente se desconectó del server
+[INFO] 00:39:51:626 KERNEL_EXTRA/(13716:13716): Se conecto un cliente!
+[INFO] 00:39:51:626 KERNEL_EXTRA/(13716:13723): Recibiendo paquete de instrucciones...
+[WARNING] 00:40:05:629 KERNEL_EXTRA/(13716:13723): Cliente desconectado!
+[WARNING] 00:40:05:629 KERNEL_EXTRA/(13716:13723): El cliente se desconectó del server
+[ERROR] 00:40:13:737 KERNEL_EXTRA/(13737:13737): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:40:13:737 KERNEL_EXTRA/(13737:13737): No se pudo conectar al servidor Filesystem
+[ERROR] 00:40:13:737 KERNEL_EXTRA/(13737:13737): No se pudo conectar al servidor del Filesystem
+[INFO] 00:40:13:737 KERNEL_EXTRA/(13737:13737): Conexión establecida con CPU
+[INFO] 00:40:13:737 KERNEL_EXTRA/(13737:13737): Handshake OK
+[INFO] 00:40:13:737 KERNEL_EXTRA/(13737:13737): Conexión establecida con Memoria
+[INFO] 00:40:13:737 KERNEL_EXTRA/(13737:13737): Handshake OK
+[INFO] 00:40:13:737 KERNEL_EXTRA/(13737:13737): Kernel escuchando conexiones...
+[INFO] 00:40:15:293 KERNEL_EXTRA/(13737:13737): Se conecto un cliente!
+[INFO] 00:40:15:293 KERNEL_EXTRA/(13737:13743): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 00:40:15:294 KERNEL_EXTRA/(13737:13743): Cliente desconectado!
+[WARNING] 00:40:15:294 KERNEL_EXTRA/(13737:13743): El cliente se desconectó del server
+[INFO] 00:40:15:294 KERNEL_EXTRA/(13737:13737): Se conecto un cliente!
+[INFO] 00:40:15:294 KERNEL_EXTRA/(13737:13744): Recibiendo paquete de instrucciones...
+[WARNING] 00:40:29:296 KERNEL_EXTRA/(13737:13744): Cliente desconectado!
+[WARNING] 00:40:29:296 KERNEL_EXTRA/(13737:13744): El cliente se desconectó del server
+[ERROR] 00:43:52:807 KERNEL_EXTRA/(13863:13863): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:43:52:807 KERNEL_EXTRA/(13863:13863): No se pudo conectar al servidor Filesystem
+[ERROR] 00:43:52:807 KERNEL_EXTRA/(13863:13863): No se pudo conectar al servidor del Filesystem
+[INFO] 00:43:52:807 KERNEL_EXTRA/(13863:13863): Conexión establecida con CPU
+[INFO] 00:43:52:807 KERNEL_EXTRA/(13863:13863): Handshake OK
+[INFO] 00:43:52:807 KERNEL_EXTRA/(13863:13863): Conexión establecida con Memoria
+[INFO] 00:43:52:807 KERNEL_EXTRA/(13863:13863): Handshake OK
+[INFO] 00:43:52:807 KERNEL_EXTRA/(13863:13863): Kernel escuchando conexiones...
+[INFO] 00:43:54:312 KERNEL_EXTRA/(13863:13863): Se conecto un cliente!
+[INFO] 00:43:54:312 KERNEL_EXTRA/(13863:13869): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 00:43:54:312 KERNEL_EXTRA/(13863:13869): Cliente desconectado!
+[WARNING] 00:43:54:312 KERNEL_EXTRA/(13863:13869): El cliente se desconectó del server
+[INFO] 00:43:54:312 KERNEL_EXTRA/(13863:13863): Se conecto un cliente!
+[INFO] 00:43:54:312 KERNEL_EXTRA/(13863:13870): Recibiendo paquete de instrucciones...
+[ERROR] 00:44:16:660 KERNEL_EXTRA/(13916:13916): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:44:16:660 KERNEL_EXTRA/(13916:13916): No se pudo conectar al servidor Filesystem
+[ERROR] 00:44:16:660 KERNEL_EXTRA/(13916:13916): No se pudo conectar al servidor del Filesystem
+[INFO] 00:44:16:660 KERNEL_EXTRA/(13916:13916): Conexión establecida con CPU
+[INFO] 00:44:16:660 KERNEL_EXTRA/(13916:13916): Handshake OK
+[INFO] 00:44:16:660 KERNEL_EXTRA/(13916:13916): Conexión establecida con Memoria
+[INFO] 00:44:16:660 KERNEL_EXTRA/(13916:13916): Handshake OK
+[INFO] 00:44:16:660 KERNEL_EXTRA/(13916:13916): Kernel escuchando conexiones...
+[ERROR] 00:44:49:443 KERNEL_EXTRA/(14023:14023): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:44:49:443 KERNEL_EXTRA/(14023:14023): No se pudo conectar al servidor Filesystem
+[ERROR] 00:44:49:443 KERNEL_EXTRA/(14023:14023): No se pudo conectar al servidor del Filesystem
+[INFO] 00:44:49:443 KERNEL_EXTRA/(14023:14023): Conexión establecida con CPU
+[INFO] 00:44:49:443 KERNEL_EXTRA/(14023:14023): Handshake OK
+[INFO] 00:44:49:443 KERNEL_EXTRA/(14023:14023): Conexión establecida con Memoria
+[INFO] 00:44:49:443 KERNEL_EXTRA/(14023:14023): Handshake OK
+[INFO] 00:44:49:444 KERNEL_EXTRA/(14023:14023): Kernel escuchando conexiones...
+[ERROR] 00:44:55:995 KERNEL_EXTRA/(14032:14032): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:44:55:995 KERNEL_EXTRA/(14032:14032): No se pudo conectar al servidor Filesystem
+[ERROR] 00:44:55:995 KERNEL_EXTRA/(14032:14032): No se pudo conectar al servidor del Filesystem
+[INFO] 00:44:55:995 KERNEL_EXTRA/(14032:14032): Conexión establecida con CPU
+[INFO] 00:44:55:995 KERNEL_EXTRA/(14032:14032): Handshake OK
+[INFO] 00:44:55:995 KERNEL_EXTRA/(14032:14032): Conexión establecida con Memoria
+[INFO] 00:44:55:995 KERNEL_EXTRA/(14032:14032): Handshake OK
+[INFO] 00:44:55:996 KERNEL_EXTRA/(14032:14032): Kernel escuchando conexiones...
+[ERROR] 00:45:25:726 KERNEL_EXTRA/(14058:14058): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:45:25:726 KERNEL_EXTRA/(14058:14058): No se pudo conectar al servidor Filesystem
+[ERROR] 00:45:25:726 KERNEL_EXTRA/(14058:14058): No se pudo conectar al servidor del Filesystem
+[INFO] 00:45:25:726 KERNEL_EXTRA/(14058:14058): Conexión establecida con CPU
+[INFO] 00:45:25:726 KERNEL_EXTRA/(14058:14058): Handshake OK
+[INFO] 00:45:25:726 KERNEL_EXTRA/(14058:14058): Conexión establecida con Memoria
+[INFO] 00:45:25:726 KERNEL_EXTRA/(14058:14058): Handshake OK
+[INFO] 00:45:25:727 KERNEL_EXTRA/(14058:14058): Kernel escuchando conexiones...
+[INFO] 00:45:27:349 KERNEL_EXTRA/(14058:14058): Se conecto un cliente!
+[INFO] 00:45:27:349 KERNEL_EXTRA/(14058:14064): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 00:45:27:349 KERNEL_EXTRA/(14058:14064): Cliente desconectado!
+[WARNING] 00:45:27:349 KERNEL_EXTRA/(14058:14064): El cliente se desconectó del server
+[INFO] 00:45:27:349 KERNEL_EXTRA/(14058:14058): Se conecto un cliente!
+[INFO] 00:45:27:349 KERNEL_EXTRA/(14058:14065): Recibiendo paquete de instrucciones...
+[WARNING] 00:45:41:352 KERNEL_EXTRA/(14058:14065): Cliente desconectado!
+[WARNING] 00:45:41:352 KERNEL_EXTRA/(14058:14065): El cliente se desconectó del server
+[ERROR] 00:46:00:489 KERNEL_EXTRA/(14105:14105): Error creando la conexion para 127.0.0.1:8003
+[ERROR] 00:46:00:489 KERNEL_EXTRA/(14105:14105): No se pudo conectar al servidor Filesystem
+[ERROR] 00:46:00:489 KERNEL_EXTRA/(14105:14105): No se pudo conectar al servidor del Filesystem
+[INFO] 00:46:00:489 KERNEL_EXTRA/(14105:14105): Conexión establecida con CPU
+[INFO] 00:46:00:489 KERNEL_EXTRA/(14105:14105): Handshake OK
+[INFO] 00:46:00:489 KERNEL_EXTRA/(14105:14105): Conexión establecida con Memoria
+[INFO] 00:46:00:489 KERNEL_EXTRA/(14105:14105): Handshake OK
+[INFO] 00:46:00:490 KERNEL_EXTRA/(14105:14105): Kernel escuchando conexiones...
+[INFO] 00:46:01:984 KERNEL_EXTRA/(14105:14105): Se conecto un cliente!
+[INFO] 00:46:01:984 KERNEL_EXTRA/(14105:14111): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 00:46:01:984 KERNEL_EXTRA/(14105:14111): Cliente desconectado!
+[WARNING] 00:46:01:984 KERNEL_EXTRA/(14105:14111): El cliente se desconectó del server
+[INFO] 00:46:01:984 KERNEL_EXTRA/(14105:14105): Se conecto un cliente!
+[INFO] 00:46:01:984 KERNEL_EXTRA/(14105:14112): Recibiendo paquete de instrucciones...
+[WARNING] 00:46:15:987 KERNEL_EXTRA/(14105:14112): Cliente desconectado!
+[WARNING] 00:46:15:987 KERNEL_EXTRA/(14105:14112): El cliente se desconectó del server
+[INFO] 00:46:19:614 KERNEL_EXTRA/(14105:14105): Se conecto un cliente!
+[INFO] 00:46:19:614 KERNEL_EXTRA/(14105:14126): Recibido handshake HANDSHAKE_CONSOLA.
+[WARNING] 00:46:19:614 KERNEL_EXTRA/(14105:14126): Cliente desconectado!
+[WARNING] 00:46:19:614 KERNEL_EXTRA/(14105:14126): El cliente se desconectó del server
+[INFO] 00:46:19:614 KERNEL_EXTRA/(14105:14105): Se conecto un cliente!
+[INFO] 00:46:19:614 KERNEL_EXTRA/(14105:14127): Recibiendo paquete de instrucciones...
+[WARNING] 00:46:33:617 KERNEL_EXTRA/(14105:14127): Cliente desconectado!
+[WARNING] 00:46:33:617 KERNEL_EXTRA/(14105:14127): El cliente se desconectó del server

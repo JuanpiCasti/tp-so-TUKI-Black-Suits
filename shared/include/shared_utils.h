@@ -21,7 +21,8 @@ typedef enum
 	HANDSHAKE_FILESYSTEM,
 	HANDSHAKE_MEMORIA,
 	PAQUETE_INSTRUCCIONES,
-	NUEVO_CONTEXTO_PCB
+	NUEVO_CONTEXTO_PCB,
+	CREATE_SEGTABLE
 } cod_op;
 
 typedef struct
@@ -53,6 +54,7 @@ typedef struct {
     uint32_t id_seg;
     uint32_t base;
     uint32_t tam;
+	uint8_t activo;
 } t_ent_ts; // Entrada de la tabla de segmentos.
 
 extern char* cod_op_kernel_description[6];
@@ -77,4 +79,6 @@ void *serializar_instrucciones(t_list *instrucciones, int cant_instrucciones, ui
 // 4 bytes son para indicar el tamanio de lo que leer a continuacion.
 t_list *deserializar_instrucciones(void *stream, uint32_t tam_instrucciones);
 void destroy_instruccion(void* element);
+
+t_list* solicitar_tabla_segmentos(t_log* logger, char* ip, char* puerto);
 #endif
