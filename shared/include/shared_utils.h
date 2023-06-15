@@ -22,7 +22,8 @@ typedef enum
 	HANDSHAKE_MEMORIA,
 	PAQUETE_INSTRUCCIONES,
 	NUEVO_CONTEXTO_PCB,
-	CREATE_SEGTABLE
+	CREATE_SEGTABLE,
+	MEMORIA_CREATE_SEGMENT
 } cod_op;
 
 typedef struct
@@ -47,8 +48,10 @@ typedef enum
 	CPU_WAIT, 
 	CPU_SIGNAL,
 	CPU_CREATE_SEGMENT,
-	EXIT_RESOURCE_NOT_FOUND
-	// BLOCK calculo que tambien, ya veremos cuando lleguemos ahi
+	EXIT_RESOURCE_NOT_FOUND,
+	EXIT_OUT_OF_MEMORY,
+	MEMORIA_NECESITA_COMPACTACION,
+	MEMORIA_SEGMENTO_CREADO
 } cod_op_kernel;
 
 typedef struct {
@@ -56,9 +59,9 @@ typedef struct {
     uint32_t base;
     uint32_t tam;
 	uint8_t activo;
-} t_ent_ts; // Entrada de la tabla de segmentos.
+} t_ent_ts; // Entrada de la tabla de segmentos
 
-extern char* cod_op_kernel_description[6];
+extern char* cod_op_kernel_description[10];
 
 extern uint32_t TAMANIO_CONTEXTO;
 

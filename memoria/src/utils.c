@@ -11,6 +11,7 @@ void levantar_config_memoria() {
     config_memoria = config_create("./cfg/memoria.config");
     PUERTO_ESCUCHA_MEMORIA = config_get_int_value(config_memoria, "PUERTO_ESCUCHA");
     TAM_MEMORIA = config_get_int_value(config_memoria, "TAM_MEMORIA");
+    ESPACIO_LIBRE_TOTAL = TAM_MEMORIA;
     TAM_SEGMENTO_0 = config_get_int_value(config_memoria, "TAM_SEGMENTO_0");
     CANT_SEGMENTOS = config_get_int_value(config_memoria, "CANT_SEGMENTOS");
     RETARDO_MEMORIA = config_get_int_value(config_memoria, "RETARDO_MEMORIA");
@@ -44,7 +45,7 @@ void crear_segmento_0() {
 
 void levantar_estructuras_administrativas() {
     ESPACIO_USUARIO = malloc(TAM_MEMORIA);
-    ESPACIO_LIBRE_TOTAL = 0;
+    ESPACIO_LIBRE_TOTAL;
 
     LISTA_ESPACIOS_LIBRES = list_create();
 
@@ -133,7 +134,7 @@ int buscar_espacio_libre(uint32_t tam) {
         }
 
         log_info(logger_memoria_extra, "NO SE ENCONTRO UN ESPACIO LIBRE, SE NECESITA COMPACTAR");
-        return NULL;
+        return -1;
    
         break;
     
@@ -155,7 +156,7 @@ int buscar_espacio_libre(uint32_t tam) {
         } 
 
         log_info(logger_memoria_extra, "NO SE ENCONTRO UN ESPACIO LIBRE, SE NECESITA COMPACTAR");
-        return NULL;
+        return -1;
 
         break;
     
@@ -177,7 +178,7 @@ int buscar_espacio_libre(uint32_t tam) {
         } 
 
         log_info(logger_memoria_extra, "NO SE ENCONTRO UN ESPACIO LIBRE, SE NECESITA COMPACTAR");
-        return NULL;
+        return -1;
 
         break;
     
@@ -188,11 +189,12 @@ int buscar_espacio_libre(uint32_t tam) {
     return -1;
 }
 
-void crear_segmento(uint32_t tam) { // TODO: que retorne un codop que entienda el kernel
+cod_op_kernel crear_segmento(uint32_t tam, uint32_t* base_resultante) {
+    printf("%d, %d\n", ESPACIO_LIBRE_TOTAL, tam);
     if (ESPACIO_LIBRE_TOTAL < tam)
     {
         log_info(logger_memoria_extra, "NO HAY ESPACIO SUFICIENTE PARA CREAR ESE SEGMENTO");
-        return;
+        return EXIT_OUT_OF_MEMORY;
         // Retornar codop indicando que no hay espacio suficiente.
     }
     
@@ -202,10 +204,11 @@ void crear_segmento(uint32_t tam) { // TODO: que retorne un codop que entienda e
     if (i_espacio == -1)
     {
         // Retornar codop indicando que es necesario compactar.
-        return;
+        return MEMORIA_NECESITA_COMPACTACION;
     }
 
     t_esp* espacio = list_get(LISTA_ESPACIOS_LIBRES, i_espacio);
+    memcpy(base_resultante, &espacio->base, sizeof(uint32_t));
 
     espacio->base += tam;
     espacio->limite -= tam;
@@ -216,6 +219,8 @@ void crear_segmento(uint32_t tam) { // TODO: que retorne un codop que entienda e
         list_remove(LISTA_ESPACIOS_LIBRES, i_espacio);
         free(espacio);
     }
+
+    return MEMORIA_SEGMENTO_CREADO;
     
 }
 
@@ -225,6 +230,7 @@ bool son_contiguos(t_esp* esp1, t_esp* esp2) {
 
 
 void borrar_segmento(uint32_t base, uint32_t limite) {
+    ESPACIO_LIBRE_TOTAL += limite;
 
     t_esp* nuevo_esp = malloc(sizeof(t_esp));
     nuevo_esp->base = base;

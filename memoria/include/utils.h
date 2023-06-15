@@ -41,7 +41,7 @@ void print_lista_esp(t_list* lista);
 void* crear_tabla_segmentos();
 char* leer(uint32_t dir_fisca , uint32_t size);
 void escribir(uint32_t dir_fisca, void* data, uint32_t size);
-void crear_segmento(uint32_t tam);
+cod_op_kernel crear_segmento(uint32_t tam, uint32_t* base_resultante);
 void borrar_segmento(uint32_t base, uint32_t limite);
 void* crear_tabla_segmentos();
 

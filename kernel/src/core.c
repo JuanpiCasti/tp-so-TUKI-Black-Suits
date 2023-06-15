@@ -177,6 +177,53 @@ void signal_recurso(t_pcb *proceso, char *nombre_recurso)
     }
 }
 
+void solicitar_creacion_segmento(uint32_t id_seg, uint32_t tam, t_pcb* pcb) {
+    int socket_memoria = crear_conexion(logger_kernel_extra, IP_MEMORIA, PUERTO_MEMORIA);
+
+    int tam_buffer = sizeof(uint32_t) * 2 + sizeof(cod_op);
+
+    void* buffer = malloc(tam_buffer);
+    int despl = 0;
+    cod_op cop = MEMORIA_CREATE_SEGMENT;
+
+    memcpy(buffer, &cop, sizeof(cod_op));
+    despl += sizeof(cod_op);
+    memcpy(buffer + despl, &id_seg, sizeof(uint32_t));
+    despl += sizeof(uint32_t);
+    memcpy(buffer + despl, &tam, sizeof(uint32_t));
+    despl += sizeof(uint32_t);
+
+    send(socket_memoria, buffer, tam_buffer, NULL);
+    free(buffer);
+
+    cod_op_kernel resultado;
+    recv(socket_memoria, &resultado, sizeof(cod_op_kernel), NULL);
+    switch (resultado)
+    {
+    case EXIT_OUT_OF_MEMORY:
+        terminar_proceso(pcb, EXIT_OUT_OF_MEMORY);
+        break;
+    case MEMORIA_NECESITA_COMPACTACION:
+        // TODO: COMPACTACION
+        log_info(logger_kernel, "La memoria necesita ser compactada!!");
+        break;
+    case MEMORIA_SEGMENTO_CREADO:
+        uint32_t base;
+        recv(socket_memoria, &base, sizeof(uint32_t), NULL);
+        t_ent_ts* segmento = list_get(pcb -> tabla_segmentos, id_seg);
+        segmento -> base = base;
+        segmento -> tam = tam;
+        segmento -> activo = 1;
+        imprimir_pcb(pcb);
+        break;
+    
+    default:
+        break;
+
+    close(socket_memoria);
+    }
+}
+
 void planificacion_corto_plazo()
 {
     t_pcb *r_pcb;
@@ -265,7 +312,7 @@ void planificacion_corto_plazo()
                 memcpy(&tam_segmento, buffer + TAMANIO_CONTEXTO + sizeof(uint32_t), sizeof(uint32_t));
                 free(buffer);
                 //printf("ID: %d, TAM: %d\n", id_segmento, tam_segmento);
-                
+                solicitar_creacion_segmento(id_segmento, tam_segmento, r_pcb);
                 break;
             default:
                 break;

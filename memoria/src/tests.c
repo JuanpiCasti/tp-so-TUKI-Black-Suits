@@ -26,16 +26,19 @@ int run_tests()
     printf("%s\n", cadena);
     free(cadena);
 
-    crear_segmento(150);
-    crear_segmento(100);
-    crear_segmento(100);
+    uint32_t base;
+    crear_segmento(150, &base);
+    crear_segmento(100, &base);
+    crear_segmento(100, &base);
     print_lista_esp(LISTA_ESPACIOS_LIBRES);
     borrar_segmento(278, 100);
     print_lista_esp(LISTA_ESPACIOS_LIBRES);
-    crear_segmento(100);
+    crear_segmento(100, &base);
     print_lista_esp(LISTA_ESPACIOS_LIBRES);
     borrar_segmento(378, 100);
     print_lista_esp(LISTA_ESPACIOS_LIBRES);
-    crear_segmento(3718);
+    crear_segmento(5000000,&base);
+    print_lista_esp(LISTA_ESPACIOS_LIBRES);
+    crear_segmento(3718, &base);
     print_lista_esp(LISTA_ESPACIOS_LIBRES);
 }

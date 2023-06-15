@@ -4680,3 +4680,82 @@
 [INFO] 12:15:20:671 CONSOLA/(9674:9674): Conexión establecida con Kernel
 [INFO] 12:15:20:671 CONSOLA/(9674:9674): Enviando instrucciones a Kernel...
 [INFO] 12:15:33:676 CONSOLA/(9674:9674): Resultado de ejecutar el script 'scripts/memoria_p': SUCCESS
+[INFO] 12:31:48:245 CONSOLA/(11052:11052): Conexión establecida con Kernel
+[INFO] 12:31:48:245 CONSOLA/(11052:11052): Handshake OK
+[INFO] 12:31:48:245 CONSOLA/(11052:11052): Conexión establecida con Kernel
+[INFO] 12:31:48:245 CONSOLA/(11052:11052): Enviando instrucciones a Kernel...
+[INFO] 12:32:01:248 CONSOLA/(11052:11052): Resultado de ejecutar el script 'scripts/memoria_p': SUCCESS
+[INFO] 12:45:38:429 CONSOLA/(12207:12207): Conexión establecida con Kernel
+[INFO] 12:45:38:429 CONSOLA/(12207:12207): Handshake OK
+[INFO] 12:45:38:429 CONSOLA/(12207:12207): Conexión establecida con Kernel
+[INFO] 12:45:38:430 CONSOLA/(12207:12207): Enviando instrucciones a Kernel...
+[INFO] 12:45:51:432 CONSOLA/(12207:12207): Resultado de ejecutar el script 'scripts/memoria_p': SUCCESS
+[INFO] 12:55:04:336 CONSOLA/(12941:12941): Conexión establecida con Kernel
+[INFO] 12:55:04:336 CONSOLA/(12941:12941): Handshake OK
+[INFO] 12:55:04:336 CONSOLA/(12941:12941): Conexión establecida con Kernel
+[INFO] 12:55:04:336 CONSOLA/(12941:12941): Enviando instrucciones a Kernel...
+[INFO] 12:55:17:340 CONSOLA/(12941:12941): Resultado de ejecutar el script 'scripts/memoria_p': SUCCESS
+[INFO] 12:57:11:862 CONSOLA/(13308:13308): Conexión establecida con Kernel
+[INFO] 12:57:11:862 CONSOLA/(13308:13308): Handshake OK
+[INFO] 12:57:11:862 CONSOLA/(13308:13308): Conexión establecida con Kernel
+[INFO] 12:57:11:862 CONSOLA/(13308:13308): Enviando instrucciones a Kernel...
+[INFO] 12:57:24:865 CONSOLA/(13308:13308): Resultado de ejecutar el script 'scripts/memoria_p': SUCCESS
+[INFO] 13:00:20:403 CONSOLA/(13761:13761): Conexión establecida con Kernel
+[INFO] 13:00:20:403 CONSOLA/(13761:13761): Handshake OK
+[INFO] 13:00:20:403 CONSOLA/(13761:13761): Conexión establecida con Kernel
+[INFO] 13:00:20:403 CONSOLA/(13761:13761): Enviando instrucciones a Kernel...
+[ERROR] 13:01:32:077 CONSOLA/(14129:14129): Error creando la conexion para 127.0.0.1:8000
+[ERROR] 13:01:32:077 CONSOLA/(14129:14129): No se pudo conectar al servidor Kernel
+[ERROR] 13:01:32:077 CONSOLA/(14129:14129): No se pudo conectar al servidor del Kernel
+[ERROR] 13:01:32:077 CONSOLA/(14129:14129): Error creando la conexion para 127.0.0.1:8000
+[ERROR] 13:01:32:077 CONSOLA/(14129:14129): No se pudo conectar al servidor Kernel
+[ERROR] 13:01:32:077 CONSOLA/(14129:14129): No se pudo conectar a Kernel
+[INFO] 13:02:04:561 CONSOLA/(14440:14440): Conexión establecida con Kernel
+[INFO] 13:02:04:561 CONSOLA/(14440:14440): Handshake OK
+[INFO] 13:02:04:561 CONSOLA/(14440:14440): Conexión establecida con Kernel
+[INFO] 13:02:04:561 CONSOLA/(14440:14440): Enviando instrucciones a Kernel...
+[ERROR] 13:02:42:602 CONSOLA/(14534:14534): Error creando la conexion para 127.0.0.1:8000
+[ERROR] 13:02:42:602 CONSOLA/(14534:14534): No se pudo conectar al servidor Kernel
+[ERROR] 13:02:42:602 CONSOLA/(14534:14534): No se pudo conectar al servidor del Kernel
+[ERROR] 13:02:42:602 CONSOLA/(14534:14534): Error creando la conexion para 127.0.0.1:8000
+[ERROR] 13:02:42:602 CONSOLA/(14534:14534): No se pudo conectar al servidor Kernel
+[ERROR] 13:02:42:602 CONSOLA/(14534:14534): No se pudo conectar a Kernel
+[INFO] 13:03:33:672 CONSOLA/(14917:14917): Conexión establecida con Kernel
+[INFO] 13:03:33:672 CONSOLA/(14917:14917): Handshake OK
+[INFO] 13:03:33:673 CONSOLA/(14917:14917): Conexión establecida con Kernel
+[INFO] 13:03:33:673 CONSOLA/(14917:14917): Enviando instrucciones a Kernel...
+[INFO] 13:03:46:676 CONSOLA/(14917:14917): Resultado de ejecutar el script 'scripts/memoria_p': SUCCESS
+[INFO] 13:07:38:167 CONSOLA/(15667:15667): Conexión establecida con Kernel
+[INFO] 13:07:38:167 CONSOLA/(15667:15667): Handshake OK
+[INFO] 13:07:38:167 CONSOLA/(15667:15667): Conexión establecida con Kernel
+[INFO] 13:07:38:167 CONSOLA/(15667:15667): Enviando instrucciones a Kernel...
+[INFO] 13:07:51:172 CONSOLA/(15667:15667): Resultado de ejecutar el script 'scripts/memoria_p_out': SUCCESS
+[INFO] 13:11:16:675 CONSOLA/(16385:16385): Conexión establecida con Kernel
+[INFO] 13:11:16:676 CONSOLA/(16385:16385): Handshake OK
+[INFO] 13:11:16:676 CONSOLA/(16385:16385): Conexión establecida con Kernel
+[INFO] 13:11:16:676 CONSOLA/(16385:16385): Enviando instrucciones a Kernel...
+[INFO] 13:12:31:020 CONSOLA/(16714:16714): Conexión establecida con Kernel
+[INFO] 13:12:31:020 CONSOLA/(16714:16714): Handshake OK
+[INFO] 13:12:31:021 CONSOLA/(16714:16714): Conexión establecida con Kernel
+[INFO] 13:12:31:021 CONSOLA/(16714:16714): Enviando instrucciones a Kernel...
+[INFO] 13:12:44:024 CONSOLA/(16714:16714): Resultado de ejecutar el script 'scripts/memoria_p_out': SUCCESS
+[INFO] 13:14:32:981 CONSOLA/(17191:17191): Conexión establecida con Kernel
+[INFO] 13:14:32:981 CONSOLA/(17191:17191): Handshake OK
+[INFO] 13:14:32:981 CONSOLA/(17191:17191): Conexión establecida con Kernel
+[INFO] 13:14:32:981 CONSOLA/(17191:17191): Enviando instrucciones a Kernel...
+[INFO] 13:14:39:984 CONSOLA/(17191:17191): Resultado de ejecutar el script 'scripts/memoria_p_out': �r��U
+[INFO] 13:16:58:599 CONSOLA/(17960:17960): Conexión establecida con Kernel
+[INFO] 13:16:58:600 CONSOLA/(17960:17960): Handshake OK
+[INFO] 13:16:58:600 CONSOLA/(17960:17960): Conexión establecida con Kernel
+[INFO] 13:16:58:600 CONSOLA/(17960:17960): Enviando instrucciones a Kernel...
+[INFO] 13:17:05:602 CONSOLA/(17960:17960): Resultado de ejecutar el script 'scripts/memoria_p_out': �"~�\U
+[INFO] 13:19:28:668 CONSOLA/(18233:18233): Conexión establecida con Kernel
+[INFO] 13:19:28:668 CONSOLA/(18233:18233): Handshake OK
+[INFO] 13:19:28:668 CONSOLA/(18233:18233): Conexión establecida con Kernel
+[INFO] 13:19:28:668 CONSOLA/(18233:18233): Enviando instrucciones a Kernel...
+[INFO] 13:19:35:670 CONSOLA/(18233:18233): Resultado de ejecutar el script 'scripts/memoria_p_out': �ҸyV
+[INFO] 13:20:10:857 CONSOLA/(18667:18667): Conexión establecida con Kernel
+[INFO] 13:20:10:857 CONSOLA/(18667:18667): Handshake OK
+[INFO] 13:20:10:857 CONSOLA/(18667:18667): Conexión establecida con Kernel
+[INFO] 13:20:10:857 CONSOLA/(18667:18667): Enviando instrucciones a Kernel...
+[INFO] 13:20:17:859 CONSOLA/(18667:18667): Resultado de ejecutar el script 'scripts/memoria_p_out': OUT OF MEMORY
