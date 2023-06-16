@@ -56,28 +56,31 @@ t_bitarray *levantar_bitmap()
   return bitarray;
 }
 
-void ocupar_bloque(t_bitarray *bitarray, int numero_bloque)
+void ocupar_bloque(int numero_bloque)
 {
   int bitmap_size = BLOCK_COUNT / 8;
 
-  bitarray_set_bit(bitarray, numero_bloque - 1);
+  bitarray_set_bit(bitmap, numero_bloque);
 
   FILE *bitmap_file = fopen(PATH_BITMAP, "r+b");
-  fwrite(bitarray->bitarray, 1, bitmap_size, bitmap_file);
+  fwrite(bitmap->bitarray, 1, bitmap_size, bitmap_file);
 
   fclose(bitmap_file);
 }
 
-void desocupar_bloque(t_bitarray *bitarray, int numero_bloque)
+void desocupar_bloque(int numero_bloque)
 {
   int bitmap_size = BLOCK_COUNT / 8;
 
-  bitarray_clean_bit(bitarray, numero_bloque - 1);
+  bitarray_clean_bit(bitmap, numero_bloque);
 
   FILE *bitmap_file = fopen(PATH_BITMAP, "r+b");
-  fwrite(bitarray->bitarray, 1, bitmap_size, bitmap_file);
+  fwrite(bitmap->bitarray, 1, bitmap_size, bitmap_file);
 
   fclose(bitmap_file);
+
+  char *bloque_limpio = calloc(1, BLOCK_SIZE);
+  modificar_bloque(numero_bloque * BLOCK_SIZE, bloque_limpio);
 }
 
 char *levantar_bloques()
@@ -97,9 +100,18 @@ char *levantar_bloques()
   return blocks_buffer;
 }
 
-void modificar_bloque(char *blocks_buffer, int numero_bloque, char *bloque_nuevo)
+char *leer_bloque(uint32_t puntero_a_bloque)
 {
-  size_t offset = (numero_bloque - 1) * BLOCK_SIZE;
+  uint32_t offset = puntero_a_bloque;
+  char *bloque_leido = malloc(BLOCK_SIZE);
+  memcpy(bloque_leido, blocks_buffer + offset, BLOCK_SIZE);
+
+  return bloque_leido;
+}
+
+void modificar_bloque(uint32_t puntero_a_bloque, char *bloque_nuevo)
+{
+  size_t offset = puntero_a_bloque;
   memcpy(blocks_buffer + offset, bloque_nuevo, BLOCK_SIZE);
 
   FILE *blocks_file = fopen(PATH_BLOQUES, "r+");
@@ -107,53 +119,7 @@ void modificar_bloque(char *blocks_buffer, int numero_bloque, char *bloque_nuevo
   fwrite(blocks_buffer + offset, BLOCK_SIZE, 1, blocks_file);
 
   free(bloque_nuevo);
-}
-
-int abrir_archivo(char f_name[30])
-{
-  char path[46]; // 46 viene de los caracteres de: ./fs/fcb/f_name.config
-  strcpy(path, PATH_FCB);
-  strcat(path, "/");
-  strcat(path, f_name);
-  strcat(path, ".config");
-
-  FILE *archivo_fcb = fopen(path, "r");
-  if (archivo_fcb == NULL)
-  {
-    printf("El archivo no existe\n");
-    return EXIT_FAILURE;
-  }
-
-  printf("Archivo abierto\n");
-  fclose(archivo_fcb);
-  return EXIT_SUCCESS;
-}
-
-int crear_archivo(char f_name[30])
-{
-  t_fcb *new_fcb = malloc(sizeof(t_fcb));
-  strncpy(new_fcb->f_name, f_name, 29); // Si la cadena de origen tiene menos de 29 caracteres, los faltantes se llenan con caracteres nulos
-  new_fcb->f_name[29] = '\0';           // Agrega el carácter nulo al final
-  new_fcb->f_size = 0;
-  new_fcb->f_dp = 0;
-  new_fcb->f_ip = 0;
-
-  char path[46]; // 46 viene de los caracteres de: ./fs/fcb/f_name.config
-  strcpy(path, PATH_FCB);
-  strcat(path, "/");
-  strcat(path, f_name);
-  strcat(path, ".config");
-
-  FILE *archivo_fcb = fopen(path, "w");
-  fprintf(archivo_fcb, "NOMBRE_ARCHIVO=%s\n", new_fcb->f_name);
-  fprintf(archivo_fcb, "TAMANIO_ARCHIVO=%u\n", new_fcb->f_size);
-  fprintf(archivo_fcb, "PUNTERO_DIRECTO=%u\n", new_fcb->f_dp);
-  fprintf(archivo_fcb, "PUNTERO_INDIRECTO=%u\n", new_fcb->f_ip);
-
-  printf("Archivo creado\n");
-  fclose(archivo_fcb);
-  free(new_fcb);
-  return EXIT_SUCCESS;
+  fclose(blocks_file);
 }
 
 t_fcb *levantar_fcb(char f_name[30])
@@ -186,37 +152,62 @@ int calcular_bloques_por_size(uint32_t size)
   return resultado;
 }
 
-void truncar_archivo(char f_name[30], uint32_t new_size)
+int encontrar_bloque_libre()
 {
-  t_fcb *fcb = levantar_fcb(f_name);
-
-  uint32_t prev_size = fcb->f_size;
-  fcb->f_size = new_size;
-
-  if (prev_size < new_size)
+  for (int i = 0; i < BLOCK_COUNT; i++)
   {
-    int bloques_necesarios = calcular_bloques_por_size(new_size);
-    printf("Ampliar a: %d\n", bloques_necesarios);
-    // TODO: Lógica de ampliar cantidad de bloques
-  }
-  else if (prev_size > new_size)
-  {
-    int bloques_necesarios = calcular_bloques_por_size(new_size);
-    printf("Reducir a: %d\n", bloques_necesarios);
-    // TODO: Lógica de reducir cantidad de bloques
+    if (bitarray_test_bit(bitmap, i) == 0)
+    {
+      return i;
+    }
   }
 
-  char path[46]; // 46 viene de los caracteres de: ./fs/fcb/f_name.config
-  strcpy(path, PATH_FCB);
-  strcat(path, "/");
-  strcat(path, f_name);
-  strcat(path, ".config");
+  // No se encontraron bloques libres
+  return -1;
+}
 
-  FILE *archivo_fcb = fopen(path, "r+");
-  fprintf(archivo_fcb, "NOMBRE_ARCHIVO=%s\n", fcb->f_name);
-  fprintf(archivo_fcb, "TAMANIO_ARCHIVO=%u\n", fcb->f_size);
-  fprintf(archivo_fcb, "PUNTERO_DIRECTO=%u\n", fcb->f_dp);
-  fprintf(archivo_fcb, "PUNTERO_INDIRECTO=%u\n", fcb->f_ip);
+void asignar_bloque_directo(t_fcb *fcb)
+{
+  int bloque_libre = encontrar_bloque_libre(bitmap);
+  if (bloque_libre != -1)
+  {
+    ocupar_bloque(bloque_libre);
+    fcb->f_dp = BLOCK_SIZE * bloque_libre;
+    printf("Puntero directo: %d\n", fcb->f_dp);
+  }
+}
 
-  free(fcb);
+void asignar_bloque_indirecto(t_fcb *fcb)
+{
+  int bloque_libre = encontrar_bloque_libre(bitmap);
+  if (bloque_libre != -1)
+  {
+    ocupar_bloque(bloque_libre);
+    fcb->f_ip = BLOCK_SIZE * bloque_libre;
+    printf("Puntero indirecto: %d\n", fcb->f_ip);
+  }
+}
+
+void asignar_bloque_al_bloque_indirecto(t_fcb *fcb, int bloques_ya_asignados)
+{
+  int bloque_libre = encontrar_bloque_libre(bitmap);
+  if (bloque_libre != -1 && (sizeof(uint32_t) * bloques_ya_asignados + 1) < BLOCK_SIZE)
+  {
+    ocupar_bloque(bloque_libre);
+
+    uint32_t puntero_nb = BLOCK_SIZE * bloque_libre;
+    size_t offset = sizeof(uint32_t) * bloques_ya_asignados;
+    char *bloque_a_modificar = leer_bloque(fcb->f_ip);
+    memcpy(bloque_a_modificar + offset, &puntero_nb, sizeof(uint32_t));
+    modificar_bloque(fcb->f_ip, bloque_a_modificar);
+
+    printf("Puntero a bloque nuevo: %d\n", puntero_nb);
+  }
+}
+
+void remover_puntero_de_bloque_indirecto(t_fcb *fcb, int bloques_utiles)
+{
+  char *bloque_a_rellenar = calloc(1, BLOCK_SIZE);
+  memcpy(bloque_a_rellenar, blocks_buffer + fcb->f_ip, sizeof(uint32_t) * bloques_utiles);
+  modificar_bloque(fcb->f_ip, bloque_a_rellenar);
 }

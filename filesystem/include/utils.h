@@ -44,16 +44,24 @@ extern t_config *CONFIG_SUPERBLOQUE;
 extern int BLOCK_SIZE;
 extern int BLOCK_COUNT;
 
+extern t_bitarray *bitmap;
+extern char* blocks_buffer;
+
 void levantar_loggers_filesystem();
 void levantar_config_filesystem();
 void levantar_superbloque();
 t_bitarray *levantar_bitmap();
-void ocupar_bloque(t_bitarray *bitmap, int index);
-void desocupar_bloque(t_bitarray *bitmap, int index);
+void ocupar_bloque(int numero_bloque);
+void desocupar_bloque(int numero_bloque);
 char *levantar_bloques();
-void modificar_bloque(char *blocks_buffer, int numero_bloque, char *bloque_nuevo);
-int crear_archivo(char f_name[30]);
-int abrir_archivo(char f_name[30]);
-void truncar_archivo(char f_name[30], uint32_t new_size);
+char *leer_bloque(uint32_t puntero_a_bloque);
+void modificar_bloque(uint32_t puntero_a_bloque, char *bloque_nuevo);
+t_fcb *levantar_fcb(char f_name[30]);
+int calcular_bloques_por_size(uint32_t size);
+int encontrar_bloque_libre();
+void asignar_bloque_directo(t_fcb *fcb);
+void asignar_bloque_indirecto(t_fcb *fcb);
+void asignar_bloque_al_bloque_indirecto(t_fcb *fcb, int bloques_ya_asignados);
+void remover_puntero_de_bloque_indirecto(t_fcb *fcb, int bloques_utiles);
 
 #endif

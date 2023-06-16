@@ -48,13 +48,19 @@ int main(int argc, char **argv)
 		blocks_buffer = levantar_bloques();
 
 		// Prueba de archivo de bloques
-		// char* bloque_nuevo = malloc(BLOCK_SIZE);
-		// memset(bloque_nuevo, '1', BLOCK_SIZE);
-		// modificar_bloque(blocks_buffer, 3, bloque_nuevo);
+		truncar_archivo("elpicante", 0);
 
-		// crear_archivo("elpicante");
-		// abrir_archivo("elpicante");
-		// truncar_archivo("elpicante", 64);
+		for (int i = 0; i < BLOCK_COUNT; i++)
+		{
+			printf("Pos. %d: %d\n", i + 1, bitarray_test_bit(bitmap, i));
+		}
+
+		for (int i = 0; i < 3; i++)
+		{
+			uint32_t puntero;
+			memcpy(&puntero, blocks_buffer + BLOCK_SIZE + sizeof(uint32_t) * i, sizeof(uint32_t));
+			printf("Puntero %d: %d\n", i + 1, puntero);
+		}
 
 		//*********************
 		// SERVIDOR
