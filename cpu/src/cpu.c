@@ -8,7 +8,7 @@ int RETARDO_INSTRUCCION;
 char *IP_MEMORIA;
 char *PUERTO_MEMORIA;
 char *PUERTO_ESCUCHA_CPU;
-char *TAM_MAX_SEGMENTO;
+uint32_t TAM_MAX_SEGMENTO;
 
 uint32_t PID_RUNNING;
 char AX[4];
@@ -25,6 +25,7 @@ char RCX[16];
 char RDX[16];
 uint32_t PROGRAM_COUNTER;
 t_list *INSTRUCTION_LIST;
+t_list *SEGMENT_LIST;
 
 int main(int argc, char **argv)
 {

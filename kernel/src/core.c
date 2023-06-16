@@ -180,14 +180,16 @@ void signal_recurso(t_pcb *proceso, char *nombre_recurso)
 void solicitar_creacion_segmento(uint32_t id_seg, uint32_t tam, t_pcb* pcb) {
     int socket_memoria = crear_conexion(logger_kernel_extra, IP_MEMORIA, PUERTO_MEMORIA);
 
-    int tam_buffer = sizeof(uint32_t) * 2 + sizeof(cod_op);
+    int tam_buffer = sizeof(uint32_t) * 3 + sizeof(cod_op);
 
     void* buffer = malloc(tam_buffer);
     int despl = 0;
     cod_op cop = MEMORIA_CREATE_SEGMENT;
 
-    memcpy(buffer, &cop, sizeof(cod_op));
+    memcpy(buffer + despl, &cop, sizeof(cod_op));
     despl += sizeof(cod_op);
+    memcpy(buffer + despl, &pcb->pid, sizeof(uint32_t));
+    despl+= sizeof(uint32_t);
     memcpy(buffer + despl, &id_seg, sizeof(uint32_t));
     despl += sizeof(uint32_t);
     memcpy(buffer + despl, &tam, sizeof(uint32_t));
@@ -214,7 +216,8 @@ void solicitar_creacion_segmento(uint32_t id_seg, uint32_t tam, t_pcb* pcb) {
         segmento -> base = base;
         segmento -> tam = tam;
         segmento -> activo = 1;
-        imprimir_pcb(pcb);
+        log_info(logger_kernel, "PID: %d - Crear Segmento - Id: %d - Tamaño: %d", pcb->pid, id_seg, tam);
+        //imprimir_pcb(pcb);
         break;
     
     default:
@@ -222,6 +225,31 @@ void solicitar_creacion_segmento(uint32_t id_seg, uint32_t tam, t_pcb* pcb) {
 
     close(socket_memoria);
     }
+}
+
+void solicitar_liberacion_segmento(uint32_t base, uint32_t tam, uint32_t pid, uint32_t seg_id) {
+    int socket_memoria = crear_conexion(logger_kernel_extra, IP_MEMORIA, PUERTO_MEMORIA);
+    int tam_buffer = sizeof(uint32_t) * 4 + sizeof(cod_op);
+
+    void* buffer = malloc(tam_buffer);
+    int despl = 0;
+
+    cod_op cop = MEMORIA_FREE_SEGMENT;
+    memcpy(buffer + despl, &cop, sizeof(cod_op));
+    despl += sizeof(cod_op);
+    memcpy(buffer + despl, &pid, sizeof(cod_op));
+    despl += sizeof(uint32_t);
+    memcpy(buffer + despl, &seg_id, sizeof(cod_op));
+    despl += sizeof(uint32_t);
+    memcpy(buffer + despl, &base, sizeof(uint32_t));
+    despl += sizeof(uint32_t);
+    memcpy(buffer + despl, &tam, sizeof(uint32_t));
+    despl += sizeof(uint32_t);
+
+    send(socket_memoria, buffer, tam_buffer, NULL);
+    free(buffer);
+    close(socket_memoria);
+    log_info(logger_kernel, "PID: %d - Eliminar Segmento - Id: %d - Tamaño: %d", pid, seg_id, tam);
 }
 
 void planificacion_corto_plazo()
@@ -266,7 +294,9 @@ void planificacion_corto_plazo()
                                     4 * 16 +           // (RAX, RBX, RCX, RDX)
                                     sizeof(uint32_t) +
                                     sizeof(uint32_t) +
-                                    list_size(r_pcb->instrucciones) * sizeof(t_instruccion);
+                                    list_size(r_pcb->instrucciones) * sizeof(t_instruccion) +
+                                    sizeof(uint32_t) +
+                                    list_size(r_pcb->tabla_segmentos) * sizeof(t_ent_ts) + 500;
 
             int socket_cpu = mandar_a_cpu(r_pcb, tam_contexto);
             cod_op_kernel cop;
@@ -313,7 +343,21 @@ void planificacion_corto_plazo()
                 free(buffer);
                 //printf("ID: %d, TAM: %d\n", id_segmento, tam_segmento);
                 solicitar_creacion_segmento(id_segmento, tam_segmento, r_pcb);
+                //imprimir_pcb(r_pcb);
                 break;
+            case CPU_DELETE_SEGMENT:
+                memcpy(&id_segmento, buffer + TAMANIO_CONTEXTO, sizeof(uint32_t));
+                free(buffer);
+                t_ent_ts* seg = list_get(r_pcb->tabla_segmentos, id_segmento);
+                solicitar_liberacion_segmento(seg->base, seg->tam, r_pcb->pid, id_segmento);
+                seg->base = 0;
+                seg->tam = 0;
+                seg->activo = 0;
+                //imprimir_pcb(r_pcb);
+                break;
+            case CPU_SEG_FAULT:
+                free(buffer);
+                terminar_proceso(r_pcb, CPU_SEG_FAULT);
             default:
                 break;
             }

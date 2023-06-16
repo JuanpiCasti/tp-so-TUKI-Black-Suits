@@ -1,7 +1,7 @@
 #include "shared_utils.h"
 
 char *cod_op_desc[] = {"HANDSHAKE_CONSOLA", "HANDSHAKE_KERNEL", "HANDSHAKE_CPU", "HANDSHAKE_FILESYSTEM", "HANDSHAKE_MEMORIA"};
-char* cod_op_kernel_description[] = {"SUCCESS", "YIELD", "IO", "WAIT", "SIGNAL", "CREATE_SEGMENT", "RESOURCE NOT FOUND", "OUT OF MEMORY", "MEMORIA NECESITA COMPACTACION", "SEGMENTO CREADO"};
+char* cod_op_kernel_description[] = {"SUCCESS", "YIELD", "IO", "WAIT", "SIGNAL", "CREATE_SEGMENT", "DELETE_SEGMENT","RESOURCE NOT FOUND", "OUT OF MEMORY", "MEMORIA NECESITA COMPACTACION", "SEGMENTO CREADO", "SEGMENTAION FAULT"};
 
 uint32_t TAMANIO_CONTEXTO = 4 * 4 + 4 * 8 + 4 * 16 // Registros
         + sizeof(uint32_t);    // Program Counter
@@ -207,6 +207,56 @@ t_list *deserializar_instrucciones(void *stream, uint32_t tam_instrucciones)
 	return lista_instrucciones;
 }
 
+void* serializar_tabla_segmentos(t_list* tabla, uint32_t tam_tabla) {
+	int cant_segmentos =list_size(tabla);
+	void* buffer = malloc(tam_tabla);
+	t_ent_ts* seg;
+	int despl = 0;
+
+	memcpy(buffer, &cant_segmentos, sizeof(uint32_t));
+	despl += sizeof(uint32_t);
+
+	for (int i = 0; i < cant_segmentos; i++)
+	{
+		seg = list_get(tabla, i);
+
+		memcpy(buffer + despl, &seg->id_seg, sizeof(uint32_t));
+		despl += sizeof(uint32_t);
+		memcpy(buffer + despl, &seg->base, sizeof(uint32_t));
+		despl += sizeof(uint32_t);
+		memcpy(buffer + despl, &seg->tam, sizeof(uint32_t));
+		despl += sizeof(uint32_t);
+		memcpy(buffer + despl, &seg->activo, sizeof(uint8_t));
+		despl += sizeof(uint8_t);
+ 
+	}
+	
+	return buffer;
+}
+
+t_list *deserializar_segmentos(void *stream, uint32_t cant_segmentos)
+{
+
+	t_list *lista_segmentos = list_create();
+
+	int desplazamiento = 0;
+	for (int i = 0; i < cant_segmentos; i++)
+	{
+		t_ent_ts *segmento = malloc(sizeof(t_instruccion));
+		memcpy(&segmento->id_seg, stream + desplazamiento, sizeof(uint32_t));
+		desplazamiento += sizeof(uint32_t);
+		memcpy(&segmento->base, stream + desplazamiento, sizeof(uint32_t));
+		desplazamiento += sizeof(uint32_t);
+		memcpy(&segmento->tam, stream + desplazamiento, sizeof(uint32_t));
+		desplazamiento += sizeof(uint32_t);
+		memcpy(&segmento->activo, stream + desplazamiento, sizeof(uint8_t));
+		desplazamiento += sizeof(uint8_t);
+		list_add(lista_segmentos, segmento);
+	}
+
+	return lista_segmentos;
+}
+
 char *imprimir_cadena(char *cadena, size_t longitud)
 {
 	char *cadena_imprimir = malloc(longitud + 1);
@@ -263,10 +313,16 @@ t_list* deserializar_tabla_segmentos(void* buffer, uint32_t size) {
     return tabla;
 }
 
-t_list* solicitar_tabla_segmentos(t_log* logger, char* ip, char* puerto) {
+t_list* solicitar_tabla_segmentos(t_log* logger, char* ip, char* puerto, uint32_t pid) {
     int socket_memoria = crear_conexion(logger, ip, puerto);
     cod_op cod = CREATE_SEGTABLE;
-    send(socket_memoria, &cod, sizeof(cod_op), NULL);
+	void* buffer_pid = malloc(sizeof(cod_op) + sizeof(uint32_t));
+
+	memcpy(buffer_pid, &cod, sizeof(cod_op));
+	memcpy(buffer_pid + sizeof(cod_op), &pid, sizeof(uint32_t));
+
+    send(socket_memoria, buffer_pid, sizeof(cod_op) + sizeof(uint32_t), NULL);
+	free(buffer_pid);
     uint32_t size;
     recv(socket_memoria, &size, sizeof(uint32_t), NULL);
 

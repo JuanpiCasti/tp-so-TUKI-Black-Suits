@@ -17,10 +17,6 @@ void devolver_tabla_inicial(int socket) {
 
 }
 
-void recibir_argumentos_creacion(uint32_t* id_seg, uint32_t* tam_seg, int socket) {
-    recv(socket, id_seg, sizeof(uint32_t), NULL);
-    recv(socket, tam_seg, sizeof(uint32_t), NULL);
-}
 
 void devolver_resultado_creacion(cod_op_kernel resultado, int socket, uint32_t base) {
     int tam_buffer = sizeof(cod_op_kernel);
@@ -72,17 +68,77 @@ void procesar_conexion(void *void_args)
             rechazar_handshake(logger, cliente_socket);
             break;
         case CREATE_SEGTABLE:
+            uint32_t pid;
+            recv(cliente_socket, &pid, sizeof(uint32_t), NULL);
             devolver_tabla_inicial(cliente_socket);
+            log_info(logger_memoria, "Creacion de Proceso PID: %d", pid);
             break;
         case MEMORIA_CREATE_SEGMENT:
+            uint32_t pid_create_segment;
             uint32_t id_seg;
             uint32_t tam_seg;
-            recibir_argumentos_creacion(&id_seg, &tam_seg, cliente_socket);
+            recv(cliente_socket, &pid_create_segment, sizeof(uint32_t), NULL);
+            recv(cliente_socket, &id_seg, sizeof(uint32_t), NULL);
+            recv(cliente_socket, &tam_seg, sizeof(uint32_t), NULL);
 
             uint32_t n_base;
             cod_op_kernel resultado = crear_segmento(tam_seg, &n_base);
+
+            if (resultado == MEMORIA_SEGMENTO_CREADO)
+            {
+                log_info(logger_memoria, "PID: %d - Crear Segmento: %d - Base: %d - TAMAÑO: %d", pid_create_segment, id_seg, n_base, tam_seg);
+            }
+            
             devolver_resultado_creacion(resultado, cliente_socket, n_base);
             break;
+        case MEMORIA_FREE_SEGMENT:
+            uint32_t pid_free_segment;
+            uint32_t free_seg_id;
+            uint32_t base;
+            uint32_t tam;
+
+            recv(cliente_socket, &pid_free_segment, sizeof(uint32_t), NULL);
+            recv(cliente_socket, &free_seg_id, sizeof(uint32_t), NULL);
+            recv(cliente_socket, &base, sizeof(uint32_t), NULL);
+            recv(cliente_socket, &tam, sizeof(uint32_t), NULL);
+
+            borrar_segmento(base, tam);
+            log_info(logger_memoria, "PID: %d - Eliminar Segmento: %d - Base: %d - TAMAÑO: %d", pid_free_segment, free_seg_id, base, tam);
+            //print_lista_esp(LISTA_ESPACIOS_LIBRES); //
+            break;
+        case MEMORIA_MOV_OUT:
+            uint32_t pid_mov_out;
+            uint32_t dir_fisica;
+            uint32_t tam_escrito;
+            recv(cliente_socket, &pid_mov_out, sizeof(uint32_t), NULL);
+            recv(cliente_socket, &dir_fisica, sizeof(uint32_t), NULL);
+            recv(cliente_socket, &tam_escrito, sizeof(uint32_t), NULL);
+            char* valor = malloc(tam_escrito);
+            recv(cliente_socket, valor, tam_escrito, NULL);
+            
+            // Para probar
+            // char* cadena = imprimir_cadena(valor, tam_escrito);
+            // printf("Valor recibido: %s\n", cadena);
+
+            escribir(dir_fisica, valor, tam_escrito);
+            log_info(logger_memoria, "PID: %d - Acción: ESCRIBIR - Dirección física: %d - Tamaño: %d - Origen: CPU", pid_mov_out, dir_fisica, tam_escrito);
+            free(valor);
+
+            //char* cosita = leer(dir_fisica, tam_escrito);
+            break;
+        case MEMORIA_MOV_IN:
+            uint32_t pid_mov_in;
+            uint32_t dir_fisica_in;
+            uint32_t tam_a_leer;
+            recv(cliente_socket, &pid_mov_in, sizeof(uint32_t), NULL);
+            recv(cliente_socket, &dir_fisica_in, sizeof(uint32_t), NULL);
+            recv(cliente_socket, &tam_a_leer, sizeof(uint32_t), NULL);
+            char* valor_in = leer(dir_fisica_in, tam_a_leer);
+            send(cliente_socket, valor_in, tam_a_leer, NULL);
+            free(valor_in);
+            log_info(logger_memoria, "PID: %d - Acción: LEER - Dirección física: %d - Tamaño: %d - Origen: CPU", pid_mov_in, dir_fisica_in, tam_a_leer);
+            break;
+
         default:
             log_error(logger, "Algo anduvo mal en el server Memoria");
             log_info(logger, "Cop: %d", cop);

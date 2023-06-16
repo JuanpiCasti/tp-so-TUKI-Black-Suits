@@ -70,6 +70,13 @@ void serializar_contexto(void *buffer, cod_op_kernel cop, int tamanio_contexto)
         memcpy(buffer + desplazamiento, &tam_seg, sizeof(uint32_t)); // TAMANIO SEGMENTO
         desplazamiento += sizeof(uint32_t);
     }
+
+    if (cop == CPU_DELETE_SEGMENT) {
+        t_instruccion* instruccion = list_get(INSTRUCTION_LIST, PROGRAM_COUNTER - 1);
+        uint32_t id_seg = atoi(instruccion -> arg1);
+        memcpy(buffer + desplazamiento, &id_seg, sizeof(uint32_t)); // ID SEGMENTO
+        desplazamiento += sizeof(uint32_t);
+    }
 }
 
 void devolver_contexto(int cliente_socket, cod_op_kernel cop)
@@ -87,6 +94,10 @@ void devolver_contexto(int cliente_socket, cod_op_kernel cop)
 
     if(cop == CPU_CREATE_SEGMENT) {
         tamanio_contexto += sizeof(uint32_t) * 2;
+    }
+
+    if(cop == CPU_DELETE_SEGMENT) {
+        tamanio_contexto += sizeof(uint32_t);
     }
     
 

@@ -34,7 +34,7 @@ t_pcb *crear_pcb(t_list *instrucciones, int socket_consola)
     pcb->socket_consola = socket_consola;
 
     
-    pcb -> tabla_segmentos = solicitar_tabla_segmentos(logger_kernel_extra, IP_MEMORIA, PUERTO_MEMORIA);
+    pcb -> tabla_segmentos = solicitar_tabla_segmentos(logger_kernel_extra, IP_MEMORIA, PUERTO_MEMORIA, pcb->pid);
 
     return pcb;
 }

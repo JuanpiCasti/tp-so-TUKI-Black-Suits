@@ -23,7 +23,10 @@ typedef enum
 	PAQUETE_INSTRUCCIONES,
 	NUEVO_CONTEXTO_PCB,
 	CREATE_SEGTABLE,
-	MEMORIA_CREATE_SEGMENT
+	MEMORIA_CREATE_SEGMENT,
+	MEMORIA_FREE_SEGMENT,
+	MEMORIA_MOV_IN,
+	MEMORIA_MOV_OUT
 } cod_op;
 
 typedef struct
@@ -48,10 +51,12 @@ typedef enum
 	CPU_WAIT, 
 	CPU_SIGNAL,
 	CPU_CREATE_SEGMENT,
+	CPU_DELETE_SEGMENT,
 	EXIT_RESOURCE_NOT_FOUND,
 	EXIT_OUT_OF_MEMORY,
 	MEMORIA_NECESITA_COMPACTACION,
-	MEMORIA_SEGMENTO_CREADO
+	MEMORIA_SEGMENTO_CREADO,
+	CPU_SEG_FAULT
 } cod_op_kernel;
 
 typedef struct {
@@ -61,7 +66,7 @@ typedef struct {
 	uint8_t activo;
 } t_ent_ts; // Entrada de la tabla de segmentos
 
-extern char* cod_op_kernel_description[10];
+extern char* cod_op_kernel_description[11];
 
 extern uint32_t TAMANIO_CONTEXTO;
 
@@ -84,5 +89,8 @@ void *serializar_instrucciones(t_list *instrucciones, int cant_instrucciones, ui
 t_list *deserializar_instrucciones(void *stream, uint32_t tam_instrucciones);
 void destroy_instruccion(void* element);
 
-t_list* solicitar_tabla_segmentos(t_log* logger, char* ip, char* puerto);
+void* serializar_tabla_segmentos(t_list* tabla, uint32_t tam_tabla);
+t_list *deserializar_segmentos(void *stream, uint32_t cant_segmentos);
+
+t_list* solicitar_tabla_segmentos(t_log* logger, char* ip, char* puerto, uint32_t pid);
 #endif
