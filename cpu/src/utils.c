@@ -42,7 +42,7 @@ void levantar_config_cpu()
     IP_MEMORIA = config_get_string_value(CONFIG_CPU, "IP_MEMORIA");
     PUERTO_MEMORIA = config_get_string_value(CONFIG_CPU, "PUERTO_MEMORIA");
     PUERTO_ESCUCHA_CPU = config_get_string_value(CONFIG_CPU, "PUERTO_ESCUCHA");
-    TAM_MAX_SEGMENTO = config_get_string_value(CONFIG_CPU, "TAM_MAX_SEGMENTO");
+    TAM_MAX_SEGMENTO = config_get_int_value(CONFIG_CPU, "TAM_MAX_SEGMENTO");
 }
 
 void cambiar_contexto(void *buffer)
@@ -89,6 +89,14 @@ void cambiar_contexto(void *buffer)
     desplazamiento += sizeof(uint32_t);
 
     INSTRUCTION_LIST = deserializar_instrucciones(buffer + desplazamiento, tam_instrucciones);
+    desplazamiento += tam_instrucciones;
+
+    // Segmentos
+    uint32_t tam_segmentos;
+    memcpy(&tam_segmentos, buffer + desplazamiento, sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
+    SEGMENT_LIST = deserializar_segmentos(buffer + desplazamiento, tam_segmentos);
+
 }
 
 void imprimir_contexto_actual()
@@ -113,6 +121,14 @@ void imprimir_contexto_actual()
         t_instruccion *instruccion = list_get(INSTRUCTION_LIST, i);
         printf("\t%d: %s %s %s %s\n", i, instruccion->instruccion, instruccion->arg1, instruccion->arg2, instruccion->arg3);
     }
+
+    printf("Segmentos:\n");
+    for (int i = 0; i < list_size(SEGMENT_LIST); i++)
+    {
+        t_ent_ts* seg = list_get(SEGMENT_LIST, i);
+        printf("%d, %d, %d, %d\n", seg->id_seg , seg->base, seg->tam, seg->activo); 
+    }
+    
 }
 
 void loggear_ejecucion(t_instruccion* instruccion) {
@@ -121,6 +137,159 @@ void loggear_ejecucion(t_instruccion* instruccion) {
      instruccion->arg1,
      instruccion->arg2,
      instruccion->arg3);
+}
+
+int32_t mmu(uint32_t dir_logica, uint32_t tamanio_operacion) {
+    uint32_t id_seg = dir_logica/  TAM_MAX_SEGMENTO ;
+    uint32_t desplazamiento = dir_logica % TAM_MAX_SEGMENTO;
+
+    t_ent_ts* seg = list_get(SEGMENT_LIST, id_seg); 
+
+    if (desplazamiento + tamanio_operacion > (seg->tam))
+    {
+        log_error(logger_cpu, "PID: %d - ERROR SEG_FAULT - Segmento: %d - Offset: %d - Tamaño: %d", PID_RUNNING, id_seg, desplazamiento, seg->tam);
+        return -1;
+    }
+
+    return seg->base + desplazamiento;
+}
+
+char* determinar_registro(char* str_registro, uint32_t* tam ) {
+    if (strcmp(str_registro, "AX") == 0)
+    {
+        *tam = 4;
+        return AX;
+    }
+    else if (strcmp(str_registro, "BX") == 0)
+    {
+        *tam = 4;
+        return BX;
+    }
+    else if (strcmp(str_registro, "CX") == 0)
+    {
+        *tam = 4;
+        return CX;
+    }
+    else if (strcmp(str_registro, "DX") == 0)
+    {
+        *tam = 4;
+        return DX;
+    }
+    else if (strcmp(str_registro, "EAX") == 0)
+    {
+        *tam = 8;
+        return EAX;
+    }
+    else if (strcmp(str_registro, "EBX") == 0)
+    {
+        *tam = 8;
+        return EBX;
+    }
+    else if (strcmp(str_registro, "ECX") == 0)
+    {
+        *tam = 8;
+        return ECX;
+    }
+    else if (strcmp(str_registro, "EDX") == 0)
+    {
+        *tam = 8;
+        return EDX;
+    }
+    else if (strcmp(str_registro, "RAX") == 0)
+    {
+        *tam = 16;
+        return RAX;
+    }
+    else if (strcmp(str_registro, "RBX") == 0)
+    {
+        *tam = 16;
+        return RBX;
+    }
+    else if (strcmp(str_registro, "RCX") == 0)
+    {
+        *tam = 16;
+        return RCX;
+    }
+    else if (strcmp(str_registro, "RDX") == 0)
+    {
+        *tam = 16;
+        return RDX;
+    }
+}
+
+int ejecutar_mov_in(char* registro, uint32_t direccion_logica, uint32_t tam_registro) {
+    uint32_t direccion_fisica = mmu(direccion_logica, tam_registro);
+    if (direccion_fisica == -1)
+    {
+        return -1;
+    }
+
+    int socket_memoria = crear_conexion(logger_cpu_extra, IP_MEMORIA, PUERTO_MEMORIA);
+    
+    void* buffer = malloc(sizeof(cod_op) + sizeof(uint32_t) *3);
+    int despl = 0;
+    cod_op cop = MEMORIA_MOV_IN;
+    
+    memcpy(buffer + despl, &cop, sizeof(cod_op));
+    despl += sizeof(cod_op);
+    memcpy(buffer + despl, &PID_RUNNING, sizeof(uint32_t));
+    despl += sizeof(uint32_t);
+    memcpy(buffer + despl, &direccion_fisica, sizeof(uint32_t));
+    despl += sizeof(uint32_t);
+    memcpy(buffer + despl, &tam_registro, sizeof(uint32_t));
+    despl += sizeof(uint32_t);
+    
+    send(socket_memoria, buffer, sizeof(cod_op) + sizeof(uint32_t) * 3, NULL);
+    free(buffer);
+    
+    char* valor = malloc(tam_registro);
+    recv(socket_memoria, valor, tam_registro, NULL);
+    strncpy(registro, valor, tam_registro);
+    //imprimir_contexto_actual();
+    close(socket_memoria);
+    char* valor_parseado = imprimir_cadena(valor, tam_registro);
+    log_info(logger_cpu, "PID: %d - Acción: LEER - Segmento: %d - Dirección Física: %d - Valor: %s", PID_RUNNING, direccion_logica/  TAM_MAX_SEGMENTO, direccion_fisica, valor_parseado);
+    free(valor);
+    free(valor_parseado);
+    return 0;
+}
+
+int ejecutar_mov_out(uint32_t direccion_logica, char* registro, uint32_t tam_registro) {
+    //imprimir_contexto_actual();
+    uint32_t tam_buffer = sizeof(cod_op) + sizeof(uint32_t) * 3 + tam_registro;
+    // Prueba
+    //char* cadena = imprimir_cadena(registro, tam_registro);
+
+    uint32_t direccion_fisica = mmu(direccion_logica, tam_registro);
+    if (direccion_fisica == -1)
+    {
+        return -1;
+    }
+    int socket_memoria = crear_conexion(logger_cpu_extra, IP_MEMORIA, PUERTO_MEMORIA);
+    
+    void* buffer = malloc(tam_buffer);
+    int despl = 0;
+    cod_op cop = MEMORIA_MOV_OUT;
+    
+    memcpy(buffer + despl, &cop, sizeof(cod_op));
+    despl += sizeof(cod_op);
+    memcpy(buffer + despl, &PID_RUNNING, sizeof(uint32_t));
+    despl += sizeof(uint32_t);
+    memcpy(buffer + despl, &direccion_fisica, sizeof(uint32_t));
+    despl += sizeof(uint32_t);
+    memcpy(buffer + despl, &tam_registro, sizeof(uint32_t));
+    despl += sizeof(uint32_t);
+    memcpy(buffer + despl, registro, tam_registro);
+    despl += tam_registro;
+
+    send(socket_memoria, buffer, tam_buffer, NULL);
+    free(buffer);
+    close(socket_memoria);
+    char* valor_parseado = imprimir_cadena(registro, tam_registro);
+    log_info(logger_cpu, "PID: %d - Acción: ESCRIBIR - Segmento: %d - Dirección Física: %d - Valor: %s", PID_RUNNING, direccion_logica/  TAM_MAX_SEGMENTO, direccion_fisica, valor_parseado);
+    free(valor_parseado);
+    return 0;
+    
 }
 
 as_instruction decode(t_instruccion *instruccion)
@@ -237,6 +406,26 @@ cod_op_kernel ejecutar_instrucciones()
             sleep(RETARDO_INSTRUCCION / 1000);
             ejecutar_set(instruccion);
             break;
+        case MOV_IN:
+            int tam_registro_in;
+            char* registro_in = determinar_registro(instruccion->arg1, &tam_registro_in);
+            uint32_t dir_logica_in = atoi(instruccion->arg2);
+            int result = ejecutar_mov_in(registro_in, dir_logica_in,tam_registro_in);
+            if (result == -1)
+            {
+                return CPU_SEG_FAULT;
+            }
+            break;
+        case MOV_OUT:
+            uint32_t tam_registro_out;
+            char* registro_out = determinar_registro(instruccion->arg2, &tam_registro_out);
+            uint32_t dir_logica_out = atoi(instruccion->arg1);
+            int result_mov_out = ejecutar_mov_out(dir_logica_out, registro_out, tam_registro_out);
+            if (result == -1)
+            {
+                return CPU_SEG_FAULT;
+            }
+            break;
         case YIELD:
             return CPU_YIELD;
         case EXIT:
@@ -249,6 +438,8 @@ cod_op_kernel ejecutar_instrucciones()
             return CPU_SIGNAL;
         case CREATE_SEGMENT:
             return CPU_CREATE_SEGMENT;
+        case DELETE_SEGMENT:
+            return CPU_DELETE_SEGMENT;
         default:
             break;
         }

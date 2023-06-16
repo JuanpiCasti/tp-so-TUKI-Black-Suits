@@ -32,7 +32,7 @@ void procesar_conexion(void *void_args)
         case PAQUETE_INSTRUCCIONES:
             t_list *instrucciones = recv_instrucciones(logger, cliente_socket);
             t_pcb *n_pcb = crear_pcb(instrucciones, cliente_socket);
-            imprimir_pcb(n_pcb);
+            //imprimir_pcb(n_pcb);
             pthread_mutex_lock(&mutex_NEW);
             list_add(NEW, n_pcb);
             log_info(logger_kernel, "Se crea el proceso %d en NEW", n_pcb->pid);
@@ -125,6 +125,15 @@ void *serializar_contexto_pcb(t_pcb *pcb, uint32_t tam_contexto)
     void *buffer_instrucciones = serializar_instrucciones(pcb->instrucciones, list_size(pcb->instrucciones), tam_instrucciones);
     memcpy(buffer + desplazamiento, buffer_instrucciones, sizeof(uint32_t) + tam_instrucciones);
     free(buffer_instrucciones);
+    desplazamiento += sizeof(uint32_t) + tam_instrucciones;
+
+    //imprimir_pcb(pcb);
+    // Tabla de segmentos
+    uint32_t tam_tabla_segmentos = sizeof(t_ent_ts) * list_size(pcb->tabla_segmentos) + sizeof(uint32_t);
+    void *buffer_tabla_segmentos = serializar_tabla_segmentos(pcb->tabla_segmentos, tam_tabla_segmentos);
+    memcpy(buffer + desplazamiento, buffer_tabla_segmentos, tam_tabla_segmentos);
+    free(buffer_tabla_segmentos);
+    desplazamiento += tam_tabla_segmentos;
 
     return buffer;
 }

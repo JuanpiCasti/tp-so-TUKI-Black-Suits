@@ -36,6 +36,7 @@ extern char RCX[16];
 extern char RDX[16];
 extern uint32_t PROGRAM_COUNTER;
 extern t_list* INSTRUCTION_LIST;
+extern t_list* SEGMENT_LIST;
 
 extern t_log* logger_cpu_extra;
 extern t_log* logger_cpu;
@@ -45,7 +46,7 @@ extern int RETARDO_INSTRUCCION;
 extern char *IP_MEMORIA;
 extern char *PUERTO_MEMORIA;
 extern char *PUERTO_ESCUCHA_CPU;
-extern char *TAM_MAX_SEGMENTO;
+extern uint32_t TAM_MAX_SEGMENTO;
 
 void levantar_loggers_cpu();
 void levantar_config_cpu();
