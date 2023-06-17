@@ -5,7 +5,7 @@
 
 int abrir_archivo(char f_name[30]);
 int crear_archivo(char f_name[30]);
-void truncar_archivo(char f_name[30], uint32_t new_size);
+void truncar_archivo(char* f_name, uint32_t new_size);
 
 #endif
 

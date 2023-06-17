@@ -2076,3 +2076,32 @@
 [INFO] 02:33:29:791 MEMORIA/(112638:114279): PID: 1 - Eliminar Segmento: 2 - Base: 128 - TAMAÑO: 128
 [WARNING] 02:33:29:791 MEMORIA/(112638:114279): Cliente desconectado!
 [WARNING] 02:33:29:791 MEMORIA/(112638:114279): El cliente se desconectó del server
+[INFO] 02:36:08:833 MEMORIA/(115423:115423): Memoria escuchando conexiones...
+[INFO] 02:36:54:234 MEMORIA/(115707:115707): Memoria escuchando conexiones...
+[INFO] 02:37:24:186 MEMORIA/(115799:115799): Memoria escuchando conexiones...
+[INFO] 02:37:27:308 MEMORIA/(115799:115799): Se conecto un cliente!
+[INFO] 02:37:27:308 MEMORIA/(115799:115830): Recibido handshake HANDSHAKE_CPU.
+[WARNING] 02:37:27:309 MEMORIA/(115799:115830): Cliente desconectado!
+[WARNING] 02:37:27:309 MEMORIA/(115799:115830): El cliente se desconectó del server
+[INFO] 02:37:31:235 MEMORIA/(115799:115799): Se conecto un cliente!
+[INFO] 02:37:31:235 MEMORIA/(115799:115880): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 02:37:31:235 MEMORIA/(115799:115880): Cliente desconectado!
+[WARNING] 02:37:31:235 MEMORIA/(115799:115880): El cliente se desconectó del server
+[INFO] 02:37:36:636 MEMORIA/(115799:115799): Se conecto un cliente!
+[INFO] 02:37:36:636 MEMORIA/(115799:115964): Creacion de Proceso PID: 1
+[WARNING] 02:37:36:636 MEMORIA/(115799:115964): Cliente desconectado!
+[WARNING] 02:37:36:636 MEMORIA/(115799:115964): El cliente se desconectó del server
+[INFO] 02:37:43:637 MEMORIA/(115799:115799): Se conecto un cliente!
+[INFO] 02:37:43:638 MEMORIA/(115799:116054): PID: 1 - Crear Segmento: 2 - Base: 128 - TAMAÑO: 128
+[INFO] 02:37:46:638 MEMORIA/(115799:115799): Se conecto un cliente!
+[INFO] 02:37:46:638 MEMORIA/(115799:115799): Se conecto un cliente!
+[INFO] 02:37:46:638 MEMORIA/(115799:116094): PID: 1 - Acción: ESCRIBIR - Dirección física: 178 - Tamaño: 16 - Origen: CPU
+[WARNING] 02:37:46:638 MEMORIA/(115799:116094): Cliente desconectado!
+[WARNING] 02:37:46:638 MEMORIA/(115799:116094): El cliente se desconectó del server
+[INFO] 02:37:46:638 MEMORIA/(115799:116095): PID: 1 - Acción: LEER - Dirección física: 178 - Tamaño: 16 - Origen: CPU
+[WARNING] 02:37:46:638 MEMORIA/(115799:116095): Cliente desconectado!
+[WARNING] 02:37:46:638 MEMORIA/(115799:116095): El cliente se desconectó del server
+[INFO] 02:37:47:639 MEMORIA/(115799:115799): Se conecto un cliente!
+[INFO] 02:37:47:639 MEMORIA/(115799:116097): PID: 1 - Eliminar Segmento: 2 - Base: 128 - TAMAÑO: 128
+[WARNING] 02:37:47:639 MEMORIA/(115799:116097): Cliente desconectado!
+[WARNING] 02:37:47:639 MEMORIA/(115799:116097): El cliente se desconectó del server

@@ -26,7 +26,13 @@ int main(int argc, char **argv)
 {
 	if (argc > 1 && strcmp(argv[1], "-test") == 0)
 	{
+		levantar_loggers_filesystem();
+		levantar_config_filesystem();
+		levantar_superbloque();
+		bitmap = levantar_bitmap();
+		blocks_buffer = levantar_bloques();
 		run_tests();
+		
 	}
 	else
 	{

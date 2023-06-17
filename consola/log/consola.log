@@ -5209,3 +5209,8 @@
 [INFO] 02:33:18:787 CONSOLA/(114146:114146): Conexión establecida con Kernel
 [INFO] 02:33:18:787 CONSOLA/(114146:114146): Enviando instrucciones a Kernel...
 [INFO] 02:33:31:791 CONSOLA/(114146:114146): Resultado de ejecutar el script 'scripts/memoria_p': SUCCESS
+[INFO] 02:37:36:636 CONSOLA/(115961:115961): Conexión establecida con Kernel
+[INFO] 02:37:36:636 CONSOLA/(115961:115961): Handshake OK
+[INFO] 02:37:36:636 CONSOLA/(115961:115961): Conexión establecida con Kernel
+[INFO] 02:37:36:636 CONSOLA/(115961:115961): Enviando instrucciones a Kernel...
+[INFO] 02:37:49:639 CONSOLA/(115961:115961): Resultado de ejecutar el script 'scripts/memoria_p': SUCCESS

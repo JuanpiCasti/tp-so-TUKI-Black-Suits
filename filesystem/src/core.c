@@ -47,7 +47,7 @@ int crear_archivo(char f_name[30])
   return EXIT_SUCCESS;
 }
 
-void truncar_archivo(char f_name[30], uint32_t new_size)
+void truncar_archivo(char* f_name, uint32_t new_size)
 {
   t_fcb *fcb = levantar_fcb(f_name);
 
@@ -106,10 +106,10 @@ void truncar_archivo(char f_name[30], uint32_t new_size)
       }
       else
       {
-        for (int i = (bloques_sobrantes - 1); i >= 0; i--)
+        for (int i = (bloques_actuales - 2); i > bloques_necesarios - 2; i--)
         {
           uint32_t puntero;
-          memcpy(&puntero, blocks_buffer + fcb->f_ip + sizeof(uint32_t) * i, sizeof(uint32_t));
+          memcpy(&puntero, blocks_buffer + fcb->f_ip  + sizeof(uint32_t) * i, sizeof(uint32_t));
           desocupar_bloque(puntero / BLOCK_SIZE);
           remover_puntero_de_bloque_indirecto(fcb, i);
         }

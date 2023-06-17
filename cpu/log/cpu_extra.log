@@ -11549,3 +11549,51 @@
 [INFO] 02:33:31:791 CPU/(113317:114280): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
 [WARNING] 02:33:31:791 CPU/(113317:114280): Cliente desconectado!
 [WARNING] 02:33:31:791 CPU/(113317:114280): El cliente se desconectó del server
+[ERROR] 02:36:12:472 CPU/(115459:115459): Error creando la conexion para 127.0.0.1:8002
+[ERROR] 02:36:12:472 CPU/(115459:115459): No se pudo conectar al servidor Memoria
+[ERROR] 02:36:12:472 CPU/(115459:115459): No se pudo conectar al servidor del Memoria
+[INFO] 02:36:12:472 CPU/(115459:115459): CPU escuchando conexiones...
+[ERROR] 02:36:56:506 CPU/(115727:115727): Error creando la conexion para 127.0.0.1:8002
+[ERROR] 02:36:56:507 CPU/(115727:115727): No se pudo conectar al servidor Memoria
+[ERROR] 02:36:56:507 CPU/(115727:115727): No se pudo conectar al servidor del Memoria
+[INFO] 02:36:56:507 CPU/(115727:115727): CPU escuchando conexiones...
+[INFO] 02:37:27:308 CPU/(115829:115829): Conexión establecida con Memoria
+[INFO] 02:37:27:309 CPU/(115829:115829): Handshake OK
+[INFO] 02:37:27:309 CPU/(115829:115829): CPU escuchando conexiones...
+[INFO] 02:37:31:235 CPU/(115829:115829): Se conecto un cliente!
+[INFO] 02:37:31:235 CPU/(115829:115879): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 02:37:31:235 CPU/(115829:115879): Cliente desconectado!
+[WARNING] 02:37:31:235 CPU/(115829:115879): El cliente se desconectó del server
+[INFO] 02:37:36:637 CPU/(115829:115829): Se conecto un cliente!
+[INFO] 02:37:36:637 CPU/(115829:115965): PID: 1 - Ejecutando: SET - arg1: AX, arg2: AAAA, arg3: 
+[INFO] 02:37:37:637 CPU/(115829:115965): PID: 1 - Ejecutando: SET - arg1: BX, arg2: BBBB, arg3: 
+[INFO] 02:37:38:637 CPU/(115829:115965): PID: 1 - Ejecutando: SET - arg1: CX, arg2: CCCC, arg3: 
+[INFO] 02:37:39:637 CPU/(115829:115965): PID: 1 - Ejecutando: SET - arg1: DX, arg2: DDDD, arg3: 
+[INFO] 02:37:40:637 CPU/(115829:115965): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 02:37:41:637 CPU/(115829:115965): PID: 1 - Ejecutando: SET - arg1: EBX, arg2: BBBBBBBB, arg3: 
+[INFO] 02:37:42:637 CPU/(115829:115965): PID: 1 - Ejecutando: SET - arg1: ECX, arg2: CCCCCCCC, arg3: 
+[INFO] 02:37:43:637 CPU/(115829:115965): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 128, arg3: 
+[WARNING] 02:37:43:637 CPU/(115829:115965): Cliente desconectado!
+[WARNING] 02:37:43:637 CPU/(115829:115965): El cliente se desconectó del server
+[INFO] 02:37:43:638 CPU/(115829:115829): Se conecto un cliente!
+[INFO] 02:37:43:638 CPU/(115829:116055): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: AAAAAAAAAAAAAAAA, arg3: 
+[INFO] 02:37:44:638 CPU/(115829:116055): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: BBBBBBBBBBBBBBBB, arg3: 
+[INFO] 02:37:45:638 CPU/(115829:116055): PID: 1 - Ejecutando: SET - arg1: RCX, arg2: CCCCCCCCCCCCCCCC, arg3: 
+[INFO] 02:37:46:638 CPU/(115829:116055): PID: 1 - Ejecutando: MOV_OUT - arg1: 306, arg2: RCX, arg3: 
+[INFO] 02:37:46:638 CPU/(115829:116055): PID: 1 - Acción: ESCRIBIR - Segmento: 2 - Dirección Física: 178 - Valor: CCCCCCCCCCCCCCCC
+[INFO] 02:37:46:638 CPU/(115829:116055): PID: 1 - Ejecutando: MOV_IN - arg1: RDX, arg2: 306, arg3: 
+[INFO] 02:37:46:638 CPU/(115829:116055): PID: 1 - Acción: LEER - Segmento: 2 - Dirección Física: 178 - Valor: CCCCCCCCCCCCCCCC
+[INFO] 02:37:46:638 CPU/(115829:116055): PID: 1 - Ejecutando: SET - arg1: RDX, arg2: DDDDDDDDDDDDDDDD, arg3: 
+[INFO] 02:37:47:638 CPU/(115829:116055): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 02:37:47:639 CPU/(115829:116055): Cliente desconectado!
+[WARNING] 02:37:47:639 CPU/(115829:116055): El cliente se desconectó del server
+[INFO] 02:37:47:639 CPU/(115829:115829): Se conecto un cliente!
+[INFO] 02:37:47:639 CPU/(115829:116096): PID: 1 - Ejecutando: DELETE_SEGMENT - arg1: 2, arg2: , arg3: 
+[WARNING] 02:37:47:639 CPU/(115829:116096): Cliente desconectado!
+[WARNING] 02:37:47:639 CPU/(115829:116096): El cliente se desconectó del server
+[INFO] 02:37:47:639 CPU/(115829:115829): Se conecto un cliente!
+[INFO] 02:37:47:639 CPU/(115829:116098): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: TCHOUAMENIAFUERA, arg3: 
+[INFO] 02:37:48:639 CPU/(115829:116098): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SEGUNDO_FRANCIA_, arg3: 
+[INFO] 02:37:49:639 CPU/(115829:116098): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 02:37:49:639 CPU/(115829:116098): Cliente desconectado!
+[WARNING] 02:37:49:639 CPU/(115829:116098): El cliente se desconectó del server

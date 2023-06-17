@@ -7410,3 +7410,14 @@
 [INFO] 02:33:29:790 KERNEL/(114102:114106): PID: 1 - Eliminar Segmento - Id: 2 - Tamaño: 128
 [INFO] 02:33:31:791 KERNEL/(114102:114106): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
 [INFO] 02:33:31:791 KERNEL/(114102:114106): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 02:37:36:636 KERNEL/(115878:115963): Se crea el proceso 1 en NEW
+[INFO] 02:37:36:636 KERNEL/(115878:115881): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 02:37:36:636 KERNEL/(115878:115881): Cola Ready FIFO: [1]
+[INFO] 02:37:36:636 KERNEL/(115878:115882): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 02:37:43:638 KERNEL/(115878:115882): PID: 1 - Crear Segmento - Id: 2 - Tamaño: 128
+[INFO] 02:37:47:639 KERNEL/(115878:115882): PID: 1 - Estado anterior: RUNNING - Estado actual: READY
+[INFO] 02:37:47:639 KERNEL/(115878:115882): Cola Ready FIFO: [1]
+[INFO] 02:37:47:639 KERNEL/(115878:115882): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 02:37:47:639 KERNEL/(115878:115882): PID: 1 - Eliminar Segmento - Id: 2 - Tamaño: 128
+[INFO] 02:37:49:639 KERNEL/(115878:115882): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 02:37:49:639 KERNEL/(115878:115882): Finaliza el proceso 1 - Motivo: SUCCESS
