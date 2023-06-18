@@ -178,7 +178,7 @@ int mandar_a_cpu(t_pcb *pcb, uint32_t tam_contexto)
     void *buffer = serializar_contexto_pcb(pcb, tam_contexto);
 
     send(socket_cpu, buffer, tam_paquete, NULL);
-
+    free(buffer);
     return socket_cpu;
 }
 

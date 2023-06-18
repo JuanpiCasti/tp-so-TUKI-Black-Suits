@@ -124,12 +124,12 @@ void terminar_proceso(t_pcb *proceso, cod_op_kernel motivo)
 {
     encolar_proceso(proceso, EXIT, &mutex_EXIT, "RUNNING", "EXIT");
 
-    pthread_mutex_lock(&mutex_mp);
+    pthread_mutex_lock(&mutex_mp);    
+    //imprimir_lista_recursos(RECURSOS);
     GRADO_ACTUAL_MPROG--;
     pthread_mutex_unlock(&mutex_mp);
 
-    loggear_fin_proceso(proceso, motivo);
-    devolver_resultado(proceso, motivo);
+    
 
     desalojar();
 
@@ -150,7 +150,8 @@ void terminar_proceso(t_pcb *proceso, cod_op_kernel motivo)
 
     //TODO: Liberar segmentos de memoria, mejor verlo cuando se trabaje en la compactacion
     //TODO: cerrar archivos abiertos?
-    
+    loggear_fin_proceso(proceso, motivo);
+    devolver_resultado(proceso, motivo);
 }
 
 void wait_recurso(t_pcb *proceso, char *nombre_recurso)
@@ -200,6 +201,7 @@ void signal_recurso(t_pcb *proceso, char *nombre_recurso)
         return;
     }
 
+    log_info(logger_kernel, "PID: %d - Signal: %s - Instancias: %d", proceso->pid, nombre_recurso, recurso->instancias_disponibles);
     int indice_recurso = recurso_asignado(proceso, nombre_recurso);
 
     t_asig_r* recurso_asignado = list_get(proceso->recursos_asignados, indice_recurso);
@@ -213,7 +215,6 @@ void signal_recurso(t_pcb *proceso, char *nombre_recurso)
     
 
     recurso->instancias_disponibles++;
-    log_info(logger_kernel, "PID: %d - Signal: %s - Instancias: %d", proceso->pid, nombre_recurso, recurso->instancias_disponibles);
 
     if (list_size(recurso->cola_bloqueados) > 0)
     {

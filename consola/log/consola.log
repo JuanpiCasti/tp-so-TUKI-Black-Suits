@@ -5256,3 +5256,33 @@
 [INFO] 19:37:41:232 CONSOLA/(9577:9577): Conexión establecida con Kernel
 [INFO] 19:37:41:232 CONSOLA/(9577:9577): Enviando instrucciones a Kernel...
 [INFO] 19:37:48:566 CONSOLA/(9577:9577): Resultado de ejecutar el script 'scripts/script.txt': SUCCESS
+[INFO] 19:46:16:700 CONSOLA/(11074:11074): Conexión establecida con Kernel
+[INFO] 19:46:16:700 CONSOLA/(11074:11074): Handshake OK
+[INFO] 19:46:16:701 CONSOLA/(11074:11074): Conexión establecida con Kernel
+[INFO] 19:46:16:701 CONSOLA/(11074:11074): Enviando instrucciones a Kernel...
+[INFO] 19:46:16:701 CONSOLA/(11074:11074): Resultado de ejecutar el script 'scripts/script.txt': SUCCESS
+[INFO] 19:48:02:090 CONSOLA/(11234:11234): Conexión establecida con Kernel
+[INFO] 19:48:02:090 CONSOLA/(11234:11234): Handshake OK
+[INFO] 19:48:02:090 CONSOLA/(11234:11234): Conexión establecida con Kernel
+[INFO] 19:48:02:090 CONSOLA/(11234:11234): Enviando instrucciones a Kernel...
+[INFO] 19:48:02:091 CONSOLA/(11234:11234): Resultado de ejecutar el script 'scripts/script.txt': SUCCESS
+[INFO] 19:49:02:496 CONSOLA/(11451:11451): Conexión establecida con Kernel
+[INFO] 19:49:02:497 CONSOLA/(11451:11451): Handshake OK
+[INFO] 19:49:02:497 CONSOLA/(11451:11451): Conexión establecida con Kernel
+[INFO] 19:49:02:497 CONSOLA/(11451:11451): Enviando instrucciones a Kernel...
+[ERROR] 19:49:57:595 CONSOLA/(11891:11891): Error creando la conexion para 127.0.0.1:8000
+[ERROR] 19:49:57:595 CONSOLA/(11891:11891): No se pudo conectar al servidor Kernel
+[ERROR] 19:49:57:595 CONSOLA/(11891:11891): No se pudo conectar al servidor del Kernel
+[ERROR] 19:49:57:595 CONSOLA/(11891:11891): Error creando la conexion para 127.0.0.1:8000
+[ERROR] 19:49:57:595 CONSOLA/(11891:11891): No se pudo conectar al servidor Kernel
+[ERROR] 19:49:57:595 CONSOLA/(11891:11891): No se pudo conectar a Kernel
+[INFO] 19:50:28:691 CONSOLA/(12152:12152): Conexión establecida con Kernel
+[INFO] 19:50:28:691 CONSOLA/(12152:12152): Handshake OK
+[INFO] 19:50:28:691 CONSOLA/(12152:12152): Conexión establecida con Kernel
+[INFO] 19:50:28:691 CONSOLA/(12152:12152): Enviando instrucciones a Kernel...
+[INFO] 19:50:28:692 CONSOLA/(12152:12152): Resultado de ejecutar el script 'scripts/script.txt': SUCCESS
+[INFO] 19:51:53:057 CONSOLA/(12333:12333): Conexión establecida con Kernel
+[INFO] 19:51:53:057 CONSOLA/(12333:12333): Handshake OK
+[INFO] 19:51:53:057 CONSOLA/(12333:12333): Conexión establecida con Kernel
+[INFO] 19:51:53:057 CONSOLA/(12333:12333): Enviando instrucciones a Kernel...
+[INFO] 19:51:53:058 CONSOLA/(12333:12333): Resultado de ejecutar el script 'scripts/script.txt': SUCCESS
