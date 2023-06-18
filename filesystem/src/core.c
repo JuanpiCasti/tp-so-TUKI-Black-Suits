@@ -81,7 +81,7 @@ void truncar_archivo(char* f_name, uint32_t new_size)
       }
     }
   }
-  else if (prev_size > new_size) // TODO: Fixear esto
+  else if (prev_size > new_size)
   {
     int bloques_actuales = calcular_bloques_por_size(prev_size);
     int bloques_necesarios = calcular_bloques_por_size(new_size);
@@ -106,10 +106,10 @@ void truncar_archivo(char* f_name, uint32_t new_size)
       }
       else
       {
-        for (int i = (bloques_actuales - 2); i > bloques_necesarios - 2; i--)
+        for (int i = (bloques_actuales - 2); i > (bloques_necesarios - 2); i--)
         {
           uint32_t puntero;
-          memcpy(&puntero, blocks_buffer + fcb->f_ip  + sizeof(uint32_t) * i, sizeof(uint32_t));
+          memcpy(&puntero, blocks_buffer + fcb->f_ip + sizeof(uint32_t) * i, sizeof(uint32_t));
           desocupar_bloque(puntero / BLOCK_SIZE);
           remover_puntero_de_bloque_indirecto(fcb, i);
         }
@@ -123,11 +123,12 @@ void truncar_archivo(char* f_name, uint32_t new_size)
   strcat(path, f_name);
   strcat(path, ".config");
 
-  FILE *archivo_fcb = fopen(path, "r+");
+  FILE *archivo_fcb = fopen(path, "w");
   fprintf(archivo_fcb, "NOMBRE_ARCHIVO=%s\n", fcb->f_name);
   fprintf(archivo_fcb, "TAMANIO_ARCHIVO=%u\n", fcb->f_size);
   fprintf(archivo_fcb, "PUNTERO_DIRECTO=%u\n", fcb->f_dp);
   fprintf(archivo_fcb, "PUNTERO_INDIRECTO=%u\n", fcb->f_ip);
 
   free(fcb);
+  fclose(archivo_fcb);
 }

@@ -61,7 +61,7 @@ int main(int argc, char **argv)
 			printf("Pos. %d: %d\n", i + 1, bitarray_test_bit(bitmap, i));
 		}
 
-		for (int i = 0; i < 3; i++)
+		for (int i = 0; i < 5; i++)
 		{
 			uint32_t puntero;
 			memcpy(&puntero, blocks_buffer + BLOCK_SIZE + sizeof(uint32_t) * i, sizeof(uint32_t));
