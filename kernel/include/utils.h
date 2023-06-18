@@ -34,6 +34,7 @@ typedef struct
   float estimado_HRRN;
   float ultima_rafaga;
   time_t llegada_ready;
+  t_list *recursos_asignados;
   t_list *archivos_abiertos;
   int socket_consola;
 } t_pcb;
@@ -43,6 +44,11 @@ typedef struct{
   int32_t instancias_disponibles;
   t_list* cola_bloqueados; // Lista de t_pcb
 } t_recurso;
+
+typedef struct{
+  char nombre[20];
+  uint32_t instancias_asignadas;
+} t_asig_r;
 
 // Logger del kernel
 extern t_log *logger_kernel_extra;
@@ -105,5 +111,7 @@ void imprimir_lista_recursos(t_list* lista);
 t_recurso* buscar_recurso_por_nombre(char* nombre_deseado);
 
 t_pcb *crear_pcb(t_list *instrucciones, int socket_consola); // Recibe lista de instrucciones y crea pcb
+int recurso_asignado(t_pcb* proceso, char* nombre_recurso);
+void destroy_t_asig_r(void* element);
 
 #endif

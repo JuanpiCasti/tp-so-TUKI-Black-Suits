@@ -7421,3 +7421,78 @@
 [INFO] 02:37:47:639 KERNEL/(115878:115882): PID: 1 - Eliminar Segmento - Id: 2 - Tamaño: 128
 [INFO] 02:37:49:639 KERNEL/(115878:115882): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
 [INFO] 02:37:49:639 KERNEL/(115878:115882): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 19:21:46:466 KERNEL/(5803:5911): Se crea el proceso 1 en NEW
+[INFO] 19:21:46:466 KERNEL/(5803:5806): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 19:21:46:466 KERNEL/(5803:5806): Cola Ready FIFO: [1]
+[INFO] 19:21:46:466 KERNEL/(5803:5807): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:23:48:047 KERNEL/(6132:6213): Se crea el proceso 1 en NEW
+[INFO] 19:23:48:047 KERNEL/(6132:6139): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 19:23:54:582 KERNEL/(6132:6139): Cola Ready FIFO: [1]
+[INFO] 19:23:54:582 KERNEL/(6132:6140): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:25:29:054 KERNEL/(6640:6705): Se crea el proceso 1 en NEW
+[INFO] 19:25:29:054 KERNEL/(6640:6646): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 19:25:33:049 KERNEL/(6640:6646): Cola Ready FIFO: [1]
+[INFO] 19:25:33:049 KERNEL/(6640:6647): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:26:20:727 KERNEL/(6994:7075): Se crea el proceso 1 en NEW
+[INFO] 19:26:20:727 KERNEL/(6994:7000): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 19:26:24:240 KERNEL/(6994:7000): Cola Ready FIFO: [1]
+[INFO] 19:26:24:240 KERNEL/(6994:7001): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:26:35:962 KERNEL/(6994:7001): PID: 1 - Wait: DISCO - Instancias: 2
+[INFO] 19:26:54:893 KERNEL/(6994:7001): PID: 1 - Wait: DISCO - Instancias: 1
+[INFO] 19:27:10:193 KERNEL/(6994:7001): PID: 1 - Wait: DISCO - Instancias: 0
+[INFO] 19:27:12:524 KERNEL/(6994:7001): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 19:27:12:524 KERNEL/(6994:7001): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 19:29:14:196 KERNEL/(7615:7691): Se crea el proceso 1 en NEW
+[INFO] 19:29:14:196 KERNEL/(7615:7621): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 19:29:16:138 KERNEL/(7615:7621): Cola Ready FIFO: [1]
+[INFO] 19:29:16:138 KERNEL/(7615:7622): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:29:19:172 KERNEL/(7615:7622): PID: 1 - Wait: DISCO - Instancias: 2
+[INFO] 19:29:21:065 KERNEL/(7615:7622): PID: 1 - Wait: DISCO - Instancias: 1
+[INFO] 19:29:23:288 KERNEL/(7615:7622): PID: 1 - Wait: DISCO - Instancias: 0
+[INFO] 19:29:25:633 KERNEL/(7615:7622): PID: 1 - Signal: DISCO - Instancias: 1
+[INFO] 19:29:27:126 KERNEL/(7615:7622): PID: 1 - Signal: DISCO - Instancias: 2
+[INFO] 19:29:28:835 KERNEL/(7615:7622): PID: 1 - Signal: DISCO - Instancias: 3
+[INFO] 19:29:30:287 KERNEL/(7615:7622): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 19:29:30:287 KERNEL/(7615:7622): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 19:31:20:415 KERNEL/(8231:8277): Se crea el proceso 1 en NEW
+[INFO] 19:31:20:415 KERNEL/(8231:8237): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 19:31:23:144 KERNEL/(8231:8237): Cola Ready FIFO: [1]
+[INFO] 19:31:23:144 KERNEL/(8231:8238): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:31:34:024 KERNEL/(8231:8238): PID: 1 - Wait: DISCO - Instancias: 2
+[INFO] 19:31:36:151 KERNEL/(8231:8238): PID: 1 - Wait: DISCO - Instancias: 1
+[INFO] 19:31:38:943 KERNEL/(8231:8238): PID: 1 - Wait: DISCO - Instancias: 0
+[INFO] 19:31:41:189 KERNEL/(8231:8238): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 19:31:41:189 KERNEL/(8231:8238): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 19:32:26:075 KERNEL/(8640:8705): Se crea el proceso 1 en NEW
+[INFO] 19:32:26:075 KERNEL/(8640:8646): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 19:32:28:425 KERNEL/(8640:8646): Cola Ready FIFO: [1]
+[INFO] 19:32:28:425 KERNEL/(8640:8647): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:32:30:874 KERNEL/(8640:8647): PID: 1 - Wait: DISCO - Instancias: 2
+[INFO] 19:32:32:611 KERNEL/(8640:8647): PID: 1 - Wait: DISCO - Instancias: 1
+[INFO] 19:32:34:774 KERNEL/(8640:8647): PID: 1 - Wait: DISCO - Instancias: 0
+[INFO] 19:32:36:484 KERNEL/(8640:8647): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 19:32:36:484 KERNEL/(8640:8647): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 19:36:41:870 KERNEL/(9104:9153): Se crea el proceso 1 en NEW
+[INFO] 19:36:41:870 KERNEL/(9104:9110): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 19:36:43:445 KERNEL/(9104:9110): Cola Ready FIFO: [1]
+[INFO] 19:36:43:445 KERNEL/(9104:9111): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:36:45:614 KERNEL/(9104:9111): PID: 1 - Wait: DISCO - Instancias: 2
+[INFO] 19:36:46:881 KERNEL/(9104:9111): PID: 1 - Wait: DISCO - Instancias: 1
+[INFO] 19:36:48:684 KERNEL/(9104:9111): PID: 1 - Wait: DISCO - Instancias: 0
+[INFO] 19:36:50:080 KERNEL/(9104:9111): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 19:36:50:080 KERNEL/(9104:9111): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 19:36:52:728 KERNEL/(9104:9111): PID: 1 - Signal: DISCO - Instancias: 1
+[INFO] 19:36:53:310 KERNEL/(9104:9111): PID: 1 - Signal: DISCO - Instancias: 2
+[INFO] 19:36:53:796 KERNEL/(9104:9111): PID: 1 - Signal:  - Instancias: 3
+[INFO] 19:37:41:232 KERNEL/(9514:9579): Se crea el proceso 1 en NEW
+[INFO] 19:37:41:232 KERNEL/(9514:9520): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 19:37:42:723 KERNEL/(9514:9520): Cola Ready FIFO: [1]
+[INFO] 19:37:42:723 KERNEL/(9514:9521): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:37:44:299 KERNEL/(9514:9521): PID: 1 - Wait: DISCO - Instancias: 2
+[INFO] 19:37:45:504 KERNEL/(9514:9521): PID: 1 - Wait: DISCO - Instancias: 1
+[INFO] 19:37:47:083 KERNEL/(9514:9521): PID: 1 - Wait: DISCO - Instancias: 0
+[INFO] 19:37:48:566 KERNEL/(9514:9521): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 19:37:48:566 KERNEL/(9514:9521): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 19:37:50:417 KERNEL/(9514:9521): PID: 1 - Signal: DISCO - Instancias: 1
+[INFO] 19:37:50:996 KERNEL/(9514:9521): PID: 1 - Signal: DISCO - Instancias: 2
+[INFO] 19:37:51:403 KERNEL/(9514:9521): PID: 1 - Signal:  - Instancias: 3

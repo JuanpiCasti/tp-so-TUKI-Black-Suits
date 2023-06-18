@@ -132,6 +132,20 @@ void terminar_proceso(t_pcb *proceso, cod_op_kernel motivo)
     devolver_resultado(proceso, motivo);
 
     desalojar();
+
+    t_asig_r* recurso;
+    int cant_recursos_asignados = list_size(proceso->recursos_asignados);
+    for (int i = 0; i < cant_recursos_asignados; i++)
+    {
+        recurso = list_get(proceso->recursos_asignados, i);
+        int instancias_asignadas = recurso-> instancias_asignadas;
+        for (int j = 0; i < instancias_asignadas; i++)
+        {
+            signal_recurso(proceso, recurso->nombre);
+        }
+    }
+    list_destroy(proceso->recursos_asignados);
+    //imprimir_lista_recursos(RECURSOS);
 }
 
 void wait_recurso(t_pcb *proceso, char *nombre_recurso)
@@ -145,6 +159,21 @@ void wait_recurso(t_pcb *proceso, char *nombre_recurso)
     }
 
     recurso->instancias_disponibles--;
+
+    int indice_recurso = recurso_asignado(proceso, nombre_recurso);
+    if (indice_recurso == -1)
+    {
+        t_asig_r* n_recurso = malloc(sizeof(t_asig_r));
+        strcpy(n_recurso->nombre, nombre_recurso);
+        n_recurso->instancias_asignadas = 1;
+        list_add(proceso->recursos_asignados, n_recurso);
+    } else {
+        t_asig_r* recurso_asignado = list_get(proceso->recursos_asignados, indice_recurso);
+        recurso_asignado->instancias_asignadas++;
+    }
+    
+    
+
     log_info(logger_kernel, "PID: %d - Wait: %s - Instancias: %d", proceso->pid, nombre_recurso, recurso->instancias_disponibles);
 
     if (recurso->instancias_disponibles < 0)
@@ -154,7 +183,6 @@ void wait_recurso(t_pcb *proceso, char *nombre_recurso)
         desalojar();
     }
 
-    // TODO: log wait
 }
 
 void signal_recurso(t_pcb *proceso, char *nombre_recurso)
@@ -166,6 +194,18 @@ void signal_recurso(t_pcb *proceso, char *nombre_recurso)
         terminar_proceso(proceso, EXIT_RESOURCE_NOT_FOUND);
         return;
     }
+
+    int indice_recurso = recurso_asignado(proceso, nombre_recurso);
+
+    t_asig_r* recurso_asignado = list_get(proceso->recursos_asignados, indice_recurso);
+    recurso_asignado->instancias_asignadas--;
+    if (recurso_asignado->instancias_asignadas == 0)
+    {
+        list_remove(proceso->recursos_asignados, indice_recurso);
+        free(recurso_asignado);
+    }
+
+    
 
     recurso->instancias_disponibles++;
     log_info(logger_kernel, "PID: %d - Signal: %s - Instancias: %d", proceso->pid, nombre_recurso, recurso->instancias_disponibles);

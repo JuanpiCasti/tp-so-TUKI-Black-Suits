@@ -32,6 +32,7 @@ t_pcb *crear_pcb(t_list *instrucciones, int socket_consola)
     pcb->ultima_rafaga = 0;
     pcb->archivos_abiertos = list_create();
     pcb->socket_consola = socket_consola;
+    pcb->recursos_asignados = list_create();
 
     
     pcb -> tabla_segmentos = solicitar_tabla_segmentos(logger_kernel_extra, IP_MEMORIA, PUERTO_MEMORIA, pcb->pid);
@@ -324,4 +325,27 @@ t_recurso *buscar_recurso_por_nombre(char *nombre_deseado)
     }
 
     return NULL;
+}
+
+int recurso_asignado(t_pcb* proceso, char* nombre_recurso) {
+    for (int i = 0; i < list_size(proceso->recursos_asignados); i++)
+    {
+        t_asig_r *recurso = list_get(proceso->recursos_asignados, i);
+        if (strcmp(recurso->nombre, nombre_recurso) == 0)
+        {
+             return i;
+        }
+    }
+
+    return -1;
+}
+
+void destroy_t_asig_r(void* element) {
+    if (element == NULL) {
+        return;
+    }
+    
+    t_asig_r* asig_r = (t_asig_r*)element;
+    // Libera la memoria asignada a la estructura
+    free(asig_r);
 }
