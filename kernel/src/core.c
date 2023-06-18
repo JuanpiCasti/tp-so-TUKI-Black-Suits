@@ -133,6 +133,7 @@ void terminar_proceso(t_pcb *proceso, cod_op_kernel motivo)
 
     desalojar();
 
+    // Liberar recursos del proceso, se puede abstraer a uuna funcion
     t_asig_r* recurso;
     int cant_recursos_asignados = list_size(proceso->recursos_asignados);
     for (int i = 0; i < cant_recursos_asignados; i++)
@@ -146,6 +147,10 @@ void terminar_proceso(t_pcb *proceso, cod_op_kernel motivo)
     }
     list_destroy(proceso->recursos_asignados);
     //imprimir_lista_recursos(RECURSOS);
+
+    //TODO: Liberar segmentos de memoria, mejor verlo cuando se trabaje en la compactacion
+    //TODO: cerrar archivos abiertos?
+    
 }
 
 void wait_recurso(t_pcb *proceso, char *nombre_recurso)
