@@ -154,6 +154,60 @@ int32_t mmu(uint32_t dir_logica, uint32_t tamanio_operacion) {
     return seg->base + desplazamiento;
 }
 
+as_instruction decode(t_instruccion *instruccion)
+{
+    if (strcmp(instruccion->instruccion, "SET") == 0)
+    {
+        return SET;
+    }
+    else if (strcmp(instruccion->instruccion, "YIELD") == 0)
+    {
+        return YIELD;
+    }
+    else if (strcmp(instruccion->instruccion, "EXIT") == 0)
+    {
+        return EXIT;
+    }
+    else if (strcmp(instruccion->instruccion, "I/O") == 0) {
+        return IO;
+    }
+    else if (strcmp(instruccion->instruccion, "WAIT") == 0) {
+        return WAIT;
+    }
+    else if (strcmp(instruccion->instruccion, "SIGNAL") == 0) {
+        return SIGNAL;
+    }
+    else if (strcmp(instruccion->instruccion, "CREATE_SEGMENT") == 0) {
+        return CREATE_SEGMENT;
+    }
+    else if (strcmp(instruccion->instruccion, "DELETE_SEGMENT") == 0) {
+        return DELETE_SEGMENT;
+    }
+    else if (strcmp(instruccion->instruccion, "MOV_IN") == 0) {
+        return MOV_IN;
+    }
+    else if (strcmp(instruccion->instruccion, "MOV_OUT") == 0) {
+        return MOV_OUT;
+    }
+    else if (strcmp(instruccion->instruccion, "F_OPEN") == 0) {
+        return F_OPEN;
+    }
+    else if (strcmp(instruccion->instruccion, "F_CLOSE") == 0) {
+        return F_CLOSE;
+    }
+    else if (strcmp(instruccion->instruccion, "F_SEEK") == 0) {
+        return F_SEEK;
+    }
+    else if (strcmp(instruccion->instruccion, "F_TRUNCATE") == 0) {
+        return F_TRUNCATE;
+    }
+    else
+    {
+        log_error(logger_cpu, "La intrucción no es válida.");
+        return EXIT;
+    }
+}
+
 char* determinar_registro(char* str_registro, uint32_t* tam ) {
     if (strcmp(str_registro, "AX") == 0)
     {
@@ -292,48 +346,6 @@ int ejecutar_mov_out(uint32_t direccion_logica, char* registro, uint32_t tam_reg
     
 }
 
-as_instruction decode(t_instruccion *instruccion)
-{
-    if (strcmp(instruccion->instruccion, "SET") == 0)
-    {
-        return SET;
-    }
-    else if (strcmp(instruccion->instruccion, "YIELD") == 0)
-    {
-        return YIELD;
-    }
-    else if (strcmp(instruccion->instruccion, "EXIT") == 0)
-    {
-        return EXIT;
-    }
-    else if (strcmp(instruccion->instruccion, "I/O") == 0) {
-        return IO;
-    }
-    else if (strcmp(instruccion->instruccion, "WAIT") == 0) {
-        return WAIT;
-    }
-    else if (strcmp(instruccion->instruccion, "SIGNAL") == 0) {
-        return SIGNAL;
-    }
-    else if (strcmp(instruccion->instruccion, "CREATE_SEGMENT") == 0) {
-        return CREATE_SEGMENT;
-    }
-    else if (strcmp(instruccion->instruccion, "DELETE_SEGMENT") == 0) {
-        return DELETE_SEGMENT;
-    }
-    else if (strcmp(instruccion->instruccion, "MOV_IN") == 0) {
-        return MOV_IN;
-    }
-    else if (strcmp(instruccion->instruccion, "MOV_OUT") == 0) {
-        return MOV_OUT;
-    }
-    else
-    {
-        log_error(logger_cpu, "La intrucción no es válida.");
-        return EXIT;
-    }
-}
-
 void ejecutar_set(t_instruccion *instruccion)
 {
     if (strcmp(instruccion->arg1, "AX") == 0)
@@ -440,12 +452,19 @@ cod_op_kernel ejecutar_instrucciones()
             return CPU_CREATE_SEGMENT;
         case DELETE_SEGMENT:
             return CPU_DELETE_SEGMENT;
+        case F_OPEN:
+            return CPU_F_OPEN;
+        case F_CLOSE:
+            return CPU_F_CLOSE;
+        case F_SEEK:
+            return CPU_F_SEEK;
+        case F_TRUNCATE:
+            return CPU_F_TRUNCATE;
         default:
             break;
         }
 
         //imprimir_contexto_actual();
-
 
         if (PROGRAM_COUNTER >= list_size(INSTRUCTION_LIST))
         {

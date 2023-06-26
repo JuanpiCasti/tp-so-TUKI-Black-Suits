@@ -18,7 +18,11 @@ typedef enum {
     CREATE_SEGMENT,
     DELETE_SEGMENT,
     MOV_IN,
-    MOV_OUT
+    MOV_OUT,
+    F_OPEN,
+    F_CLOSE,
+    F_SEEK,
+    F_TRUNCATE
 } as_instruction;
 
 extern uint32_t PID_RUNNING;

@@ -7,7 +7,6 @@
 #include <commons/string.h>
 #include "shared_utils.h"
 
-
 typedef struct
 {
   char AX[4];
@@ -50,10 +49,19 @@ typedef struct{
   uint32_t instancias_asignadas;
 } t_asig_r;
 
+typedef struct{
+  char nombre[30];
+  t_list* cola_bloqueados;
+} t_entrada_tabla_archivos;
+
+typedef struct{
+  char nombre[30];
+  uint32_t* puntero;
+} t_archivo_abierto;
+
 // Logger del kernel
 extern t_log *logger_kernel_extra;
 extern t_log *logger_kernel;
-
 
 extern uint32_t next_pid;
 extern pthread_mutex_t mutex_next_pid;
@@ -75,6 +83,8 @@ extern pthread_mutex_t mutex_BLOCKED;
 extern pthread_mutex_t mutex_RUNNING;
 extern pthread_mutex_t mutex_EXIT;
 extern pthread_mutex_t mutex_RECURSOS;
+
+extern t_list *tabla_archivos;
 
 // Configs
 extern t_config *CONFIG_KERNEL;

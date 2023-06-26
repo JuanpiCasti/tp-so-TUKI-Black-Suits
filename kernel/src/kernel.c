@@ -46,6 +46,8 @@ pthread_mutex_t mutex_EXIT;
 t_list* RECURSOS; // Cada recurso tiene su lista de bloqueados
 pthread_mutex_t mutex_RECURSOS;
 
+t_list *tabla_archivos;
+
 int main(int argc, char **argv)
 {
 	if (argc > 1 && strcmp(argv[1], "-test") == 0)

@@ -1,6 +1,6 @@
 #include "core.h"
 
-int abrir_archivo(char f_name[30])
+uint32_t abrir_archivo(char f_name[30])
 {
   char path[46]; // 46 viene de los caracteres de: ./fs/fcb/f_name.config
   strcpy(path, PATH_FCB);
@@ -12,15 +12,15 @@ int abrir_archivo(char f_name[30])
   if (archivo_fcb == NULL)
   {
     printf("El archivo no existe\n");
-    return EXIT_FAILURE;
+    return 1;
   }
 
   printf("Archivo abierto\n");
   fclose(archivo_fcb);
-  return EXIT_SUCCESS;
+  return 0;
 }
 
-int crear_archivo(char f_name[30])
+uint32_t crear_archivo(char f_name[30])
 {
   t_fcb *new_fcb = malloc(sizeof(t_fcb));
   strncpy(new_fcb->f_name, f_name, 29); // Si la cadena de origen tiene menos de 29 caracteres, los faltantes se llenan con caracteres nulos
@@ -44,7 +44,7 @@ int crear_archivo(char f_name[30])
   printf("Archivo creado\n");
   fclose(archivo_fcb);
   free(new_fcb);
-  return EXIT_SUCCESS;
+  return 0;
 }
 
 void truncar_archivo(char* f_name, uint32_t new_size)

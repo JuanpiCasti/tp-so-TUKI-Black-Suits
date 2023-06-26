@@ -29,6 +29,18 @@ void procesar_conexion(void *void_args)
         case HANDSHAKE_MEMORIA:
             rechazar_handshake(logger, cliente_socket);
             break;
+        case ABRIR_ARCHIVO:
+            char f_name[30];
+            recv(cliente_socket, f_name, sizeof(char[30]), NULL);
+            uint32_t archivo_ok = abrir_archivo(f_name);
+            send(cliente_socket, &archivo_ok, sizeof(uint32_t), NULL);
+            break;
+        case CREAR_ARCHIVO:
+            char f_name[30];
+            recv(cliente_socket, f_name, sizeof(char[30]), NULL);
+            uint32_t archivo_ok = crear_archivo(f_name);
+            send(cliente_socket, &archivo_ok, sizeof(uint32_t), NULL);
+            break;
         default:
             log_error(logger, "Algo anduvo mal en el server de Filesystem");
             log_info(logger, "Cop: %d", cop);
