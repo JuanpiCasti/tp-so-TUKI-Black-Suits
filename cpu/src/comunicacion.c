@@ -80,16 +80,16 @@ void serializar_contexto(void *buffer, cod_op_kernel cop, int tamanio_contexto)
 
     if (cop == CPU_F_OPEN || cop == CPU_F_CLOSE) {
         t_instruccion* instruccion = list_get(INSTRUCTION_LIST, PROGRAM_COUNTER - 1);
-        uint32_t f_name = instruccion -> arg1;
-        memcpy(buffer + desplazamiento, &f_name, sizeof(char[30]));
+        char* f_name = instruccion -> arg1;
+        memcpy(buffer + desplazamiento, f_name, sizeof(char[30]));
         desplazamiento += sizeof(char[30]);
     }
 
     if (cop == CPU_F_SEEK || cop == CPU_F_TRUNCATE) {
         t_instruccion* instruccion = list_get(INSTRUCTION_LIST, PROGRAM_COUNTER - 1);
-        uint32_t f_name = instruccion -> arg1;
+        char* f_name = instruccion -> arg1;
         uint32_t num = atoi(instruccion -> arg2);
-        memcpy(buffer + desplazamiento, &f_name, sizeof(char[30]));
+        memcpy(buffer + desplazamiento, f_name, sizeof(char[30]));
         desplazamiento += sizeof(char[30]);
         memcpy(buffer + desplazamiento, &num, sizeof(uint32_t));
         desplazamiento += sizeof(uint32_t);

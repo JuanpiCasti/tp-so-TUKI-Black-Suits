@@ -11868,3 +11868,328 @@
 [INFO] 19:51:53:058 CPU/(5613:12340): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
 [WARNING] 19:51:53:058 CPU/(5613:12340): Cliente desconectado!
 [WARNING] 19:51:53:058 CPU/(5613:12340): El cliente se desconectó del server
+[INFO] 19:41:50:625 CPU/(5590:5590): Conexión establecida con Memoria
+[INFO] 19:41:50:642 CPU/(5590:5590): Handshake OK
+[INFO] 19:41:50:642 CPU/(5590:5590): CPU escuchando conexiones...
+[INFO] 19:48:24:743 CPU/(5590:5590): Se conecto un cliente!
+[INFO] 19:48:24:747 CPU/(5590:6279): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 19:48:24:750 CPU/(5590:6279): Cliente desconectado!
+[WARNING] 19:48:24:751 CPU/(5590:6279): El cliente se desconectó del server
+[INFO] 19:49:48:807 CPU/(5590:5590): Se conecto un cliente!
+[INFO] 19:49:48:811 CPU/(5590:6702): PID: 1 - Ejecutando: F_OPEN - arg1: "elpapu", arg2: , arg3: 
+[WARNING] 19:49:48:814 CPU/(5590:6702): Cliente desconectado!
+[WARNING] 19:49:48:816 CPU/(5590:6702): El cliente se desconectó del server
+[INFO] 19:53:36:751 CPU/(5590:5590): Se conecto un cliente!
+[INFO] 19:53:36:763 CPU/(5590:7003): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 19:53:36:765 CPU/(5590:7003): Cliente desconectado!
+[WARNING] 19:53:36:766 CPU/(5590:7003): El cliente se desconectó del server
+[INFO] 19:54:25:767 CPU/(5590:5590): Se conecto un cliente!
+[INFO] 19:54:25:771 CPU/(5590:7199): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 19:54:25:775 CPU/(5590:7199): Cliente desconectado!
+[WARNING] 19:54:25:778 CPU/(5590:7199): El cliente se desconectó del server
+[INFO] 19:55:21:339 CPU/(5590:5590): Se conecto un cliente!
+[INFO] 19:55:21:341 CPU/(5590:7340): PID: 1 - Ejecutando: F_OPEN - arg1: "elpapu", arg2: , arg3: 
+[WARNING] 19:55:21:343 CPU/(5590:7340): Cliente desconectado!
+[WARNING] 19:55:21:344 CPU/(5590:7340): El cliente se desconectó del server
+[INFO] 19:58:28:550 CPU/(5590:5590): Se conecto un cliente!
+[INFO] 19:58:28:555 CPU/(5590:7735): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 19:58:28:559 CPU/(5590:7735): Cliente desconectado!
+[WARNING] 19:58:28:560 CPU/(5590:7735): El cliente se desconectó del server
+[INFO] 20:00:30:828 CPU/(5590:5590): Se conecto un cliente!
+[INFO] 20:00:30:834 CPU/(5590:7972): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 20:00:30:837 CPU/(5590:7972): Cliente desconectado!
+[WARNING] 20:00:30:839 CPU/(5590:7972): El cliente se desconectó del server
+[INFO] 20:00:33:671 CPU/(5590:5590): Se conecto un cliente!
+[INFO] 20:00:33:678 CPU/(5590:8052): PID: 1 - Ejecutando: F_OPEN - arg1: "elpapu", arg2: , arg3: 
+[WARNING] 20:00:33:683 CPU/(5590:8052): Cliente desconectado!
+[WARNING] 20:00:33:684 CPU/(5590:8052): El cliente se desconectó del server
+[INFO] 20:05:18:256 CPU/(5590:5590): Se conecto un cliente!
+[INFO] 20:05:18:260 CPU/(5590:8560): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 20:05:18:263 CPU/(5590:8560): Cliente desconectado!
+[WARNING] 20:05:18:265 CPU/(5590:8560): El cliente se desconectó del server
+[INFO] 20:05:24:552 CPU/(5590:5590): Se conecto un cliente!
+[INFO] 20:05:24:560 CPU/(5590:8670): PID: 1 - Ejecutando: F_OPEN - arg1: "elpapu", arg2: , arg3: 
+[WARNING] 20:05:24:562 CPU/(5590:8670): Cliente desconectado!
+[WARNING] 20:05:24:563 CPU/(5590:8670): El cliente se desconectó del server
+[INFO] 20:08:36:133 CPU/(5590:5590): Se conecto un cliente!
+[INFO] 20:08:36:138 CPU/(5590:9124): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 20:08:36:142 CPU/(5590:9124): Cliente desconectado!
+[WARNING] 20:08:36:144 CPU/(5590:9124): El cliente se desconectó del server
+[INFO] 20:08:39:378 CPU/(5590:5590): Se conecto un cliente!
+[INFO] 20:08:39:381 CPU/(5590:9204): PID: 1 - Ejecutando: F_OPEN - arg1: "elpapu", arg2: , arg3: 
+[WARNING] 20:08:39:383 CPU/(5590:9204): Cliente desconectado!
+[WARNING] 20:08:39:385 CPU/(5590:9204): El cliente se desconectó del server
+[INFO] 20:11:20:948 CPU/(5590:5590): Se conecto un cliente!
+[INFO] 20:11:20:953 CPU/(5590:9582): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 20:11:20:956 CPU/(5590:9582): Cliente desconectado!
+[WARNING] 20:11:20:958 CPU/(5590:9582): El cliente se desconectó del server
+[INFO] 20:11:23:230 CPU/(5590:5590): Se conecto un cliente!
+[INFO] 20:11:23:235 CPU/(5590:9648): PID: 1 - Ejecutando: F_OPEN - arg1: "elpapu", arg2: , arg3: 
+[WARNING] 20:11:23:237 CPU/(5590:9648): Cliente desconectado!
+[WARNING] 20:11:23:239 CPU/(5590:9648): El cliente se desconectó del server
+[INFO] 20:12:56:498 CPU/(5590:5590): Se conecto un cliente!
+[INFO] 20:12:56:505 CPU/(5590:9953): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 20:12:56:508 CPU/(5590:9953): Cliente desconectado!
+[WARNING] 20:12:56:509 CPU/(5590:9953): El cliente se desconectó del server
+[INFO] 20:12:58:757 CPU/(5590:5590): Se conecto un cliente!
+[INFO] 20:12:58:761 CPU/(5590:10017): PID: 1 - Ejecutando: F_OPEN - arg1: "elpapu", arg2: , arg3: 
+[WARNING] 20:12:58:764 CPU/(5590:10017): Cliente desconectado!
+[WARNING] 20:12:58:765 CPU/(5590:10017): El cliente se desconectó del server
+[INFO] 20:20:46:729 CPU/(5590:5590): Se conecto un cliente!
+[INFO] 20:20:46:734 CPU/(5590:10368): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 20:20:46:737 CPU/(5590:10368): Cliente desconectado!
+[WARNING] 20:20:46:738 CPU/(5590:10368): El cliente se desconectó del server
+[INFO] 20:20:48:294 CPU/(5590:5590): Se conecto un cliente!
+[INFO] 20:20:48:297 CPU/(5590:10428): PID: 1 - Ejecutando: F_OPEN - arg1: "elpapu", arg2: , arg3: 
+[WARNING] 20:20:48:299 CPU/(5590:10428): Cliente desconectado!
+[WARNING] 20:20:48:300 CPU/(5590:10428): El cliente se desconectó del server
+[INFO] 20:21:53:516 CPU/(10709:10709): Conexión establecida con Memoria
+[INFO] 20:21:53:520 CPU/(10709:10709): Handshake OK
+[INFO] 20:21:53:522 CPU/(10709:10709): CPU escuchando conexiones...
+[INFO] 20:22:09:532 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 20:22:09:538 CPU/(10709:10868): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 20:22:09:540 CPU/(10709:10868): Cliente desconectado!
+[WARNING] 20:22:09:545 CPU/(10709:10868): El cliente se desconectó del server
+[INFO] 20:23:17:710 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 20:23:17:714 CPU/(10709:11147): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 20:23:17:717 CPU/(10709:11147): Cliente desconectado!
+[WARNING] 20:23:17:719 CPU/(10709:11147): El cliente se desconectó del server
+[INFO] 20:23:19:799 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 20:23:19:801 CPU/(10709:11212): PID: 1 - Ejecutando: F_OPEN - arg1: "elpapu", arg2: , arg3: 
+[WARNING] 20:23:19:802 CPU/(10709:11212): Cliente desconectado!
+[WARNING] 20:23:19:803 CPU/(10709:11212): El cliente se desconectó del server
+[INFO] 20:26:58:006 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 20:26:58:010 CPU/(10709:11646): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 20:26:58:013 CPU/(10709:11646): Cliente desconectado!
+[WARNING] 20:26:58:015 CPU/(10709:11646): El cliente se desconectó del server
+[INFO] 20:28:07:749 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 20:28:07:753 CPU/(10709:11936): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 20:28:07:756 CPU/(10709:11936): Cliente desconectado!
+[WARNING] 20:28:07:757 CPU/(10709:11936): El cliente se desconectó del server
+[INFO] 20:28:10:189 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 20:28:10:193 CPU/(10709:12016): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[WARNING] 20:28:10:196 CPU/(10709:12016): Cliente desconectado!
+[WARNING] 20:28:10:197 CPU/(10709:12016): El cliente se desconectó del server
+[INFO] 20:31:33:217 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 20:31:33:223 CPU/(10709:12493): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 20:31:33:228 CPU/(10709:12493): Cliente desconectado!
+[WARNING] 20:31:33:229 CPU/(10709:12493): El cliente se desconectó del server
+[INFO] 20:31:34:466 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 20:31:34:468 CPU/(10709:12546): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[WARNING] 20:31:34:471 CPU/(10709:12546): Cliente desconectado!
+[WARNING] 20:31:34:472 CPU/(10709:12546): El cliente se desconectó del server
+[INFO] 20:39:50:689 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 20:39:50:696 CPU/(10709:13194): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 20:39:50:705 CPU/(10709:13194): Cliente desconectado!
+[WARNING] 20:39:50:706 CPU/(10709:13194): El cliente se desconectó del server
+[INFO] 20:39:54:323 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 20:39:54:332 CPU/(10709:13256): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[WARNING] 20:39:54:336 CPU/(10709:13256): Cliente desconectado!
+[WARNING] 20:39:54:337 CPU/(10709:13256): El cliente se desconectó del server
+[INFO] 20:40:50:281 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 20:40:50:287 CPU/(10709:13392): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 2, arg3: 
+[INFO] 20:40:50:288 CPU/(10709:10709): Se conecto un cliente!
+[WARNING] 20:40:50:289 CPU/(10709:13392): Cliente desconectado!
+[WARNING] 20:40:50:289 CPU/(10709:13392): El cliente se desconectó del server
+[INFO] 20:40:50:292 CPU/(10709:13393): PID: 1 - Ejecutando: F_TRUNCATE - arg1: elpapu, arg2: 64, arg3: 
+[WARNING] 20:40:50:293 CPU/(10709:13393): Cliente desconectado!
+[WARNING] 20:40:50:295 CPU/(10709:13393): El cliente se desconectó del server
+[INFO] 20:41:27:211 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 20:41:27:217 CPU/(10709:13590): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 20:41:27:220 CPU/(10709:13590): Cliente desconectado!
+[WARNING] 20:41:27:222 CPU/(10709:13590): El cliente se desconectó del server
+[INFO] 20:44:33:908 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 20:44:33:911 CPU/(10709:13880): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 20:44:33:915 CPU/(10709:13880): Cliente desconectado!
+[WARNING] 20:44:33:918 CPU/(10709:13880): El cliente se desconectó del server
+[INFO] 20:44:37:163 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 20:44:37:168 CPU/(10709:13936): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[WARNING] 20:44:37:172 CPU/(10709:13936): Cliente desconectado!
+[WARNING] 20:44:37:173 CPU/(10709:13936): El cliente se desconectó del server
+[INFO] 20:44:42:546 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 20:44:42:555 CPU/(10709:14019): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 2, arg3: 
+[INFO] 20:44:42:555 CPU/(10709:10709): Se conecto un cliente!
+[WARNING] 20:44:42:555 CPU/(10709:14019): Cliente desconectado!
+[WARNING] 20:44:42:555 CPU/(10709:14019): El cliente se desconectó del server
+[INFO] 20:44:42:558 CPU/(10709:14021): PID: 1 - Ejecutando: F_TRUNCATE - arg1: elpapu, arg2: 64, arg3: 
+[WARNING] 20:44:42:565 CPU/(10709:14021): Cliente desconectado!
+[WARNING] 20:44:42:565 CPU/(10709:14021): El cliente se desconectó del server
+[INFO] 20:46:24:471 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 20:46:24:476 CPU/(10709:14124): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 20:46:24:477 CPU/(10709:14124): Cliente desconectado!
+[WARNING] 20:46:24:495 CPU/(10709:14124): El cliente se desconectó del server
+[INFO] 20:47:30:660 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 20:47:30:662 CPU/(10709:14376): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 20:47:30:664 CPU/(10709:14376): Cliente desconectado!
+[WARNING] 20:47:30:664 CPU/(10709:14376): El cliente se desconectó del server
+[INFO] 20:47:33:896 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 20:47:33:902 CPU/(10709:14420): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[WARNING] 20:47:33:904 CPU/(10709:14420): Cliente desconectado!
+[WARNING] 20:47:33:905 CPU/(10709:14420): El cliente se desconectó del server
+[INFO] 20:47:33:909 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 20:47:33:912 CPU/(10709:14422): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 2, arg3: 
+[INFO] 20:47:33:914 CPU/(10709:10709): Se conecto un cliente!
+[WARNING] 20:47:33:914 CPU/(10709:14422): Cliente desconectado!
+[WARNING] 20:47:33:915 CPU/(10709:14422): El cliente se desconectó del server
+[INFO] 20:47:33:920 CPU/(10709:14423): PID: 1 - Ejecutando: F_TRUNCATE - arg1: elpapu, arg2: 64, arg3: 
+[WARNING] 20:47:33:923 CPU/(10709:14423): Cliente desconectado!
+[WARNING] 20:47:33:924 CPU/(10709:14423): El cliente se desconectó del server
+[INFO] 20:47:33:928 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 20:47:33:933 CPU/(10709:14425): PID: 1 - Ejecutando: F_CLOSE - arg1: elpapu, arg2: , arg3: 
+[WARNING] 20:47:33:934 CPU/(10709:14425): Cliente desconectado!
+[WARNING] 20:47:33:935 CPU/(10709:14425): El cliente se desconectó del server
+[INFO] 20:53:18:673 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 20:53:18:677 CPU/(10709:14766): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 20:53:18:680 CPU/(10709:14766): Cliente desconectado!
+[WARNING] 20:53:18:683 CPU/(10709:14766): El cliente se desconectó del server
+[INFO] 20:53:20:014 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 20:53:20:016 CPU/(10709:14810): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[WARNING] 20:53:20:017 CPU/(10709:14810): Cliente desconectado!
+[WARNING] 20:53:20:018 CPU/(10709:14810): El cliente se desconectó del server
+[INFO] 20:53:24:819 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 20:53:24:827 CPU/(10709:14893): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 2, arg3: 
+[INFO] 20:53:24:828 CPU/(10709:10709): Se conecto un cliente!
+[WARNING] 20:53:24:828 CPU/(10709:14893): Cliente desconectado!
+[WARNING] 20:53:24:830 CPU/(10709:14893): El cliente se desconectó del server
+[INFO] 20:53:24:834 CPU/(10709:14894): PID: 1 - Ejecutando: F_TRUNCATE - arg1: elpapu, arg2: 64, arg3: 
+[WARNING] 20:53:24:835 CPU/(10709:14894): Cliente desconectado!
+[WARNING] 20:53:24:837 CPU/(10709:14894): El cliente se desconectó del server
+[INFO] 20:53:24:842 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 20:53:24:845 CPU/(10709:14896): PID: 1 - Ejecutando: F_CLOSE - arg1: elpapu, arg2: , arg3: 
+[WARNING] 20:53:24:848 CPU/(10709:14896): Cliente desconectado!
+[WARNING] 20:53:24:848 CPU/(10709:14896): El cliente se desconectó del server
+[INFO] 21:06:38:780 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 21:06:38:792 CPU/(10709:15321): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 21:06:38:794 CPU/(10709:15321): Cliente desconectado!
+[WARNING] 21:06:38:795 CPU/(10709:15321): El cliente se desconectó del server
+[INFO] 21:06:43:105 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 21:06:43:110 CPU/(10709:15414): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[WARNING] 21:06:43:111 CPU/(10709:15414): Cliente desconectado!
+[WARNING] 21:06:43:112 CPU/(10709:15414): El cliente se desconectó del server
+[INFO] 21:06:46:087 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 21:06:46:092 CPU/(10709:15505): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 2, arg3: 
+[INFO] 21:06:46:094 CPU/(10709:10709): Se conecto un cliente!
+[WARNING] 21:06:46:095 CPU/(10709:15505): Cliente desconectado!
+[WARNING] 21:06:46:096 CPU/(10709:15505): El cliente se desconectó del server
+[INFO] 21:06:46:101 CPU/(10709:15506): PID: 1 - Ejecutando: F_TRUNCATE - arg1: elpapu, arg2: 64, arg3: 
+[WARNING] 21:06:46:102 CPU/(10709:15506): Cliente desconectado!
+[WARNING] 21:06:46:106 CPU/(10709:15506): El cliente se desconectó del server
+[INFO] 21:06:46:108 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 21:06:46:112 CPU/(10709:15508): PID: 1 - Ejecutando: F_CLOSE - arg1: elpapu, arg2: , arg3: 
+[WARNING] 21:06:46:114 CPU/(10709:15508): Cliente desconectado!
+[WARNING] 21:06:46:115 CPU/(10709:15508): El cliente se desconectó del server
+[INFO] 21:07:31:971 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 21:07:31:973 CPU/(10709:15583): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 21:07:31:985 CPU/(10709:15583): Cliente desconectado!
+[WARNING] 21:07:31:987 CPU/(10709:15583): El cliente se desconectó del server
+[INFO] 21:10:10:333 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 21:10:10:337 CPU/(10709:15785): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 21:10:10:339 CPU/(10709:15785): Cliente desconectado!
+[WARNING] 21:10:10:339 CPU/(10709:15785): El cliente se desconectó del server
+[INFO] 21:10:48:582 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 21:10:48:591 CPU/(10709:16051): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[WARNING] 21:10:48:593 CPU/(10709:16051): Cliente desconectado!
+[WARNING] 21:10:48:594 CPU/(10709:16051): El cliente se desconectó del server
+[INFO] 21:10:48:598 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 21:10:48:603 CPU/(10709:16053): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[INFO] 21:10:48:604 CPU/(10709:10709): Se conecto un cliente!
+[WARNING] 21:10:48:604 CPU/(10709:16053): Cliente desconectado!
+[WARNING] 21:10:48:605 CPU/(10709:16053): El cliente se desconectó del server
+[INFO] 21:10:48:609 CPU/(10709:16054): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 2, arg3: 
+[INFO] 21:10:48:610 CPU/(10709:10709): Se conecto un cliente!
+[WARNING] 21:10:48:612 CPU/(10709:16054): Cliente desconectado!
+[WARNING] 21:10:48:612 CPU/(10709:16054): El cliente se desconectó del server
+[INFO] 21:10:48:622 CPU/(10709:16055): PID: 1 - Ejecutando: F_TRUNCATE - arg1: elpapu, arg2: 64, arg3: 
+[WARNING] 21:10:48:624 CPU/(10709:16055): Cliente desconectado!
+[WARNING] 21:10:48:625 CPU/(10709:16055): El cliente se desconectó del server
+[INFO] 21:10:48:628 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 21:10:48:633 CPU/(10709:16057): PID: 1 - Ejecutando: F_CLOSE - arg1: elpapu, arg2: , arg3: 
+[INFO] 21:10:48:634 CPU/(10709:10709): Se conecto un cliente!
+[WARNING] 21:10:48:635 CPU/(10709:16057): Cliente desconectado!
+[WARNING] 21:10:48:637 CPU/(10709:16057): El cliente se desconectó del server
+[INFO] 21:10:48:639 CPU/(10709:16058): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 21:10:48:645 CPU/(10709:16058): Cliente desconectado!
+[WARNING] 21:10:48:645 CPU/(10709:16058): El cliente se desconectó del server
+[INFO] 21:10:48:866 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 21:10:48:869 CPU/(10709:16063): PID: 2 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[WARNING] 21:10:48:873 CPU/(10709:16063): Cliente desconectado!
+[WARNING] 21:10:48:874 CPU/(10709:16063): El cliente se desconectó del server
+[INFO] 21:10:48:880 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 21:10:48:884 CPU/(10709:16065): PID: 2 - Ejecutando: F_CLOSE - arg1: elpapu, arg2: , arg3: 
+[INFO] 21:10:48:886 CPU/(10709:10709): Se conecto un cliente!
+[WARNING] 21:10:48:886 CPU/(10709:16065): Cliente desconectado!
+[WARNING] 21:10:48:887 CPU/(10709:16065): El cliente se desconectó del server
+[INFO] 21:10:48:892 CPU/(10709:16066): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 21:10:48:894 CPU/(10709:16066): Cliente desconectado!
+[WARNING] 21:10:48:895 CPU/(10709:16066): El cliente se desconectó del server
+[INFO] 21:12:02:970 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 21:12:02:978 CPU/(10709:16315): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 21:12:02:979 CPU/(10709:16315): Cliente desconectado!
+[WARNING] 21:12:02:979 CPU/(10709:16315): El cliente se desconectó del server
+[INFO] 21:12:08:747 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 21:12:08:758 CPU/(10709:16427): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[WARNING] 21:12:08:760 CPU/(10709:16427): Cliente desconectado!
+[WARNING] 21:12:08:761 CPU/(10709:16427): El cliente se desconectó del server
+[INFO] 21:12:08:767 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 21:12:08:771 CPU/(10709:16429): PID: 1 - Ejecutando: SET - arg1: AX, arg2: 5555, arg3: 
+[INFO] 21:12:09:774 CPU/(10709:16429): PID: 1 - Ejecutando: SET - arg1: AX, arg2: 5555, arg3: 
+[INFO] 21:12:10:775 CPU/(10709:16429): PID: 1 - Ejecutando: SET - arg1: AX, arg2: 5555, arg3: 
+[INFO] 21:12:11:776 CPU/(10709:16429): PID: 1 - Ejecutando: SET - arg1: AX, arg2: 5555, arg3: 
+[INFO] 21:12:12:776 CPU/(10709:16429): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[INFO] 21:12:12:777 CPU/(10709:10709): Se conecto un cliente!
+[WARNING] 21:12:12:778 CPU/(10709:16429): Cliente desconectado!
+[WARNING] 21:12:12:778 CPU/(10709:16429): El cliente se desconectó del server
+[INFO] 21:12:12:781 CPU/(10709:16523): PID: 2 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 21:12:12:783 CPU/(10709:10709): Se conecto un cliente!
+[WARNING] 21:12:12:784 CPU/(10709:16523): Cliente desconectado!
+[WARNING] 21:12:12:786 CPU/(10709:16523): El cliente se desconectó del server
+[INFO] 21:12:12:793 CPU/(10709:16524): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 2, arg3: 
+[INFO] 21:12:12:794 CPU/(10709:10709): Se conecto un cliente!
+[WARNING] 21:12:12:795 CPU/(10709:16524): Cliente desconectado!
+[WARNING] 21:12:12:795 CPU/(10709:16524): El cliente se desconectó del server
+[INFO] 21:12:12:804 CPU/(10709:16525): PID: 1 - Ejecutando: F_TRUNCATE - arg1: elpapu, arg2: 64, arg3: 
+[WARNING] 21:12:12:806 CPU/(10709:16525): Cliente desconectado!
+[WARNING] 21:12:12:807 CPU/(10709:16525): El cliente se desconectó del server
+[INFO] 21:12:12:813 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 21:12:12:814 CPU/(10709:16527): PID: 1 - Ejecutando: F_CLOSE - arg1: elpapu, arg2: , arg3: 
+[INFO] 21:12:12:819 CPU/(10709:10709): Se conecto un cliente!
+[WARNING] 21:12:12:819 CPU/(10709:16527): Cliente desconectado!
+[WARNING] 21:12:12:822 CPU/(10709:16527): El cliente se desconectó del server
+[INFO] 21:12:12:823 CPU/(10709:16528): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 21:12:12:824 CPU/(10709:16528): Cliente desconectado!
+[WARNING] 21:12:12:825 CPU/(10709:16528): El cliente se desconectó del server
+[INFO] 21:12:12:827 CPU/(10709:10709): Se conecto un cliente!
+[INFO] 21:12:12:829 CPU/(10709:16529): PID: 2 - Ejecutando: F_CLOSE - arg1: elpapu, arg2: , arg3: 
+[INFO] 21:12:12:830 CPU/(10709:10709): Se conecto un cliente!
+[WARNING] 21:12:12:832 CPU/(10709:16529): Cliente desconectado!
+[WARNING] 21:12:12:833 CPU/(10709:16529): El cliente se desconectó del server
+[INFO] 21:12:12:840 CPU/(10709:16530): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 21:12:12:841 CPU/(10709:16530): Cliente desconectado!
+[WARNING] 21:12:12:842 CPU/(10709:16530): El cliente se desconectó del server
+[INFO] 21:22:45:232 CPU/(17001:17001): Conexión establecida con Memoria
+[INFO] 21:22:45:238 CPU/(17001:17001): Handshake OK
+[INFO] 21:22:45:240 CPU/(17001:17001): CPU escuchando conexiones...
+[INFO] 21:22:51:323 CPU/(17001:17001): Se conecto un cliente!
+[INFO] 21:22:51:328 CPU/(17001:17073): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 21:22:51:330 CPU/(17001:17073): Cliente desconectado!
+[WARNING] 21:22:51:331 CPU/(17001:17073): El cliente se desconectó del server
+[INFO] 21:23:30:446 CPU/(17001:17001): Se conecto un cliente!
+[INFO] 21:23:30:450 CPU/(17001:17234): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[WARNING] 21:23:30:452 CPU/(17001:17234): Cliente desconectado!
+[WARNING] 21:23:30:453 CPU/(17001:17234): El cliente se desconectó del server
+[INFO] 21:23:30:459 CPU/(17001:17001): Se conecto un cliente!
+[INFO] 21:23:30:461 CPU/(17001:17236): PID: 1 - Ejecutando: SET - arg1: AX, arg2: 5555, arg3: 
+[INFO] 21:23:31:462 CPU/(17001:17236): PID: 1 - Ejecutando: SET - arg1: AX, arg2: 5555, arg3: 
+[INFO] 21:23:32:462 CPU/(17001:17236): PID: 1 - Ejecutando: SET - arg1: AX, arg2: 5555, arg3: 
+[INFO] 21:23:33:464 CPU/(17001:17236): PID: 1 - Ejecutando: SET - arg1: AX, arg2: 5555, arg3: 
+[INFO] 21:23:34:465 CPU/(17001:17236): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[INFO] 21:23:34:466 CPU/(17001:17001): Se conecto un cliente!
+[WARNING] 21:23:34:466 CPU/(17001:17236): Cliente desconectado!
+[WARNING] 21:23:34:466 CPU/(17001:17236): El cliente se desconectó del server
+[INFO] 21:23:34:472 CPU/(17001:17318): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 2, arg3: 
+[INFO] 21:23:34:474 CPU/(17001:17001): Se conecto un cliente!
+[WARNING] 21:23:34:475 CPU/(17001:17318): Cliente desconectado!
+[WARNING] 21:23:34:481 CPU/(17001:17318): El cliente se desconectó del server
+[INFO] 21:23:34:487 CPU/(17001:17319): PID: 1 - Ejecutando: F_TRUNCATE - arg1: elpapu, arg2: 64, arg3: 
+[WARNING] 21:23:34:489 CPU/(17001:17319): Cliente desconectado!
+[WARNING] 21:23:34:490 CPU/(17001:17319): El cliente se desconectó del server

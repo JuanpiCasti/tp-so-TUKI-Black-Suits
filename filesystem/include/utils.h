@@ -38,7 +38,7 @@ extern char *PATH_SUPERBLOQUE;
 extern char *PATH_BITMAP;
 extern char *PATH_BLOQUES;
 extern char *PATH_FCB;
-extern char *RETARDO_ACCESO_BLOQUE;
+extern int RETARDO_ACCESO_BLOQUE;
 
 extern t_config *CONFIG_SUPERBLOQUE;
 extern int BLOCK_SIZE;

@@ -135,6 +135,7 @@ void inicializar_colas()
     EXIT = list_create();
     RUNNING = NULL;
     RECURSOS = levantar_recursos();
+    tabla_archivos = list_create();
 }
 
 t_recurso *crear_recurso(char *nombre, uint32_t n_instancias)

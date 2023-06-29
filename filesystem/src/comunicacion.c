@@ -17,6 +17,9 @@ void procesar_conexion(void *void_args)
             break;
         }
 
+        char f_name[30];
+        uint32_t archivo_ok;
+
         switch (cop)
         {
         case HANDSHAKE_KERNEL:
@@ -30,15 +33,21 @@ void procesar_conexion(void *void_args)
             rechazar_handshake(logger, cliente_socket);
             break;
         case ABRIR_ARCHIVO:
-            char f_name[30];
             recv(cliente_socket, f_name, sizeof(char[30]), NULL);
-            uint32_t archivo_ok = abrir_archivo(f_name);
+            archivo_ok = abrir_archivo(f_name);
             send(cliente_socket, &archivo_ok, sizeof(uint32_t), NULL);
             break;
         case CREAR_ARCHIVO:
-            char f_name[30];
             recv(cliente_socket, f_name, sizeof(char[30]), NULL);
-            uint32_t archivo_ok = crear_archivo(f_name);
+            archivo_ok = crear_archivo(f_name);
+            send(cliente_socket, &archivo_ok, sizeof(uint32_t), NULL);
+            break;
+        case TRUNCAR_ARCHIVO:
+            uint32_t f_size;
+            recv(cliente_socket, f_name, sizeof(char[30]), NULL);
+            recv(cliente_socket, &f_size, sizeof(uint32_t), NULL);
+            truncar_archivo(f_name, f_size);
+            archivo_ok = 0;
             send(cliente_socket, &archivo_ok, sizeof(uint32_t), NULL);
             break;
         default:

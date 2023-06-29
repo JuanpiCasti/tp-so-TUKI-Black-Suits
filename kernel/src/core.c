@@ -294,6 +294,24 @@ void solicitar_liberacion_segmento(uint32_t base, uint32_t tam, uint32_t pid, ui
     log_info(logger_kernel, "PID: %d - Eliminar Segmento - Id: %d - Tamaño: %d", pid, seg_id, tam);
 }
 
+void imprimir_lista_archivos()
+{
+    int lista_size = list_size(tabla_archivos);
+
+    for (int i = 0; i < lista_size; i++)
+    {
+        t_entrada_tabla_archivos *entrada = list_get(tabla_archivos, i);
+        printf("Nombre: %s\n", entrada->nombre);
+        printf("Cola Bloqueados: %d\n", list_size(entrada->cola_bloqueados));
+
+        for (int i = 0; i < list_size(entrada->cola_bloqueados); i++)
+        {
+            t_pcb *pcb = list_get(entrada->cola_bloqueados, i);
+            printf("PID: %d\n", pcb->pid);
+        }
+    }
+}
+
 int verificar_string_en_lista(t_list *lista, const char *string)
 {
     int lista_size = list_size(lista);
@@ -337,7 +355,7 @@ void abrir_archivo(char *f_name, t_pcb *pcb)
         cod_op cop = ABRIR_ARCHIVO;
         memcpy(buffer + despl, &cop, sizeof(cod_op));
         despl += sizeof(cod_op);
-        memcpy(buffer + despl, &f_name, sizeof(char[30]));
+        memcpy(buffer + despl, f_name, sizeof(char[30]));
 
         send(socket_filesystem, buffer, tam_buffer, NULL);
         free(buffer);
@@ -353,7 +371,7 @@ void abrir_archivo(char *f_name, t_pcb *pcb)
             cod_op cop = CREAR_ARCHIVO;
             memcpy(buffer + despl, &cop, sizeof(cod_op));
             despl += sizeof(cod_op);
-            memcpy(buffer + despl, &f_name, sizeof(char[30]));
+            memcpy(buffer + despl, f_name, sizeof(char[30]));
 
             send(socket_filesystem, buffer, tam_buffer, NULL);
             free(buffer);
@@ -369,7 +387,7 @@ void abrir_archivo(char *f_name, t_pcb *pcb)
         t_entrada_tabla_archivos *entrada_archivo = malloc(sizeof(t_entrada_tabla_archivos));
         strcpy(entrada_archivo->nombre, f_name);
         entrada_archivo->cola_bloqueados = list_create();
-        list_add(tabla_archivos, archivo_abierto);
+        list_add(tabla_archivos, entrada_archivo);
 
         close(socket_filesystem);
     }
@@ -383,24 +401,17 @@ void cerrar_archivo(char *f_name, t_pcb *pcb)
     {
         list_remove(pcb->archivos_abiertos, index_archivo_abierto_del_proceso);
 
-        if (list_size(tabla_archivos) > 0)
-        {
-            int index_archivo_tg = verificar_string_en_lista(tabla_archivos, f_name);
+        int index_archivo_tg = verificar_string_en_lista(tabla_archivos, f_name);
 
-            if (index_archivo_tg != -1)
+        if (index_archivo_tg != -1)
+        {
+            t_entrada_tabla_archivos *entrada = list_get(tabla_archivos, index_archivo_tg);
+
+            if (list_size(entrada->cola_bloqueados) > 0)
             {
-                t_entrada_tabla_archivos *entrada = list_get(tabla_archivos, index_archivo_tg);
                 t_pcb *b_pcb = list_remove(entrada->cola_bloqueados, 0);
                 encolar_proceso(b_pcb, READY, &mutex_READY, "BLOQUEADO", "READY");
-            }
-        }
-
-        if (list_size(tabla_archivos) == 0)
-        {
-            int index_archivo_tg = verificar_string_en_lista(tabla_archivos, f_name);
-
-            if (index_archivo_tg != -1)
-            {
+            } else {
                 list_remove(tabla_archivos, index_archivo_tg);
             }
         }
@@ -416,6 +427,36 @@ void cambiar_puntero_archivo(char *f_name, uint32_t new_puntero, t_pcb *pcb)
         t_archivo_abierto *archivo_abierto = list_get(pcb->archivos_abiertos, index_archivo_abierto_del_proceso);
         archivo_abierto->puntero = new_puntero;
         list_replace(pcb->archivos_abiertos, index_archivo_abierto_del_proceso, archivo_abierto);
+    }
+
+    t_archivo_abierto *archivo_pcb = list_get(pcb->archivos_abiertos, 0);
+    printf("Puntero: %d\n", archivo_pcb->puntero);
+}
+
+void truncar_archivo(char *f_name, uint32_t new_size, t_pcb *pcb)
+{
+    int socket_filesystem = crear_conexion(logger_kernel_extra, IP_FILESYSTEM, PUERTO_FILESYSTEM);
+    int tam_buffer = sizeof(cod_op) + sizeof(char[30]) + sizeof(uint32_t);
+
+    void *buffer = malloc(tam_buffer);
+    int despl = 0;
+
+    cod_op cop = TRUNCAR_ARCHIVO;
+    memcpy(buffer + despl, &cop, sizeof(cod_op));
+    despl += sizeof(cod_op);
+    memcpy(buffer + despl, f_name, sizeof(char[30]));
+    despl += sizeof(char[30]);
+    memcpy(buffer + despl, &new_size, sizeof(uint32_t));
+
+    send(socket_filesystem, buffer, tam_buffer, NULL);
+    free(buffer);
+
+    uint32_t archivo_ok;
+    recv(socket_filesystem, &archivo_ok, sizeof(uint32_t), NULL);
+
+    if (archivo_ok == 0)
+    {
+        encolar_proceso(pcb, READY, &mutex_READY, "BLOQUEADO", "READY");
     }
 }
 
@@ -470,6 +511,7 @@ void planificacion_corto_plazo()
             void *buffer = recibir_nuevo_contexto(socket_cpu, &cop);
             deserializar_contexto_pcb(buffer, r_pcb);
 
+            char f_name[30];
             char nombre_recurso[20];
             uint32_t id_segmento;
             uint32_t tam_segmento;
@@ -527,19 +569,18 @@ void planificacion_corto_plazo()
                 terminar_proceso(r_pcb, CPU_SEG_FAULT);
                 break;
             case CPU_F_OPEN:
-                char f_name[30];
                 memcpy(&f_name, buffer + TAMANIO_CONTEXTO, sizeof(char[30]));
                 free(buffer);
                 abrir_archivo(f_name, r_pcb);
+                imprimir_lista_archivos(tabla_archivos);
                 break;
             case CPU_F_CLOSE:
-                char f_name[30];
                 memcpy(&f_name, buffer + TAMANIO_CONTEXTO, sizeof(char[30]));
                 free(buffer);
                 cerrar_archivo(f_name, r_pcb);
+                imprimir_lista_archivos(tabla_archivos);
                 break;
             case CPU_F_SEEK:
-                char f_name[30];
                 uint32_t new_puntero;
                 memcpy(&f_name, buffer + TAMANIO_CONTEXTO, sizeof(char[30]));
                 memcpy(&new_puntero, buffer + TAMANIO_CONTEXTO + sizeof(char[30]), sizeof(uint32_t));
@@ -547,6 +588,14 @@ void planificacion_corto_plazo()
                 cambiar_puntero_archivo(f_name, new_puntero, r_pcb);
                 break;
             case CPU_F_TRUNCATE:
+                desalojar();
+                // LOG BLOQUEADO POR TRUNCATE
+                uint32_t new_size;
+                memcpy(&f_name, buffer + TAMANIO_CONTEXTO, sizeof(char[30]));
+                memcpy(&new_size, buffer + TAMANIO_CONTEXTO + sizeof(char[30]), sizeof(uint32_t));
+                free(buffer);
+                truncar_archivo(f_name, new_size, r_pcb);
+                imprimir_lista_archivos(tabla_archivos);
                 break;
             default:
                 break;

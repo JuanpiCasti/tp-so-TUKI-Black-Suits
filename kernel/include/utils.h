@@ -56,7 +56,7 @@ typedef struct{
 
 typedef struct{
   char nombre[30];
-  uint32_t* puntero;
+  uint32_t puntero;
 } t_archivo_abierto;
 
 // Logger del kernel

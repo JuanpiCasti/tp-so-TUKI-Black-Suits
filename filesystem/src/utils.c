@@ -15,7 +15,7 @@ void levantar_config_filesystem()
   PATH_BITMAP = config_get_string_value(CONFIG_FILESYSTEM, "PATH_BITMAP");
   PATH_BLOQUES = config_get_string_value(CONFIG_FILESYSTEM, "PATH_BLOQUES");
   PATH_FCB = config_get_string_value(CONFIG_FILESYSTEM, "PATH_FCB");
-  RETARDO_ACCESO_BLOQUE = config_get_string_value(CONFIG_FILESYSTEM, "RETARDO_ACCESO_BLOQUE");
+  RETARDO_ACCESO_BLOQUE = config_get_int_value(CONFIG_FILESYSTEM, "RETARDO_ACCESO_BLOQUE");
 }
 
 void levantar_superbloque()
@@ -122,7 +122,7 @@ void modificar_bloque(uint32_t puntero_a_bloque, char *bloque_nuevo)
   fclose(blocks_file);
 }
 
-t_fcb *levantar_fcb(char f_name[30])
+t_fcb *levantar_fcb(char *f_name)
 {
   char path[46]; // 46 viene de los caracteres de: ./fs/fcb/f_name.config
   strcpy(path, PATH_FCB);
