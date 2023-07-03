@@ -5462,3 +5462,23 @@
 [INFO] 19:17:00:545 CONSOLA/(42967:42967): Handshake OK
 [INFO] 19:17:00:545 CONSOLA/(42967:42967): Conexión establecida con Kernel
 [INFO] 19:17:00:545 CONSOLA/(42967:42967): Enviando instrucciones a Kernel...
+[INFO] 19:24:31:299 CONSOLA/(44228:44228): Conexión establecida con Kernel
+[INFO] 19:24:31:299 CONSOLA/(44228:44228): Handshake OK
+[INFO] 19:24:31:300 CONSOLA/(44228:44228): Conexión establecida con Kernel
+[INFO] 19:24:31:300 CONSOLA/(44228:44228): Enviando instrucciones a Kernel...
+[INFO] 19:25:31:303 CONSOLA/(44228:44228): Resultado de ejecutar el script 'scripts/COMPACTACION_1': SUCCESS
+[INFO] 19:27:09:996 CONSOLA/(44621:44621): Conexión establecida con Kernel
+[INFO] 19:27:09:997 CONSOLA/(44621:44621): Handshake OK
+[INFO] 19:27:09:997 CONSOLA/(44621:44621): Conexión establecida con Kernel
+[INFO] 19:27:09:997 CONSOLA/(44621:44621): Enviando instrucciones a Kernel...
+[INFO] 19:28:12:000 CONSOLA/(44621:44621): Resultado de ejecutar el script 'scripts/COMPACTACION_1': (null)
+[INFO] 19:31:33:420 CONSOLA/(45526:45526): Conexión establecida con Kernel
+[INFO] 19:31:33:420 CONSOLA/(45526:45526): Handshake OK
+[INFO] 19:31:33:420 CONSOLA/(45526:45526): Conexión establecida con Kernel
+[INFO] 19:31:33:420 CONSOLA/(45526:45526): Enviando instrucciones a Kernel...
+[INFO] 19:31:47:424 CONSOLA/(45526:45526): Resultado de ejecutar el script 'scripts/memoria_p': SUCCESS
+[INFO] 19:32:13:871 CONSOLA/(45820:45820): Conexión establecida con Kernel
+[INFO] 19:32:13:872 CONSOLA/(45820:45820): Handshake OK
+[INFO] 19:32:13:872 CONSOLA/(45820:45820): Conexión establecida con Kernel
+[INFO] 19:32:13:872 CONSOLA/(45820:45820): Enviando instrucciones a Kernel...
+[INFO] 19:33:16:877 CONSOLA/(45820:45820): Resultado de ejecutar el script 'scripts/COMPACTACION_1': SUCCESS

@@ -12551,3 +12551,205 @@
 [INFO] 19:09:40:115 CPU/(42512:42629): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
 [WARNING] 19:09:40:115 CPU/(42512:42629): Cliente desconectado!
 [WARNING] 19:09:40:115 CPU/(42512:42629): El cliente se desconectó del server
+[INFO] 19:24:23:128 CPU/(44111:44111): Conexión establecida con Memoria
+[INFO] 19:24:23:128 CPU/(44111:44111): Handshake OK
+[INFO] 19:24:23:128 CPU/(44111:44111): CPU escuchando conexiones...
+[INFO] 19:24:27:203 CPU/(44111:44111): Se conecto un cliente!
+[INFO] 19:24:27:203 CPU/(44111:44164): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 19:24:27:203 CPU/(44111:44164): Cliente desconectado!
+[WARNING] 19:24:27:203 CPU/(44111:44164): El cliente se desconectó del server
+[INFO] 19:24:31:300 CPU/(44111:44111): Se conecto un cliente!
+[INFO] 19:24:31:300 CPU/(44111:44232): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[WARNING] 19:24:31:300 CPU/(44111:44232): Cliente desconectado!
+[WARNING] 19:24:31:300 CPU/(44111:44232): El cliente se desconectó del server
+[INFO] 19:24:31:300 CPU/(44111:44111): Se conecto un cliente!
+[INFO] 19:24:31:300 CPU/(44111:44234): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 150, arg3: 
+[WARNING] 19:24:31:300 CPU/(44111:44234): Cliente desconectado!
+[WARNING] 19:24:31:300 CPU/(44111:44234): El cliente se desconectó del server
+[INFO] 19:24:31:300 CPU/(44111:44111): Se conecto un cliente!
+[INFO] 19:24:31:300 CPU/(44111:44236): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 100, arg3: 
+[WARNING] 19:24:31:300 CPU/(44111:44236): Cliente desconectado!
+[WARNING] 19:24:31:300 CPU/(44111:44236): El cliente se desconectó del server
+[INFO] 19:24:31:300 CPU/(44111:44111): Se conecto un cliente!
+[INFO] 19:24:31:300 CPU/(44111:44238): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 150, arg3: 
+[WARNING] 19:24:31:300 CPU/(44111:44238): Cliente desconectado!
+[WARNING] 19:24:31:301 CPU/(44111:44238): El cliente se desconectó del server
+[INFO] 19:24:31:301 CPU/(44111:44111): Se conecto un cliente!
+[INFO] 19:24:31:301 CPU/(44111:44240): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 100, arg3: 
+[WARNING] 19:24:31:301 CPU/(44111:44240): Cliente desconectado!
+[WARNING] 19:24:31:301 CPU/(44111:44240): El cliente se desconectó del server
+[INFO] 19:24:31:301 CPU/(44111:44111): Se conecto un cliente!
+[INFO] 19:24:31:301 CPU/(44111:44242): PID: 1 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[WARNING] 19:24:31:301 CPU/(44111:44242): Cliente desconectado!
+[WARNING] 19:24:31:301 CPU/(44111:44242): El cliente se desconectó del server
+[INFO] 19:24:31:301 CPU/(44111:44111): Se conecto un cliente!
+[INFO] 19:24:31:301 CPU/(44111:44244): PID: 1 - Ejecutando: DELETE_SEGMENT - arg1: 3, arg2: , arg3: 
+[WARNING] 19:24:31:301 CPU/(44111:44244): Cliente desconectado!
+[WARNING] 19:24:31:301 CPU/(44111:44244): El cliente se desconectó del server
+[INFO] 19:24:31:301 CPU/(44111:44111): Se conecto un cliente!
+[INFO] 19:24:31:301 CPU/(44111:44246): PID: 1 - Ejecutando: DELETE_SEGMENT - arg1: 5, arg2: , arg3: 
+[WARNING] 19:24:31:301 CPU/(44111:44246): Cliente desconectado!
+[WARNING] 19:24:31:301 CPU/(44111:44246): El cliente se desconectó del server
+[INFO] 19:24:31:301 CPU/(44111:44111): Se conecto un cliente!
+[INFO] 19:24:31:301 CPU/(44111:44248): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 3600, arg3: 
+[WARNING] 19:24:31:301 CPU/(44111:44248): Cliente desconectado!
+[WARNING] 19:24:31:301 CPU/(44111:44248): El cliente se desconectó del server
+[INFO] 19:25:31:302 CPU/(44111:44111): Se conecto un cliente!
+[INFO] 19:25:31:302 CPU/(44111:44358): PID: 1 - Ejecutando: DELETE_SEGMENT - arg1: 2, arg2: , arg3: 
+[WARNING] 19:25:31:302 CPU/(44111:44358): Cliente desconectado!
+[WARNING] 19:25:31:302 CPU/(44111:44358): El cliente se desconectó del server
+[INFO] 19:25:31:302 CPU/(44111:44111): Se conecto un cliente!
+[INFO] 19:25:31:302 CPU/(44111:44360): PID: 1 - Ejecutando: DELETE_SEGMENT - arg1: 4, arg2: , arg3: 
+[WARNING] 19:25:31:302 CPU/(44111:44360): Cliente desconectado!
+[WARNING] 19:25:31:302 CPU/(44111:44360): El cliente se desconectó del server
+[INFO] 19:25:31:302 CPU/(44111:44111): Se conecto un cliente!
+[INFO] 19:25:31:302 CPU/(44111:44362): PID: 1 - Ejecutando: DELETE_SEGMENT - arg1: 6, arg2: , arg3: 
+[WARNING] 19:25:31:302 CPU/(44111:44362): Cliente desconectado!
+[WARNING] 19:25:31:302 CPU/(44111:44362): El cliente se desconectó del server
+[INFO] 19:25:31:303 CPU/(44111:44111): Se conecto un cliente!
+[INFO] 19:25:31:303 CPU/(44111:44364): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 19:25:31:303 CPU/(44111:44364): Cliente desconectado!
+[WARNING] 19:25:31:303 CPU/(44111:44364): El cliente se desconectó del server
+[INFO] 19:27:09:997 CPU/(44111:44111): Se conecto un cliente!
+[INFO] 19:27:09:997 CPU/(44111:44625): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[WARNING] 19:27:09:997 CPU/(44111:44625): Cliente desconectado!
+[WARNING] 19:27:09:997 CPU/(44111:44625): El cliente se desconectó del server
+[INFO] 19:27:09:997 CPU/(44111:44111): Se conecto un cliente!
+[INFO] 19:27:09:997 CPU/(44111:44627): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 150, arg3: 
+[WARNING] 19:27:09:997 CPU/(44111:44627): Cliente desconectado!
+[WARNING] 19:27:09:997 CPU/(44111:44627): El cliente se desconectó del server
+[INFO] 19:27:09:997 CPU/(44111:44111): Se conecto un cliente!
+[INFO] 19:27:09:997 CPU/(44111:44629): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 100, arg3: 
+[WARNING] 19:27:09:997 CPU/(44111:44629): Cliente desconectado!
+[WARNING] 19:27:09:998 CPU/(44111:44629): El cliente se desconectó del server
+[INFO] 19:27:09:998 CPU/(44111:44111): Se conecto un cliente!
+[INFO] 19:27:09:998 CPU/(44111:44631): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 150, arg3: 
+[WARNING] 19:27:09:998 CPU/(44111:44631): Cliente desconectado!
+[WARNING] 19:27:09:998 CPU/(44111:44631): El cliente se desconectó del server
+[INFO] 19:27:09:998 CPU/(44111:44111): Se conecto un cliente!
+[INFO] 19:27:09:998 CPU/(44111:44633): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 100, arg3: 
+[WARNING] 19:27:09:998 CPU/(44111:44633): Cliente desconectado!
+[WARNING] 19:27:09:998 CPU/(44111:44633): El cliente se desconectó del server
+[INFO] 19:27:09:998 CPU/(44111:44111): Se conecto un cliente!
+[INFO] 19:27:09:998 CPU/(44111:44635): PID: 2 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 19:27:10:998 CPU/(44111:44635): PID: 2 - Ejecutando: MOV_OUT - arg1: EAX, arg2: 300, arg3: 
+[ERROR] 19:27:10:998 CPU/(44111:44635): PID: 2 - ERROR SEG_FAULT - Segmento: 0 - Offset: 0 - Tamaño: 128
+[INFO] 19:27:10:998 CPU/(44111:44635): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[WARNING] 19:27:10:998 CPU/(44111:44635): Cliente desconectado!
+[WARNING] 19:27:10:998 CPU/(44111:44635): El cliente se desconectó del server
+[INFO] 19:27:10:998 CPU/(44111:44111): Se conecto un cliente!
+[INFO] 19:27:10:998 CPU/(44111:44642): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 3, arg2: , arg3: 
+[WARNING] 19:27:10:998 CPU/(44111:44642): Cliente desconectado!
+[WARNING] 19:27:10:998 CPU/(44111:44642): El cliente se desconectó del server
+[INFO] 19:27:10:998 CPU/(44111:44111): Se conecto un cliente!
+[INFO] 19:27:10:998 CPU/(44111:44644): PID: 2 - Ejecutando: SET - arg1: EAX, arg2: BBBBBBBB, arg3: 
+[INFO] 19:27:11:999 CPU/(44111:44644): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 5, arg2: , arg3: 
+[WARNING] 19:27:11:999 CPU/(44111:44644): Cliente desconectado!
+[WARNING] 19:27:11:999 CPU/(44111:44644): El cliente se desconectó del server
+[INFO] 19:27:11:999 CPU/(44111:44111): Se conecto un cliente!
+[INFO] 19:27:11:999 CPU/(44111:44683): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 3600, arg3: 
+[WARNING] 19:27:11:999 CPU/(44111:44683): Cliente desconectado!
+[WARNING] 19:27:11:999 CPU/(44111:44683): El cliente se desconectó del server
+[INFO] 19:28:12:000 CPU/(44111:44111): Se conecto un cliente!
+[INFO] 19:28:12:000 CPU/(44111:44825): PID: 2 - Ejecutando: MOV_IN - arg1: 300, arg2: EAX, arg3: 
+[ERROR] 19:28:12:000 CPU/(44111:44825): PID: 2 - ERROR SEG_FAULT - Segmento: 0 - Offset: 0 - Tamaño: 128
+[WARNING] 19:28:12:000 CPU/(44111:44825): Cliente desconectado!
+[WARNING] 19:28:12:000 CPU/(44111:44825): El cliente se desconectó del server
+[INFO] 19:31:00:908 CPU/(45263:45263): Conexión establecida con Memoria
+[INFO] 19:31:00:909 CPU/(45263:45263): Handshake OK
+[INFO] 19:31:00:909 CPU/(45263:45263): CPU escuchando conexiones...
+[INFO] 19:31:11:304 CPU/(45263:45263): Se conecto un cliente!
+[INFO] 19:31:11:304 CPU/(45263:45354): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 19:31:11:304 CPU/(45263:45354): Cliente desconectado!
+[WARNING] 19:31:11:304 CPU/(45263:45354): El cliente se desconectó del server
+[INFO] 19:31:33:420 CPU/(45263:45263): Se conecto un cliente!
+[INFO] 19:31:33:420 CPU/(45263:45530): PID: 1 - Ejecutando: SET - arg1: AX, arg2: AAAA, arg3: 
+[INFO] 19:31:34:420 CPU/(45263:45530): PID: 1 - Ejecutando: SET - arg1: BX, arg2: BBBB, arg3: 
+[INFO] 19:31:35:421 CPU/(45263:45530): PID: 1 - Ejecutando: SET - arg1: CX, arg2: CCCC, arg3: 
+[INFO] 19:31:36:421 CPU/(45263:45530): PID: 1 - Ejecutando: SET - arg1: DX, arg2: DDDD, arg3: 
+[INFO] 19:31:37:421 CPU/(45263:45530): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 19:31:38:421 CPU/(45263:45530): PID: 1 - Ejecutando: SET - arg1: EBX, arg2: BBBBBBBB, arg3: 
+[INFO] 19:31:39:421 CPU/(45263:45530): PID: 1 - Ejecutando: SET - arg1: ECX, arg2: CCCCCCCC, arg3: 
+[INFO] 19:31:40:421 CPU/(45263:45530): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 128, arg3: 
+[WARNING] 19:31:40:421 CPU/(45263:45530): Cliente desconectado!
+[WARNING] 19:31:40:421 CPU/(45263:45530): El cliente se desconectó del server
+[INFO] 19:31:40:422 CPU/(45263:45263): Se conecto un cliente!
+[INFO] 19:31:40:422 CPU/(45263:45623): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: AAAAAAAAAAAAAAAA, arg3: 
+[INFO] 19:31:41:422 CPU/(45263:45623): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: BBBBBBBBBBBBBBBB, arg3: 
+[INFO] 19:31:42:422 CPU/(45263:45623): PID: 1 - Ejecutando: SET - arg1: RCX, arg2: CCCCCCCCCCCCCCCC, arg3: 
+[INFO] 19:31:43:422 CPU/(45263:45623): PID: 1 - Ejecutando: MOV_OUT - arg1: 306, arg2: RCX, arg3: 
+[INFO] 19:31:43:422 CPU/(45263:45623): PID: 1 - Acción: ESCRIBIR - Segmento: 2 - Dirección Física: 178 - Valor: CCCCCCCCCCCCCCCC
+[INFO] 19:31:43:422 CPU/(45263:45623): PID: 1 - Ejecutando: MOV_IN - arg1: RDX, arg2: 306, arg3: 
+[INFO] 19:31:44:423 CPU/(45263:45623): PID: 1 - Acción: LEER - Segmento: 2 - Dirección Física: 178 - Valor: CCCCCCCCCCCCCCCC
+[INFO] 19:31:44:423 CPU/(45263:45623): PID: 1 - Ejecutando: SET - arg1: RDX, arg2: DDDDDDDDDDDDDDDD, arg3: 
+[INFO] 19:31:45:423 CPU/(45263:45623): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 19:31:45:423 CPU/(45263:45623): Cliente desconectado!
+[WARNING] 19:31:45:423 CPU/(45263:45623): El cliente se desconectó del server
+[INFO] 19:31:45:423 CPU/(45263:45263): Se conecto un cliente!
+[INFO] 19:31:45:423 CPU/(45263:45676): PID: 1 - Ejecutando: DELETE_SEGMENT - arg1: 2, arg2: , arg3: 
+[WARNING] 19:31:45:423 CPU/(45263:45676): Cliente desconectado!
+[WARNING] 19:31:45:423 CPU/(45263:45676): El cliente se desconectó del server
+[INFO] 19:31:45:423 CPU/(45263:45263): Se conecto un cliente!
+[INFO] 19:31:45:423 CPU/(45263:45678): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: TCHOUAMENIAFUERA, arg3: 
+[INFO] 19:31:46:423 CPU/(45263:45678): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SEGUNDO_FRANCIA_, arg3: 
+[INFO] 19:31:47:423 CPU/(45263:45678): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 19:31:47:423 CPU/(45263:45678): Cliente desconectado!
+[WARNING] 19:31:47:423 CPU/(45263:45678): El cliente se desconectó del server
+[INFO] 19:32:13:872 CPU/(45263:45263): Se conecto un cliente!
+[INFO] 19:32:13:872 CPU/(45263:45824): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[WARNING] 19:32:13:872 CPU/(45263:45824): Cliente desconectado!
+[WARNING] 19:32:13:872 CPU/(45263:45824): El cliente se desconectó del server
+[INFO] 19:32:13:872 CPU/(45263:45263): Se conecto un cliente!
+[INFO] 19:32:13:872 CPU/(45263:45826): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 150, arg3: 
+[WARNING] 19:32:13:872 CPU/(45263:45826): Cliente desconectado!
+[WARNING] 19:32:13:872 CPU/(45263:45826): El cliente se desconectó del server
+[INFO] 19:32:13:873 CPU/(45263:45263): Se conecto un cliente!
+[INFO] 19:32:13:873 CPU/(45263:45828): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 100, arg3: 
+[WARNING] 19:32:13:873 CPU/(45263:45828): Cliente desconectado!
+[WARNING] 19:32:13:873 CPU/(45263:45828): El cliente se desconectó del server
+[INFO] 19:32:13:873 CPU/(45263:45263): Se conecto un cliente!
+[INFO] 19:32:13:873 CPU/(45263:45830): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 150, arg3: 
+[WARNING] 19:32:13:873 CPU/(45263:45830): Cliente desconectado!
+[WARNING] 19:32:13:873 CPU/(45263:45830): El cliente se desconectó del server
+[INFO] 19:32:13:873 CPU/(45263:45263): Se conecto un cliente!
+[INFO] 19:32:13:873 CPU/(45263:45832): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 100, arg3: 
+[WARNING] 19:32:13:873 CPU/(45263:45832): Cliente desconectado!
+[WARNING] 19:32:13:873 CPU/(45263:45832): El cliente se desconectó del server
+[INFO] 19:32:13:874 CPU/(45263:45263): Se conecto un cliente!
+[INFO] 19:32:13:874 CPU/(45263:45834): PID: 2 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 19:32:14:874 CPU/(45263:45834): PID: 2 - Ejecutando: MOV_OUT - arg1: 300, arg2: EAX, arg3: 
+[INFO] 19:32:14:874 CPU/(45263:45834): PID: 2 - Acción: ESCRIBIR - Segmento: 2 - Dirección Física: 272 - Valor: AAAAAAAA
+[INFO] 19:32:14:874 CPU/(45263:45834): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[WARNING] 19:32:14:874 CPU/(45263:45834): Cliente desconectado!
+[WARNING] 19:32:14:874 CPU/(45263:45834): El cliente se desconectó del server
+[INFO] 19:32:14:874 CPU/(45263:45263): Se conecto un cliente!
+[INFO] 19:32:14:874 CPU/(45263:45839): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 3, arg2: , arg3: 
+[WARNING] 19:32:14:874 CPU/(45263:45839): Cliente desconectado!
+[WARNING] 19:32:14:874 CPU/(45263:45839): El cliente se desconectó del server
+[INFO] 19:32:14:874 CPU/(45263:45263): Se conecto un cliente!
+[INFO] 19:32:14:874 CPU/(45263:45841): PID: 2 - Ejecutando: SET - arg1: EAX, arg2: BBBBBBBB, arg3: 
+[INFO] 19:32:15:874 CPU/(45263:45841): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 5, arg2: , arg3: 
+[WARNING] 19:32:15:874 CPU/(45263:45841): Cliente desconectado!
+[WARNING] 19:32:15:874 CPU/(45263:45841): El cliente se desconectó del server
+[INFO] 19:32:15:874 CPU/(45263:45263): Se conecto un cliente!
+[INFO] 19:32:15:874 CPU/(45263:45880): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 3600, arg3: 
+[WARNING] 19:32:15:875 CPU/(45263:45880): Cliente desconectado!
+[WARNING] 19:32:15:875 CPU/(45263:45880): El cliente se desconectó del server
+[INFO] 19:33:15:876 CPU/(45263:45263): Se conecto un cliente!
+[INFO] 19:33:15:876 CPU/(45263:46076): PID: 2 - Ejecutando: MOV_IN - arg1: EAX, arg2: 300, arg3: 
+[INFO] 19:33:16:876 CPU/(45263:46076): PID: 2 - Acción: LEER - Segmento: 2 - Dirección Física: 172 - Valor: AAAAAAAA
+[INFO] 19:33:16:876 CPU/(45263:46076): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 2, arg2: , arg3: 
+[WARNING] 19:33:16:876 CPU/(45263:46076): Cliente desconectado!
+[WARNING] 19:33:16:876 CPU/(45263:46076): El cliente se desconectó del server
+[INFO] 19:33:16:876 CPU/(45263:45263): Se conecto un cliente!
+[INFO] 19:33:16:876 CPU/(45263:46079): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 4, arg2: , arg3: 
+[WARNING] 19:33:16:876 CPU/(45263:46079): Cliente desconectado!
+[WARNING] 19:33:16:876 CPU/(45263:46079): El cliente se desconectó del server
+[INFO] 19:33:16:876 CPU/(45263:45263): Se conecto un cliente!
+[INFO] 19:33:16:876 CPU/(45263:46081): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 6, arg2: , arg3: 
+[WARNING] 19:33:16:877 CPU/(45263:46081): Cliente desconectado!
+[WARNING] 19:33:16:877 CPU/(45263:46081): El cliente se desconectó del server
+[INFO] 19:33:16:877 CPU/(45263:45263): Se conecto un cliente!
+[INFO] 19:33:16:877 CPU/(45263:46083): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 19:33:16:877 CPU/(45263:46083): Cliente desconectado!
+[WARNING] 19:33:16:877 CPU/(45263:46083): El cliente se desconectó del server
