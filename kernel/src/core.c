@@ -147,6 +147,20 @@ void terminar_proceso(t_pcb *proceso, cod_op_kernel motivo)
 
     // TODO: Liberar segmentos de memoria, mejor verlo cuando se trabaje en la compactacion
     // TODO: cerrar archivos abiertos?
+
+    // Remove pcb from PROCESOS_EN_MEMORIA
+    int index = 0;
+    t_pcb *pcb;
+    while (index < list_size(PROCESOS_EN_MEMORIA))
+    {
+        pcb = list_get(PROCESOS_EN_MEMORIA, index);
+        if (pcb->pid == proceso->pid)
+        {
+            list_remove(PROCESOS_EN_MEMORIA, index);
+            break;
+        }
+        index++;
+    }
     loggear_fin_proceso(proceso, motivo);
     devolver_resultado(proceso, motivo);
 }
@@ -249,6 +263,8 @@ void solicitar_creacion_segmento(uint32_t id_seg, uint32_t tam, t_pcb *pcb)
     case MEMORIA_NECESITA_COMPACTACION:
         // TODO: COMPACTACION
         log_info(logger_kernel, "La memoria necesita ser compactada!!");
+        solicitar_compactacion();
+
         break;
     case MEMORIA_SEGMENTO_CREADO:
         uint32_t base;

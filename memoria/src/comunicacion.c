@@ -38,6 +38,30 @@ void devolver_resultado_creacion(cod_op_kernel resultado, int socket, uint32_t b
     free(buffer);
 }
 
+void devolver_nuevas_bases(int cliente_socket) {
+    uint32_t size = (sizeof(uint32_t) * 3) * list_size(LISTA_GLOBAL_SEGMENTOS) + sizeof(uint32_t);
+    void* buffer = malloc(size);
+    int desplazamiento = 0;
+    
+    memcpy(buffer, &size, sizeof(uint32_t));
+    desplazamiento += sizeof(uint32_t);
+
+    t_segmento* segmento;
+    // for each segmento in LISTA_GLOBAL_SEGMENTOS copy its pid, id and base
+    for (int i = 0; i < list_size(LISTA_GLOBAL_SEGMENTOS); i++)
+    {   
+        segmento = list_get(LISTA_GLOBAL_SEGMENTOS, i);
+        memcpy(buffer + desplazamiento, &segmento->pid, sizeof(uint32_t));
+        desplazamiento += sizeof(uint32_t);
+        memcpy(buffer + desplazamiento, &segmento->id, sizeof(uint32_t));
+        desplazamiento += sizeof(uint32_t);
+        memcpy(buffer + desplazamiento, &segmento->base, sizeof(uint32_t));
+        desplazamiento += sizeof(uint32_t);
+    }
+
+    send(cliente_socket, buffer, size, NULL);
+}
+
 void procesar_conexion(void *void_args)
 {
     t_conexion *args = (t_conexion *)void_args;
@@ -86,9 +110,16 @@ void procesar_conexion(void *void_args)
 
             if (resultado == MEMORIA_SEGMENTO_CREADO)
             {
+                t_segmento* n_seg = malloc(sizeof(t_segmento));
+                n_seg->pid = pid_create_segment;
+                n_seg->id = id_seg;
+                n_seg->base = n_base;
+                n_seg->limite = tam_seg;
+                list_add_sorted(LISTA_GLOBAL_SEGMENTOS, n_seg, comparador_base);
                 log_info(logger_memoria, "PID: %d - Crear Segmento: %d - Base: %d - TAMAÑO: %d", pid_create_segment, id_seg, n_base, tam_seg);
             }
             
+
             devolver_resultado_creacion(resultado, cliente_socket, n_base);
             break;
         case MEMORIA_FREE_SEGMENT:
@@ -139,10 +170,16 @@ void procesar_conexion(void *void_args)
             log_info(logger_memoria, "PID: %d - Acción: LEER - Dirección física: %d - Tamaño: %d - Origen: CPU", pid_mov_in, dir_fisica_in, tam_a_leer);
             break;
 
+        case COMPACTAR:
+            compactar();
+            devolver_nuevas_bases(cliente_socket);
+            break;
+
         default:
             log_error(logger, "Algo anduvo mal en el server Memoria");
             log_info(logger, "Cop: %d", cop);
             return;
+        
         }
     }
 

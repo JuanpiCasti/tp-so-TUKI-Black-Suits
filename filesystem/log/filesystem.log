@@ -269,3 +269,29 @@
 [INFO] 21:26:35:068 FILESYSTEM/(17685:17685): Filesystem escuchando conexiones...
 [INFO] 21:37:38:497 FILESYSTEM/(18509:18509): Conexión establecida con Memoria
 [INFO] 21:37:38:503 FILESYSTEM/(18509:18509): Handshake OK
+[INFO] 18:46:21:373 FILESYSTEM/(5161:5161): Conexión establecida con Memoria
+[INFO] 18:46:21:373 FILESYSTEM/(5161:5161): Handshake OK
+[INFO] 18:46:21:373 FILESYSTEM/(5161:5161): Filesystem escuchando conexiones...
+[INFO] 18:46:25:242 FILESYSTEM/(5161:5161): Se conecto un cliente!
+[INFO] 18:46:25:242 FILESYSTEM/(5161:5700): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 18:46:25:242 FILESYSTEM/(5161:5700): Cliente desconectado!
+[WARNING] 18:46:25:242 FILESYSTEM/(5161:5700): El cliente se desconectó del server
+[INFO] 18:47:00:646 FILESYSTEM/(5932:5932): Conexión establecida con Memoria
+[INFO] 18:47:00:647 FILESYSTEM/(5932:5932): Handshake OK
+[INFO] 18:47:00:647 FILESYSTEM/(5932:5932): Filesystem escuchando conexiones...
+[INFO] 18:47:18:346 FILESYSTEM/(5932:5932): Se conecto un cliente!
+[INFO] 18:48:48:305 FILESYSTEM/(7567:7567): Conexión establecida con Memoria
+[INFO] 18:48:48:306 FILESYSTEM/(7567:7567): Handshake OK
+[INFO] 18:48:48:306 FILESYSTEM/(7567:7567): Filesystem escuchando conexiones...
+[INFO] 18:48:51:132 FILESYSTEM/(7567:7567): Se conecto un cliente!
+[INFO] 18:48:51:132 FILESYSTEM/(7567:7615): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 18:48:51:132 FILESYSTEM/(7567:7615): Cliente desconectado!
+[WARNING] 18:48:51:132 FILESYSTEM/(7567:7615): El cliente se desconectó del server
+[INFO] 18:49:20:910 FILESYSTEM/(7567:7567): Se conecto un cliente!
+[INFO] 18:49:20:910 FILESYSTEM/(7567:7886): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 18:49:20:910 FILESYSTEM/(7567:7886): Cliente desconectado!
+[WARNING] 18:49:20:910 FILESYSTEM/(7567:7886): El cliente se desconectó del server
+[INFO] 18:49:23:233 FILESYSTEM/(7567:7567): Se conecto un cliente!
+[WARNING] 18:49:23:233 FILESYSTEM/(7567:7957): Cliente desconectado!
+[WARNING] 18:49:23:233 FILESYSTEM/(7567:7957): El cliente se desconectó del server
+[INFO] 18:49:27:234 FILESYSTEM/(7567:7567): Se conecto un cliente!

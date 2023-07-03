@@ -37,6 +37,12 @@ void procesar_conexion(void *void_args)
             list_add(NEW, n_pcb);
             log_info(logger_kernel, "Se crea el proceso %d en NEW", n_pcb->pid);
             pthread_mutex_unlock(&mutex_NEW);
+
+            pthread_mutex_lock(&mutex_PROCESOS_EN_MEMORIA);
+            list_add(PROCESOS_EN_MEMORIA, n_pcb);
+            pthread_mutex_unlock(&mutex_PROCESOS_EN_MEMORIA);
+    
+
             break;
         default:
             log_error(logger, "Algo anduvo mal en el server de Kernel");
@@ -200,4 +206,60 @@ void *recibir_nuevo_contexto(int socket_cpu, cod_op_kernel *cop)
 
 void devolver_resultado(t_pcb* pcb, cod_op_kernel exit_code) {
     send(pcb->socket_consola, &exit_code, sizeof(cod_op_kernel), NULL);
+}
+
+t_pcb* buscar_proceso_en_memoria(uint32_t pid) {
+    t_pcb* pcb;
+    for (int i = 0; i < list_size(PROCESOS_EN_MEMORIA); i++)
+    {
+        pcb = list_get(PROCESOS_EN_MEMORIA, i);
+        if (pcb->pid == pid)
+        {
+            return pcb;
+        }
+    }
+}
+
+void recibir_nuevas_bases(int socket_memoria) {
+    uint32_t tam_buffer;
+    recv(socket_memoria, &tam_buffer, sizeof(uint32_t), NULL);
+    tam_buffer -= sizeof(uint32_t);
+
+    void *buffer = malloc(tam_buffer);
+    recv(socket_memoria, buffer, tam_buffer, NULL);
+    int desplazamiento = 0;
+
+    int cant_segmentos = tam_buffer / (sizeof(uint32_t) * 3);
+    
+    uint32_t pid;
+    uint32_t id;
+    uint32_t n_base;
+
+    for (int i = 0; i < cant_segmentos; i++)
+    {
+        memcpy(&pid, buffer + desplazamiento, sizeof(uint32_t));
+        desplazamiento += sizeof(uint32_t);
+        memcpy(&id, buffer + desplazamiento, sizeof(uint32_t));
+        desplazamiento += sizeof(uint32_t);
+        memcpy(&n_base, buffer + desplazamiento, sizeof(uint32_t));
+        desplazamiento += sizeof(uint32_t);
+
+        // Search PID in PROCESOS_EN_MEMORIA
+        t_pcb *proceso_en_memoria = buscar_proceso_en_memoria(pid);
+        
+        t_ent_ts *segmento = list_get(proceso_en_memoria->tabla_segmentos, id);
+        segmento ->base = n_base;
+        
+    }
+    
+
+    free(buffer);
+
+}
+
+void solicitar_compactacion() {
+    int socket_memoria = crear_conexion(logger_kernel_extra, IP_MEMORIA, PUERTO_MEMORIA);
+    cod_op cop = COMPACTAR;
+    send(socket_memoria, &cop, sizeof(cod_op_kernel), NULL);
+    recibir_nuevas_bases(socket_memoria);
 }

@@ -77,12 +77,15 @@ extern t_list *BLOCKED;
 extern t_pcb *RUNNING;
 extern t_list *EXIT;
 extern t_list* RECURSOS;
+extern t_list* PROCESOS_EN_MEMORIA;
 extern pthread_mutex_t mutex_NEW;
 extern pthread_mutex_t mutex_READY;
 extern pthread_mutex_t mutex_BLOCKED;
 extern pthread_mutex_t mutex_RUNNING;
 extern pthread_mutex_t mutex_EXIT;
 extern pthread_mutex_t mutex_RECURSOS;
+extern pthread_mutex_t mutex_compactacion;
+extern pthread_mutex_t mutex_PROCESOS_EN_MEMORIA;
 
 extern t_list *tabla_archivos;
 

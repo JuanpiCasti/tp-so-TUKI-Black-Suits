@@ -12193,3 +12193,66 @@
 [INFO] 21:23:34:487 CPU/(17001:17319): PID: 1 - Ejecutando: F_TRUNCATE - arg1: elpapu, arg2: 64, arg3: 
 [WARNING] 21:23:34:489 CPU/(17001:17319): Cliente desconectado!
 [WARNING] 21:23:34:490 CPU/(17001:17319): El cliente se desconectó del server
+[INFO] 18:46:16:311 CPU/(4875:4875): Conexión establecida con Memoria
+[INFO] 18:46:16:311 CPU/(4875:4875): Handshake OK
+[INFO] 18:46:16:311 CPU/(4875:4875): CPU escuchando conexiones...
+[INFO] 18:46:25:242 CPU/(4875:4875): Se conecto un cliente!
+[INFO] 18:46:25:242 CPU/(4875:5701): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 18:46:25:242 CPU/(4875:5701): Cliente desconectado!
+[WARNING] 18:46:25:242 CPU/(4875:5701): El cliente se desconectó del server
+[INFO] 18:47:18:346 CPU/(4875:4875): Se conecto un cliente!
+[INFO] 18:47:18:346 CPU/(4875:6063): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[WARNING] 18:47:18:346 CPU/(4875:6063): Cliente desconectado!
+[WARNING] 18:47:18:346 CPU/(4875:6063): El cliente se desconectó del server
+[INFO] 18:47:18:417 CPU/(4875:4875): Se conecto un cliente!
+[INFO] 18:47:18:417 CPU/(4875:6066): PID: 1 - Ejecutando: SET - arg1: AX, arg2: 5555, arg3: 
+[INFO] 18:47:19:417 CPU/(4875:6066): PID: 1 - Ejecutando: SET - arg1: AX, arg2: 5555, arg3: 
+[INFO] 18:47:20:417 CPU/(4875:6066): PID: 1 - Ejecutando: SET - arg1: AX, arg2: 5555, arg3: 
+[INFO] 18:47:21:417 CPU/(4875:6066): PID: 1 - Ejecutando: SET - arg1: AX, arg2: 5555, arg3: 
+[INFO] 18:47:22:418 CPU/(4875:6066): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 18:47:22:418 CPU/(4875:6066): Cliente desconectado!
+[WARNING] 18:47:22:418 CPU/(4875:6066): El cliente se desconectó del server
+[INFO] 18:47:22:418 CPU/(4875:4875): Se conecto un cliente!
+[INFO] 18:47:22:418 CPU/(4875:6156): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 2, arg3: 
+[WARNING] 18:47:22:418 CPU/(4875:6156): Cliente desconectado!
+[WARNING] 18:47:22:418 CPU/(4875:6156): El cliente se desconectó del server
+[INFO] 18:47:22:418 CPU/(4875:4875): Se conecto un cliente!
+[INFO] 18:47:22:418 CPU/(4875:6157): PID: 1 - Ejecutando: F_TRUNCATE - arg1: elpapu, arg2: 64, arg3: 
+[WARNING] 18:47:22:418 CPU/(4875:6157): Cliente desconectado!
+[WARNING] 18:47:22:418 CPU/(4875:6157): El cliente se desconectó del server
+[INFO] 18:48:51:132 CPU/(4875:4875): Se conecto un cliente!
+[INFO] 18:48:51:133 CPU/(4875:7616): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 18:48:51:133 CPU/(4875:7616): Cliente desconectado!
+[WARNING] 18:48:51:133 CPU/(4875:7616): El cliente se desconectó del server
+[INFO] 18:49:20:910 CPU/(4875:4875): Se conecto un cliente!
+[INFO] 18:49:20:910 CPU/(4875:7887): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 18:49:20:910 CPU/(4875:7887): Cliente desconectado!
+[WARNING] 18:49:20:910 CPU/(4875:7887): El cliente se desconectó del server
+[INFO] 18:49:23:233 CPU/(4875:4875): Se conecto un cliente!
+[INFO] 18:49:23:233 CPU/(4875:7956): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[WARNING] 18:49:23:233 CPU/(4875:7956): Cliente desconectado!
+[WARNING] 18:49:23:233 CPU/(4875:7956): El cliente se desconectó del server
+[INFO] 18:49:23:233 CPU/(4875:4875): Se conecto un cliente!
+[INFO] 18:49:23:233 CPU/(4875:7958): PID: 1 - Ejecutando: SET - arg1: AX, arg2: 5555, arg3: 
+[INFO] 18:49:24:233 CPU/(4875:7958): PID: 1 - Ejecutando: SET - arg1: AX, arg2: 5555, arg3: 
+[INFO] 18:49:25:233 CPU/(4875:7958): PID: 1 - Ejecutando: SET - arg1: AX, arg2: 5555, arg3: 
+[INFO] 18:49:26:233 CPU/(4875:7958): PID: 1 - Ejecutando: SET - arg1: AX, arg2: 5555, arg3: 
+[INFO] 18:49:27:234 CPU/(4875:7958): PID: 1 - Ejecutando: YIELD - arg1: , arg2: , arg3: 
+[WARNING] 18:49:27:234 CPU/(4875:7958): Cliente desconectado!
+[WARNING] 18:49:27:234 CPU/(4875:7958): El cliente se desconectó del server
+[INFO] 18:49:27:234 CPU/(4875:4875): Se conecto un cliente!
+[INFO] 18:49:27:234 CPU/(4875:8017): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 2, arg3: 
+[WARNING] 18:49:27:234 CPU/(4875:8017): Cliente desconectado!
+[WARNING] 18:49:27:234 CPU/(4875:8017): El cliente se desconectó del server
+[INFO] 18:49:27:234 CPU/(4875:4875): Se conecto un cliente!
+[INFO] 18:49:27:234 CPU/(4875:8018): PID: 1 - Ejecutando: F_TRUNCATE - arg1: elpapu, arg2: 64, arg3: 
+[WARNING] 18:49:27:234 CPU/(4875:8018): Cliente desconectado!
+[WARNING] 18:49:27:234 CPU/(4875:8018): El cliente se desconectó del server
+[INFO] 18:49:27:234 CPU/(4875:4875): Se conecto un cliente!
+[INFO] 18:49:27:234 CPU/(4875:8020): PID: 1 - Ejecutando: F_CLOSE - arg1: elpapu, arg2: , arg3: 
+[WARNING] 18:49:27:234 CPU/(4875:8020): Cliente desconectado!
+[WARNING] 18:49:27:234 CPU/(4875:8020): El cliente se desconectó del server
+[INFO] 18:49:27:234 CPU/(4875:4875): Se conecto un cliente!
+[INFO] 18:49:27:235 CPU/(4875:8021): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[WARNING] 18:49:27:235 CPU/(4875:8021): Cliente desconectado!
+[WARNING] 18:49:27:235 CPU/(4875:8021): El cliente se desconectó del server

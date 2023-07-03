@@ -17,6 +17,7 @@ t_algo_asig ALGORITMO_ASIGNACION;
 void* ESPACIO_USUARIO;
 uint32_t ESPACIO_LIBRE_TOTAL;
 t_list* LISTA_ESPACIOS_LIBRES;
+t_list* LISTA_GLOBAL_SEGMENTOS;
 
 int main(int argc, char **argv)
 {

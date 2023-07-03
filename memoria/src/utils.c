@@ -48,6 +48,7 @@ void levantar_estructuras_administrativas() {
     ESPACIO_LIBRE_TOTAL;
 
     LISTA_ESPACIOS_LIBRES = list_create();
+    LISTA_GLOBAL_SEGMENTOS = list_create();
 
     t_esp* espacio_inicial = malloc(sizeof(t_esp));
     espacio_inicial->base = 0;
@@ -65,11 +66,26 @@ bool comparador_base(void* data1, void* data2) {
     return esp1->base < esp2->base;
 }
 
+bool comparador_base_segmento(void* data1, void* data2) {
+    t_segmento* seg1 = (t_segmento*)data1;
+    t_segmento* seg2 = (t_segmento*)data2;
+
+    return seg1->base < seg2->base;
+}
+
 void print_lista_esp(t_list* lista) {
     printf("Lista de espacios libres:\n");
     for (int i = 0; i < list_size(lista); i++) {
         t_esp* elemento = list_get(lista, i);
         printf("Elemento %d: base=%u, limite=%u\n", i+1, elemento->base, elemento->limite);
+    }
+}
+
+void print_lista_segmentos() {
+    printf("Lista de segmentos:\n");
+    for (int i = 0; i < list_size(LISTA_GLOBAL_SEGMENTOS); i++) {
+        t_segmento* elemento = list_get(LISTA_GLOBAL_SEGMENTOS, i);
+        printf("PID %u: ID=%u, BASE=%u, LIMITE=%u\n", elemento->pid, elemento->id, elemento->base, elemento->limite);
     }
 }
 
@@ -190,7 +206,7 @@ int buscar_espacio_libre(uint32_t tam) {
 }
 
 cod_op_kernel crear_segmento(uint32_t tam, uint32_t* base_resultante) {
-    printf("%d, %d\n", ESPACIO_LIBRE_TOTAL, tam);
+    //printf("%d, %d\n", ESPACIO_LIBRE_TOTAL, tam);
     if (ESPACIO_LIBRE_TOTAL < tam)
     {
         log_info(logger_memoria_extra, "NO HAY ESPACIO SUFICIENTE PARA CREAR ESE SEGMENTO");
@@ -228,6 +244,19 @@ bool son_contiguos(t_esp* esp1, t_esp* esp2) {
     return esp1 ->base + esp1->limite == esp2 ->base;
 }
 
+int buscar_segmento_por_base(uint32_t base) {
+    t_segmento* segmento;
+    for (int i = 0; i < list_size(LISTA_GLOBAL_SEGMENTOS); i++)
+    {
+        segmento = list_get(LISTA_GLOBAL_SEGMENTOS, i);
+        if (segmento->base == base)
+        {
+            return i;
+        }
+    }
+    return -1;
+}
+
 
 void borrar_segmento(uint32_t base, uint32_t limite) {
     ESPACIO_LIBRE_TOTAL += limite;
@@ -263,9 +292,10 @@ void borrar_segmento(uint32_t base, uint32_t limite) {
         }
     }
     
+    int indice_segmento = buscar_segmento_por_base(base);
 
-   
-    
+    t_segmento* segmento = list_remove(LISTA_GLOBAL_SEGMENTOS,indice_segmento );
+    free(segmento);
     
 }
 
@@ -277,4 +307,32 @@ char* leer(uint32_t dir_fisca , uint32_t size) {
     void* data = malloc(size);
     memcpy(data, ESPACIO_USUARIO + dir_fisca, size);
     return data;
+}
+
+void compactar() {
+    for (int i = 0; i < list_size(LISTA_GLOBAL_SEGMENTOS); i++)
+    {
+        t_segmento* segmento = list_get(LISTA_GLOBAL_SEGMENTOS, i);
+        t_esp* primer_espacio_libre = list_get(LISTA_ESPACIOS_LIBRES, 0);
+        if (segmento->base > primer_espacio_libre->base )
+        {
+            memcpy(ESPACIO_USUARIO + primer_espacio_libre->base, ESPACIO_USUARIO + segmento->base, segmento->limite);
+            segmento->base = primer_espacio_libre->base;
+            primer_espacio_libre->base += segmento->limite;
+            
+            //consolidacion
+            if (list_size(LISTA_ESPACIOS_LIBRES) > 1)
+            {
+                t_esp* posible_espacio_contiguo_abajo = list_get(LISTA_ESPACIOS_LIBRES, 1);
+
+                if (son_contiguos(primer_espacio_libre, posible_espacio_contiguo_abajo))
+                {
+                    primer_espacio_libre -> limite += posible_espacio_contiguo_abajo->limite;
+                    list_remove(LISTA_ESPACIOS_LIBRES, 1);
+                    free(posible_espacio_contiguo_abajo);
+                }
+            }
+        }
+        
+    }
 }

@@ -29,7 +29,8 @@ typedef enum
 	MEMORIA_MOV_OUT,
 	ABRIR_ARCHIVO,
 	CREAR_ARCHIVO,
-	TRUNCAR_ARCHIVO
+	TRUNCAR_ARCHIVO,
+	COMPACTAR
 } cod_op;
 
 typedef struct

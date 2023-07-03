@@ -5410,3 +5410,18 @@
 [INFO] 21:23:30:414 CONSOLA/(17230:17230): Handshake OK
 [INFO] 21:23:30:416 CONSOLA/(17230:17230): Conexión establecida con Kernel
 [INFO] 21:23:30:417 CONSOLA/(17230:17230): Enviando instrucciones a Kernel...
+[INFO] 18:47:18:345 CONSOLA/(6059:6059): Conexión establecida con Kernel
+[INFO] 18:47:18:345 CONSOLA/(6059:6059): Handshake OK
+[INFO] 18:47:18:345 CONSOLA/(6059:6059): Conexión establecida con Kernel
+[INFO] 18:47:18:345 CONSOLA/(6059:6059): Enviando instrucciones a Kernel...
+[ERROR] 18:48:53:392 CONSOLA/(7658:7658): Error creando la conexion para 127.0.0.1:8000
+[ERROR] 18:48:53:392 CONSOLA/(7658:7658): No se pudo conectar al servidor Kernel
+[ERROR] 18:48:53:392 CONSOLA/(7658:7658): No se pudo conectar al servidor del Kernel
+[ERROR] 18:48:53:392 CONSOLA/(7658:7658): Error creando la conexion para 127.0.0.1:8000
+[ERROR] 18:48:53:392 CONSOLA/(7658:7658): No se pudo conectar al servidor Kernel
+[ERROR] 18:48:53:392 CONSOLA/(7658:7658): No se pudo conectar a Kernel
+[INFO] 18:49:23:232 CONSOLA/(7952:7952): Conexión establecida con Kernel
+[INFO] 18:49:23:232 CONSOLA/(7952:7952): Handshake OK
+[INFO] 18:49:23:232 CONSOLA/(7952:7952): Conexión establecida con Kernel
+[INFO] 18:49:23:232 CONSOLA/(7952:7952): Enviando instrucciones a Kernel...
+[INFO] 18:49:27:235 CONSOLA/(7952:7952): Resultado de ejecutar el script 'scripts/script2.txt': SUCCESS

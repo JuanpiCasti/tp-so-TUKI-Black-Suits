@@ -135,6 +135,7 @@ void inicializar_colas()
     EXIT = list_create();
     RUNNING = NULL;
     RECURSOS = levantar_recursos();
+    PROCESOS_EN_MEMORIA = list_create();
     tabla_archivos = list_create();
 }
 
@@ -218,6 +219,16 @@ void inicializar_semaforos()
     if (pthread_mutex_init(&mutex_RECURSOS, NULL) != 0)
     {
         log_error(logger_kernel_extra, "No se pudo inicializar el semaforo para la lista de recursos disponibles");
+        exit(-1);
+    }
+    if (pthread_mutex_init(&mutex_compactacion, NULL) != 0)
+    {
+        log_error(logger_kernel_extra, "No se pudo inicializar el semaforo para el control de compactacion y fread-fwrite");
+        exit(-1);
+    }
+    if (pthread_mutex_init(&mutex_PROCESOS_EN_MEMORIA, NULL) != 0)
+    {
+        log_error(logger_kernel_extra, "No se pudo inicializar el semaforo para la lista de procesos en memoria");
         exit(-1);
     }
 }

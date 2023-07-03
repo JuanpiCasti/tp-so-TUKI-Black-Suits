@@ -48,6 +48,11 @@ pthread_mutex_t mutex_RECURSOS;
 
 t_list *tabla_archivos;
 
+pthread_mutex_t mutex_compactacion;
+
+t_list* PROCESOS_EN_MEMORIA;
+pthread_mutex_t mutex_PROCESOS_EN_MEMORIA;
+
 int main(int argc, char **argv)
 {
 	if (argc > 1 && strcmp(argv[1], "-test") == 0)
