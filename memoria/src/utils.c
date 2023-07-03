@@ -335,4 +335,6 @@ void compactar() {
         }
         
     }
+
+    sleep(RETARDO_COMPACTACION/1000);
 }

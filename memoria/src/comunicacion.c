@@ -115,10 +115,12 @@ void procesar_conexion(void *void_args)
                 n_seg->id = id_seg;
                 n_seg->base = n_base;
                 n_seg->limite = tam_seg;
-                list_add_sorted(LISTA_GLOBAL_SEGMENTOS, n_seg, comparador_base);
+                list_add_sorted(LISTA_GLOBAL_SEGMENTOS, n_seg, comparador_base_segmento);
                 log_info(logger_memoria, "PID: %d - Crear Segmento: %d - Base: %d - TAMAÑO: %d", pid_create_segment, id_seg, n_base, tam_seg);
             }
             
+            print_lista_segmentos();
+            print_lista_esp(LISTA_ESPACIOS_LIBRES);
 
             devolver_resultado_creacion(resultado, cliente_socket, n_base);
             break;
@@ -165,6 +167,7 @@ void procesar_conexion(void *void_args)
             recv(cliente_socket, &dir_fisica_in, sizeof(uint32_t), NULL);
             recv(cliente_socket, &tam_a_leer, sizeof(uint32_t), NULL);
             char* valor_in = leer(dir_fisica_in, tam_a_leer);
+            sleep(RETARDO_MEMORIA/1000);
             send(cliente_socket, valor_in, tam_a_leer, NULL);
             free(valor_in);
             log_info(logger_memoria, "PID: %d - Acción: LEER - Dirección física: %d - Tamaño: %d - Origen: CPU", pid_mov_in, dir_fisica_in, tam_a_leer);

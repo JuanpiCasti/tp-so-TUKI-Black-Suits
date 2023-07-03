@@ -263,7 +263,16 @@ void solicitar_creacion_segmento(uint32_t id_seg, uint32_t tam, t_pcb *pcb)
     case MEMORIA_NECESITA_COMPACTACION:
         // TODO: COMPACTACION
         log_info(logger_kernel, "La memoria necesita ser compactada!!");
+        pthread_mutex_lock(&mutex_compactacion);
         solicitar_compactacion();
+        pthread_mutex_unlock(&mutex_compactacion);
+
+        for (int i = 0; i < list_size(PROCESOS_EN_MEMORIA); i++)
+        {
+            imprimir_pcb(list_get(PROCESOS_EN_MEMORIA, i));
+        }
+
+        solicitar_creacion_segmento(id_seg, tam, pcb);
 
         break;
     case MEMORIA_SEGMENTO_CREADO:

@@ -295,3 +295,54 @@
 [WARNING] 18:49:23:233 FILESYSTEM/(7567:7957): Cliente desconectado!
 [WARNING] 18:49:23:233 FILESYSTEM/(7567:7957): El cliente se desconectó del server
 [INFO] 18:49:27:234 FILESYSTEM/(7567:7567): Se conecto un cliente!
+[INFO] 18:40:03:918 FILESYSTEM/(16148:16148): Conexión establecida con Memoria
+[INFO] 18:40:03:918 FILESYSTEM/(16148:16148): Handshake OK
+[INFO] 18:40:03:918 FILESYSTEM/(16148:16148): Filesystem escuchando conexiones...
+[INFO] 18:40:07:499 FILESYSTEM/(16148:16148): Se conecto un cliente!
+[INFO] 18:40:07:499 FILESYSTEM/(16148:16201): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 18:40:07:499 FILESYSTEM/(16148:16201): Cliente desconectado!
+[WARNING] 18:40:07:499 FILESYSTEM/(16148:16201): El cliente se desconectó del server
+[INFO] 18:44:52:943 FILESYSTEM/(16148:16148): Se conecto un cliente!
+[INFO] 18:44:52:943 FILESYSTEM/(16148:16740): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 18:44:52:943 FILESYSTEM/(16148:16740): Cliente desconectado!
+[WARNING] 18:44:52:943 FILESYSTEM/(16148:16740): El cliente se desconectó del server
+[INFO] 18:55:44:173 FILESYSTEM/(20110:20110): Conexión establecida con Memoria
+[INFO] 18:55:44:174 FILESYSTEM/(20110:20110): Handshake OK
+[INFO] 18:55:44:174 FILESYSTEM/(20110:20110): Filesystem escuchando conexiones...
+[INFO] 18:55:47:941 FILESYSTEM/(20110:20110): Se conecto un cliente!
+[INFO] 18:55:47:941 FILESYSTEM/(20110:20169): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 18:55:47:941 FILESYSTEM/(20110:20169): Cliente desconectado!
+[WARNING] 18:55:47:941 FILESYSTEM/(20110:20169): El cliente se desconectó del server
+[INFO] 19:04:31:226 FILESYSTEM/(40317:40317): Conexión establecida con Memoria
+[INFO] 19:04:31:227 FILESYSTEM/(40317:40317): Handshake OK
+[INFO] 19:04:31:227 FILESYSTEM/(40317:40317): Filesystem escuchando conexiones...
+[INFO] 19:04:34:229 FILESYSTEM/(40317:40317): Se conecto un cliente!
+[INFO] 19:04:34:229 FILESYSTEM/(40317:40365): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 19:04:34:229 FILESYSTEM/(40317:40365): Cliente desconectado!
+[WARNING] 19:04:34:229 FILESYSTEM/(40317:40365): El cliente se desconectó del server
+[INFO] 19:05:08:145 FILESYSTEM/(40317:40317): Se conecto un cliente!
+[INFO] 19:05:08:146 FILESYSTEM/(40317:40680): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 19:05:08:146 FILESYSTEM/(40317:40680): Cliente desconectado!
+[WARNING] 19:05:08:146 FILESYSTEM/(40317:40680): El cliente se desconectó del server
+[INFO] 19:06:34:048 FILESYSTEM/(40317:40317): Se conecto un cliente!
+[INFO] 19:06:34:048 FILESYSTEM/(40317:40956): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 19:06:34:048 FILESYSTEM/(40317:40956): Cliente desconectado!
+[WARNING] 19:06:34:048 FILESYSTEM/(40317:40956): El cliente se desconectó del server
+[INFO] 19:07:12:139 FILESYSTEM/(41334:41334): Conexión establecida con Memoria
+[INFO] 19:07:12:139 FILESYSTEM/(41334:41334): Handshake OK
+[INFO] 19:07:12:140 FILESYSTEM/(41334:41334): Filesystem escuchando conexiones...
+[INFO] 19:07:16:272 FILESYSTEM/(41334:41334): Se conecto un cliente!
+[INFO] 19:07:16:272 FILESYSTEM/(41334:41381): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 19:07:16:273 FILESYSTEM/(41334:41381): Cliente desconectado!
+[WARNING] 19:07:16:273 FILESYSTEM/(41334:41381): El cliente se desconectó del server
+[ERROR] 19:09:07:287 FILESYSTEM/(42308:42308): Error creando la conexion para 127.0.0.1:8002
+[ERROR] 19:09:07:287 FILESYSTEM/(42308:42308): No se pudo conectar al servidor Memoria
+[ERROR] 19:09:07:287 FILESYSTEM/(42308:42308): No se pudo conectar al servidor del Memoria
+[INFO] 19:09:07:288 FILESYSTEM/(42308:42308): Filesystem escuchando conexiones...
+[INFO] 19:09:34:663 FILESYSTEM/(42494:42494): Conexión establecida con Memoria
+[INFO] 19:09:34:663 FILESYSTEM/(42494:42494): Handshake OK
+[INFO] 19:09:34:664 FILESYSTEM/(42494:42494): Filesystem escuchando conexiones...
+[INFO] 19:09:38:293 FILESYSTEM/(42494:42494): Se conecto un cliente!
+[INFO] 19:09:38:293 FILESYSTEM/(42494:42540): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 19:09:38:294 FILESYSTEM/(42494:42540): Cliente desconectado!
+[WARNING] 19:09:38:294 FILESYSTEM/(42494:42540): El cliente se desconectó del server
