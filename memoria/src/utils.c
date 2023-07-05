@@ -4,7 +4,7 @@ char* t_algo_asig_desc[] = {"FIRST", "BEST", "WORST"};
 
 void levantar_loggers_memoria() {
     logger_memoria = log_create("./log/memoria.log", "MEMORIA", true, LOG_LEVEL_INFO);
-    logger_memoria_extra = log_create("./log/memoria_extra.log", "MEMORIA", true, LOG_LEVEL_INFO);
+    logger_memoria_extra = log_create("./log/memoria_extra.log", "MEMORIA", false, LOG_LEVEL_INFO);
 }
 
 void levantar_config_memoria() {

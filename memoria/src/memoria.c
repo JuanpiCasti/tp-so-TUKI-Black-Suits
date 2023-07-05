@@ -43,14 +43,14 @@ int main(int argc, char **argv)
 		// SERVIDOR
 		char puerto_escucha[10];
 		sprintf(puerto_escucha, "%d", PUERTO_ESCUCHA_MEMORIA);
-		socket_servidor_memoria = iniciar_servidor(logger_memoria, puerto_escucha);
+		socket_servidor_memoria = iniciar_servidor(logger_memoria_extra, puerto_escucha);
 		if (socket_servidor_memoria == -1)
 		{
-			log_error(logger_memoria, "No se pudo iniciar el servidor en Memoria...");
+			log_error(logger_memoria_extra, "No se pudo iniciar el servidor en Memoria...");
 			return EXIT_FAILURE;
 		}
-		log_info(logger_memoria, "Memoria escuchando conexiones...");
-		while (server_escuchar(logger_memoria, socket_servidor_memoria, (void *)procesar_conexion));
+		log_info(logger_memoria_extra, "Memoria escuchando conexiones...");
+		while (server_escuchar(logger_memoria_extra, socket_servidor_memoria, (void *)procesar_conexion));
 		return EXIT_SUCCESS;
 	}
 }

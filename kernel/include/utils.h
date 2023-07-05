@@ -126,5 +126,7 @@ t_recurso* buscar_recurso_por_nombre(char* nombre_deseado);
 t_pcb *crear_pcb(t_list *instrucciones, int socket_consola); // Recibe lista de instrucciones y crea pcb
 int recurso_asignado(t_pcb* proceso, char* nombre_recurso);
 void destroy_t_asig_r(void* element);
+bool segmento_activo(t_ent_ts *seg);
+void destroy_ent_ts(void* seg);
 
 #endif

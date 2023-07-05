@@ -5482,3 +5482,60 @@
 [INFO] 19:32:13:872 CONSOLA/(45820:45820): Conexión establecida con Kernel
 [INFO] 19:32:13:872 CONSOLA/(45820:45820): Enviando instrucciones a Kernel...
 [INFO] 19:33:16:877 CONSOLA/(45820:45820): Resultado de ejecutar el script 'scripts/COMPACTACION_1': SUCCESS
+[INFO] 21:09:57:773 CONSOLA/(4041:4041): Conexión establecida con Kernel
+[INFO] 21:09:57:773 CONSOLA/(4041:4041): Handshake OK
+[INFO] 21:09:57:773 CONSOLA/(4041:4041): Conexión establecida con Kernel
+[INFO] 21:09:57:774 CONSOLA/(4041:4041): Enviando instrucciones a Kernel...
+[INFO] 21:11:00:780 CONSOLA/(4041:4041): Resultado de ejecutar el script 'scripts/COMPACTACION_1': SUCCESS
+[INFO] 21:22:19:885 CONSOLA/(6286:6286): Conexión establecida con Kernel
+[INFO] 21:22:19:885 CONSOLA/(6286:6286): Handshake OK
+[INFO] 21:22:19:885 CONSOLA/(6286:6286): Conexión establecida con Kernel
+[INFO] 21:22:19:885 CONSOLA/(6286:6286): Enviando instrucciones a Kernel...
+[INFO] 21:22:19:886 CONSOLA/(6286:6286): Resultado de ejecutar el script 'scripts/COMPACTACION_1': SUCCESS
+[INFO] 21:23:02:159 CONSOLA/(6522:6522): Conexión establecida con Kernel
+[INFO] 21:23:02:159 CONSOLA/(6522:6522): Handshake OK
+[INFO] 21:23:02:159 CONSOLA/(6522:6522): Conexión establecida con Kernel
+[INFO] 21:23:02:160 CONSOLA/(6522:6522): Enviando instrucciones a Kernel...
+[INFO] 21:23:10:165 CONSOLA/(6522:6522): Resultado de ejecutar el script 'scripts/COMPACTACION_1': SUCCESS
+[INFO] 21:24:13:192 CONSOLA/(7039:7039): Conexión establecida con Kernel
+[INFO] 21:24:13:192 CONSOLA/(7039:7039): Handshake OK
+[INFO] 21:24:13:192 CONSOLA/(7039:7039): Conexión establecida con Kernel
+[INFO] 21:24:13:192 CONSOLA/(7039:7039): Enviando instrucciones a Kernel...
+[INFO] 21:28:46:998 CONSOLA/(9339:9339): Conexión establecida con Kernel
+[INFO] 21:28:46:999 CONSOLA/(9339:9339): Handshake OK
+[INFO] 21:28:46:999 CONSOLA/(9339:9339): Conexión establecida con Kernel
+[INFO] 21:28:46:999 CONSOLA/(9339:9339): Enviando instrucciones a Kernel...
+[INFO] 21:28:55:004 CONSOLA/(9339:9339): Resultado de ejecutar el script 'scripts/COMPACTACION_1': SUCCESS
+[INFO] 21:30:47:504 CONSOLA/(10098:10098): Conexión establecida con Kernel
+[INFO] 21:30:47:504 CONSOLA/(10098:10098): Handshake OK
+[INFO] 21:30:47:504 CONSOLA/(10098:10098): Conexión establecida con Kernel
+[INFO] 21:30:47:504 CONSOLA/(10098:10098): Enviando instrucciones a Kernel...
+[INFO] 21:30:55:509 CONSOLA/(10098:10098): Resultado de ejecutar el script 'scripts/COMPACTACION_1': SUCCESS
+[INFO] 21:31:31:099 CONSOLA/(10362:10362): Conexión establecida con Kernel
+[INFO] 21:31:31:099 CONSOLA/(10362:10362): Handshake OK
+[INFO] 21:31:31:099 CONSOLA/(10362:10362): Conexión establecida con Kernel
+[INFO] 21:31:31:099 CONSOLA/(10362:10362): Enviando instrucciones a Kernel...
+[INFO] 21:31:39:104 CONSOLA/(10362:10362): Resultado de ejecutar el script 'scripts/COMPACTACION_1': SUCCESS
+[INFO] 21:32:53:902 CONSOLA/(10735:10735): Conexión establecida con Kernel
+[INFO] 21:32:53:902 CONSOLA/(10735:10735): Handshake OK
+[INFO] 21:32:53:903 CONSOLA/(10735:10735): Conexión establecida con Kernel
+[INFO] 21:32:53:903 CONSOLA/(10735:10735): Enviando instrucciones a Kernel...
+[INFO] 21:33:01:907 CONSOLA/(10735:10735): Resultado de ejecutar el script 'scripts/COMPACTACION_1': SUCCESS
+[INFO] 21:34:01:298 CONSOLA/(11117:11117): Conexión establecida con Kernel
+[INFO] 21:34:01:298 CONSOLA/(11117:11117): Handshake OK
+[INFO] 21:34:01:299 CONSOLA/(11117:11117): Conexión establecida con Kernel
+[INFO] 21:34:01:299 CONSOLA/(11117:11117): Enviando instrucciones a Kernel...
+[INFO] 21:35:57:016 CONSOLA/(11847:11847): Conexión establecida con Kernel
+[INFO] 21:35:57:016 CONSOLA/(11847:11847): Handshake OK
+[INFO] 21:35:57:016 CONSOLA/(11847:11847): Conexión establecida con Kernel
+[INFO] 21:35:57:017 CONSOLA/(11847:11847): Enviando instrucciones a Kernel...
+[INFO] 21:36:05:021 CONSOLA/(11847:11847): Resultado de ejecutar el script 'scripts/COMPACTACION_1': SUCCESS
+[INFO] 21:37:02:221 CONSOLA/(12183:12183): Conexión establecida con Kernel
+[INFO] 21:37:02:221 CONSOLA/(12183:12183): Handshake OK
+[INFO] 21:37:02:221 CONSOLA/(12183:12183): Conexión establecida con Kernel
+[INFO] 21:37:02:221 CONSOLA/(12183:12183): Enviando instrucciones a Kernel...
+[INFO] 21:38:57:122 CONSOLA/(12540:12540): Conexión establecida con Kernel
+[INFO] 21:38:57:122 CONSOLA/(12540:12540): Handshake OK
+[INFO] 21:38:57:122 CONSOLA/(12540:12540): Conexión establecida con Kernel
+[INFO] 21:38:57:122 CONSOLA/(12540:12540): Enviando instrucciones a Kernel...
+[INFO] 21:39:05:126 CONSOLA/(12540:12540): Resultado de ejecutar el script 'scripts/COMPACTACION_1': SUCCESS

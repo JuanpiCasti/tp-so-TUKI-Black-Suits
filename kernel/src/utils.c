@@ -361,3 +361,12 @@ void destroy_t_asig_r(void* element) {
     // Libera la memoria asignada a la estructura
     free(asig_r);
 }
+
+bool segmento_activo(t_ent_ts *seg) {
+    return seg->activo && (seg->id_seg != 0);
+}
+
+void destroy_ent_ts(void* seg) {
+    t_ent_ts* ent_seg = (t_ent_ts*) seg;
+    free(seg);
+}

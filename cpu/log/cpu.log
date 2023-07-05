@@ -111,3 +111,54 @@
 [WARNING] 23:22:10:500 CPU/(36614:36635): Cliente desconectado!
 [WARNING] 23:22:10:500 CPU/(36614:36635): El cliente se desconectó del server
 [INFO] 14:43:50:637 CPU/(64158:64158): CPU escuchando conexiones...
+[INFO] 21:32:48:047 CPU/(10699:10699): CPU escuchando conexiones...
+[INFO] 21:32:53:903 CPU/(10699:10739): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 21:32:53:903 CPU/(10699:10741): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 150, arg3: 
+[INFO] 21:32:53:904 CPU/(10699:10743): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 100, arg3: 
+[INFO] 21:32:53:904 CPU/(10699:10745): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 150, arg3: 
+[INFO] 21:32:53:904 CPU/(10699:10747): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 100, arg3: 
+[INFO] 21:32:53:904 CPU/(10699:10749): PID: 3 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 21:32:54:904 CPU/(10699:10749): PID: 3 - Ejecutando: MOV_OUT - arg1: 300, arg2: EAX, arg3: 
+[INFO] 21:32:54:904 CPU/(10699:10749): PID: 3 - Acción: ESCRIBIR - Segmento: 2 - Dirección Física: 272 - Valor: AAAAAAAA
+[INFO] 21:32:54:904 CPU/(10699:10749): PID: 3 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[INFO] 21:32:54:905 CPU/(10699:10765): PID: 3 - Ejecutando: DELETE_SEGMENT - arg1: 3, arg2: , arg3: 
+[INFO] 21:32:54:905 CPU/(10699:10767): PID: 3 - Ejecutando: SET - arg1: EAX, arg2: BBBBBBBB, arg3: 
+[INFO] 21:32:55:905 CPU/(10699:10767): PID: 3 - Ejecutando: DELETE_SEGMENT - arg1: 5, arg2: , arg3: 
+[INFO] 21:32:55:905 CPU/(10699:10800): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 3600, arg3: 
+[INFO] 21:33:00:906 CPU/(10699:10869): PID: 3 - Ejecutando: MOV_IN - arg1: EAX, arg2: 300, arg3: 
+[INFO] 21:33:01:907 CPU/(10699:10869): PID: 3 - Acción: LEER - Segmento: 2 - Dirección Física: 172 - Valor: AAAAAAAA
+[INFO] 21:33:01:907 CPU/(10699:10869): PID: 3 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 21:35:34:246 CPU/(11735:11735): CPU escuchando conexiones...
+[INFO] 21:35:57:017 CPU/(11735:11851): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 21:35:57:017 CPU/(11735:11853): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 150, arg3: 
+[INFO] 21:35:57:017 CPU/(11735:11855): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 100, arg3: 
+[INFO] 21:35:57:018 CPU/(11735:11857): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 150, arg3: 
+[INFO] 21:35:57:018 CPU/(11735:11859): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 100, arg3: 
+[INFO] 21:35:57:018 CPU/(11735:11861): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 21:35:58:018 CPU/(11735:11861): PID: 1 - Ejecutando: MOV_OUT - arg1: 300, arg2: EAX, arg3: 
+[INFO] 21:35:58:018 CPU/(11735:11861): PID: 1 - Acción: ESCRIBIR - Segmento: 2 - Dirección Física: 272 - Valor: AAAAAAAA
+[INFO] 21:35:58:018 CPU/(11735:11861): PID: 1 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[INFO] 21:35:58:018 CPU/(11735:11866): PID: 1 - Ejecutando: DELETE_SEGMENT - arg1: 3, arg2: , arg3: 
+[INFO] 21:35:58:019 CPU/(11735:11868): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: BBBBBBBB, arg3: 
+[INFO] 21:35:59:019 CPU/(11735:11868): PID: 1 - Ejecutando: DELETE_SEGMENT - arg1: 5, arg2: , arg3: 
+[INFO] 21:35:59:019 CPU/(11735:11907): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 3600, arg3: 
+[INFO] 21:36:04:020 CPU/(11735:11976): PID: 1 - Ejecutando: MOV_IN - arg1: EAX, arg2: 300, arg3: 
+[INFO] 21:36:05:020 CPU/(11735:11976): PID: 1 - Acción: LEER - Segmento: 2 - Dirección Física: 172 - Valor: AAAAAAAA
+[INFO] 21:36:05:020 CPU/(11735:11976): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 21:38:49:650 CPU/(12455:12455): CPU escuchando conexiones...
+[INFO] 21:38:57:122 CPU/(12455:12544): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 21:38:57:122 CPU/(12455:12546): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 150, arg3: 
+[INFO] 21:38:57:123 CPU/(12455:12548): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 100, arg3: 
+[INFO] 21:38:57:123 CPU/(12455:12550): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 150, arg3: 
+[INFO] 21:38:57:123 CPU/(12455:12552): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 100, arg3: 
+[INFO] 21:38:57:123 CPU/(12455:12554): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 21:38:58:123 CPU/(12455:12554): PID: 1 - Ejecutando: MOV_OUT - arg1: 300, arg2: EAX, arg3: 
+[INFO] 21:38:58:123 CPU/(12455:12554): PID: 1 - Acción: ESCRIBIR - Segmento: 2 - Dirección Física: 272 - Valor: AAAAAAAA
+[INFO] 21:38:58:123 CPU/(12455:12554): PID: 1 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[INFO] 21:38:58:123 CPU/(12455:12558): PID: 1 - Ejecutando: DELETE_SEGMENT - arg1: 3, arg2: , arg3: 
+[INFO] 21:38:58:124 CPU/(12455:12560): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: BBBBBBBB, arg3: 
+[INFO] 21:38:59:124 CPU/(12455:12560): PID: 1 - Ejecutando: DELETE_SEGMENT - arg1: 5, arg2: , arg3: 
+[INFO] 21:38:59:124 CPU/(12455:12594): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 3600, arg3: 
+[INFO] 21:39:04:125 CPU/(12455:12665): PID: 1 - Ejecutando: MOV_IN - arg1: EAX, arg2: 300, arg3: 
+[INFO] 21:39:05:125 CPU/(12455:12665): PID: 1 - Acción: LEER - Segmento: 2 - Dirección Física: 172 - Valor: AAAAAAAA
+[INFO] 21:39:05:125 CPU/(12455:12665): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 

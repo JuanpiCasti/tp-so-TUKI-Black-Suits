@@ -145,7 +145,18 @@ void terminar_proceso(t_pcb *proceso, cod_op_kernel motivo)
     list_destroy(proceso->recursos_asignados);
     // imprimir_lista_recursos(RECURSOS);
 
-    // TODO: Liberar segmentos de memoria, mejor verlo cuando se trabaje en la compactacion
+    // Liberar segmentos de memoria, mejor verlo cuando se trabaje en la compactacion
+
+    t_list* segmentos_activos = list_filter(proceso->tabla_segmentos, segmento_activo);
+    for (int i = 0; i < list_size(segmentos_activos); i++)
+    {
+        t_ent_ts* seg = list_get(segmentos_activos, i);
+        printf("SEG: %d, BASE: %d, TAM: %d, ACTIVO: %d\n", seg->id_seg, seg->base, seg->tam, seg->activo);
+        solicitar_liberacion_segmento(seg->base, seg->tam, proceso->pid, seg->id_seg);
+    }
+    list_destroy_and_destroy_elements(proceso->tabla_segmentos, destroy_ent_ts);
+    
+
     // TODO: cerrar archivos abiertos?
 
     // Remove pcb from PROCESOS_EN_MEMORIA
@@ -163,6 +174,11 @@ void terminar_proceso(t_pcb *proceso, cod_op_kernel motivo)
     }
     loggear_fin_proceso(proceso, motivo);
     devolver_resultado(proceso, motivo);
+    
+    t_pcb* proceso_finalizado = list_remove(EXIT, 0);
+    list_destroy_and_destroy_elements(proceso_finalizado->instrucciones, destroy_instruccion);
+    free(proceso_finalizado->registros_cpu);
+    free(proceso_finalizado);
 }
 
 void wait_recurso(t_pcb *proceso, char *nombre_recurso)

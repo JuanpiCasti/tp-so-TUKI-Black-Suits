@@ -32,7 +32,7 @@ void inicializar_registros()
 void levantar_loggers_cpu()
 {
     logger_cpu_extra = log_create("./log/cpu_extra.log", "CPU", false, LOG_LEVEL_INFO);
-    logger_cpu = log_create("./log/cpu_extra.log", "CPU", true, LOG_LEVEL_INFO);
+    logger_cpu = log_create("./log/cpu.log", "CPU", true, LOG_LEVEL_INFO);
 }
 
 void levantar_config_cpu()
@@ -87,6 +87,8 @@ void cambiar_contexto(void *buffer)
     uint32_t tam_instrucciones = 0;
     memcpy(&tam_instrucciones, buffer + desplazamiento, sizeof(uint32_t));
     desplazamiento += sizeof(uint32_t);
+
+    list_destroy_and_destroy_elements(INSTRUCTION_LIST, destroy_instruccion);
 
     INSTRUCTION_LIST = deserializar_instrucciones(buffer + desplazamiento, tam_instrucciones);
     desplazamiento += tam_instrucciones;

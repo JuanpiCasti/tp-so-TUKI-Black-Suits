@@ -119,8 +119,8 @@ void procesar_conexion(void *void_args)
                 log_info(logger_memoria, "PID: %d - Crear Segmento: %d - Base: %d - TAMAÑO: %d", pid_create_segment, id_seg, n_base, tam_seg);
             }
             
-            print_lista_segmentos();
-            print_lista_esp(LISTA_ESPACIOS_LIBRES);
+            // print_lista_segmentos();
+            // print_lista_esp(LISTA_ESPACIOS_LIBRES);
 
             devolver_resultado_creacion(resultado, cliente_socket, n_base);
             break;

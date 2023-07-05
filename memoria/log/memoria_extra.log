@@ -9358,3 +9358,114 @@
 [INFO] 19:24:31:301 MEMORIA/(44056:44249): NO SE ENCONTRO UN ESPACIO LIBRE, SE NECESITA COMPACTAR
 [INFO] 19:27:11:999 MEMORIA/(44056:44684): NO SE ENCONTRO UN ESPACIO LIBRE, SE NECESITA COMPACTAR
 [INFO] 19:32:15:875 MEMORIA/(45207:45881): NO SE ENCONTRO UN ESPACIO LIBRE, SE NECESITA COMPACTAR
+[INFO] 21:09:59:777 MEMORIA/(3757:4102): NO SE ENCONTRO UN ESPACIO LIBRE, SE NECESITA COMPACTAR
+[INFO] 21:23:04:162 MEMORIA/(6416:6557): NO SE ENCONTRO UN ESPACIO LIBRE, SE NECESITA COMPACTAR
+[INFO] 21:28:49:002 MEMORIA/(9081:9403): NO SE ENCONTRO UN ESPACIO LIBRE, SE NECESITA COMPACTAR
+[INFO] 21:30:49:507 MEMORIA/(9952:10139): NO SE ENCONTRO UN ESPACIO LIBRE, SE NECESITA COMPACTAR
+[INFO] 21:31:33:103 MEMORIA/(9952:10426): NO SE ENCONTRO UN ESPACIO LIBRE, SE NECESITA COMPACTAR
+[INFO] 21:32:55:905 MEMORIA/(9952:10801): NO SE ENCONTRO UN ESPACIO LIBRE, SE NECESITA COMPACTAR
+[INFO] 21:33:58:327 MEMORIA/(11097:11097): Memoria escuchando conexiones...
+[INFO] 21:34:41:085 MEMORIA/(11377:11377): Memoria escuchando conexiones...
+[INFO] 21:35:23:132 MEMORIA/(11637:11637): Memoria escuchando conexiones...
+[INFO] 21:35:26:483 MEMORIA/(11637:11637): Se conecto un cliente!
+[INFO] 21:35:26:484 MEMORIA/(11637:11670): Recibido handshake HANDSHAKE_FILESYSTEM.
+[WARNING] 21:35:26:484 MEMORIA/(11637:11670): Cliente desconectado!
+[WARNING] 21:35:26:484 MEMORIA/(11637:11670): El cliente se desconectó del server
+[INFO] 21:35:34:246 MEMORIA/(11637:11637): Se conecto un cliente!
+[INFO] 21:35:34:246 MEMORIA/(11637:11736): Recibido handshake HANDSHAKE_CPU.
+[WARNING] 21:35:34:246 MEMORIA/(11637:11736): Cliente desconectado!
+[WARNING] 21:35:34:246 MEMORIA/(11637:11736): El cliente se desconectó del server
+[INFO] 21:35:45:949 MEMORIA/(11637:11637): Se conecto un cliente!
+[INFO] 21:35:45:949 MEMORIA/(11637:11786): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 21:35:45:949 MEMORIA/(11637:11786): Cliente desconectado!
+[WARNING] 21:35:45:949 MEMORIA/(11637:11786): El cliente se desconectó del server
+[INFO] 21:35:57:017 MEMORIA/(11637:11637): Se conecto un cliente!
+[WARNING] 21:35:57:017 MEMORIA/(11637:11850): Cliente desconectado!
+[WARNING] 21:35:57:017 MEMORIA/(11637:11850): El cliente se desconectó del server
+[INFO] 21:35:57:017 MEMORIA/(11637:11637): Se conecto un cliente!
+[INFO] 21:35:57:017 MEMORIA/(11637:11637): Se conecto un cliente!
+[INFO] 21:35:57:017 MEMORIA/(11637:11637): Se conecto un cliente!
+[INFO] 21:35:57:018 MEMORIA/(11637:11637): Se conecto un cliente!
+[INFO] 21:35:57:018 MEMORIA/(11637:11637): Se conecto un cliente!
+[INFO] 21:35:58:018 MEMORIA/(11637:11637): Se conecto un cliente!
+[INFO] 21:35:58:018 MEMORIA/(11637:11637): Se conecto un cliente!
+[WARNING] 21:35:58:018 MEMORIA/(11637:11864): Cliente desconectado!
+[WARNING] 21:35:58:018 MEMORIA/(11637:11864): El cliente se desconectó del server
+[WARNING] 21:35:58:018 MEMORIA/(11637:11865): Cliente desconectado!
+[WARNING] 21:35:58:018 MEMORIA/(11637:11865): El cliente se desconectó del server
+[INFO] 21:35:58:019 MEMORIA/(11637:11637): Se conecto un cliente!
+[WARNING] 21:35:58:019 MEMORIA/(11637:11867): Cliente desconectado!
+[WARNING] 21:35:58:019 MEMORIA/(11637:11867): El cliente se desconectó del server
+[INFO] 21:35:59:019 MEMORIA/(11637:11637): Se conecto un cliente!
+[WARNING] 21:35:59:019 MEMORIA/(11637:11906): Cliente desconectado!
+[WARNING] 21:35:59:019 MEMORIA/(11637:11906): El cliente se desconectó del server
+[INFO] 21:35:59:019 MEMORIA/(11637:11637): Se conecto un cliente!
+[INFO] 21:35:59:019 MEMORIA/(11637:11908): NO SE ENCONTRO UN ESPACIO LIBRE, SE NECESITA COMPACTAR
+[INFO] 21:35:59:019 MEMORIA/(11637:11637): Se conecto un cliente!
+[WARNING] 21:36:04:019 MEMORIA/(11637:11909): Cliente desconectado!
+[WARNING] 21:36:04:020 MEMORIA/(11637:11909): El cliente se desconectó del server
+[INFO] 21:36:04:020 MEMORIA/(11637:11637): Se conecto un cliente!
+[INFO] 21:36:04:020 MEMORIA/(11637:11637): Se conecto un cliente!
+[WARNING] 21:36:05:020 MEMORIA/(11637:11977): Cliente desconectado!
+[WARNING] 21:36:05:020 MEMORIA/(11637:11977): El cliente se desconectó del server
+[INFO] 21:36:05:020 MEMORIA/(11637:11637): Se conecto un cliente!
+[INFO] 21:36:05:020 MEMORIA/(11637:11637): Se conecto un cliente!
+[WARNING] 21:36:05:020 MEMORIA/(11637:11991): Cliente desconectado!
+[WARNING] 21:36:05:020 MEMORIA/(11637:11991): El cliente se desconectó del server
+[INFO] 21:36:05:021 MEMORIA/(11637:11637): Se conecto un cliente!
+[WARNING] 21:36:05:021 MEMORIA/(11637:11992): Cliente desconectado!
+[WARNING] 21:36:05:021 MEMORIA/(11637:11992): El cliente se desconectó del server
+[WARNING] 21:36:05:021 MEMORIA/(11637:11993): Cliente desconectado!
+[WARNING] 21:36:05:021 MEMORIA/(11637:11993): El cliente se desconectó del server
+[INFO] 21:36:52:522 MEMORIA/(12111:12111): Memoria escuchando conexiones...
+[INFO] 21:38:42:610 MEMORIA/(12388:12388): Memoria escuchando conexiones...
+[INFO] 21:38:45:891 MEMORIA/(12388:12388): Se conecto un cliente!
+[INFO] 21:38:45:891 MEMORIA/(12388:12420): Recibido handshake HANDSHAKE_FILESYSTEM.
+[WARNING] 21:38:45:892 MEMORIA/(12388:12420): Cliente desconectado!
+[WARNING] 21:38:45:892 MEMORIA/(12388:12420): El cliente se desconectó del server
+[INFO] 21:38:49:650 MEMORIA/(12388:12388): Se conecto un cliente!
+[INFO] 21:38:49:650 MEMORIA/(12388:12456): Recibido handshake HANDSHAKE_CPU.
+[WARNING] 21:38:49:650 MEMORIA/(12388:12456): Cliente desconectado!
+[WARNING] 21:38:49:650 MEMORIA/(12388:12456): El cliente se desconectó del server
+[INFO] 21:38:54:120 MEMORIA/(12388:12388): Se conecto un cliente!
+[INFO] 21:38:54:120 MEMORIA/(12388:12504): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 21:38:54:120 MEMORIA/(12388:12504): Cliente desconectado!
+[WARNING] 21:38:54:120 MEMORIA/(12388:12504): El cliente se desconectó del server
+[INFO] 21:38:57:122 MEMORIA/(12388:12388): Se conecto un cliente!
+[WARNING] 21:38:57:122 MEMORIA/(12388:12543): Cliente desconectado!
+[WARNING] 21:38:57:122 MEMORIA/(12388:12543): El cliente se desconectó del server
+[INFO] 21:38:57:122 MEMORIA/(12388:12388): Se conecto un cliente!
+[INFO] 21:38:57:122 MEMORIA/(12388:12388): Se conecto un cliente!
+[INFO] 21:38:57:123 MEMORIA/(12388:12388): Se conecto un cliente!
+[INFO] 21:38:57:123 MEMORIA/(12388:12388): Se conecto un cliente!
+[INFO] 21:38:57:123 MEMORIA/(12388:12388): Se conecto un cliente!
+[INFO] 21:38:58:123 MEMORIA/(12388:12388): Se conecto un cliente!
+[INFO] 21:38:58:123 MEMORIA/(12388:12388): Se conecto un cliente!
+[WARNING] 21:38:58:123 MEMORIA/(12388:12556): Cliente desconectado!
+[WARNING] 21:38:58:123 MEMORIA/(12388:12556): El cliente se desconectó del server
+[WARNING] 21:38:58:123 MEMORIA/(12388:12557): Cliente desconectado!
+[WARNING] 21:38:58:123 MEMORIA/(12388:12557): El cliente se desconectó del server
+[INFO] 21:38:58:124 MEMORIA/(12388:12388): Se conecto un cliente!
+[WARNING] 21:38:58:124 MEMORIA/(12388:12559): Cliente desconectado!
+[WARNING] 21:38:58:124 MEMORIA/(12388:12559): El cliente se desconectó del server
+[INFO] 21:38:59:124 MEMORIA/(12388:12388): Se conecto un cliente!
+[WARNING] 21:38:59:124 MEMORIA/(12388:12593): Cliente desconectado!
+[WARNING] 21:38:59:124 MEMORIA/(12388:12593): El cliente se desconectó del server
+[INFO] 21:38:59:124 MEMORIA/(12388:12388): Se conecto un cliente!
+[INFO] 21:38:59:124 MEMORIA/(12388:12595): NO SE ENCONTRO UN ESPACIO LIBRE, SE NECESITA COMPACTAR
+[INFO] 21:38:59:124 MEMORIA/(12388:12388): Se conecto un cliente!
+[WARNING] 21:39:04:125 MEMORIA/(12388:12596): Cliente desconectado!
+[WARNING] 21:39:04:125 MEMORIA/(12388:12596): El cliente se desconectó del server
+[INFO] 21:39:04:125 MEMORIA/(12388:12388): Se conecto un cliente!
+[INFO] 21:39:04:125 MEMORIA/(12388:12388): Se conecto un cliente!
+[WARNING] 21:39:05:125 MEMORIA/(12388:12666): Cliente desconectado!
+[WARNING] 21:39:05:125 MEMORIA/(12388:12666): El cliente se desconectó del server
+[INFO] 21:39:05:126 MEMORIA/(12388:12388): Se conecto un cliente!
+[INFO] 21:39:05:126 MEMORIA/(12388:12388): Se conecto un cliente!
+[WARNING] 21:39:05:126 MEMORIA/(12388:12686): Cliente desconectado!
+[INFO] 21:39:05:126 MEMORIA/(12388:12388): Se conecto un cliente!
+[WARNING] 21:39:05:126 MEMORIA/(12388:12686): El cliente se desconectó del server
+[WARNING] 21:39:05:126 MEMORIA/(12388:12687): Cliente desconectado!
+[WARNING] 21:39:05:126 MEMORIA/(12388:12687): El cliente se desconectó del server
+[WARNING] 21:39:05:126 MEMORIA/(12388:12688): Cliente desconectado!
+[WARNING] 21:39:05:126 MEMORIA/(12388:12688): El cliente se desconectó del server
