@@ -53,7 +53,7 @@ void envio_contexto_cpu()
 
     cod_op_kernel cop;
 
-    int socket_cpu = mandar_a_cpu(nuevo_pcb, tam_contexto);
+    //int socket_cpu = mandar_a_cpu(nuevo_pcb, tam_contexto);
 
     void *buffer = recibir_nuevo_contexto(socket_cpu, &cop);
     deserializar_contexto_pcb(buffer, nuevo_pcb);

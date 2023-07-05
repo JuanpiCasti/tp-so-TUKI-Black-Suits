@@ -13175,3 +13175,221 @@
 [INFO] 21:39:04:125 CPU/(12455:12455): Se conecto un cliente!
 [WARNING] 21:39:05:125 CPU/(12455:12665): Cliente desconectado!
 [WARNING] 21:39:05:125 CPU/(12455:12665): El cliente se desconectó del server
+[INFO] 22:06:20:992 CPU/(4099:4099): Conexión establecida con Memoria
+[INFO] 22:06:20:992 CPU/(4099:4099): Handshake OK
+[INFO] 22:06:20:992 CPU/(4099:4099): CPU escuchando conexiones...
+[INFO] 22:06:31:227 CPU/(4099:4099): Se conecto un cliente!
+[INFO] 22:06:31:228 CPU/(4099:4177): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:06:31:228 CPU/(4099:4177): Cliente desconectado!
+[WARNING] 22:06:31:228 CPU/(4099:4177): El cliente se desconectó del server
+[INFO] 22:06:31:228 CPU/(4099:4099): Se conecto un cliente!
+[WARNING] 22:06:41:829 CPU/(4099:4180): Cliente desconectado!
+[WARNING] 22:06:41:829 CPU/(4099:4180): El cliente se desconectó del server
+[INFO] 22:10:03:906 CPU/(4627:4627): Conexión establecida con Memoria
+[INFO] 22:10:03:907 CPU/(4627:4627): Handshake OK
+[INFO] 22:10:03:907 CPU/(4627:4627): CPU escuchando conexiones...
+[INFO] 22:10:11:773 CPU/(4627:4627): Se conecto un cliente!
+[INFO] 22:10:11:773 CPU/(4627:4758): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:10:11:773 CPU/(4627:4758): Cliente desconectado!
+[WARNING] 22:10:11:773 CPU/(4627:4758): El cliente se desconectó del server
+[INFO] 22:10:11:773 CPU/(4627:4627): Se conecto un cliente!
+[WARNING] 22:10:26:168 CPU/(4627:4761): Cliente desconectado!
+[WARNING] 22:10:26:168 CPU/(4627:4761): El cliente se desconectó del server
+[INFO] 22:19:23:810 CPU/(6563:6563): Conexión establecida con Memoria
+[INFO] 22:19:23:810 CPU/(6563:6563): Handshake OK
+[INFO] 22:19:23:810 CPU/(6563:6563): CPU escuchando conexiones...
+[INFO] 22:19:27:004 CPU/(6563:6563): Se conecto un cliente!
+[INFO] 22:19:27:004 CPU/(6563:6601): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:19:27:004 CPU/(6563:6601): Cliente desconectado!
+[WARNING] 22:19:27:004 CPU/(6563:6601): El cliente se desconectó del server
+[INFO] 22:19:27:004 CPU/(6563:6563): Se conecto un cliente!
+[WARNING] 22:19:29:369 CPU/(6563:6605): Cliente desconectado!
+[WARNING] 22:19:29:369 CPU/(6563:6605): El cliente se desconectó del server
+[INFO] 22:20:11:563 CPU/(6826:6826): Conexión establecida con Memoria
+[INFO] 22:20:11:563 CPU/(6826:6826): Handshake OK
+[INFO] 22:20:11:564 CPU/(6826:6826): CPU escuchando conexiones...
+[INFO] 22:20:15:256 CPU/(6826:6826): Se conecto un cliente!
+[INFO] 22:20:15:256 CPU/(6826:6850): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:20:15:256 CPU/(6826:6850): Cliente desconectado!
+[WARNING] 22:20:15:256 CPU/(6826:6850): El cliente se desconectó del server
+[INFO] 22:20:15:257 CPU/(6826:6826): Se conecto un cliente!
+[WARNING] 22:20:32:588 CPU/(6826:6854): Cliente desconectado!
+[WARNING] 22:20:32:588 CPU/(6826:6854): El cliente se desconectó del server
+[INFO] 22:21:02:221 CPU/(6826:6826): Se conecto un cliente!
+[INFO] 22:21:02:221 CPU/(6826:7268): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:21:02:222 CPU/(6826:7268): Cliente desconectado!
+[WARNING] 22:21:02:222 CPU/(6826:7268): El cliente se desconectó del server
+[INFO] 22:21:02:222 CPU/(6826:6826): Se conecto un cliente!
+[WARNING] 22:21:05:086 CPU/(6826:7272): Cliente desconectado!
+[WARNING] 22:21:05:086 CPU/(6826:7272): El cliente se desconectó del server
+[INFO] 22:23:39:748 CPU/(6826:6826): Se conecto un cliente!
+[INFO] 22:23:39:748 CPU/(6826:7696): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:23:39:748 CPU/(6826:7696): Cliente desconectado!
+[WARNING] 22:23:39:748 CPU/(6826:7696): El cliente se desconectó del server
+[INFO] 22:23:39:748 CPU/(6826:6826): Se conecto un cliente!
+[WARNING] 22:24:42:026 CPU/(6826:7699): Cliente desconectado!
+[WARNING] 22:24:42:026 CPU/(6826:7699): El cliente se desconectó del server
+[INFO] 22:25:37:944 CPU/(6826:6826): Se conecto un cliente!
+[INFO] 22:25:37:944 CPU/(6826:8384): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:25:37:945 CPU/(6826:8384): Cliente desconectado!
+[WARNING] 22:25:37:945 CPU/(6826:8384): El cliente se desconectó del server
+[INFO] 22:25:37:945 CPU/(6826:6826): Se conecto un cliente!
+[WARNING] 22:25:42:796 CPU/(6826:8387): Cliente desconectado!
+[WARNING] 22:25:42:796 CPU/(6826:8387): El cliente se desconectó del server
+[INFO] 22:26:00:521 CPU/(6826:6826): Se conecto un cliente!
+[INFO] 22:26:00:521 CPU/(6826:8613): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:26:00:521 CPU/(6826:8613): Cliente desconectado!
+[WARNING] 22:26:00:521 CPU/(6826:8613): El cliente se desconectó del server
+[INFO] 22:26:00:521 CPU/(6826:6826): Se conecto un cliente!
+[WARNING] 22:28:25:312 CPU/(6826:8616): Cliente desconectado!
+[WARNING] 22:28:25:312 CPU/(6826:8616): El cliente se desconectó del server
+[INFO] 22:30:37:843 CPU/(6826:6826): Se conecto un cliente!
+[INFO] 22:30:37:843 CPU/(6826:10644): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:30:37:843 CPU/(6826:10644): Cliente desconectado!
+[WARNING] 22:30:37:843 CPU/(6826:10644): El cliente se desconectó del server
+[INFO] 22:30:37:843 CPU/(6826:6826): Se conecto un cliente!
+[WARNING] 22:31:12:689 CPU/(6826:10646): Cliente desconectado!
+[WARNING] 22:31:12:689 CPU/(6826:10646): El cliente se desconectó del server
+[INFO] 22:31:23:158 CPU/(6826:6826): Se conecto un cliente!
+[INFO] 22:31:23:158 CPU/(6826:11018): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:31:23:159 CPU/(6826:11018): Cliente desconectado!
+[WARNING] 22:31:23:159 CPU/(6826:11018): El cliente se desconectó del server
+[INFO] 22:31:23:159 CPU/(6826:6826): Se conecto un cliente!
+[WARNING] 22:31:23:601 CPU/(6826:11020): Cliente desconectado!
+[WARNING] 22:31:23:601 CPU/(6826:11020): El cliente se desconectó del server
+[INFO] 22:32:19:540 CPU/(6826:6826): Se conecto un cliente!
+[INFO] 22:32:19:540 CPU/(6826:11348): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:32:19:540 CPU/(6826:11348): Cliente desconectado!
+[WARNING] 22:32:19:540 CPU/(6826:11348): El cliente se desconectó del server
+[INFO] 22:32:19:541 CPU/(6826:6826): Se conecto un cliente!
+[WARNING] 22:32:25:847 CPU/(6826:11350): Cliente desconectado!
+[WARNING] 22:32:25:847 CPU/(6826:11350): El cliente se desconectó del server
+[INFO] 22:33:10:343 CPU/(6826:6826): Se conecto un cliente!
+[INFO] 22:33:10:343 CPU/(6826:12491): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:33:10:343 CPU/(6826:12491): Cliente desconectado!
+[WARNING] 22:33:10:343 CPU/(6826:12491): El cliente se desconectó del server
+[INFO] 22:33:10:344 CPU/(6826:6826): Se conecto un cliente!
+[WARNING] 22:33:18:110 CPU/(6826:12493): Cliente desconectado!
+[WARNING] 22:33:18:110 CPU/(6826:12493): El cliente se desconectó del server
+[INFO] 22:33:19:988 CPU/(6826:6826): Se conecto un cliente!
+[INFO] 22:33:19:988 CPU/(6826:12682): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:33:19:988 CPU/(6826:12682): Cliente desconectado!
+[WARNING] 22:33:19:988 CPU/(6826:12682): El cliente se desconectó del server
+[INFO] 22:33:19:989 CPU/(6826:6826): Se conecto un cliente!
+[WARNING] 22:33:24:779 CPU/(6826:12686): Cliente desconectado!
+[WARNING] 22:33:24:779 CPU/(6826:12686): El cliente se desconectó del server
+[INFO] 22:36:12:647 CPU/(6826:6826): Se conecto un cliente!
+[INFO] 22:36:12:647 CPU/(6826:13098): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:36:12:647 CPU/(6826:13098): Cliente desconectado!
+[WARNING] 22:36:12:647 CPU/(6826:13098): El cliente se desconectó del server
+[INFO] 22:36:12:648 CPU/(6826:6826): Se conecto un cliente!
+[WARNING] 22:36:16:380 CPU/(6826:13102): Cliente desconectado!
+[WARNING] 22:36:16:380 CPU/(6826:13102): El cliente se desconectó del server
+[INFO] 22:38:00:261 CPU/(6826:6826): Se conecto un cliente!
+[INFO] 22:38:00:261 CPU/(6826:13729): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:38:00:261 CPU/(6826:13729): Cliente desconectado!
+[WARNING] 22:38:00:261 CPU/(6826:13729): El cliente se desconectó del server
+[INFO] 22:38:00:261 CPU/(6826:6826): Se conecto un cliente!
+[WARNING] 22:38:14:954 CPU/(6826:13732): Cliente desconectado!
+[WARNING] 22:38:14:954 CPU/(6826:13732): El cliente se desconectó del server
+[ERROR] 22:42:08:714 CPU/(14974:14974): Error creando la conexion para 127.0.0.1:8002
+[ERROR] 22:42:08:714 CPU/(14974:14974): No se pudo conectar al servidor Memoria
+[ERROR] 22:42:08:714 CPU/(14974:14974): No se pudo conectar al servidor del Memoria
+[INFO] 22:42:08:714 CPU/(14974:14974): CPU escuchando conexiones...
+[INFO] 22:42:23:323 CPU/(15092:15092): Conexión establecida con Memoria
+[INFO] 22:42:23:323 CPU/(15092:15092): Handshake OK
+[INFO] 22:42:23:323 CPU/(15092:15092): CPU escuchando conexiones...
+[INFO] 22:42:31:712 CPU/(15092:15092): Se conecto un cliente!
+[INFO] 22:42:31:712 CPU/(15092:15166): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:42:31:712 CPU/(15092:15166): Cliente desconectado!
+[WARNING] 22:42:31:712 CPU/(15092:15166): El cliente se desconectó del server
+[INFO] 22:42:31:712 CPU/(15092:15092): Se conecto un cliente!
+[WARNING] 22:42:33:882 CPU/(15092:15170): Cliente desconectado!
+[WARNING] 22:42:33:882 CPU/(15092:15170): El cliente se desconectó del server
+[INFO] 22:42:39:713 CPU/(15092:15092): Se conecto un cliente!
+[INFO] 22:42:39:714 CPU/(15092:15308): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:42:39:714 CPU/(15092:15308): Cliente desconectado!
+[WARNING] 22:42:39:714 CPU/(15092:15308): El cliente se desconectó del server
+[INFO] 22:42:39:714 CPU/(15092:15092): Se conecto un cliente!
+[WARNING] 22:42:52:308 CPU/(15092:15311): Cliente desconectado!
+[WARNING] 22:42:52:308 CPU/(15092:15311): El cliente se desconectó del server
+[INFO] 22:47:23:572 CPU/(15092:15092): Se conecto un cliente!
+[INFO] 22:47:23:572 CPU/(15092:16303): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:47:23:572 CPU/(15092:16303): Cliente desconectado!
+[WARNING] 22:47:23:572 CPU/(15092:16303): El cliente se desconectó del server
+[INFO] 22:47:23:572 CPU/(15092:15092): Se conecto un cliente!
+[WARNING] 22:50:26:418 CPU/(15092:16306): Cliente desconectado!
+[WARNING] 22:50:26:419 CPU/(15092:16306): El cliente se desconectó del server
+[INFO] 22:52:07:735 CPU/(15092:15092): Se conecto un cliente!
+[INFO] 22:52:07:735 CPU/(15092:17998): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:52:07:735 CPU/(15092:17998): Cliente desconectado!
+[WARNING] 22:52:07:735 CPU/(15092:17998): El cliente se desconectó del server
+[INFO] 22:52:07:735 CPU/(15092:15092): Se conecto un cliente!
+[WARNING] 22:55:49:242 CPU/(15092:18001): Cliente desconectado!
+[WARNING] 22:55:49:242 CPU/(15092:18001): El cliente se desconectó del server
+[INFO] 22:55:53:186 CPU/(15092:15092): Se conecto un cliente!
+[INFO] 22:55:53:186 CPU/(15092:18932): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:55:53:187 CPU/(15092:18932): Cliente desconectado!
+[WARNING] 22:55:53:187 CPU/(15092:18932): El cliente se desconectó del server
+[INFO] 22:55:53:187 CPU/(15092:15092): Se conecto un cliente!
+[WARNING] 22:56:39:313 CPU/(15092:18934): Cliente desconectado!
+[WARNING] 22:56:39:313 CPU/(15092:18934): El cliente se desconectó del server
+[INFO] 22:57:37:287 CPU/(15092:15092): Se conecto un cliente!
+[INFO] 22:57:37:287 CPU/(15092:19413): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:57:37:287 CPU/(15092:19413): Cliente desconectado!
+[WARNING] 22:57:37:287 CPU/(15092:19413): El cliente se desconectó del server
+[INFO] 22:57:37:287 CPU/(15092:15092): Se conecto un cliente!
+[WARNING] 22:57:50:596 CPU/(15092:19415): Cliente desconectado!
+[WARNING] 22:57:50:596 CPU/(15092:19415): El cliente se desconectó del server
+[INFO] 22:58:46:677 CPU/(15092:15092): Se conecto un cliente!
+[INFO] 22:58:46:677 CPU/(15092:19977): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:58:46:677 CPU/(15092:19977): Cliente desconectado!
+[WARNING] 22:58:46:677 CPU/(15092:19977): El cliente se desconectó del server
+[INFO] 22:58:46:678 CPU/(15092:15092): Se conecto un cliente!
+[WARNING] 23:00:39:301 CPU/(15092:19980): Cliente desconectado!
+[WARNING] 23:00:39:301 CPU/(15092:19980): El cliente se desconectó del server
+[INFO] 23:00:44:856 CPU/(15092:15092): Se conecto un cliente!
+[INFO] 23:00:44:856 CPU/(15092:20881): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:00:44:856 CPU/(15092:20881): Cliente desconectado!
+[WARNING] 23:00:44:856 CPU/(15092:20881): El cliente se desconectó del server
+[INFO] 23:00:44:856 CPU/(15092:15092): Se conecto un cliente!
+[WARNING] 23:02:13:844 CPU/(15092:20885): Cliente desconectado!
+[WARNING] 23:02:13:844 CPU/(15092:20885): El cliente se desconectó del server
+[INFO] 23:04:07:565 CPU/(22034:22034): Conexión establecida con Memoria
+[INFO] 23:04:07:565 CPU/(22034:22034): Handshake OK
+[INFO] 23:04:07:565 CPU/(22034:22034): CPU escuchando conexiones...
+[INFO] 23:04:11:653 CPU/(22034:22034): Se conecto un cliente!
+[INFO] 23:04:11:653 CPU/(22034:22072): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:04:11:653 CPU/(22034:22072): Cliente desconectado!
+[WARNING] 23:04:11:653 CPU/(22034:22072): El cliente se desconectó del server
+[INFO] 23:04:11:653 CPU/(22034:22034): Se conecto un cliente!
+[WARNING] 23:09:03:215 CPU/(22034:22074): Cliente desconectado!
+[WARNING] 23:09:03:215 CPU/(22034:22074): El cliente se desconectó del server
+[INFO] 23:10:24:907 CPU/(23622:23622): Handshake OK
+[INFO] 23:10:24:907 CPU/(23622:23622): CPU escuchando conexiones...
+[INFO] 23:10:56:621 CPU/(23622:23622): Se conecto un cliente!
+[INFO] 23:10:56:621 CPU/(23622:23775): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:13:14:539 CPU/(23622:23775): Cliente desconectado!
+[WARNING] 23:13:14:539 CPU/(23622:23775): El cliente se desconectó del server
+[INFO] 23:17:18:162 CPU/(25567:25567): Handshake OK
+[INFO] 23:17:18:162 CPU/(25567:25567): CPU escuchando conexiones...
+[INFO] 23:17:25:798 CPU/(25567:25567): Se conecto un cliente!
+[INFO] 23:17:25:799 CPU/(25567:25653): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:17:31:301 CPU/(25567:25653): Cliente desconectado!
+[WARNING] 23:17:31:301 CPU/(25567:25653): El cliente se desconectó del server
+[INFO] 23:19:28:559 CPU/(25567:25567): Se conecto un cliente!
+[INFO] 23:19:28:559 CPU/(25567:26073): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:19:32:001 CPU/(25567:26073): Cliente desconectado!
+[WARNING] 23:19:32:001 CPU/(25567:26073): El cliente se desconectó del server
+[INFO] 23:20:28:602 CPU/(25567:25567): Se conecto un cliente!
+[INFO] 23:20:28:603 CPU/(25567:26396): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:20:35:617 CPU/(25567:26396): Cliente desconectado!
+[WARNING] 23:20:35:617 CPU/(25567:26396): El cliente se desconectó del server
+[INFO] 23:21:21:925 CPU/(25567:25567): Se conecto un cliente!
+[INFO] 23:21:21:926 CPU/(25567:27128): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:24:01:052 CPU/(25567:27128): Cliente desconectado!
+[WARNING] 23:24:01:052 CPU/(25567:27128): El cliente se desconectó del server
+[INFO] 23:26:47:563 CPU/(25567:25567): Se conecto un cliente!
+[INFO] 23:26:47:563 CPU/(25567:28294): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:28:06:776 CPU/(25567:28294): Cliente desconectado!
+[WARNING] 23:28:06:776 CPU/(25567:28294): El cliente se desconectó del server

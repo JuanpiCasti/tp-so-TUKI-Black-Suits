@@ -9,6 +9,7 @@ char *IP_MEMORIA;
 char *PUERTO_MEMORIA;
 char *PUERTO_ESCUCHA_CPU;
 uint32_t TAM_MAX_SEGMENTO;
+int socket_memoria;
 
 uint32_t PID_RUNNING;
 char AX[4];
@@ -41,9 +42,10 @@ int main(int argc, char **argv)
 		inicializar_registros();
 		INSTRUCTION_LIST = list_create();
 
+		socket_memoria = crear_conexion(logger_cpu_extra, IP_MEMORIA, PUERTO_MEMORIA);
 		//*********************
 		//HANDSHAKE - MEMORIA
-		if (realizar_handshake(logger_cpu_extra, IP_MEMORIA, PUERTO_MEMORIA, HANDSHAKE_CPU, "Memoria") == -1)
+		if (realizar_handshake(logger_cpu_extra, socket_memoria, HANDSHAKE_CPU) == -1)
 		{
 			return EXIT_FAILURE;
 		}

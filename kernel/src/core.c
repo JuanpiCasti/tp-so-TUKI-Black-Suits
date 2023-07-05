@@ -249,7 +249,7 @@ void signal_recurso(t_pcb *proceso, char *nombre_recurso)
 
 void solicitar_creacion_segmento(uint32_t id_seg, uint32_t tam, t_pcb *pcb)
 {
-    int socket_memoria = crear_conexion(logger_kernel_extra, IP_MEMORIA, PUERTO_MEMORIA);
+    
 
     int tam_buffer = sizeof(uint32_t) * 3 + sizeof(cod_op);
 
@@ -305,13 +305,12 @@ void solicitar_creacion_segmento(uint32_t id_seg, uint32_t tam, t_pcb *pcb)
     default:
         break;
 
-        close(socket_memoria);
     }
 }
 
 void solicitar_liberacion_segmento(uint32_t base, uint32_t tam, uint32_t pid, uint32_t seg_id)
 {
-    int socket_memoria = crear_conexion(logger_kernel_extra, IP_MEMORIA, PUERTO_MEMORIA);
+
     int tam_buffer = sizeof(uint32_t) * 4 + sizeof(cod_op);
 
     void *buffer = malloc(tam_buffer);
@@ -331,7 +330,7 @@ void solicitar_liberacion_segmento(uint32_t base, uint32_t tam, uint32_t pid, ui
 
     send(socket_memoria, buffer, tam_buffer, NULL);
     free(buffer);
-    close(socket_memoria);
+
     log_info(logger_kernel, "PID: %d - Eliminar Segmento - Id: %d - Tamaño: %d", pid, seg_id, tam);
 }
 
@@ -387,7 +386,6 @@ void abrir_archivo(char *f_name, t_pcb *pcb)
     }
     else
     {
-        int socket_filesystem = crear_conexion(logger_kernel_extra, IP_FILESYSTEM, PUERTO_FILESYSTEM);
         int tam_buffer = sizeof(cod_op) + sizeof(char[30]);
 
         void *buffer = malloc(tam_buffer);
@@ -430,7 +428,6 @@ void abrir_archivo(char *f_name, t_pcb *pcb)
         entrada_archivo->cola_bloqueados = list_create();
         list_add(tabla_archivos, entrada_archivo);
 
-        close(socket_filesystem);
     }
 }
 
@@ -476,7 +473,6 @@ void cambiar_puntero_archivo(char *f_name, uint32_t new_puntero, t_pcb *pcb)
 
 void truncar_archivo(char *f_name, uint32_t new_size, t_pcb *pcb)
 {
-    int socket_filesystem = crear_conexion(logger_kernel_extra, IP_FILESYSTEM, PUERTO_FILESYSTEM);
     int tam_buffer = sizeof(cod_op) + sizeof(char[30]) + sizeof(uint32_t);
 
     void *buffer = malloc(tam_buffer);
@@ -536,18 +532,17 @@ void planificacion_corto_plazo()
             r_pcb = RUNNING;
             pthread_mutex_unlock(&mutex_RUNNING);
 
-            uint32_t tam_contexto = sizeof(cod_op) +
-                                    sizeof(uint32_t) + // PID
+            uint32_t tam_contexto = sizeof(uint32_t) + // PID
                                     4 * 4 +            // (AX, BX, CX, DX)
                                     4 * 8 +            // (EAX, EBX, ECX, EDX)
                                     4 * 16 +           // (RAX, RBX, RCX, RDX)
-                                    sizeof(uint32_t) +
-                                    sizeof(uint32_t) +
+                                    sizeof(uint32_t) + // Program counter
+                                    sizeof(uint32_t) + // Tamanio lista instrucciones
                                     list_size(r_pcb->instrucciones) * sizeof(t_instruccion) +
-                                    sizeof(uint32_t) +
-                                    list_size(r_pcb->tabla_segmentos) * sizeof(t_ent_ts) + 500;
+                                    sizeof(uint32_t) + // Tamanio tabla segmentos
+                                    list_size(r_pcb->tabla_segmentos) * sizeof(t_ent_ts);
 
-            int socket_cpu = mandar_a_cpu(r_pcb, tam_contexto);
+            mandar_a_cpu(r_pcb, tam_contexto);
             cod_op_kernel cop;
             void *buffer = recibir_nuevo_contexto(socket_cpu, &cop);
             deserializar_contexto_pcb(buffer, r_pcb);

@@ -51,6 +51,7 @@ extern char *IP_MEMORIA;
 extern char *PUERTO_MEMORIA;
 extern char *PUERTO_ESCUCHA_CPU;
 extern uint32_t TAM_MAX_SEGMENTO;
+extern int socket_memoria;
 
 void levantar_loggers_cpu();
 void levantar_config_cpu();

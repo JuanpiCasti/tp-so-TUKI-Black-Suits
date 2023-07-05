@@ -84,7 +84,7 @@ int crear_conexion(t_log *logger, char *ip, char *puerto);
 void terminar_programa(t_log *logger, t_config *config);
 int server_escuchar(t_log *logger, int server_socket, void *(*procesar_conexion)(void *));
 int enviar_handshake(t_log *logger, int socket_cliente, cod_op handshake);
-int realizar_handshake(t_log *logger, char *ip_servidor, char *puerto_servidor, cod_op handshake, char *tipo_servidor);
+int realizar_handshake(t_log *logger, int socket_servidor, cod_op handshake);
 void aceptar_handshake(t_log *logger, int socket_cliente, cod_op cop);
 void rechazar_handshake(t_log *logger, int socket_cliente);
 int conectar_servidor(t_log *logger, char *ip, char *puerto, char *tipo_servidor);
@@ -99,6 +99,4 @@ void destroy_instruccion(void* element);
 
 void* serializar_tabla_segmentos(t_list* tabla, uint32_t tam_tabla);
 t_list *deserializar_segmentos(void *stream, uint32_t cant_segmentos);
-
-t_list* solicitar_tabla_segmentos(t_log* logger, char* ip, char* puerto, uint32_t pid);
 #endif

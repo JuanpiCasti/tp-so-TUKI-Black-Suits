@@ -120,22 +120,16 @@ int enviar_handshake(t_log *logger, int socket_cliente, cod_op handshake)
 	return resultado;
 }
 
-int realizar_handshake(t_log *logger, char *ip_servidor, char *puerto_servidor, cod_op handshake, char *tipo_servidor)
+int realizar_handshake(t_log *logger, int socket_servidor, cod_op handshake)
 {
-	int socket_servidor = conectar_servidor(logger, ip_servidor, puerto_servidor, tipo_servidor);
-	if (socket_servidor == -1)
-	{
-		log_error(logger, "No se pudo conectar al servidor del %s", tipo_servidor);
-		return 0;
-	}
 
 	if (enviar_handshake(logger, socket_servidor, handshake) == -1)
 	{
 		close(socket_servidor);
+		log_error(logger, "No se pudo realizar el handshake con el servidor");
 		return -1;
 	}
 
-	close(socket_servidor);
 	return 0;
 }
 
@@ -282,56 +276,4 @@ void destroy_instruccion(void* element) {
   
   // Liberar memoria del struct t_instruccion
   free(instruccion);
-}
-
-t_list* deserializar_tabla_segmentos(void* buffer, uint32_t size) {
-    t_list* tabla = list_create();
-    uint32_t despl = 0;
-
-    t_ent_ts* entrada;
-    
-    for (int i = 0; i < size; i++)
-    {
-
-        entrada = malloc(sizeof(t_ent_ts));
-
-        memcpy(&entrada->id_seg, buffer + despl, sizeof(uint32_t));
-        despl += sizeof(uint32_t);
-
-        memcpy(&entrada->base, buffer + despl, sizeof(uint32_t));
-        despl += sizeof(uint32_t);
-
-        memcpy(&entrada->tam, buffer + despl, sizeof(uint32_t));
-        despl += sizeof(uint32_t);
-
-        memcpy(&entrada->activo, buffer + despl, sizeof(uint8_t));
-        despl += sizeof(uint8_t);
-
-        list_add(tabla, entrada);
-
-    }
-    return tabla;
-}
-
-t_list* solicitar_tabla_segmentos(t_log* logger, char* ip, char* puerto, uint32_t pid) {
-    int socket_memoria = crear_conexion(logger, ip, puerto);
-    cod_op cod = CREATE_SEGTABLE;
-	void* buffer_pid = malloc(sizeof(cod_op) + sizeof(uint32_t));
-
-	memcpy(buffer_pid, &cod, sizeof(cod_op));
-	memcpy(buffer_pid + sizeof(cod_op), &pid, sizeof(uint32_t));
-
-    send(socket_memoria, buffer_pid, sizeof(cod_op) + sizeof(uint32_t), NULL);
-	free(buffer_pid);
-    uint32_t size;
-    recv(socket_memoria, &size, sizeof(uint32_t), NULL);
-
-    void* buffer = malloc(size * sizeof(t_ent_ts));
-    recv(socket_memoria, buffer, size * sizeof(t_ent_ts), NULL);
-
-    t_list* tabla = deserializar_tabla_segmentos(buffer, size);
-
-    close(socket_memoria);
-
-    return tabla;
 }

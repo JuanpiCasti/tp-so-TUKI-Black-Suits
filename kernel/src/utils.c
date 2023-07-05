@@ -1,45 +1,5 @@
 #include "utils.h"
 
-t_pcb *crear_pcb(t_list *instrucciones, int socket_consola)
-{
-    t_pcb *pcb = malloc(sizeof(t_pcb));
-
-    pthread_mutex_lock(&mutex_next_pid);
-    pcb->pid = next_pid;
-    next_pid++;
-    pthread_mutex_unlock(&mutex_next_pid);
-
-    pcb->instrucciones = instrucciones;
-    pcb->program_counter = 0;
-
-    t_registros_cpu *registros_cpu = malloc(sizeof(t_registros_cpu));
-    memset(registros_cpu->AX, 0, sizeof(registros_cpu->AX));
-    memset(registros_cpu->BX, 0, sizeof(registros_cpu->BX));
-    memset(registros_cpu->CX, 0, sizeof(registros_cpu->CX));
-    memset(registros_cpu->DX, 0, sizeof(registros_cpu->DX));
-    memset(registros_cpu->EAX, 0, sizeof(registros_cpu->EAX));
-    memset(registros_cpu->EBX, 0, sizeof(registros_cpu->EBX));
-    memset(registros_cpu->ECX, 0, sizeof(registros_cpu->ECX));
-    memset(registros_cpu->EDX, 0, sizeof(registros_cpu->EDX));
-    memset(registros_cpu->RAX, 0, sizeof(registros_cpu->RAX));
-    memset(registros_cpu->RBX, 0, sizeof(registros_cpu->RBX));
-    memset(registros_cpu->RCX, 0, sizeof(registros_cpu->RCX));
-    memset(registros_cpu->RDX, 0, sizeof(registros_cpu->RDX));
-    pcb->registros_cpu = registros_cpu;
-
-    pcb->estimado_HRRN = ESTIMACION_INICIAL / 1000;
-    pcb->llegada_ready = 0;
-    pcb->ultima_rafaga = 0;
-    pcb->archivos_abiertos = list_create();
-    pcb->socket_consola = socket_consola;
-    pcb->recursos_asignados = list_create();
-
-    
-    pcb -> tabla_segmentos = solicitar_tabla_segmentos(logger_kernel_extra, IP_MEMORIA, PUERTO_MEMORIA, pcb->pid);
-
-    return pcb;
-}
-
 void destroy_pcb(void* element) {
   t_pcb* pcb = (t_pcb*)element;
   
@@ -105,7 +65,7 @@ void imprimir_pcb(t_pcb *pcb)
 
 void inicializar_loggers_kernel()
 {
-    logger_kernel_extra = log_create("./log/kernel_extra.log", "KERNEL_EXTRA", false, LOG_LEVEL_INFO);
+    logger_kernel_extra = log_create("./log/kernel_extra.log", "KERNEL_EXTRA", true, LOG_LEVEL_INFO);
     logger_kernel = log_create("./log/kernel.log", "KERNEL", true, LOG_LEVEL_INFO);
 }
 

@@ -104,6 +104,9 @@ extern char *ALGORITMO_PLANIFICACION;
 extern char** RECURSOS_EXISTENTES;
 extern char** INSTANCIAS_RECURSOS;
 extern double HRRN_ALFA;
+extern int socket_cpu;
+extern int socket_memoria;
+extern int socket_filesystem;
 
 void inicializar_loggers_kernel(); // crea loggers (oficial y extra)
 void levantar_config_kernel();     // setea todas las variables globales de configuracion
@@ -123,7 +126,6 @@ void imprimir_lista_recursos(t_list* lista);
 
 t_recurso* buscar_recurso_por_nombre(char* nombre_deseado);
 
-t_pcb *crear_pcb(t_list *instrucciones, int socket_consola); // Recibe lista de instrucciones y crea pcb
 int recurso_asignado(t_pcb* proceso, char* nombre_recurso);
 void destroy_t_asig_r(void* element);
 bool segmento_activo(t_ent_ts *seg);

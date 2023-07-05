@@ -71,23 +71,27 @@ int main(int argc, char **argv)
 		inicializar_semaforos();
 		next_pid = 1; // Primer PID del sistema sera el '1'
 
+		socket_cpu = crear_conexion(logger_kernel_extra, IP_CPU, PUERTO_CPU);
+		socket_memoria = crear_conexion(logger_kernel_extra, IP_MEMORIA, PUERTO_MEMORIA);
+		socket_filesystem = crear_conexion(logger_kernel_extra, IP_FILESYSTEM, PUERTO_FILESYSTEM);
+
 		//*********************
 		// HANDSHAKE - FILESYSTEM
-		if (realizar_handshake(logger_kernel_extra, IP_FILESYSTEM, PUERTO_FILESYSTEM, HANDSHAKE_KERNEL, "Filesystem") == -1)
+		if (realizar_handshake(logger_kernel_extra, socket_filesystem, HANDSHAKE_KERNEL) == -1)
 		{
 			return EXIT_FAILURE;
 		}
 
 		//*********************
 		// HANDSHAKE - CPU
-		if (realizar_handshake(logger_kernel_extra, IP_CPU, PUERTO_CPU, HANDSHAKE_KERNEL, "CPU") == -1)
+		if (realizar_handshake(logger_kernel_extra, socket_cpu, HANDSHAKE_KERNEL) == -1)
 		{
 			return EXIT_FAILURE;
 		}
 
 		//*********************
 		// HANDSHAKE - MEMORIA
-		if (realizar_handshake(logger_kernel_extra, IP_MEMORIA, PUERTO_MEMORIA, HANDSHAKE_KERNEL, "Memoria") == -1)
+		if (realizar_handshake(logger_kernel_extra, socket_memoria, HANDSHAKE_KERNEL) == -1)
 		{
 			return EXIT_FAILURE;
 		}

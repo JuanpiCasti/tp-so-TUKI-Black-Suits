@@ -22,13 +22,6 @@ int main(int argc, char **argv)
         char *puerto_kernel = config_get_string_value(config_consola, "PUERTO_KERNEL");
 
         //*********************
-        // HANDSHAKE - KERNEL
-        if (realizar_handshake(logger_consola, ip_kernel, puerto_kernel, HANDSHAKE_CONSOLA, "Kernel") == -1)
-        {
-            return EXIT_FAILURE;
-        }
-
-        //*********************
         // SEND - INSTRUCCIONES
         int socket_kernel = enviar_instrucciones(logger_consola, ip_kernel, puerto_kernel, argv[2]);
         cod_op_kernel resultado = recibir_resultado(socket_kernel);

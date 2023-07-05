@@ -130,7 +130,7 @@ void devolver_contexto(int cliente_socket, cod_op_kernel cop)
                           tamanio_contexto;       // Program Counter
 
     void *buffer = malloc(
-        tamanio_paquete // Program Counter
+        tamanio_paquete
     );
 
     serializar_contexto(buffer, cop, tamanio_contexto);

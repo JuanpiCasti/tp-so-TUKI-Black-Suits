@@ -71,6 +71,46 @@ t_list *recv_instrucciones(t_log *logger, int cliente_socket)
     return instrucciones;
 }
 
+t_pcb *crear_pcb(t_list *instrucciones, int socket_consola)
+{
+    t_pcb *pcb = malloc(sizeof(t_pcb));
+
+    pthread_mutex_lock(&mutex_next_pid);
+    pcb->pid = next_pid;
+    next_pid++;
+    pthread_mutex_unlock(&mutex_next_pid);
+
+    pcb->instrucciones = instrucciones;
+    pcb->program_counter = 0;
+
+    t_registros_cpu *registros_cpu = malloc(sizeof(t_registros_cpu));
+    memset(registros_cpu->AX, 0, sizeof(registros_cpu->AX));
+    memset(registros_cpu->BX, 0, sizeof(registros_cpu->BX));
+    memset(registros_cpu->CX, 0, sizeof(registros_cpu->CX));
+    memset(registros_cpu->DX, 0, sizeof(registros_cpu->DX));
+    memset(registros_cpu->EAX, 0, sizeof(registros_cpu->EAX));
+    memset(registros_cpu->EBX, 0, sizeof(registros_cpu->EBX));
+    memset(registros_cpu->ECX, 0, sizeof(registros_cpu->ECX));
+    memset(registros_cpu->EDX, 0, sizeof(registros_cpu->EDX));
+    memset(registros_cpu->RAX, 0, sizeof(registros_cpu->RAX));
+    memset(registros_cpu->RBX, 0, sizeof(registros_cpu->RBX));
+    memset(registros_cpu->RCX, 0, sizeof(registros_cpu->RCX));
+    memset(registros_cpu->RDX, 0, sizeof(registros_cpu->RDX));
+    pcb->registros_cpu = registros_cpu;
+
+    pcb->estimado_HRRN = ESTIMACION_INICIAL / 1000;
+    pcb->llegada_ready = 0;
+    pcb->ultima_rafaga = 0;
+    pcb->archivos_abiertos = list_create();
+    pcb->socket_consola = socket_consola;
+    pcb->recursos_asignados = list_create();
+
+    
+    pcb -> tabla_segmentos = solicitar_tabla_segmentos(logger_kernel_extra, IP_MEMORIA, PUERTO_MEMORIA, pcb->pid);
+
+    return pcb;
+}
+
 void *serializar_contexto_pcb(t_pcb *pcb, uint32_t tam_contexto)
 {
     // Se envia:
@@ -176,16 +216,16 @@ void deserializar_contexto_pcb(void *buffer, t_pcb *pcb)
 
 }
 
-int mandar_a_cpu(t_pcb *pcb, uint32_t tam_contexto)
+void mandar_a_cpu(t_pcb *pcb, uint32_t tam_contexto)
 {
-    int socket_cpu = crear_conexion(logger_kernel_extra, IP_CPU, PUERTO_CPU);
+    //int socket_cpu = crear_conexion(logger_kernel_extra, IP_CPU, PUERTO_CPU);
 
-    uint32_t tam_paquete = tam_contexto + sizeof(uint32_t) + sizeof(cod_op);
+    uint32_t tam_paquete = tam_contexto + sizeof(cod_op) + sizeof(uint32_t);
     void *buffer = serializar_contexto_pcb(pcb, tam_contexto);
 
     send(socket_cpu, buffer, tam_paquete, NULL);
     free(buffer);
-    return socket_cpu;
+    //return socket_cpu;
 }
 
 void *recibir_nuevo_contexto(int socket_cpu, cod_op_kernel *cop)
@@ -199,7 +239,7 @@ void *recibir_nuevo_contexto(int socket_cpu, cod_op_kernel *cop)
     recv(socket_cpu, buffer, size, NULL);
     
 
-    close(socket_cpu);
+    //close(socket_cpu);
     return buffer;
 }
 
@@ -218,6 +258,55 @@ t_pcb* buscar_proceso_en_memoria(uint32_t pid) {
             return pcb;
         }
     }
+}
+
+t_list* deserializar_tabla_segmentos(void* buffer, uint32_t size) {
+    t_list* tabla = list_create();
+    uint32_t despl = 0;
+
+    t_ent_ts* entrada;
+    
+    for (int i = 0; i < size; i++)
+    {
+
+        entrada = malloc(sizeof(t_ent_ts));
+
+        memcpy(&entrada->id_seg, buffer + despl, sizeof(uint32_t));
+        despl += sizeof(uint32_t);
+
+        memcpy(&entrada->base, buffer + despl, sizeof(uint32_t));
+        despl += sizeof(uint32_t);
+
+        memcpy(&entrada->tam, buffer + despl, sizeof(uint32_t));
+        despl += sizeof(uint32_t);
+
+        memcpy(&entrada->activo, buffer + despl, sizeof(uint8_t));
+        despl += sizeof(uint8_t);
+
+        list_add(tabla, entrada);
+
+    }
+    return tabla;
+}
+
+t_list* solicitar_tabla_segmentos(t_log* logger, char* ip, char* puerto, uint32_t pid) {
+    cod_op cod = CREATE_SEGTABLE;
+	void* buffer_pid = malloc(sizeof(cod_op) + sizeof(uint32_t));
+
+	memcpy(buffer_pid, &cod, sizeof(cod_op));
+	memcpy(buffer_pid + sizeof(cod_op), &pid, sizeof(uint32_t));
+
+    send(socket_memoria, buffer_pid, sizeof(cod_op) + sizeof(uint32_t), NULL);
+	free(buffer_pid);
+    uint32_t size;
+    recv(socket_memoria, &size, sizeof(uint32_t), NULL);
+
+    void* buffer = malloc(size * sizeof(t_ent_ts));
+    recv(socket_memoria, buffer, size * sizeof(t_ent_ts), NULL);
+
+    t_list* tabla = deserializar_tabla_segmentos(buffer, size);
+    free(buffer);
+    return tabla;
 }
 
 void recibir_nuevas_bases(int socket_memoria) {
@@ -258,9 +347,10 @@ void recibir_nuevas_bases(int socket_memoria) {
 }
 
 void solicitar_compactacion() {
-    int socket_memoria = crear_conexion(logger_kernel_extra, IP_MEMORIA, PUERTO_MEMORIA);
+
     cod_op cop = COMPACTAR;
     send(socket_memoria, &cop, sizeof(cod_op_kernel), NULL);
     recibir_nuevas_bases(socket_memoria);
-    close(socket_memoria);
+
 }
+

@@ -31,7 +31,7 @@ void inicializar_registros()
 
 void levantar_loggers_cpu()
 {
-    logger_cpu_extra = log_create("./log/cpu_extra.log", "CPU", false, LOG_LEVEL_INFO);
+    logger_cpu_extra = log_create("./log/cpu_extra.log", "CPU", true, LOG_LEVEL_INFO);
     logger_cpu = log_create("./log/cpu.log", "CPU", true, LOG_LEVEL_INFO);
 }
 
@@ -280,7 +280,7 @@ int ejecutar_mov_in(char* registro, uint32_t direccion_logica, uint32_t tam_regi
         return -1;
     }
 
-    int socket_memoria = crear_conexion(logger_cpu_extra, IP_MEMORIA, PUERTO_MEMORIA);
+    
     
     void* buffer = malloc(sizeof(cod_op) + sizeof(uint32_t) *3);
     int despl = 0;
@@ -302,7 +302,7 @@ int ejecutar_mov_in(char* registro, uint32_t direccion_logica, uint32_t tam_regi
     recv(socket_memoria, valor, tam_registro, NULL);
     strncpy(registro, valor, tam_registro);
     //imprimir_contexto_actual();
-    close(socket_memoria);
+
     char* valor_parseado = imprimir_cadena(valor, tam_registro);
     log_info(logger_cpu, "PID: %d - Acción: LEER - Segmento: %d - Dirección Física: %d - Valor: %s", PID_RUNNING, direccion_logica/  TAM_MAX_SEGMENTO, direccion_fisica, valor_parseado);
     free(valor);
@@ -321,7 +321,7 @@ int ejecutar_mov_out(uint32_t direccion_logica, char* registro, uint32_t tam_reg
     {
         return -1;
     }
-    int socket_memoria = crear_conexion(logger_cpu_extra, IP_MEMORIA, PUERTO_MEMORIA);
+    
     
     void* buffer = malloc(tam_buffer);
     int despl = 0;
@@ -340,7 +340,7 @@ int ejecutar_mov_out(uint32_t direccion_logica, char* registro, uint32_t tam_reg
 
     send(socket_memoria, buffer, tam_buffer, NULL);
     free(buffer);
-    close(socket_memoria);
+
     char* valor_parseado = imprimir_cadena(registro, tam_registro);
     log_info(logger_cpu, "PID: %d - Acción: ESCRIBIR - Segmento: %d - Dirección Física: %d - Valor: %s", PID_RUNNING, direccion_logica/  TAM_MAX_SEGMENTO, direccion_fisica, valor_parseado);
     free(valor_parseado);
