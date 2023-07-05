@@ -155,8 +155,10 @@ void procesar_conexion(void *void_args)
 
             escribir(dir_fisica, valor, tam_escrito);
             log_info(logger_memoria, "PID: %d - Acción: ESCRIBIR - Dirección física: %d - Tamaño: %d - Origen: CPU", pid_mov_out, dir_fisica, tam_escrito);
+            sleep(RETARDO_MEMORIA/1000);
             free(valor);
-
+            uint32_t mov_out_ok = 1;
+            send(cliente_socket, &mov_out_ok, sizeof(uint32_t), NULL);
             //char* cosita = leer(dir_fisica, tam_escrito);
             break;
         case MEMORIA_MOV_IN:

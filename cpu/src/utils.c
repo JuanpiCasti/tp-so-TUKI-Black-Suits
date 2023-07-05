@@ -340,10 +340,15 @@ int ejecutar_mov_out(uint32_t direccion_logica, char* registro, uint32_t tam_reg
 
     send(socket_memoria, buffer, tam_buffer, NULL);
     free(buffer);
+    
+    uint32_t mov_out_ok;
+    recv(socket_memoria, &mov_out_ok, sizeof(uint32_t), NULL);
 
     char* valor_parseado = imprimir_cadena(registro, tam_registro);
     log_info(logger_cpu, "PID: %d - Acción: ESCRIBIR - Segmento: %d - Dirección Física: %d - Valor: %s", PID_RUNNING, direccion_logica/  TAM_MAX_SEGMENTO, direccion_fisica, valor_parseado);
     free(valor_parseado);
+
+
     return 0;
     
 }

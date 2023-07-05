@@ -299,3 +299,92 @@
 [INFO] 23:27:29:046 CPU/(25567:28294): PID: 2 - Ejecutando: WAIT - arg1: IMPRESORA, arg2: , arg3: 
 [INFO] 23:27:29:464 CPU/(25567:28294): PID: 3 - Ejecutando: WAIT - arg1: SCANNER, arg2: , arg3: 
 [INFO] 23:27:29:962 CPU/(25567:28294): PID: 4 - Ejecutando: WAIT - arg1: DISCO, arg2: , arg3: 
+[INFO] 23:30:15:392 CPU/(30371:30515): PID: 1 - Ejecutando: WAIT - arg1: DISCO, arg2: , arg3: 
+[INFO] 23:30:15:392 CPU/(30371:30515): PID: 1 - Ejecutando: I/O - arg1: 10, arg2: , arg3: 
+[INFO] 23:30:15:892 CPU/(30371:30515): PID: 2 - Ejecutando: WAIT - arg1: IMPRESORA, arg2: , arg3: 
+[INFO] 23:30:15:892 CPU/(30371:30515): PID: 2 - Ejecutando: I/O - arg1: 10, arg2: , arg3: 
+[INFO] 23:30:16:426 CPU/(30371:30515): PID: 3 - Ejecutando: WAIT - arg1: SCANNER, arg2: , arg3: 
+[INFO] 23:30:16:426 CPU/(30371:30515): PID: 3 - Ejecutando: I/O - arg1: 10, arg2: , arg3: 
+[INFO] 23:30:25:393 CPU/(30371:30515): PID: 1 - Ejecutando: WAIT - arg1: IMPRESORA, arg2: , arg3: 
+[INFO] 23:30:25:892 CPU/(30371:30515): PID: 2 - Ejecutando: WAIT - arg1: SCANNER, arg2: , arg3: 
+[INFO] 23:30:26:426 CPU/(30371:30515): PID: 3 - Ejecutando: WAIT - arg1: DISCO, arg2: , arg3: 
+[INFO] 00:41:17:885 CPU/(3875:3983): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 00:41:17:886 CPU/(3875:3983): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 150, arg3: 
+[INFO] 00:41:17:886 CPU/(3875:3983): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 100, arg3: 
+[INFO] 00:41:17:886 CPU/(3875:3983): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 150, arg3: 
+[INFO] 00:41:17:886 CPU/(3875:3983): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 100, arg3: 
+[INFO] 00:41:17:886 CPU/(3875:3983): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 00:41:18:886 CPU/(3875:3983): PID: 1 - Ejecutando: MOV_OUT - arg1: 300, arg2: EAX, arg3: 
+[INFO] 00:41:19:886 CPU/(3875:3983): PID: 1 - Acción: ESCRIBIR - Segmento: 2 - Dirección Física: 272 - Valor: AAAAAAAA
+[INFO] 00:41:19:886 CPU/(3875:3983): PID: 1 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[INFO] 00:41:19:887 CPU/(3875:3983): PID: 1 - Ejecutando: DELETE_SEGMENT - arg1: 3, arg2: , arg3: 
+[INFO] 00:41:19:887 CPU/(3875:3983): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: BBBBBBBB, arg3: 
+[INFO] 00:41:20:887 CPU/(3875:3983): PID: 1 - Ejecutando: DELETE_SEGMENT - arg1: 5, arg2: , arg3: 
+[INFO] 00:41:20:887 CPU/(3875:3983): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 3600, arg3: 
+[INFO] 00:41:25:888 CPU/(3875:3983): PID: 1 - Ejecutando: MOV_IN - arg1: EAX, arg2: 300, arg3: 
+[INFO] 00:41:26:888 CPU/(3875:3983): PID: 1 - Acción: LEER - Segmento: 2 - Dirección Física: 172 - Valor: AAAAAAAA
+[INFO] 00:41:26:888 CPU/(3875:3983): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 00:41:47:910 CPU/(3875:3983): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 00:41:47:910 CPU/(3875:3983): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 150, arg3: 
+[INFO] 00:41:47:910 CPU/(3875:3983): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 100, arg3: 
+[INFO] 00:41:47:910 CPU/(3875:3983): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 150, arg3: 
+[INFO] 00:41:47:910 CPU/(3875:3983): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 100, arg3: 
+[INFO] 00:41:47:910 CPU/(3875:3983): PID: 2 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 00:41:48:910 CPU/(3875:3983): PID: 2 - Ejecutando: MOV_OUT - arg1: 300, arg2: EAX, arg3: 
+[INFO] 00:41:49:911 CPU/(3875:3983): PID: 2 - Acción: ESCRIBIR - Segmento: 2 - Dirección Física: 272 - Valor: AAAAAAAA
+[INFO] 00:41:49:911 CPU/(3875:3983): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[INFO] 00:41:49:911 CPU/(3875:3983): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 3, arg2: , arg3: 
+[INFO] 00:41:49:911 CPU/(3875:3983): PID: 2 - Ejecutando: SET - arg1: EAX, arg2: BBBBBBBB, arg3: 
+[INFO] 00:41:50:911 CPU/(3875:3983): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 5, arg2: , arg3: 
+[INFO] 00:41:50:912 CPU/(3875:3983): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 3600, arg3: 
+[INFO] 00:41:55:913 CPU/(3875:3983): PID: 2 - Ejecutando: MOV_IN - arg1: EAX, arg2: 300, arg3: 
+[INFO] 00:41:56:913 CPU/(3875:3983): PID: 2 - Acción: LEER - Segmento: 2 - Dirección Física: 172 - Valor: AAAAAAAA
+[INFO] 00:41:56:913 CPU/(3875:3983): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 00:42:29:165 CPU/(3875:3983): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 00:42:29:165 CPU/(3875:3983): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 150, arg3: 
+[INFO] 00:42:29:165 CPU/(3875:3983): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 100, arg3: 
+[INFO] 00:42:29:166 CPU/(3875:3983): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 150, arg3: 
+[INFO] 00:42:29:166 CPU/(3875:3983): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 100, arg3: 
+[INFO] 00:42:29:166 CPU/(3875:3983): PID: 3 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 00:42:30:166 CPU/(3875:3983): PID: 3 - Ejecutando: MOV_OUT - arg1: 300, arg2: EAX, arg3: 
+[INFO] 00:42:31:166 CPU/(3875:3983): PID: 3 - Acción: ESCRIBIR - Segmento: 2 - Dirección Física: 272 - Valor: AAAAAAAA
+[INFO] 00:42:31:166 CPU/(3875:3983): PID: 3 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[INFO] 00:42:31:166 CPU/(3875:3983): PID: 3 - Ejecutando: DELETE_SEGMENT - arg1: 3, arg2: , arg3: 
+[INFO] 00:42:31:166 CPU/(3875:3983): PID: 3 - Ejecutando: SET - arg1: EAX, arg2: BBBBBBBB, arg3: 
+[INFO] 00:42:32:167 CPU/(3875:3983): PID: 3 - Ejecutando: DELETE_SEGMENT - arg1: 5, arg2: , arg3: 
+[INFO] 00:42:32:167 CPU/(3875:3983): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 3600, arg3: 
+[INFO] 00:42:37:168 CPU/(3875:3983): PID: 3 - Ejecutando: MOV_IN - arg1: EAX, arg2: 300, arg3: 
+[INFO] 00:42:38:168 CPU/(3875:3983): PID: 3 - Acción: LEER - Segmento: 2 - Dirección Física: 172 - Valor: AAAAAAAA
+[INFO] 00:42:38:168 CPU/(3875:3983): PID: 3 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 00:42:54:579 CPU/(3875:3983): PID: 4 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 00:42:54:579 CPU/(3875:3983): PID: 4 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 150, arg3: 
+[INFO] 00:42:54:579 CPU/(3875:3983): PID: 4 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 100, arg3: 
+[INFO] 00:42:54:579 CPU/(3875:3983): PID: 4 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 150, arg3: 
+[INFO] 00:42:54:579 CPU/(3875:3983): PID: 4 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 100, arg3: 
+[INFO] 00:42:54:580 CPU/(3875:3983): PID: 4 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 00:42:55:580 CPU/(3875:3983): PID: 4 - Ejecutando: MOV_OUT - arg1: 300, arg2: EAX, arg3: 
+[INFO] 00:42:56:580 CPU/(3875:3983): PID: 4 - Acción: ESCRIBIR - Segmento: 2 - Dirección Física: 272 - Valor: AAAAAAAA
+[INFO] 00:42:56:580 CPU/(3875:3983): PID: 4 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[INFO] 00:42:56:580 CPU/(3875:3983): PID: 4 - Ejecutando: DELETE_SEGMENT - arg1: 3, arg2: , arg3: 
+[INFO] 00:42:56:581 CPU/(3875:3983): PID: 4 - Ejecutando: SET - arg1: EAX, arg2: BBBBBBBB, arg3: 
+[INFO] 00:42:57:581 CPU/(3875:3983): PID: 4 - Ejecutando: DELETE_SEGMENT - arg1: 5, arg2: , arg3: 
+[INFO] 00:42:57:581 CPU/(3875:3983): PID: 4 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 3600, arg3: 
+[INFO] 00:43:02:582 CPU/(3875:3983): PID: 4 - Ejecutando: MOV_IN - arg1: EAX, arg2: 300, arg3: 
+[INFO] 00:43:03:582 CPU/(3875:3983): PID: 4 - Acción: LEER - Segmento: 2 - Dirección Física: 172 - Valor: AAAAAAAA
+[INFO] 00:43:03:582 CPU/(3875:3983): PID: 4 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 00:43:10:527 CPU/(3875:3983): PID: 5 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 00:43:10:527 CPU/(3875:3983): PID: 5 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 150, arg3: 
+[INFO] 00:43:10:527 CPU/(3875:3983): PID: 5 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 100, arg3: 
+[INFO] 00:43:10:527 CPU/(3875:3983): PID: 5 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 150, arg3: 
+[INFO] 00:43:10:527 CPU/(3875:3983): PID: 5 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 100, arg3: 
+[INFO] 00:43:10:527 CPU/(3875:3983): PID: 5 - Ejecutando: SET - arg1: EAX, arg2: AAAAAAAA, arg3: 
+[INFO] 00:43:11:527 CPU/(3875:3983): PID: 5 - Ejecutando: MOV_OUT - arg1: 300, arg2: EAX, arg3: 
+[INFO] 00:43:12:528 CPU/(3875:3983): PID: 5 - Acción: ESCRIBIR - Segmento: 2 - Dirección Física: 272 - Valor: AAAAAAAA
+[INFO] 00:43:12:528 CPU/(3875:3983): PID: 5 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[INFO] 00:43:12:528 CPU/(3875:3983): PID: 5 - Ejecutando: DELETE_SEGMENT - arg1: 3, arg2: , arg3: 
+[INFO] 00:43:12:528 CPU/(3875:3983): PID: 5 - Ejecutando: SET - arg1: EAX, arg2: BBBBBBBB, arg3: 
+[INFO] 00:43:13:528 CPU/(3875:3983): PID: 5 - Ejecutando: DELETE_SEGMENT - arg1: 5, arg2: , arg3: 
+[INFO] 00:43:13:529 CPU/(3875:3983): PID: 5 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 3600, arg3: 
+[INFO] 00:43:18:530 CPU/(3875:3983): PID: 5 - Ejecutando: MOV_IN - arg1: EAX, arg2: 300, arg3: 
+[INFO] 00:43:19:530 CPU/(3875:3983): PID: 5 - Acción: LEER - Segmento: 2 - Dirección Física: 172 - Valor: AAAAAAAA
+[INFO] 00:43:19:530 CPU/(3875:3983): PID: 5 - Ejecutando: EXIT - arg1: , arg2: , arg3: 

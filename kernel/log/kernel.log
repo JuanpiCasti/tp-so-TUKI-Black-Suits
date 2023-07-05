@@ -17672,3 +17672,138 @@
 [INFO] 23:27:29:962 KERNEL/(28293:28298): PID: 4 - Estado anterior: READY - Estado actual: RUNNING
 [INFO] 23:27:29:962 KERNEL/(28293:28298): PID: 4 - Wait: DISCO - Instancias: -1
 [INFO] 23:27:29:962 KERNEL/(28293:28298): PID: 4 - Bloqueado por: DISCO
+[INFO] 23:30:15:392 KERNEL/(30513:30649): Se crea el proceso 1 en NEW
+[INFO] 23:30:15:392 KERNEL/(30513:30517): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 23:30:15:392 KERNEL/(30513:30517): Cola Ready FIFO: [1]
+[INFO] 23:30:15:392 KERNEL/(30513:30518): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 23:30:15:392 KERNEL/(30513:30518): PID: 1 - Wait: DISCO - Instancias: 0
+[INFO] 23:30:15:392 KERNEL/(30513:30650): PID: 1 - Estado anterior: RUNNING - Estado actual: BLOQUEADO
+[INFO] 23:30:15:392 KERNEL/(30513:30650): PID: 1 - Ejecuta IO: 10
+[INFO] 23:30:15:392 KERNEL/(30513:30650): PID: 1 - Bloqueado por: IO
+[INFO] 23:30:15:892 KERNEL/(30513:30653): Se crea el proceso 2 en NEW
+[INFO] 23:30:15:892 KERNEL/(30513:30517): PID: 2 - Estado anterior: NEW - Estado actual: READY
+[INFO] 23:30:15:892 KERNEL/(30513:30517): Cola Ready FIFO: [2]
+[INFO] 23:30:15:892 KERNEL/(30513:30518): PID: 2 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 23:30:15:892 KERNEL/(30513:30518): PID: 2 - Wait: IMPRESORA - Instancias: 0
+[INFO] 23:30:15:892 KERNEL/(30513:30654): PID: 2 - Estado anterior: RUNNING - Estado actual: BLOQUEADO
+[INFO] 23:30:15:892 KERNEL/(30513:30654): PID: 2 - Ejecuta IO: 10
+[INFO] 23:30:15:892 KERNEL/(30513:30654): PID: 2 - Bloqueado por: IO
+[INFO] 23:30:16:426 KERNEL/(30513:30696): Se crea el proceso 3 en NEW
+[INFO] 23:30:16:426 KERNEL/(30513:30517): PID: 3 - Estado anterior: NEW - Estado actual: READY
+[INFO] 23:30:16:426 KERNEL/(30513:30517): Cola Ready FIFO: [3]
+[INFO] 23:30:16:426 KERNEL/(30513:30518): PID: 3 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 23:30:16:426 KERNEL/(30513:30518): PID: 3 - Wait: SCANNER - Instancias: 0
+[INFO] 23:30:16:426 KERNEL/(30513:30697): PID: 3 - Estado anterior: RUNNING - Estado actual: BLOQUEADO
+[INFO] 23:30:16:426 KERNEL/(30513:30697): PID: 3 - Ejecuta IO: 10
+[INFO] 23:30:16:426 KERNEL/(30513:30697): PID: 3 - Bloqueado por: IO
+[INFO] 23:30:16:884 KERNEL/(30513:30703): Se crea el proceso 4 en NEW
+[INFO] 23:30:25:393 KERNEL/(30513:30650): PID: 1 - Estado anterior: BLOQUEADO - Estado actual: READY
+[INFO] 23:30:25:393 KERNEL/(30513:30650): Cola Ready FIFO: [1]
+[INFO] 23:30:25:393 KERNEL/(30513:30518): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 23:30:25:393 KERNEL/(30513:30518): PID: 1 - Wait: IMPRESORA - Instancias: -1
+[INFO] 23:30:25:393 KERNEL/(30513:30518): PID: 1 - Bloqueado por: IMPRESORA
+[INFO] 23:30:25:892 KERNEL/(30513:30654): PID: 2 - Estado anterior: BLOQUEADO - Estado actual: READY
+[INFO] 23:30:25:892 KERNEL/(30513:30654): Cola Ready FIFO: [2]
+[INFO] 23:30:25:892 KERNEL/(30513:30518): PID: 2 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 23:30:25:892 KERNEL/(30513:30518): PID: 2 - Wait: SCANNER - Instancias: -1
+[INFO] 23:30:25:892 KERNEL/(30513:30518): PID: 2 - Bloqueado por: SCANNER
+[INFO] 23:30:26:426 KERNEL/(30513:30697): PID: 3 - Estado anterior: BLOQUEADO - Estado actual: READY
+[INFO] 23:30:26:426 KERNEL/(30513:30697): Cola Ready FIFO: [3]
+[INFO] 23:30:26:426 KERNEL/(30513:30518): PID: 3 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 23:30:26:426 KERNEL/(30513:30518): PID: 3 - Wait: DISCO - Instancias: -1
+[INFO] 23:30:26:426 KERNEL/(30513:30518): PID: 3 - Bloqueado por: DISCO
+[INFO] 00:41:17:884 KERNEL/(3982:4154): Se crea el proceso 1 en NEW
+[INFO] 00:41:17:885 KERNEL/(3982:3986): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 00:41:17:885 KERNEL/(3982:3986): Cola Ready FIFO: [1]
+[INFO] 00:41:17:885 KERNEL/(3982:3987): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 00:41:17:886 KERNEL/(3982:3987): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 00:41:17:886 KERNEL/(3982:3987): PID: 1 - Crear Segmento - Id: 2 - Tamaño: 150
+[INFO] 00:41:17:886 KERNEL/(3982:3987): PID: 1 - Crear Segmento - Id: 3 - Tamaño: 100
+[INFO] 00:41:17:886 KERNEL/(3982:3987): PID: 1 - Crear Segmento - Id: 4 - Tamaño: 150
+[INFO] 00:41:17:886 KERNEL/(3982:3987): PID: 1 - Crear Segmento - Id: 5 - Tamaño: 100
+[INFO] 00:41:19:887 KERNEL/(3982:3987): PID: 1 - Eliminar Segmento - Id: 1 - Tamaño: 100
+[INFO] 00:41:19:887 KERNEL/(3982:3987): PID: 1 - Eliminar Segmento - Id: 3 - Tamaño: 100
+[INFO] 00:41:20:887 KERNEL/(3982:3987): PID: 1 - Eliminar Segmento - Id: 5 - Tamaño: 100
+[INFO] 00:41:20:887 KERNEL/(3982:3987): La memoria necesita ser compactada!!
+[INFO] 00:41:25:888 KERNEL/(3982:3987): PID: 1 - Crear Segmento - Id: 6 - Tamaño: 3600
+[INFO] 00:41:26:888 KERNEL/(3982:3987): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 00:41:26:888 KERNEL/(3982:3987): PID: 1 - Eliminar Segmento - Id: 2 - Tamaño: 150
+[INFO] 00:41:26:888 KERNEL/(3982:3987): PID: 1 - Eliminar Segmento - Id: 4 - Tamaño: 150
+[INFO] 00:41:26:888 KERNEL/(3982:3987): PID: 1 - Eliminar Segmento - Id: 6 - Tamaño: 3600
+[INFO] 00:41:26:888 KERNEL/(3982:3987): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 00:41:47:910 KERNEL/(3982:4345): Se crea el proceso 2 en NEW
+[INFO] 00:41:47:910 KERNEL/(3982:3986): PID: 2 - Estado anterior: NEW - Estado actual: READY
+[INFO] 00:41:47:910 KERNEL/(3982:3986): Cola Ready FIFO: [2]
+[INFO] 00:41:47:910 KERNEL/(3982:3987): PID: 2 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 00:41:47:910 KERNEL/(3982:3987): PID: 2 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 00:41:47:910 KERNEL/(3982:3987): PID: 2 - Crear Segmento - Id: 2 - Tamaño: 150
+[INFO] 00:41:47:910 KERNEL/(3982:3987): PID: 2 - Crear Segmento - Id: 3 - Tamaño: 100
+[INFO] 00:41:47:910 KERNEL/(3982:3987): PID: 2 - Crear Segmento - Id: 4 - Tamaño: 150
+[INFO] 00:41:47:910 KERNEL/(3982:3987): PID: 2 - Crear Segmento - Id: 5 - Tamaño: 100
+[INFO] 00:41:49:911 KERNEL/(3982:3987): PID: 2 - Eliminar Segmento - Id: 1 - Tamaño: 100
+[INFO] 00:41:49:911 KERNEL/(3982:3987): PID: 2 - Eliminar Segmento - Id: 3 - Tamaño: 100
+[INFO] 00:41:50:912 KERNEL/(3982:3987): PID: 2 - Eliminar Segmento - Id: 5 - Tamaño: 100
+[INFO] 00:41:50:912 KERNEL/(3982:3987): La memoria necesita ser compactada!!
+[INFO] 00:41:55:913 KERNEL/(3982:3987): PID: 2 - Crear Segmento - Id: 6 - Tamaño: 3600
+[INFO] 00:41:56:913 KERNEL/(3982:3987): PID: 2 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 00:41:56:913 KERNEL/(3982:3987): PID: 2 - Eliminar Segmento - Id: 2 - Tamaño: 150
+[INFO] 00:41:56:913 KERNEL/(3982:3987): PID: 2 - Eliminar Segmento - Id: 4 - Tamaño: 150
+[INFO] 00:41:56:913 KERNEL/(3982:3987): PID: 2 - Eliminar Segmento - Id: 6 - Tamaño: 3600
+[INFO] 00:41:56:913 KERNEL/(3982:3987): Finaliza el proceso 2 - Motivo: SUCCESS
+[INFO] 00:42:29:165 KERNEL/(3982:4596): Se crea el proceso 3 en NEW
+[INFO] 00:42:29:165 KERNEL/(3982:3986): PID: 3 - Estado anterior: NEW - Estado actual: READY
+[INFO] 00:42:29:165 KERNEL/(3982:3986): Cola Ready FIFO: [3]
+[INFO] 00:42:29:165 KERNEL/(3982:3987): PID: 3 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 00:42:29:165 KERNEL/(3982:3987): PID: 3 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 00:42:29:165 KERNEL/(3982:3987): PID: 3 - Crear Segmento - Id: 2 - Tamaño: 150
+[INFO] 00:42:29:166 KERNEL/(3982:3987): PID: 3 - Crear Segmento - Id: 3 - Tamaño: 100
+[INFO] 00:42:29:166 KERNEL/(3982:3987): PID: 3 - Crear Segmento - Id: 4 - Tamaño: 150
+[INFO] 00:42:29:166 KERNEL/(3982:3987): PID: 3 - Crear Segmento - Id: 5 - Tamaño: 100
+[INFO] 00:42:31:166 KERNEL/(3982:3987): PID: 3 - Eliminar Segmento - Id: 1 - Tamaño: 100
+[INFO] 00:42:31:166 KERNEL/(3982:3987): PID: 3 - Eliminar Segmento - Id: 3 - Tamaño: 100
+[INFO] 00:42:32:167 KERNEL/(3982:3987): PID: 3 - Eliminar Segmento - Id: 5 - Tamaño: 100
+[INFO] 00:42:32:167 KERNEL/(3982:3987): La memoria necesita ser compactada!!
+[INFO] 00:42:37:168 KERNEL/(3982:3987): PID: 3 - Crear Segmento - Id: 6 - Tamaño: 3600
+[INFO] 00:42:38:168 KERNEL/(3982:3987): PID: 3 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 00:42:38:168 KERNEL/(3982:3987): PID: 3 - Eliminar Segmento - Id: 2 - Tamaño: 150
+[INFO] 00:42:38:168 KERNEL/(3982:3987): PID: 3 - Eliminar Segmento - Id: 4 - Tamaño: 150
+[INFO] 00:42:38:168 KERNEL/(3982:3987): PID: 3 - Eliminar Segmento - Id: 6 - Tamaño: 3600
+[INFO] 00:42:38:168 KERNEL/(3982:3987): Finaliza el proceso 3 - Motivo: SUCCESS
+[INFO] 00:42:54:579 KERNEL/(3982:4788): Se crea el proceso 4 en NEW
+[INFO] 00:42:54:579 KERNEL/(3982:3986): PID: 4 - Estado anterior: NEW - Estado actual: READY
+[INFO] 00:42:54:579 KERNEL/(3982:3986): Cola Ready FIFO: [4]
+[INFO] 00:42:54:579 KERNEL/(3982:3987): PID: 4 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 00:42:54:579 KERNEL/(3982:3987): PID: 4 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 00:42:54:579 KERNEL/(3982:3987): PID: 4 - Crear Segmento - Id: 2 - Tamaño: 150
+[INFO] 00:42:54:579 KERNEL/(3982:3987): PID: 4 - Crear Segmento - Id: 3 - Tamaño: 100
+[INFO] 00:42:54:579 KERNEL/(3982:3987): PID: 4 - Crear Segmento - Id: 4 - Tamaño: 150
+[INFO] 00:42:54:580 KERNEL/(3982:3987): PID: 4 - Crear Segmento - Id: 5 - Tamaño: 100
+[INFO] 00:42:56:580 KERNEL/(3982:3987): PID: 4 - Eliminar Segmento - Id: 1 - Tamaño: 100
+[INFO] 00:42:56:580 KERNEL/(3982:3987): PID: 4 - Eliminar Segmento - Id: 3 - Tamaño: 100
+[INFO] 00:42:57:581 KERNEL/(3982:3987): PID: 4 - Eliminar Segmento - Id: 5 - Tamaño: 100
+[INFO] 00:42:57:581 KERNEL/(3982:3987): La memoria necesita ser compactada!!
+[INFO] 00:43:02:582 KERNEL/(3982:3987): PID: 4 - Crear Segmento - Id: 6 - Tamaño: 3600
+[INFO] 00:43:03:582 KERNEL/(3982:3987): PID: 4 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 00:43:03:582 KERNEL/(3982:3987): PID: 4 - Eliminar Segmento - Id: 2 - Tamaño: 150
+[INFO] 00:43:03:582 KERNEL/(3982:3987): PID: 4 - Eliminar Segmento - Id: 4 - Tamaño: 150
+[INFO] 00:43:03:582 KERNEL/(3982:3987): PID: 4 - Eliminar Segmento - Id: 6 - Tamaño: 3600
+[INFO] 00:43:03:583 KERNEL/(3982:3987): Finaliza el proceso 4 - Motivo: SUCCESS
+[INFO] 00:43:10:527 KERNEL/(3982:4966): Se crea el proceso 5 en NEW
+[INFO] 00:43:10:527 KERNEL/(3982:3986): PID: 5 - Estado anterior: NEW - Estado actual: READY
+[INFO] 00:43:10:527 KERNEL/(3982:3986): Cola Ready FIFO: [5]
+[INFO] 00:43:10:527 KERNEL/(3982:3987): PID: 5 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 00:43:10:527 KERNEL/(3982:3987): PID: 5 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 00:43:10:527 KERNEL/(3982:3987): PID: 5 - Crear Segmento - Id: 2 - Tamaño: 150
+[INFO] 00:43:10:527 KERNEL/(3982:3987): PID: 5 - Crear Segmento - Id: 3 - Tamaño: 100
+[INFO] 00:43:10:527 KERNEL/(3982:3987): PID: 5 - Crear Segmento - Id: 4 - Tamaño: 150
+[INFO] 00:43:10:527 KERNEL/(3982:3987): PID: 5 - Crear Segmento - Id: 5 - Tamaño: 100
+[INFO] 00:43:12:528 KERNEL/(3982:3987): PID: 5 - Eliminar Segmento - Id: 1 - Tamaño: 100
+[INFO] 00:43:12:528 KERNEL/(3982:3987): PID: 5 - Eliminar Segmento - Id: 3 - Tamaño: 100
+[INFO] 00:43:13:529 KERNEL/(3982:3987): PID: 5 - Eliminar Segmento - Id: 5 - Tamaño: 100
+[INFO] 00:43:13:529 KERNEL/(3982:3987): La memoria necesita ser compactada!!
+[INFO] 00:43:18:529 KERNEL/(3982:3987): PID: 5 - Crear Segmento - Id: 6 - Tamaño: 3600
+[INFO] 00:43:19:530 KERNEL/(3982:3987): PID: 5 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 00:43:19:530 KERNEL/(3982:3987): PID: 5 - Eliminar Segmento - Id: 2 - Tamaño: 150
+[INFO] 00:43:19:530 KERNEL/(3982:3987): PID: 5 - Eliminar Segmento - Id: 4 - Tamaño: 150
+[INFO] 00:43:19:530 KERNEL/(3982:3987): PID: 5 - Eliminar Segmento - Id: 6 - Tamaño: 3600
+[INFO] 00:43:19:530 KERNEL/(3982:3987): Finaliza el proceso 5 - Motivo: SUCCESS
