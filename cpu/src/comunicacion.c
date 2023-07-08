@@ -94,6 +94,22 @@ void serializar_contexto(void *buffer, cod_op_kernel cop, int tamanio_contexto)
         memcpy(buffer + desplazamiento, &num, sizeof(uint32_t));
         desplazamiento += sizeof(uint32_t);
     }
+
+    if (cop == CPU_EFERRID || cop == CPU_EFERRAIT)
+    {
+        t_instruccion* instruccion = list_get(INSTRUCTION_LIST, PROGRAM_COUNTER - 1);
+        char* f_name = instruccion -> arg1;
+        memcpy(buffer + desplazamiento, f_name, sizeof(char[30]));
+        desplazamiento += sizeof(char[30]);
+        uint32_t dir_logica = atoi(instruccion -> arg2);
+        uint32_t cantidad = atoi(instruccion -> arg3);
+        uint32_t dir_fisica = mmu(dir_logica, cantidad);
+        memcpy(buffer + desplazamiento, &dir_fisica, sizeof(uint32_t));
+        desplazamiento += sizeof(uint32_t);
+        memcpy(buffer + desplazamiento, &cantidad, sizeof(uint32_t));
+        desplazamiento += sizeof(uint32_t);
+    }
+    
 }
 
 void devolver_contexto(int cliente_socket, cod_op_kernel cop)
@@ -123,6 +139,11 @@ void devolver_contexto(int cliente_socket, cod_op_kernel cop)
 
     if (cop == CPU_F_SEEK || CPU_F_TRUNCATE) {
         tamanio_contexto += sizeof(char[30]) + sizeof(uint32_t);
+    }
+
+    if (cop == CPU_EFERRAIT || cop == CPU_EFERRID)
+    {
+        tamanio_contexto += sizeof(char[30]) + sizeof(uint32_t) * 2; 
     }
 
     int tamanio_paquete = sizeof(cod_op_kernel) + // Cod OP

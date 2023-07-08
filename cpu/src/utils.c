@@ -202,6 +202,10 @@ as_instruction decode(t_instruccion *instruccion)
     }
     else if (strcmp(instruccion->instruccion, "F_TRUNCATE") == 0) {
         return F_TRUNCATE;
+    } else if (strcmp(instruccion->instruccion, "F_READ") == 0) {
+        return EFERRID;
+    } else if (strcmp(instruccion->instruccion, "F_WRITE") == 0) {
+        return EFERRAIT;
     }
     else
     {
@@ -467,6 +471,10 @@ cod_op_kernel ejecutar_instrucciones()
             return CPU_F_SEEK;
         case F_TRUNCATE:
             return CPU_F_TRUNCATE;
+        case EFERRID:
+            return CPU_EFERRID;
+        case EFERRAIT:
+            return CPU_EFERRAIT;
         default:
             break;
         }

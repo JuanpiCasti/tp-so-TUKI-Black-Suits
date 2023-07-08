@@ -62,8 +62,8 @@ int run_tests()
     // escribir_archivo("elpicante", 64, 64, "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
     // escribir_archivo("elpapu", 64, 64, "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
     // escribir_archivo("elpicante", 128, 64, "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
-    eferrait("elpicante", 50, 43, "hola papu, como andas? espero que muy bien!");
-    char* cadena_rescatada = eferrid("elpicante", 50, 43);
-    char* cadena_parseada = imprimir_cadena(cadena_rescatada, 43);
-    printf("%s\n", cadena_parseada);
+    eferrait("elpapu", 100, 10, "hola papu,");
+    // char* cadena_rescatada = eferrid("elpicante", 50, 43);
+    // char* cadena_parseada = imprimir_cadena(cadena_rescatada, 43);
+    // printf("%s\n", cadena_parseada);
 }

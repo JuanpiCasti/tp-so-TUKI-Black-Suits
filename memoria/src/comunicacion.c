@@ -179,7 +179,33 @@ void procesar_conexion(void *void_args)
             compactar();
             devolver_nuevas_bases(cliente_socket);
             break;
+        
+        case LEER_ARCHIVO:
+            uint32_t pid_leer_archivo;
+            uint32_t dir_fisica_leer_archivo;
+            uint32_t tam_a_leer_archivo;
+            recv(cliente_socket, &pid_leer_archivo, sizeof(uint32_t), NULL);
+            recv(cliente_socket, &dir_fisica_leer_archivo, sizeof(uint32_t), NULL);
+            recv(cliente_socket, &tam_a_leer_archivo, sizeof(uint32_t), NULL);
+            char* valor_leer_archivo = malloc(tam_a_leer_archivo);
+            recv(cliente_socket, valor_leer_archivo, tam_a_leer_archivo, NULL);
+            escribir(dir_fisica_leer_archivo, valor_leer_archivo, tam_a_leer_archivo);
+            uint32_t escritura_ok = 0;
+            send(cliente_socket, &escritura_ok, sizeof(uint32_t), NULL);
 
+            break;
+
+        case ESCRIBIR_ARCHIVO:
+            uint32_t pid_escribir_archivo;
+            uint32_t dir_fisica_escribir_archivo;
+            uint32_t tam_a_escribir_archivo;
+            recv(cliente_socket, &pid_escribir_archivo, sizeof(uint32_t), NULL);
+            recv(cliente_socket, &dir_fisica_escribir_archivo, sizeof(uint32_t), NULL);
+            recv(cliente_socket, &tam_a_escribir_archivo, sizeof(uint32_t), NULL);
+            char* valor_escribir_archivo = leer(dir_fisica_escribir_archivo, tam_a_escribir_archivo);
+            send(cliente_socket, valor_escribir_archivo, tam_a_escribir_archivo, NULL);
+            free(valor_escribir_archivo);
+            break;
         default:
             log_error(logger, "Algo anduvo mal en el server Memoria");
             log_info(logger, "Cop: %d", cop);

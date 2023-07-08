@@ -495,3 +495,206 @@
 [INFO] 13:22:56:937 CPU/(4308:5265): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
 [INFO] 13:22:56:938 CPU/(4308:5265): PID: 3 - Ejecutando: SET - arg1: RAX, arg2: ARGENTINACAMPEON, arg3: 
 [INFO] 13:22:57:938 CPU/(4308:5265): PID: 3 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 18:15:11:071 CPU/(7586:7591): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 18:15:11:071 CPU/(7586:7591): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 18:15:11:071 CPU/(7586:7591): PID: 1 - Ejecutando: F_SEEK - arg1: 100, arg2: , arg3: 
+[INFO] 18:15:11:071 CPU/(7586:7591): PID: 1 - Ejecutando: F_READ - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 18:17:15:708 CPU/(7586:7808): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 18:17:15:709 CPU/(7586:7808): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 18:17:15:709 CPU/(7586:7808): PID: 1 - Ejecutando: F_SEEK - arg1: 100, arg2: , arg3: 
+[INFO] 18:17:15:709 CPU/(7586:7808): PID: 1 - Ejecutando: F_READ - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 18:18:11:910 CPU/(7878:7913): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 18:18:11:910 CPU/(7878:7913): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 18:18:11:910 CPU/(7878:7913): PID: 1 - Ejecutando: F_SEEK - arg1: 100, arg2: , arg3: 
+[INFO] 18:18:11:910 CPU/(7878:7913): PID: 1 - Ejecutando: F_READ - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 18:20:10:960 CPU/(7972:8184): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 18:20:10:960 CPU/(7972:8184): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 18:20:10:960 CPU/(7972:8184): PID: 1 - Ejecutando: F_SEEK - arg1: 100, arg2: , arg3: 
+[INFO] 18:20:10:960 CPU/(7972:8184): PID: 1 - Ejecutando: F_READ - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 18:22:31:968 CPU/(7972:8184): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 18:24:22:550 CPU/(7972:8903): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 18:24:22:550 CPU/(7972:8903): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 18:24:22:550 CPU/(7972:8903): PID: 1 - Ejecutando: F_SEEK - arg1: 100, arg2: , arg3: 
+[INFO] 18:24:22:550 CPU/(7972:8903): PID: 1 - Ejecutando: F_READ - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 18:25:37:150 CPU/(7972:9150): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 18:25:37:150 CPU/(7972:9150): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 18:25:37:150 CPU/(7972:9150): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 100, arg3: 
+[INFO] 18:25:37:151 CPU/(7972:9150): PID: 1 - Ejecutando: F_READ - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 18:26:00:075 CPU/(7972:9150): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 18:34:13:904 CPU/(11685:11705): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 18:34:13:905 CPU/(11685:11705): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 18:34:13:905 CPU/(11685:11705): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 100, arg3: 
+[INFO] 18:34:13:905 CPU/(11685:11705): PID: 1 - Ejecutando: F_READ - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 18:37:17:223 CPU/(11685:12038): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 18:37:30:303 CPU/(11685:12038): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 18:37:47:370 CPU/(11685:12038): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 100, arg3: 
+[INFO] 18:37:58:029 CPU/(11685:12038): PID: 1 - Ejecutando: F_READ - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 18:41:46:525 CPU/(11685:12863): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 18:41:46:525 CPU/(11685:12863): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 18:41:46:525 CPU/(11685:12863): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 100, arg3: 
+[INFO] 18:41:46:525 CPU/(11685:12863): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 18:41:59:435 CPU/(11685:12863): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 18:41:59:435 CPU/(11685:12863): PID: 2 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 18:42:12:997 CPU/(11685:12863): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 18:42:12:997 CPU/(11685:12863): PID: 3 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 18:42:39:934 CPU/(11685:12863): PID: 4 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 18:42:39:934 CPU/(11685:12863): PID: 4 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 18:44:20:195 CPU/(11685:13344): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 18:44:20:195 CPU/(11685:13344): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 18:44:20:195 CPU/(11685:13344): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 100, arg3: 
+[INFO] 18:44:20:195 CPU/(11685:13344): PID: 1 - Ejecutando: F_CLOSE - arg1: elpapu, arg2: , arg3: 
+[INFO] 18:44:20:195 CPU/(11685:13344): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 18:45:07:625 CPU/(11685:13344): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 18:45:07:625 CPU/(11685:13344): PID: 2 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 18:45:07:625 CPU/(11685:13344): PID: 2 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 100, arg3: 
+[INFO] 18:45:07:625 CPU/(11685:13344): PID: 2 - Ejecutando: F_READ - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 18:49:53:838 CPU/(14183:14261): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 18:49:55:915 CPU/(14183:14261): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 18:49:55:915 CPU/(14183:14261): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 100, arg3: 
+[INFO] 18:49:55:915 CPU/(14183:14261): PID: 1 - Ejecutando: F_READ - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 18:53:03:619 CPU/(14623:14627): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 18:53:03:619 CPU/(14623:14627): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 18:53:03:620 CPU/(14623:14627): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 100, arg3: 
+[INFO] 18:53:03:620 CPU/(14623:14627): PID: 1 - Ejecutando: F_READ - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 18:53:13:620 CPU/(14623:14627): PID: 1 - Ejecutando: MOV_IN - arg1: EAX, arg2: 100, arg3: 
+[INFO] 18:53:14:621 CPU/(14623:14627): PID: 1 - Acción: LEER - Segmento: 0 - Dirección Física: 100 - Valor: 
+[INFO] 18:53:14:621 CPU/(14623:14627): PID: 1 - Ejecutando: F_CLOSE - arg1: elpapu, arg2: , arg3: 
+[INFO] 18:53:14:621 CPU/(14623:14627): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 18:56:47:749 CPU/(15234:15307): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 18:56:48:702 CPU/(15234:15307): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 18:56:48:702 CPU/(15234:15307): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 100, arg3: 
+[INFO] 18:56:48:702 CPU/(15234:15307): PID: 1 - Ejecutando: F_READ - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 18:56:58:702 CPU/(15234:15307): PID: 1 - Ejecutando: MOV_IN - arg1: EAX, arg2: 100, arg3: 
+[INFO] 18:57:15:571 CPU/(15234:15307): PID: 1 - Acción: LEER - Segmento: 0 - Dirección Física: 100 - Valor: ?c????
+[INFO] 18:57:15:571 CPU/(15234:15307): PID: 1 - Ejecutando: F_CLOSE - arg1: elpapu, arg2: , arg3: 
+[INFO] 18:57:15:571 CPU/(15234:15307): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 18:59:04:050 CPU/(15526:15532): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 18:59:04:050 CPU/(15526:15532): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 18:59:04:050 CPU/(15526:15532): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 100, arg3: 
+[INFO] 18:59:04:050 CPU/(15526:15532): PID: 1 - Ejecutando: F_READ - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 18:59:14:050 CPU/(15526:15532): PID: 1 - Ejecutando: MOV_IN - arg1: EAX, arg2: 100, arg3: 
+[INFO] 18:59:15:051 CPU/(15526:15532): PID: 1 - Acción: LEER - Segmento: 0 - Dirección Física: 100 - Valor: 
+[INFO] 18:59:15:051 CPU/(15526:15532): PID: 1 - Ejecutando: F_CLOSE - arg1: elpapu, arg2: , arg3: 
+[INFO] 18:59:15:051 CPU/(15526:15532): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 18:59:50:447 CPU/(15643:15705): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 18:59:52:148 CPU/(15643:15705): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 18:59:52:148 CPU/(15643:15705): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 100, arg3: 
+[INFO] 18:59:52:148 CPU/(15643:15705): PID: 1 - Ejecutando: F_READ - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 19:00:02:149 CPU/(15643:15705): PID: 1 - Ejecutando: MOV_IN - arg1: EAX, arg2: 100, arg3: 
+[INFO] 19:00:28:710 CPU/(15643:15705): PID: 1 - Acción: LEER - Segmento: 0 - Dirección Física: 100 - Valor: ?????~
+[INFO] 19:00:28:711 CPU/(15643:15705): PID: 1 - Ejecutando: F_CLOSE - arg1: elpapu, arg2: , arg3: 
+[INFO] 19:00:28:711 CPU/(15643:15705): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 19:03:23:608 CPU/(16461:16618): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 19:03:24:953 CPU/(16461:16618): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 19:03:24:954 CPU/(16461:16618): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 100, arg3: 
+[INFO] 19:03:24:954 CPU/(16461:16618): PID: 1 - Ejecutando: F_READ - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 19:04:12:806 CPU/(16461:16618): PID: 1 - Ejecutando: MOV_IN - arg1: EAX, arg2: 100, arg3: 
+[INFO] 19:04:53:638 CPU/(16461:16618): PID: 1 - Acción: LEER - Segmento: 0 - Dirección Física: 100 - Valor: ?c?x??
+[INFO] 19:04:53:638 CPU/(16461:16618): PID: 1 - Ejecutando: F_CLOSE - arg1: elpapu, arg2: , arg3: 
+[INFO] 19:04:53:638 CPU/(16461:16618): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 19:08:02:250 CPU/(17778:17847): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 19:08:03:875 CPU/(17778:17847): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 19:08:03:876 CPU/(17778:17847): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 100, arg3: 
+[INFO] 19:08:03:876 CPU/(17778:17847): PID: 1 - Ejecutando: F_READ - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 19:08:27:503 CPU/(17778:17847): PID: 1 - Ejecutando: MOV_IN - arg1: EAX, arg2: 100, arg3: 
+[INFO] 19:08:49:051 CPU/(17778:17847): PID: 1 - Acción: LEER - Segmento: 0 - Dirección Física: 100 - Valor: 
+[INFO] 19:08:49:051 CPU/(17778:17847): PID: 1 - Ejecutando: F_CLOSE - arg1: elpapu, arg2: , arg3: 
+[INFO] 19:08:49:051 CPU/(17778:17847): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 19:11:28:750 CPU/(18715:18793): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 19:11:30:163 CPU/(18715:18793): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 19:11:30:163 CPU/(18715:18793): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 100, arg3: 
+[INFO] 19:11:30:163 CPU/(18715:18793): PID: 1 - Ejecutando: F_READ - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 19:12:53:994 CPU/(18715:18793): PID: 1 - Ejecutando: MOV_IN - arg1: EAX, arg2: 100, arg3: 
+[INFO] 19:13:02:204 CPU/(18715:18793): PID: 1 - Acción: LEER - Segmento: 0 - Dirección Física: 100 - Valor: 
+[INFO] 19:13:02:204 CPU/(18715:18793): PID: 1 - Ejecutando: F_CLOSE - arg1: elpapu, arg2: , arg3: 
+[INFO] 19:13:02:204 CPU/(18715:18793): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 19:14:43:909 CPU/(19433:19440): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 19:14:43:909 CPU/(19433:19440): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 19:14:43:909 CPU/(19433:19440): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 100, arg3: 
+[INFO] 19:14:43:909 CPU/(19433:19440): PID: 1 - Ejecutando: F_READ - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 19:14:53:910 CPU/(19433:19440): PID: 1 - Ejecutando: MOV_IN - arg1: EAX, arg2: 100, arg3: 
+[INFO] 19:14:54:910 CPU/(19433:19440): PID: 1 - Acción: LEER - Segmento: 0 - Dirección Física: 100 - Valor: 
+[INFO] 19:14:54:910 CPU/(19433:19440): PID: 1 - Ejecutando: F_CLOSE - arg1: elpapu, arg2: , arg3: 
+[INFO] 19:14:54:910 CPU/(19433:19440): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 19:17:35:692 CPU/(19903:19908): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 19:17:35:692 CPU/(19903:19908): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 19:17:35:693 CPU/(19903:19908): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 100, arg3: 
+[INFO] 19:17:35:693 CPU/(19903:19908): PID: 1 - Ejecutando: F_READ - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 19:17:45:693 CPU/(19903:19908): PID: 1 - Ejecutando: MOV_IN - arg1: EAX, arg2: 100, arg3: 
+[INFO] 19:17:46:693 CPU/(19903:19908): PID: 1 - Acción: LEER - Segmento: 0 - Dirección Física: 100 - Valor: 
+[INFO] 19:17:46:693 CPU/(19903:19908): PID: 1 - Ejecutando: F_CLOSE - arg1: elpapu, arg2: , arg3: 
+[INFO] 19:17:46:693 CPU/(19903:19908): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 19:20:17:151 CPU/(20208:20214): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 19:20:17:151 CPU/(20208:20214): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 19:20:17:151 CPU/(20208:20214): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 100, arg3: 
+[INFO] 19:20:17:152 CPU/(20208:20214): PID: 1 - Ejecutando: F_READ - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 19:20:27:152 CPU/(20208:20214): PID: 1 - Ejecutando: MOV_IN - arg1: EAX, arg2: 100, arg3: 
+[INFO] 19:20:28:152 CPU/(20208:20214): PID: 1 - Acción: LEER - Segmento: 0 - Dirección Física: 100 - Valor: hola pap
+[INFO] 19:20:28:152 CPU/(20208:20214): PID: 1 - Ejecutando: F_CLOSE - arg1: elpapu, arg2: , arg3: 
+[INFO] 19:20:28:152 CPU/(20208:20214): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 19:20:47:615 CPU/(20208:20214): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 19:20:47:615 CPU/(20208:20214): PID: 2 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 19:20:47:615 CPU/(20208:20214): PID: 2 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 100, arg3: 
+[INFO] 19:20:47:616 CPU/(20208:20214): PID: 2 - Ejecutando: F_READ - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 19:20:57:616 CPU/(20208:20214): PID: 2 - Ejecutando: MOV_IN - arg1: EAX, arg2: 100, arg3: 
+[INFO] 19:20:58:616 CPU/(20208:20214): PID: 2 - Acción: LEER - Segmento: 0 - Dirección Física: 100 - Valor: hola pap
+[INFO] 19:20:58:616 CPU/(20208:20214): PID: 2 - Ejecutando: F_CLOSE - arg1: elpapu, arg2: , arg3: 
+[INFO] 19:20:58:616 CPU/(20208:20214): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 19:37:47:157 CPU/(21837:21843): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 19:37:47:157 CPU/(21837:21843): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: PAPUSOTE, arg3: 
+[INFO] 19:37:48:158 CPU/(21837:21843): PID: 1 - Ejecutando: MOV_OUT - arg1: 100, arg2: EAX, arg3: 
+[INFO] 19:37:49:158 CPU/(21837:21843): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 100 - Valor: PAPUSOTE
+[INFO] 19:37:49:158 CPU/(21837:21843): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 19:37:49:158 CPU/(21837:21843): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 100, arg3: 
+[INFO] 19:37:49:158 CPU/(21837:21843): PID: 1 - Ejecutando: F_WRITE - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 19:42:45:334 CPU/(22425:22429): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 19:42:45:334 CPU/(22425:22429): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: PAPUSOTE, arg3: 
+[INFO] 19:42:46:334 CPU/(22425:22429): PID: 1 - Ejecutando: MOV_OUT - arg1: 100, arg2: EAX, arg3: 
+[INFO] 19:42:47:334 CPU/(22425:22429): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 100 - Valor: PAPUSOTE
+[INFO] 19:42:47:334 CPU/(22425:22429): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 19:42:47:335 CPU/(22425:22429): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 100, arg3: 
+[INFO] 19:42:47:335 CPU/(22425:22429): PID: 1 - Ejecutando: F_WRITE - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 19:46:11:105 CPU/(23596:23681): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 19:46:17:440 CPU/(23596:23681): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: PAPUSOTE, arg3: 
+[INFO] 19:46:18:440 CPU/(23596:23681): PID: 1 - Ejecutando: MOV_OUT - arg1: 100, arg2: EAX, arg3: 
+[INFO] 19:46:45:872 CPU/(23596:23681): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 100 - Valor: PAPUSOTE
+[INFO] 19:46:45:872 CPU/(23596:23681): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 19:46:45:872 CPU/(23596:23681): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 100, arg3: 
+[INFO] 19:46:45:873 CPU/(23596:23681): PID: 1 - Ejecutando: F_WRITE - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 19:49:43:886 CPU/(24612:24615): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 19:49:43:886 CPU/(24612:24615): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: PAPUSOTE, arg3: 
+[INFO] 19:49:44:886 CPU/(24612:24615): PID: 1 - Ejecutando: MOV_OUT - arg1: 100, arg2: EAX, arg3: 
+[INFO] 19:49:45:887 CPU/(24612:24615): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 100 - Valor: PAPUSOTE
+[INFO] 19:49:45:887 CPU/(24612:24615): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 19:49:45:887 CPU/(24612:24615): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 100, arg3: 
+[INFO] 19:49:45:887 CPU/(24612:24615): PID: 1 - Ejecutando: F_WRITE - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 19:51:15:487 CPU/(24844:24916): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 19:51:20:554 CPU/(24844:24916): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: PAPUSOTE, arg3: 
+[INFO] 19:51:21:554 CPU/(24844:24916): PID: 1 - Ejecutando: MOV_OUT - arg1: 100, arg2: EAX, arg3: 
+[INFO] 19:51:23:590 CPU/(24844:24916): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 100 - Valor: PAPUSOTE
+[INFO] 19:51:23:590 CPU/(24844:24916): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 19:51:23:590 CPU/(24844:24916): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 100, arg3: 
+[INFO] 19:51:23:590 CPU/(24844:24916): PID: 1 - Ejecutando: F_WRITE - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 19:52:44:506 CPU/(25431:25485): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 19:52:48:904 CPU/(25431:25485): PID: 1 - Ejecutando: SET - arg1: EAX, arg2: PAPUSOTE, arg3: 
+[INFO] 19:52:49:905 CPU/(25431:25485): PID: 1 - Ejecutando: MOV_OUT - arg1: 100, arg2: EAX, arg3: 
+[INFO] 19:52:52:245 CPU/(25431:25485): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 100 - Valor: PAPUSOTE
+[INFO] 19:52:52:245 CPU/(25431:25485): PID: 1 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 19:52:52:246 CPU/(25431:25485): PID: 1 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 100, arg3: 
+[INFO] 19:52:52:246 CPU/(25431:25485): PID: 1 - Ejecutando: F_WRITE - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 19:53:35:069 CPU/(25431:25485): PID: 1 - Ejecutando: MOV_IN - arg1: EBX, arg2: 100, arg3: 
+[INFO] 19:53:41:727 CPU/(25431:25485): PID: 1 - Acción: LEER - Segmento: 0 - Dirección Física: 100 - Valor: PAPUSOTE
+[INFO] 19:53:41:727 CPU/(25431:25485): PID: 1 - Ejecutando: F_CLOSE - arg1: elpapu, arg2: , arg3: 
+[INFO] 19:53:41:727 CPU/(25431:25485): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 19:56:12:426 CPU/(25431:25485): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 100, arg3: 
+[INFO] 19:56:16:594 CPU/(25431:25485): PID: 2 - Ejecutando: SET - arg1: EAX, arg2: PAPUSOTE, arg3: 
+[INFO] 19:56:17:594 CPU/(25431:25485): PID: 2 - Ejecutando: MOV_OUT - arg1: 100, arg2: EAX, arg3: 
+[INFO] 19:56:19:860 CPU/(25431:25485): PID: 2 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 100 - Valor: PAPUSOTE
+[INFO] 19:56:19:860 CPU/(25431:25485): PID: 2 - Ejecutando: F_OPEN - arg1: elpapu, arg2: , arg3: 
+[INFO] 19:56:19:860 CPU/(25431:25485): PID: 2 - Ejecutando: F_SEEK - arg1: elpapu, arg2: 100, arg3: 
+[INFO] 19:56:19:860 CPU/(25431:25485): PID: 2 - Ejecutando: F_WRITE - arg1: elpapu, arg2: 100, arg3: 10
+[INFO] 19:57:00:472 CPU/(25431:25485): PID: 2 - Ejecutando: F_READ - arg1: elpapu, arg2: 200, arg3: 10
+[INFO] 19:57:52:890 CPU/(25431:25485): PID: 2 - Ejecutando: MOV_IN - arg1: EBX, arg2: 200, arg3: 
+[INFO] 19:58:01:344 CPU/(25431:25485): PID: 2 - Acción: LEER - Segmento: 1 - Dirección Física: 200 - Valor: PAPUSOTE
+[INFO] 19:58:01:344 CPU/(25431:25485): PID: 2 - Ejecutando: F_CLOSE - arg1: elpapu, arg2: , arg3: 
+[INFO] 19:58:01:344 CPU/(25431:25485): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 

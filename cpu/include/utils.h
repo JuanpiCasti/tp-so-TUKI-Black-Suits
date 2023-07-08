@@ -22,7 +22,9 @@ typedef enum {
     F_OPEN,
     F_CLOSE,
     F_SEEK,
-    F_TRUNCATE
+    F_TRUNCATE,
+    EFERRID,
+    EFERRAIT
 } as_instruction;
 
 extern uint32_t PID_RUNNING;

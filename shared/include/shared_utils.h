@@ -30,7 +30,9 @@ typedef enum
 	ABRIR_ARCHIVO,
 	CREAR_ARCHIVO,
 	TRUNCAR_ARCHIVO,
-	COMPACTAR
+	COMPACTAR,
+	LEER_ARCHIVO,
+	ESCRIBIR_ARCHIVO
 } cod_op;
 
 typedef struct
@@ -64,7 +66,9 @@ typedef enum
 	CPU_F_OPEN,
   CPU_F_CLOSE,
   CPU_F_SEEK,
-  CPU_F_TRUNCATE
+  CPU_F_TRUNCATE,
+  CPU_EFERRID,
+  CPU_EFERRAIT
 } cod_op_kernel;
 
 typedef struct {

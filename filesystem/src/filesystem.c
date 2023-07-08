@@ -41,7 +41,7 @@ int main(int argc, char **argv)
 		levantar_config_filesystem();
 		levantar_superbloque();
 
-		int socket_memoria = crear_conexion(logger_filesystem, IP_MEMORIA, PUERTO_MEMORIA);
+		socket_memoria = crear_conexion(logger_filesystem, IP_MEMORIA, PUERTO_MEMORIA);
 		//*********************
 		// HANDSHAKE - MEMORIA
 		if (realizar_handshake(logger_filesystem, socket_memoria, HANDSHAKE_FILESYSTEM) == -1)

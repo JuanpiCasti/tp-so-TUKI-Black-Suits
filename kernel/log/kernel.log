@@ -17915,3 +17915,264 @@
 [INFO] 13:22:56:938 KERNEL/(5264:5269): PID: 3 - Estado anterior: READY - Estado actual: RUNNING
 [INFO] 13:22:57:938 KERNEL/(5264:5269): PID: 3 - Estado anterior: RUNNING - Estado actual: EXIT
 [INFO] 13:22:57:938 KERNEL/(5264:5269): Finaliza el proceso 3 - Motivo: SUCCESS
+[INFO] 18:15:11:071 KERNEL/(7590:7610): Se crea el proceso 1 en NEW
+[INFO] 18:15:11:071 KERNEL/(7590:7594): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 18:15:11:071 KERNEL/(7590:7594): Cola Ready HRRN: [1]
+[INFO] 18:15:11:071 KERNEL/(7590:7595): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 18:15:11:071 KERNEL/(7590:7595): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 18:17:15:708 KERNEL/(7807:7814): Se crea el proceso 1 en NEW
+[INFO] 18:17:15:708 KERNEL/(7807:7811): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 18:17:15:708 KERNEL/(7807:7811): Cola Ready HRRN: [1]
+[INFO] 18:17:15:708 KERNEL/(7807:7812): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 18:17:15:709 KERNEL/(7807:7812): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 18:18:11:910 KERNEL/(7912:7919): Se crea el proceso 1 en NEW
+[INFO] 18:18:11:910 KERNEL/(7912:7916): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 18:18:11:910 KERNEL/(7912:7916): Cola Ready HRRN: [1]
+[INFO] 18:18:11:910 KERNEL/(7912:7917): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 18:18:11:910 KERNEL/(7912:7917): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 18:20:10:960 KERNEL/(8183:8199): Se crea el proceso 1 en NEW
+[INFO] 18:20:10:960 KERNEL/(8183:8187): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 18:20:10:960 KERNEL/(8183:8187): Cola Ready HRRN: [1]
+[INFO] 18:20:10:960 KERNEL/(8183:8188): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 18:20:10:960 KERNEL/(8183:8188): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 18:22:31:968 KERNEL/(8183:8188): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 18:22:31:968 KERNEL/(8183:8188): PID: 1 - Eliminar Segmento - Id: 1 - Tamaño: 100
+[INFO] 18:22:31:968 KERNEL/(8183:8188): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 18:24:22:550 KERNEL/(8901:8941): Se crea el proceso 1 en NEW
+[INFO] 18:24:22:550 KERNEL/(8901:8905): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 18:24:22:550 KERNEL/(8901:8905): Cola Ready HRRN: [1]
+[INFO] 18:24:22:550 KERNEL/(8901:8906): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 18:24:22:550 KERNEL/(8901:8906): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 18:25:37:150 KERNEL/(9148:9155): Se crea el proceso 1 en NEW
+[INFO] 18:25:37:150 KERNEL/(9148:9152): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 18:25:37:150 KERNEL/(9148:9152): Cola Ready HRRN: [1]
+[INFO] 18:25:37:150 KERNEL/(9148:9153): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 18:25:37:150 KERNEL/(9148:9153): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 18:26:00:075 KERNEL/(9148:9153): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 18:26:00:075 KERNEL/(9148:9153): PID: 1 - Eliminar Segmento - Id: 1 - Tamaño: 100
+[INFO] 18:26:00:075 KERNEL/(9148:9153): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 18:34:13:904 KERNEL/(11704:11712): Se crea el proceso 1 en NEW
+[INFO] 18:34:13:904 KERNEL/(11704:11708): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 18:34:13:904 KERNEL/(11704:11708): Cola Ready HRRN: [1]
+[INFO] 18:34:13:904 KERNEL/(11704:11709): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 18:34:13:905 KERNEL/(11704:11709): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 18:37:07:699 KERNEL/(12033:12070): Se crea el proceso 1 en NEW
+[INFO] 18:37:08:521 KERNEL/(12033:12040): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 18:37:08:521 KERNEL/(12033:12040): Cola Ready HRRN: [1]
+[INFO] 18:37:10:610 KERNEL/(12033:12041): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 18:37:18:548 KERNEL/(12033:12041): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 18:39:38:882 KERNEL/(12033:12400): Se crea el proceso 2 en NEW
+[INFO] 18:39:39:553 KERNEL/(12033:12040): PID: 2 - Estado anterior: NEW - Estado actual: READY
+[INFO] 18:39:39:553 KERNEL/(12033:12040): Cola Ready HRRN: [2]
+[INFO] 18:41:46:525 KERNEL/(12861:12868): Se crea el proceso 1 en NEW
+[INFO] 18:41:46:525 KERNEL/(12861:12865): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 18:41:46:525 KERNEL/(12861:12865): Cola Ready HRRN: [1]
+[INFO] 18:41:46:525 KERNEL/(12861:12866): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 18:41:46:525 KERNEL/(12861:12866): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 18:41:46:525 KERNEL/(12861:12866): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 18:41:46:525 KERNEL/(12861:12866): PID: 1 - Eliminar Segmento - Id: 1 - Tamaño: 100
+[INFO] 18:41:46:525 KERNEL/(12861:12866): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 18:41:59:435 KERNEL/(12861:12878): Se crea el proceso 2 en NEW
+[INFO] 18:41:59:435 KERNEL/(12861:12865): PID: 2 - Estado anterior: NEW - Estado actual: READY
+[INFO] 18:41:59:435 KERNEL/(12861:12865): Cola Ready HRRN: [2]
+[INFO] 18:41:59:435 KERNEL/(12861:12866): PID: 2 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 18:41:59:435 KERNEL/(12861:12866): PID: 2 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 18:42:12:997 KERNEL/(12861:12880): Se crea el proceso 3 en NEW
+[INFO] 18:42:12:997 KERNEL/(12861:12865): PID: 3 - Estado anterior: NEW - Estado actual: READY
+[INFO] 18:42:12:997 KERNEL/(12861:12865): Cola Ready HRRN: [3]
+[INFO] 18:42:12:997 KERNEL/(12861:12866): PID: 3 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 18:42:12:997 KERNEL/(12861:12866): PID: 3 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 18:42:39:934 KERNEL/(12861:12905): Se crea el proceso 4 en NEW
+[INFO] 18:42:39:934 KERNEL/(12861:12865): PID: 4 - Estado anterior: NEW - Estado actual: READY
+[INFO] 18:42:39:934 KERNEL/(12861:12865): Cola Ready HRRN: [4]
+[INFO] 18:42:39:934 KERNEL/(12861:12866): PID: 4 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 18:42:39:934 KERNEL/(12861:12866): PID: 4 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 18:44:20:195 KERNEL/(13343:13350): Se crea el proceso 1 en NEW
+[INFO] 18:44:20:195 KERNEL/(13343:13347): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 18:44:20:195 KERNEL/(13343:13347): Cola Ready HRRN: [1]
+[INFO] 18:44:20:195 KERNEL/(13343:13348): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 18:44:20:195 KERNEL/(13343:13348): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 18:44:20:195 KERNEL/(13343:13348): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 18:44:20:195 KERNEL/(13343:13348): PID: 1 - Eliminar Segmento - Id: 1 - Tamaño: 100
+[INFO] 18:44:20:195 KERNEL/(13343:13348): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 18:45:07:625 KERNEL/(13343:13449): Se crea el proceso 2 en NEW
+[INFO] 18:45:07:625 KERNEL/(13343:13347): PID: 2 - Estado anterior: NEW - Estado actual: READY
+[INFO] 18:45:07:625 KERNEL/(13343:13347): Cola Ready HRRN: [2]
+[INFO] 18:45:07:625 KERNEL/(13343:13348): PID: 2 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 18:45:07:625 KERNEL/(13343:13348): PID: 2 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 18:49:53:838 KERNEL/(14259:14304): Se crea el proceso 1 en NEW
+[INFO] 18:49:53:838 KERNEL/(14259:14278): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 18:49:53:838 KERNEL/(14259:14278): Cola Ready HRRN: [1]
+[INFO] 18:49:53:838 KERNEL/(14259:14279): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 18:49:55:915 KERNEL/(14259:14279): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 18:53:03:619 KERNEL/(14626:14633): Se crea el proceso 1 en NEW
+[INFO] 18:53:03:619 KERNEL/(14626:14630): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 18:53:03:619 KERNEL/(14626:14630): Cola Ready HRRN: [1]
+[INFO] 18:53:03:619 KERNEL/(14626:14631): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 18:53:03:619 KERNEL/(14626:14631): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 18:53:13:620 KERNEL/(14626:14631): PID: 1 - Estado anterior: BLOQUEADO - Estado actual: READY
+[INFO] 18:53:13:620 KERNEL/(14626:14631): Cola Ready HRRN: [1]
+[INFO] 18:53:13:620 KERNEL/(14626:14631): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 18:53:14:621 KERNEL/(14626:14631): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 18:53:14:621 KERNEL/(14626:14631): PID: 1 - Eliminar Segmento - Id: 1 - Tamaño: 100
+[INFO] 18:53:14:621 KERNEL/(14626:14631): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 18:56:47:749 KERNEL/(15306:15341): Se crea el proceso 1 en NEW
+[INFO] 18:56:47:749 KERNEL/(15306:15317): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 18:56:47:749 KERNEL/(15306:15317): Cola Ready HRRN: [1]
+[INFO] 18:56:47:749 KERNEL/(15306:15318): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 18:56:48:702 KERNEL/(15306:15318): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 18:56:58:702 KERNEL/(15306:15318): PID: 1 - Estado anterior: BLOQUEADO - Estado actual: READY
+[INFO] 18:56:58:702 KERNEL/(15306:15318): Cola Ready HRRN: [1]
+[INFO] 18:56:58:702 KERNEL/(15306:15318): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 18:57:15:571 KERNEL/(15306:15318): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 18:57:15:571 KERNEL/(15306:15318): PID: 1 - Eliminar Segmento - Id: 1 - Tamaño: 100
+[INFO] 18:57:15:571 KERNEL/(15306:15318): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 18:59:04:050 KERNEL/(15531:15538): Se crea el proceso 1 en NEW
+[INFO] 18:59:04:050 KERNEL/(15531:15535): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 18:59:04:050 KERNEL/(15531:15535): Cola Ready HRRN: [1]
+[INFO] 18:59:04:050 KERNEL/(15531:15536): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 18:59:04:050 KERNEL/(15531:15536): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 18:59:14:050 KERNEL/(15531:15536): PID: 1 - Estado anterior: BLOQUEADO - Estado actual: READY
+[INFO] 18:59:14:050 KERNEL/(15531:15536): Cola Ready HRRN: [1]
+[INFO] 18:59:14:050 KERNEL/(15531:15536): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 18:59:15:051 KERNEL/(15531:15536): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 18:59:15:051 KERNEL/(15531:15536): PID: 1 - Eliminar Segmento - Id: 1 - Tamaño: 100
+[INFO] 18:59:15:051 KERNEL/(15531:15536): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 18:59:50:447 KERNEL/(15704:15738): Se crea el proceso 1 en NEW
+[INFO] 18:59:50:447 KERNEL/(15704:15714): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 18:59:50:447 KERNEL/(15704:15714): Cola Ready HRRN: [1]
+[INFO] 18:59:50:447 KERNEL/(15704:15715): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 18:59:52:148 KERNEL/(15704:15715): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 19:00:02:149 KERNEL/(15704:15715): PID: 1 - Estado anterior: BLOQUEADO - Estado actual: READY
+[INFO] 19:00:02:149 KERNEL/(15704:15715): Cola Ready HRRN: [1]
+[INFO] 19:00:02:149 KERNEL/(15704:15715): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:00:28:711 KERNEL/(15704:15715): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 19:00:28:711 KERNEL/(15704:15715): PID: 1 - Eliminar Segmento - Id: 1 - Tamaño: 100
+[INFO] 19:00:28:711 KERNEL/(15704:15715): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 19:03:23:607 KERNEL/(16616:16722): Se crea el proceso 1 en NEW
+[INFO] 19:03:23:607 KERNEL/(16616:16651): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 19:03:23:608 KERNEL/(16616:16651): Cola Ready HRRN: [1]
+[INFO] 19:03:23:608 KERNEL/(16616:16652): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:03:24:953 KERNEL/(16616:16652): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 19:04:12:805 KERNEL/(16616:16652): PID: 1 - Estado anterior: BLOQUEADO - Estado actual: READY
+[INFO] 19:04:12:806 KERNEL/(16616:16652): Cola Ready HRRN: [1]
+[INFO] 19:04:12:806 KERNEL/(16616:16652): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:04:53:638 KERNEL/(16616:16652): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 19:04:53:638 KERNEL/(16616:16652): PID: 1 - Eliminar Segmento - Id: 1 - Tamaño: 100
+[INFO] 19:04:53:638 KERNEL/(16616:16652): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 19:08:02:249 KERNEL/(17846:17931): Se crea el proceso 1 en NEW
+[INFO] 19:08:02:249 KERNEL/(17846:17902): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 19:08:02:249 KERNEL/(17846:17902): Cola Ready HRRN: [1]
+[INFO] 19:08:02:249 KERNEL/(17846:17903): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:08:03:875 KERNEL/(17846:17903): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 19:08:27:503 KERNEL/(17846:17903): PID: 1 - Estado anterior: BLOQUEADO - Estado actual: READY
+[INFO] 19:08:27:503 KERNEL/(17846:17903): Cola Ready HRRN: [1]
+[INFO] 19:08:27:503 KERNEL/(17846:17903): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:08:49:051 KERNEL/(17846:17903): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 19:08:49:051 KERNEL/(17846:17903): PID: 1 - Eliminar Segmento - Id: 1 - Tamaño: 100
+[INFO] 19:08:49:051 KERNEL/(17846:17903): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 19:11:28:749 KERNEL/(18791:18863): Se crea el proceso 1 en NEW
+[INFO] 19:11:28:750 KERNEL/(18791:18843): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 19:11:28:750 KERNEL/(18791:18843): Cola Ready HRRN: [1]
+[INFO] 19:11:28:750 KERNEL/(18791:18844): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:11:30:163 KERNEL/(18791:18844): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 19:12:53:994 KERNEL/(18791:18844): PID: 1 - Estado anterior: BLOQUEADO - Estado actual: READY
+[INFO] 19:12:53:994 KERNEL/(18791:18844): Cola Ready HRRN: [1]
+[INFO] 19:12:53:994 KERNEL/(18791:18844): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:13:02:204 KERNEL/(18791:18844): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 19:13:02:204 KERNEL/(18791:18844): PID: 1 - Eliminar Segmento - Id: 1 - Tamaño: 100
+[INFO] 19:13:02:204 KERNEL/(18791:18844): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 19:14:43:909 KERNEL/(19439:19446): Se crea el proceso 1 en NEW
+[INFO] 19:14:43:909 KERNEL/(19439:19443): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 19:14:43:909 KERNEL/(19439:19443): Cola Ready HRRN: [1]
+[INFO] 19:14:43:909 KERNEL/(19439:19444): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:14:43:909 KERNEL/(19439:19444): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 19:14:53:910 KERNEL/(19439:19444): PID: 1 - Estado anterior: BLOQUEADO - Estado actual: READY
+[INFO] 19:14:53:910 KERNEL/(19439:19444): Cola Ready HRRN: [1]
+[INFO] 19:14:53:910 KERNEL/(19439:19444): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:14:54:910 KERNEL/(19439:19444): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 19:14:54:910 KERNEL/(19439:19444): PID: 1 - Eliminar Segmento - Id: 1 - Tamaño: 100
+[INFO] 19:14:54:910 KERNEL/(19439:19444): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 19:17:35:692 KERNEL/(19907:19914): Se crea el proceso 1 en NEW
+[INFO] 19:17:35:692 KERNEL/(19907:19911): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 19:17:35:692 KERNEL/(19907:19911): Cola Ready HRRN: [1]
+[INFO] 19:17:35:692 KERNEL/(19907:19912): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:17:35:692 KERNEL/(19907:19912): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 19:17:45:693 KERNEL/(19907:19912): PID: 1 - Estado anterior: BLOQUEADO - Estado actual: READY
+[INFO] 19:17:45:693 KERNEL/(19907:19912): Cola Ready HRRN: [1]
+[INFO] 19:17:45:693 KERNEL/(19907:19912): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:17:46:693 KERNEL/(19907:19912): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 19:17:46:693 KERNEL/(19907:19912): PID: 1 - Eliminar Segmento - Id: 1 - Tamaño: 100
+[INFO] 19:17:46:693 KERNEL/(19907:19912): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 19:20:17:151 KERNEL/(20212:20219): Se crea el proceso 1 en NEW
+[INFO] 19:20:17:151 KERNEL/(20212:20216): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 19:20:17:151 KERNEL/(20212:20216): Cola Ready HRRN: [1]
+[INFO] 19:20:17:151 KERNEL/(20212:20217): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:20:17:151 KERNEL/(20212:20217): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 19:20:27:152 KERNEL/(20212:20217): PID: 1 - Estado anterior: BLOQUEADO - Estado actual: READY
+[INFO] 19:20:27:152 KERNEL/(20212:20217): Cola Ready HRRN: [1]
+[INFO] 19:20:27:152 KERNEL/(20212:20217): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:20:28:152 KERNEL/(20212:20217): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 19:20:28:152 KERNEL/(20212:20217): PID: 1 - Eliminar Segmento - Id: 1 - Tamaño: 100
+[INFO] 19:20:28:152 KERNEL/(20212:20217): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 19:20:47:615 KERNEL/(20212:20225): Se crea el proceso 2 en NEW
+[INFO] 19:20:47:615 KERNEL/(20212:20216): PID: 2 - Estado anterior: NEW - Estado actual: READY
+[INFO] 19:20:47:615 KERNEL/(20212:20216): Cola Ready HRRN: [2]
+[INFO] 19:20:47:615 KERNEL/(20212:20217): PID: 2 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:20:47:615 KERNEL/(20212:20217): PID: 2 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 19:20:57:616 KERNEL/(20212:20217): PID: 2 - Estado anterior: BLOQUEADO - Estado actual: READY
+[INFO] 19:20:57:616 KERNEL/(20212:20217): Cola Ready HRRN: [2]
+[INFO] 19:20:57:616 KERNEL/(20212:20217): PID: 2 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:20:58:616 KERNEL/(20212:20217): PID: 2 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 19:20:58:616 KERNEL/(20212:20217): PID: 2 - Eliminar Segmento - Id: 1 - Tamaño: 100
+[INFO] 19:20:58:616 KERNEL/(20212:20217): Finaliza el proceso 2 - Motivo: SUCCESS
+[INFO] 19:37:47:157 KERNEL/(21841:21870): Se crea el proceso 1 en NEW
+[INFO] 19:37:47:157 KERNEL/(21841:21846): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 19:37:47:157 KERNEL/(21841:21846): Cola Ready HRRN: [1]
+[INFO] 19:37:47:157 KERNEL/(21841:21847): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:37:47:157 KERNEL/(21841:21847): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 19:42:45:334 KERNEL/(22427:22524): Se crea el proceso 1 en NEW
+[INFO] 19:42:45:334 KERNEL/(22427:22431): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 19:42:45:334 KERNEL/(22427:22431): Cola Ready HRRN: [1]
+[INFO] 19:42:45:334 KERNEL/(22427:22432): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:42:45:334 KERNEL/(22427:22432): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 19:46:11:104 KERNEL/(23678:23771): Se crea el proceso 1 en NEW
+[INFO] 19:46:11:104 KERNEL/(23678:23732): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 19:46:11:104 KERNEL/(23678:23732): Cola Ready HRRN: [1]
+[INFO] 19:46:11:104 KERNEL/(23678:23733): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:46:17:440 KERNEL/(23678:23733): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 19:49:43:886 KERNEL/(24614:24621): Se crea el proceso 1 en NEW
+[INFO] 19:49:43:886 KERNEL/(24614:24618): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 19:49:43:886 KERNEL/(24614:24618): Cola Ready HRRN: [1]
+[INFO] 19:49:43:886 KERNEL/(24614:24619): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:49:43:886 KERNEL/(24614:24619): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 19:51:15:487 KERNEL/(24915:24979): Se crea el proceso 1 en NEW
+[INFO] 19:51:15:487 KERNEL/(24915:24955): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 19:51:15:487 KERNEL/(24915:24955): Cola Ready HRRN: [1]
+[INFO] 19:51:15:487 KERNEL/(24915:24956): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:51:20:554 KERNEL/(24915:24956): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 19:52:44:506 KERNEL/(25484:25539): Se crea el proceso 1 en NEW
+[INFO] 19:52:44:506 KERNEL/(25484:25536): PID: 1 - Estado anterior: NEW - Estado actual: READY
+[INFO] 19:52:44:506 KERNEL/(25484:25536): Cola Ready HRRN: [1]
+[INFO] 19:52:44:506 KERNEL/(25484:25537): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:52:48:904 KERNEL/(25484:25537): PID: 1 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 19:53:35:069 KERNEL/(25484:25537): PID: 1 - Estado anterior: BLOQUEADO - Estado actual: READY
+[INFO] 19:53:35:069 KERNEL/(25484:25537): Cola Ready HRRN: [1]
+[INFO] 19:53:35:069 KERNEL/(25484:25537): PID: 1 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:53:41:727 KERNEL/(25484:25537): PID: 1 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 19:53:41:727 KERNEL/(25484:25537): PID: 1 - Eliminar Segmento - Id: 1 - Tamaño: 100
+[INFO] 19:53:41:727 KERNEL/(25484:25537): Finaliza el proceso 1 - Motivo: SUCCESS
+[INFO] 19:56:12:426 KERNEL/(25484:26040): Se crea el proceso 2 en NEW
+[INFO] 19:56:12:426 KERNEL/(25484:25536): PID: 2 - Estado anterior: NEW - Estado actual: READY
+[INFO] 19:56:12:426 KERNEL/(25484:25536): Cola Ready HRRN: [2]
+[INFO] 19:56:12:426 KERNEL/(25484:25537): PID: 2 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:56:16:594 KERNEL/(25484:25537): PID: 2 - Crear Segmento - Id: 1 - Tamaño: 100
+[INFO] 19:57:00:472 KERNEL/(25484:25537): PID: 2 - Estado anterior: BLOQUEADO - Estado actual: READY
+[INFO] 19:57:00:472 KERNEL/(25484:25537): Cola Ready HRRN: [2]
+[INFO] 19:57:00:472 KERNEL/(25484:25537): PID: 2 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:57:52:890 KERNEL/(25484:25537): PID: 2 - Estado anterior: BLOQUEADO - Estado actual: READY
+[INFO] 19:57:52:890 KERNEL/(25484:25537): Cola Ready HRRN: [2]
+[INFO] 19:57:52:890 KERNEL/(25484:25537): PID: 2 - Estado anterior: READY - Estado actual: RUNNING
+[INFO] 19:58:01:344 KERNEL/(25484:25537): PID: 2 - Estado anterior: RUNNING - Estado actual: EXIT
+[INFO] 19:58:01:344 KERNEL/(25484:25537): PID: 2 - Eliminar Segmento - Id: 1 - Tamaño: 100
+[INFO] 19:58:01:344 KERNEL/(25484:25537): Finaliza el proceso 2 - Motivo: SUCCESS

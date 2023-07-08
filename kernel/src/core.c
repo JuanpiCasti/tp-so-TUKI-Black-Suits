@@ -464,7 +464,7 @@ void cambiar_puntero_archivo(char *f_name, uint32_t new_puntero, t_pcb *pcb)
     {
         t_archivo_abierto *archivo_abierto = list_get(pcb->archivos_abiertos, index_archivo_abierto_del_proceso);
         archivo_abierto->puntero = new_puntero;
-        list_replace(pcb->archivos_abiertos, index_archivo_abierto_del_proceso, archivo_abierto);
+        //list_replace(pcb->archivos_abiertos, index_archivo_abierto_del_proceso, archivo_abierto);
     }
 
     t_archivo_abierto *archivo_pcb = list_get(pcb->archivos_abiertos, 0);
@@ -496,6 +496,84 @@ void truncar_archivo(char *f_name, uint32_t new_size, t_pcb *pcb)
         encolar_proceso(pcb, READY, &mutex_READY, "BLOQUEADO", "READY");
     }
 }
+
+void leer_archivo(char* f_name, uint32_t dir_fisica, uint32_t size, t_pcb* pcb)
+{
+    int tam_buffer = sizeof(cod_op) + sizeof(char[30]) + sizeof(uint32_t)+ sizeof(uint32_t) + sizeof(uint32_t) + sizeof(uint32_t);
+
+    void *buffer = malloc(tam_buffer);
+    int despl = 0;
+
+    cod_op cop = LEER_ARCHIVO;
+    memcpy(buffer + despl, &cop, sizeof(cod_op));
+    despl += sizeof(cod_op);
+    memcpy(buffer + despl, &pcb->pid, sizeof(uint32_t));
+    despl += sizeof(uint32_t);
+    memcpy(buffer + despl, f_name, sizeof(char[30]));
+    despl += sizeof(char[30]);
+
+    // Obtener offset
+    int index_archivo = verificar_string_en_lista(pcb->archivos_abiertos, f_name);
+    t_archivo_abierto* archivo = list_get(pcb->archivos_abiertos, index_archivo);
+    memcpy(buffer + despl, &archivo->puntero, sizeof(uint32_t));
+    despl += sizeof(uint32_t);
+    memcpy(buffer + despl, &dir_fisica, sizeof(uint32_t));
+    despl += sizeof(uint32_t);
+    memcpy(buffer + despl, &size, sizeof(uint32_t));
+
+    send(socket_filesystem, buffer, tam_buffer, NULL);
+    free(buffer);
+
+    uint32_t archivo_ok;
+    recv(socket_filesystem, &archivo_ok, sizeof(uint32_t), NULL);
+
+    if (archivo_ok == 0)
+    {
+        encolar_proceso(pcb, READY, &mutex_READY, "BLOQUEADO", "READY");
+    }
+}
+
+void escribir_archivo(char* f_name, uint32_t dir_fisica, uint32_t size, t_pcb* pcb)
+{
+    int tam_buffer = sizeof(cod_op) + 
+                     sizeof(char[30]) + 
+                     sizeof(uint32_t)+ 
+                     sizeof(uint32_t) + 
+                     sizeof(uint32_t) + 
+                     sizeof(uint32_t);
+
+    void *buffer = malloc(tam_buffer);
+    int despl = 0;
+
+    cod_op cop = ESCRIBIR_ARCHIVO;
+    memcpy(buffer + despl, &cop, sizeof(cod_op));
+    despl += sizeof(cod_op);
+    memcpy(buffer + despl, &pcb->pid, sizeof(uint32_t));
+    despl += sizeof(uint32_t);
+    memcpy(buffer + despl, f_name, sizeof(char[30]));
+    despl += sizeof(char[30]);
+
+    // Obtener offset
+    int index_archivo = verificar_string_en_lista(pcb->archivos_abiertos, f_name);
+    t_archivo_abierto* archivo = list_get(pcb->archivos_abiertos, index_archivo);
+    memcpy(buffer + despl, &archivo->puntero, sizeof(uint32_t));
+    despl += sizeof(uint32_t);
+    memcpy(buffer + despl, &dir_fisica, sizeof(uint32_t));
+    despl += sizeof(uint32_t);
+    memcpy(buffer + despl, &size, sizeof(uint32_t));
+
+    send(socket_filesystem, buffer, tam_buffer, NULL);
+    free(buffer);
+
+    uint32_t archivo_ok;
+    recv(socket_filesystem, &archivo_ok, sizeof(uint32_t), NULL);
+
+    if (archivo_ok == 0)
+    {
+        encolar_proceso(pcb, READY, &mutex_READY, "BLOQUEADO", "READY");
+    }
+}
+
 
 void planificacion_corto_plazo()
 {
@@ -632,6 +710,30 @@ void planificacion_corto_plazo()
                 free(buffer);
                 truncar_archivo(f_name, new_size, r_pcb);
                 imprimir_lista_archivos(tabla_archivos);
+                break;
+            case CPU_EFERRID:
+                desalojar();
+                // LOG BLOQUEADO POR EFERRID
+                uint32_t dir_fisica_a_escribir_lo_leido;
+                uint32_t tam_a_leer;
+                memcpy(&f_name, buffer + TAMANIO_CONTEXTO, sizeof(char[30]));
+                memcpy(&dir_fisica_a_escribir_lo_leido, buffer + TAMANIO_CONTEXTO + sizeof(char[30]), sizeof(uint32_t));
+                memcpy(&tam_a_leer, buffer + TAMANIO_CONTEXTO + sizeof(char[30]) + sizeof(uint32_t), sizeof(uint32_t));
+                free(buffer);
+                // Mandar a fs
+                leer_archivo(f_name, dir_fisica_a_escribir_lo_leido, tam_a_leer, r_pcb);
+                break;
+            case CPU_EFERRAIT:
+                desalojar();
+                // LOG BLOQUEADO POR EFERRAIT
+                uint32_t dir_fisica_a_leer_para_escribir;
+                uint32_t tam_a_escribir;
+                memcpy(&f_name, buffer + TAMANIO_CONTEXTO, sizeof(char[30]));
+                memcpy(&dir_fisica_a_leer_para_escribir, buffer + TAMANIO_CONTEXTO + sizeof(char[30]), sizeof(uint32_t));
+                memcpy(&tam_a_escribir, buffer + TAMANIO_CONTEXTO + sizeof(char[30]) + sizeof(uint32_t), sizeof(uint32_t));
+                free(buffer);
+                // Mandar a fs
+                escribir_archivo(f_name, dir_fisica_a_leer_para_escribir, tam_a_escribir, r_pcb);
                 break;
             default:
                 break;

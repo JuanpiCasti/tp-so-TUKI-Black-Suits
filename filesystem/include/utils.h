@@ -47,6 +47,8 @@ extern int BLOCK_COUNT;
 extern t_bitarray *bitmap;
 extern char* blocks_buffer;
 
+extern int socket_memoria;
+
 void levantar_loggers_filesystem();
 void levantar_config_filesystem();
 void levantar_superbloque();
