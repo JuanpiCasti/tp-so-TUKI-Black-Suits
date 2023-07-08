@@ -13405,3 +13405,11 @@
 [INFO] 00:41:00:384 CPU/(3875:3983): Recibido handshake HANDSHAKE_KERNEL.
 [WARNING] 00:43:49:170 CPU/(3875:3983): Cliente desconectado!
 [WARNING] 00:43:49:170 CPU/(3875:3983): El cliente se desconectó del server
+[INFO] 13:18:20:804 CPU/(4308:4308): Handshake OK
+[INFO] 13:18:20:804 CPU/(4308:4308): CPU escuchando conexiones...
+[INFO] 13:20:13:313 CPU/(4308:4308): Se conecto un cliente!
+[INFO] 13:20:13:313 CPU/(4308:4393): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 13:21:28:657 CPU/(4308:4393): Cliente desconectado!
+[WARNING] 13:21:28:657 CPU/(4308:4393): El cliente se desconectó del server
+[INFO] 13:21:32:952 CPU/(4308:4308): Se conecto un cliente!
+[INFO] 13:21:32:953 CPU/(4308:5265): Recibido handshake HANDSHAKE_KERNEL.

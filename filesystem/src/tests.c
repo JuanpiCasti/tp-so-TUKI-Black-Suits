@@ -10,18 +10,60 @@ int run_tests()
     // CU_cleanup_registry();
     // return CU_get_error();
     // Prueba de archivo de bloques
-    //crear_archivo("elpicante");
-    truncar_archivo("elpicante", 128);
+    // crear_archivo("elpicante");
+    // truncar_archivo("elpicante", 128);
 
-    for (int i = 0; i < BLOCK_COUNT; i++)
-    {
-        printf("Pos. %d: %d\n", i + 1, bitarray_test_bit(bitmap, i));
-    }
+    // for (int i = 0; i < BLOCK_COUNT; i++)
+    // {
+    //   printf("Pos. %d: %d\n", i + 1, bitarray_test_bit(bitmap, i));
+    // }
+    // crear_archivo("elpapu");
+    //     for (int i = 0; i < BLOCK_COUNT; i++)
+    // {
+    //   printf("Pos. %d: %d\n", i + 1, bitarray_test_bit(bitmap, i));
+    // }
+    // truncar_archivo("elpapu", 64);
+    //     for (int i = 0; i < BLOCK_COUNT; i++)
+    // {
+    //   printf("Pos. %d: %d\n", i + 1, bitarray_test_bit(bitmap, i));
+    // }
+    // truncar_archivo("elpicante", 192);
+    //     for (int i = 0; i < BLOCK_COUNT; i++)
+    // {
+    //   printf("Pos. %d: %d\n", i + 1, bitarray_test_bit(bitmap, i));
+    // }
+    // truncar_archivo("elpapu", 128);
+    //     for (int i = 0; i < BLOCK_COUNT; i++)
+    // {
+    //   printf("Pos. %d: %d\n", i + 1, bitarray_test_bit(bitmap, i));
+    // }
+    // truncar_archivo("elpicante", 256);
+    //     for (int i = 0; i < BLOCK_COUNT; i++)
+    // {
+    //   printf("Pos. %d: %d\n", i + 1, bitarray_test_bit(bitmap, i));
+    // }
+    // truncar_archivo("elpapu", 192);
+    //     for (int i = 0; i < BLOCK_COUNT; i++)
+    // {
+    //   printf("Pos. %d: %d\n", i + 1, bitarray_test_bit(bitmap, i));
+    // }
+    // char* cadena = leer_archivo("elpicante", 0, 4);
+    // char* cadena_parseada = imprimir_cadena(cadena, 4);
+    // printf("%s\n", cadena_parseada);
 
-    for (int i = 0; i < 3; i++)
-    {
-        uint32_t puntero;
-        memcpy(&puntero, blocks_buffer + BLOCK_SIZE + sizeof(uint32_t) * i, sizeof(uint32_t));
-        printf("Puntero %d: %d\n", i + 1, puntero);
-    }
+    //escribir_archivo("elpicante", 50, 43, "hola papu, como andas? espero que muy bien!");
+    //truncar_archivo("elpapu", 128);
+    // for (int i = 0; i < BLOCK_COUNT; i++)
+    // {
+    // printf("Pos. %d: %d\n", i + 1, bitarray_test_bit(bitmap, i));
+    // }
+    // escribir_archivo("elpicante", 0, 64, "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+    // escribir_archivo("elpapu", 0, 64, "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
+    // escribir_archivo("elpicante", 64, 64, "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+    // escribir_archivo("elpapu", 64, 64, "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
+    // escribir_archivo("elpicante", 128, 64, "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+    eferrait("elpicante", 50, 43, "hola papu, como andas? espero que muy bien!");
+    char* cadena_rescatada = eferrid("elpicante", 50, 43);
+    char* cadena_parseada = imprimir_cadena(cadena_rescatada, 43);
+    printf("%s\n", cadena_parseada);
 }
