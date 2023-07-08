@@ -154,8 +154,9 @@ int buscar_espacio_libre(uint32_t tam) {
    
         break;
     
-    case BEST:
+    case WORST:
         esp = list_get(LISTA_ESPACIOS_LIBRES, 0);
+        int index_worst = 0;
         esp_i;
         for (i = 1; i < list_size(LISTA_ESPACIOS_LIBRES); i++)
         {   
@@ -163,12 +164,13 @@ int buscar_espacio_libre(uint32_t tam) {
             if (esp_i->limite > esp->limite)
             {
                 esp = esp_i;
+                index_worst = i;
             }
         }
 
         if (esp->limite >= tam)
         {
-            return i;
+            return index_worst;
         } 
 
         log_info(logger_memoria_extra, "NO SE ENCONTRO UN ESPACIO LIBRE, SE NECESITA COMPACTAR");
@@ -176,8 +178,9 @@ int buscar_espacio_libre(uint32_t tam) {
 
         break;
     
-    case WORST:
+    case BEST:
         esp = list_get(LISTA_ESPACIOS_LIBRES, 0);
+        int index_best = 0;
         esp_i;
         for (i = 1; i < list_size(LISTA_ESPACIOS_LIBRES); i++)
         {   
@@ -185,12 +188,13 @@ int buscar_espacio_libre(uint32_t tam) {
             if (esp_i->limite < esp->limite && esp_i->limite >= tam)
             {
                 esp = esp_i;
+                index_best = i;
             }
         }
 
         if (esp->limite >= tam)
         {
-            return i;
+            return index_best;
         } 
 
         log_info(logger_memoria_extra, "NO SE ENCONTRO UN ESPACIO LIBRE, SE NECESITA COMPACTAR");

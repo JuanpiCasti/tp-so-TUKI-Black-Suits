@@ -60,17 +60,11 @@ int run_tests()
     n_seg->limite = 150;
     list_add_sorted(LISTA_GLOBAL_SEGMENTOS, n_seg, comparador_base_segmento);
 
-
-    printf("Despues de la creacion:\n");
-    print_lista_esp(LISTA_ESPACIOS_LIBRES);
-    print_lista_segmentos();
     borrar_segmento(128, 100);
-    printf("Despues de borrar:\n");
-    print_lista_esp(LISTA_ESPACIOS_LIBRES);
-    print_lista_segmentos();
 
-    compactar();
-    printf("Despues de consolidar:\n");
+    crear_segmento(50, &base);
+    crear_segmento(50, &base);
+    crear_segmento(3600, &base);
+    crear_segmento(50, &base);
     print_lista_esp(LISTA_ESPACIOS_LIBRES);
-    print_lista_segmentos();
 }
