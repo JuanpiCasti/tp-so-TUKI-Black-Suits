@@ -69,6 +69,7 @@ void truncar_archivo(char* f_name, uint32_t new_size)
 
         for (int i = 0; i < bloques_adicionales - 1; i++)
         {
+          sleep(RETARDO_ACCESO_BLOQUE / 1000);
           asignar_bloque_al_bloque_indirecto(fcb, i);
         }
       }
@@ -145,23 +146,29 @@ void eferrait(char* f_name, uint32_t offset,uint32_t cantidad, char* data) {
   if (bloque_inicial == 0 && bloque_final == 0)
   {
     memcpy(blocks_buffer + fcb->f_dp + offset, data, cantidad);
+    sleep(RETARDO_ACCESO_BLOQUE / 1000);
   } else if (bloque_inicial == bloque_final) {
     uint32_t puntero_a_escribir;
     memcpy(&puntero_a_escribir, blocks_buffer + fcb->f_ip + sizeof(uint32_t) * (bloque_inicial - 1), sizeof(uint32_t));
+    sleep(RETARDO_ACCESO_BLOQUE / 1000);
     memcpy(blocks_buffer + puntero_a_escribir + (offset - BLOCK_SIZE * bloque_inicial), data, cantidad);
+    sleep(RETARDO_ACCESO_BLOQUE / 1000);
   } else {
     int bloques_a_escribir = (bloque_final - bloque_inicial) + 1;
     int cantidad_restante = cantidad;
     int desplazamiento = 0;
-
+    sleep(RETARDO_ACCESO_BLOQUE / 1000);
     if (bloque_inicial == 0) {
       memcpy(blocks_buffer + fcb->f_dp + offset, data, BLOCK_SIZE - offset);
       desplazamiento += BLOCK_SIZE - offset;
       cantidad_restante -= desplazamiento;
+      sleep(RETARDO_ACCESO_BLOQUE / 1000);
     } else {
       uint32_t puntero_primer_bloque_a_escribir;
       memcpy(&puntero_primer_bloque_a_escribir, blocks_buffer + fcb->f_ip + sizeof(uint32_t) * (bloque_inicial - 1), sizeof(uint32_t));
+      sleep(RETARDO_ACCESO_BLOQUE / 1000);
       memcpy(blocks_buffer + puntero_primer_bloque_a_escribir + (offset - BLOCK_SIZE * bloque_inicial), data + desplazamiento, BLOCK_SIZE * (bloque_inicial + 1) - offset);
+      sleep(RETARDO_ACCESO_BLOQUE / 1000);
       desplazamiento =+ BLOCK_SIZE * (bloque_inicial + 1) - offset;
       cantidad_restante -= BLOCK_SIZE * (bloque_inicial + 1) - offset;
     }
@@ -175,6 +182,7 @@ void eferrait(char* f_name, uint32_t offset,uint32_t cantidad, char* data) {
       memcpy(blocks_buffer + puntero, data + desplazamiento, cant_a_escribir);
       desplazamiento += cant_a_escribir;
       cantidad_restante -= cant_a_escribir;
+      sleep(RETARDO_ACCESO_BLOQUE / 1000);
     }
   }
 
@@ -194,27 +202,34 @@ void* eferrid(char* f_name, uint32_t offset, uint32_t cantidad) {
   if (bloque_inicial == 0 && bloque_final == 0)
   {
     memcpy(data_final, blocks_buffer + fcb->f_dp + offset, cantidad);
+    sleep(RETARDO_ACCESO_BLOQUE / 1000);
   } else if (bloque_inicial == bloque_final) {
     uint32_t puntero_a_leer;
     memcpy(&puntero_a_leer, blocks_buffer + fcb->f_ip + sizeof(uint32_t) * (bloque_inicial - 1), sizeof(uint32_t));
+    sleep(RETARDO_ACCESO_BLOQUE / 1000);
     memcpy(data_final, blocks_buffer + puntero_a_leer + (offset - BLOCK_SIZE * bloque_inicial), cantidad);
+    sleep(RETARDO_ACCESO_BLOQUE / 1000);
   } else {
     int bloques_a_leer = (bloque_final - bloque_inicial) + 1;
     int cantidad_restante = cantidad;
     int desplazamiento = 0;
 
+    sleep(RETARDO_ACCESO_BLOQUE / 1000);
     if(bloque_inicial == 0) {
       memcpy(data_final, blocks_buffer + fcb->f_dp + offset, BLOCK_SIZE - offset);
       desplazamiento += BLOCK_SIZE - offset;
       cantidad_restante -= desplazamiento;
+      sleep(RETARDO_ACCESO_BLOQUE / 1000);
     } else {
       uint32_t puntero_primer_bloque_a_leer;
       memcpy(&puntero_primer_bloque_a_leer, blocks_buffer + fcb->f_ip + sizeof(uint32_t) * (bloque_inicial - 1), sizeof(uint32_t));
       memcpy(data_final + desplazamiento, blocks_buffer + puntero_primer_bloque_a_leer + (offset - BLOCK_SIZE * bloque_inicial), BLOCK_SIZE * (bloque_inicial + 1) - offset);    
       desplazamiento += BLOCK_SIZE * (bloque_inicial + 1) - offset;
       cantidad_restante -= BLOCK_SIZE * (bloque_inicial + 1) - offset;    
+      sleep(RETARDO_ACCESO_BLOQUE / 1000);
     }
     bloques_a_leer--;
+    
     for (int i = bloque_inicial + 1; i <= bloque_final; i++)
     {
       uint32_t puntero;
@@ -223,6 +238,7 @@ void* eferrid(char* f_name, uint32_t offset, uint32_t cantidad) {
       memcpy(data_final + desplazamiento, blocks_buffer + puntero, cant_a_leer);
       desplazamiento += cant_a_leer;
       cantidad_restante -= cant_a_leer;
+      sleep(RETARDO_ACCESO_BLOQUE / 1000);
     }
     
   }

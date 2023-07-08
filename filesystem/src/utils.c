@@ -105,7 +105,7 @@ char *leer_bloque(uint32_t puntero_a_bloque)
   uint32_t offset = puntero_a_bloque;
   char *bloque_leido = malloc(BLOCK_SIZE);
   memcpy(bloque_leido, blocks_buffer + offset, BLOCK_SIZE);
-
+  
   return bloque_leido;
 }
 
