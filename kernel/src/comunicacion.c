@@ -346,11 +346,4 @@ void recibir_nuevas_bases(int socket_memoria) {
 
 }
 
-void solicitar_compactacion() {
-
-    cod_op cop = COMPACTAR;
-    send(socket_memoria, &cop, sizeof(cod_op_kernel), NULL);
-    recibir_nuevas_bases(socket_memoria);
-
-}
 

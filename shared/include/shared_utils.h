@@ -78,7 +78,7 @@ typedef struct {
 	uint8_t activo;
 } t_ent_ts; // Entrada de la tabla de segmentos
 
-extern char* cod_op_kernel_description[11];
+extern char* cod_op_kernel_description[18];
 
 extern uint32_t TAMANIO_CONTEXTO;
 

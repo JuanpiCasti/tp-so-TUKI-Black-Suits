@@ -274,14 +274,19 @@ void borrar_segmento(uint32_t base, uint32_t limite) {
 
     if (list_size(LISTA_ESPACIOS_LIBRES) > 1)
     {
-         t_esp* posible_espacio_contiguo_abajo = list_get(LISTA_ESPACIOS_LIBRES, n_indice + 1);
-
-        if (son_contiguos(nuevo_esp, posible_espacio_contiguo_abajo))
+        if (n_indice < list_size(LISTA_ESPACIOS_LIBRES) - 1)
         {
-            nuevo_esp -> limite += posible_espacio_contiguo_abajo->limite;
-            list_remove(LISTA_ESPACIOS_LIBRES, n_indice + 1);
-            free(posible_espacio_contiguo_abajo);
+            t_esp* posible_espacio_contiguo_abajo = list_get(LISTA_ESPACIOS_LIBRES, n_indice + 1);
+
+            if (son_contiguos(nuevo_esp, posible_espacio_contiguo_abajo))
+            {
+                nuevo_esp -> limite += posible_espacio_contiguo_abajo->limite;
+                list_remove(LISTA_ESPACIOS_LIBRES, n_indice + 1);
+                free(posible_espacio_contiguo_abajo);
+            }
         }
+        
+
 
         if (n_indice > 0)
         {

@@ -59,6 +59,19 @@ typedef struct{
   uint32_t puntero;
 } t_archivo_abierto;
 
+typedef struct {
+  char f_name[30];
+  uint32_t dir_fisica;
+  uint32_t tamano;
+  t_pcb* pcb;
+} t_args_f_op;
+
+typedef struct {
+  uint32_t id_seg;
+  uint32_t tam;
+  t_pcb* pcb;
+} t_args_compactacion;
+
 // Logger del kernel
 extern t_log *logger_kernel_extra;
 extern t_log *logger_kernel;

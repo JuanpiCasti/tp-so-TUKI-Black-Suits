@@ -698,3 +698,1104 @@
 [INFO] 19:58:01:344 CPU/(25431:25485): PID: 2 - Acción: LEER - Segmento: 1 - Dirección Física: 200 - Valor: PAPUSOTE
 [INFO] 19:58:01:344 CPU/(25431:25485): PID: 2 - Ejecutando: F_CLOSE - arg1: elpapu, arg2: , arg3: 
 [INFO] 19:58:01:344 CPU/(25431:25485): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 12:03:04:334 CPU/(4321:4416): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 12:03:04:334 CPU/(4321:4416): PID: 1 - Ejecutando: SET - arg1: AX, arg2: h014, arg3: 
+[INFO] 12:03:05:334 CPU/(4321:4416): PID: 1 - Ejecutando: MOV_OUT - arg1: 12, arg2: AX, arg3: 
+[INFO] 12:03:06:334 CPU/(4321:4416): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 12 - Valor: h014
+[INFO] 12:03:06:334 CPU/(4321:4416): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 128, arg3: 
+[INFO] 12:03:06:335 CPU/(4321:4416): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 12:03:06:335 CPU/(4321:4416): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 12:03:06:335 CPU/(4321:4416): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 12:03:06:335 CPU/(4321:4416): PID: 2 - Ejecutando: MOV_IN - arg1: CX, arg2: 12, arg3: 
+[INFO] 12:03:07:335 CPU/(4321:4416): PID: 2 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: h014
+[INFO] 12:03:07:335 CPU/(4321:4416): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 64, arg3: 
+[INFO] 12:03:07:336 CPU/(4321:4416): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 64, arg3: 
+[INFO] 12:03:07:336 CPU/(4321:4416): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 64, arg3: 
+[INFO] 12:03:07:336 CPU/(4321:4416): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 64, arg3: 
+[INFO] 12:03:07:336 CPU/(4321:4416): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 64, arg3: 
+[INFO] 12:03:07:336 CPU/(4321:4416): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 64, arg3: 
+[INFO] 12:03:07:336 CPU/(4321:4416): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 7, arg2: 64, arg3: 
+[INFO] 12:03:07:337 CPU/(4321:4416): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 8, arg2: 64, arg3: 
+[INFO] 12:03:07:337 CPU/(4321:4416): PID: 2 - Ejecutando: SET - arg1: BX, arg2: Ch4u, arg3: 
+[INFO] 12:03:08:337 CPU/(4321:4416): PID: 2 - Ejecutando: MOV_OUT - arg1: 12, arg2: BX, arg3: 
+[INFO] 12:03:09:337 CPU/(4321:4416): PID: 2 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 12:03:09:337 CPU/(4321:4416): PID: 2 - Ejecutando: SIGNAL - arg1: RA, arg2: , arg3: 
+[INFO] 12:03:09:338 CPU/(4321:4416): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 12:03:09:338 CPU/(4321:4416): PID: 3 - Ejecutando: WAIT - arg1: RC, arg2: , arg3: 
+[INFO] 12:03:09:338 CPU/(4321:4416): PID: 1 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[INFO] 12:03:09:338 CPU/(4321:4416): PID: 1 - Ejecutando: MOV_IN - arg1: DX, arg2: 12, arg3: 
+[INFO] 12:03:10:338 CPU/(4321:4416): PID: 1 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 12:03:10:338 CPU/(4321:4416): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 12:03:10:339 CPU/(4321:4416): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 12:03:10:339 CPU/(4321:4416): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 9, arg2: 64, arg3: 
+[ERROR] 12:03:10:339 CPU/(4321:4416): La intrucción no es válida.
+[INFO] 12:03:10:339 CPU/(4321:4416): PID: 2 - Ejecutando: SET_EAX - arg1: CoscuWin, arg2: , arg3: 
+[INFO] 12:05:59:078 CPU/(4535:4540): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 12:05:59:078 CPU/(4535:4540): PID: 1 - Ejecutando: SET - arg1: AX, arg2: h014, arg3: 
+[INFO] 12:06:00:079 CPU/(4535:4540): PID: 1 - Ejecutando: MOV_OUT - arg1: 12, arg2: AX, arg3: 
+[INFO] 12:06:01:079 CPU/(4535:4540): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 12 - Valor: h014
+[INFO] 12:06:01:079 CPU/(4535:4540): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 128, arg3: 
+[INFO] 12:06:01:079 CPU/(4535:4540): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 12:06:01:079 CPU/(4535:4540): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 12:06:01:080 CPU/(4535:4540): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 12:06:01:080 CPU/(4535:4540): PID: 2 - Ejecutando: MOV_IN - arg1: CX, arg2: 12, arg3: 
+[INFO] 12:06:02:080 CPU/(4535:4540): PID: 2 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: h014
+[INFO] 12:06:02:080 CPU/(4535:4540): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 64, arg3: 
+[INFO] 12:06:02:080 CPU/(4535:4540): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 64, arg3: 
+[INFO] 12:06:02:080 CPU/(4535:4540): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 64, arg3: 
+[INFO] 12:06:02:080 CPU/(4535:4540): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 64, arg3: 
+[INFO] 12:06:02:080 CPU/(4535:4540): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 64, arg3: 
+[INFO] 12:06:02:081 CPU/(4535:4540): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 64, arg3: 
+[INFO] 12:06:02:081 CPU/(4535:4540): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 7, arg2: 64, arg3: 
+[INFO] 12:06:02:081 CPU/(4535:4540): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 8, arg2: 64, arg3: 
+[INFO] 12:06:02:081 CPU/(4535:4540): PID: 2 - Ejecutando: SET - arg1: BX, arg2: Ch4u, arg3: 
+[INFO] 12:06:03:081 CPU/(4535:4540): PID: 2 - Ejecutando: MOV_OUT - arg1: 12, arg2: BX, arg3: 
+[INFO] 12:06:04:081 CPU/(4535:4540): PID: 2 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 12:06:04:081 CPU/(4535:4540): PID: 2 - Ejecutando: SIGNAL - arg1: RA, arg2: , arg3: 
+[INFO] 12:06:04:081 CPU/(4535:4540): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 12:06:04:081 CPU/(4535:4540): PID: 3 - Ejecutando: WAIT - arg1: RC, arg2: , arg3: 
+[INFO] 12:06:04:082 CPU/(4535:4540): PID: 1 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[INFO] 12:06:04:082 CPU/(4535:4540): PID: 1 - Ejecutando: MOV_IN - arg1: DX, arg2: 12, arg3: 
+[INFO] 12:06:05:082 CPU/(4535:4540): PID: 1 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 12:06:05:082 CPU/(4535:4540): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 12:06:05:082 CPU/(4535:4540): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 12:06:05:082 CPU/(4535:4540): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 9, arg2: 64, arg3: 
+[INFO] 12:06:05:083 CPU/(4535:4540): PID: 2 - Ejecutando: SET - arg1: EAX, arg2: CoscuWin, arg3: 
+[INFO] 12:06:06:083 CPU/(4535:4540): PID: 2 - Ejecutando: MOV_OUT - arg1: 256, arg2: EAX, arg3: 
+[INFO] 12:06:07:084 CPU/(4535:4540): PID: 2 - Acción: ESCRIBIR - Segmento: 1 - Dirección Física: 256 - Valor: CoscuWin
+[INFO] 12:06:07:084 CPU/(4535:4540): PID: 2 - Ejecutando: SET - arg1: EBX, arg2: GermanNo, arg3: 
+[INFO] 12:06:08:084 CPU/(4535:4540): PID: 2 - Ejecutando: MOV_OUT - arg1: 2048, arg2: EBX, arg3: 
+[INFO] 12:06:09:084 CPU/(4535:4540): PID: 2 - Acción: ESCRIBIR - Segmento: 8 - Dirección Física: 704 - Valor: GermanNo
+[INFO] 12:06:09:084 CPU/(4535:4540): PID: 2 - Ejecutando: SIGNAL - arg1: RC, arg2: , arg3: 
+[INFO] 12:06:09:085 CPU/(4535:4540): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 12:06:09:085 CPU/(4535:4540): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 256, arg3: 
+[INFO] 12:07:09:087 CPU/(4535:4540): PID: 3 - Ejecutando: MOV_IN - arg1: AX, arg2: 12, arg3: 
+[INFO] 12:07:10:087 CPU/(4535:4540): PID: 3 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 12:07:10:087 CPU/(4535:4540): PID: 3 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 12:07:10:087 CPU/(4535:4540): PID: 3 - Ejecutando: WAIT - arg1: RC, arg2: , arg3: 
+[INFO] 12:07:10:088 CPU/(4535:4540): PID: 2 - Ejecutando: MOV_IN - arg1: ECX, arg2: 256, arg3: 
+[INFO] 12:07:11:088 CPU/(4535:4540): PID: 2 - Acción: LEER - Segmento: 1 - Dirección Física: 192 - Valor: CoscuWin
+[INFO] 12:07:11:088 CPU/(4535:4540): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[INFO] 12:07:11:088 CPU/(4535:4540): PID: 2 - Ejecutando: MOV_IN - arg1: EDX, arg2: 2048, arg3: 
+[INFO] 12:07:12:088 CPU/(4535:4540): PID: 2 - Acción: LEER - Segmento: 8 - Dirección Física: 640 - Valor: GermanNo
+[INFO] 12:07:12:088 CPU/(4535:4540): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 2, arg2: , arg3: 
+[INFO] 12:07:12:089 CPU/(4535:4540): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 4, arg2: , arg3: 
+[INFO] 12:07:12:089 CPU/(4535:4540): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 5, arg2: , arg3: 
+[INFO] 12:07:12:089 CPU/(4535:4540): PID: 2 - Ejecutando: SIGNAL - arg1: RC, arg2: , arg3: 
+[INFO] 12:07:12:089 CPU/(4535:4540): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 12:07:12:089 CPU/(4535:4540): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 128, arg3: 
+[INFO] 12:07:12:089 CPU/(4535:4540): PID: 3 - Ejecutando: SIGNAL - arg1: RA, arg2: , arg3: 
+[INFO] 12:07:12:089 CPU/(4535:4540): PID: 3 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 12:11:18:720 CPU/(5855:5860): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 12:11:18:720 CPU/(5855:5860): PID: 1 - Ejecutando: SET - arg1: AX, arg2: h014, arg3: 
+[INFO] 12:11:19:720 CPU/(5855:5860): PID: 1 - Ejecutando: MOV_OUT - arg1: 12, arg2: AX, arg3: 
+[INFO] 12:11:20:721 CPU/(5855:5860): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 12 - Valor: h014
+[INFO] 12:11:20:721 CPU/(5855:5860): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 128, arg3: 
+[INFO] 12:11:20:721 CPU/(5855:5860): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 12:11:20:721 CPU/(5855:5860): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 12:11:20:721 CPU/(5855:5860): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 12:11:20:721 CPU/(5855:5860): PID: 2 - Ejecutando: MOV_IN - arg1: CX, arg2: 12, arg3: 
+[INFO] 12:11:21:721 CPU/(5855:5860): PID: 2 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: h014
+[INFO] 12:11:21:721 CPU/(5855:5860): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 64, arg3: 
+[INFO] 12:11:21:722 CPU/(5855:5860): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 64, arg3: 
+[INFO] 12:11:21:722 CPU/(5855:5860): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 64, arg3: 
+[INFO] 12:11:21:722 CPU/(5855:5860): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 64, arg3: 
+[INFO] 12:11:21:722 CPU/(5855:5860): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 64, arg3: 
+[INFO] 12:11:21:722 CPU/(5855:5860): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 64, arg3: 
+[INFO] 12:11:21:722 CPU/(5855:5860): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 7, arg2: 64, arg3: 
+[INFO] 12:11:21:722 CPU/(5855:5860): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 8, arg2: 64, arg3: 
+[INFO] 12:11:21:722 CPU/(5855:5860): PID: 2 - Ejecutando: SET - arg1: BX, arg2: Ch4u, arg3: 
+[INFO] 12:11:22:722 CPU/(5855:5860): PID: 2 - Ejecutando: MOV_OUT - arg1: 12, arg2: BX, arg3: 
+[INFO] 12:11:23:723 CPU/(5855:5860): PID: 2 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 12:11:23:723 CPU/(5855:5860): PID: 2 - Ejecutando: SIGNAL - arg1: RA, arg2: , arg3: 
+[INFO] 12:11:23:723 CPU/(5855:5860): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 12:11:23:723 CPU/(5855:5860): PID: 3 - Ejecutando: WAIT - arg1: RC, arg2: , arg3: 
+[INFO] 12:11:23:723 CPU/(5855:5860): PID: 1 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[INFO] 12:11:23:723 CPU/(5855:5860): PID: 1 - Ejecutando: MOV_IN - arg1: DX, arg2: 12, arg3: 
+[INFO] 12:11:24:723 CPU/(5855:5860): PID: 1 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 12:11:24:723 CPU/(5855:5860): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 12:11:24:723 CPU/(5855:5860): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 12:11:24:724 CPU/(5855:5860): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 9, arg2: 64, arg3: 
+[INFO] 12:11:24:724 CPU/(5855:5860): PID: 2 - Ejecutando: SET - arg1: EAX, arg2: CoscuWin, arg3: 
+[INFO] 12:11:25:724 CPU/(5855:5860): PID: 2 - Ejecutando: MOV_OUT - arg1: 256, arg2: EAX, arg3: 
+[INFO] 12:11:26:724 CPU/(5855:5860): PID: 2 - Acción: ESCRIBIR - Segmento: 1 - Dirección Física: 256 - Valor: CoscuWin
+[INFO] 12:11:26:724 CPU/(5855:5860): PID: 2 - Ejecutando: SET - arg1: EBX, arg2: GermanNo, arg3: 
+[INFO] 12:11:27:724 CPU/(5855:5860): PID: 2 - Ejecutando: MOV_OUT - arg1: 2048, arg2: EBX, arg3: 
+[INFO] 12:11:28:724 CPU/(5855:5860): PID: 2 - Acción: ESCRIBIR - Segmento: 8 - Dirección Física: 704 - Valor: GermanNo
+[INFO] 12:11:28:724 CPU/(5855:5860): PID: 2 - Ejecutando: SIGNAL - arg1: RC, arg2: , arg3: 
+[INFO] 12:11:28:725 CPU/(5855:5860): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 12:11:28:725 CPU/(5855:5860): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 256, arg3: 
+[INFO] 12:12:28:726 CPU/(5855:5860): PID: 3 - Ejecutando: MOV_IN - arg1: AX, arg2: 12, arg3: 
+[INFO] 12:12:29:726 CPU/(5855:5860): PID: 3 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 12:12:29:726 CPU/(5855:5860): PID: 3 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 12:12:29:726 CPU/(5855:5860): PID: 3 - Ejecutando: WAIT - arg1: RC, arg2: , arg3: 
+[INFO] 12:12:29:726 CPU/(5855:5860): PID: 2 - Ejecutando: MOV_IN - arg1: ECX, arg2: 256, arg3: 
+[INFO] 12:12:30:726 CPU/(5855:5860): PID: 2 - Acción: LEER - Segmento: 1 - Dirección Física: 192 - Valor: CoscuWin
+[INFO] 12:12:30:726 CPU/(5855:5860): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[INFO] 12:12:30:727 CPU/(5855:5860): PID: 2 - Ejecutando: MOV_IN - arg1: EDX, arg2: 2048, arg3: 
+[INFO] 12:12:31:727 CPU/(5855:5860): PID: 2 - Acción: LEER - Segmento: 8 - Dirección Física: 640 - Valor: GermanNo
+[INFO] 12:12:31:727 CPU/(5855:5860): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 2, arg2: , arg3: 
+[INFO] 12:12:31:727 CPU/(5855:5860): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 4, arg2: , arg3: 
+[INFO] 12:12:31:727 CPU/(5855:5860): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 5, arg2: , arg3: 
+[INFO] 12:12:31:727 CPU/(5855:5860): PID: 2 - Ejecutando: SIGNAL - arg1: RC, arg2: , arg3: 
+[INFO] 12:12:31:728 CPU/(5855:5860): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 12:12:31:728 CPU/(5855:5860): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 128, arg3: 
+[INFO] 12:12:31:728 CPU/(5855:5860): PID: 3 - Ejecutando: SIGNAL - arg1: RA, arg2: , arg3: 
+[INFO] 12:12:31:728 CPU/(5855:5860): PID: 3 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 12:15:21:729 CPU/(5999:6222): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 12:15:34:850 CPU/(5999:6222): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 12:15:47:055 CPU/(5999:6222): PID: 1 - Ejecutando: SET - arg1: AX, arg2: h014, arg3: 
+[INFO] 12:15:48:055 CPU/(5999:6222): PID: 1 - Ejecutando: MOV_OUT - arg1: 12, arg2: AX, arg3: 
+[ERROR] 12:15:48:055 CPU/(5999:6222): PID: 1 - ERROR SEG_FAULT - Segmento: 0 - Offset: 12 - Tamaño: 0
+[INFO] 12:15:48:055 CPU/(5999:6222): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 128, arg3: 
+[INFO] 12:15:58:619 CPU/(5999:6222): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 12:16:17:389 CPU/(5999:6222): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 12:16:41:333 CPU/(5999:6222): PID: 3 - Ejecutando: WAIT - arg1: RC, arg2: , arg3: 
+[INFO] 12:16:53:952 CPU/(5999:6222): PID: 2 - Ejecutando: MOV_IN - arg1: CX, arg2: 12, arg3: 
+[INFO] 12:20:56:235 CPU/(7463:7517): PID: 3 - Ejecutando: WAIT - arg1: RC, arg2: , arg3: 
+[INFO] 12:20:57:640 CPU/(7463:7517): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 12:20:58:894 CPU/(7463:7517): PID: 1 - Ejecutando: SET - arg1: AX, arg2: h014, arg3: 
+[INFO] 12:20:59:894 CPU/(7463:7517): PID: 1 - Ejecutando: MOV_OUT - arg1: 12, arg2: AX, arg3: 
+[ERROR] 12:20:59:894 CPU/(7463:7517): PID: 1 - ERROR SEG_FAULT - Segmento: 0 - Offset: 12 - Tamaño: 0
+[INFO] 12:20:59:894 CPU/(7463:7517): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 128, arg3: 
+[INFO] 12:21:00:898 CPU/(7463:7517): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 12:21:02:609 CPU/(7463:7517): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 12:21:04:063 CPU/(7463:7517): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 12:21:05:320 CPU/(7463:7517): PID: 2 - Ejecutando: MOV_IN - arg1: CX, arg2: 12, arg3: 
+[INFO] 12:23:50:295 CPU/(8075:8082): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 12:23:50:295 CPU/(8075:8082): PID: 1 - Ejecutando: SET - arg1: AX, arg2: h014, arg3: 
+[INFO] 12:23:51:295 CPU/(8075:8082): PID: 1 - Ejecutando: MOV_OUT - arg1: 12, arg2: AX, arg3: 
+[INFO] 12:23:52:295 CPU/(8075:8082): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 12 - Valor: h014
+[INFO] 12:23:52:295 CPU/(8075:8082): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 128, arg3: 
+[INFO] 12:23:52:295 CPU/(8075:8082): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 12:23:52:295 CPU/(8075:8082): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 12:23:52:296 CPU/(8075:8082): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 12:23:52:296 CPU/(8075:8082): PID: 2 - Ejecutando: MOV_IN - arg1: CX, arg2: 12, arg3: 
+[INFO] 12:23:53:297 CPU/(8075:8082): PID: 2 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: h014
+[INFO] 12:23:53:297 CPU/(8075:8082): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 64, arg3: 
+[INFO] 12:23:53:297 CPU/(8075:8082): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 64, arg3: 
+[INFO] 12:23:53:297 CPU/(8075:8082): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 64, arg3: 
+[INFO] 12:23:53:297 CPU/(8075:8082): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 64, arg3: 
+[INFO] 12:23:53:297 CPU/(8075:8082): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 64, arg3: 
+[INFO] 12:23:53:297 CPU/(8075:8082): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 64, arg3: 
+[INFO] 12:23:53:298 CPU/(8075:8082): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 7, arg2: 64, arg3: 
+[INFO] 12:23:53:298 CPU/(8075:8082): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 8, arg2: 64, arg3: 
+[INFO] 12:23:53:298 CPU/(8075:8082): PID: 2 - Ejecutando: SET - arg1: BX, arg2: Ch4u, arg3: 
+[INFO] 12:23:54:298 CPU/(8075:8082): PID: 2 - Ejecutando: MOV_OUT - arg1: 12, arg2: BX, arg3: 
+[INFO] 12:23:55:298 CPU/(8075:8082): PID: 2 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 12:23:55:299 CPU/(8075:8082): PID: 2 - Ejecutando: SIGNAL - arg1: RA, arg2: , arg3: 
+[INFO] 12:23:55:299 CPU/(8075:8082): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 12:23:55:299 CPU/(8075:8082): PID: 3 - Ejecutando: WAIT - arg1: RC, arg2: , arg3: 
+[INFO] 12:23:55:299 CPU/(8075:8082): PID: 1 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[INFO] 12:23:55:299 CPU/(8075:8082): PID: 1 - Ejecutando: MOV_IN - arg1: DX, arg2: 12, arg3: 
+[INFO] 12:23:56:300 CPU/(8075:8082): PID: 1 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 12:23:56:300 CPU/(8075:8082): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 12:23:56:301 CPU/(8075:8082): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 12:23:56:301 CPU/(8075:8082): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 9, arg2: 64, arg3: 
+[INFO] 12:23:56:301 CPU/(8075:8082): PID: 2 - Ejecutando: SET - arg1: EAX, arg2: CoscuWin, arg3: 
+[INFO] 12:23:57:301 CPU/(8075:8082): PID: 2 - Ejecutando: MOV_OUT - arg1: 256, arg2: EAX, arg3: 
+[INFO] 12:23:58:302 CPU/(8075:8082): PID: 2 - Acción: ESCRIBIR - Segmento: 1 - Dirección Física: 256 - Valor: CoscuWin
+[INFO] 12:23:58:302 CPU/(8075:8082): PID: 2 - Ejecutando: SET - arg1: EBX, arg2: GermanNo, arg3: 
+[INFO] 12:23:59:302 CPU/(8075:8082): PID: 2 - Ejecutando: MOV_OUT - arg1: 2048, arg2: EBX, arg3: 
+[INFO] 12:24:00:303 CPU/(8075:8082): PID: 2 - Acción: ESCRIBIR - Segmento: 8 - Dirección Física: 704 - Valor: GermanNo
+[INFO] 12:24:00:303 CPU/(8075:8082): PID: 2 - Ejecutando: SIGNAL - arg1: RC, arg2: , arg3: 
+[INFO] 12:24:00:303 CPU/(8075:8082): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 12:24:00:304 CPU/(8075:8082): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 256, arg3: 
+[INFO] 12:25:00:305 CPU/(8075:8082): PID: 3 - Ejecutando: MOV_IN - arg1: AX, arg2: 12, arg3: 
+[INFO] 12:25:01:305 CPU/(8075:8082): PID: 3 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 12:25:01:306 CPU/(8075:8082): PID: 3 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 12:25:01:306 CPU/(8075:8082): PID: 3 - Ejecutando: WAIT - arg1: RC, arg2: , arg3: 
+[INFO] 12:25:01:306 CPU/(8075:8082): PID: 2 - Ejecutando: MOV_IN - arg1: ECX, arg2: 256, arg3: 
+[INFO] 12:25:02:306 CPU/(8075:8082): PID: 2 - Acción: LEER - Segmento: 1 - Dirección Física: 192 - Valor: CoscuWin
+[INFO] 12:25:02:306 CPU/(8075:8082): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[INFO] 12:25:02:306 CPU/(8075:8082): PID: 2 - Ejecutando: MOV_IN - arg1: EDX, arg2: 2048, arg3: 
+[INFO] 12:25:03:307 CPU/(8075:8082): PID: 2 - Acción: LEER - Segmento: 8 - Dirección Física: 640 - Valor: GermanNo
+[INFO] 12:25:03:307 CPU/(8075:8082): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 2, arg2: , arg3: 
+[INFO] 12:25:03:307 CPU/(8075:8082): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 4, arg2: , arg3: 
+[INFO] 12:25:03:307 CPU/(8075:8082): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 5, arg2: , arg3: 
+[INFO] 12:25:03:307 CPU/(8075:8082): PID: 2 - Ejecutando: SIGNAL - arg1: RC, arg2: , arg3: 
+[INFO] 12:25:03:307 CPU/(8075:8082): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 12:25:03:308 CPU/(8075:8082): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 128, arg3: 
+[INFO] 12:25:03:308 CPU/(8075:8082): PID: 3 - Ejecutando: SIGNAL - arg1: RA, arg2: , arg3: 
+[INFO] 12:25:03:308 CPU/(8075:8082): PID: 3 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 12:32:08:298 CPU/(8750:8828): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 12:32:52:941 CPU/(8750:8828): PID: 1 - Ejecutando: SET - arg1: AX, arg2: h014, arg3: 
+[INFO] 12:32:53:941 CPU/(8750:8828): PID: 1 - Ejecutando: MOV_OUT - arg1: 12, arg2: AX, arg3: 
+[INFO] 12:32:54:941 CPU/(8750:8828): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 12 - Valor: h014
+[INFO] 12:32:54:941 CPU/(8750:8828): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 128, arg3: 
+[INFO] 12:32:54:941 CPU/(8750:8828): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 12:36:06:968 CPU/(9277:9282): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 12:36:06:968 CPU/(9277:9282): PID: 1 - Ejecutando: SET - arg1: AX, arg2: h014, arg3: 
+[INFO] 12:36:07:968 CPU/(9277:9282): PID: 1 - Ejecutando: MOV_OUT - arg1: 12, arg2: AX, arg3: 
+[INFO] 12:36:08:969 CPU/(9277:9282): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 12 - Valor: h014
+[INFO] 12:36:08:969 CPU/(9277:9282): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 128, arg3: 
+[INFO] 12:36:08:969 CPU/(9277:9282): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 12:36:08:969 CPU/(9277:9282): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 12:36:08:969 CPU/(9277:9282): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 12:36:08:969 CPU/(9277:9282): PID: 2 - Ejecutando: MOV_IN - arg1: CX, arg2: 12, arg3: 
+[INFO] 12:36:09:970 CPU/(9277:9282): PID: 2 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: h014
+[INFO] 12:36:09:970 CPU/(9277:9282): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 64, arg3: 
+[INFO] 12:36:09:970 CPU/(9277:9282): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 64, arg3: 
+[INFO] 12:36:09:970 CPU/(9277:9282): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 64, arg3: 
+[INFO] 12:36:09:970 CPU/(9277:9282): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 64, arg3: 
+[INFO] 12:36:09:970 CPU/(9277:9282): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 64, arg3: 
+[INFO] 12:36:09:970 CPU/(9277:9282): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 64, arg3: 
+[INFO] 12:36:09:970 CPU/(9277:9282): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 7, arg2: 64, arg3: 
+[INFO] 12:36:09:970 CPU/(9277:9282): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 8, arg2: 64, arg3: 
+[INFO] 12:36:09:971 CPU/(9277:9282): PID: 2 - Ejecutando: SET - arg1: BX, arg2: Ch4u, arg3: 
+[INFO] 12:36:10:971 CPU/(9277:9282): PID: 2 - Ejecutando: MOV_OUT - arg1: 12, arg2: BX, arg3: 
+[INFO] 12:36:11:971 CPU/(9277:9282): PID: 2 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 12:36:11:971 CPU/(9277:9282): PID: 2 - Ejecutando: SIGNAL - arg1: RA, arg2: , arg3: 
+[INFO] 12:36:11:972 CPU/(9277:9282): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 12:36:11:972 CPU/(9277:9282): PID: 3 - Ejecutando: WAIT - arg1: RC, arg2: , arg3: 
+[INFO] 12:36:11:972 CPU/(9277:9282): PID: 1 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[INFO] 12:36:11:972 CPU/(9277:9282): PID: 1 - Ejecutando: MOV_IN - arg1: DX, arg2: 12, arg3: 
+[INFO] 12:36:12:972 CPU/(9277:9282): PID: 1 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 12:36:12:972 CPU/(9277:9282): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 12:36:12:972 CPU/(9277:9282): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 12:36:12:972 CPU/(9277:9282): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 9, arg2: 64, arg3: 
+[INFO] 12:36:12:972 CPU/(9277:9282): PID: 2 - Ejecutando: SET - arg1: EAX, arg2: CoscuWin, arg3: 
+[INFO] 12:36:13:973 CPU/(9277:9282): PID: 2 - Ejecutando: MOV_OUT - arg1: 256, arg2: EAX, arg3: 
+[INFO] 12:36:14:973 CPU/(9277:9282): PID: 2 - Acción: ESCRIBIR - Segmento: 1 - Dirección Física: 256 - Valor: CoscuWin
+[INFO] 12:36:14:973 CPU/(9277:9282): PID: 2 - Ejecutando: SET - arg1: EBX, arg2: GermanNo, arg3: 
+[INFO] 12:36:15:973 CPU/(9277:9282): PID: 2 - Ejecutando: MOV_OUT - arg1: 2048, arg2: EBX, arg3: 
+[INFO] 12:36:16:974 CPU/(9277:9282): PID: 2 - Acción: ESCRIBIR - Segmento: 8 - Dirección Física: 704 - Valor: GermanNo
+[INFO] 12:36:16:974 CPU/(9277:9282): PID: 2 - Ejecutando: SIGNAL - arg1: RC, arg2: , arg3: 
+[INFO] 12:36:16:974 CPU/(9277:9282): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 12:36:16:975 CPU/(9277:9282): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 256, arg3: 
+[INFO] 12:37:16:976 CPU/(9277:9282): PID: 3 - Ejecutando: MOV_IN - arg1: AX, arg2: 12, arg3: 
+[INFO] 12:37:17:976 CPU/(9277:9282): PID: 3 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 12:37:17:977 CPU/(9277:9282): PID: 3 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 12:37:17:977 CPU/(9277:9282): PID: 3 - Ejecutando: WAIT - arg1: RC, arg2: , arg3: 
+[INFO] 12:37:17:977 CPU/(9277:9282): PID: 2 - Ejecutando: MOV_IN - arg1: ECX, arg2: 256, arg3: 
+[INFO] 12:37:18:977 CPU/(9277:9282): PID: 2 - Acción: LEER - Segmento: 1 - Dirección Física: 192 - Valor: CoscuWin
+[INFO] 12:37:18:977 CPU/(9277:9282): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[INFO] 12:37:18:977 CPU/(9277:9282): PID: 2 - Ejecutando: MOV_IN - arg1: EDX, arg2: 2048, arg3: 
+[INFO] 12:37:19:978 CPU/(9277:9282): PID: 2 - Acción: LEER - Segmento: 8 - Dirección Física: 640 - Valor: GermanNo
+[INFO] 12:37:19:978 CPU/(9277:9282): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 2, arg2: , arg3: 
+[INFO] 12:37:19:978 CPU/(9277:9282): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 4, arg2: , arg3: 
+[INFO] 12:37:19:978 CPU/(9277:9282): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 5, arg2: , arg3: 
+[INFO] 12:37:19:978 CPU/(9277:9282): PID: 2 - Ejecutando: SIGNAL - arg1: RC, arg2: , arg3: 
+[INFO] 12:37:19:978 CPU/(9277:9282): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 12:37:19:978 CPU/(9277:9282): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 128, arg3: 
+[INFO] 12:37:19:978 CPU/(9277:9282): PID: 3 - Ejecutando: SIGNAL - arg1: RA, arg2: , arg3: 
+[INFO] 12:37:19:978 CPU/(9277:9282): PID: 3 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 12:37:19:979 CPU/(9277:9282): PID: 3 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 12:37:19:979 CPU/(9277:9282): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 12:37:19:979 CPU/(9277:9282): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 12:46:50:454 CPU/(10201:10211): PID: 1 - Ejecutando: SET - arg1: AX, arg2: HOLA, arg3: 
+[INFO] 12:46:51:454 CPU/(10201:10211): PID: 1 - Ejecutando: WAIT - arg1: LA_TERCERA_DE_FRANCI, arg2: , arg3: 
+[INFO] 12:46:54:368 CPU/(10201:10211): PID: 2 - Ejecutando: SET - arg1: AX, arg2: HOLA, arg3: 
+[INFO] 12:46:55:368 CPU/(10201:10211): PID: 2 - Ejecutando: SIGNAL - arg1: EL_CUARTO_DE_FRANCIA, arg2: , arg3: 
+[INFO] 12:46:58:070 CPU/(10201:10211): PID: 3 - Ejecutando: SET - arg1: AX, arg2: HOLA, arg3: 
+[INFO] 12:46:59:070 CPU/(10201:10211): PID: 3 - Ejecutando: SET - arg1: RAX, arg2: MappaLlegaEl2c23, arg3: 
+[INFO] 12:47:00:070 CPU/(10201:10211): PID: 3 - Ejecutando: MOV_OUT - arg1: 124, arg2: AX, arg3: 
+[INFO] 12:47:01:070 CPU/(10201:10211): PID: 3 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 124 - Valor: HOLA
+[INFO] 12:47:01:070 CPU/(10201:10211): PID: 3 - Ejecutando: MOV_IN - arg1: BX, arg2: 124, arg3: 
+[INFO] 12:47:02:071 CPU/(10201:10211): PID: 3 - Acción: LEER - Segmento: 0 - Dirección Física: 124 - Valor: HOLA
+[INFO] 12:47:02:071 CPU/(10201:10211): PID: 3 - Ejecutando: MOV_OUT - arg1: 120, arg2: RAX, arg3: 
+[ERROR] 12:47:02:071 CPU/(10201:10211): PID: 3 - ERROR SEG_FAULT - Segmento: 0 - Offset: 120 - Tamaño: 128
+[INFO] 12:47:02:071 CPU/(10201:10211): PID: 3 - Ejecutando: MOV_IN - arg1: RBX, arg2: 120, arg3: 
+[ERROR] 12:47:02:071 CPU/(10201:10211): PID: 3 - ERROR SEG_FAULT - Segmento: 0 - Offset: 120 - Tamaño: 128
+[INFO] 12:48:28:093 CPU/(10201:10336): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 256, arg3: 
+[INFO] 12:48:28:093 CPU/(10201:10336): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 256, arg3: 
+[INFO] 12:48:28:093 CPU/(10201:10336): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 256, arg3: 
+[INFO] 12:48:28:093 CPU/(10201:10336): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 256, arg3: 
+[INFO] 12:48:28:093 CPU/(10201:10336): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 17:10:45:960 CPU/(4314:4320): PID: 1 - Ejecutando: WAIT - arg1: DISCO, arg2: , arg3: 
+[INFO] 17:10:45:961 CPU/(4314:4320): PID: 1 - Ejecutando: I/O - arg1: 10, arg2: , arg3: 
+[INFO] 17:10:46:314 CPU/(4314:4320): PID: 2 - Ejecutando: WAIT - arg1: IMPRESORA, arg2: , arg3: 
+[INFO] 17:10:46:314 CPU/(4314:4320): PID: 2 - Ejecutando: I/O - arg1: 10, arg2: , arg3: 
+[INFO] 17:10:46:764 CPU/(4314:4320): PID: 3 - Ejecutando: WAIT - arg1: SCANNER, arg2: , arg3: 
+[INFO] 17:10:46:764 CPU/(4314:4320): PID: 3 - Ejecutando: I/O - arg1: 10, arg2: , arg3: 
+[INFO] 17:10:55:961 CPU/(4314:4320): PID: 1 - Ejecutando: WAIT - arg1: IMPRESORA, arg2: , arg3: 
+[INFO] 17:10:56:315 CPU/(4314:4320): PID: 2 - Ejecutando: WAIT - arg1: SCANNER, arg2: , arg3: 
+[INFO] 17:10:56:764 CPU/(4314:4320): PID: 3 - Ejecutando: WAIT - arg1: DISCO, arg2: , arg3: 
+[INFO] 17:14:57:207 CPU/(4825:4833): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 17:14:57:207 CPU/(4825:4833): PID: 1 - Ejecutando: SET - arg1: AX, arg2: h014, arg3: 
+[INFO] 17:14:58:207 CPU/(4825:4833): PID: 1 - Ejecutando: MOV_OUT - arg1: 12, arg2: AX, arg3: 
+[INFO] 17:14:59:207 CPU/(4825:4833): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 12 - Valor: h014
+[INFO] 17:14:59:207 CPU/(4825:4833): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 128, arg3: 
+[INFO] 17:14:59:207 CPU/(4825:4833): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 17:14:59:207 CPU/(4825:4833): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 17:14:59:208 CPU/(4825:4833): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 17:14:59:208 CPU/(4825:4833): PID: 2 - Ejecutando: MOV_IN - arg1: CX, arg2: 12, arg3: 
+[INFO] 17:15:00:208 CPU/(4825:4833): PID: 2 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: h014
+[INFO] 17:15:00:208 CPU/(4825:4833): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 64, arg3: 
+[INFO] 17:15:00:208 CPU/(4825:4833): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 64, arg3: 
+[INFO] 17:15:00:208 CPU/(4825:4833): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 64, arg3: 
+[INFO] 17:15:00:208 CPU/(4825:4833): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 64, arg3: 
+[INFO] 17:15:00:208 CPU/(4825:4833): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 64, arg3: 
+[INFO] 17:15:00:209 CPU/(4825:4833): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 64, arg3: 
+[INFO] 17:15:00:209 CPU/(4825:4833): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 7, arg2: 64, arg3: 
+[INFO] 17:15:00:209 CPU/(4825:4833): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 8, arg2: 64, arg3: 
+[INFO] 17:15:00:209 CPU/(4825:4833): PID: 2 - Ejecutando: SET - arg1: BX, arg2: Ch4u, arg3: 
+[INFO] 17:15:01:209 CPU/(4825:4833): PID: 2 - Ejecutando: MOV_OUT - arg1: 12, arg2: BX, arg3: 
+[INFO] 17:15:02:209 CPU/(4825:4833): PID: 2 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 17:15:02:209 CPU/(4825:4833): PID: 2 - Ejecutando: SIGNAL - arg1: RA, arg2: , arg3: 
+[INFO] 17:15:02:210 CPU/(4825:4833): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 17:15:02:210 CPU/(4825:4833): PID: 3 - Ejecutando: WAIT - arg1: RC, arg2: , arg3: 
+[INFO] 17:15:02:210 CPU/(4825:4833): PID: 1 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[INFO] 17:15:02:210 CPU/(4825:4833): PID: 1 - Ejecutando: MOV_IN - arg1: DX, arg2: 12, arg3: 
+[INFO] 17:15:03:210 CPU/(4825:4833): PID: 1 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 17:15:03:210 CPU/(4825:4833): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 17:15:03:210 CPU/(4825:4833): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 17:15:03:211 CPU/(4825:4833): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 9, arg2: 64, arg3: 
+[INFO] 17:15:03:211 CPU/(4825:4833): PID: 2 - Ejecutando: SET - arg1: EAX, arg2: CoscuWin, arg3: 
+[INFO] 17:15:04:211 CPU/(4825:4833): PID: 2 - Ejecutando: MOV_OUT - arg1: 256, arg2: EAX, arg3: 
+[INFO] 17:15:05:211 CPU/(4825:4833): PID: 2 - Acción: ESCRIBIR - Segmento: 1 - Dirección Física: 256 - Valor: CoscuWin
+[INFO] 17:15:05:211 CPU/(4825:4833): PID: 2 - Ejecutando: SET - arg1: EBX, arg2: GermanNo, arg3: 
+[INFO] 17:15:06:211 CPU/(4825:4833): PID: 2 - Ejecutando: MOV_OUT - arg1: 2048, arg2: EBX, arg3: 
+[INFO] 17:15:07:212 CPU/(4825:4833): PID: 2 - Acción: ESCRIBIR - Segmento: 8 - Dirección Física: 704 - Valor: GermanNo
+[INFO] 17:15:07:212 CPU/(4825:4833): PID: 2 - Ejecutando: SIGNAL - arg1: RC, arg2: , arg3: 
+[INFO] 17:15:07:212 CPU/(4825:4833): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 17:15:07:212 CPU/(4825:4833): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 256, arg3: 
+[INFO] 17:15:07:212 CPU/(4825:4833): PID: 3 - Ejecutando: MOV_IN - arg1: AX, arg2: 12, arg3: 
+[INFO] 17:15:08:213 CPU/(4825:4833): PID: 3 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 17:15:08:213 CPU/(4825:4833): PID: 3 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 17:15:08:213 CPU/(4825:4833): PID: 3 - Ejecutando: WAIT - arg1: RC, arg2: , arg3: 
+[INFO] 17:15:08:213 CPU/(4825:4833): PID: 2 - Ejecutando: MOV_IN - arg1: ECX, arg2: 256, arg3: 
+[INFO] 17:15:09:213 CPU/(4825:4833): PID: 2 - Acción: LEER - Segmento: 1 - Dirección Física: 256 - Valor: CoscuWin
+[INFO] 17:15:09:213 CPU/(4825:4833): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[INFO] 17:15:09:213 CPU/(4825:4833): PID: 2 - Ejecutando: MOV_IN - arg1: EDX, arg2: 2048, arg3: 
+[INFO] 17:15:09:272 CPU/(4825:4833): PID: 2 - Acción: LEER - Segmento: 8 - Dirección Física: 704 - Valor: ?;????
+[INFO] 17:15:09:272 CPU/(4825:4833): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 2, arg2: , arg3: 
+[INFO] 17:15:09:273 CPU/(4825:4833): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 4, arg2: , arg3: 
+[INFO] 17:21:26:096 CPU/(5389:5418): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 17:21:26:096 CPU/(5389:5418): PID: 1 - Ejecutando: SET - arg1: AX, arg2: h014, arg3: 
+[INFO] 17:21:27:096 CPU/(5389:5418): PID: 1 - Ejecutando: MOV_OUT - arg1: 12, arg2: AX, arg3: 
+[INFO] 17:21:28:096 CPU/(5389:5418): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 12 - Valor: h014
+[INFO] 17:21:28:096 CPU/(5389:5418): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 128, arg3: 
+[INFO] 17:21:28:096 CPU/(5389:5418): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 17:21:28:097 CPU/(5389:5418): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 17:21:28:097 CPU/(5389:5418): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 17:21:28:097 CPU/(5389:5418): PID: 2 - Ejecutando: MOV_IN - arg1: CX, arg2: 12, arg3: 
+[INFO] 17:21:41:611 CPU/(5389:5418): PID: 2 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: h014
+[INFO] 17:21:41:611 CPU/(5389:5418): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 64, arg3: 
+[INFO] 17:21:41:611 CPU/(5389:5418): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 64, arg3: 
+[INFO] 17:21:42:243 CPU/(5389:5418): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 64, arg3: 
+[INFO] 17:21:42:243 CPU/(5389:5418): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 64, arg3: 
+[INFO] 17:21:42:706 CPU/(5389:5418): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 64, arg3: 
+[INFO] 17:21:42:707 CPU/(5389:5418): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 64, arg3: 
+[INFO] 17:21:42:707 CPU/(5389:5418): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 7, arg2: 64, arg3: 
+[INFO] 17:21:42:707 CPU/(5389:5418): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 8, arg2: 64, arg3: 
+[INFO] 17:21:42:707 CPU/(5389:5418): PID: 2 - Ejecutando: SET - arg1: BX, arg2: Ch4u, arg3: 
+[INFO] 17:21:43:707 CPU/(5389:5418): PID: 2 - Ejecutando: MOV_OUT - arg1: 12, arg2: BX, arg3: 
+[INFO] 17:21:44:707 CPU/(5389:5418): PID: 2 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 17:21:44:707 CPU/(5389:5418): PID: 2 - Ejecutando: SIGNAL - arg1: RA, arg2: , arg3: 
+[INFO] 17:21:44:708 CPU/(5389:5418): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 17:21:44:708 CPU/(5389:5418): PID: 3 - Ejecutando: WAIT - arg1: RC, arg2: , arg3: 
+[INFO] 17:21:44:708 CPU/(5389:5418): PID: 1 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[INFO] 17:21:44:708 CPU/(5389:5418): PID: 1 - Ejecutando: MOV_IN - arg1: DX, arg2: 12, arg3: 
+[INFO] 17:21:52:327 CPU/(5389:5418): PID: 1 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 17:21:52:327 CPU/(5389:5418): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 17:21:52:327 CPU/(5389:5418): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 17:21:52:327 CPU/(5389:5418): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 9, arg2: 64, arg3: 
+[INFO] 17:21:52:717 CPU/(5389:5418): PID: 2 - Ejecutando: SET - arg1: EAX, arg2: CoscuWin, arg3: 
+[INFO] 17:21:53:717 CPU/(5389:5418): PID: 2 - Ejecutando: MOV_OUT - arg1: 256, arg2: EAX, arg3: 
+[INFO] 17:21:54:717 CPU/(5389:5418): PID: 2 - Acción: ESCRIBIR - Segmento: 1 - Dirección Física: 256 - Valor: CoscuWin
+[INFO] 17:21:54:717 CPU/(5389:5418): PID: 2 - Ejecutando: SET - arg1: EBX, arg2: GermanNo, arg3: 
+[INFO] 17:21:55:717 CPU/(5389:5418): PID: 2 - Ejecutando: MOV_OUT - arg1: 2048, arg2: EBX, arg3: 
+[INFO] 17:21:56:718 CPU/(5389:5418): PID: 2 - Acción: ESCRIBIR - Segmento: 8 - Dirección Física: 704 - Valor: GermanNo
+[INFO] 17:21:56:718 CPU/(5389:5418): PID: 2 - Ejecutando: SIGNAL - arg1: RC, arg2: , arg3: 
+[INFO] 17:21:56:718 CPU/(5389:5418): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 17:21:56:718 CPU/(5389:5418): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 256, arg3: 
+[INFO] 17:21:56:718 CPU/(5389:5418): PID: 3 - Ejecutando: MOV_IN - arg1: AX, arg2: 12, arg3: 
+[INFO] 17:22:07:032 CPU/(5389:5418): PID: 3 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 17:22:07:032 CPU/(5389:5418): PID: 3 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 17:22:07:032 CPU/(5389:5418): PID: 3 - Ejecutando: WAIT - arg1: RC, arg2: , arg3: 
+[INFO] 17:22:07:032 CPU/(5389:5418): PID: 2 - Ejecutando: MOV_IN - arg1: ECX, arg2: 256, arg3: 
+[INFO] 17:22:14:441 CPU/(5389:5418): PID: 2 - Acción: LEER - Segmento: 1 - Dirección Física: 256 - Valor: CoscuWin
+[INFO] 17:22:14:441 CPU/(5389:5418): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[INFO] 17:22:14:441 CPU/(5389:5418): PID: 2 - Ejecutando: MOV_IN - arg1: EDX, arg2: 2048, arg3: 
+[INFO] 17:24:49:567 CPU/(5389:5418): PID: 2 - Acción: LEER - Segmento: 8 - Dirección Física: 704 - Valor: ?;?p??
+[INFO] 17:24:49:567 CPU/(5389:5418): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 2, arg2: , arg3: 
+[INFO] 17:24:49:567 CPU/(5389:5418): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 4, arg2: , arg3: 
+[INFO] 17:27:05:563 CPU/(6558:6583): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 17:27:05:563 CPU/(6558:6583): PID: 1 - Ejecutando: SET - arg1: AX, arg2: h014, arg3: 
+[INFO] 17:27:06:563 CPU/(6558:6583): PID: 1 - Ejecutando: MOV_OUT - arg1: 12, arg2: AX, arg3: 
+[INFO] 17:27:07:563 CPU/(6558:6583): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 12 - Valor: h014
+[INFO] 17:27:07:563 CPU/(6558:6583): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 128, arg3: 
+[INFO] 17:27:07:563 CPU/(6558:6583): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 17:27:07:563 CPU/(6558:6583): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 17:27:07:564 CPU/(6558:6583): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 17:27:07:564 CPU/(6558:6583): PID: 2 - Ejecutando: MOV_IN - arg1: CX, arg2: 12, arg3: 
+[INFO] 17:27:08:564 CPU/(6558:6583): PID: 2 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: h014
+[INFO] 17:27:08:564 CPU/(6558:6583): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 64, arg3: 
+[INFO] 17:27:08:564 CPU/(6558:6583): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 64, arg3: 
+[INFO] 17:27:08:564 CPU/(6558:6583): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 64, arg3: 
+[INFO] 17:27:08:564 CPU/(6558:6583): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 64, arg3: 
+[INFO] 17:27:08:564 CPU/(6558:6583): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 64, arg3: 
+[INFO] 17:27:08:565 CPU/(6558:6583): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 64, arg3: 
+[INFO] 17:27:08:565 CPU/(6558:6583): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 7, arg2: 64, arg3: 
+[INFO] 17:27:08:565 CPU/(6558:6583): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 8, arg2: 64, arg3: 
+[INFO] 17:27:08:565 CPU/(6558:6583): PID: 2 - Ejecutando: SET - arg1: BX, arg2: Ch4u, arg3: 
+[INFO] 17:27:09:565 CPU/(6558:6583): PID: 2 - Ejecutando: MOV_OUT - arg1: 12, arg2: BX, arg3: 
+[INFO] 17:27:10:565 CPU/(6558:6583): PID: 2 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 17:27:10:565 CPU/(6558:6583): PID: 2 - Ejecutando: SIGNAL - arg1: RA, arg2: , arg3: 
+[INFO] 17:27:10:566 CPU/(6558:6583): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 17:27:10:566 CPU/(6558:6583): PID: 3 - Ejecutando: WAIT - arg1: RC, arg2: , arg3: 
+[INFO] 17:27:10:566 CPU/(6558:6583): PID: 1 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[INFO] 17:27:10:566 CPU/(6558:6583): PID: 1 - Ejecutando: MOV_IN - arg1: DX, arg2: 12, arg3: 
+[INFO] 17:27:11:566 CPU/(6558:6583): PID: 1 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 17:27:11:566 CPU/(6558:6583): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 17:27:11:566 CPU/(6558:6583): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 17:27:11:566 CPU/(6558:6583): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 9, arg2: 64, arg3: 
+[INFO] 17:27:11:566 CPU/(6558:6583): PID: 2 - Ejecutando: SET - arg1: EAX, arg2: CoscuWin, arg3: 
+[INFO] 17:27:12:566 CPU/(6558:6583): PID: 2 - Ejecutando: MOV_OUT - arg1: 256, arg2: EAX, arg3: 
+[INFO] 17:27:13:567 CPU/(6558:6583): PID: 2 - Acción: ESCRIBIR - Segmento: 1 - Dirección Física: 256 - Valor: CoscuWin
+[INFO] 17:27:13:567 CPU/(6558:6583): PID: 2 - Ejecutando: SET - arg1: EBX, arg2: GermanNo, arg3: 
+[INFO] 17:27:14:567 CPU/(6558:6583): PID: 2 - Ejecutando: MOV_OUT - arg1: 2048, arg2: EBX, arg3: 
+[INFO] 17:27:15:567 CPU/(6558:6583): PID: 2 - Acción: ESCRIBIR - Segmento: 8 - Dirección Física: 704 - Valor: GermanNo
+[INFO] 17:27:15:567 CPU/(6558:6583): PID: 2 - Ejecutando: SIGNAL - arg1: RC, arg2: , arg3: 
+[INFO] 17:27:15:567 CPU/(6558:6583): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 17:27:15:568 CPU/(6558:6583): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 256, arg3: 
+[INFO] 17:27:15:568 CPU/(6558:6583): PID: 3 - Ejecutando: MOV_IN - arg1: AX, arg2: 12, arg3: 
+[INFO] 17:27:16:568 CPU/(6558:6583): PID: 3 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 17:27:16:568 CPU/(6558:6583): PID: 3 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 17:27:16:568 CPU/(6558:6583): PID: 3 - Ejecutando: WAIT - arg1: RC, arg2: , arg3: 
+[INFO] 17:27:16:568 CPU/(6558:6583): PID: 2 - Ejecutando: MOV_IN - arg1: ECX, arg2: 256, arg3: 
+[INFO] 17:27:17:568 CPU/(6558:6583): PID: 2 - Acción: LEER - Segmento: 1 - Dirección Física: 256 - Valor: CoscuWin
+[INFO] 17:27:17:568 CPU/(6558:6583): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[INFO] 17:27:17:569 CPU/(6558:6583): PID: 2 - Ejecutando: MOV_IN - arg1: EDX, arg2: 2048, arg3: 
+[INFO] 17:27:18:569 CPU/(6558:6583): PID: 2 - Acción: LEER - Segmento: 8 - Dirección Física: 704 - Valor: GermanNo
+[INFO] 17:27:18:569 CPU/(6558:6583): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 2, arg2: , arg3: 
+[INFO] 17:27:18:569 CPU/(6558:6583): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 4, arg2: , arg3: 
+[INFO] 17:27:18:569 CPU/(6558:6583): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 5, arg2: , arg3: 
+[INFO] 17:27:18:569 CPU/(6558:6583): PID: 2 - Ejecutando: SIGNAL - arg1: RC, arg2: , arg3: 
+[INFO] 17:27:18:570 CPU/(6558:6583): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 17:27:18:570 CPU/(6558:6583): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 128, arg3: 
+[INFO] 17:27:18:570 CPU/(6558:6583): PID: 3 - Ejecutando: SIGNAL - arg1: RA, arg2: , arg3: 
+[INFO] 17:27:18:570 CPU/(6558:6583): PID: 3 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 17:27:18:570 CPU/(6558:6583): PID: 3 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 17:27:18:570 CPU/(6558:6583): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 17:27:18:570 CPU/(6558:6583): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 17:28:05:144 CPU/(6621:6627): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 17:28:05:144 CPU/(6621:6627): PID: 1 - Ejecutando: SET - arg1: AX, arg2: h014, arg3: 
+[INFO] 17:28:06:144 CPU/(6621:6627): PID: 1 - Ejecutando: MOV_OUT - arg1: 12, arg2: AX, arg3: 
+[INFO] 17:28:07:145 CPU/(6621:6627): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 12 - Valor: h014
+[INFO] 17:28:07:145 CPU/(6621:6627): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 128, arg3: 
+[INFO] 17:28:07:145 CPU/(6621:6627): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 17:28:07:145 CPU/(6621:6627): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 17:28:07:145 CPU/(6621:6627): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 17:28:07:145 CPU/(6621:6627): PID: 2 - Ejecutando: MOV_IN - arg1: CX, arg2: 12, arg3: 
+[INFO] 17:28:08:145 CPU/(6621:6627): PID: 2 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: h014
+[INFO] 17:28:08:145 CPU/(6621:6627): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 64, arg3: 
+[INFO] 17:28:08:146 CPU/(6621:6627): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 64, arg3: 
+[INFO] 17:28:08:146 CPU/(6621:6627): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 64, arg3: 
+[INFO] 17:28:08:146 CPU/(6621:6627): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 64, arg3: 
+[INFO] 17:28:08:146 CPU/(6621:6627): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 64, arg3: 
+[INFO] 17:28:08:146 CPU/(6621:6627): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 64, arg3: 
+[INFO] 17:28:08:146 CPU/(6621:6627): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 7, arg2: 64, arg3: 
+[INFO] 17:28:08:146 CPU/(6621:6627): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 8, arg2: 64, arg3: 
+[INFO] 17:28:08:146 CPU/(6621:6627): PID: 2 - Ejecutando: SET - arg1: BX, arg2: Ch4u, arg3: 
+[INFO] 17:28:09:146 CPU/(6621:6627): PID: 2 - Ejecutando: MOV_OUT - arg1: 12, arg2: BX, arg3: 
+[INFO] 17:28:10:147 CPU/(6621:6627): PID: 2 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 17:28:10:147 CPU/(6621:6627): PID: 2 - Ejecutando: SIGNAL - arg1: RA, arg2: , arg3: 
+[INFO] 17:28:10:147 CPU/(6621:6627): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 17:28:10:147 CPU/(6621:6627): PID: 3 - Ejecutando: WAIT - arg1: RC, arg2: , arg3: 
+[INFO] 17:28:10:147 CPU/(6621:6627): PID: 1 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[INFO] 17:28:10:147 CPU/(6621:6627): PID: 1 - Ejecutando: MOV_IN - arg1: DX, arg2: 12, arg3: 
+[INFO] 17:28:11:147 CPU/(6621:6627): PID: 1 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 17:28:11:148 CPU/(6621:6627): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 17:28:11:148 CPU/(6621:6627): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 17:28:11:148 CPU/(6621:6627): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 9, arg2: 64, arg3: 
+[INFO] 17:28:11:148 CPU/(6621:6627): PID: 2 - Ejecutando: SET - arg1: EAX, arg2: CoscuWin, arg3: 
+[INFO] 17:28:12:148 CPU/(6621:6627): PID: 2 - Ejecutando: MOV_OUT - arg1: 256, arg2: EAX, arg3: 
+[INFO] 17:28:13:148 CPU/(6621:6627): PID: 2 - Acción: ESCRIBIR - Segmento: 1 - Dirección Física: 256 - Valor: CoscuWin
+[INFO] 17:28:13:148 CPU/(6621:6627): PID: 2 - Ejecutando: SET - arg1: EBX, arg2: GermanNo, arg3: 
+[INFO] 17:28:14:148 CPU/(6621:6627): PID: 2 - Ejecutando: MOV_OUT - arg1: 2048, arg2: EBX, arg3: 
+[INFO] 17:28:15:149 CPU/(6621:6627): PID: 2 - Acción: ESCRIBIR - Segmento: 8 - Dirección Física: 704 - Valor: GermanNo
+[INFO] 17:28:15:149 CPU/(6621:6627): PID: 2 - Ejecutando: SIGNAL - arg1: RC, arg2: , arg3: 
+[INFO] 17:28:15:149 CPU/(6621:6627): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 17:28:15:149 CPU/(6621:6627): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 256, arg3: 
+[INFO] 17:29:15:151 CPU/(6621:6627): PID: 3 - Ejecutando: MOV_IN - arg1: AX, arg2: 12, arg3: 
+[INFO] 17:29:16:151 CPU/(6621:6627): PID: 3 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 17:29:16:151 CPU/(6621:6627): PID: 3 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 17:29:16:151 CPU/(6621:6627): PID: 3 - Ejecutando: WAIT - arg1: RC, arg2: , arg3: 
+[INFO] 17:29:16:151 CPU/(6621:6627): PID: 2 - Ejecutando: MOV_IN - arg1: ECX, arg2: 256, arg3: 
+[INFO] 17:29:17:151 CPU/(6621:6627): PID: 2 - Acción: LEER - Segmento: 1 - Dirección Física: 192 - Valor: CoscuWin
+[INFO] 17:29:17:151 CPU/(6621:6627): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[INFO] 17:29:17:151 CPU/(6621:6627): PID: 2 - Ejecutando: MOV_IN - arg1: EDX, arg2: 2048, arg3: 
+[INFO] 17:29:18:152 CPU/(6621:6627): PID: 2 - Acción: LEER - Segmento: 8 - Dirección Física: 640 - Valor: GermanNo
+[INFO] 17:29:18:152 CPU/(6621:6627): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 2, arg2: , arg3: 
+[INFO] 17:29:18:152 CPU/(6621:6627): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 4, arg2: , arg3: 
+[INFO] 17:29:18:152 CPU/(6621:6627): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 5, arg2: , arg3: 
+[INFO] 17:29:18:152 CPU/(6621:6627): PID: 2 - Ejecutando: SIGNAL - arg1: RC, arg2: , arg3: 
+[INFO] 17:29:18:152 CPU/(6621:6627): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 17:29:18:152 CPU/(6621:6627): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 128, arg3: 
+[INFO] 17:29:18:152 CPU/(6621:6627): PID: 3 - Ejecutando: SIGNAL - arg1: RA, arg2: , arg3: 
+[INFO] 17:29:18:152 CPU/(6621:6627): PID: 3 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 17:29:18:152 CPU/(6621:6627): PID: 3 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 17:29:18:153 CPU/(6621:6627): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 17:29:18:153 CPU/(6621:6627): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 17:31:02:953 CPU/(7329:7337): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 17:31:02:953 CPU/(7329:7337): PID: 1 - Ejecutando: SET - arg1: AX, arg2: h014, arg3: 
+[INFO] 17:31:03:953 CPU/(7329:7337): PID: 1 - Ejecutando: MOV_OUT - arg1: 12, arg2: AX, arg3: 
+[INFO] 17:31:04:954 CPU/(7329:7337): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 12 - Valor: h014
+[INFO] 17:31:04:954 CPU/(7329:7337): PID: 1 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 128, arg3: 
+[INFO] 17:31:04:954 CPU/(7329:7337): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 17:31:04:954 CPU/(7329:7337): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 17:31:04:954 CPU/(7329:7337): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 17:31:04:954 CPU/(7329:7337): PID: 2 - Ejecutando: MOV_IN - arg1: CX, arg2: 12, arg3: 
+[INFO] 17:31:05:954 CPU/(7329:7337): PID: 2 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: h014
+[INFO] 17:31:05:954 CPU/(7329:7337): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 64, arg3: 
+[INFO] 17:31:05:955 CPU/(7329:7337): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 64, arg3: 
+[INFO] 17:31:05:955 CPU/(7329:7337): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 64, arg3: 
+[INFO] 17:31:05:955 CPU/(7329:7337): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 64, arg3: 
+[INFO] 17:31:05:955 CPU/(7329:7337): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 64, arg3: 
+[INFO] 17:31:05:955 CPU/(7329:7337): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 64, arg3: 
+[INFO] 17:31:05:955 CPU/(7329:7337): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 7, arg2: 64, arg3: 
+[INFO] 17:31:05:955 CPU/(7329:7337): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 8, arg2: 64, arg3: 
+[INFO] 17:31:05:955 CPU/(7329:7337): PID: 2 - Ejecutando: SET - arg1: BX, arg2: Ch4u, arg3: 
+[INFO] 17:31:06:955 CPU/(7329:7337): PID: 2 - Ejecutando: MOV_OUT - arg1: 12, arg2: BX, arg3: 
+[INFO] 17:31:07:956 CPU/(7329:7337): PID: 2 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 17:31:07:956 CPU/(7329:7337): PID: 2 - Ejecutando: SIGNAL - arg1: RA, arg2: , arg3: 
+[INFO] 17:31:07:957 CPU/(7329:7337): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 17:31:07:957 CPU/(7329:7337): PID: 3 - Ejecutando: WAIT - arg1: RC, arg2: , arg3: 
+[INFO] 17:31:07:957 CPU/(7329:7337): PID: 1 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[INFO] 17:31:07:957 CPU/(7329:7337): PID: 1 - Ejecutando: MOV_IN - arg1: DX, arg2: 12, arg3: 
+[INFO] 17:31:08:957 CPU/(7329:7337): PID: 1 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 17:31:08:957 CPU/(7329:7337): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 17:31:08:957 CPU/(7329:7337): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 17:31:08:957 CPU/(7329:7337): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 9, arg2: 64, arg3: 
+[INFO] 17:31:08:957 CPU/(7329:7337): PID: 2 - Ejecutando: SET - arg1: EAX, arg2: CoscuWin, arg3: 
+[INFO] 17:31:09:957 CPU/(7329:7337): PID: 2 - Ejecutando: MOV_OUT - arg1: 256, arg2: EAX, arg3: 
+[INFO] 17:31:10:958 CPU/(7329:7337): PID: 2 - Acción: ESCRIBIR - Segmento: 1 - Dirección Física: 256 - Valor: CoscuWin
+[INFO] 17:31:10:958 CPU/(7329:7337): PID: 2 - Ejecutando: SET - arg1: EBX, arg2: GermanNo, arg3: 
+[INFO] 17:31:11:958 CPU/(7329:7337): PID: 2 - Ejecutando: MOV_OUT - arg1: 2048, arg2: EBX, arg3: 
+[INFO] 17:31:12:958 CPU/(7329:7337): PID: 2 - Acción: ESCRIBIR - Segmento: 8 - Dirección Física: 704 - Valor: GermanNo
+[INFO] 17:31:12:958 CPU/(7329:7337): PID: 2 - Ejecutando: SIGNAL - arg1: RC, arg2: , arg3: 
+[INFO] 17:31:12:959 CPU/(7329:7337): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 17:31:12:959 CPU/(7329:7337): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 256, arg3: 
+[INFO] 17:32:12:960 CPU/(7329:7337): PID: 3 - Ejecutando: MOV_IN - arg1: AX, arg2: 12, arg3: 
+[INFO] 17:32:13:960 CPU/(7329:7337): PID: 3 - Acción: LEER - Segmento: 0 - Dirección Física: 12 - Valor: Ch4u
+[INFO] 17:32:13:960 CPU/(7329:7337): PID: 3 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 17:32:13:960 CPU/(7329:7337): PID: 3 - Ejecutando: WAIT - arg1: RC, arg2: , arg3: 
+[INFO] 17:32:13:960 CPU/(7329:7337): PID: 2 - Ejecutando: MOV_IN - arg1: ECX, arg2: 256, arg3: 
+[INFO] 17:32:14:960 CPU/(7329:7337): PID: 2 - Acción: LEER - Segmento: 1 - Dirección Física: 128 - Valor: CoscuWin
+[INFO] 17:32:14:960 CPU/(7329:7337): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 1, arg2: , arg3: 
+[INFO] 17:32:14:961 CPU/(7329:7337): PID: 2 - Ejecutando: MOV_IN - arg1: EDX, arg2: 2048, arg3: 
+[INFO] 17:32:15:961 CPU/(7329:7337): PID: 2 - Acción: LEER - Segmento: 8 - Dirección Física: 576 - Valor: GermanNo
+[INFO] 17:32:15:961 CPU/(7329:7337): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 2, arg2: , arg3: 
+[INFO] 17:32:15:961 CPU/(7329:7337): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 4, arg2: , arg3: 
+[INFO] 17:32:15:961 CPU/(7329:7337): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 5, arg2: , arg3: 
+[INFO] 17:32:15:961 CPU/(7329:7337): PID: 2 - Ejecutando: SIGNAL - arg1: RC, arg2: , arg3: 
+[INFO] 17:32:15:961 CPU/(7329:7337): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 17:32:15:961 CPU/(7329:7337): PID: 3 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 128, arg3: 
+[INFO] 17:32:15:961 CPU/(7329:7337): PID: 3 - Ejecutando: SIGNAL - arg1: RA, arg2: , arg3: 
+[INFO] 17:32:15:961 CPU/(7329:7337): PID: 3 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 17:32:15:961 CPU/(7329:7337): PID: 3 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 17:32:15:962 CPU/(7329:7337): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 17:32:15:962 CPU/(7329:7337): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 17:34:52:542 CPU/(7557:7564): PID: 1 - Ejecutando: SET - arg1: AX, arg2: HOLA, arg3: 
+[INFO] 17:34:53:543 CPU/(7557:7564): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: MappaLlegaEl2c23, arg3: 
+[INFO] 17:34:54:543 CPU/(7557:7564): PID: 1 - Ejecutando: MOV_OUT - arg1: 124, arg2: AX, arg3: 
+[INFO] 17:34:55:543 CPU/(7557:7564): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 124 - Valor: HOLA
+[INFO] 17:34:55:543 CPU/(7557:7564): PID: 1 - Ejecutando: MOV_IN - arg1: BX, arg2: 124, arg3: 
+[INFO] 17:34:56:543 CPU/(7557:7564): PID: 1 - Acción: LEER - Segmento: 0 - Dirección Física: 124 - Valor: HOLA
+[INFO] 17:34:56:543 CPU/(7557:7564): PID: 1 - Ejecutando: MOV_OUT - arg1: 120, arg2: RAX, arg3: 
+[ERROR] 17:34:56:543 CPU/(7557:7564): PID: 1 - ERROR SEG_FAULT - Segmento: 0 - Offset: 120 - Tamaño: 128
+[INFO] 17:34:56:543 CPU/(7557:7564): PID: 1 - Ejecutando: MOV_IN - arg1: RBX, arg2: 120, arg3: 
+[ERROR] 17:34:56:543 CPU/(7557:7564): PID: 1 - ERROR SEG_FAULT - Segmento: 0 - Offset: 120 - Tamaño: 128
+[INFO] 17:40:29:664 CPU/(8730:8737): PID: 1 - Ejecutando: SET - arg1: AX, arg2: HOLA, arg3: 
+[INFO] 17:40:30:664 CPU/(8730:8737): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: MappaLlegaEl2c23, arg3: 
+[INFO] 17:40:31:665 CPU/(8730:8737): PID: 1 - Ejecutando: MOV_OUT - arg1: 124, arg2: AX, arg3: 
+[INFO] 17:40:32:665 CPU/(8730:8737): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 124 - Valor: HOLA
+[INFO] 17:40:32:665 CPU/(8730:8737): PID: 1 - Ejecutando: MOV_IN - arg1: BX, arg2: 124, arg3: 
+[INFO] 17:40:33:665 CPU/(8730:8737): PID: 1 - Acción: LEER - Segmento: 0 - Dirección Física: 124 - Valor: HOLA
+[INFO] 17:40:33:665 CPU/(8730:8737): PID: 1 - Ejecutando: MOV_OUT - arg1: 120, arg2: RAX, arg3: 
+[ERROR] 17:40:33:665 CPU/(8730:8737): PID: 1 - ERROR SEG_FAULT - Segmento: 0 - Offset: 120 - Tamaño: 128
+[INFO] 17:43:18:671 CPU/(8858:8863): PID: 1 - Ejecutando: SET - arg1: AX, arg2: HOLA, arg3: 
+[INFO] 17:43:19:671 CPU/(8858:8863): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: MappaLlegaEl2c23, arg3: 
+[INFO] 17:43:20:671 CPU/(8858:8863): PID: 1 - Ejecutando: MOV_OUT - arg1: 124, arg2: AX, arg3: 
+[INFO] 17:43:21:672 CPU/(8858:8863): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 124 - Valor: HOLA
+[INFO] 17:43:21:672 CPU/(8858:8863): PID: 1 - Ejecutando: MOV_IN - arg1: BX, arg2: 124, arg3: 
+[INFO] 17:43:22:672 CPU/(8858:8863): PID: 1 - Acción: LEER - Segmento: 0 - Dirección Física: 124 - Valor: HOLA
+[INFO] 17:43:22:672 CPU/(8858:8863): PID: 1 - Ejecutando: MOV_OUT - arg1: 120, arg2: RAX, arg3: 
+[ERROR] 17:43:22:672 CPU/(8858:8863): PID: 1 - ERROR SEG_FAULT - Segmento: 0 - Offset: 120 - Tamaño: 128
+[INFO] 17:43:34:443 CPU/(8858:8902): PID: 1 - Ejecutando: SET - arg1: AX, arg2: HOLA, arg3: 
+[INFO] 17:43:35:443 CPU/(8858:8902): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: MappaLlegaEl2c23, arg3: 
+[INFO] 17:43:36:444 CPU/(8858:8902): PID: 1 - Ejecutando: MOV_OUT - arg1: 124, arg2: AX, arg3: 
+[INFO] 17:43:37:444 CPU/(8858:8902): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 124 - Valor: HOLA
+[INFO] 17:43:37:444 CPU/(8858:8902): PID: 1 - Ejecutando: MOV_IN - arg1: BX, arg2: 124, arg3: 
+[INFO] 17:43:38:444 CPU/(8858:8902): PID: 1 - Acción: LEER - Segmento: 0 - Dirección Física: 124 - Valor: HOLA
+[INFO] 17:43:38:444 CPU/(8858:8902): PID: 1 - Ejecutando: MOV_OUT - arg1: 120, arg2: RAX, arg3: 
+[ERROR] 17:43:38:444 CPU/(8858:8902): PID: 1 - ERROR SEG_FAULT - Segmento: 0 - Offset: 120 - Tamaño: 128
+[INFO] 17:43:46:959 CPU/(8858:8902): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 256, arg3: 
+[INFO] 17:43:46:959 CPU/(8858:8902): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 256, arg3: 
+[INFO] 17:43:46:959 CPU/(8858:8902): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 256, arg3: 
+[INFO] 17:43:46:960 CPU/(8858:8902): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 256, arg3: 
+[INFO] 17:51:01:167 CPU/(9690:9710): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 17:51:01:167 CPU/(9690:9710): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: SonicTheHedgehog, arg3: 
+[INFO] 17:51:02:167 CPU/(9690:9710): PID: 1 - Ejecutando: MOV_OUT - arg1: 0, arg2: RAX, arg3: 
+[INFO] 17:51:03:167 CPU/(9690:9710): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 0 - Valor: SonicTheHedgehog
+[INFO] 17:51:03:167 CPU/(9690:9710): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation1, arg3: 
+[INFO] 17:51:04:168 CPU/(9690:9710): PID: 1 - Ejecutando: MOV_OUT - arg1: 32, arg2: RBX, arg3: 
+[INFO] 17:51:05:168 CPU/(9690:9710): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 32 - Valor: SonyPlaystation1
+[INFO] 17:51:05:168 CPU/(9690:9710): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation2, arg3: 
+[INFO] 17:51:06:168 CPU/(9690:9710): PID: 1 - Ejecutando: MOV_OUT - arg1: 48, arg2: RBX, arg3: 
+[INFO] 17:51:07:168 CPU/(9690:9710): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 48 - Valor: SonyPlaystation2
+[INFO] 17:51:07:168 CPU/(9690:9710): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation3, arg3: 
+[INFO] 17:51:08:168 CPU/(9690:9710): PID: 1 - Ejecutando: MOV_OUT - arg1: 64, arg2: RBX, arg3: 
+[INFO] 17:51:09:169 CPU/(9690:9710): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 64 - Valor: SonyPlaystation3
+[INFO] 17:51:09:169 CPU/(9690:9710): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation4, arg3: 
+[INFO] 17:51:10:169 CPU/(9690:9710): PID: 1 - Ejecutando: MOV_OUT - arg1: 80, arg2: RBX, arg3: 
+[INFO] 17:51:11:169 CPU/(9690:9710): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 80 - Valor: SonyPlaystation4
+[INFO] 17:51:11:169 CPU/(9690:9710): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation5, arg3: 
+[INFO] 17:51:12:169 CPU/(9690:9710): PID: 1 - Ejecutando: MOV_OUT - arg1: 96, arg2: RBX, arg3: 
+[INFO] 17:51:13:169 CPU/(9690:9710): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 96 - Valor: SonyPlaystation5
+[INFO] 17:51:13:170 CPU/(9690:9710): PID: 1 - Ejecutando: F_OPEN - arg1: Consoles, arg2: , arg3: 
+[INFO] 17:51:13:170 CPU/(9690:9710): PID: 1 - Ejecutando: F_TRUNCATE - arg1: Consoles, arg2: 256, arg3: 
+[INFO] 17:51:58:171 CPU/(9690:9710): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 17:51:58:171 CPU/(9690:9710): PID: 1 - Ejecutando: F_SEEK - arg1: Consoles, arg2: 128, arg3: 
+[INFO] 17:51:58:171 CPU/(9690:9710): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 17:51:58:171 CPU/(9690:9710): PID: 1 - Ejecutando: F_WRITE - arg1: Consoles, arg2: 32, arg3: 80
+[INFO] 17:52:58:172 CPU/(9690:9710): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 64, arg3: 
+[INFO] 17:52:58:172 CPU/(9690:9710): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 64, arg3: 
+[INFO] 17:52:58:172 CPU/(9690:9710): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 64, arg3: 
+[INFO] 17:52:58:172 CPU/(9690:9710): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 64, arg3: 
+[INFO] 17:52:58:173 CPU/(9690:9710): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 128, arg3: 
+[INFO] 17:52:58:173 CPU/(9690:9710): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 2, arg2: , arg3: 
+[INFO] 17:52:58:173 CPU/(9690:9710): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 4, arg2: , arg3: 
+[INFO] 17:52:58:173 CPU/(9690:9710): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 128, arg3: 
+[INFO] 17:53:28:214 CPU/(9690:9710): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 17:53:28:214 CPU/(9690:9710): PID: 1 - Ejecutando: F_CLOSE - arg1: Consoles, arg2: , arg3: 
+[INFO] 17:53:28:214 CPU/(9690:9710): PID: 1 - Ejecutando: F_OPEN - arg1: Videogames, arg2: , arg3: 
+[INFO] 17:53:28:214 CPU/(9690:9710): PID: 1 - Ejecutando: F_TRUNCATE - arg1: Videogames, arg2: 64, arg3: 
+[INFO] 17:53:28:215 CPU/(9690:9710): PID: 1 - Ejecutando: F_SEEK - arg1: Videogames, arg2: 0, arg3: 
+[INFO] 17:53:28:215 CPU/(9690:9710): PID: 1 - Ejecutando: F_WRITE - arg1: Videogames, arg2: 0, arg3: 16
+[INFO] 17:53:43:215 CPU/(9690:9710): PID: 1 - Ejecutando: F_CLOSE - arg1: Videogames, arg2: , arg3: 
+[INFO] 17:53:43:215 CPU/(9690:9710): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 17:54:19:441 CPU/(9690:9710): PID: 3 - Ejecutando: F_OPEN - arg1: Videogames, arg2: , arg3: 
+[INFO] 17:54:19:441 CPU/(9690:9710): PID: 3 - Ejecutando: F_SEEK - arg1: Videogames, arg2: 0, arg3: 
+[INFO] 17:54:19:441 CPU/(9690:9710): PID: 3 - Ejecutando: F_READ - arg1: Videogames, arg2: 16, arg3: 16
+[INFO] 17:54:34:442 CPU/(9690:9710): PID: 4 - Ejecutando: F_OPEN - arg1: Videogames, arg2: , arg3: 
+[INFO] 17:54:34:442 CPU/(9690:9710): PID: 5 - Ejecutando: F_OPEN - arg1: Videogames, arg2: , arg3: 
+[INFO] 17:54:34:442 CPU/(9690:9710): PID: 3 - Ejecutando: MOV_IN - arg1: RAX, arg2: 16, arg3: 
+[INFO] 17:54:35:442 CPU/(9690:9710): PID: 3 - Acción: LEER - Segmento: 0 - Dirección Física: 16 - Valor: SonicTheHedgehog
+[INFO] 17:54:35:442 CPU/(9690:9710): PID: 3 - Ejecutando: F_CLOSE - arg1: Videogames, arg2: , arg3: 
+[INFO] 17:54:35:442 CPU/(9690:9710): PID: 3 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 17:54:35:442 CPU/(9690:9710): PID: 4 - Ejecutando: F_SEEK - arg1: Videogames, arg2: 0, arg3: 
+[INFO] 17:54:35:442 CPU/(9690:9710): PID: 4 - Ejecutando: F_READ - arg1: Videogames, arg2: 16, arg3: 16
+[INFO] 17:54:50:443 CPU/(9690:9710): PID: 4 - Ejecutando: MOV_IN - arg1: RAX, arg2: 16, arg3: 
+[INFO] 17:54:51:443 CPU/(9690:9710): PID: 4 - Acción: LEER - Segmento: 0 - Dirección Física: 16 - Valor: SonicTheHedgehog
+[INFO] 17:54:51:443 CPU/(9690:9710): PID: 4 - Ejecutando: F_CLOSE - arg1: Videogames, arg2: , arg3: 
+[INFO] 17:54:51:443 CPU/(9690:9710): PID: 4 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 17:54:51:444 CPU/(9690:9710): PID: 5 - Ejecutando: F_SEEK - arg1: Videogames, arg2: 0, arg3: 
+[INFO] 17:54:51:444 CPU/(9690:9710): PID: 5 - Ejecutando: F_READ - arg1: Videogames, arg2: 16, arg3: 16
+[INFO] 17:55:06:444 CPU/(9690:9710): PID: 5 - Ejecutando: MOV_IN - arg1: RAX, arg2: 16, arg3: 
+[INFO] 17:55:07:444 CPU/(9690:9710): PID: 5 - Acción: LEER - Segmento: 0 - Dirección Física: 16 - Valor: SonicTheHedgehog
+[INFO] 17:55:07:445 CPU/(9690:9710): PID: 5 - Ejecutando: F_CLOSE - arg1: Videogames, arg2: , arg3: 
+[INFO] 17:55:07:445 CPU/(9690:9710): PID: 5 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 18:06:48:211 CPU/(10374:10399): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 18:06:48:211 CPU/(10374:10399): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: SonicTheHedgehog, arg3: 
+[INFO] 18:06:49:211 CPU/(10374:10399): PID: 1 - Ejecutando: MOV_OUT - arg1: 0, arg2: RAX, arg3: 
+[INFO] 18:06:50:212 CPU/(10374:10399): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 0 - Valor: SonicTheHedgehog
+[INFO] 18:06:50:212 CPU/(10374:10399): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation1, arg3: 
+[INFO] 18:06:51:212 CPU/(10374:10399): PID: 1 - Ejecutando: MOV_OUT - arg1: 32, arg2: RBX, arg3: 
+[INFO] 18:06:52:212 CPU/(10374:10399): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 32 - Valor: SonyPlaystation1
+[INFO] 18:06:52:212 CPU/(10374:10399): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation2, arg3: 
+[INFO] 18:06:53:212 CPU/(10374:10399): PID: 1 - Ejecutando: MOV_OUT - arg1: 48, arg2: RBX, arg3: 
+[INFO] 18:06:54:213 CPU/(10374:10399): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 48 - Valor: SonyPlaystation2
+[INFO] 18:06:54:213 CPU/(10374:10399): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation3, arg3: 
+[INFO] 18:06:55:213 CPU/(10374:10399): PID: 1 - Ejecutando: MOV_OUT - arg1: 64, arg2: RBX, arg3: 
+[INFO] 18:06:56:213 CPU/(10374:10399): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 64 - Valor: SonyPlaystation3
+[INFO] 18:06:56:213 CPU/(10374:10399): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation4, arg3: 
+[INFO] 18:06:57:213 CPU/(10374:10399): PID: 1 - Ejecutando: MOV_OUT - arg1: 80, arg2: RBX, arg3: 
+[INFO] 18:06:58:214 CPU/(10374:10399): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 80 - Valor: SonyPlaystation4
+[INFO] 18:06:58:214 CPU/(10374:10399): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation5, arg3: 
+[INFO] 18:06:59:214 CPU/(10374:10399): PID: 1 - Ejecutando: MOV_OUT - arg1: 96, arg2: RBX, arg3: 
+[INFO] 18:07:00:214 CPU/(10374:10399): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 96 - Valor: SonyPlaystation5
+[INFO] 18:07:00:214 CPU/(10374:10399): PID: 1 - Ejecutando: F_OPEN - arg1: Consoles, arg2: , arg3: 
+[INFO] 18:07:00:214 CPU/(10374:10399): PID: 1 - Ejecutando: F_TRUNCATE - arg1: Consoles, arg2: 256, arg3: 
+[INFO] 18:07:45:216 CPU/(10374:10399): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 18:07:45:216 CPU/(10374:10399): PID: 1 - Ejecutando: F_SEEK - arg1: Consoles, arg2: 128, arg3: 
+[INFO] 18:07:45:216 CPU/(10374:10399): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 18:07:45:216 CPU/(10374:10399): PID: 1 - Ejecutando: F_WRITE - arg1: Consoles, arg2: 32, arg3: 80
+[INFO] 18:07:45:216 CPU/(10374:10399): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 64, arg3: 
+[INFO] 18:10:04:471 CPU/(46536:46659): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 18:10:04:471 CPU/(46536:46659): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: SonicTheHedgehog, arg3: 
+[INFO] 18:10:05:471 CPU/(46536:46659): PID: 1 - Ejecutando: MOV_OUT - arg1: 0, arg2: RAX, arg3: 
+[INFO] 18:10:06:472 CPU/(46536:46659): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 0 - Valor: SonicTheHedgehog
+[INFO] 18:10:06:472 CPU/(46536:46659): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation1, arg3: 
+[INFO] 18:10:07:472 CPU/(46536:46659): PID: 1 - Ejecutando: MOV_OUT - arg1: 32, arg2: RBX, arg3: 
+[INFO] 18:10:08:472 CPU/(46536:46659): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 32 - Valor: SonyPlaystation1
+[INFO] 18:10:08:472 CPU/(46536:46659): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation2, arg3: 
+[INFO] 18:10:09:472 CPU/(46536:46659): PID: 1 - Ejecutando: MOV_OUT - arg1: 48, arg2: RBX, arg3: 
+[INFO] 18:10:10:472 CPU/(46536:46659): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 48 - Valor: SonyPlaystation2
+[INFO] 18:10:10:472 CPU/(46536:46659): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation3, arg3: 
+[INFO] 18:10:11:472 CPU/(46536:46659): PID: 1 - Ejecutando: MOV_OUT - arg1: 64, arg2: RBX, arg3: 
+[INFO] 18:10:12:473 CPU/(46536:46659): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 64 - Valor: SonyPlaystation3
+[INFO] 18:10:12:473 CPU/(46536:46659): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation4, arg3: 
+[INFO] 18:10:13:473 CPU/(46536:46659): PID: 1 - Ejecutando: MOV_OUT - arg1: 80, arg2: RBX, arg3: 
+[INFO] 18:10:14:473 CPU/(46536:46659): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 80 - Valor: SonyPlaystation4
+[INFO] 18:10:14:473 CPU/(46536:46659): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation5, arg3: 
+[INFO] 18:10:15:473 CPU/(46536:46659): PID: 1 - Ejecutando: MOV_OUT - arg1: 96, arg2: RBX, arg3: 
+[INFO] 18:10:16:473 CPU/(46536:46659): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 96 - Valor: SonyPlaystation5
+[INFO] 18:10:16:474 CPU/(46536:46659): PID: 1 - Ejecutando: F_OPEN - arg1: Consoles, arg2: , arg3: 
+[INFO] 18:10:16:474 CPU/(46536:46659): PID: 1 - Ejecutando: F_TRUNCATE - arg1: Consoles, arg2: 256, arg3: 
+[INFO] 18:11:01:475 CPU/(46536:46659): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 18:11:01:475 CPU/(46536:46659): PID: 1 - Ejecutando: F_SEEK - arg1: Consoles, arg2: 128, arg3: 
+[INFO] 18:11:01:475 CPU/(46536:46659): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 18:11:01:475 CPU/(46536:46659): PID: 1 - Ejecutando: F_WRITE - arg1: Consoles, arg2: 32, arg3: 80
+[INFO] 18:11:01:476 CPU/(46536:46659): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 64, arg3: 
+[INFO] 18:11:01:476 CPU/(46536:46659): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 64, arg3: 
+[INFO] 18:11:01:476 CPU/(46536:46659): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 64, arg3: 
+[INFO] 18:11:01:476 CPU/(46536:46659): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 64, arg3: 
+[INFO] 18:11:01:476 CPU/(46536:46659): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 128, arg3: 
+[INFO] 18:11:01:476 CPU/(46536:46659): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 2, arg2: , arg3: 
+[INFO] 18:11:01:476 CPU/(46536:46659): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 4, arg2: , arg3: 
+[INFO] 18:11:01:476 CPU/(46536:46659): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 128, arg3: 
+[INFO] 18:23:05:248 CPU/(48433:48436): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 18:23:05:248 CPU/(48433:48436): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: SonicTheHedgehog, arg3: 
+[INFO] 18:23:06:248 CPU/(48433:48436): PID: 1 - Ejecutando: MOV_OUT - arg1: 0, arg2: RAX, arg3: 
+[INFO] 18:23:07:249 CPU/(48433:48436): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 0 - Valor: SonicTheHedgehog
+[INFO] 18:23:07:249 CPU/(48433:48436): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation1, arg3: 
+[INFO] 18:23:08:249 CPU/(48433:48436): PID: 1 - Ejecutando: MOV_OUT - arg1: 32, arg2: RBX, arg3: 
+[INFO] 18:23:09:249 CPU/(48433:48436): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 32 - Valor: SonyPlaystation1
+[INFO] 18:23:09:249 CPU/(48433:48436): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation2, arg3: 
+[INFO] 18:23:10:250 CPU/(48433:48436): PID: 1 - Ejecutando: MOV_OUT - arg1: 48, arg2: RBX, arg3: 
+[INFO] 18:23:11:250 CPU/(48433:48436): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 48 - Valor: SonyPlaystation2
+[INFO] 18:23:11:250 CPU/(48433:48436): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation3, arg3: 
+[INFO] 18:23:12:250 CPU/(48433:48436): PID: 1 - Ejecutando: MOV_OUT - arg1: 64, arg2: RBX, arg3: 
+[INFO] 18:23:13:251 CPU/(48433:48436): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 64 - Valor: SonyPlaystation3
+[INFO] 18:23:13:251 CPU/(48433:48436): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation4, arg3: 
+[INFO] 18:23:14:251 CPU/(48433:48436): PID: 1 - Ejecutando: MOV_OUT - arg1: 80, arg2: RBX, arg3: 
+[INFO] 18:23:15:252 CPU/(48433:48436): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 80 - Valor: SonyPlaystation4
+[INFO] 18:23:15:252 CPU/(48433:48436): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation5, arg3: 
+[INFO] 18:23:16:252 CPU/(48433:48436): PID: 1 - Ejecutando: MOV_OUT - arg1: 96, arg2: RBX, arg3: 
+[INFO] 18:23:17:253 CPU/(48433:48436): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 96 - Valor: SonyPlaystation5
+[INFO] 18:23:17:253 CPU/(48433:48436): PID: 1 - Ejecutando: F_OPEN - arg1: Consoles, arg2: , arg3: 
+[INFO] 18:23:17:253 CPU/(48433:48436): PID: 1 - Ejecutando: F_TRUNCATE - arg1: Consoles, arg2: 256, arg3: 
+[INFO] 18:24:02:255 CPU/(48433:48436): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 18:24:02:255 CPU/(48433:48436): PID: 1 - Ejecutando: F_SEEK - arg1: Consoles, arg2: 128, arg3: 
+[INFO] 18:24:02:255 CPU/(48433:48436): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 18:24:02:255 CPU/(48433:48436): PID: 1 - Ejecutando: F_WRITE - arg1: Consoles, arg2: 32, arg3: 80
+[INFO] 18:24:02:255 CPU/(48433:48436): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 64, arg3: 
+[INFO] 18:24:02:255 CPU/(48433:48436): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 64, arg3: 
+[INFO] 18:24:02:255 CPU/(48433:48436): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 64, arg3: 
+[INFO] 18:24:02:255 CPU/(48433:48436): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 64, arg3: 
+[INFO] 18:24:02:255 CPU/(48433:48436): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 128, arg3: 
+[INFO] 18:24:02:255 CPU/(48433:48436): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 2, arg2: , arg3: 
+[INFO] 18:24:02:255 CPU/(48433:48436): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 4, arg2: , arg3: 
+[INFO] 18:24:02:255 CPU/(48433:48436): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 128, arg3: 
+[INFO] 18:30:02:722 CPU/(81812:81818): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 18:30:02:722 CPU/(81812:81818): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: SonicTheHedgehog, arg3: 
+[INFO] 18:30:03:722 CPU/(81812:81818): PID: 1 - Ejecutando: MOV_OUT - arg1: 0, arg2: RAX, arg3: 
+[INFO] 18:30:04:723 CPU/(81812:81818): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 0 - Valor: SonicTheHedgehog
+[INFO] 18:30:04:723 CPU/(81812:81818): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation1, arg3: 
+[INFO] 18:30:05:723 CPU/(81812:81818): PID: 1 - Ejecutando: MOV_OUT - arg1: 32, arg2: RBX, arg3: 
+[INFO] 18:30:06:723 CPU/(81812:81818): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 32 - Valor: SonyPlaystation1
+[INFO] 18:30:06:723 CPU/(81812:81818): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation2, arg3: 
+[INFO] 18:30:07:723 CPU/(81812:81818): PID: 1 - Ejecutando: MOV_OUT - arg1: 48, arg2: RBX, arg3: 
+[INFO] 18:30:08:724 CPU/(81812:81818): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 48 - Valor: SonyPlaystation2
+[INFO] 18:30:08:724 CPU/(81812:81818): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation3, arg3: 
+[INFO] 18:30:09:724 CPU/(81812:81818): PID: 1 - Ejecutando: MOV_OUT - arg1: 64, arg2: RBX, arg3: 
+[INFO] 18:30:10:724 CPU/(81812:81818): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 64 - Valor: SonyPlaystation3
+[INFO] 18:30:10:724 CPU/(81812:81818): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation4, arg3: 
+[INFO] 18:30:11:724 CPU/(81812:81818): PID: 1 - Ejecutando: MOV_OUT - arg1: 80, arg2: RBX, arg3: 
+[INFO] 18:30:12:725 CPU/(81812:81818): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 80 - Valor: SonyPlaystation4
+[INFO] 18:30:12:725 CPU/(81812:81818): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation5, arg3: 
+[INFO] 18:30:13:725 CPU/(81812:81818): PID: 1 - Ejecutando: MOV_OUT - arg1: 96, arg2: RBX, arg3: 
+[INFO] 18:30:14:725 CPU/(81812:81818): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 96 - Valor: SonyPlaystation5
+[INFO] 18:30:14:725 CPU/(81812:81818): PID: 1 - Ejecutando: F_OPEN - arg1: Consoles, arg2: , arg3: 
+[INFO] 18:30:14:725 CPU/(81812:81818): PID: 1 - Ejecutando: F_TRUNCATE - arg1: Consoles, arg2: 256, arg3: 
+[INFO] 18:30:14:726 CPU/(81812:81818): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 18:30:14:726 CPU/(81812:81818): PID: 1 - Ejecutando: F_SEEK - arg1: Consoles, arg2: 128, arg3: 
+[INFO] 18:30:14:726 CPU/(81812:81818): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 18:30:14:726 CPU/(81812:81818): PID: 1 - Ejecutando: F_WRITE - arg1: Consoles, arg2: 32, arg3: 80
+[INFO] 18:30:14:726 CPU/(81812:81818): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 64, arg3: 
+[INFO] 18:30:14:726 CPU/(81812:81818): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 64, arg3: 
+[INFO] 18:30:14:726 CPU/(81812:81818): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 64, arg3: 
+[INFO] 18:30:14:726 CPU/(81812:81818): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 64, arg3: 
+[INFO] 18:30:14:727 CPU/(81812:81818): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 128, arg3: 
+[INFO] 18:30:14:727 CPU/(81812:81818): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 2, arg2: , arg3: 
+[INFO] 18:30:14:727 CPU/(81812:81818): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 4, arg2: , arg3: 
+[INFO] 18:30:14:727 CPU/(81812:81818): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 128, arg3: 
+[INFO] 18:30:14:770 CPU/(81812:81818): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 18:32:28:070 CPU/(82015:82223): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 18:32:28:070 CPU/(82015:82223): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: SonicTheHedgehog, arg3: 
+[INFO] 18:32:29:070 CPU/(82015:82223): PID: 1 - Ejecutando: MOV_OUT - arg1: 0, arg2: RAX, arg3: 
+[INFO] 18:32:30:070 CPU/(82015:82223): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 0 - Valor: SonicTheHedgehog
+[INFO] 18:32:30:070 CPU/(82015:82223): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation1, arg3: 
+[INFO] 18:32:31:070 CPU/(82015:82223): PID: 1 - Ejecutando: MOV_OUT - arg1: 32, arg2: RBX, arg3: 
+[INFO] 18:32:32:071 CPU/(82015:82223): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 32 - Valor: SonyPlaystation1
+[INFO] 18:32:32:071 CPU/(82015:82223): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation2, arg3: 
+[INFO] 18:32:33:071 CPU/(82015:82223): PID: 1 - Ejecutando: MOV_OUT - arg1: 48, arg2: RBX, arg3: 
+[INFO] 18:32:34:071 CPU/(82015:82223): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 48 - Valor: SonyPlaystation2
+[INFO] 18:32:34:071 CPU/(82015:82223): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation3, arg3: 
+[INFO] 18:32:35:071 CPU/(82015:82223): PID: 1 - Ejecutando: MOV_OUT - arg1: 64, arg2: RBX, arg3: 
+[INFO] 18:32:36:071 CPU/(82015:82223): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 64 - Valor: SonyPlaystation3
+[INFO] 18:32:36:071 CPU/(82015:82223): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation4, arg3: 
+[INFO] 18:32:37:071 CPU/(82015:82223): PID: 1 - Ejecutando: MOV_OUT - arg1: 80, arg2: RBX, arg3: 
+[INFO] 18:32:38:072 CPU/(82015:82223): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 80 - Valor: SonyPlaystation4
+[INFO] 18:32:38:072 CPU/(82015:82223): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation5, arg3: 
+[INFO] 18:32:39:072 CPU/(82015:82223): PID: 1 - Ejecutando: MOV_OUT - arg1: 96, arg2: RBX, arg3: 
+[INFO] 18:32:40:072 CPU/(82015:82223): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 96 - Valor: SonyPlaystation5
+[INFO] 18:32:40:072 CPU/(82015:82223): PID: 1 - Ejecutando: F_OPEN - arg1: Consoles, arg2: , arg3: 
+[INFO] 18:32:40:072 CPU/(82015:82223): PID: 1 - Ejecutando: F_TRUNCATE - arg1: Consoles, arg2: 256, arg3: 
+[INFO] 18:33:25:073 CPU/(82015:82223): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 18:33:25:073 CPU/(82015:82223): PID: 1 - Ejecutando: F_SEEK - arg1: Consoles, arg2: 128, arg3: 
+[INFO] 18:33:25:073 CPU/(82015:82223): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 18:33:25:073 CPU/(82015:82223): PID: 1 - Ejecutando: F_WRITE - arg1: Consoles, arg2: 32, arg3: 80
+[INFO] 18:33:25:074 CPU/(82015:82223): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 64, arg3: 
+[INFO] 18:33:25:074 CPU/(82015:82223): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 64, arg3: 
+[INFO] 18:33:25:074 CPU/(82015:82223): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 64, arg3: 
+[INFO] 18:33:25:074 CPU/(82015:82223): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 64, arg3: 
+[INFO] 18:33:25:074 CPU/(82015:82223): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 128, arg3: 
+[INFO] 18:33:25:074 CPU/(82015:82223): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 2, arg2: , arg3: 
+[INFO] 18:33:25:074 CPU/(82015:82223): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 4, arg2: , arg3: 
+[INFO] 18:33:25:074 CPU/(82015:82223): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 128, arg3: 
+[INFO] 18:33:25:117 CPU/(82015:82223): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 18:40:23:196 CPU/(83395:83403): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 18:40:23:197 CPU/(83395:83403): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: SonicTheHedgehog, arg3: 
+[INFO] 18:40:24:197 CPU/(83395:83403): PID: 1 - Ejecutando: MOV_OUT - arg1: 0, arg2: RAX, arg3: 
+[INFO] 18:40:25:197 CPU/(83395:83403): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 0 - Valor: SonicTheHedgehog
+[INFO] 18:40:25:197 CPU/(83395:83403): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation1, arg3: 
+[INFO] 18:40:26:197 CPU/(83395:83403): PID: 1 - Ejecutando: MOV_OUT - arg1: 32, arg2: RBX, arg3: 
+[INFO] 18:40:27:198 CPU/(83395:83403): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 32 - Valor: SonyPlaystation1
+[INFO] 18:40:27:198 CPU/(83395:83403): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation2, arg3: 
+[INFO] 18:40:28:198 CPU/(83395:83403): PID: 1 - Ejecutando: MOV_OUT - arg1: 48, arg2: RBX, arg3: 
+[INFO] 18:40:29:199 CPU/(83395:83403): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 48 - Valor: SonyPlaystation2
+[INFO] 18:40:29:199 CPU/(83395:83403): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation3, arg3: 
+[INFO] 18:40:30:199 CPU/(83395:83403): PID: 1 - Ejecutando: MOV_OUT - arg1: 64, arg2: RBX, arg3: 
+[INFO] 18:40:31:199 CPU/(83395:83403): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 64 - Valor: SonyPlaystation3
+[INFO] 18:40:31:199 CPU/(83395:83403): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation4, arg3: 
+[INFO] 18:40:32:199 CPU/(83395:83403): PID: 1 - Ejecutando: MOV_OUT - arg1: 80, arg2: RBX, arg3: 
+[INFO] 18:40:33:199 CPU/(83395:83403): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 80 - Valor: SonyPlaystation4
+[INFO] 18:40:33:199 CPU/(83395:83403): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation5, arg3: 
+[INFO] 18:40:34:200 CPU/(83395:83403): PID: 1 - Ejecutando: MOV_OUT - arg1: 96, arg2: RBX, arg3: 
+[INFO] 18:40:35:200 CPU/(83395:83403): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 96 - Valor: SonyPlaystation5
+[INFO] 18:40:35:200 CPU/(83395:83403): PID: 1 - Ejecutando: F_OPEN - arg1: Consoles, arg2: , arg3: 
+[INFO] 18:40:35:200 CPU/(83395:83403): PID: 1 - Ejecutando: F_TRUNCATE - arg1: Consoles, arg2: 256, arg3: 
+[INFO] 18:41:20:201 CPU/(83395:83403): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 18:41:20:201 CPU/(83395:83403): PID: 1 - Ejecutando: F_SEEK - arg1: Consoles, arg2: 128, arg3: 
+[INFO] 18:41:20:201 CPU/(83395:83403): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 18:41:20:201 CPU/(83395:83403): PID: 1 - Ejecutando: F_WRITE - arg1: Consoles, arg2: 32, arg3: 80
+[INFO] 18:41:20:201 CPU/(83395:83403): PID: 1 - Ejecutando: F_CLOSE - arg1: Consoles, arg2: , arg3: 
+[INFO] 18:41:20:201 CPU/(83395:83403): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 64, arg3: 
+[INFO] 18:41:20:202 CPU/(83395:83403): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 64, arg3: 
+[INFO] 18:41:20:202 CPU/(83395:83403): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 64, arg3: 
+[INFO] 18:41:20:202 CPU/(83395:83403): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 64, arg3: 
+[INFO] 18:41:20:202 CPU/(83395:83403): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 128, arg3: 
+[INFO] 18:41:20:202 CPU/(83395:83403): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 2, arg2: , arg3: 
+[INFO] 18:41:20:202 CPU/(83395:83403): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 4, arg2: , arg3: 
+[INFO] 18:41:20:202 CPU/(83395:83403): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 128, arg3: 
+[INFO] 18:41:20:245 CPU/(83395:83403): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 18:44:37:339 CPU/(83651:83656): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 18:44:37:339 CPU/(83651:83656): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: SonicTheHedgehog, arg3: 
+[INFO] 18:44:38:339 CPU/(83651:83656): PID: 1 - Ejecutando: MOV_OUT - arg1: 0, arg2: RAX, arg3: 
+[INFO] 18:44:39:339 CPU/(83651:83656): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 0 - Valor: SonicTheHedgehog
+[INFO] 18:44:39:339 CPU/(83651:83656): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation1, arg3: 
+[INFO] 18:44:40:340 CPU/(83651:83656): PID: 1 - Ejecutando: MOV_OUT - arg1: 32, arg2: RBX, arg3: 
+[INFO] 18:44:41:340 CPU/(83651:83656): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 32 - Valor: SonyPlaystation1
+[INFO] 18:44:41:340 CPU/(83651:83656): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation2, arg3: 
+[INFO] 18:44:42:340 CPU/(83651:83656): PID: 1 - Ejecutando: MOV_OUT - arg1: 48, arg2: RBX, arg3: 
+[INFO] 18:44:43:340 CPU/(83651:83656): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 48 - Valor: SonyPlaystation2
+[INFO] 18:44:43:340 CPU/(83651:83656): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation3, arg3: 
+[INFO] 18:44:44:340 CPU/(83651:83656): PID: 1 - Ejecutando: MOV_OUT - arg1: 64, arg2: RBX, arg3: 
+[INFO] 18:44:45:341 CPU/(83651:83656): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 64 - Valor: SonyPlaystation3
+[INFO] 18:44:45:341 CPU/(83651:83656): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation4, arg3: 
+[INFO] 18:44:46:341 CPU/(83651:83656): PID: 1 - Ejecutando: MOV_OUT - arg1: 80, arg2: RBX, arg3: 
+[INFO] 18:44:47:342 CPU/(83651:83656): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 80 - Valor: SonyPlaystation4
+[INFO] 18:44:47:342 CPU/(83651:83656): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation5, arg3: 
+[INFO] 18:44:48:342 CPU/(83651:83656): PID: 1 - Ejecutando: MOV_OUT - arg1: 96, arg2: RBX, arg3: 
+[INFO] 18:44:49:342 CPU/(83651:83656): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 96 - Valor: SonyPlaystation5
+[INFO] 18:44:49:342 CPU/(83651:83656): PID: 1 - Ejecutando: F_OPEN - arg1: Consoles, arg2: , arg3: 
+[INFO] 18:44:49:343 CPU/(83651:83656): PID: 1 - Ejecutando: F_TRUNCATE - arg1: Consoles, arg2: 256, arg3: 
+[INFO] 18:44:49:343 CPU/(83651:83656): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 18:44:49:343 CPU/(83651:83656): PID: 1 - Ejecutando: F_SEEK - arg1: Consoles, arg2: 128, arg3: 
+[INFO] 18:44:49:343 CPU/(83651:83656): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 18:44:49:343 CPU/(83651:83656): PID: 1 - Ejecutando: F_WRITE - arg1: Consoles, arg2: 32, arg3: 80
+[INFO] 18:44:49:343 CPU/(83651:83656): PID: 1 - Ejecutando: F_CLOSE - arg1: Consoles, arg2: , arg3: 
+[INFO] 18:44:49:343 CPU/(83651:83656): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 64, arg3: 
+[INFO] 18:45:55:648 CPU/(83765:83772): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 18:45:55:648 CPU/(83765:83772): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: SonicTheHedgehog, arg3: 
+[INFO] 18:45:56:648 CPU/(83765:83772): PID: 1 - Ejecutando: MOV_OUT - arg1: 0, arg2: RAX, arg3: 
+[INFO] 18:45:57:649 CPU/(83765:83772): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 0 - Valor: SonicTheHedgehog
+[INFO] 18:45:57:649 CPU/(83765:83772): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation1, arg3: 
+[INFO] 18:45:58:649 CPU/(83765:83772): PID: 1 - Ejecutando: MOV_OUT - arg1: 32, arg2: RBX, arg3: 
+[INFO] 18:45:59:649 CPU/(83765:83772): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 32 - Valor: SonyPlaystation1
+[INFO] 18:45:59:649 CPU/(83765:83772): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation2, arg3: 
+[INFO] 18:46:00:650 CPU/(83765:83772): PID: 1 - Ejecutando: MOV_OUT - arg1: 48, arg2: RBX, arg3: 
+[INFO] 18:46:01:650 CPU/(83765:83772): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 48 - Valor: SonyPlaystation2
+[INFO] 18:46:01:650 CPU/(83765:83772): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation3, arg3: 
+[INFO] 18:46:02:650 CPU/(83765:83772): PID: 1 - Ejecutando: MOV_OUT - arg1: 64, arg2: RBX, arg3: 
+[INFO] 18:46:03:651 CPU/(83765:83772): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 64 - Valor: SonyPlaystation3
+[INFO] 18:46:03:651 CPU/(83765:83772): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation4, arg3: 
+[INFO] 18:46:04:651 CPU/(83765:83772): PID: 1 - Ejecutando: MOV_OUT - arg1: 80, arg2: RBX, arg3: 
+[INFO] 18:46:05:652 CPU/(83765:83772): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 80 - Valor: SonyPlaystation4
+[INFO] 18:46:05:652 CPU/(83765:83772): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation5, arg3: 
+[INFO] 18:46:06:652 CPU/(83765:83772): PID: 1 - Ejecutando: MOV_OUT - arg1: 96, arg2: RBX, arg3: 
+[INFO] 18:46:07:652 CPU/(83765:83772): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 96 - Valor: SonyPlaystation5
+[INFO] 18:46:07:652 CPU/(83765:83772): PID: 1 - Ejecutando: F_OPEN - arg1: Consoles, arg2: , arg3: 
+[INFO] 18:46:07:652 CPU/(83765:83772): PID: 1 - Ejecutando: F_TRUNCATE - arg1: Consoles, arg2: 256, arg3: 
+[INFO] 18:46:07:653 CPU/(83765:83772): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 18:46:07:653 CPU/(83765:83772): PID: 1 - Ejecutando: F_SEEK - arg1: Consoles, arg2: 128, arg3: 
+[INFO] 18:46:07:653 CPU/(83765:83772): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 18:46:07:653 CPU/(83765:83772): PID: 1 - Ejecutando: F_WRITE - arg1: Consoles, arg2: 32, arg3: 80
+[INFO] 18:46:07:653 CPU/(83765:83772): PID: 1 - Ejecutando: F_CLOSE - arg1: Consoles, arg2: , arg3: 
+[INFO] 18:46:07:653 CPU/(83765:83772): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 64, arg3: 
+[INFO] 18:47:23:542 CPU/(83817:83904): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 18:47:23:542 CPU/(83817:83904): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: SonicTheHedgehog, arg3: 
+[INFO] 18:47:24:542 CPU/(83817:83904): PID: 1 - Ejecutando: MOV_OUT - arg1: 0, arg2: RAX, arg3: 
+[INFO] 18:47:25:542 CPU/(83817:83904): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 0 - Valor: SonicTheHedgehog
+[INFO] 18:47:25:542 CPU/(83817:83904): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation1, arg3: 
+[INFO] 18:47:26:542 CPU/(83817:83904): PID: 1 - Ejecutando: MOV_OUT - arg1: 32, arg2: RBX, arg3: 
+[INFO] 18:47:27:543 CPU/(83817:83904): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 32 - Valor: SonyPlaystation1
+[INFO] 18:47:27:543 CPU/(83817:83904): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation2, arg3: 
+[INFO] 18:47:28:543 CPU/(83817:83904): PID: 1 - Ejecutando: MOV_OUT - arg1: 48, arg2: RBX, arg3: 
+[INFO] 18:47:29:543 CPU/(83817:83904): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 48 - Valor: SonyPlaystation2
+[INFO] 18:47:29:543 CPU/(83817:83904): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation3, arg3: 
+[INFO] 18:47:30:543 CPU/(83817:83904): PID: 1 - Ejecutando: MOV_OUT - arg1: 64, arg2: RBX, arg3: 
+[INFO] 18:47:31:543 CPU/(83817:83904): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 64 - Valor: SonyPlaystation3
+[INFO] 18:47:31:544 CPU/(83817:83904): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation4, arg3: 
+[INFO] 18:47:32:544 CPU/(83817:83904): PID: 1 - Ejecutando: MOV_OUT - arg1: 80, arg2: RBX, arg3: 
+[INFO] 18:47:33:544 CPU/(83817:83904): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 80 - Valor: SonyPlaystation4
+[INFO] 18:47:33:544 CPU/(83817:83904): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation5, arg3: 
+[INFO] 18:47:34:544 CPU/(83817:83904): PID: 1 - Ejecutando: MOV_OUT - arg1: 96, arg2: RBX, arg3: 
+[INFO] 18:47:35:544 CPU/(83817:83904): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 96 - Valor: SonyPlaystation5
+[INFO] 18:47:35:544 CPU/(83817:83904): PID: 1 - Ejecutando: F_OPEN - arg1: Consoles, arg2: , arg3: 
+[INFO] 18:47:35:544 CPU/(83817:83904): PID: 1 - Ejecutando: F_TRUNCATE - arg1: Consoles, arg2: 256, arg3: 
+[INFO] 18:47:35:545 CPU/(83817:83904): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 18:47:35:545 CPU/(83817:83904): PID: 1 - Ejecutando: F_SEEK - arg1: Consoles, arg2: 128, arg3: 
+[INFO] 18:47:35:545 CPU/(83817:83904): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 18:47:35:545 CPU/(83817:83904): PID: 1 - Ejecutando: F_WRITE - arg1: Consoles, arg2: 32, arg3: 80
+[INFO] 18:47:35:545 CPU/(83817:83904): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 64, arg3: 
+[INFO] 18:47:48:589 CPU/(83817:83904): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 64, arg3: 
+[INFO] 18:47:55:852 CPU/(83817:83904): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 64, arg3: 
+[INFO] 18:48:05:562 CPU/(83817:83904): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 64, arg3: 
+[INFO] 18:48:09:250 CPU/(83817:83904): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 128, arg3: 
+[INFO] 18:48:12:756 CPU/(83817:83904): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 2, arg2: , arg3: 
+[INFO] 18:48:12:757 CPU/(83817:83904): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 4, arg2: , arg3: 
+[INFO] 18:48:12:757 CPU/(83817:83904): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 128, arg3: 
+[INFO] 18:48:19:252 CPU/(83817:83904): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 18:48:35:546 CPU/(83817:83904): PID: 1 - Ejecutando: F_CLOSE - arg1: Consoles, arg2: , arg3: 
+[INFO] 18:48:35:546 CPU/(83817:83904): PID: 1 - Ejecutando: F_OPEN - arg1: Videogames, arg2: , arg3: 
+[INFO] 18:48:35:547 CPU/(83817:83904): PID: 1 - Ejecutando: F_TRUNCATE - arg1: Videogames, arg2: 64, arg3: 
+[INFO] 18:48:35:547 CPU/(83817:83904): PID: 1 - Ejecutando: F_SEEK - arg1: Videogames, arg2: 0, arg3: 
+[INFO] 18:48:35:547 CPU/(83817:83904): PID: 1 - Ejecutando: F_WRITE - arg1: Videogames, arg2: 0, arg3: 16
+[INFO] 18:56:04:067 CPU/(84670:84676): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 18:56:04:067 CPU/(84670:84676): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: SonicTheHedgehog, arg3: 
+[INFO] 18:56:05:068 CPU/(84670:84676): PID: 1 - Ejecutando: MOV_OUT - arg1: 0, arg2: RAX, arg3: 
+[INFO] 18:56:06:068 CPU/(84670:84676): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 0 - Valor: SonicTheHedgehog
+[INFO] 18:56:06:068 CPU/(84670:84676): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation1, arg3: 
+[INFO] 18:56:07:068 CPU/(84670:84676): PID: 1 - Ejecutando: MOV_OUT - arg1: 32, arg2: RBX, arg3: 
+[INFO] 18:56:08:068 CPU/(84670:84676): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 32 - Valor: SonyPlaystation1
+[INFO] 18:56:08:068 CPU/(84670:84676): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation2, arg3: 
+[INFO] 18:56:09:068 CPU/(84670:84676): PID: 1 - Ejecutando: MOV_OUT - arg1: 48, arg2: RBX, arg3: 
+[INFO] 18:56:10:069 CPU/(84670:84676): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 48 - Valor: SonyPlaystation2
+[INFO] 18:56:10:069 CPU/(84670:84676): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation3, arg3: 
+[INFO] 18:56:11:069 CPU/(84670:84676): PID: 1 - Ejecutando: MOV_OUT - arg1: 64, arg2: RBX, arg3: 
+[INFO] 18:56:12:069 CPU/(84670:84676): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 64 - Valor: SonyPlaystation3
+[INFO] 18:56:12:069 CPU/(84670:84676): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation4, arg3: 
+[INFO] 18:56:13:069 CPU/(84670:84676): PID: 1 - Ejecutando: MOV_OUT - arg1: 80, arg2: RBX, arg3: 
+[INFO] 18:56:14:070 CPU/(84670:84676): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 80 - Valor: SonyPlaystation4
+[INFO] 18:56:14:070 CPU/(84670:84676): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation5, arg3: 
+[INFO] 18:56:15:070 CPU/(84670:84676): PID: 1 - Ejecutando: MOV_OUT - arg1: 96, arg2: RBX, arg3: 
+[INFO] 18:56:16:070 CPU/(84670:84676): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 96 - Valor: SonyPlaystation5
+[INFO] 18:56:16:070 CPU/(84670:84676): PID: 1 - Ejecutando: F_OPEN - arg1: Consoles, arg2: , arg3: 
+[INFO] 18:56:16:070 CPU/(84670:84676): PID: 1 - Ejecutando: F_TRUNCATE - arg1: Consoles, arg2: 256, arg3: 
+[INFO] 18:56:16:071 CPU/(84670:84676): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 18:56:16:071 CPU/(84670:84676): PID: 1 - Ejecutando: F_SEEK - arg1: Consoles, arg2: 128, arg3: 
+[INFO] 18:56:16:071 CPU/(84670:84676): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 18:56:16:071 CPU/(84670:84676): PID: 1 - Ejecutando: F_WRITE - arg1: Consoles, arg2: 32, arg3: 80
+[INFO] 18:56:16:071 CPU/(84670:84676): PID: 1 - Ejecutando: F_CLOSE - arg1: Consoles, arg2: , arg3: 
+[INFO] 18:56:16:071 CPU/(84670:84676): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 64, arg3: 
+[INFO] 18:56:16:072 CPU/(84670:84676): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 64, arg3: 
+[INFO] 18:56:16:072 CPU/(84670:84676): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 64, arg3: 
+[INFO] 18:56:16:072 CPU/(84670:84676): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 64, arg3: 
+[INFO] 18:56:16:072 CPU/(84670:84676): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 128, arg3: 
+[INFO] 18:56:16:072 CPU/(84670:84676): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 2, arg2: , arg3: 
+[INFO] 18:56:16:072 CPU/(84670:84676): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 4, arg2: , arg3: 
+[INFO] 18:56:16:072 CPU/(84670:84676): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 128, arg3: 
+[INFO] 18:57:46:073 CPU/(84670:84676): PID: 1 - Ejecutando: F_OPEN - arg1: Videogames, arg2: , arg3: 
+[INFO] 18:57:46:073 CPU/(84670:84676): PID: 1 - Ejecutando: F_TRUNCATE - arg1: Videogames, arg2: 64, arg3: 
+[INFO] 18:57:46:073 CPU/(84670:84676): PID: 1 - Ejecutando: F_SEEK - arg1: Videogames, arg2: 0, arg3: 
+[INFO] 18:57:46:074 CPU/(84670:84676): PID: 1 - Ejecutando: F_WRITE - arg1: Videogames, arg2: 0, arg3: 16
+[INFO] 18:57:46:074 CPU/(84670:84676): PID: 1 - Ejecutando: F_CLOSE - arg1: Videogames, arg2: , arg3: 
+[INFO] 18:58:01:074 CPU/(84670:84676): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 19:04:10:871 CPU/(84934:85065): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 19:04:10:871 CPU/(84934:85065): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: SonicTheHedgehog, arg3: 
+[INFO] 19:04:11:871 CPU/(84934:85065): PID: 1 - Ejecutando: MOV_OUT - arg1: 0, arg2: RAX, arg3: 
+[INFO] 19:04:12:871 CPU/(84934:85065): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 0 - Valor: SonicTheHedgehog
+[INFO] 19:04:12:872 CPU/(84934:85065): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation1, arg3: 
+[INFO] 19:04:13:872 CPU/(84934:85065): PID: 1 - Ejecutando: MOV_OUT - arg1: 32, arg2: RBX, arg3: 
+[INFO] 19:04:14:872 CPU/(84934:85065): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 32 - Valor: SonyPlaystation1
+[INFO] 19:04:14:872 CPU/(84934:85065): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation2, arg3: 
+[INFO] 19:04:15:872 CPU/(84934:85065): PID: 1 - Ejecutando: MOV_OUT - arg1: 48, arg2: RBX, arg3: 
+[INFO] 19:04:16:873 CPU/(84934:85065): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 48 - Valor: SonyPlaystation2
+[INFO] 19:04:16:873 CPU/(84934:85065): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation3, arg3: 
+[INFO] 19:04:17:873 CPU/(84934:85065): PID: 1 - Ejecutando: MOV_OUT - arg1: 64, arg2: RBX, arg3: 
+[INFO] 19:04:18:873 CPU/(84934:85065): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 64 - Valor: SonyPlaystation3
+[INFO] 19:04:18:873 CPU/(84934:85065): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation4, arg3: 
+[INFO] 19:04:19:873 CPU/(84934:85065): PID: 1 - Ejecutando: MOV_OUT - arg1: 80, arg2: RBX, arg3: 
+[INFO] 19:04:20:874 CPU/(84934:85065): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 80 - Valor: SonyPlaystation4
+[INFO] 19:04:20:874 CPU/(84934:85065): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation5, arg3: 
+[INFO] 19:04:21:874 CPU/(84934:85065): PID: 1 - Ejecutando: MOV_OUT - arg1: 96, arg2: RBX, arg3: 
+[INFO] 19:04:22:874 CPU/(84934:85065): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 96 - Valor: SonyPlaystation5
+[INFO] 19:04:22:874 CPU/(84934:85065): PID: 1 - Ejecutando: F_OPEN - arg1: Consoles, arg2: , arg3: 
+[INFO] 19:04:22:874 CPU/(84934:85065): PID: 1 - Ejecutando: F_TRUNCATE - arg1: Consoles, arg2: 256, arg3: 
+[INFO] 19:04:22:874 CPU/(84934:85065): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 19:05:07:875 CPU/(84934:85065): PID: 1 - Ejecutando: F_SEEK - arg1: Consoles, arg2: 128, arg3: 
+[INFO] 19:05:07:875 CPU/(84934:85065): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 19:05:07:876 CPU/(84934:85065): PID: 1 - Ejecutando: F_WRITE - arg1: Consoles, arg2: 32, arg3: 80
+[INFO] 19:05:07:876 CPU/(84934:85065): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 64, arg3: 
+[INFO] 19:05:07:876 CPU/(84934:85065): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 64, arg3: 
+[INFO] 19:05:07:876 CPU/(84934:85065): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 64, arg3: 
+[INFO] 19:05:07:876 CPU/(84934:85065): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 64, arg3: 
+[INFO] 19:05:07:876 CPU/(84934:85065): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 128, arg3: 
+[INFO] 19:05:07:876 CPU/(84934:85065): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 2, arg2: , arg3: 
+[INFO] 19:05:07:876 CPU/(84934:85065): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 4, arg2: , arg3: 
+[INFO] 19:05:07:876 CPU/(84934:85065): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 128, arg3: 
+[INFO] 19:06:37:878 CPU/(84934:85065): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 19:06:37:878 CPU/(84934:85065): PID: 1 - Ejecutando: F_CLOSE - arg1: Consoles, arg2: , arg3: 
+[INFO] 19:06:37:878 CPU/(84934:85065): PID: 1 - Ejecutando: F_OPEN - arg1: Videogames, arg2: , arg3: 
+[INFO] 19:06:37:878 CPU/(84934:85065): PID: 1 - Ejecutando: F_TRUNCATE - arg1: Videogames, arg2: 64, arg3: 
+[INFO] 19:06:37:878 CPU/(84934:85065): PID: 1 - Ejecutando: F_SEEK - arg1: Videogames, arg2: 0, arg3: 
+[INFO] 19:06:37:878 CPU/(84934:85065): PID: 1 - Ejecutando: F_WRITE - arg1: Videogames, arg2: 0, arg3: 16
+[INFO] 19:06:52:879 CPU/(84934:85065): PID: 1 - Ejecutando: F_CLOSE - arg1: Videogames, arg2: , arg3: 
+[INFO] 19:06:52:879 CPU/(84934:85065): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 19:07:22:750 CPU/(84934:85065): PID: 3 - Ejecutando: F_OPEN - arg1: Videogames, arg2: , arg3: 
+[INFO] 19:07:22:750 CPU/(84934:85065): PID: 3 - Ejecutando: F_SEEK - arg1: Videogames, arg2: 0, arg3: 
+[INFO] 19:07:22:750 CPU/(84934:85065): PID: 3 - Ejecutando: F_READ - arg1: Videogames, arg2: 16, arg3: 16
+[INFO] 19:07:23:070 CPU/(84934:85065): PID: 4 - Ejecutando: F_OPEN - arg1: Videogames, arg2: , arg3: 
+[INFO] 19:07:23:388 CPU/(84934:85065): PID: 5 - Ejecutando: F_OPEN - arg1: Videogames, arg2: , arg3: 
+[INFO] 19:07:37:751 CPU/(84934:85065): PID: 3 - Ejecutando: MOV_IN - arg1: RAX, arg2: 16, arg3: 
+[INFO] 19:07:38:751 CPU/(84934:85065): PID: 3 - Acción: LEER - Segmento: 0 - Dirección Física: 16 - Valor: SonicTheHedgehog
+[INFO] 19:07:38:751 CPU/(84934:85065): PID: 3 - Ejecutando: F_CLOSE - arg1: Videogames, arg2: , arg3: 
+[INFO] 19:07:38:751 CPU/(84934:85065): PID: 3 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 19:07:38:751 CPU/(84934:85065): PID: 4 - Ejecutando: F_SEEK - arg1: Videogames, arg2: 0, arg3: 
+[INFO] 19:07:38:751 CPU/(84934:85065): PID: 4 - Ejecutando: F_READ - arg1: Videogames, arg2: 16, arg3: 16
+[INFO] 19:07:53:752 CPU/(84934:85065): PID: 4 - Ejecutando: MOV_IN - arg1: RAX, arg2: 16, arg3: 
+[INFO] 19:07:54:752 CPU/(84934:85065): PID: 4 - Acción: LEER - Segmento: 0 - Dirección Física: 16 - Valor: SonicTheHedgehog
+[INFO] 19:07:54:752 CPU/(84934:85065): PID: 4 - Ejecutando: F_CLOSE - arg1: Videogames, arg2: , arg3: 
+[INFO] 19:07:54:752 CPU/(84934:85065): PID: 4 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 19:07:54:752 CPU/(84934:85065): PID: 5 - Ejecutando: F_SEEK - arg1: Videogames, arg2: 0, arg3: 
+[INFO] 19:07:54:752 CPU/(84934:85065): PID: 5 - Ejecutando: F_READ - arg1: Videogames, arg2: 16, arg3: 16
+[INFO] 19:08:09:753 CPU/(84934:85065): PID: 5 - Ejecutando: MOV_IN - arg1: RAX, arg2: 16, arg3: 
+[INFO] 19:08:10:753 CPU/(84934:85065): PID: 5 - Acción: LEER - Segmento: 0 - Dirección Física: 16 - Valor: SonicTheHedgehog
+[INFO] 19:08:10:753 CPU/(84934:85065): PID: 5 - Ejecutando: F_CLOSE - arg1: Videogames, arg2: , arg3: 
+[INFO] 19:08:10:753 CPU/(84934:85065): PID: 5 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 19:08:48:155 CPU/(85107:85115): PID: 1 - Ejecutando: F_OPEN - arg1: Videogames, arg2: , arg3: 
+[INFO] 19:08:48:155 CPU/(85107:85115): PID: 1 - Ejecutando: F_SEEK - arg1: Videogames, arg2: 0, arg3: 
+[INFO] 19:08:48:155 CPU/(85107:85115): PID: 1 - Ejecutando: F_READ - arg1: Videogames, arg2: 16, arg3: 16
+[INFO] 19:08:48:670 CPU/(85107:85115): PID: 2 - Ejecutando: F_OPEN - arg1: Videogames, arg2: , arg3: 
+[INFO] 19:08:49:185 CPU/(85107:85115): PID: 3 - Ejecutando: F_OPEN - arg1: Videogames, arg2: , arg3: 
+[INFO] 19:09:03:155 CPU/(85107:85115): PID: 1 - Ejecutando: MOV_IN - arg1: RAX, arg2: 16, arg3: 
+[INFO] 19:09:04:156 CPU/(85107:85115): PID: 1 - Acción: LEER - Segmento: 0 - Dirección Física: 16 - Valor: SonicTheHedgehog
+[INFO] 19:09:04:156 CPU/(85107:85115): PID: 1 - Ejecutando: F_CLOSE - arg1: Videogames, arg2: , arg3: 
+[INFO] 19:09:04:156 CPU/(85107:85115): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 19:09:04:156 CPU/(85107:85115): PID: 2 - Ejecutando: F_SEEK - arg1: Videogames, arg2: 0, arg3: 
+[INFO] 19:09:04:156 CPU/(85107:85115): PID: 2 - Ejecutando: F_READ - arg1: Videogames, arg2: 16, arg3: 16
+[INFO] 19:09:19:157 CPU/(85107:85115): PID: 2 - Ejecutando: MOV_IN - arg1: RAX, arg2: 16, arg3: 
+[INFO] 19:09:20:157 CPU/(85107:85115): PID: 2 - Acción: LEER - Segmento: 0 - Dirección Física: 16 - Valor: SonicTheHedgehog
+[INFO] 19:09:20:157 CPU/(85107:85115): PID: 2 - Ejecutando: F_CLOSE - arg1: Videogames, arg2: , arg3: 
+[INFO] 19:09:20:158 CPU/(85107:85115): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 19:09:20:158 CPU/(85107:85115): PID: 3 - Ejecutando: F_SEEK - arg1: Videogames, arg2: 0, arg3: 
+[INFO] 19:09:20:158 CPU/(85107:85115): PID: 3 - Ejecutando: F_READ - arg1: Videogames, arg2: 16, arg3: 16
+[INFO] 19:09:35:158 CPU/(85107:85115): PID: 3 - Ejecutando: MOV_IN - arg1: RAX, arg2: 16, arg3: 
+[INFO] 19:09:36:159 CPU/(85107:85115): PID: 3 - Acción: LEER - Segmento: 0 - Dirección Física: 16 - Valor: SonicTheHedgehog
+[INFO] 19:09:36:159 CPU/(85107:85115): PID: 3 - Ejecutando: F_CLOSE - arg1: Videogames, arg2: , arg3: 
+[INFO] 19:09:36:159 CPU/(85107:85115): PID: 3 - Ejecutando: EXIT - arg1: , arg2: , arg3: 

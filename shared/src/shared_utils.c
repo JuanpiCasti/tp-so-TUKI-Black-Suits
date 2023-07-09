@@ -1,7 +1,25 @@
 #include "shared_utils.h"
 
 char *cod_op_desc[] = {"HANDSHAKE_CONSOLA", "HANDSHAKE_KERNEL", "HANDSHAKE_CPU", "HANDSHAKE_FILESYSTEM", "HANDSHAKE_MEMORIA"};
-char* cod_op_kernel_description[] = {"SUCCESS", "YIELD", "IO", "WAIT", "SIGNAL", "CREATE_SEGMENT", "DELETE_SEGMENT","RESOURCE NOT FOUND", "OUT OF MEMORY", "MEMORIA NECESITA COMPACTACION", "SEGMENTO CREADO", "SEGMENTAION FAULT"};
+char* cod_op_kernel_description[] = {"SUCCESS", 
+									 "YIELD", 
+									 "IO", 
+									 "WAIT", 
+									 "SIGNAL", 
+									 "CREATE_SEGMENT", 
+									 "DELETE_SEGMENT",
+									 "RESOURCE NOT FOUND", 
+									 "OUT OF MEMORY", 
+									 "MEMORIA NECESITA COMPACTACION", 
+									 "SEGMENTO CREADO", 
+									 "SEGMENTAION FAULT",
+									  "F_OPEN",
+									  "F_CLOSE",
+									  "F_SEEK",
+									  "F_TRUNCATE",
+									  	"EFERRID",
+										"EFERRAIT"
+										};
 
 uint32_t TAMANIO_CONTEXTO = 4 * 4 + 4 * 8 + 4 * 16 // Registros
         + sizeof(uint32_t);    // Program Counter

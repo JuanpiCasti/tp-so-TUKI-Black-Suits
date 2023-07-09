@@ -444,7 +444,7 @@ cod_op_kernel ejecutar_instrucciones()
             char* registro_out = determinar_registro(instruccion->arg2, &tam_registro_out);
             uint32_t dir_logica_out = atoi(instruccion->arg1);
             int result_mov_out = ejecutar_mov_out(dir_logica_out, registro_out, tam_registro_out);
-            if (result == -1)
+            if (result_mov_out == -1)
             {
                 return CPU_SEG_FAULT;
             }

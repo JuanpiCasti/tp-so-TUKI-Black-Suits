@@ -227,16 +227,19 @@ void signal_recurso(t_pcb *proceso, char *nombre_recurso)
         return;
     }
 
-    log_info(logger_kernel, "PID: %d - Signal: %s - Instancias: %d", proceso->pid, nombre_recurso, recurso->instancias_disponibles);
     int indice_recurso = recurso_asignado(proceso, nombre_recurso);
 
-    t_asig_r *recurso_asignado = list_get(proceso->recursos_asignados, indice_recurso);
-    recurso_asignado->instancias_asignadas--;
-    if (recurso_asignado->instancias_asignadas == 0)
+    if (indice_recurso != -1)
     {
-        list_remove(proceso->recursos_asignados, indice_recurso);
-        free(recurso_asignado);
+        t_asig_r *recurso_asignado = list_get(proceso->recursos_asignados, indice_recurso);
+        recurso_asignado->instancias_asignadas--;
+        if (recurso_asignado->instancias_asignadas == 0)
+        {
+            list_remove(proceso->recursos_asignados, indice_recurso);
+            free(recurso_asignado);
+        }
     }
+    
 
     recurso->instancias_disponibles++;
 
@@ -245,7 +248,27 @@ void signal_recurso(t_pcb *proceso, char *nombre_recurso)
         t_pcb *proceso_bloqueado = list_remove(recurso->cola_bloqueados, 0);
         encolar_proceso(proceso_bloqueado, READY, &mutex_READY, "BLOQUEADO", "READY");
     }
+    log_info(logger_kernel, "PID: %d - Signal: %s - Instancias: %d", proceso->pid, nombre_recurso, recurso->instancias_disponibles);
 }
+
+void solicitar_compactacion(void* args) {
+    uint32_t id_seg = ((t_args_compactacion*)args)->id_seg;
+    uint32_t tam = ((t_args_compactacion*)args)->tam;
+    t_pcb* pcb = ((t_args_compactacion*)args)->pcb;
+
+    pthread_mutex_lock(&mutex_compactacion);
+    cod_op cop = COMPACTAR;
+    send(socket_memoria, &cop, sizeof(cod_op_kernel), NULL);
+    recibir_nuevas_bases(socket_memoria);
+    
+    pthread_mutex_unlock(&mutex_compactacion);
+    solicitar_creacion_segmento(id_seg, tam, pcb);
+    // for (int i = 0; i < list_size(PROCESOS_EN_MEMORIA); i++)
+    //     {
+    //         imprimir_pcb(list_get(PROCESOS_EN_MEMORIA, i));
+    //     }
+}
+
 
 void solicitar_creacion_segmento(uint32_t id_seg, uint32_t tam, t_pcb *pcb)
 {
@@ -274,21 +297,21 @@ void solicitar_creacion_segmento(uint32_t id_seg, uint32_t tam, t_pcb *pcb)
     switch (resultado)
     {
     case EXIT_OUT_OF_MEMORY:
+        desalojar();
         terminar_proceso(pcb, EXIT_OUT_OF_MEMORY);
         break;
     case MEMORIA_NECESITA_COMPACTACION:
-        // TODO: COMPACTACION
+        // COMPACTACION
         log_info(logger_kernel, "La memoria necesita ser compactada!!");
-        pthread_mutex_lock(&mutex_compactacion);
-        solicitar_compactacion();
-        pthread_mutex_unlock(&mutex_compactacion);
+        t_args_compactacion *args = malloc(sizeof(t_args_compactacion));
+        args->pcb = pcb;
+        args->id_seg = id_seg;
+        args->tam = tam;
 
-        for (int i = 0; i < list_size(PROCESOS_EN_MEMORIA); i++)
-        {
-            imprimir_pcb(list_get(PROCESOS_EN_MEMORIA, i));
-        }
-
-        solicitar_creacion_segmento(id_seg, tam, pcb);
+        //pthread_create(&hilo_compactacion, NULL, solicitar_compactacion, NULL);
+        solicitar_compactacion((void*) args);
+        // Log fin compactacion
+    
 
         break;
     case MEMORIA_SEGMENTO_CREADO:
@@ -471,8 +494,14 @@ void cambiar_puntero_archivo(char *f_name, uint32_t new_puntero, t_pcb *pcb)
     printf("Puntero: %d\n", archivo_pcb->puntero);
 }
 
-void truncar_archivo(char *f_name, uint32_t new_size, t_pcb *pcb)
+void truncar_archivo(void* args)
 {
+    t_args_f_op *args_f_op = (t_args_f_op*) args;
+    char f_name[30];
+    strcpy(f_name, args_f_op->f_name);
+    t_pcb* pcb = args_f_op->pcb;
+    uint32_t new_size = args_f_op->tamano;
+
     int tam_buffer = sizeof(cod_op) + sizeof(char[30]) + sizeof(uint32_t);
 
     void *buffer = malloc(tam_buffer);
@@ -495,10 +524,21 @@ void truncar_archivo(char *f_name, uint32_t new_size, t_pcb *pcb)
     {
         encolar_proceso(pcb, READY, &mutex_READY, "BLOQUEADO", "READY");
     }
+
+    free(args_f_op);
 }
 
-void leer_archivo(char* f_name, uint32_t dir_fisica, uint32_t size, t_pcb* pcb)
+void leer_archivo(void* args)
 {
+    t_args_f_op* args_f_op = (t_args_f_op*) args;
+    char f_name[30];
+    strcpy(f_name, args_f_op->f_name);
+    t_pcb* pcb = args_f_op->pcb;
+    uint32_t size = args_f_op->tamano;
+    uint32_t dir_fisica = args_f_op->dir_fisica;
+
+
+    pthread_mutex_lock(&mutex_compactacion);
     int tam_buffer = sizeof(cod_op) + sizeof(char[30]) + sizeof(uint32_t)+ sizeof(uint32_t) + sizeof(uint32_t) + sizeof(uint32_t);
 
     void *buffer = malloc(tam_buffer);
@@ -526,6 +566,7 @@ void leer_archivo(char* f_name, uint32_t dir_fisica, uint32_t size, t_pcb* pcb)
 
     uint32_t archivo_ok;
     recv(socket_filesystem, &archivo_ok, sizeof(uint32_t), NULL);
+    pthread_mutex_unlock(&mutex_compactacion);
 
     if (archivo_ok == 0)
     {
@@ -533,8 +574,18 @@ void leer_archivo(char* f_name, uint32_t dir_fisica, uint32_t size, t_pcb* pcb)
     }
 }
 
-void escribir_archivo(char* f_name, uint32_t dir_fisica, uint32_t size, t_pcb* pcb)
+void escribir_archivo(void * args)
 {
+    t_args_f_op* args_converted = (t_args_f_op*) args;
+    char f_name[30];
+    
+    strcpy(f_name, args_converted->f_name);
+    uint32_t dir_fisica = args_converted->dir_fisica;
+    uint32_t size = args_converted->tamano;
+    t_pcb* pcb = args_converted->pcb;
+
+
+    pthread_mutex_lock(&mutex_compactacion);
     int tam_buffer = sizeof(cod_op) + 
                      sizeof(char[30]) + 
                      sizeof(uint32_t)+ 
@@ -567,11 +618,14 @@ void escribir_archivo(char* f_name, uint32_t dir_fisica, uint32_t size, t_pcb* p
 
     uint32_t archivo_ok;
     recv(socket_filesystem, &archivo_ok, sizeof(uint32_t), NULL);
+    pthread_mutex_unlock(&mutex_compactacion);
 
     if (archivo_ok == 0)
     {
         encolar_proceso(pcb, READY, &mutex_READY, "BLOQUEADO", "READY");
     }
+
+    free(args_converted);
 }
 
 
@@ -708,12 +762,19 @@ void planificacion_corto_plazo()
                 memcpy(&f_name, buffer + TAMANIO_CONTEXTO, sizeof(char[30]));
                 memcpy(&new_size, buffer + TAMANIO_CONTEXTO + sizeof(char[30]), sizeof(uint32_t));
                 free(buffer);
-                truncar_archivo(f_name, new_size, r_pcb);
+                t_args_f_op *args_f_op_truncate = malloc(sizeof(t_args_f_op));
+                strcpy(args_f_op_truncate->f_name, f_name);
+                args_f_op_truncate->tamano = new_size;
+                args_f_op_truncate->pcb = r_pcb;
+                pthread_t hilof_op_truncate;
+                pthread_create(&hilof_op_truncate, NULL, truncar_archivo, (void *)args_f_op_truncate);
+                pthread_detach(hilof_op_truncate);
+                
                 imprimir_lista_archivos(tabla_archivos);
                 break;
             case CPU_EFERRID:
-                desalojar();
                 // LOG BLOQUEADO POR EFERRID
+                desalojar();
                 uint32_t dir_fisica_a_escribir_lo_leido;
                 uint32_t tam_a_leer;
                 memcpy(&f_name, buffer + TAMANIO_CONTEXTO, sizeof(char[30]));
@@ -721,11 +782,19 @@ void planificacion_corto_plazo()
                 memcpy(&tam_a_leer, buffer + TAMANIO_CONTEXTO + sizeof(char[30]) + sizeof(uint32_t), sizeof(uint32_t));
                 free(buffer);
                 // Mandar a fs
-                leer_archivo(f_name, dir_fisica_a_escribir_lo_leido, tam_a_leer, r_pcb);
+                t_args_f_op *args_f_op_read = malloc(sizeof(t_args_f_op));
+                strcpy(args_f_op_read->f_name, f_name);
+                args_f_op_read->dir_fisica = dir_fisica_a_escribir_lo_leido;
+                args_f_op_read->tamano = tam_a_leer;
+                args_f_op_read->pcb = r_pcb;
+                pthread_t hilo_leer;
+                pthread_create(&hilo_leer, NULL, leer_archivo, (void *)(args_f_op_read));
+                pthread_detach(hilo_leer);
+                //leer_archivo(f_name, dir_fisica_a_escribir_lo_leido, tam_a_leer, r_pcb);
                 break;
             case CPU_EFERRAIT:
-                desalojar();
                 // LOG BLOQUEADO POR EFERRAIT
+                desalojar();
                 uint32_t dir_fisica_a_leer_para_escribir;
                 uint32_t tam_a_escribir;
                 memcpy(&f_name, buffer + TAMANIO_CONTEXTO, sizeof(char[30]));
@@ -733,7 +802,16 @@ void planificacion_corto_plazo()
                 memcpy(&tam_a_escribir, buffer + TAMANIO_CONTEXTO + sizeof(char[30]) + sizeof(uint32_t), sizeof(uint32_t));
                 free(buffer);
                 // Mandar a fs
-                escribir_archivo(f_name, dir_fisica_a_leer_para_escribir, tam_a_escribir, r_pcb);
+                t_args_f_op *args_f_op = malloc(sizeof(t_args_f_op));
+                strcpy(args_f_op->f_name, f_name);
+                args_f_op->dir_fisica = dir_fisica_a_leer_para_escribir;
+                args_f_op->tamano = tam_a_escribir;
+                args_f_op->pcb = r_pcb;
+
+                pthread_t hilo_escribir;
+                pthread_create(&hilo_escribir, NULL, escribir_archivo, (void *)(args_f_op));
+                pthread_detach(hilo_escribir);
+                //escribir_archivo(f_name, dir_fisica_a_leer_para_escribir, tam_a_escribir, r_pcb);
                 break;
             default:
                 break;
