@@ -98,7 +98,7 @@ t_pcb *crear_pcb(t_list *instrucciones, int socket_consola)
     memset(registros_cpu->RDX, 0, sizeof(registros_cpu->RDX));
     pcb->registros_cpu = registros_cpu;
 
-    pcb->estimado_HRRN = ESTIMACION_INICIAL / 1000;
+    pcb->estimado_HRRN = ESTIMACION_INICIAL;
     pcb->llegada_ready = 0;
     pcb->ultima_rafaga = 0;
     pcb->archivos_abiertos = list_create();

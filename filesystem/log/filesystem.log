@@ -975,3 +975,153 @@
 [INFO] 19:08:41:073 FILESYSTEM/(85109:85109): Filesystem escuchando conexiones...
 [INFO] 19:08:43:064 FILESYSTEM/(85109:85109): Se conecto un cliente!
 [INFO] 19:08:43:065 FILESYSTEM/(85109:85117): Recibido handshake HANDSHAKE_KERNEL.
+[INFO] 20:57:28:749 FILESYSTEM/(2378:2378): Handshake OK
+[INFO] 20:57:28:750 FILESYSTEM/(2378:2378): Filesystem escuchando conexiones...
+[INFO] 20:57:29:113 FILESYSTEM/(2378:2378): Se conecto un cliente!
+[INFO] 20:57:29:113 FILESYSTEM/(2378:2382): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 20:57:31:060 FILESYSTEM/(2378:2382): Cliente desconectado!
+[WARNING] 20:57:31:060 FILESYSTEM/(2378:2382): El cliente se desconectó del server
+[INFO] 20:58:06:146 FILESYSTEM/(2378:2378): Se conecto un cliente!
+[INFO] 20:58:06:146 FILESYSTEM/(2378:2398): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 20:58:43:248 FILESYSTEM/(2378:2398): Cliente desconectado!
+[WARNING] 20:58:43:248 FILESYSTEM/(2378:2398): El cliente se desconectó del server
+[INFO] 21:01:53:246 FILESYSTEM/(2378:2378): Se conecto un cliente!
+[INFO] 21:01:53:246 FILESYSTEM/(2378:3907): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 21:02:13:174 FILESYSTEM/(2378:3907): Cliente desconectado!
+[WARNING] 21:02:13:174 FILESYSTEM/(2378:3907): El cliente se desconectó del server
+[INFO] 21:02:15:235 FILESYSTEM/(2378:2378): Se conecto un cliente!
+[INFO] 21:02:15:235 FILESYSTEM/(2378:3919): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 21:02:18:346 FILESYSTEM/(2378:3919): Cliente desconectado!
+[WARNING] 21:02:18:346 FILESYSTEM/(2378:3919): El cliente se desconectó del server
+[INFO] 21:02:22:882 FILESYSTEM/(2378:2378): Se conecto un cliente!
+[INFO] 21:02:22:882 FILESYSTEM/(2378:3929): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 21:02:29:316 FILESYSTEM/(2378:3929): Cliente desconectado!
+[WARNING] 21:02:29:316 FILESYSTEM/(2378:3929): El cliente se desconectó del server
+[INFO] 21:03:42:471 FILESYSTEM/(4530:4530): Handshake OK
+[INFO] 21:03:42:471 FILESYSTEM/(4530:4530): Filesystem escuchando conexiones...
+[INFO] 21:03:45:671 FILESYSTEM/(4530:4530): Se conecto un cliente!
+[INFO] 21:03:45:671 FILESYSTEM/(4530:4535): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 21:03:57:844 FILESYSTEM/(4530:4535): Cliente desconectado!
+[WARNING] 21:03:57:844 FILESYSTEM/(4530:4535): El cliente se desconectó del server
+[INFO] 21:05:12:056 FILESYSTEM/(4530:4530): Se conecto un cliente!
+[INFO] 21:05:12:056 FILESYSTEM/(4530:4755): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 21:05:16:786 FILESYSTEM/(4530:4755): Cliente desconectado!
+[WARNING] 21:05:16:786 FILESYSTEM/(4530:4755): El cliente se desconectó del server
+[INFO] 21:05:21:422 FILESYSTEM/(4530:4530): Se conecto un cliente!
+[INFO] 21:05:21:422 FILESYSTEM/(4530:4764): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 21:05:23:835 FILESYSTEM/(4530:4764): Cliente desconectado!
+[WARNING] 21:05:23:835 FILESYSTEM/(4530:4764): El cliente se desconectó del server
+[INFO] 21:05:42:381 FILESYSTEM/(4530:4530): Se conecto un cliente!
+[INFO] 21:05:42:381 FILESYSTEM/(4530:4770): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 21:05:46:116 FILESYSTEM/(4530:4770): Cliente desconectado!
+[WARNING] 21:05:46:116 FILESYSTEM/(4530:4770): El cliente se desconectó del server
+[INFO] 21:05:58:972 FILESYSTEM/(4530:4530): Se conecto un cliente!
+[INFO] 21:05:58:972 FILESYSTEM/(4530:4780): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 21:06:00:380 FILESYSTEM/(4530:4780): Cliente desconectado!
+[WARNING] 21:06:00:380 FILESYSTEM/(4530:4780): El cliente se desconectó del server
+[INFO] 21:06:17:173 FILESYSTEM/(4530:4530): Se conecto un cliente!
+[INFO] 21:06:17:173 FILESYSTEM/(4530:4817): Recibido handshake HANDSHAKE_KERNEL.
+[INFO] 10:45:22:887 FILESYSTEM/(5192:5192): Handshake OK
+[INFO] 10:45:22:887 FILESYSTEM/(5192:5192): Filesystem escuchando conexiones...
+[INFO] 10:45:24:597 FILESYSTEM/(5192:5192): Se conecto un cliente!
+[INFO] 10:45:24:597 FILESYSTEM/(5192:5197): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 10:49:29:560 FILESYSTEM/(5192:5197): Cliente desconectado!
+[WARNING] 10:49:29:560 FILESYSTEM/(5192:5197): El cliente se desconectó del server
+[INFO] 10:49:34:296 FILESYSTEM/(5192:5192): Se conecto un cliente!
+[INFO] 10:49:34:296 FILESYSTEM/(5192:5435): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 10:50:25:807 FILESYSTEM/(5192:5435): Cliente desconectado!
+[WARNING] 10:50:25:807 FILESYSTEM/(5192:5435): El cliente se desconectó del server
+[INFO] 10:50:29:302 FILESYSTEM/(5192:5192): Se conecto un cliente!
+[INFO] 10:50:29:302 FILESYSTEM/(5192:5480): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 10:50:53:930 FILESYSTEM/(5192:5480): Cliente desconectado!
+[WARNING] 10:50:53:930 FILESYSTEM/(5192:5480): El cliente se desconectó del server
+[INFO] 10:52:19:937 FILESYSTEM/(5192:5192): Se conecto un cliente!
+[INFO] 10:52:19:937 FILESYSTEM/(5192:5710): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 10:58:10:278 FILESYSTEM/(5192:5710): Cliente desconectado!
+[WARNING] 10:58:10:278 FILESYSTEM/(5192:5710): El cliente se desconectó del server
+[INFO] 10:58:16:409 FILESYSTEM/(5192:5192): Se conecto un cliente!
+[INFO] 10:58:16:409 FILESYSTEM/(5192:6190): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 10:59:43:739 FILESYSTEM/(5192:6190): Cliente desconectado!
+[WARNING] 10:59:43:739 FILESYSTEM/(5192:6190): El cliente se desconectó del server
+[INFO] 10:59:46:267 FILESYSTEM/(5192:5192): Se conecto un cliente!
+[INFO] 10:59:46:267 FILESYSTEM/(5192:6258): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 11:00:48:344 FILESYSTEM/(5192:6258): Cliente desconectado!
+[WARNING] 11:00:48:344 FILESYSTEM/(5192:6258): El cliente se desconectó del server
+[INFO] 11:00:50:464 FILESYSTEM/(5192:5192): Se conecto un cliente!
+[INFO] 11:00:50:464 FILESYSTEM/(5192:6304): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 11:05:15:678 FILESYSTEM/(5192:6304): Cliente desconectado!
+[WARNING] 11:05:15:678 FILESYSTEM/(5192:6304): El cliente se desconectó del server
+[INFO] 11:05:18:728 FILESYSTEM/(5192:5192): Se conecto un cliente!
+[INFO] 11:05:18:728 FILESYSTEM/(5192:6513): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 11:25:46:878 FILESYSTEM/(5192:6513): Cliente desconectado!
+[WARNING] 11:25:46:878 FILESYSTEM/(5192:6513): El cliente se desconectó del server
+[INFO] 11:25:48:528 FILESYSTEM/(5192:5192): Se conecto un cliente!
+[INFO] 11:25:48:528 FILESYSTEM/(5192:7489): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 11:27:52:392 FILESYSTEM/(5192:7489): Cliente desconectado!
+[WARNING] 11:27:52:392 FILESYSTEM/(5192:7489): El cliente se desconectó del server
+[INFO] 11:27:56:661 FILESYSTEM/(5192:5192): Se conecto un cliente!
+[INFO] 11:27:56:661 FILESYSTEM/(5192:7604): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 11:30:44:700 FILESYSTEM/(5192:7604): Cliente desconectado!
+[WARNING] 11:30:44:700 FILESYSTEM/(5192:7604): El cliente se desconectó del server
+[INFO] 11:30:46:744 FILESYSTEM/(5192:5192): Se conecto un cliente!
+[INFO] 11:30:46:744 FILESYSTEM/(5192:7789): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 11:38:59:149 FILESYSTEM/(5192:7789): Cliente desconectado!
+[WARNING] 11:38:59:149 FILESYSTEM/(5192:7789): El cliente se desconectó del server
+[INFO] 11:39:01:838 FILESYSTEM/(5192:5192): Se conecto un cliente!
+[INFO] 11:39:01:838 FILESYSTEM/(5192:8267): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 11:47:57:635 FILESYSTEM/(5192:8267): Cliente desconectado!
+[WARNING] 11:47:57:635 FILESYSTEM/(5192:8267): El cliente se desconectó del server
+[INFO] 11:48:02:651 FILESYSTEM/(5192:5192): Se conecto un cliente!
+[INFO] 11:48:02:651 FILESYSTEM/(5192:8752): Recibido handshake HANDSHAKE_KERNEL.
+[INFO] 11:58:21:967 FILESYSTEM/(4062:4062): Handshake OK
+[INFO] 11:58:21:967 FILESYSTEM/(4062:4062): Filesystem escuchando conexiones...
+[INFO] 11:58:23:942 FILESYSTEM/(4062:4062): Se conecto un cliente!
+[INFO] 11:58:23:942 FILESYSTEM/(4062:4066): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 12:03:29:298 FILESYSTEM/(4062:4066): Cliente desconectado!
+[WARNING] 12:03:29:298 FILESYSTEM/(4062:4066): El cliente se desconectó del server
+[INFO] 12:03:35:143 FILESYSTEM/(4062:4062): Se conecto un cliente!
+[INFO] 12:03:35:143 FILESYSTEM/(4062:4901): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 12:05:03:321 FILESYSTEM/(4062:4901): Cliente desconectado!
+[WARNING] 12:05:03:321 FILESYSTEM/(4062:4901): El cliente se desconectó del server
+[INFO] 12:06:08:136 FILESYSTEM/(4062:4062): Se conecto un cliente!
+[INFO] 12:06:08:136 FILESYSTEM/(4062:5688): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 12:11:50:678 FILESYSTEM/(4062:5688): Cliente desconectado!
+[WARNING] 12:11:50:678 FILESYSTEM/(4062:5688): El cliente se desconectó del server
+[INFO] 12:11:53:352 FILESYSTEM/(4062:4062): Se conecto un cliente!
+[INFO] 12:11:53:352 FILESYSTEM/(4062:5846): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 12:13:36:180 FILESYSTEM/(4062:5846): Cliente desconectado!
+[WARNING] 12:13:36:180 FILESYSTEM/(4062:5846): El cliente se desconectó del server
+[INFO] 12:13:38:143 FILESYSTEM/(4062:4062): Se conecto un cliente!
+[INFO] 12:13:38:143 FILESYSTEM/(4062:5899): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 12:18:17:336 FILESYSTEM/(4062:5899): Cliente desconectado!
+[WARNING] 12:18:17:336 FILESYSTEM/(4062:5899): El cliente se desconectó del server
+[INFO] 12:18:19:711 FILESYSTEM/(4062:4062): Se conecto un cliente!
+[INFO] 12:18:19:711 FILESYSTEM/(4062:6483): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 12:21:38:941 FILESYSTEM/(4062:6483): Cliente desconectado!
+[WARNING] 12:21:38:941 FILESYSTEM/(4062:6483): El cliente se desconectó del server
+[INFO] 12:21:40:825 FILESYSTEM/(4062:4062): Se conecto un cliente!
+[INFO] 12:21:40:825 FILESYSTEM/(4062:6522): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 12:26:23:838 FILESYSTEM/(4062:6522): Cliente desconectado!
+[WARNING] 12:26:23:838 FILESYSTEM/(4062:6522): El cliente se desconectó del server
+[INFO] 12:26:25:975 FILESYSTEM/(4062:4062): Se conecto un cliente!
+[INFO] 12:26:25:975 FILESYSTEM/(4062:6545): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 12:27:59:490 FILESYSTEM/(4062:6545): Cliente desconectado!
+[WARNING] 12:27:59:490 FILESYSTEM/(4062:6545): El cliente se desconectó del server
+[INFO] 12:28:02:032 FILESYSTEM/(4062:4062): Se conecto un cliente!
+[INFO] 12:28:02:032 FILESYSTEM/(4062:6700): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 12:32:59:613 FILESYSTEM/(4062:6700): Cliente desconectado!
+[WARNING] 12:32:59:613 FILESYSTEM/(4062:6700): El cliente se desconectó del server
+[INFO] 12:33:01:297 FILESYSTEM/(4062:4062): Se conecto un cliente!
+[INFO] 12:33:01:298 FILESYSTEM/(4062:6845): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 12:35:28:937 FILESYSTEM/(4062:6845): Cliente desconectado!
+[WARNING] 12:35:28:937 FILESYSTEM/(4062:6845): El cliente se desconectó del server
+[INFO] 12:40:52:143 FILESYSTEM/(4062:4062): Se conecto un cliente!
+[INFO] 12:40:52:144 FILESYSTEM/(4062:7250): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 12:42:03:268 FILESYSTEM/(4062:7250): Cliente desconectado!
+[WARNING] 12:42:03:268 FILESYSTEM/(4062:7250): El cliente se desconectó del server
+[INFO] 12:42:07:045 FILESYSTEM/(4062:4062): Se conecto un cliente!
+[INFO] 12:42:07:045 FILESYSTEM/(4062:7269): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 12:48:58:585 FILESYSTEM/(4062:7269): Cliente desconectado!
+[WARNING] 12:48:58:585 FILESYSTEM/(4062:7269): El cliente se desconectó del server
+[INFO] 12:49:00:265 FILESYSTEM/(4062:4062): Se conecto un cliente!
+[INFO] 12:49:00:265 FILESYSTEM/(4062:7862): Recibido handshake HANDSHAKE_KERNEL.
