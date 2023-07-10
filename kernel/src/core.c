@@ -263,10 +263,13 @@ void solicitar_compactacion(void* args) {
     uint32_t id_seg = ((t_args_compactacion*)args)->id_seg;
     uint32_t tam = ((t_args_compactacion*)args)->tam;
     t_pcb* pcb = ((t_args_compactacion*)args)->pcb;
-
-    pthread_mutex_lock(&mutex_compactacion);
+    if(pthread_mutex_trylock(&mutex_compactacion) != 0) {
+        log_info(logger_memoria, "Compactación: Esperando Fin de Operaciones de FS");
+        pthread_mutex_lock(&mutex_compactacion);
+    } 
     cod_op cop = COMPACTAR;
     send(socket_memoria, &cop, sizeof(cod_op_kernel), NULL);
+    log_info(logger_memoria, "Compactación: Se solicitó compactación");
     recibir_nuevas_bases(socket_memoria);
     
     pthread_mutex_unlock(&mutex_compactacion);
@@ -317,8 +320,7 @@ void solicitar_creacion_segmento(uint32_t id_seg, uint32_t tam, t_pcb *pcb)
 
         //pthread_create(&hilo_compactacion, NULL, solicitar_compactacion, NULL);
         solicitar_compactacion((void*) args);
-        // Log fin compactacion
-    
+        log_info(logger_kernel, "Se finalizó el proceso de compactación");
 
         break;
     case MEMORIA_SEGMENTO_CREADO:

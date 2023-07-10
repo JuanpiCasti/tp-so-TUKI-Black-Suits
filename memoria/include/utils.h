@@ -24,8 +24,6 @@ typedef struct {
     uint32_t limite;
 } t_segmento; // Para marcar un segmento de la memoria
 
-
-
 extern t_log *logger_memoria;
 extern t_log *logger_memoria_extra;
 extern t_config* config_memoria;

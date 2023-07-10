@@ -17,7 +17,6 @@ void devolver_tabla_inicial(int socket) {
 
 }
 
-
 void devolver_resultado_creacion(cod_op_kernel resultado, int socket, uint32_t base) {
     int tam_buffer = sizeof(cod_op_kernel);
     if(resultado == MEMORIA_SEGMENTO_CREADO) {
@@ -177,6 +176,11 @@ void procesar_conexion(void *void_args)
 
         case COMPACTAR:
             compactar();
+            for(int i = 0; i < list_size(LISTA_GLOBAL_SEGMENTOS); i++)
+            {
+                t_segmento* segmento = list_get(LISTA_GLOBAL_SEGMENTOS, i);
+                log_info(logger_memoria, "PID: %d - Segmento: %d - Base: %d - Tamaño: %d", segmento->pid, segmento->id, segmento->base, segmento->limite);
+            }
             devolver_nuevas_bases(cliente_socket);
             break;
         
@@ -190,6 +194,7 @@ void procesar_conexion(void *void_args)
             char* valor_leer_archivo = malloc(tam_a_leer_archivo);
             recv(cliente_socket, valor_leer_archivo, tam_a_leer_archivo, NULL);
             escribir(dir_fisica_leer_archivo, valor_leer_archivo, tam_a_leer_archivo);
+            log_info(logger_memoria, "PID: %d - Accion: ESCRIBIR - Dirección física: %d - Tamaño: %d - Origen: FS", pid_leer_archivo, dir_fisica_leer_archivo, tam_a_leer_archivo);
             uint32_t escritura_ok = 0;
             send(cliente_socket, &escritura_ok, sizeof(uint32_t), NULL);
 
@@ -203,6 +208,7 @@ void procesar_conexion(void *void_args)
             recv(cliente_socket, &dir_fisica_escribir_archivo, sizeof(uint32_t), NULL);
             recv(cliente_socket, &tam_a_escribir_archivo, sizeof(uint32_t), NULL);
             char* valor_escribir_archivo = leer(dir_fisica_escribir_archivo, tam_a_escribir_archivo);
+            log_info(logger_memoria, "PID: %d - Accion: LEER - Dirección física: %d - Tamaño: %d - Origen: FS", pid_escribir_archivo, dir_fisica_escribir_archivo, tam_a_escribir_archivo);
             send(cliente_socket, valor_escribir_archivo, tam_a_escribir_archivo, NULL);
             free(valor_escribir_archivo);
             break;

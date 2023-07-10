@@ -71,6 +71,7 @@ void truncar_archivo(char* f_name, uint32_t new_size)
         {
           sleep(RETARDO_ACCESO_BLOQUE / 1000);
           asignar_bloque_al_bloque_indirecto(fcb, i);
+          log_info(logger_filesystem, "Acceso Bloque - Archivo: %s - Bloque Archivo: %d - Bloque File System %d", f_name, 2, fcb->f_ip / BLOCK_SIZE);
         }
       }
       else
@@ -79,6 +80,7 @@ void truncar_archivo(char* f_name, uint32_t new_size)
         {
           sleep(RETARDO_ACCESO_BLOQUE / 1000);
           asignar_bloque_al_bloque_indirecto(fcb, i + bloques_actuales - 1);
+          log_info(logger_filesystem, "Acceso Bloque - Archivo: %s - Bloque Archivo: %d - Bloque File System %d", f_name, 2, fcb->f_ip / BLOCK_SIZE);
         }
       }
     }
@@ -91,6 +93,7 @@ void truncar_archivo(char* f_name, uint32_t new_size)
 
     if (bloques_sobrantes > 0)
     {
+      int bloque_actual = bloques_actuales;
       if (bloques_necesarios == 0)
       {
         for (int i = (bloques_sobrantes - 2); i >= 0; i--)
@@ -99,12 +102,17 @@ void truncar_archivo(char* f_name, uint32_t new_size)
           sleep(RETARDO_ACCESO_BLOQUE / 1000);
           memcpy(&puntero, blocks_buffer + fcb->f_ip + sizeof(uint32_t) * i, sizeof(uint32_t));
           desocupar_bloque(puntero / BLOCK_SIZE);
+          log_info(logger_filesystem, "Acceso Bloque - Archivo: %s - Bloque Archivo: %d - Bloque File System %d", f_name, bloque_actual, puntero / BLOCK_SIZE);
+          bloque_actual--;
           remover_puntero_de_bloque_indirecto(fcb, i);
+          log_info(logger_filesystem, "Acceso Bloque - Archivo: %s - Bloque Archivo: %d - Bloque File System %d", f_name, 2, fcb->f_ip / BLOCK_SIZE);
         }
 
         desocupar_bloque(fcb->f_ip / BLOCK_SIZE);
+        log_info(logger_filesystem, "Acceso Bloque - Archivo: %s - Bloque Archivo: %d - Bloque File System %d", f_name, 2, fcb->f_ip / BLOCK_SIZE);
         fcb->f_ip = 0;
         desocupar_bloque(fcb->f_dp / BLOCK_SIZE);
+        log_info(logger_filesystem, "Acceso Bloque - Archivo: %s - Bloque Archivo: %d - Bloque File System %d", f_name, 1, fcb->f_dp / BLOCK_SIZE);
         fcb->f_dp = 0;
       }
       else
@@ -115,7 +123,10 @@ void truncar_archivo(char* f_name, uint32_t new_size)
           sleep(RETARDO_ACCESO_BLOQUE / 1000);
           memcpy(&puntero, blocks_buffer + fcb->f_ip + sizeof(uint32_t) * i, sizeof(uint32_t));
           desocupar_bloque(puntero / BLOCK_SIZE);
+          log_info(logger_filesystem, "Acceso Bloque - Archivo: %s - Bloque Archivo: %d - Bloque File System %d", f_name, bloque_actual, puntero / BLOCK_SIZE);
+          bloque_actual--;
           remover_puntero_de_bloque_indirecto(fcb, i);
+          log_info(logger_filesystem, "Acceso Bloque - Archivo: %s - Bloque Archivo: %d - Bloque File System %d", f_name, 2, fcb->f_ip / BLOCK_SIZE);
         }
       }
     }
@@ -137,7 +148,7 @@ void truncar_archivo(char* f_name, uint32_t new_size)
   fclose(archivo_fcb);
 }
 
-void eferrait(char* f_name, uint32_t offset,uint32_t cantidad, char* data) {
+void eferrait(char* f_name, uint32_t offset, uint32_t cantidad, char* data) {
   t_fcb* fcb = levantar_fcb(f_name);
   int desplazamiento = 0;
   int bloque_inicial = offset / BLOCK_SIZE;

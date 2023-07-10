@@ -43,11 +43,13 @@ void procesar_conexion(void *void_args)
             recv(cliente_socket, f_name, sizeof(char[30]), NULL);
             archivo_ok = abrir_archivo(f_name);
             send(cliente_socket, &archivo_ok, sizeof(uint32_t), NULL);
+            log_info(logger, "Abrir archivo: %s", f_name);
             break;
         case CREAR_ARCHIVO:
             recv(cliente_socket, f_name, sizeof(char[30]), NULL);
             archivo_ok = crear_archivo(f_name);
             send(cliente_socket, &archivo_ok, sizeof(uint32_t), NULL);
+            log_info(logger, "Crear archivo: %s", f_name);
             break;
         case TRUNCAR_ARCHIVO:
             recv(cliente_socket, f_name, sizeof(char[30]), NULL);
@@ -55,6 +57,7 @@ void procesar_conexion(void *void_args)
             truncar_archivo(f_name, f_size);
             archivo_ok = 0;
             send(cliente_socket, &archivo_ok, sizeof(uint32_t), NULL);
+            log_info(logger, "Truncar archivo: %s - Tamaño: %d", f_name, f_size);
             break;
         case LEER_ARCHIVO:
             recv(cliente_socket, &pid, sizeof(uint32_t), NULL);
@@ -62,7 +65,7 @@ void procesar_conexion(void *void_args)
             recv(cliente_socket, &offset, sizeof(uint32_t), NULL);
             recv(cliente_socket, &dir_fisica, sizeof(uint32_t), NULL);
             recv(cliente_socket, &cant, sizeof(uint32_t), NULL);
-            char *stream_leido = eferrid(f_name, offset,cant);
+            char *stream_leido = eferrid(f_name, offset, cant);
             //char* cadena_parseada = imprimir_cadena(stream_leido, cant);
             //printf("Cadena parseada: %s\n", cadena_parseada);
             void* buffer_leido = malloc(sizeof(uint32_t)*3 + cant + sizeof(cod_op));
@@ -85,7 +88,7 @@ void procesar_conexion(void *void_args)
             recv(socket_memoria, &archivo_ok, sizeof(uint32_t), NULL);
             send(cliente_socket, &archivo_ok, sizeof(uint32_t), NULL);
             free(buffer_leido);
-
+            log_info(logger, "Leer archivo: %s - Puntero: %d - Memoria: %d - Tamaño: %d" ,f_name, offset, dir_fisica, f_size);
             break;
         case ESCRIBIR_ARCHIVO:
             recv(cliente_socket, &pid, sizeof(uint32_t), NULL);
@@ -114,6 +117,8 @@ void procesar_conexion(void *void_args)
             free(buffer_escritura);
             archivo_ok = 0;
             send(cliente_socket, &archivo_ok, sizeof(uint32_t), NULL);
+
+            log_info(logger, "Escribir archivo: %s - Puntero: %d - Memoria: %d - Tamaño: %d" ,f_name, offset, dir_fisica, f_size);
             break;
         default:
             log_error(logger, "Algo anduvo mal en el server de Filesystem");
