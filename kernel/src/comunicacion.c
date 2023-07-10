@@ -38,10 +38,11 @@ void procesar_conexion(void *void_args)
             log_info(logger_kernel, "Se crea el proceso %d en NEW", n_pcb->pid);
             pthread_mutex_unlock(&mutex_NEW);
 
+
             pthread_mutex_lock(&mutex_PROCESOS_EN_MEMORIA);
             list_add(PROCESOS_EN_MEMORIA, n_pcb);
             pthread_mutex_unlock(&mutex_PROCESOS_EN_MEMORIA);
-    
+            sem_post(&semaforo_NEW);
 
             break;
         default:

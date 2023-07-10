@@ -191,6 +191,10 @@ void inicializar_semaforos()
         log_error(logger_kernel_extra, "No se pudo inicializar el semaforo para la lista de procesos en memoria");
         exit(-1);
     }
+
+    sem_init(&semaforo_NEW, 0, 0);
+    sem_init(&semaforo_READY, 0, 0);
+    sem_init(&semaforo_mp, 0, GRADO_MAX_MULTIPROGRAMACION);
 }
 
 void loggear_cambio_estado(char *estado_anterior, char *estado_actual, t_pcb *pcb)

@@ -2,13 +2,13 @@
 
 void encolar_proceso(t_pcb *new_pcb, t_list *cola, pthread_mutex_t *mutex_cola, char *estado_anterior, char *estado_actual)
 {
-    pthread_mutex_lock(mutex_cola); // Wait
     list_add(cola, new_pcb);
     loggear_cambio_estado(estado_anterior, estado_actual, new_pcb);
     if (strcmp("READY", estado_actual) == 0)
     {
         new_pcb->llegada_ready = time(NULL);
         loggear_cola_ready(cola);
+        sem_post(&semaforo_READY);
     }
     pthread_mutex_unlock(mutex_cola); // Signal
 }
@@ -65,10 +65,12 @@ void planificacion_largo_plazo()
 {
     while (true)
     {
+        sem_wait(&semaforo_NEW);
         pthread_mutex_lock(&mutex_NEW);
 
         // PASO de NEW a READY - Largo Plazo
         pthread_mutex_lock(&mutex_mp);
+        sem_wait(&semaforo_mp);
         if (list_size(NEW) > 0 && GRADO_ACTUAL_MPROG < GRADO_MAX_MULTIPROGRAMACION)
         {
             pthread_mutex_unlock(&mutex_mp);
@@ -131,6 +133,7 @@ void terminar_proceso(t_pcb *proceso, cod_op_kernel motivo)
     pthread_mutex_lock(&mutex_mp);
     // imprimir_lista_recursos(RECURSOS);
     GRADO_ACTUAL_MPROG--;
+    sem_post(&semaforo_mp);
     pthread_mutex_unlock(&mutex_mp);
 
     desalojar();
@@ -648,8 +651,9 @@ void planificacion_corto_plazo()
         pthread_mutex_lock(&mutex_READY);
         pthread_mutex_lock(&mutex_RUNNING);
 
-        if (list_size(READY) > 0 && RUNNING == NULL)
+        if (RUNNING == NULL)
         {
+            sem_wait(&semaforo_READY);
             r_pcb = siguiente_proceso_a_ejecutar();
             r_pcb -> llegada_running = time(NULL);
             RUNNING = r_pcb;

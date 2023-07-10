@@ -6,6 +6,7 @@
 #include <commons/collections/list.h>
 #include <commons/string.h>
 #include "shared_utils.h"
+#include <semaphore.h>
 
 typedef struct
 {
@@ -100,6 +101,9 @@ extern pthread_mutex_t mutex_EXIT;
 extern pthread_mutex_t mutex_RECURSOS;
 extern pthread_mutex_t mutex_compactacion;
 extern pthread_mutex_t mutex_PROCESOS_EN_MEMORIA;
+extern sem_t semaforo_NEW;
+extern sem_t semaforo_READY;
+extern sem_t semaforo_mp;
 
 extern t_list *tabla_archivos;
 

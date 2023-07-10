@@ -53,6 +53,10 @@ pthread_mutex_t mutex_compactacion;
 t_list* PROCESOS_EN_MEMORIA;
 pthread_mutex_t mutex_PROCESOS_EN_MEMORIA;
 
+sem_t semaforo_NEW;
+sem_t semaforo_READY;
+sem_t semaforo_mp;
+
 int main(int argc, char **argv)
 {
 	if (argc > 1 && strcmp(argv[1], "-test") == 0)
