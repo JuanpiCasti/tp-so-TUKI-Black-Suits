@@ -460,6 +460,7 @@ void abrir_archivo(char *f_name, t_pcb *pcb)
         entrada_archivo->cola_bloqueados = list_create();
         list_add(tabla_archivos, entrada_archivo);
 
+        log_info(logger_kernel, "PID: %d - Abrir Archivo: %s", pcb->pid, f_name);
     }
 }
 
@@ -489,6 +490,8 @@ void cerrar_archivo(char *f_name, t_pcb *pcb)
             }
         }
     }
+
+    log_info(logger_kernel, "PID: %d - Cerrar Archivo: %s", pcb->pid, f_name);
 }
 
 void cambiar_puntero_archivo(char *f_name, uint32_t new_puntero, t_pcb *pcb)
@@ -503,7 +506,8 @@ void cambiar_puntero_archivo(char *f_name, uint32_t new_puntero, t_pcb *pcb)
     }
 
     t_archivo_abierto *archivo_pcb = list_get(pcb->archivos_abiertos, 0);
-    printf("Puntero: %d\n", archivo_pcb->puntero);
+
+    log_info(logger_kernel, "PID: %d - Actualizar puntero Archivo: %s - Puntero: %d", pcb->pid, f_name, new_puntero);
 }
 
 void truncar_archivo(void* args)
@@ -536,6 +540,8 @@ void truncar_archivo(void* args)
     {
         encolar_proceso(pcb, READY, &mutex_READY, "BLOQUEADO", "READY");
     }
+
+    log_info(logger_kernel, "PID: %d - Archivo: %s - Tamaño %d", pcb->pid, f_name, new_size);
 
     free(args_f_op);
 }
@@ -584,6 +590,8 @@ void leer_archivo(void* args)
     {
         encolar_proceso(pcb, READY, &mutex_READY, "BLOQUEADO", "READY");
     }
+
+    log_info(logger_kernel, "PID: %d - Leer Archivo: %s - Puntero: %d - Dirección Memoria: %d - Tamaño: %d", pcb->pid, f_name, archivo->puntero, dir_fisica, size);
 }
 
 void escribir_archivo(void * args)
@@ -636,6 +644,8 @@ void escribir_archivo(void * args)
     {
         encolar_proceso(pcb, READY, &mutex_READY, "BLOQUEADO", "READY");
     }
+
+    log_info(logger_kernel, "PID: %d - Escribir Archivo: %s - Puntero: %d - Dirección Memoria: %d - Tamaño: %d", pcb->pid, f_name, archivo->puntero, dir_fisica, size);
 
     free(args_converted);
 }
