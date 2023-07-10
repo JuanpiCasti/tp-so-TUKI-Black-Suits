@@ -237,6 +237,7 @@ void signal_recurso(t_pcb *proceso, char *nombre_recurso)
 
     int indice_recurso = recurso_asignado(proceso, nombre_recurso);
 
+    log_info(logger_kernel, "PID: %d - Signal: %s - Instancias: %d", proceso->pid, nombre_recurso, recurso->instancias_disponibles);
     if (indice_recurso != -1)
     {
         t_asig_r *recurso_asignado = list_get(proceso->recursos_asignados, indice_recurso);
@@ -256,7 +257,6 @@ void signal_recurso(t_pcb *proceso, char *nombre_recurso)
         t_pcb *proceso_bloqueado = list_remove(recurso->cola_bloqueados, 0);
         encolar_proceso(proceso_bloqueado, READY, &mutex_READY, "BLOQUEADO", "READY");
     }
-    log_info(logger_kernel, "PID: %d - Signal: %s - Instancias: %d", proceso->pid, nombre_recurso, recurso->instancias_disponibles);
 }
 
 void solicitar_compactacion(void* args) {
@@ -305,7 +305,6 @@ void solicitar_creacion_segmento(uint32_t id_seg, uint32_t tam, t_pcb *pcb)
     switch (resultado)
     {
     case EXIT_OUT_OF_MEMORY:
-        desalojar();
         terminar_proceso(pcb, EXIT_OUT_OF_MEMORY);
         break;
     case MEMORIA_NECESITA_COMPACTACION:
