@@ -221,14 +221,18 @@ void loggear_cola_ready(t_list *cola_ready)
     {
         t_list *READY_aux = list_take(cola_ready, list_size(cola_ready));
 
-        double RR_aux = 0;
-        double RR_mayor = 0;
+        float RR_aux = 0;
+        float RR_mayor = 0;
         int index_de_RR_mayor = 0;
-        double estimado_aux;
 
         for (int i = 0; i < list_size(READY_aux); i++)
         {
             pcb = list_get(READY_aux, i);
+            if (pcb->ultima_rafaga != 0)
+            {
+                pcb->estimado_HRRN = HRRN_ALFA * pcb->estimado_HRRN + (1 - HRRN_ALFA) * pcb->ultima_rafaga;
+            }
+
             RR_aux = ((time(NULL) - pcb->llegada_ready) + pcb->estimado_HRRN) / pcb->estimado_HRRN;
 
             if (RR_aux > RR_mayor)
@@ -252,10 +256,10 @@ void loggear_cola_ready(t_list *cola_ready)
                 pcb = list_get(READY_aux, i);
                 if (pcb->ultima_rafaga != 0)
                 {
-                    estimado_aux = HRRN_ALFA * pcb->estimado_HRRN + (1 - HRRN_ALFA) * pcb->ultima_rafaga;
+                    pcb->estimado_HRRN = HRRN_ALFA * pcb->estimado_HRRN + (1 - HRRN_ALFA) * pcb->ultima_rafaga;
                 }
 
-                RR_aux = ((time(NULL) - pcb->llegada_ready) + estimado_aux) / estimado_aux;
+                RR_aux = ((time(NULL) - pcb->llegada_ready) + pcb->estimado_HRRN) / pcb->estimado_HRRN;
 
                 if (RR_aux > RR_mayor)
                 {
