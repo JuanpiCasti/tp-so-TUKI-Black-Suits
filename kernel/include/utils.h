@@ -30,9 +30,10 @@ typedef struct
   uint32_t program_counter;
   t_registros_cpu *registros_cpu;
   t_list *tabla_segmentos;
-  float estimado_HRRN;
-  float ultima_rafaga;
+  double estimado_HRRN;
+  double ultima_rafaga;
   time_t llegada_ready;
+  time_t llegada_running;
   t_list *recursos_asignados;
   t_list *archivos_abiertos;
   int socket_consola;
