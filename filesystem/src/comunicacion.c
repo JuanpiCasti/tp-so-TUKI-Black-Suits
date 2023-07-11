@@ -64,7 +64,7 @@ void procesar_conexion(void *void_args)
             recv(cliente_socket, &offset, sizeof(uint32_t), NULL);
             recv(cliente_socket, &dir_fisica, sizeof(uint32_t), NULL);
             recv(cliente_socket, &cant, sizeof(uint32_t), NULL);
-            log_info(logger, "Leer archivo: %s - Puntero: %d - Memoria: %d - Tamaño: %d" ,f_name, offset, dir_fisica, f_size);
+            log_info(logger, "Leer archivo: %s - Puntero: %d - Memoria: %d - Tamaño: %d" ,f_name, offset, dir_fisica, cant);
             char *stream_leido = eferrid(f_name, offset, cant);
             //char* cadena_parseada = imprimir_cadena(stream_leido, cant);
             //printf("Cadena parseada: %s\n", cadena_parseada);
@@ -95,7 +95,7 @@ void procesar_conexion(void *void_args)
             recv(cliente_socket, &offset, sizeof(uint32_t), NULL);
             recv(cliente_socket, &dir_fisica, sizeof(uint32_t), NULL);
             recv(cliente_socket, &cant, sizeof(uint32_t), NULL);
-            log_info(logger, "Escribir archivo: %s - Puntero: %d - Memoria: %d - Tamaño: %d" ,f_name, offset, dir_fisica, f_size);
+            log_info(logger, "Escribir archivo: %s - Puntero: %d - Memoria: %d - Tamaño: %d" ,f_name, offset, dir_fisica, cant);
             // Pedir datos a memoria
             void* buffer_memoria = malloc(sizeof(cod_op) + sizeof(uint32_t)*3);
             cod_op_fs = ESCRIBIR_ARCHIVO;

@@ -272,6 +272,7 @@ void solicitar_compactacion(void* args) {
     recibir_nuevas_bases(socket_memoria);
     
     pthread_mutex_unlock(&mutex_compactacion);
+    log_info(logger_kernel, "Se finalizó el proceso de compactación");
     solicitar_creacion_segmento(id_seg, tam, pcb);
     // for (int i = 0; i < list_size(PROCESOS_EN_MEMORIA); i++)
     //     {
@@ -319,7 +320,6 @@ void solicitar_creacion_segmento(uint32_t id_seg, uint32_t tam, t_pcb *pcb)
 
         //pthread_create(&hilo_compactacion, NULL, solicitar_compactacion, NULL);
         solicitar_compactacion((void*) args);
-        log_info(logger_kernel, "Se finalizó el proceso de compactación");
 
         break;
     case MEMORIA_SEGMENTO_CREADO:

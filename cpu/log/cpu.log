@@ -5287,3 +5287,65 @@
 [INFO] 22:44:01:179 CPU/(41391:41403): PID: 4 - Acción: LEER - Segmento: 0 - Dirección Física: 16 - Valor: SonicTheHedgehog
 [INFO] 22:44:01:179 CPU/(41391:41403): PID: 4 - Ejecutando: F_CLOSE - arg1: Videogames, arg2: , arg3: 
 [INFO] 22:44:01:179 CPU/(41391:41403): PID: 4 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 22:49:16:652 CPU/(42073:42092): PID: 1 - Ejecutando: WAIT - arg1: RA, arg2: , arg3: 
+[INFO] 22:49:16:653 CPU/(42073:42092): PID: 1 - Ejecutando: SET - arg1: RAX, arg2: SonicTheHedgehog, arg3: 
+[INFO] 22:49:17:653 CPU/(42073:42092): PID: 1 - Ejecutando: MOV_OUT - arg1: 0, arg2: RAX, arg3: 
+[INFO] 22:49:18:653 CPU/(42073:42092): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 0 - Valor: SonicTheHedgehog
+[INFO] 22:49:18:653 CPU/(42073:42092): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation1, arg3: 
+[INFO] 22:49:19:654 CPU/(42073:42092): PID: 1 - Ejecutando: MOV_OUT - arg1: 32, arg2: RBX, arg3: 
+[INFO] 22:49:20:655 CPU/(42073:42092): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 32 - Valor: SonyPlaystation1
+[INFO] 22:49:20:655 CPU/(42073:42092): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation2, arg3: 
+[INFO] 22:49:21:655 CPU/(42073:42092): PID: 1 - Ejecutando: MOV_OUT - arg1: 48, arg2: RBX, arg3: 
+[INFO] 22:49:22:656 CPU/(42073:42092): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 48 - Valor: SonyPlaystation2
+[INFO] 22:49:22:656 CPU/(42073:42092): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation3, arg3: 
+[INFO] 22:49:23:656 CPU/(42073:42092): PID: 1 - Ejecutando: MOV_OUT - arg1: 64, arg2: RBX, arg3: 
+[INFO] 22:49:24:657 CPU/(42073:42092): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 64 - Valor: SonyPlaystation3
+[INFO] 22:49:24:657 CPU/(42073:42092): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation4, arg3: 
+[INFO] 22:49:25:657 CPU/(42073:42092): PID: 1 - Ejecutando: MOV_OUT - arg1: 80, arg2: RBX, arg3: 
+[INFO] 22:49:26:658 CPU/(42073:42092): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 80 - Valor: SonyPlaystation4
+[INFO] 22:49:26:658 CPU/(42073:42092): PID: 1 - Ejecutando: SET - arg1: RBX, arg2: SonyPlaystation5, arg3: 
+[INFO] 22:49:27:659 CPU/(42073:42092): PID: 1 - Ejecutando: MOV_OUT - arg1: 96, arg2: RBX, arg3: 
+[INFO] 22:49:28:660 CPU/(42073:42092): PID: 1 - Acción: ESCRIBIR - Segmento: 0 - Dirección Física: 96 - Valor: SonyPlaystation5
+[INFO] 22:49:28:660 CPU/(42073:42092): PID: 1 - Ejecutando: F_OPEN - arg1: Consoles, arg2: , arg3: 
+[INFO] 22:49:28:660 CPU/(42073:42092): PID: 1 - Ejecutando: F_TRUNCATE - arg1: Consoles, arg2: 256, arg3: 
+[INFO] 22:49:28:660 CPU/(42073:42092): PID: 2 - Ejecutando: WAIT - arg1: RB, arg2: , arg3: 
+[INFO] 22:49:29:661 CPU/(42073:42092): PID: 1 - Ejecutando: F_SEEK - arg1: Consoles, arg2: 128, arg3: 
+[INFO] 22:49:29:661 CPU/(42073:42092): PID: 1 - Ejecutando: SIGNAL - arg1: RB, arg2: , arg3: 
+[INFO] 22:49:29:662 CPU/(42073:42092): PID: 1 - Ejecutando: F_WRITE - arg1: Consoles, arg2: 32, arg3: 80
+[INFO] 22:49:29:662 CPU/(42073:42092): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 1, arg2: 64, arg3: 
+[INFO] 22:49:29:662 CPU/(42073:42092): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 2, arg2: 64, arg3: 
+[INFO] 22:49:29:662 CPU/(42073:42092): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 3, arg2: 64, arg3: 
+[INFO] 22:49:29:662 CPU/(42073:42092): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 4, arg2: 64, arg3: 
+[INFO] 22:49:29:662 CPU/(42073:42092): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 5, arg2: 128, arg3: 
+[INFO] 22:49:29:662 CPU/(42073:42092): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 2, arg2: , arg3: 
+[INFO] 22:49:29:662 CPU/(42073:42092): PID: 2 - Ejecutando: DELETE_SEGMENT - arg1: 4, arg2: , arg3: 
+[INFO] 22:49:29:662 CPU/(42073:42092): PID: 2 - Ejecutando: CREATE_SEGMENT - arg1: 6, arg2: 128, arg3: 
+[INFO] 22:50:03:665 CPU/(42073:42092): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 22:50:03:665 CPU/(42073:42092): PID: 1 - Ejecutando: F_CLOSE - arg1: Consoles, arg2: , arg3: 
+[INFO] 22:50:03:665 CPU/(42073:42092): PID: 1 - Ejecutando: F_OPEN - arg1: Videogames, arg2: , arg3: 
+[INFO] 22:50:03:666 CPU/(42073:42092): PID: 1 - Ejecutando: F_TRUNCATE - arg1: Videogames, arg2: 64, arg3: 
+[INFO] 22:50:03:666 CPU/(42073:42092): PID: 1 - Ejecutando: F_SEEK - arg1: Videogames, arg2: 0, arg3: 
+[INFO] 22:50:03:666 CPU/(42073:42092): PID: 1 - Ejecutando: F_WRITE - arg1: Videogames, arg2: 0, arg3: 16
+[INFO] 22:50:05:668 CPU/(42073:42092): PID: 1 - Ejecutando: F_CLOSE - arg1: Videogames, arg2: , arg3: 
+[INFO] 22:50:05:668 CPU/(42073:42092): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 22:50:39:137 CPU/(42137:42143): PID: 1 - Ejecutando: F_OPEN - arg1: Videogames, arg2: , arg3: 
+[INFO] 22:50:39:137 CPU/(42137:42143): PID: 1 - Ejecutando: F_SEEK - arg1: Videogames, arg2: 0, arg3: 
+[INFO] 22:50:39:137 CPU/(42137:42143): PID: 1 - Ejecutando: F_READ - arg1: Videogames, arg2: 16, arg3: 16
+[INFO] 22:50:39:401 CPU/(42137:42143): PID: 2 - Ejecutando: F_OPEN - arg1: Videogames, arg2: , arg3: 
+[INFO] 22:50:39:692 CPU/(42137:42143): PID: 3 - Ejecutando: F_OPEN - arg1: Videogames, arg2: , arg3: 
+[INFO] 22:50:41:139 CPU/(42137:42143): PID: 1 - Ejecutando: MOV_IN - arg1: RAX, arg2: 16, arg3: 
+[INFO] 22:50:41:139 CPU/(42137:42143): PID: 1 - Acción: LEER - Segmento: 0 - Dirección Física: 16 - Valor: SonicTheHedgehog
+[INFO] 22:50:41:139 CPU/(42137:42143): PID: 1 - Ejecutando: F_CLOSE - arg1: Videogames, arg2: , arg3: 
+[INFO] 22:50:41:139 CPU/(42137:42143): PID: 1 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 22:50:41:139 CPU/(42137:42143): PID: 2 - Ejecutando: F_SEEK - arg1: Videogames, arg2: 0, arg3: 
+[INFO] 22:50:41:139 CPU/(42137:42143): PID: 2 - Ejecutando: F_READ - arg1: Videogames, arg2: 16, arg3: 16
+[INFO] 22:50:43:140 CPU/(42137:42143): PID: 2 - Ejecutando: MOV_IN - arg1: RAX, arg2: 16, arg3: 
+[INFO] 22:50:43:140 CPU/(42137:42143): PID: 2 - Acción: LEER - Segmento: 0 - Dirección Física: 16 - Valor: SonicTheHedgehog
+[INFO] 22:50:43:140 CPU/(42137:42143): PID: 2 - Ejecutando: F_CLOSE - arg1: Videogames, arg2: , arg3: 
+[INFO] 22:50:43:140 CPU/(42137:42143): PID: 2 - Ejecutando: EXIT - arg1: , arg2: , arg3: 
+[INFO] 22:50:43:140 CPU/(42137:42143): PID: 3 - Ejecutando: F_SEEK - arg1: Videogames, arg2: 0, arg3: 
+[INFO] 22:50:43:140 CPU/(42137:42143): PID: 3 - Ejecutando: F_READ - arg1: Videogames, arg2: 16, arg3: 16
+[INFO] 22:50:45:142 CPU/(42137:42143): PID: 3 - Ejecutando: MOV_IN - arg1: RAX, arg2: 16, arg3: 
+[INFO] 22:50:45:142 CPU/(42137:42143): PID: 3 - Acción: LEER - Segmento: 0 - Dirección Física: 16 - Valor: SonicTheHedgehog
+[INFO] 22:50:45:142 CPU/(42137:42143): PID: 3 - Ejecutando: F_CLOSE - arg1: Videogames, arg2: , arg3: 
+[INFO] 22:50:45:142 CPU/(42137:42143): PID: 3 - Ejecutando: EXIT - arg1: , arg2: , arg3: 

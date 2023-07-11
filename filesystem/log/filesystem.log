@@ -1637,3 +1637,47 @@
 [INFO] 22:43:57:178 FILESYSTEM/(41393:41402): Acceso Bloque - Archivo: Videogames - Bloque Archivo: 1 - Bloque File System 6
 [INFO] 22:43:59:179 FILESYSTEM/(41393:41402): Leer archivo: Videogames - Puntero: 0 - Memoria: 16 - Tamaño: 64
 [INFO] 22:43:59:179 FILESYSTEM/(41393:41402): Acceso Bloque - Archivo: Videogames - Bloque Archivo: 1 - Bloque File System 6
+[WARNING] 22:48:47:321 FILESYSTEM/(41393:41402): Cliente desconectado!
+[WARNING] 22:48:47:321 FILESYSTEM/(41393:41402): El cliente se desconectó del server
+[INFO] 22:48:57:579 FILESYSTEM/(42082:42082): Handshake OK
+[INFO] 22:48:57:579 FILESYSTEM/(42082:42082): Filesystem escuchando conexiones...
+[INFO] 22:49:00:284 FILESYSTEM/(42082:42082): Se conecto un cliente!
+[INFO] 22:49:00:284 FILESYSTEM/(42082:42094): Recibido handshake HANDSHAKE_KERNEL.
+[INFO] 22:49:28:660 FILESYSTEM/(42082:42094): Abrir archivo: Consoles
+[INFO] 22:49:28:660 FILESYSTEM/(42082:42094): Crear archivo: Consoles
+[INFO] 22:49:28:660 FILESYSTEM/(42082:42094): Truncar archivo: Consoles - Tamaño: 256
+[INFO] 22:49:28:660 FILESYSTEM/(42082:42094): Acceso a Bitmap - Bloque: 1 - Estado: 0
+[INFO] 22:49:28:660 FILESYSTEM/(42082:42094): Acceso a Bitmap - Bloque: 1 - Estado: 1
+[INFO] 22:49:28:661 FILESYSTEM/(42082:42094): Acceso a Bitmap - Bloque: 2 - Estado: 0
+[INFO] 22:49:28:661 FILESYSTEM/(42082:42094): Acceso a Bitmap - Bloque: 2 - Estado: 1
+[INFO] 22:49:28:661 FILESYSTEM/(42082:42094): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 2 (indirecto) - Bloque File System 2
+[INFO] 22:49:29:661 FILESYSTEM/(42082:42094): Acceso a Bitmap - Bloque: 3 - Estado: 0
+[INFO] 22:49:29:661 FILESYSTEM/(42082:42094): Acceso a Bitmap - Bloque: 3 - Estado: 1
+[INFO] 22:49:29:661 FILESYSTEM/(42082:42094): Acceso a Bitmap - Bloque: 4 - Estado: 0
+[INFO] 22:49:29:661 FILESYSTEM/(42082:42094): Acceso a Bitmap - Bloque: 4 - Estado: 1
+[INFO] 22:49:29:661 FILESYSTEM/(42082:42094): Acceso a Bitmap - Bloque: 5 - Estado: 0
+[INFO] 22:49:29:661 FILESYSTEM/(42082:42094): Acceso a Bitmap - Bloque: 5 - Estado: 1
+[INFO] 22:49:29:662 FILESYSTEM/(42082:42094): Escribir archivo: Consoles - Puntero: 128 - Memoria: 32 - Tamaño: 80
+[INFO] 22:49:30:662 FILESYSTEM/(42082:42094): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 2 (indirecto) - Bloque File System 2
+[INFO] 22:49:31:663 FILESYSTEM/(42082:42094): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 4 - Bloque File System 4
+[INFO] 22:49:32:663 FILESYSTEM/(42082:42094): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 5 - Bloque File System 5
+[INFO] 22:50:03:666 FILESYSTEM/(42082:42094): Abrir archivo: Videogames
+[INFO] 22:50:03:666 FILESYSTEM/(42082:42094): Crear archivo: Videogames
+[INFO] 22:50:03:666 FILESYSTEM/(42082:42094): Truncar archivo: Videogames - Tamaño: 64
+[INFO] 22:50:03:666 FILESYSTEM/(42082:42094): Acceso a Bitmap - Bloque: 6 - Estado: 0
+[INFO] 22:50:03:666 FILESYSTEM/(42082:42094): Acceso a Bitmap - Bloque: 6 - Estado: 1
+[INFO] 22:50:03:666 FILESYSTEM/(42082:42094): Escribir archivo: Videogames - Puntero: 0 - Memoria: 0 - Tamaño: 16
+[INFO] 22:50:04:667 FILESYSTEM/(42082:42094): Acceso Bloque - Archivo: Videogames - Bloque Archivo: 1 - Bloque File System 6
+[WARNING] 22:50:26:158 FILESYSTEM/(42082:42094): Cliente desconectado!
+[WARNING] 22:50:26:158 FILESYSTEM/(42082:42094): El cliente se desconectó del server
+[INFO] 22:50:33:485 FILESYSTEM/(42139:42139): Handshake OK
+[INFO] 22:50:33:485 FILESYSTEM/(42139:42139): Filesystem escuchando conexiones...
+[INFO] 22:50:37:645 FILESYSTEM/(42139:42139): Se conecto un cliente!
+[INFO] 22:50:37:645 FILESYSTEM/(42139:42144): Recibido handshake HANDSHAKE_KERNEL.
+[INFO] 22:50:39:137 FILESYSTEM/(42139:42144): Abrir archivo: Videogames
+[INFO] 22:50:39:138 FILESYSTEM/(42139:42144): Leer archivo: Videogames - Puntero: 0 - Memoria: 16 - Tamaño: 16
+[INFO] 22:50:39:138 FILESYSTEM/(42139:42144): Acceso Bloque - Archivo: Videogames - Bloque Archivo: 1 - Bloque File System 6
+[INFO] 22:50:41:139 FILESYSTEM/(42139:42144): Leer archivo: Videogames - Puntero: 0 - Memoria: 16 - Tamaño: 16
+[INFO] 22:50:41:139 FILESYSTEM/(42139:42144): Acceso Bloque - Archivo: Videogames - Bloque Archivo: 1 - Bloque File System 6
+[INFO] 22:50:43:141 FILESYSTEM/(42139:42144): Leer archivo: Videogames - Puntero: 0 - Memoria: 16 - Tamaño: 16
+[INFO] 22:50:43:141 FILESYSTEM/(42139:42144): Acceso Bloque - Archivo: Videogames - Bloque Archivo: 1 - Bloque File System 6
