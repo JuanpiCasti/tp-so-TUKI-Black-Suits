@@ -164,6 +164,7 @@ void terminar_proceso(t_pcb *proceso, cod_op_kernel motivo)
     
 
     // TODO: cerrar archivos abiertos?
+    list_destroy(proceso->archivos_abiertos);
 
     // Remove pcb from PROCESOS_EN_MEMORIA
     int index = 0;
@@ -178,9 +179,9 @@ void terminar_proceso(t_pcb *proceso, cod_op_kernel motivo)
         }
         index++;
     }
+    
     loggear_fin_proceso(proceso, motivo);
     devolver_resultado(proceso, motivo);
-    
     t_pcb* proceso_finalizado = list_remove(EXIT, 0);
     list_destroy_and_destroy_elements(proceso_finalizado->instrucciones, destroy_instruccion);
     free(proceso_finalizado->registros_cpu);

@@ -14338,3 +14338,23 @@
 [INFO] 22:50:30:958 CPU/(42137:42137): CPU escuchando conexiones...
 [INFO] 22:50:37:645 CPU/(42137:42137): Se conecto un cliente!
 [INFO] 22:50:37:645 CPU/(42137:42143): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:52:53:400 CPU/(42137:42143): Cliente desconectado!
+[WARNING] 22:52:53:400 CPU/(42137:42143): El cliente se desconectó del server
+[INFO] 22:53:46:104 CPU/(43376:43376): Handshake OK
+[INFO] 22:53:46:104 CPU/(43376:43376): CPU escuchando conexiones...
+[INFO] 22:53:49:384 CPU/(43376:43376): Se conecto un cliente!
+[INFO] 22:53:49:384 CPU/(43376:43381): Recibido handshake HANDSHAKE_KERNEL.
+[INFO] 23:00:58:145 CPU/(3209:3209): Handshake OK
+[INFO] 23:00:58:146 CPU/(3209:3209): CPU escuchando conexiones...
+[INFO] 23:01:07:990 CPU/(3209:3209): Se conecto un cliente!
+[INFO] 23:01:07:990 CPU/(3209:3226): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:02:19:678 CPU/(3209:3226): Cliente desconectado!
+[WARNING] 23:02:19:678 CPU/(3209:3226): El cliente se desconectó del server
+[INFO] 23:03:44:006 CPU/(4285:4285): Handshake OK
+[INFO] 23:03:44:006 CPU/(4285:4285): CPU escuchando conexiones...
+[INFO] 23:03:49:017 CPU/(4285:4285): Se conecto un cliente!
+[INFO] 23:03:49:018 CPU/(4285:4290): Recibido handshake HANDSHAKE_KERNEL.
+[INFO] 23:04:20:254 CPU/(4323:4323): Handshake OK
+[INFO] 23:04:20:254 CPU/(4323:4323): CPU escuchando conexiones...
+[INFO] 23:04:23:692 CPU/(4323:4323): Se conecto un cliente!
+[INFO] 23:04:23:692 CPU/(4323:4328): Recibido handshake HANDSHAKE_KERNEL.

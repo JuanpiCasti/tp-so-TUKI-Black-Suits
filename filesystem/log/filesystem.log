@@ -1681,3 +1681,50 @@
 [INFO] 22:50:41:139 FILESYSTEM/(42139:42144): Acceso Bloque - Archivo: Videogames - Bloque Archivo: 1 - Bloque File System 6
 [INFO] 22:50:43:141 FILESYSTEM/(42139:42144): Leer archivo: Videogames - Puntero: 0 - Memoria: 16 - Tamaño: 16
 [INFO] 22:50:43:141 FILESYSTEM/(42139:42144): Acceso Bloque - Archivo: Videogames - Bloque Archivo: 1 - Bloque File System 6
+[WARNING] 22:52:53:400 FILESYSTEM/(42139:42144): Cliente desconectado!
+[WARNING] 22:52:53:400 FILESYSTEM/(42139:42144): El cliente se desconectó del server
+[INFO] 22:53:47:618 FILESYSTEM/(43378:43378): Handshake OK
+[INFO] 22:53:47:618 FILESYSTEM/(43378:43378): Filesystem escuchando conexiones...
+[INFO] 22:53:49:384 FILESYSTEM/(43378:43378): Se conecto un cliente!
+[INFO] 22:53:49:384 FILESYSTEM/(43378:43382): Recibido handshake HANDSHAKE_KERNEL.
+[INFO] 23:01:01:911 FILESYSTEM/(3214:3214): Handshake OK
+[INFO] 23:01:01:911 FILESYSTEM/(3214:3214): Filesystem escuchando conexiones...
+[INFO] 23:01:07:990 FILESYSTEM/(3214:3214): Se conecto un cliente!
+[INFO] 23:01:07:990 FILESYSTEM/(3214:3227): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:02:19:678 FILESYSTEM/(3214:3227): Cliente desconectado!
+[WARNING] 23:02:19:678 FILESYSTEM/(3214:3227): El cliente se desconectó del server
+[INFO] 23:03:46:023 FILESYSTEM/(4287:4287): Handshake OK
+[INFO] 23:03:46:023 FILESYSTEM/(4287:4287): Filesystem escuchando conexiones...
+[INFO] 23:03:49:017 FILESYSTEM/(4287:4287): Se conecto un cliente!
+[INFO] 23:03:49:017 FILESYSTEM/(4287:4291): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 23:04:04:633 FILESYSTEM/(4287:4291): Cliente desconectado!
+[WARNING] 23:04:04:633 FILESYSTEM/(4287:4291): El cliente se desconectó del server
+[INFO] 23:04:21:822 FILESYSTEM/(4325:4325): Handshake OK
+[INFO] 23:04:21:823 FILESYSTEM/(4325:4325): Filesystem escuchando conexiones...
+[INFO] 23:04:23:692 FILESYSTEM/(4325:4325): Se conecto un cliente!
+[INFO] 23:04:23:692 FILESYSTEM/(4325:4330): Recibido handshake HANDSHAKE_KERNEL.
+[INFO] 23:04:39:788 FILESYSTEM/(4325:4330): Abrir archivo: Consoles
+[INFO] 23:04:39:788 FILESYSTEM/(4325:4330): Crear archivo: Consoles
+[INFO] 23:04:39:788 FILESYSTEM/(4325:4330): Truncar archivo: Consoles - Tamaño: 256
+[INFO] 23:04:39:789 FILESYSTEM/(4325:4330): Acceso a Bitmap - Bloque: 1 - Estado: 0
+[INFO] 23:04:39:789 FILESYSTEM/(4325:4330): Acceso a Bitmap - Bloque: 1 - Estado: 1
+[INFO] 23:04:39:789 FILESYSTEM/(4325:4330): Acceso a Bitmap - Bloque: 2 - Estado: 0
+[INFO] 23:04:39:789 FILESYSTEM/(4325:4330): Acceso a Bitmap - Bloque: 2 - Estado: 1
+[INFO] 23:04:39:789 FILESYSTEM/(4325:4330): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 2 (indirecto) - Bloque File System 2
+[INFO] 23:04:40:789 FILESYSTEM/(4325:4330): Acceso a Bitmap - Bloque: 3 - Estado: 0
+[INFO] 23:04:40:789 FILESYSTEM/(4325:4330): Acceso a Bitmap - Bloque: 3 - Estado: 1
+[INFO] 23:04:40:789 FILESYSTEM/(4325:4330): Acceso a Bitmap - Bloque: 4 - Estado: 0
+[INFO] 23:04:40:789 FILESYSTEM/(4325:4330): Acceso a Bitmap - Bloque: 4 - Estado: 1
+[INFO] 23:04:40:789 FILESYSTEM/(4325:4330): Acceso a Bitmap - Bloque: 5 - Estado: 0
+[INFO] 23:04:40:789 FILESYSTEM/(4325:4330): Acceso a Bitmap - Bloque: 5 - Estado: 1
+[INFO] 23:04:40:790 FILESYSTEM/(4325:4330): Escribir archivo: Consoles - Puntero: 128 - Memoria: 32 - Tamaño: 80
+[INFO] 23:04:41:790 FILESYSTEM/(4325:4330): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 2 (indirecto) - Bloque File System 2
+[INFO] 23:04:42:790 FILESYSTEM/(4325:4330): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 4 - Bloque File System 4
+[INFO] 23:04:43:790 FILESYSTEM/(4325:4330): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 5 - Bloque File System 5
+[INFO] 23:04:54:792 FILESYSTEM/(4325:4330): Abrir archivo: Videogames
+[INFO] 23:04:54:792 FILESYSTEM/(4325:4330): Crear archivo: Videogames
+[INFO] 23:04:54:792 FILESYSTEM/(4325:4330): Truncar archivo: Videogames - Tamaño: 64
+[INFO] 23:04:54:792 FILESYSTEM/(4325:4330): Acceso a Bitmap - Bloque: 6 - Estado: 0
+[INFO] 23:04:54:792 FILESYSTEM/(4325:4330): Acceso a Bitmap - Bloque: 6 - Estado: 1
+[INFO] 23:04:54:793 FILESYSTEM/(4325:4330): Escribir archivo: Videogames - Puntero: 0 - Memoria: 0 - Tamaño: 16
+[INFO] 23:04:55:793 FILESYSTEM/(4325:4330): Acceso Bloque - Archivo: Videogames - Bloque Archivo: 1 - Bloque File System 6
