@@ -772,13 +772,13 @@ void planificacion_corto_plazo()
                 memcpy(&f_name, buffer + TAMANIO_CONTEXTO, sizeof(char[30]));
                 free(buffer);
                 abrir_archivo(f_name, r_pcb);
-                imprimir_lista_archivos(tabla_archivos);
+                //imprimir_lista_archivos(tabla_archivos);
                 break;
             case CPU_F_CLOSE:
                 memcpy(&f_name, buffer + TAMANIO_CONTEXTO, sizeof(char[30]));
                 free(buffer);
                 cerrar_archivo(f_name, r_pcb);
-                imprimir_lista_archivos(tabla_archivos);
+                //imprimir_lista_archivos(tabla_archivos);
                 break;
             case CPU_F_SEEK:
                 uint32_t new_puntero;

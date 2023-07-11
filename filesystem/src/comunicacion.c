@@ -57,7 +57,6 @@ void procesar_conexion(void *void_args)
             truncar_archivo(f_name, f_size);
             archivo_ok = 0;
             send(cliente_socket, &archivo_ok, sizeof(uint32_t), NULL);
-            log_info(logger, "Truncar archivo: %s - Tamaño: %d", f_name, f_size);
             break;
         case LEER_ARCHIVO:
             recv(cliente_socket, &pid, sizeof(uint32_t), NULL);
@@ -65,6 +64,7 @@ void procesar_conexion(void *void_args)
             recv(cliente_socket, &offset, sizeof(uint32_t), NULL);
             recv(cliente_socket, &dir_fisica, sizeof(uint32_t), NULL);
             recv(cliente_socket, &cant, sizeof(uint32_t), NULL);
+            log_info(logger, "Leer archivo: %s - Puntero: %d - Memoria: %d - Tamaño: %d" ,f_name, offset, dir_fisica, f_size);
             char *stream_leido = eferrid(f_name, offset, cant);
             //char* cadena_parseada = imprimir_cadena(stream_leido, cant);
             //printf("Cadena parseada: %s\n", cadena_parseada);
@@ -88,7 +88,6 @@ void procesar_conexion(void *void_args)
             recv(socket_memoria, &archivo_ok, sizeof(uint32_t), NULL);
             send(cliente_socket, &archivo_ok, sizeof(uint32_t), NULL);
             free(buffer_leido);
-            log_info(logger, "Leer archivo: %s - Puntero: %d - Memoria: %d - Tamaño: %d" ,f_name, offset, dir_fisica, f_size);
             break;
         case ESCRIBIR_ARCHIVO:
             recv(cliente_socket, &pid, sizeof(uint32_t), NULL);
@@ -96,6 +95,7 @@ void procesar_conexion(void *void_args)
             recv(cliente_socket, &offset, sizeof(uint32_t), NULL);
             recv(cliente_socket, &dir_fisica, sizeof(uint32_t), NULL);
             recv(cliente_socket, &cant, sizeof(uint32_t), NULL);
+            log_info(logger, "Escribir archivo: %s - Puntero: %d - Memoria: %d - Tamaño: %d" ,f_name, offset, dir_fisica, f_size);
             // Pedir datos a memoria
             void* buffer_memoria = malloc(sizeof(cod_op) + sizeof(uint32_t)*3);
             cod_op_fs = ESCRIBIR_ARCHIVO;
@@ -118,7 +118,6 @@ void procesar_conexion(void *void_args)
             archivo_ok = 0;
             send(cliente_socket, &archivo_ok, sizeof(uint32_t), NULL);
 
-            log_info(logger, "Escribir archivo: %s - Puntero: %d - Memoria: %d - Tamaño: %d" ,f_name, offset, dir_fisica, f_size);
             break;
         default:
             log_error(logger, "Algo anduvo mal en el server de Filesystem");

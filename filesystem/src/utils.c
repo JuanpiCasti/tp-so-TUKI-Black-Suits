@@ -65,7 +65,7 @@ void ocupar_bloque(int numero_bloque)
   FILE *bitmap_file = fopen(PATH_BITMAP, "r+b");
   fwrite(bitmap->bitarray, 1, bitmap_size, bitmap_file);
 
-  log_info(logger_filesystem, "Acceso a Bitmap - Bloque: %d - Estado: %d", numero_bloque, 1);
+  log_info(logger_filesystem, "Acceso a Bitmap - Bloque: %d - Estado: %d", numero_bloque + 1, 1);
 
   fclose(bitmap_file);
 }
@@ -79,7 +79,7 @@ void desocupar_bloque(int numero_bloque)
   FILE *bitmap_file = fopen(PATH_BITMAP, "r+b");
   fwrite(bitmap->bitarray, 1, bitmap_size, bitmap_file);
 
-  log_info(logger_filesystem, "Acceso a Bitmap - Bloque: %d - Estado: %d", numero_bloque, 0);
+  log_info(logger_filesystem, "Acceso a Bitmap - Bloque: %d - Estado: %d", numero_bloque + 1, 0);
 
   fclose(bitmap_file);
 
@@ -162,7 +162,7 @@ int encontrar_bloque_libre()
   {
     if (bitarray_test_bit(bitmap, i) == 0)
     {
-      log_info(logger_filesystem, "Acceso a Bitmap - Bloque: %d - Estado: %d", i, 0);
+      log_info(logger_filesystem, "Acceso a Bitmap - Bloque: %d - Estado: %d", i + 1, 0);
       return i;
     }
   }

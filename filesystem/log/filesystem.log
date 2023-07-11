@@ -1359,3 +1359,281 @@
 [INFO] 21:24:59:153 FILESYSTEM/(31125:31125): Filesystem escuchando conexiones...
 [INFO] 21:25:01:089 FILESYSTEM/(31125:31125): Se conecto un cliente!
 [INFO] 21:25:01:090 FILESYSTEM/(31125:31142): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 21:27:14:156 FILESYSTEM/(31125:31142): Cliente desconectado!
+[WARNING] 21:27:14:156 FILESYSTEM/(31125:31142): El cliente se desconectó del server
+[INFO] 21:27:42:477 FILESYSTEM/(31707:31707): Handshake OK
+[INFO] 21:27:42:477 FILESYSTEM/(31707:31707): Filesystem escuchando conexiones...
+[INFO] 21:27:45:099 FILESYSTEM/(31707:31707): Se conecto un cliente!
+[INFO] 21:27:45:099 FILESYSTEM/(31707:31712): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 21:30:29:539 FILESYSTEM/(31707:31712): Cliente desconectado!
+[WARNING] 21:30:29:539 FILESYSTEM/(31707:31712): El cliente se desconectó del server
+[INFO] 21:32:06:904 FILESYSTEM/(34478:34478): Handshake OK
+[INFO] 21:32:06:904 FILESYSTEM/(34478:34478): Filesystem escuchando conexiones...
+[INFO] 21:32:08:359 FILESYSTEM/(34478:34478): Se conecto un cliente!
+[INFO] 21:32:08:359 FILESYSTEM/(34478:34483): Recibido handshake HANDSHAKE_KERNEL.
+[INFO] 21:32:28:638 FILESYSTEM/(34478:34483): Abrir archivo: Consoles
+[INFO] 21:32:28:638 FILESYSTEM/(34478:34483): Crear archivo: Consoles
+[INFO] 21:32:28:638 FILESYSTEM/(34478:34483): Acceso a Bitmap - Bloque: 0 - Estado: 0
+[INFO] 21:32:28:638 FILESYSTEM/(34478:34483): Acceso a Bitmap - Bloque: 0 - Estado: 1
+[INFO] 21:32:28:638 FILESYSTEM/(34478:34483): Acceso a Bitmap - Bloque: 1 - Estado: 0
+[INFO] 21:32:28:638 FILESYSTEM/(34478:34483): Acceso a Bitmap - Bloque: 1 - Estado: 1
+[INFO] 21:32:28:638 FILESYSTEM/(34478:34483): Acceso a Bitmap - Bloque: 2 - Estado: 0
+[INFO] 21:32:28:638 FILESYSTEM/(34478:34483): Acceso a Bitmap - Bloque: 2 - Estado: 1
+[INFO] 21:32:28:638 FILESYSTEM/(34478:34483): Acceso a Bitmap - Bloque: 3 - Estado: 0
+[INFO] 21:32:28:638 FILESYSTEM/(34478:34483): Acceso a Bitmap - Bloque: 3 - Estado: 1
+[INFO] 21:32:28:638 FILESYSTEM/(34478:34483): Acceso a Bitmap - Bloque: 4 - Estado: 0
+[INFO] 21:32:28:638 FILESYSTEM/(34478:34483): Acceso a Bitmap - Bloque: 4 - Estado: 1
+[INFO] 21:32:28:638 FILESYSTEM/(34478:34483): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 2 - Bloque File System 1
+[INFO] 21:32:43:638 FILESYSTEM/(34478:34483): Truncar archivo: Consoles - Tamaño: 256
+[INFO] 21:32:44:639 FILESYSTEM/(34478:34483): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 2 - Bloque File System 2
+[INFO] 21:32:59:640 FILESYSTEM/(34478:34483): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 3 - Bloque File System 3
+[INFO] 21:33:14:640 FILESYSTEM/(34478:34483): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 4 - Bloque File System 1
+[INFO] 21:33:29:641 FILESYSTEM/(34478:34483): Escribir archivo: Consoles - Puntero: 128 - Memoria: 32 - Tamaño: 256
+[INFO] 21:33:59:643 FILESYSTEM/(34478:34483): Abrir archivo: Videogames
+[INFO] 21:33:59:643 FILESYSTEM/(34478:34483): Crear archivo: Videogames
+[INFO] 21:33:59:643 FILESYSTEM/(34478:34483): Acceso a Bitmap - Bloque: 5 - Estado: 0
+[INFO] 21:33:59:643 FILESYSTEM/(34478:34483): Acceso a Bitmap - Bloque: 5 - Estado: 1
+[INFO] 21:33:59:643 FILESYSTEM/(34478:34483): Acceso a Bitmap - Bloque: 6 - Estado: 0
+[INFO] 21:33:59:643 FILESYSTEM/(34478:34483): Acceso a Bitmap - Bloque: 6 - Estado: 1
+[INFO] 21:33:59:643 FILESYSTEM/(34478:34483): Acceso Bloque - Archivo: Videogames - Bloque Archivo: 2 - Bloque File System 6
+[INFO] 21:34:14:644 FILESYSTEM/(34478:34483): Truncar archivo: Videogames - Tamaño: 64
+[INFO] 21:34:15:645 FILESYSTEM/(34478:34483): Acceso Bloque - Archivo: Videogames - Bloque Archivo: 1 - Bloque File System 6
+[INFO] 21:34:30:645 FILESYSTEM/(34478:34483): Escribir archivo: Videogames - Puntero: 0 - Memoria: 0 - Tamaño: 64
+[INFO] 21:34:55:457 FILESYSTEM/(34478:34483): Abrir archivo: Videogames
+[INFO] 21:34:55:457 FILESYSTEM/(34478:34483): Acceso Bloque - Archivo: Videogames - Bloque Archivo: 1 - Bloque File System 6
+[INFO] 21:35:11:457 FILESYSTEM/(34478:34483): Leer archivo: Videogames - Puntero: 0 - Memoria: 16 - Tamaño: 64
+[INFO] 21:35:11:458 FILESYSTEM/(34478:34483): Acceso Bloque - Archivo: Videogames - Bloque Archivo: 1 - Bloque File System 6
+[INFO] 21:35:27:459 FILESYSTEM/(34478:34483): Leer archivo: Videogames - Puntero: 0 - Memoria: 16 - Tamaño: 64
+[INFO] 21:35:27:460 FILESYSTEM/(34478:34483): Acceso Bloque - Archivo: Videogames - Bloque Archivo: 1 - Bloque File System 6
+[INFO] 21:35:43:460 FILESYSTEM/(34478:34483): Leer archivo: Videogames - Puntero: 0 - Memoria: 16 - Tamaño: 64
+[WARNING] 21:47:11:430 FILESYSTEM/(34478:34483): Cliente desconectado!
+[WARNING] 21:47:11:430 FILESYSTEM/(34478:34483): El cliente se desconectó del server
+[INFO] 21:47:39:276 FILESYSTEM/(35298:35298): Handshake OK
+[INFO] 21:47:39:276 FILESYSTEM/(35298:35298): Filesystem escuchando conexiones...
+[INFO] 21:47:42:900 FILESYSTEM/(35298:35298): Se conecto un cliente!
+[INFO] 21:47:42:900 FILESYSTEM/(35298:35329): Recibido handshake HANDSHAKE_KERNEL.
+[INFO] 21:48:04:791 FILESYSTEM/(35298:35329): Abrir archivo: Consoles
+[INFO] 21:48:04:791 FILESYSTEM/(35298:35329): Crear archivo: Consoles
+[INFO] 21:48:04:791 FILESYSTEM/(35298:35329): Acceso a Bitmap - Bloque: 0 - Estado: 0
+[INFO] 21:48:04:791 FILESYSTEM/(35298:35329): Acceso a Bitmap - Bloque: 0 - Estado: 1
+[INFO] 21:48:06:880 FILESYSTEM/(35298:35329): Acceso a Bitmap - Bloque: 1 - Estado: 0
+[INFO] 21:48:07:764 FILESYSTEM/(35298:35329): Acceso a Bitmap - Bloque: 1 - Estado: 1
+[INFO] 21:48:09:359 FILESYSTEM/(35298:35329): Acceso a Bitmap - Bloque: 2 - Estado: 0
+[INFO] 21:48:09:359 FILESYSTEM/(35298:35329): Acceso a Bitmap - Bloque: 2 - Estado: 1
+[INFO] 21:48:10:207 FILESYSTEM/(35298:35329): Acceso a Bitmap - Bloque: 3 - Estado: 0
+[INFO] 21:48:10:207 FILESYSTEM/(35298:35329): Acceso a Bitmap - Bloque: 3 - Estado: 1
+[INFO] 21:48:11:053 FILESYSTEM/(35298:35329): Acceso a Bitmap - Bloque: 4 - Estado: 0
+[INFO] 21:48:11:053 FILESYSTEM/(35298:35329): Acceso a Bitmap - Bloque: 4 - Estado: 1
+[INFO] 21:48:11:053 FILESYSTEM/(35298:35329): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 2 - Bloque File System 1
+[INFO] 21:49:53:257 FILESYSTEM/(35298:35329): Truncar archivo: Consoles - Tamaño: 256
+[INFO] 21:49:56:120 FILESYSTEM/(35298:35329): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 2 - Bloque File System 2
+[INFO] 21:50:11:120 FILESYSTEM/(35298:35329): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 3 - Bloque File System 3
+[INFO] 21:50:29:420 FILESYSTEM/(35298:35329): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 4 - Bloque File System 1
+[INFO] 21:50:46:839 FILESYSTEM/(35921:35921): Handshake OK
+[INFO] 21:50:46:839 FILESYSTEM/(35921:35921): Filesystem escuchando conexiones...
+[INFO] 21:51:52:577 FILESYSTEM/(36029:36029): Handshake OK
+[INFO] 21:51:52:578 FILESYSTEM/(36029:36029): Filesystem escuchando conexiones...
+[INFO] 21:51:57:134 FILESYSTEM/(36029:36029): Se conecto un cliente!
+[INFO] 21:51:57:135 FILESYSTEM/(36029:36060): Recibido handshake HANDSHAKE_KERNEL.
+[INFO] 21:52:12:989 FILESYSTEM/(36029:36060): Abrir archivo: Consoles
+[INFO] 21:52:12:989 FILESYSTEM/(36029:36060): Truncar archivo: Consoles - Tamaño: 256
+[INFO] 21:52:13:990 FILESYSTEM/(36029:36060): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 2 - Bloque File System 2
+[INFO] 21:52:28:990 FILESYSTEM/(36029:36060): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 3 - Bloque File System 3
+[INFO] 21:54:03:075 FILESYSTEM/(36029:36060): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 4 - Bloque File System 1
+[INFO] 21:58:31:285 FILESYSTEM/(36474:36474): Handshake OK
+[INFO] 21:58:31:285 FILESYSTEM/(36474:36474): Filesystem escuchando conexiones...
+[INFO] 21:58:35:630 FILESYSTEM/(36474:36474): Se conecto un cliente!
+[INFO] 21:58:35:630 FILESYSTEM/(36474:36503): Recibido handshake HANDSHAKE_KERNEL.
+[INFO] 21:58:52:915 FILESYSTEM/(36474:36503): Abrir archivo: Consoles
+[INFO] 21:58:52:915 FILESYSTEM/(36474:36503): Crear archivo: Consoles
+[INFO] 21:58:52:915 FILESYSTEM/(36474:36503): Truncar archivo: Consoles - Tamaño: 256
+[INFO] 21:59:27:641 FILESYSTEM/(36694:36694): Handshake OK
+[INFO] 21:59:27:642 FILESYSTEM/(36694:36694): Filesystem escuchando conexiones...
+[INFO] 21:59:33:216 FILESYSTEM/(36694:36694): Se conecto un cliente!
+[INFO] 21:59:33:217 FILESYSTEM/(36694:36740): Recibido handshake HANDSHAKE_KERNEL.
+[INFO] 21:59:50:948 FILESYSTEM/(36694:36740): Abrir archivo: Consoles
+[INFO] 21:59:50:948 FILESYSTEM/(36694:36740): Crear archivo: Consoles
+[INFO] 21:59:50:948 FILESYSTEM/(36694:36740): Truncar archivo: Consoles - Tamaño: 256
+[INFO] 22:00:43:783 FILESYSTEM/(36966:36966): Handshake OK
+[INFO] 22:00:43:783 FILESYSTEM/(36966:36966): Filesystem escuchando conexiones...
+[INFO] 22:00:46:031 FILESYSTEM/(36966:36966): Se conecto un cliente!
+[INFO] 22:00:46:031 FILESYSTEM/(36966:36995): Recibido handshake HANDSHAKE_KERNEL.
+[INFO] 22:01:02:703 FILESYSTEM/(36966:36995): Abrir archivo: Consoles
+[INFO] 22:01:02:703 FILESYSTEM/(36966:36995): Crear archivo: Consoles
+[INFO] 22:01:02:703 FILESYSTEM/(36966:36995): Truncar archivo: Consoles - Tamaño: 256
+[INFO] 22:01:18:794 FILESYSTEM/(36966:36995): Acceso a Bitmap - Bloque: 0 - Estado: 0
+[INFO] 22:01:18:794 FILESYSTEM/(36966:36995): Acceso a Bitmap - Bloque: 0 - Estado: 1
+[INFO] 22:01:25:809 FILESYSTEM/(36966:36995): Acceso a Bitmap - Bloque: 1 - Estado: 0
+[INFO] 22:01:25:809 FILESYSTEM/(36966:36995): Acceso a Bitmap - Bloque: 1 - Estado: 1
+[INFO] 22:01:27:981 FILESYSTEM/(36966:36995): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 2 - Bloque File System 2
+[INFO] 22:01:58:092 FILESYSTEM/(36966:36995): Acceso a Bitmap - Bloque: 2 - Estado: 0
+[INFO] 22:01:58:092 FILESYSTEM/(36966:36995): Acceso a Bitmap - Bloque: 2 - Estado: 1
+[INFO] 22:01:59:446 FILESYSTEM/(36966:36995): Acceso a Bitmap - Bloque: 3 - Estado: 0
+[INFO] 22:01:59:446 FILESYSTEM/(36966:36995): Acceso a Bitmap - Bloque: 3 - Estado: 1
+[INFO] 22:02:00:604 FILESYSTEM/(36966:36995): Acceso a Bitmap - Bloque: 4 - Estado: 0
+[INFO] 22:02:00:604 FILESYSTEM/(36966:36995): Acceso a Bitmap - Bloque: 4 - Estado: 1
+[INFO] 22:02:00:605 FILESYSTEM/(36966:36995): Escribir archivo: Consoles - Puntero: 0 - Memoria: 0 - Tamaño: 256
+[INFO] 22:02:01:606 FILESYSTEM/(36966:36995): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 2 - Bloque File System 2
+[INFO] 22:02:16:606 FILESYSTEM/(36966:36995): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 3 - Bloque File System 3
+[INFO] 22:04:58:703 FILESYSTEM/(37419:37419): Handshake OK
+[INFO] 22:04:58:703 FILESYSTEM/(37419:37419): Filesystem escuchando conexiones...
+[INFO] 22:05:01:078 FILESYSTEM/(37419:37419): Se conecto un cliente!
+[INFO] 22:05:01:078 FILESYSTEM/(37419:37454): Recibido handshake HANDSHAKE_KERNEL.
+[INFO] 22:05:18:067 FILESYSTEM/(37419:37454): Abrir archivo: Consoles
+[INFO] 22:05:18:067 FILESYSTEM/(37419:37454): Crear archivo: Consoles
+[INFO] 22:05:18:068 FILESYSTEM/(37419:37454): Truncar archivo: Consoles - Tamaño: 256
+[INFO] 22:05:21:843 FILESYSTEM/(37419:37454): Acceso a Bitmap - Bloque: 0 - Estado: 0
+[INFO] 22:05:21:843 FILESYSTEM/(37419:37454): Acceso a Bitmap - Bloque: 0 - Estado: 1
+[INFO] 22:05:22:003 FILESYSTEM/(37419:37454): Acceso a Bitmap - Bloque: 1 - Estado: 0
+[INFO] 22:05:22:003 FILESYSTEM/(37419:37454): Acceso a Bitmap - Bloque: 1 - Estado: 1
+[INFO] 22:05:22:143 FILESYSTEM/(37419:37454): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 2 - Bloque File System 2
+[INFO] 22:05:38:330 FILESYSTEM/(37419:37454): Acceso a Bitmap - Bloque: 2 - Estado: 0
+[INFO] 22:05:38:330 FILESYSTEM/(37419:37454): Acceso a Bitmap - Bloque: 2 - Estado: 1
+[INFO] 22:05:38:780 FILESYSTEM/(37419:37454): Acceso a Bitmap - Bloque: 3 - Estado: 0
+[INFO] 22:05:38:781 FILESYSTEM/(37419:37454): Acceso a Bitmap - Bloque: 3 - Estado: 1
+[INFO] 22:05:39:202 FILESYSTEM/(37419:37454): Acceso a Bitmap - Bloque: 4 - Estado: 0
+[INFO] 22:05:39:202 FILESYSTEM/(37419:37454): Acceso a Bitmap - Bloque: 4 - Estado: 1
+[INFO] 22:05:39:203 FILESYSTEM/(37419:37454): Escribir archivo: Consoles - Puntero: 0 - Memoria: 0 - Tamaño: 256
+[INFO] 22:05:40:203 FILESYSTEM/(37419:37454): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 2 - Bloque File System 2
+[INFO] 22:05:55:203 FILESYSTEM/(37419:37454): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 3 - Bloque File System 3
+[INFO] 22:06:19:262 FILESYSTEM/(37419:37454): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 4 - Bloque File System 5
+[INFO] 22:14:50:930 FILESYSTEM/(37956:37956): Handshake OK
+[INFO] 22:14:50:930 FILESYSTEM/(37956:37956): Filesystem escuchando conexiones...
+[INFO] 22:14:52:759 FILESYSTEM/(37956:37956): Se conecto un cliente!
+[INFO] 22:14:52:760 FILESYSTEM/(37956:37984): Recibido handshake HANDSHAKE_KERNEL.
+[INFO] 22:15:10:293 FILESYSTEM/(37956:37984): Abrir archivo: Consoles
+[INFO] 22:15:10:293 FILESYSTEM/(37956:37984): Truncar archivo: Consoles - Tamaño: 256
+[INFO] 22:15:10:294 FILESYSTEM/(37956:37984): Escribir archivo: Consoles - Puntero: 0 - Memoria: 0 - Tamaño: 256
+[INFO] 22:15:11:294 FILESYSTEM/(37956:37984): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 2 (indirecto) - Bloque File System 2
+[INFO] 22:15:26:294 FILESYSTEM/(37956:37984): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 3 - Bloque File System 4
+[INFO] 22:16:54:225 FILESYSTEM/(37956:37984): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 5 - Bloque File System 5
+[INFO] 22:17:18:798 FILESYSTEM/(38263:38263): Handshake OK
+[INFO] 22:17:18:799 FILESYSTEM/(38263:38263): Filesystem escuchando conexiones...
+[INFO] 22:17:20:165 FILESYSTEM/(38263:38263): Se conecto un cliente!
+[INFO] 22:17:20:165 FILESYSTEM/(38263:38285): Recibido handshake HANDSHAKE_KERNEL.
+[INFO] 22:17:35:643 FILESYSTEM/(38263:38285): Abrir archivo: Consoles
+[INFO] 22:17:35:643 FILESYSTEM/(38263:38285): Truncar archivo: Consoles - Tamaño: 256
+[INFO] 22:17:35:644 FILESYSTEM/(38263:38285): Escribir archivo: Consoles - Puntero: 0 - Memoria: 0 - Tamaño: 256
+[INFO] 22:17:36:644 FILESYSTEM/(38263:38285): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 2 (indirecto) - Bloque File System 2
+[INFO] 22:17:51:644 FILESYSTEM/(38263:38285): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 3 - Bloque File System 4
+[INFO] 22:18:30:414 FILESYSTEM/(38512:38512): Handshake OK
+[INFO] 22:18:30:414 FILESYSTEM/(38512:38512): Filesystem escuchando conexiones...
+[INFO] 22:18:32:580 FILESYSTEM/(38512:38512): Se conecto un cliente!
+[INFO] 22:18:32:580 FILESYSTEM/(38512:38542): Recibido handshake HANDSHAKE_KERNEL.
+[INFO] 22:18:48:650 FILESYSTEM/(38512:38542): Abrir archivo: Consoles
+[INFO] 22:18:48:650 FILESYSTEM/(38512:38542): Crear archivo: Consoles
+[INFO] 22:18:48:650 FILESYSTEM/(38512:38542): Truncar archivo: Consoles - Tamaño: 256
+[INFO] 22:18:52:258 FILESYSTEM/(38512:38542): Acceso a Bitmap - Bloque: 0 - Estado: 0
+[INFO] 22:18:52:258 FILESYSTEM/(38512:38542): Acceso a Bitmap - Bloque: 0 - Estado: 1
+[INFO] 22:18:52:409 FILESYSTEM/(38512:38542): Acceso a Bitmap - Bloque: 1 - Estado: 0
+[INFO] 22:18:52:409 FILESYSTEM/(38512:38542): Acceso a Bitmap - Bloque: 1 - Estado: 1
+[INFO] 22:18:52:560 FILESYSTEM/(38512:38542): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 2 (indirecto) - Bloque File System 2
+[INFO] 22:19:09:280 FILESYSTEM/(38512:38542): Acceso a Bitmap - Bloque: 2 - Estado: 0
+[INFO] 22:19:09:280 FILESYSTEM/(38512:38542): Acceso a Bitmap - Bloque: 2 - Estado: 1
+[INFO] 22:19:09:638 FILESYSTEM/(38512:38542): Acceso a Bitmap - Bloque: 3 - Estado: 0
+[INFO] 22:19:09:638 FILESYSTEM/(38512:38542): Acceso a Bitmap - Bloque: 3 - Estado: 1
+[INFO] 22:19:10:106 FILESYSTEM/(38512:38542): Acceso a Bitmap - Bloque: 4 - Estado: 0
+[INFO] 22:19:10:106 FILESYSTEM/(38512:38542): Acceso a Bitmap - Bloque: 4 - Estado: 1
+[INFO] 22:19:10:107 FILESYSTEM/(38512:38542): Escribir archivo: Consoles - Puntero: 0 - Memoria: 0 - Tamaño: 256
+[INFO] 22:19:11:107 FILESYSTEM/(38512:38542): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 2 (indirecto) - Bloque File System 2
+[INFO] 22:19:26:107 FILESYSTEM/(38512:38542): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 4 - Bloque File System 4
+[INFO] 22:19:54:827 FILESYSTEM/(38512:38542): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 5 - Bloque File System 5
+[INFO] 22:20:45:100 FILESYSTEM/(38512:38542): Abrir archivo: Videogames
+[INFO] 22:20:45:100 FILESYSTEM/(38512:38542): Crear archivo: Videogames
+[INFO] 22:20:45:100 FILESYSTEM/(38512:38542): Truncar archivo: Videogames - Tamaño: 64
+[INFO] 22:23:11:868 FILESYSTEM/(38512:38542): Acceso a Bitmap - Bloque: 5 - Estado: 0
+[INFO] 22:23:11:868 FILESYSTEM/(38512:38542): Acceso a Bitmap - Bloque: 5 - Estado: 1
+[INFO] 22:23:20:400 FILESYSTEM/(38512:38542): Acceso a Bitmap - Bloque: 6 - Estado: 0
+[INFO] 22:23:20:400 FILESYSTEM/(38512:38542): Acceso a Bitmap - Bloque: 6 - Estado: 1
+[INFO] 22:24:31:002 FILESYSTEM/(38512:38542): Acceso Bloque - Archivo: Videogames - Bloque Archivo: 2 (indirecto) - Bloque File System 7
+[INFO] 22:25:20:523 FILESYSTEM/(38512:38542): Escribir archivo: Videogames - Puntero: 128 - Memoria: 32 - Tamaño: 64
+[INFO] 22:25:21:523 FILESYSTEM/(38512:38542): Acceso Bloque - Archivo: Videogames - Bloque Archivo: 1 - Bloque File System 6
+[WARNING] 22:31:50:876 FILESYSTEM/(38512:38542): Cliente desconectado!
+[WARNING] 22:31:50:876 FILESYSTEM/(38512:38542): El cliente se desconectó del server
+[INFO] 22:32:05:084 FILESYSTEM/(39789:39789): Handshake OK
+[INFO] 22:32:05:084 FILESYSTEM/(39789:39789): Filesystem escuchando conexiones...
+[INFO] 22:32:06:716 FILESYSTEM/(39789:39789): Se conecto un cliente!
+[INFO] 22:32:06:716 FILESYSTEM/(39789:39818): Recibido handshake HANDSHAKE_KERNEL.
+[INFO] 22:32:21:941 FILESYSTEM/(39789:39818): Abrir archivo: Consoles
+[INFO] 22:32:21:941 FILESYSTEM/(39789:39818): Truncar archivo: Consoles - Tamaño: 256
+[INFO] 22:32:21:942 FILESYSTEM/(39789:39818): Escribir archivo: Consoles - Puntero: 0 - Memoria: 0 - Tamaño: 256
+[INFO] 22:32:22:942 FILESYSTEM/(39789:39818): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 2 (indirecto) - Bloque File System 2
+[INFO] 22:32:37:942 FILESYSTEM/(39789:39818): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 4 - Bloque File System 4
+[INFO] 22:32:55:794 FILESYSTEM/(39789:39818): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 5 - Bloque File System 5
+[INFO] 22:34:42:369 FILESYSTEM/(40139:40139): Handshake OK
+[INFO] 22:34:42:369 FILESYSTEM/(40139:40139): Filesystem escuchando conexiones...
+[INFO] 22:34:46:170 FILESYSTEM/(40139:40139): Se conecto un cliente!
+[INFO] 22:34:46:170 FILESYSTEM/(40139:40168): Recibido handshake HANDSHAKE_KERNEL.
+[WARNING] 22:34:53:621 FILESYSTEM/(40139:40168): Cliente desconectado!
+[WARNING] 22:34:53:621 FILESYSTEM/(40139:40168): El cliente se desconectó del server
+[INFO] 22:35:15:486 FILESYSTEM/(40139:40139): Se conecto un cliente!
+[INFO] 22:35:15:486 FILESYSTEM/(40139:40279): Recibido handshake HANDSHAKE_KERNEL.
+[INFO] 22:35:29:309 FILESYSTEM/(40139:40279): Abrir archivo: Consoles
+[INFO] 22:35:29:309 FILESYSTEM/(40139:40279): Crear archivo: Consoles
+[INFO] 22:35:29:309 FILESYSTEM/(40139:40279): Truncar archivo: Consoles - Tamaño: 256
+[INFO] 22:35:37:869 FILESYSTEM/(40139:40279): Acceso a Bitmap - Bloque: 1 - Estado: 0
+[INFO] 22:35:37:869 FILESYSTEM/(40139:40279): Acceso a Bitmap - Bloque: 1 - Estado: 1
+[INFO] 22:35:39:057 FILESYSTEM/(40139:40279): Acceso a Bitmap - Bloque: 2 - Estado: 0
+[INFO] 22:35:39:057 FILESYSTEM/(40139:40279): Acceso a Bitmap - Bloque: 2 - Estado: 1
+[INFO] 22:35:39:573 FILESYSTEM/(40139:40279): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 2 (indirecto) - Bloque File System 2
+[INFO] 22:35:59:519 FILESYSTEM/(40139:40279): Acceso a Bitmap - Bloque: 3 - Estado: 0
+[INFO] 22:35:59:519 FILESYSTEM/(40139:40279): Acceso a Bitmap - Bloque: 3 - Estado: 1
+[INFO] 22:36:00:157 FILESYSTEM/(40139:40279): Acceso a Bitmap - Bloque: 4 - Estado: 0
+[INFO] 22:36:00:157 FILESYSTEM/(40139:40279): Acceso a Bitmap - Bloque: 4 - Estado: 1
+[INFO] 22:36:00:685 FILESYSTEM/(40139:40279): Acceso a Bitmap - Bloque: 5 - Estado: 0
+[INFO] 22:36:00:685 FILESYSTEM/(40139:40279): Acceso a Bitmap - Bloque: 5 - Estado: 1
+[INFO] 22:36:00:686 FILESYSTEM/(40139:40279): Escribir archivo: Consoles - Puntero: -268433184 - Memoria: -136209280 - Tamaño: 256
+[INFO] 22:36:01:686 FILESYSTEM/(40139:40279): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 2 (indirecto) - Bloque File System 2
+[INFO] 22:36:16:686 FILESYSTEM/(40139:40279): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 4 - Bloque File System 4
+[INFO] 22:36:46:293 FILESYSTEM/(40139:40279): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 5 - Bloque File System 5
+[INFO] 22:37:32:825 FILESYSTEM/(40139:40279): Abrir archivo: Videogames
+[INFO] 22:37:32:825 FILESYSTEM/(40139:40279): Crear archivo: Videogames
+[INFO] 22:37:32:826 FILESYSTEM/(40139:40279): Truncar archivo: Videogames - Tamaño: 64
+[INFO] 22:37:38:903 FILESYSTEM/(40139:40279): Acceso a Bitmap - Bloque: 6 - Estado: 0
+[INFO] 22:37:38:903 FILESYSTEM/(40139:40279): Acceso a Bitmap - Bloque: 6 - Estado: 1
+[INFO] 22:37:38:904 FILESYSTEM/(40139:40279): Escribir archivo: Videogames - Puntero: 128 - Memoria: 32 - Tamaño: 64
+[INFO] 22:37:39:904 FILESYSTEM/(40139:40279): Acceso Bloque - Archivo: Videogames - Bloque Archivo: 1 - Bloque File System 6
+[INFO] 22:38:27:509 FILESYSTEM/(40139:40279): Abrir archivo: Videogames
+[INFO] 22:38:27:510 FILESYSTEM/(40139:40279): Leer archivo: Videogames - Puntero: 0 - Memoria: 0 - Tamaño: 64
+[INFO] 22:38:27:510 FILESYSTEM/(40139:40279): Acceso Bloque - Archivo: Videogames - Bloque Archivo: 1 - Bloque File System 6
+[INFO] 22:38:43:511 FILESYSTEM/(40139:40279): Leer archivo: Videogames - Puntero: 0 - Memoria: 16 - Tamaño: 64
+[INFO] 22:38:43:511 FILESYSTEM/(40139:40279): Acceso Bloque - Archivo: Videogames - Bloque Archivo: 1 - Bloque File System 6
+[INFO] 22:38:59:512 FILESYSTEM/(40139:40279): Leer archivo: Videogames - Puntero: 0 - Memoria: 16 - Tamaño: 64
+[INFO] 22:38:59:512 FILESYSTEM/(40139:40279): Acceso Bloque - Archivo: Videogames - Bloque Archivo: 1 - Bloque File System 6
+[WARNING] 22:39:51:491 FILESYSTEM/(40139:40279): Cliente desconectado!
+[WARNING] 22:39:51:491 FILESYSTEM/(40139:40279): El cliente se desconectó del server
+[INFO] 22:40:21:705 FILESYSTEM/(41053:41053): Handshake OK
+[INFO] 22:40:21:705 FILESYSTEM/(41053:41053): Filesystem escuchando conexiones...
+[INFO] 22:40:23:562 FILESYSTEM/(41053:41053): Se conecto un cliente!
+[INFO] 22:40:23:563 FILESYSTEM/(41053:41082): Recibido handshake HANDSHAKE_KERNEL.
+[INFO] 22:40:40:475 FILESYSTEM/(41053:41082): Abrir archivo: Consoles
+[INFO] 22:40:40:475 FILESYSTEM/(41053:41082): Truncar archivo: Consoles - Tamaño: 256
+[INFO] 22:40:40:476 FILESYSTEM/(41053:41082): Escribir archivo: Consoles - Puntero: 0 - Memoria: 0 - Tamaño: 256
+[INFO] 22:40:41:476 FILESYSTEM/(41053:41082): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 2 (indirecto) - Bloque File System 2
+[INFO] 22:40:42:476 FILESYSTEM/(41053:41082): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 4 - Bloque File System 4
+[INFO] 22:40:45:929 FILESYSTEM/(41053:41082): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 5 - Bloque File System 5
+[INFO] 22:41:18:919 FILESYSTEM/(41053:41082): Abrir archivo: Videogames
+[INFO] 22:41:18:919 FILESYSTEM/(41053:41082): Truncar archivo: Videogames - Tamaño: 64
+[INFO] 22:41:18:920 FILESYSTEM/(41053:41082): Escribir archivo: Videogames - Puntero: 128 - Memoria: 32 - Tamaño: 64
+[INFO] 22:41:19:920 FILESYSTEM/(41053:41082): Acceso Bloque - Archivo: Videogames - Bloque Archivo: 1 - Bloque File System 6
+[WARNING] 22:42:34:961 FILESYSTEM/(41053:41082): Cliente desconectado!
+[WARNING] 22:42:34:961 FILESYSTEM/(41053:41082): El cliente se desconectó del server
+[INFO] 22:42:46:983 FILESYSTEM/(41393:41393): Handshake OK
+[INFO] 22:42:46:983 FILESYSTEM/(41393:41393): Filesystem escuchando conexiones...
+[INFO] 22:42:48:609 FILESYSTEM/(41393:41393): Se conecto un cliente!
+[INFO] 22:42:48:609 FILESYSTEM/(41393:41402): Recibido handshake HANDSHAKE_KERNEL.
+[INFO] 22:43:05:809 FILESYSTEM/(41393:41402): Abrir archivo: Consoles
+[INFO] 22:43:05:810 FILESYSTEM/(41393:41402): Truncar archivo: Consoles - Tamaño: 256
+[INFO] 22:43:05:810 FILESYSTEM/(41393:41402): Escribir archivo: Consoles - Puntero: 128 - Memoria: 32 - Tamaño: 256
+[INFO] 22:43:06:811 FILESYSTEM/(41393:41402): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 2 (indirecto) - Bloque File System 2
+[INFO] 22:43:07:811 FILESYSTEM/(41393:41402): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 4 - Bloque File System 4
+[INFO] 22:43:08:811 FILESYSTEM/(41393:41402): Acceso Bloque - Archivo: Consoles - Bloque Archivo: 5 - Bloque File System 5
+[INFO] 22:43:39:812 FILESYSTEM/(41393:41402): Abrir archivo: Videogames
+[INFO] 22:43:39:813 FILESYSTEM/(41393:41402): Truncar archivo: Videogames - Tamaño: 64
+[INFO] 22:43:39:813 FILESYSTEM/(41393:41402): Escribir archivo: Videogames - Puntero: 0 - Memoria: 0 - Tamaño: 64
+[INFO] 22:43:40:813 FILESYSTEM/(41393:41402): Acceso Bloque - Archivo: Videogames - Bloque Archivo: 1 - Bloque File System 6
+[INFO] 22:43:57:178 FILESYSTEM/(41393:41402): Abrir archivo: Videogames
+[INFO] 22:43:57:178 FILESYSTEM/(41393:41402): Leer archivo: Videogames - Puntero: 0 - Memoria: 16 - Tamaño: 64
+[INFO] 22:43:57:178 FILESYSTEM/(41393:41402): Acceso Bloque - Archivo: Videogames - Bloque Archivo: 1 - Bloque File System 6
+[INFO] 22:43:59:179 FILESYSTEM/(41393:41402): Leer archivo: Videogames - Puntero: 0 - Memoria: 16 - Tamaño: 64
+[INFO] 22:43:59:179 FILESYSTEM/(41393:41402): Acceso Bloque - Archivo: Videogames - Bloque Archivo: 1 - Bloque File System 6
