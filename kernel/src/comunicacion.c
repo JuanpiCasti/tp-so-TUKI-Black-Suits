@@ -107,7 +107,6 @@ t_pcb *crear_pcb(t_list *instrucciones, int socket_consola)
     pcb->recursos_asignados = list_create();
 
     
-    pcb -> tabla_segmentos = solicitar_tabla_segmentos(logger_kernel_extra, IP_MEMORIA, PUERTO_MEMORIA, pcb->pid);
 
     return pcb;
 }
@@ -290,7 +289,7 @@ t_list* deserializar_tabla_segmentos(void* buffer, uint32_t size) {
     return tabla;
 }
 
-t_list* solicitar_tabla_segmentos(t_log* logger, char* ip, char* puerto, uint32_t pid) {
+t_list* solicitar_tabla_segmentos(uint32_t pid) {
     cod_op cod = CREATE_SEGTABLE;
 	void* buffer_pid = malloc(sizeof(cod_op) + sizeof(uint32_t));
 

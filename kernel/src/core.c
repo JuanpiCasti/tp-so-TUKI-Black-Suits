@@ -2,6 +2,7 @@
 
 void encolar_proceso(t_pcb *new_pcb, t_list *cola, pthread_mutex_t *mutex_cola, char *estado_anterior, char *estado_actual)
 {
+    pthread_mutex_lock(mutex_cola); // Wait
     list_add(cola, new_pcb);
     loggear_cambio_estado(estado_anterior, estado_actual, new_pcb);
     if (strcmp("READY", estado_actual) == 0)
@@ -71,17 +72,14 @@ void planificacion_largo_plazo()
         // PASO de NEW a READY - Largo Plazo
         pthread_mutex_lock(&mutex_mp);
         sem_wait(&semaforo_mp);
-        if (list_size(NEW) > 0 && GRADO_ACTUAL_MPROG < GRADO_MAX_MULTIPROGRAMACION)
+        if (list_size(NEW) > 0 && GRADO_ACTUAL_MPROG < GRADO_MAX_MULTIPROGRAMACION) // Con los semaforos ya no haria falta
         {
+            GRADO_ACTUAL_MPROG++;
             pthread_mutex_unlock(&mutex_mp);
             t_pcb *new_pcb = list_remove(NEW, 0);
             pthread_mutex_unlock(&mutex_NEW);
-
+            new_pcb->tabla_segmentos = solicitar_tabla_segmentos(new_pcb->pid);
             encolar_proceso(new_pcb, READY, &mutex_READY, "NEW", "READY");
-
-            pthread_mutex_lock(&mutex_mp);
-            GRADO_ACTUAL_MPROG++;
-            pthread_mutex_unlock(&mutex_mp);
         }
         else
         {
@@ -220,6 +218,7 @@ void wait_recurso(t_pcb *proceso, char *nombre_recurso)
     if (recurso->instancias_disponibles < 0)
     {
         list_add(recurso->cola_bloqueados, proceso);
+        loggear_cambio_estado("RUNNING", "BLOQUEADO", proceso);
         log_info(logger_kernel, "PID: %d - Bloqueado por: %s", proceso->pid, nombre_recurso);
         desalojar();
     }
@@ -264,12 +263,12 @@ void solicitar_compactacion(void* args) {
     uint32_t tam = ((t_args_compactacion*)args)->tam;
     t_pcb* pcb = ((t_args_compactacion*)args)->pcb;
     if(pthread_mutex_trylock(&mutex_compactacion) != 0) {
-        log_info(logger_memoria, "Compactación: Esperando Fin de Operaciones de FS");
+        log_info(logger_kernel, "Compactación: Esperando Fin de Operaciones de FS");
         pthread_mutex_lock(&mutex_compactacion);
     } 
     cod_op cop = COMPACTAR;
     send(socket_memoria, &cop, sizeof(cod_op_kernel), NULL);
-    log_info(logger_memoria, "Compactación: Se solicitó compactación");
+    log_info(logger_kernel, "Compactación: Se solicitó compactación");
     recibir_nuevas_bases(socket_memoria);
     
     pthread_mutex_unlock(&mutex_compactacion);
@@ -414,6 +413,8 @@ void abrir_archivo(char *f_name, t_pcb *pcb)
         desalojar();
         t_entrada_tabla_archivos *entrada = list_get(tabla_archivos, index_archivo_tg);
         list_add(entrada->cola_bloqueados, pcb);
+        loggear_cambio_estado("RUNNING", "BLOQUEADO", pcb);
+        log_info(logger_kernel, "PID: %d - Bloqueado por: %s",pcb->pid, f_name);
         list_replace(tabla_archivos, index_archivo_tg, entrada);
     }
     else
@@ -532,7 +533,9 @@ void truncar_archivo(void* args)
 
     send(socket_filesystem, buffer, tam_buffer, NULL);
     free(buffer);
-
+    log_info(logger_kernel, "PID: %d - Archivo: %s - Tamaño %d", pcb->pid, f_name, new_size);
+    loggear_cambio_estado("RUNNING", "BLOQUEADO", pcb);
+    log_info(logger_kernel, "PID: %d - Bloqueado por: %s",pcb->pid, f_name);
     uint32_t archivo_ok;
     recv(socket_filesystem, &archivo_ok, sizeof(uint32_t), NULL);
 
@@ -541,7 +544,6 @@ void truncar_archivo(void* args)
         encolar_proceso(pcb, READY, &mutex_READY, "BLOQUEADO", "READY");
     }
 
-    log_info(logger_kernel, "PID: %d - Archivo: %s - Tamaño %d", pcb->pid, f_name, new_size);
 
     free(args_f_op);
 }
@@ -582,6 +584,10 @@ void leer_archivo(void* args)
     send(socket_filesystem, buffer, tam_buffer, NULL);
     free(buffer);
 
+    loggear_cambio_estado("RUNNING", "BLOQUEADO", pcb);
+    log_info(logger_kernel, "PID: %d - Bloqueado por: %s",pcb->pid, f_name);
+    log_info(logger_kernel, "PID: %d - Leer Archivo: %s - Puntero: %d - Dirección Memoria: %d - Tamaño: %d", pcb->pid, f_name, archivo->puntero, dir_fisica, size);
+
     uint32_t archivo_ok;
     recv(socket_filesystem, &archivo_ok, sizeof(uint32_t), NULL);
     pthread_mutex_unlock(&mutex_compactacion);
@@ -591,7 +597,6 @@ void leer_archivo(void* args)
         encolar_proceso(pcb, READY, &mutex_READY, "BLOQUEADO", "READY");
     }
 
-    log_info(logger_kernel, "PID: %d - Leer Archivo: %s - Puntero: %d - Dirección Memoria: %d - Tamaño: %d", pcb->pid, f_name, archivo->puntero, dir_fisica, size);
 }
 
 void escribir_archivo(void * args)
@@ -635,6 +640,9 @@ void escribir_archivo(void * args)
 
     send(socket_filesystem, buffer, tam_buffer, NULL);
     free(buffer);
+    loggear_cambio_estado("RUNNING", "BLOQUEADO", pcb);
+    log_info(logger_kernel, "PID: %d - Bloqueado por: %s",pcb->pid, f_name);
+    log_info(logger_kernel, "PID: %d - Escribir Archivo: %s - Puntero: %d - Dirección Memoria: %d - Tamaño: %d", pcb->pid, f_name, archivo->puntero, dir_fisica, size);
 
     uint32_t archivo_ok;
     recv(socket_filesystem, &archivo_ok, sizeof(uint32_t), NULL);
@@ -645,7 +653,6 @@ void escribir_archivo(void * args)
         encolar_proceso(pcb, READY, &mutex_READY, "BLOQUEADO", "READY");
     }
 
-    log_info(logger_kernel, "PID: %d - Escribir Archivo: %s - Puntero: %d - Dirección Memoria: %d - Tamaño: %d", pcb->pid, f_name, archivo->puntero, dir_fisica, size);
 
     free(args_converted);
 }
@@ -659,31 +666,33 @@ void planificacion_corto_plazo()
     while (true)
     {
         // Paso de READY a RUNNING - Corto Plazo
-        pthread_mutex_lock(&mutex_READY);
+        //pthread_mutex_lock(&mutex_READY);
         pthread_mutex_lock(&mutex_RUNNING);
 
         if (RUNNING == NULL)
         {
             sem_wait(&semaforo_READY);
+            pthread_mutex_lock(&mutex_READY);
             r_pcb = siguiente_proceso_a_ejecutar();
+            pthread_mutex_unlock(&mutex_READY);
             r_pcb -> llegada_running = time(NULL);
             RUNNING = r_pcb;
             pthread_mutex_unlock(&mutex_RUNNING);
             loggear_cambio_estado("READY", "RUNNING", r_pcb);
-            pthread_mutex_unlock(&mutex_READY);
+            //pthread_mutex_unlock(&mutex_READY);
         }
         else
         {
-            pthread_mutex_unlock(&mutex_READY);
+            //pthread_mutex_unlock(&mutex_READY);
             pthread_mutex_unlock(&mutex_RUNNING);
         }
 
-        pthread_mutex_lock(&mutex_READY);
+        //pthread_mutex_lock(&mutex_READY);
         pthread_mutex_lock(&mutex_RUNNING);
 
         if (RUNNING != NULL)
         {
-            pthread_mutex_unlock(&mutex_READY);
+            //pthread_mutex_unlock(&mutex_READY);
             r_pcb = RUNNING;
             pthread_mutex_unlock(&mutex_RUNNING);
 
@@ -842,7 +851,7 @@ void planificacion_corto_plazo()
         }
         else
         {
-            pthread_mutex_unlock(&mutex_READY);
+            //pthread_mutex_unlock(&mutex_READY);
             pthread_mutex_unlock(&mutex_RUNNING);
         }
     }

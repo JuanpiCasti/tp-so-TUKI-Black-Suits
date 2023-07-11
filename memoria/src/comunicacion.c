@@ -168,10 +168,10 @@ void procesar_conexion(void *void_args)
             recv(cliente_socket, &dir_fisica_in, sizeof(uint32_t), NULL);
             recv(cliente_socket, &tam_a_leer, sizeof(uint32_t), NULL);
             char* valor_in = leer(dir_fisica_in, tam_a_leer);
-            sleep(RETARDO_MEMORIA/1000);
             send(cliente_socket, valor_in, tam_a_leer, NULL);
             free(valor_in);
             log_info(logger_memoria, "PID: %d - Acción: LEER - Dirección física: %d - Tamaño: %d - Origen: CPU", pid_mov_in, dir_fisica_in, tam_a_leer);
+            sleep(RETARDO_MEMORIA/1000);
             break;
 
         case COMPACTAR:
@@ -195,6 +195,7 @@ void procesar_conexion(void *void_args)
             recv(cliente_socket, valor_leer_archivo, tam_a_leer_archivo, NULL);
             escribir(dir_fisica_leer_archivo, valor_leer_archivo, tam_a_leer_archivo);
             log_info(logger_memoria, "PID: %d - Accion: ESCRIBIR - Dirección física: %d - Tamaño: %d - Origen: FS", pid_leer_archivo, dir_fisica_leer_archivo, tam_a_leer_archivo);
+            sleep(RETARDO_MEMORIA/1000);
             uint32_t escritura_ok = 0;
             send(cliente_socket, &escritura_ok, sizeof(uint32_t), NULL);
 
@@ -209,6 +210,7 @@ void procesar_conexion(void *void_args)
             recv(cliente_socket, &tam_a_escribir_archivo, sizeof(uint32_t), NULL);
             char* valor_escribir_archivo = leer(dir_fisica_escribir_archivo, tam_a_escribir_archivo);
             log_info(logger_memoria, "PID: %d - Accion: LEER - Dirección física: %d - Tamaño: %d - Origen: FS", pid_escribir_archivo, dir_fisica_escribir_archivo, tam_a_escribir_archivo);
+            sleep(RETARDO_MEMORIA/1000);
             send(cliente_socket, valor_escribir_archivo, tam_a_escribir_archivo, NULL);
             free(valor_escribir_archivo);
             break;

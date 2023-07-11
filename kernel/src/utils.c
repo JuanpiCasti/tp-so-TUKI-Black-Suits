@@ -166,6 +166,7 @@ void inicializar_semaforos()
         log_error(logger_kernel_extra, "No se pudo inicializar el semaforo para la cola de READY");
         exit(-1);
     }
+    pthread_mutex_unlock(&mutex_READY);
     if (pthread_mutex_init(&mutex_RUNNING, NULL) != 0)
     {
         log_error(logger_kernel_extra, "No se pudo inicializar el semaforo para RUNNING");

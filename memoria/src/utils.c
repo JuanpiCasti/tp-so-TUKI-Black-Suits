@@ -135,12 +135,10 @@ void* crear_tabla_segmentos() {
 int buscar_espacio_libre(uint32_t tam) {
     t_esp* esp;
     t_esp* esp_i;
-    int i;
     switch (ALGORITMO_ASIGNACION)
     {
     case FIRST:
-        esp;
-        for (i = 0; i < list_size(LISTA_ESPACIOS_LIBRES); i++)
+        for (int i = 0; i < list_size(LISTA_ESPACIOS_LIBRES); i++)
         {   
             esp = list_get(LISTA_ESPACIOS_LIBRES, i);
             if (esp->limite >= tam)
@@ -157,8 +155,7 @@ int buscar_espacio_libre(uint32_t tam) {
     case WORST:
         esp = list_get(LISTA_ESPACIOS_LIBRES, 0);
         int index_worst = 0;
-        esp_i;
-        for (i = 1; i < list_size(LISTA_ESPACIOS_LIBRES); i++)
+        for (int i = 1; i < list_size(LISTA_ESPACIOS_LIBRES); i++)
         {   
             esp_i = list_get(LISTA_ESPACIOS_LIBRES, i);
             if (esp_i->limite > esp->limite)
@@ -181,14 +178,17 @@ int buscar_espacio_libre(uint32_t tam) {
     case BEST:
         esp = list_get(LISTA_ESPACIOS_LIBRES, 0);
         int index_best = 0;
-        esp_i;
-        for (i = 1; i < list_size(LISTA_ESPACIOS_LIBRES); i++)
+        for (int i = 1; i < list_size(LISTA_ESPACIOS_LIBRES); i++)
         {   
             esp_i = list_get(LISTA_ESPACIOS_LIBRES, i);
-            if (esp_i->limite < esp->limite && esp_i->limite >= tam)
+            if (esp_i->limite >= tam)
             {
-                esp = esp_i;
-                index_best = i;
+                if (esp->limite < tam)
+                {
+                    esp = esp_i;
+                    index_best = i;
+                }
+                
             }
         }
 
