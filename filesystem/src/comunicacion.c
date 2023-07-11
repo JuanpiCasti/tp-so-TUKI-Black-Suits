@@ -88,6 +88,7 @@ void procesar_conexion(void *void_args)
             recv(socket_memoria, &archivo_ok, sizeof(uint32_t), NULL);
             send(cliente_socket, &archivo_ok, sizeof(uint32_t), NULL);
             free(buffer_leido);
+            free(stream_leido);
             break;
         case ESCRIBIR_ARCHIVO:
             recv(cliente_socket, &pid, sizeof(uint32_t), NULL);

@@ -211,13 +211,17 @@ void loggear_cola_ready(t_list *cola_ready)
     if (strcmp(ALGORITMO_PLANIFICACION, "FIFO") == 0)
     {
         uint32_t first_pid = ((t_pcb *)(list_get(cola_ready, 0)))->pid;
-        string_append(&lista_pids, string_itoa(first_pid));
+        char* first_pid_str = string_itoa(first_pid);
+        string_append(&lista_pids, first_pid_str);
+        free(first_pid_str);
 
         for (int i = 1; i < list_size(cola_ready); i++)
         {
             pcb = list_get(cola_ready, i);
             string_append(&lista_pids, ",");
-            string_append(&lista_pids, string_itoa(pcb->pid));
+            char* el_pid = string_itoa(pcb->pid);
+            string_append(&lista_pids, el_pid);
+            free(el_pid);
         }
 
         log_info(logger_kernel, "Cola Ready FIFO: [%s]", lista_pids);
@@ -244,7 +248,9 @@ void loggear_cola_ready(t_list *cola_ready)
         }
 
         pcb = (t_pcb *)(list_remove(READY_aux, index_de_RR_mayor));
-        string_append(&lista_pids, string_itoa(pcb->pid));
+        char* first_pid_str = string_itoa(pcb->pid);
+        string_append(&lista_pids, first_pid_str);
+        free(first_pid_str);
         int size_cola = list_size(READY_aux);
         for (int j = 0; j < size_cola; j++)
         {
@@ -272,12 +278,15 @@ void loggear_cola_ready(t_list *cola_ready)
 
             pcb = (t_pcb *)(list_remove(READY_aux, index_de_RR_mayor));
             string_append(&lista_pids, ",");
-            string_append(&lista_pids, string_itoa(pcb->pid));
+            char* el_pid = string_itoa(pcb->pid);
+            string_append(&lista_pids, el_pid);
+            free(el_pid);
         }
 
         log_info(logger_kernel, "Cola Ready HRRN: [%s]", lista_pids);
         list_destroy_and_destroy_elements(READY_aux, destroy_pcb);
     }
+    free(lista_pids);
 }
 
 void loggear_fin_proceso(t_pcb *pcb, cod_op_kernel exit_code)

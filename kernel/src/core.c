@@ -161,6 +161,7 @@ void terminar_proceso(t_pcb *proceso, cod_op_kernel motivo)
         solicitar_liberacion_segmento(seg->base, seg->tam, proceso->pid, seg->id_seg);
     }
     list_destroy_and_destroy_elements(proceso->tabla_segmentos, destroy_ent_ts);
+    list_destroy(segmentos_activos);
     
 
     // TODO: cerrar archivos abiertos?
@@ -321,6 +322,7 @@ void solicitar_creacion_segmento(uint32_t id_seg, uint32_t tam, t_pcb *pcb)
 
         //pthread_create(&hilo_compactacion, NULL, solicitar_compactacion, NULL);
         solicitar_compactacion((void*) args);
+        free(args);
 
         break;
     case MEMORIA_SEGMENTO_CREADO:

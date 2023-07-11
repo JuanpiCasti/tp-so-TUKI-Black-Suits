@@ -59,6 +59,7 @@ void devolver_nuevas_bases(int cliente_socket) {
     }
 
     send(cliente_socket, buffer, size, NULL);
+    free(buffer);
 }
 
 void procesar_conexion(void *void_args)
@@ -136,7 +137,7 @@ void procesar_conexion(void *void_args)
 
             borrar_segmento(base, tam);
             log_info(logger_memoria, "PID: %d - Eliminar Segmento: %d - Base: %d - TAMAÑO: %d", pid_free_segment, free_seg_id, base, tam);
-            //print_lista_esp(LISTA_ESPACIOS_LIBRES); //
+            print_lista_esp(LISTA_ESPACIOS_LIBRES); //
             break;
         case MEMORIA_MOV_OUT:
             uint32_t pid_mov_out;
@@ -182,6 +183,7 @@ void procesar_conexion(void *void_args)
                 log_info(logger_memoria, "PID: %d - Segmento: %d - Base: %d - Tamaño: %d", segmento->pid, segmento->id, segmento->base, segmento->limite);
             }
             devolver_nuevas_bases(cliente_socket);
+            print_lista_esp(LISTA_ESPACIOS_LIBRES);
             break;
         
         case LEER_ARCHIVO:
@@ -194,6 +196,7 @@ void procesar_conexion(void *void_args)
             char* valor_leer_archivo = malloc(tam_a_leer_archivo);
             recv(cliente_socket, valor_leer_archivo, tam_a_leer_archivo, NULL);
             escribir(dir_fisica_leer_archivo, valor_leer_archivo, tam_a_leer_archivo);
+            free(valor_leer_archivo);
             log_info(logger_memoria, "PID: %d - Accion: ESCRIBIR - Dirección física: %d - Tamaño: %d - Origen: FS", pid_leer_archivo, dir_fisica_leer_archivo, tam_a_leer_archivo);
             sleep(RETARDO_MEMORIA/1000);
             uint32_t escritura_ok = 0;

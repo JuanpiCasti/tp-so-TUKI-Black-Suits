@@ -27,6 +27,7 @@ void inicializar_registros()
     memset(RDX, 0, sizeof(RDX));
     RDX[0] = '\0';
     INSTRUCTION_LIST = list_create();
+    SEGMENT_LIST = list_create();
 }
 
 void levantar_loggers_cpu()
@@ -43,6 +44,12 @@ void levantar_config_cpu()
     PUERTO_MEMORIA = config_get_string_value(CONFIG_CPU, "PUERTO_MEMORIA");
     PUERTO_ESCUCHA_CPU = config_get_string_value(CONFIG_CPU, "PUERTO_ESCUCHA");
     TAM_MAX_SEGMENTO = config_get_int_value(CONFIG_CPU, "TAM_MAX_SEGMENTO");
+}
+
+void destroy_segmento(void *segmento)
+{
+    t_ent_ts *seg = (t_ent_ts *)segmento;
+    free(seg);
 }
 
 void cambiar_contexto(void *buffer)
@@ -93,12 +100,13 @@ void cambiar_contexto(void *buffer)
     INSTRUCTION_LIST = deserializar_instrucciones(buffer + desplazamiento, tam_instrucciones);
     desplazamiento += tam_instrucciones;
 
+    list_destroy_and_destroy_elements(SEGMENT_LIST, destroy_segmento);
     // Segmentos
     uint32_t tam_segmentos;
     memcpy(&tam_segmentos, buffer + desplazamiento, sizeof(uint32_t));
     desplazamiento += sizeof(uint32_t);
     SEGMENT_LIST = deserializar_segmentos(buffer + desplazamiento, tam_segmentos);
-
+    free(buffer);
 }
 
 void imprimir_contexto_actual()

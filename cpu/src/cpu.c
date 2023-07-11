@@ -40,7 +40,6 @@ int main(int argc, char **argv)
 		levantar_loggers_cpu();
 		levantar_config_cpu();
 		inicializar_registros();
-		INSTRUCTION_LIST = list_create();
 
 		socket_memoria = crear_conexion(logger_cpu_extra, IP_MEMORIA, PUERTO_MEMORIA);
 		//*********************

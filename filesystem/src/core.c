@@ -220,6 +220,7 @@ void eferrait(char *f_name, uint32_t offset, uint32_t cantidad, char *data)
   FILE *blocks_file = fopen(PATH_BLOQUES, "w");
   fwrite(blocks_buffer, BLOCK_SIZE, BLOCK_COUNT, blocks_file);
   fclose(blocks_file);
+  free(fcb);
 }
 
 void *eferrid(char *f_name, uint32_t offset, uint32_t cantidad)
@@ -288,6 +289,7 @@ void *eferrid(char *f_name, uint32_t offset, uint32_t cantidad)
       sleep(RETARDO_ACCESO_BLOQUE / 1000);
     }
   }
+  free(fcb);
 
   return data_final;
 }
