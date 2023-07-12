@@ -477,6 +477,7 @@ void cerrar_archivo(char *f_name, t_pcb *pcb)
     {
         t_archivo_abierto* arch = list_remove(pcb->archivos_abiertos, index_archivo_abierto_del_proceso);
         free(arch);
+        log_info(logger_kernel, "PID: %d - Cerrar Archivo: %s", pcb->pid, f_name);
 
         int index_archivo_tg = verificar_string_en_lista(tabla_archivos, f_name);
 
@@ -496,7 +497,6 @@ void cerrar_archivo(char *f_name, t_pcb *pcb)
         }
     }
 
-    log_info(logger_kernel, "PID: %d - Cerrar Archivo: %s", pcb->pid, f_name);
 }
 
 void cambiar_puntero_archivo(char *f_name, uint32_t new_puntero, t_pcb *pcb)
