@@ -92,12 +92,15 @@ void procesar_conexion(void *void_args)
             rechazar_handshake(logger, cliente_socket);
             break;
         case CREATE_SEGTABLE:
+            pthread_mutex_lock(&mutex_memoria);
             uint32_t pid;
             recv(cliente_socket, &pid, sizeof(uint32_t), NULL);
             devolver_tabla_inicial(cliente_socket);
             log_info(logger_memoria, "Creacion de Proceso PID: %d", pid);
+            pthread_mutex_unlock(&mutex_memoria);
             break;
         case MEMORIA_CREATE_SEGMENT:
+            pthread_mutex_lock(&mutex_memoria);
             uint32_t pid_create_segment;
             uint32_t id_seg;
             uint32_t tam_seg;
@@ -123,8 +126,10 @@ void procesar_conexion(void *void_args)
             // print_lista_esp(LISTA_ESPACIOS_LIBRES);
 
             devolver_resultado_creacion(resultado, cliente_socket, n_base);
+            pthread_mutex_unlock(&mutex_memoria);
             break;
         case MEMORIA_FREE_SEGMENT:
+            pthread_mutex_lock(&mutex_memoria);
             uint32_t pid_free_segment;
             uint32_t free_seg_id;
             uint32_t base;
@@ -138,8 +143,10 @@ void procesar_conexion(void *void_args)
             borrar_segmento(base, tam);
             log_info(logger_memoria, "PID: %d - Eliminar Segmento: %d - Base: %d - TAMAÑO: %d", pid_free_segment, free_seg_id, base, tam);
             print_lista_esp(LISTA_ESPACIOS_LIBRES); //
+            pthread_mutex_unlock(&mutex_memoria);
             break;
         case MEMORIA_MOV_OUT:
+            pthread_mutex_lock(&mutex_memoria);
             uint32_t pid_mov_out;
             uint32_t dir_fisica;
             uint32_t tam_escrito;
@@ -160,8 +167,10 @@ void procesar_conexion(void *void_args)
             uint32_t mov_out_ok = 1;
             send(cliente_socket, &mov_out_ok, sizeof(uint32_t), NULL);
             //char* cosita = leer(dir_fisica, tam_escrito);
+            pthread_mutex_unlock(&mutex_memoria);
             break;
         case MEMORIA_MOV_IN:
+            pthread_mutex_lock(&mutex_memoria);
             uint32_t pid_mov_in;
             uint32_t dir_fisica_in;
             uint32_t tam_a_leer;
@@ -173,9 +182,11 @@ void procesar_conexion(void *void_args)
             free(valor_in);
             log_info(logger_memoria, "PID: %d - Acción: LEER - Dirección física: %d - Tamaño: %d - Origen: CPU", pid_mov_in, dir_fisica_in, tam_a_leer);
             sleep(RETARDO_MEMORIA/1000);
+            pthread_mutex_unlock(&mutex_memoria);
             break;
 
         case COMPACTAR:
+            pthread_mutex_lock(&mutex_memoria);
             compactar();
             for(int i = 0; i < list_size(LISTA_GLOBAL_SEGMENTOS); i++)
             {
@@ -184,9 +195,11 @@ void procesar_conexion(void *void_args)
             }
             devolver_nuevas_bases(cliente_socket);
             print_lista_esp(LISTA_ESPACIOS_LIBRES);
+            pthread_mutex_unlock(&mutex_memoria);
             break;
         
         case LEER_ARCHIVO:
+            pthread_mutex_lock(&mutex_memoria);
             uint32_t pid_leer_archivo;
             uint32_t dir_fisica_leer_archivo;
             uint32_t tam_a_leer_archivo;
@@ -201,10 +214,11 @@ void procesar_conexion(void *void_args)
             sleep(RETARDO_MEMORIA/1000);
             uint32_t escritura_ok = 0;
             send(cliente_socket, &escritura_ok, sizeof(uint32_t), NULL);
-
+            pthread_mutex_unlock(&mutex_memoria);
             break;
 
         case ESCRIBIR_ARCHIVO:
+            pthread_mutex_lock(&mutex_memoria);
             uint32_t pid_escribir_archivo;
             uint32_t dir_fisica_escribir_archivo;
             uint32_t tam_a_escribir_archivo;
@@ -216,6 +230,7 @@ void procesar_conexion(void *void_args)
             sleep(RETARDO_MEMORIA/1000);
             send(cliente_socket, valor_escribir_archivo, tam_a_escribir_archivo, NULL);
             free(valor_escribir_archivo);
+            pthread_mutex_unlock(&mutex_memoria);
             break;
         default:
             log_error(logger, "Algo anduvo mal en el server Memoria");
