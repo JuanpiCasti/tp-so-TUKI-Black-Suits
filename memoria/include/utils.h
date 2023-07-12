@@ -40,6 +40,7 @@ extern void* ESPACIO_USUARIO;
 extern uint32_t ESPACIO_LIBRE_TOTAL;
 extern t_list* LISTA_ESPACIOS_LIBRES;
 extern t_list* LISTA_GLOBAL_SEGMENTOS;
+extern pthread_mutex_t mutex_memoria;
 
 void levantar_loggers_memoria();
 void levantar_config_memoria();
