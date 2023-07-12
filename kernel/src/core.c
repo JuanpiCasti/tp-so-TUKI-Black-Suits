@@ -416,6 +416,7 @@ void abrir_archivo(char *f_name, t_pcb *pcb)
         desalojar();
         t_entrada_tabla_archivos *entrada = list_get(tabla_archivos, index_archivo_tg);
         list_add(entrada->cola_bloqueados, pcb);
+        log_info(logger_kernel, "PID: %d - Abrir archivo: %s",pcb->pid, f_name);
         loggear_cambio_estado("RUNNING", "BLOQUEADO", pcb);
         log_info(logger_kernel, "PID: %d - Bloqueado por: %s",pcb->pid, f_name);
         list_replace(tabla_archivos, index_archivo_tg, entrada);
@@ -536,7 +537,7 @@ void truncar_archivo(void* args)
 
     send(socket_filesystem, buffer, tam_buffer, NULL);
     free(buffer);
-    log_info(logger_kernel, "PID: %d - Archivo: %s - Tamaño %d", pcb->pid, f_name, new_size);
+    log_info(logger_kernel, "PID: %d - Truncar Archivo: %s - Tamaño %d", pcb->pid, f_name, new_size);
     loggear_cambio_estado("RUNNING", "BLOQUEADO", pcb);
     log_info(logger_kernel, "PID: %d - Bloqueado por: %s",pcb->pid, f_name);
     uint32_t archivo_ok;
@@ -587,9 +588,9 @@ void leer_archivo(void* args)
     send(socket_filesystem, buffer, tam_buffer, NULL);
     free(buffer);
 
+    log_info(logger_kernel, "PID: %d - Leer Archivo: %s - Puntero: %d - Dirección Memoria: %d - Tamaño: %d", pcb->pid, f_name, archivo->puntero, dir_fisica, size);
     loggear_cambio_estado("RUNNING", "BLOQUEADO", pcb);
     log_info(logger_kernel, "PID: %d - Bloqueado por: %s",pcb->pid, f_name);
-    log_info(logger_kernel, "PID: %d - Leer Archivo: %s - Puntero: %d - Dirección Memoria: %d - Tamaño: %d", pcb->pid, f_name, archivo->puntero, dir_fisica, size);
 
     uint32_t archivo_ok;
     recv(socket_filesystem, &archivo_ok, sizeof(uint32_t), NULL);
@@ -643,9 +644,9 @@ void escribir_archivo(void * args)
 
     send(socket_filesystem, buffer, tam_buffer, NULL);
     free(buffer);
+    log_info(logger_kernel, "PID: %d - Escribir Archivo: %s - Puntero: %d - Dirección Memoria: %d - Tamaño: %d", pcb->pid, f_name, archivo->puntero, dir_fisica, size);
     loggear_cambio_estado("RUNNING", "BLOQUEADO", pcb);
     log_info(logger_kernel, "PID: %d - Bloqueado por: %s",pcb->pid, f_name);
-    log_info(logger_kernel, "PID: %d - Escribir Archivo: %s - Puntero: %d - Dirección Memoria: %d - Tamaño: %d", pcb->pid, f_name, archivo->puntero, dir_fisica, size);
 
     uint32_t archivo_ok;
     recv(socket_filesystem, &archivo_ok, sizeof(uint32_t), NULL);
