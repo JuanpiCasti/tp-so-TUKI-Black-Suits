@@ -18,6 +18,7 @@ void* ESPACIO_USUARIO;
 uint32_t ESPACIO_LIBRE_TOTAL;
 t_list* LISTA_ESPACIOS_LIBRES;
 t_list* LISTA_GLOBAL_SEGMENTOS;
+pthread_mutex_t mutex_memoria;
 
 int main(int argc, char **argv)
 {
@@ -36,6 +37,7 @@ int main(int argc, char **argv)
 		levantar_config_memoria();
 		levantar_loggers_memoria();
 		levantar_estructuras_administrativas();
+		pthread_mutex_init(&mutex_memoria, NULL);
 
 
 
