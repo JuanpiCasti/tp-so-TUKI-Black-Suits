@@ -1,3 +1,0 @@
-F_OPEN elpapu
-F_CLOSE elpapu
-EXIT
