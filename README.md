@@ -8,6 +8,7 @@ Teammates:
 - Guadalupe Fernández
 - Franco Modesto
 - Mora Rodriguez
+
 They are all tagged as collaborators for this repository.
 
 The project consists of the simulation of different parts of a real operating system designed according to the theory we learnt in class and the specifications given by the evaluators. (https://docs.google.com/document/d/1orfThJsPmMx5uPzbY3wClGhqX8jASMOCUMlWnYAr7cA/edit)
